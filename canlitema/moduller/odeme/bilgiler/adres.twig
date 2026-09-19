@@ -14,27 +14,39 @@
             <div class="col-md-6">
                 <div class="form-group" data-payment-input="name">
                     
+                    <label class="sr-only" for="orderInputName">{{ cevir('ad') }} <span class="text-danger">*</span></label>
                     <input type="text" class="form-control" id="orderInputName" name="name" value="{{ siparisBilgileri('name') }}" placeholder="Adınız">
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="form-group" data-payment-input="lastname">
                     
+                    <label class="sr-only" for="orderInputLastName">{{ cevir('soyad') }} <span class="text-danger">*</span></label>
                     <input type="text" class="form-control" id="orderInputLastName" name="lastname" value="{{ siparisBilgileri('lastname') }}" placeholder="Soyadınız">
                 </div>
             </div>
+            {% if ayarlar('tc_alani_zorunlu_mu') %}
+            <div class="col-md-12">
+                <div class="form-group" data-payment-input="tc">
+                    <label for="orderInputTC">{{ cevir('tc_kimlik_no') }} <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="orderInputTC" name="tc" value="{{ siparisBilgileri('tc') }}" required>
+                </div>
+            </div>
+            {% endif %}
         </div>
        
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group" data-payment-input="email">
                    
+                    <label class="sr-only" for="orderInputEmail">{{ cevir('eposta_adresi') }} <span class="text-danger">*</span></label>
                     <input type="text" class="form-control" id="orderInputEmail" name="email" value="{{ siparisBilgileri('email') }}" placeholder="E-posta">
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="form-group" data-payment-input="phone">
                     
+                    <label class="sr-only" for="orderInputPhone">{{ cevir('cep_telefonu') }} <span class="text-danger">*</span></label>
                     <input type="text" class="form-control form-phone-control" id="orderInputPhone" name="phone" value="{{ siparisBilgileri('phone') }}" placeholder="Cep Telefonu">
                 </div>
             </div>
@@ -45,7 +57,8 @@
                 <div class="col-md-4">
                     <div class="form-group" data-payment-input="country">
                         
-                        <select name="country" id="orderInputCountry" class="form-control" 
+                        <label class="sr-only" for="orderInputCountry">{{ cevir('ulke') }} <span class="text-danger">*</span></label>
+                    <select name="country" id="orderInputCountry" class="form-control"
                             onChange="selectChangeCountryV3('*[data-payment-box-form=\'address-info\']', 'country', 'city', 'district', 'neighborhood');">
                             {% for ulke in ulkeler(siparisBilgileri('country')) %}
                                 <option {% if ulke.selected %} selected {% endif %} value="{{ ulke.ID }}">{{ ulke.adi }}</option>
@@ -60,6 +73,7 @@
             <div class="col-md-{{ ayarlar('siparis_ulke_secme') ? '4' : '6' }}">
                 <div class="form-group" data-payment-input="city">
                     
+                    <label class="sr-only" for="orderInputCity">{{ cevir('il') }} <span class="text-danger">*</span></label>
                     <select name="city"  id="orderInputCity" class="form-control"
                         onChange="selectChangeCityV3('*[data-payment-box-form=\'address-info\']', 'city', 'district', 'neighborhood')">
                         {% for il in iller(siparisBilgileri('country'), siparisBilgileri('city')) %}
@@ -72,6 +86,7 @@
             <div class="col-md-{{ ayarlar('siparis_ulke_secme') ? '4' : '6' }}">
                 <div class="form-group" data-payment-input="district">
                    
+                    <label class="sr-only" for="orderInputDistrict">{{ cevir('ilce') }} <span class="text-danger">*</span></label>
                     <select name="district" id="orderInputDistrict" class="form-control"
                         onChange="selectChangeDistrictV3('*[data-payment-box-form=\'address-info\']',  'district', 'neighborhood')">
                         {% for ilce in ilceler(siparisBilgileri('city'), siparisBilgileri('district')) %}
@@ -86,7 +101,8 @@
             {% set mahalle_listesi = mahalleler(siparisBilgileri('district'), siparisBilgileri('neighborhood')) %}
             <div class="col-md-{{ ayarlar('siparis_ulke_secme') ? '4' : '6' }}">
                 <div class="form-group {{ mahalle_listesi|length > 1 ? '' : 'd-none' }}" data-payment-input="neighborhood" data-location-input="neighborhood">
-                    <label form="orderInputDistricts">{{ cevir('mahalle') }} <span class="text-danger">*</span></label>
+                    <label for="orderInputDistricts">{{ cevir('mahalle') }} <span class="text-danger">*</span></label>
+                    <label class="sr-only" for="orderInputDistricts">{{ cevir('mahalle') }} <span class="text-danger">*</span></label>
                     <select name="neighborhood" id="orderInputDistricts" class="form-control">
                         {% for mahalle in mahalle_listesi %}
                             <option {% if mahalle.selected %} selected {% endif %} value="{{ mahalle.ID }}">{{ mahalle.adi }}</option>
@@ -100,6 +116,7 @@
             <div class="col-md-12">
                 <div class="form-group" data-payment-input="address">
                    
+                    <label class="sr-only" for="orderInputAddress">{{ cevir('adres') }} <span class="text-danger">*</span></label>
                     <textarea name="address" placeholder="Lütfen açık adresinizi detaylı bir şekilde yazınız" class="form-control" id="orderInputAddress">{{ siparisBilgileri('address') }}</textarea>
                 </div>
             </div>
@@ -149,7 +166,8 @@
                 <div class="col-md-12">
                     <div class="form-group" data-payment-input="invoice_name">
                        
-                        <input type="text" placeholder="Ad Soyad, Ünvan" class="form-control" id="orderInputInvoiceName" name="invoice_name" value="{{ siparisBilgileri('invoice_name') }}">
+                        <label class="sr-only" for="orderInputInvoiceName">{{ cevir('ad_soyad_unvan') }} <span class="text-danger">*</span></label>
+                    <input type="text" placeholder="Ad Soyad, Ünvan" class="form-control" id="orderInputInvoiceName" name="invoice_name" value="{{ siparisBilgileri('invoice_name') }}">
                     </div>
                 </div>
             </div>
@@ -159,7 +177,8 @@
                     <div class="col-md-12">
                          <div class="form-group" data-payment-input="invoice_tc">
                             
-                            <input type="text" placeholder="T.C Kimlik No ( Zorunlu Değil)" class="form-control" id="orderInputInvoiceTC" name="invoice_tc" value="{{ siparisBilgileri('invoice_tc') }}">
+                            <label class="sr-only" for="orderInputInvoiceTC">{{ cevir('tc_kimlik_no') }} <span class="text-danger">*</span></label>
+                    <input type="text" placeholder="T.C Kimlik No ( Zorunlu Değil)" class="form-control" id="orderInputInvoiceTC" name="invoice_tc" value="{{ siparisBilgileri('invoice_tc') }}">
                         </div>
                     </div>
                 </div>  
@@ -170,13 +189,15 @@
                     <div class="col-md-6">
                          <div class="form-group" data-payment-input="invoice_tc">
                             
-                            <input type="text" placeholder="Vergi Numarası" class="form-control" id="orderInputInvoiceTaxNo" name="invoice_tax_no" value="{{ siparisBilgileri('invoice_tax_no') }}">
+                            <label class="sr-only" for="orderInputInvoiceTaxNo">{{ cevir('vergi_no') }} <span class="text-danger">*</span></label>
+                    <input type="text" placeholder="Vergi Numarası" class="form-control" id="orderInputInvoiceTaxNo" name="invoice_tax_no" value="{{ siparisBilgileri('invoice_tax_no') }}">
                         </div>
                     </div>
                     <div class="col-md-6">
                          <div class="form-group" data-payment-input="invoice_tax_branch">
                            
-                            <input type="text" placeholder="Vergi Dairesi" class="form-control" id="orderInputInvoiceTaxBranch" name="invoice_tax_branch" value="{{ siparisBilgileri('invoice_tax_branch') }}">
+                            <label class="sr-only" for="orderInputInvoiceTaxBranch">{{ cevir('vergi_dairesi') }} <span class="text-danger">*</span></label>
+                    <input type="text" placeholder="Vergi Dairesi" class="form-control" id="orderInputInvoiceTaxBranch" name="invoice_tax_branch" value="{{ siparisBilgileri('invoice_tax_branch') }}">
                         </div>
                     </div>
                 </div>  
@@ -187,8 +208,8 @@
                 {% if ayarlar('siparis_ulke_secme') %}
                     <div class="col-md-4">
                         <div class="form-group" data-payment-input="invoice_country">
-                            <label form="orderInputInvoiceCountry">{{ cevir('invoice_country') }} <span class="text-danger">*</span></label> 
-                            <select name="invoice_country" id="orderInputInvoiceCountry" class="form-control" 
+                            <label for="orderInputInvoiceCountry">{{ cevir('invoice_country') }} <span class="text-danger">*</span></label>
+                    <select name="invoice_country" id="orderInputInvoiceCountry" class="form-control"
                                 onChange="selectChangeCountry('*[data-payment-box-form=\'address-info\']', 'invoice_country', 'invoice_city', 'invoice_district')">
                                 {% for ulke in ulkeler(siparisBilgileri('ulke')) %}
                                     <option {% if ulke.selected %} selected {% endif %} value="{{ ulke.ID }}">{{ ulke.adi }}</option>
@@ -203,7 +224,8 @@
                 <div class="col-md-{{ ayarlar('siparis_ulke_secme') ? '4' : '6' }}">
                     <div class="form-group" data-payment-input="invoice_city">
                       
-<select name="invoice_city" id="orderInputInvoiceCity" class="form-control"
+<label class="sr-only" for="orderInputInvoiceCity">{{ cevir('il') }} <span class="text-danger">*</span></label>
+                    <select name="invoice_city" id="orderInputInvoiceCity" class="form-control"
     onChange="selectChangeCity('*[data-payment-box-form=\'address-info\']', 'invoice_city', 'invoice_district')">
     <option value="" disabled selected>Şehir Seçiniz</option>
     {% for il in iller(siparisBilgileri('invoice_country'), siparisBilgileri('invoice_city')) %}
@@ -216,7 +238,8 @@
                 <div class="col-md-{{ ayarlar('siparis_ulke_secme') ? '4' : '6' }}">
                     <div class="form-group" data-payment-input="invoice_district">
                       
-                      <select name="invoice_district" id="orderInputInvoiceDistrict" class="form-control">
+                      <label class="sr-only" for="orderInputInvoiceDistrict">{{ cevir('ilce') }} <span class="text-danger">*</span></label>
+                    <select name="invoice_district" id="orderInputInvoiceDistrict" class="form-control">
     <option value="" disabled selected>İlçe Seçiniz</option>
     {% for ilce in ilceler(siparisBilgileri('invoice_city'), siparisBilgileri('invoice_district')) %}
         <option {% if ilce.selected %} selected {% endif %} value="{{ ilce.ID }}">{{ ilce.adi }}</option>
@@ -230,7 +253,8 @@
                 <div class="col-md-12">
                     <div class="form-group" data-payment-input="invoice_address">
                        
-                        <textarea name="invoice_address" placeholder="Adres Bilgisi" class="form-control" id="orderInputInvoiceAddress">{{ siparisBilgileri('invoice_address') }}</textarea>
+                        <label class="sr-only" for="orderInputInvoiceAddress">{{ cevir('adres') }} <span class="text-danger">*</span></label>
+                    <textarea name="invoice_address" placeholder="Adres Bilgisi" class="form-control" id="orderInputInvoiceAddress">{{ siparisBilgileri('invoice_address') }}</textarea>
                     </div>
                 </div>
             </div>

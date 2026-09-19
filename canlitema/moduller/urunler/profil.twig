@@ -160,14 +160,14 @@
             <div class="product-rate">
 			
                 <div class="taksit-top">
-                    <span class="taksit-amount">12 X {{ taksit_bilgisi.aylik }}</span>
+                    <span class="taksit-amount">{{ taksit_bilgisi.vade }} X {{ taksit_bilgisi.aylik }}</span>
                     <span class="taksit-den">'den</span>
                 </div>
                 <span class="taksit-text">başlayan taksit fırsatı</span>
                 
                  
             </div>
-
+        </div>
     {% endif %}
 {% endif %}
 
@@ -183,7 +183,6 @@
                 {{ cevir('ye_satin_alin') }}
             </div>
         {% endif %}
-    </div>
 </li>
 
 <li>
@@ -384,7 +383,8 @@
 
                         <!-- Benzer Ürünler Butonu -->
                         <button class="btn-custom btn-similar-products"
-                            onclick="window.location.href='https://www.tilbehome.com/arama?k={{ sayfaBilgileri('kategori').adi }}'">
+                            data-search-url="{{ statikLinkler('arama') }}?k={{ sayfaBilgileri('kategori').adi | url_encode }}"
+                            onclick="window.location.href=this.getAttribute('data-search-url')">
                             <i class="fas fa-search"></i> Benzer Ürünler
                         </button>
                     </div>
