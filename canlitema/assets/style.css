@@ -15469,3 +15469,5 @@ div#product-balance-block {
         min-width: 24px;
     }
 }
+/* This dialog releases only its own scroll lock. */
+body.tilbe-category-open { overflow: hidden; }

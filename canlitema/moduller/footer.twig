@@ -31,7 +31,7 @@
     </div>
 
     <div class="tilbehomeMobilMenu456-menu-item kategoriler" id="tilbehomeMobilMenu456-kategori-btn">
-      <a href="#">
+      <a href="#tilbe-category-dialog" aria-controls="tilbe-category-dialog" aria-expanded="false" aria-haspopup="dialog">
         <i class="fas fa-list-ul"></i>
         <span>Kategori</span>
       </a>
@@ -64,7 +64,7 @@
 
   <!-- Kategori Açılır Menü -->
 <!-- Kategori Açılır Menü -->
-<div class="thkm456-container" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Kategori Menüsü">
+<div id="tilbe-category-dialog" class="thkm456-container" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Kategori Menüsü">
 
   <div class="thkm456-backdrop"></div>
 
@@ -127,35 +127,57 @@
 
 
 <script>
- document.addEventListener('DOMContentLoaded', () => {
-  const kategoriBtn = document.getElementById('tilbehomeMobilMenu456-kategori-btn');
-  const menuContainer = document.querySelector('.thkm456-container');
-  const closeBtn = menuContainer.querySelector('.thkm456-close');
-  const backdrop = menuContainer.querySelector('.thkm456-backdrop');
-
-  kategoriBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    menuContainer.classList.add('active');
-    menuContainer.setAttribute('aria-hidden', 'false');
-    menuContainer.querySelector('.thkm456-menu').focus();
-  });
-
-  function closeMenu() {
-    menuContainer.classList.remove('active');
-    menuContainer.setAttribute('aria-hidden', 'true');
-    kategoriBtn.focus();
-  }
-
-  closeBtn.addEventListener('click', closeMenu);
-  backdrop.addEventListener('click', closeMenu);
-
-  window.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && menuContainer.classList.contains('active')) {
-      closeMenu();
+(function () {
+  function initializeCategoryMenu() {
+    const wrapper = document.getElementById('tilbehomeMobilMenu456-kategori-btn');
+    const trigger = wrapper && wrapper.querySelector('a');
+    const container = document.querySelector('.thkm456-container');
+    if (!trigger || !container || container.dataset.tilbeInitialized) return;
+    const panel = container.querySelector('.thkm456-menu');
+    const close = container.querySelector('.thkm456-close');
+    const backdrop = container.querySelector('.thkm456-backdrop');
+    if (!panel || !close || !backdrop) return;
+    container.dataset.tilbeInitialized = 'true';
+    const otherModalOpen = () => Boolean(document.querySelector('.modal.show'));
+    function closeMenu() {
+      if (!container.classList.contains('active')) return;
+      container.classList.remove('active');
+      container.setAttribute('aria-hidden', 'true');
+      trigger.setAttribute('aria-expanded', 'false');
+      document.body.classList.remove('tilbe-category-open');
+      if (!otherModalOpen()) trigger.focus();
     }
-  });
-});
-
+    trigger.addEventListener('click', function (event) {
+      event.preventDefault();
+      container.classList.add('active');
+      container.setAttribute('aria-hidden', 'false');
+      trigger.setAttribute('aria-expanded', 'true');
+      document.body.classList.add('tilbe-category-open');
+      close.focus();
+    });
+    close.addEventListener('click', closeMenu);
+    backdrop.addEventListener('click', closeMenu);
+    document.addEventListener('keydown', function (event) {
+      if (!container.classList.contains('active') || otherModalOpen()) return;
+      if (event.key === 'Escape') {
+        event.preventDefault();
+        closeMenu();
+      } else if (event.key === 'Tab') {
+        const items = Array.from(panel.querySelectorAll('a[href], button:not([disabled]), [tabindex="0"]'))
+          .filter(item => item.getClientRects().length);
+        if (!items.length) { event.preventDefault(); panel.focus(); return; }
+        const first = items[0], last = items[items.length - 1];
+        if (event.shiftKey && (document.activeElement === first || !panel.contains(document.activeElement))) {
+          event.preventDefault(); last.focus();
+        } else if (!event.shiftKey && (document.activeElement === last || !panel.contains(document.activeElement))) {
+          event.preventDefault(); first.focus();
+        }
+      }
+    });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initializeCategoryMenu, { once: true });
+  else initializeCategoryMenu();
+})();
 </script>
     
     {% if temaAyarlari('footer', 'footer_pazaryeri') %}
@@ -235,7 +257,7 @@
   <div class="fs f3 contact-info">
     <ul class="contact-list">
 
-  <li class="contact-item"><a href="tel:05308895434" target="_blank" class="telephone" aria-label="telephone"><i class="fa fa-phone"></i> 0530 889 54 34</li>
+  <li class="contact-item"><a href="tel:05308895434" target="_blank" class="telephone" aria-label="Telefonla arayın"><i class="fa fa-phone"></i> 0530 889 54 34</a></li>
 
   <li class="contact-item"><a href="https://wa.me/905308895434" target="_blank" class="whatsapp" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i>0530 889 54 34</a>
    
@@ -306,6 +328,7 @@ src="data:image/jpeg;base64, iVBORw0KGgoAAAANSUhEUgAAAIIAAACWCAYAAAASRFBwAAAAAXN
                                     <input type="email"
                                         class="form-control newsletter-input"
                                         name="email"
+                                        aria-label="E-posta adresiniz"
                                         placeholder="{{ cevir('email_bulten_eposta_adresini_yazin') }}">
                                 
                                     <button type="submit" class="btn btn-submit">
@@ -327,7 +350,7 @@ src="data:image/jpeg;base64, iVBORw0KGgoAAAANSUhEUgAAAIIAAACWCAYAAAASRFBwAAAAAXN
                                     onsubmit="return smsNewsletter(this)">
                                     <input type="text"
                                         class="form-control form-phone-control"
-                                        name="phone">
+                                        name="phone" aria-label="Telefon numaranız">
                                 
                                     <button type="submit" class="btn btn-submit">
                                         <i class="far fa-envelope mr-2"></i> {{cevir('gonder')}}
@@ -347,7 +370,7 @@ src="data:image/jpeg;base64, iVBORw0KGgoAAAANSUhEUgAAAIIAAACWCAYAAAASRFBwAAAAAXN
                                     {% if statikLinkler('app_store') %}
                                 
                                         <a class="mr-3" href="{{statikLinkler('app_store')}}" target="_blank">
-                                            <img src="{{temaDosyalari('/assets/images/appstore.png')}}">
+                                            <img src="{{temaDosyalari('/assets/images/appstore.png')}}" alt="App Store">
                                         </a>
                                     
                                     {% endif %}
@@ -355,7 +378,7 @@ src="data:image/jpeg;base64, iVBORw0KGgoAAAANSUhEUgAAAIIAAACWCAYAAAASRFBwAAAAAXN
                                     {% if statikLinkler('play_store') %}
                                     
                                         <a href="{{statikLinkler('play_store')}}" target="_blank">
-                                            <img src="{{temaDosyalari('/assets/images/playstore.png')}}">
+                                            <img src="{{temaDosyalari('/assets/images/playstore.png')}}" alt="Google Play">
                                         </a>
                                     
                                     {% endif %}
@@ -372,13 +395,13 @@ src="data:image/jpeg;base64, iVBORw0KGgoAAAANSUhEUgAAAIIAAACWCAYAAAASRFBwAAAAAXN
     <i class="fa fa-share-alt"></i> {{ cevir('bizi_takip_edin') }}
   </div>
   <div class="footer-social-icons">
-    <a href="{{ ayarlar('facebook_adresi') }}" target="_blank"><i class="fab fa-facebook-f"></i></a>
-    <a href="{{ ayarlar('twitter_adresi') }}" target="_blank"><i class="fab fa-twitter"></i></a>
-    <a href="{{ ayarlar('instagram_adresi') }}" target="_blank"><i class="fab fa-instagram"></i></a>
-    <a href="{{ ayarlar('youtube_adresi') }}" target="_blank"><i class="fab fa-youtube"></i></a>
-    <a href="{{ ayarlar('linkedin_adresi') }}" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-    <a href="{{ ayarlar('pinterest_adresi') }}" target="_blank"><i class="fab fa-pinterest-p"></i></a>
-    <a href="https://www.tiktok.com/@tilbehome" target="_blank" class="tiktok">
+    <a href="{{ ayarlar('facebook_adresi') }}" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="{{ ayarlar('twitter_adresi') }}" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+    <a href="{{ ayarlar('instagram_adresi') }}" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="{{ ayarlar('youtube_adresi') }}" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+    <a href="{{ ayarlar('linkedin_adresi') }}" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    <a href="{{ ayarlar('pinterest_adresi') }}" target="_blank" rel="noopener" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+    <a href="https://www.tiktok.com/@tilbehome" target="_blank" class="tiktok" rel="noopener" aria-label="TikTok">
   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 448 512">
     <path d="M448,209.9a210.1,210.1,0,0,1-122.8-39.2V349.6c0,89.1-72.2,161.2-161.2,161.2S2.8,438.7,2.8,349.6,75,188.4,164,188.4a161,161,0,0,1,23.6,1.8V263.7A97.1,97.1,0,0,0,164,262c-48.1,0-87.1,39-87.1,87.1s39,87.1,87.1,87.1,87.1-39,87.1-87.1V0h74.1a135.6,135.6,0,0,0,122.8,122.8Z"/>
   </svg>
@@ -417,67 +440,7 @@ src="data:image/jpeg;base64, iVBORw0KGgoAAAANSUhEUgAAAIIAAACWCAYAAAASRFBwAAAAAXN
                 </div>
             </div>
         </div>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
 
-    document.querySelectorAll('.conversion-block').forEach(block => {
-
-        const textEl = block.querySelector('.conversion-text-inner');
-
-        let messages = [
-            { text: block.dataset.sold, cls: 'success' },
-            { text: block.dataset.stock, cls: block.dataset.stockClass },
-            { text: block.dataset.viewer, cls: 'success' }
-        ];
-
-      
-        messages = messages.sort(() => Math.random() - 0.5);
-
-        let index = 0;
-
-        
-        function formatText(text) {
-            return text.replace(/(\d+)/g, '<strong>$1</strong>');
-        }
-
-
-        function updateViewerText() {
-            let match = messages.find(m => m.text.includes('inceliyor'));
-            if (!match) return;
-
-            let current = parseInt(match.text.replace(/\D/g, '')) || 5;
-            let delta = Math.random() > 0.5 ? 1 : -1;
-
-            current += delta;
-            if (current < 3) current = 3;
-            if (current > 24) current = 24;
-
-            match.text = 'Şu anda ' + current + ' kişi inceliyor';
-        }
-
-        setInterval(() => {
-
-            textEl.style.opacity = 0;
-
-            setTimeout(() => {
-
-                updateViewerText();
-
-                index = (index + 1) % messages.length;
-                const msg = messages[index];
-
-                textEl.className = 'conversion-text-inner ' + msg.cls;
-                textEl.innerHTML = formatText(msg.text); // ⚠️ KRİTİK SATIR
-                textEl.style.opacity = 1;
-
-            }, 280);
-
-        }, 3600);
-
-    });
-
-});
-</script>
 
 
 

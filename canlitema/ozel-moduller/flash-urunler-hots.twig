@@ -21,16 +21,16 @@
                                 {% for index, resim in urun.resimler %}
                                     <div class="carousel-item {{ index == 0 ? 'active' : '' }}">
                                         <a href="{{ urun.link }}">
-                                            {{ gorsel.lazy(resim.normal) }}
+                                            {{ gorsel.lazy(resim.normal, '', urun.adi_alt) }}
                                         </a>
                                     </div>
                                 {% endfor %}
                             </div>
                             {% if urun.resimler | length > 1 %}
-                                <a class="carousel-control-prev" href="#product-card-carousel-{{ modul.ozel_data_kodu }}-{{ urun.ID }}" role="button" data-slide="prev">
+                                <a class="carousel-control-prev" href="#product-card-carousel-{{ modul.ozel_data_kodu }}-{{ urun.ID }}" role="button" aria-label="Önceki ürün görseli" data-slide="prev">
                                     <i class="fa fa-chevron-left"></i>
                                 </a>
-                                <a class="carousel-control-next" href="#product-card-carousel-{{ modul.ozel_data_kodu }}-{{ urun.ID }}" role="button" data-slide="next">
+                                <a class="carousel-control-next" href="#product-card-carousel-{{ modul.ozel_data_kodu }}-{{ urun.ID }}" role="button" aria-label="Sonraki ürün görseli" data-slide="next">
                                     <i class="fa fa-chevron-right"></i>
                                 </a>
                             {% endif %}
@@ -154,51 +154,10 @@
                 </div>
             {% endif %}
 			
-            {% set gun = "now"|date("z") %}
-            {% set stok = urun.stok %}
-            {% set bar_max = 100 %}
-            
-            {# SATIŞ HESABI #}
-            {% if urun.indirim or urun.indirimli_fiyatlar.sabit_indirim.aktif %}
-                {% set sold = 25 + ((urun.ID * 3 + gun) % 55) %}
-            {% else %}
-                {% set sold = 8 + ((urun.ID * 2 + gun) % 35) %}
-            {% endif %}
-            
-            {% if sold > stok %}
-                {% set sold = stok %}
-            {% endif %}
-            
-            {% set oran = (sold / bar_max) * 100 %}
-            {% if oran > 90 %}
-                {% set oran = 90 %}
-            {% endif %}
-            
-            {# STOK METNİ #}
-            {% if stok <= 5 %}
-                {% set stock_text = 'Sınırlı stok' %}
-                {% set stock_class = 'danger' %}
-            {% elseif stok <= 15 %}
-                {% set stock_text = 'Hızla tükeniyor' %}
-                {% set stock_class = 'warning' %}
-            {% else %}
-                {% set stock_text = 'Stokta, Gönderime hazır' %}
-                {% set stock_class = 'success' %}
-            {% endif %}
-            
-            {% set viewer = 4 + ((urun.ID + gun) % 18) %}
-            
-            <div class="conversion-block {{ stock_class }}"
-                 data-sold="Bu hafta {{ sold }} kişi satın aldı"
-                 data-stock="{{ stock_text }}"
-                 data-viewer="Şu anda {{ viewer }} kişi inceliyor"
-                 data-stock-class="{{ stock_class }}">
-            
-                <div class="conversion-bar">
-                    <span class="conversion-bar-fill" style="width: {{ oran }}%"></span>
-                </div>
-            
-               <span class="conversion-text-inner">Yükleniyor…</span>
+            <div class="conversion-block {% if urun.stok > 0 %}success{% else %}danger{% endif %}">
+                <span class="conversion-text-inner">
+                    {% if urun.stok > 0 %}Stokta{% else %}Stokta yok{% endif %}
+                </span>
             </div>
         </a>
         
