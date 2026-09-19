@@ -1,0 +1,18 @@
+<div class="alert alert-info">
+    {{ cevir('2_adimli_dogrulama_aciklama_1') }}
+</div>
+
+
+{% if kullaniciBilgileri('2_adimli_dogrulama_durumu') is empty %}
+    <form class="user-account-2fa-form" action="" method="post"
+          onsubmit="return enableUser2Factor(this)">
+        <button type="submit" class="btn btn-success mt-3">{{ cevir('2_adimli_dogrulamayi_aktif_et') }}</button>
+    </form>
+{% endif %}
+
+{% if kullaniciBilgileri('2_adimli_dogrulama_durumu') %}
+    <form class="user-account-2fa-form" action="" method="post"
+          onsubmit="return disableUser2Factor(this)">
+        <button type="submit" class="btn btn-danger mt-3">{{ cevir('2_adimli_dogrulamayi_pasif_yap') }}</button>
+    </form>
+{% endif %}

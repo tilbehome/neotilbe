@@ -1,0 +1,60 @@
+{% if ayarlar('bayi_bakiye_yukleme') and bayiBakiyeYuklemeYontemi('durum') %}
+    {% if bayiBakiyeYuklemeYetkisi()  %}
+
+ 
+        <div data-dealer-payment="wrapper">
+
+            <form class="dealer-payment-form" action="" method="post" onsubmit="return dealerPaymentForm(this)">  
+
+                <label>{{ cevir('odeme_secenekleri') }}</label>
+                <div class="dealer-payment-methods">
+                    {% for tip in bayiBakiyeYuklemeTipleri() %}
+                        <div class="method" onclick="
+                            $('#dealerInputPaymentType{{ tip.ID }}').prop('checked', true).change(); 
+                            {{ tip.ID == 1 ? '$(\'.dealerPaymentType1\').removeClass(\'d-none\');' : '$(\'.dealerPaymentType1\').addClass(\'d-none\');' }}">
+                            <div class="checkbox">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="payment_type" 
+                                    id="dealerInputPaymentType{{ tip.ID }}" value="{{ tip.ID }}" {{ tip.aktif ? 'checked' : '' }} />
+                                </div>
+                            </div>
+                            <div class="name">
+                                <div class="info">
+                                    <span>{{ tip.adi }}</span>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <span class="value">{{ tip.fiyat }}</span>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div> 
+
+                <div class="mt-3"></div>
+                <div class="dealerPaymentType1">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="inputPrice">{{ cevir('yuklenecek_tutar') }} <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="inputPrice" name="price" value="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="mt-3"></div>
+                <button type="submit" class="btn btn-success">{{ cevir('odeme_yap') }}</button>
+            </form>
+        </div>
+      
+    {% else %}
+        <div class="alert alert-danger">
+            {{ cevir('bakiye_yukleme_yetki_hatasi') }}
+        </div>
+    {% endif %}
+{% else %}
+    <div class="alert alert-danger">
+        {{ cevir('bakiye_yukleme_hatasi') }}
+    </div>
+{% endif %}

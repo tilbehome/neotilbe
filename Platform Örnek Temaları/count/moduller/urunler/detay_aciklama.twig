@@ -1,0 +1,31 @@
+{% extends varsayilanBlokModul() %}
+ 
+{% block modulIcerik %}
+    <div class="raw-content">
+        {{ sayfaBilgileri('icerik') | raw }}
+
+        {% if sayfaBilgileri('nitelikler') and temaAyarlari('urun_profili', 'nitelikler_2') %}
+            <table class="table table-striped table-bordered table-attributes">
+                <tbody>
+                    {% for nitelik in sayfaBilgileri('nitelikler') %}
+                        {% if nitelik.degerler %}
+                            <tr>
+                                <td>
+                                    <strong>{{ nitelik.adi }}</strong>
+                                </td>
+                                <td>
+                                    {% for index, deger in nitelik.degerler %}
+                                        {% if index > 0 and index < nitelik.degerler|length %}
+                                            ,
+                                        {% endif %}
+                                        <a href="{{ deger.link }}">{{ deger.adi }}</a>
+                                    {% endfor %}
+                                </td>
+                            </tr>
+                        {% endif %}
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% endif %}
+    </div>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends varsayilanBlokModul() %}
+
+{% block modulIcerik %}
+    <p>{{ cevir('yeni_sifrenizi_belirleyin') }}</p>
+    <form class="password-reset-form" action="" method="post" onsubmit="return userRenewPassword(this)">
+        <input type="hidden" name="returnUrl" value="{{ returnUrl() }}" />
+        <input type="hidden" name="email" value="{{ sayfaBilgileri('eposta') }}" />
+        <input type="hidden" name="code" value="{{ sayfaBilgileri('kod') }}" />
+        <label>{{ cevir('yeni_sifre') }}</label>
+        <input type="password" class="form-control m-input " name="password" value="">
+        <div class="mt-3"></div>
+        <label>{{ cevir('yeni_sifre_tekrar') }}</label>
+        <input type="password" class="form-control m-input " name="repassword" value="">
+        <div class="mt-3"></div>
+        <button class="btn btn-success mt-4" type="submit">{{ cevir('yeni_sifre_onayla') }}</button>
+    </form>
+{% endblock %} 

@@ -1,0 +1,31 @@
+<div class="product-reviews">
+  <div class="stars">
+    <span class="rating-average">
+      {{ sayfaBilgileri('degerlendirme').ortalama_oy|number_format(1, '.', ',') }}
+    </span>
+
+    {% set ortalama = sayfaBilgileri('degerlendirme').ortalama_oy|default(0) %}
+    {% for i in 1..5 %}
+      {% if ortalama >= i %}
+        <span class="star fill"><i class="fa fa-star"></i></span>
+      {% elseif ortalama >= i - 0.5 %}
+        <span class="star fill"><i class="fa fa-star-half"></i><i class="fa fa-star dark"></i></span>
+        
+      {% else %}
+        <span class="star"><i class="fa fa-star"></i></span>
+      {% endif %}
+    {% endfor %}
+
+    <span class="rating-count">
+      ({{ sayfaBilgileri('degerlendirme').oy_sayisi|default(0) }})
+      <a href="#product-comment-location-target">
+      <img src="https://www.tilbehome.com/theme/___shuttle/yorum-foto-var.svg?v=1756592196" alt="yorumlar"></a>
+    </span>
+  </div>
+
+  <a href="#product-comment-location-target" class="desk-combtn" id="product-comment-location">
+    <span class="com-btn">Değerlendirme</span>
+
+  
+  </a>
+</div>

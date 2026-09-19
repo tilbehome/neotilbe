@@ -1,0 +1,234 @@
+{% extends varsayilanModal() %}
+{% block modalKodu %}
+    {{ sayfaBilgileri('modal_kodu') }}
+{% endblock %}
+{% block modalBoyutu %}
+    lg hizli-sepet
+{% endblock %}
+
+{% block modalIcerik %}
+    <script type="text/javascript">
+        var PRODUCT_FAST_CART_{{ sayfaBilgileri('ID') }} = {
+            price: '{{ sayfaBilgileri('fiyat') }}',
+            {% if sayfaBilgileri('indirim')  %}
+                listPrice: '{{ sayfaBilgileri('piyasa_fiyati') }}',
+            {% endif %}
+            {% if ayarlar('havale_indirim_miktari') > 0 %}
+                eftPrice: '{{ urunHavaleFiyati(sayfaBilgileri(''))}}',
+            {% endif %}
+            {% if sayfaBilgileri('indirimli_fiyatlar').sabit_indirim.aktif  %}
+                discountedPrice: '{{ sayfaBilgileri('indirimli_fiyatlar').sabit_indirim.kdv_dahil }}',
+            {% endif %}
+            {% if sayfaBilgileri('varyantlar') %}
+                variants: {{ sayfaBilgileri('varyantlar').json | raw }}
+            {% endif %}
+        }
+    </script>
+    
+    {% if sayfaBilgileri('bundle').durum %}
+        <script type="text/javascript" src="{{ ortakDosyalar('/assets/apps/bundle-product.min.js') }}" /></script>
+        <script type="text/javascript">
+            $(function () {
+                let wrapper = $('*[data-fast-cart-product-id="{{ sayfaBilgileri('modal_kodu') }}"]');
+                wrapper.bundleProduct({
+                    productId: {{ sayfaBilgileri('ID') }},
+                    schema: {{ sayfaBilgileri('bundle').json | raw }}
+                }).on('bundleUpdated', function(event, summary){
+                    if (summary.priceType === 1){
+                        wrapper.find('.product-price-group').find('.sale-variant-price').html(summary.prices.salePriceStr);
+                        wrapper.find('.product-price-group').find('.sale-list-price').html(summary.prices.listPriceStr);
+                        wrapper.find('.product-price-group').find('.discount').find('.rate').html('%' + summary.discountRate);
+                        if (summary.discountRate <= 0){
+                            wrapper.find('.product-price-group').find('.sale-list-price').addClass('d-none');
+                            wrapper.find('.product-price-group').find('.discount').addClass('d-none');
+                        }else{
+                            wrapper.find('.product-price-group').find('.sale-list-price').removeClass('d-none');
+                            wrapper.find('.product-price-group').find('.discount').removeClass('d-none');
+                        }
+                    }
+                })
+            });
+        </script>
+    {% endif %}
+    
+    <div class="row">
+        <div class="col-md-6">
+            <div id="product-profile-carousel-{{ sayfaBilgileri('ID') }}" class="carousel slide" data-ride="carousel">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="carousel-outer">
+                            {% if temaAyarlari('urun_profili', 'favori_listesi') %}
+                                {% include 'moduller/urunler/hizli_sepet_favori.twig' %}
+                            {% endif %}
+                            
+                            <div class="carousel-inner">
+                                {% for index, resim in sayfaBilgileri('resimler') %}
+                                    <div class="carousel-item {{ index == 0 ? 'active' : '' }}">
+                                        <a href="{{ resim.buyuk }}" data-fancybox="images" data-caption="{{ sayfaBilgileri('adi_alt') }}">
+                                            <img id="zoom_01" src="{{ resim.normal }}" alt="{{ sayfaBilgileri('adi_alt') }}"  data-zoom-image="{{ resim.buyuk }}">
+                                        </a>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                            {% if sayfaBilgileri('resimler')|length > 1 %}
+                                <a class="carousel-control-prev" href="#product-profile-carousel-{{ sayfaBilgileri('ID') }}" role="button" data-slide="prev">
+                                    <i class="fa fa-chevron-left"></i>
+                                </a>
+                                <a class="carousel-control-next" href="#product-profile-carousel-{{ sayfaBilgileri('ID') }}" role="button" data-slide="next">
+                                    <i class="fa fa-chevron-right"></i>
+                                </a>
+                            {% endif %}
+                        </div>
+                        
+                        <ol class="carousel-indicators">
+                            {% for index, resim in sayfaBilgileri('resimler') %}
+                                <li data-target="#product-profile-carousel-{{ sayfaBilgileri('ID') }}" 
+                                    data-slide-to="{{ index }}" class="{{ index == 0 ? 'active' : '' }}">
+                                </li>
+                            {% endfor %}
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6 p-3">
+            <div class="fast-product-cart-box pr-5" data-fast-cart-product-id="{{ sayfaBilgileri('modal_kodu') }}">
+                <h4>
+                    {{ sayfaBilgileri('adi')  }}
+                </h4>
+       
+                {% if temaAyarlari('urun_profili', 'degerlendirmeler') %}
+                    {% include 'moduller/urunler/profil_degerlendirmeler.twig' %}
+                {% endif %}
+                
+                <div class="product-price-group">
+                    <div class="prices">
+                        {% if sayfaBilgileri('indirim')  %}
+                            <div class="list-price sale-list-price">{{ sayfaBilgileri('piyasa_fiyati')  }}</div>
+                        {% endif %}
+                        <div class="sale-price sale-variant-price
+                            {% if sayfaBilgileri('indirimli_fiyatlar').sabit_indirim.aktif and temaAyarlari('urun_profili','sabit_indirim') %} line-through {% endif %}">
+                            {{ sayfaBilgileri('fiyat') }}
+                        </div>
+                    </div>
+                </div>
+                
+                {% if sayfaBilgileri('indirimli_fiyatlar').sabit_indirim.aktif and temaAyarlari('urun_profili','sabit_indirim') %}
+                   <div class="sale-price-discount">
+                        <span class="mr-2">{{ cevir('sepetteki_fiyat') }}</span>
+                        <div class="sale-price sale-discounted-price">
+                            {{ sayfaBilgileri('indirimli_fiyatlar').sabit_indirim.kdv_dahil }}
+                        </div>
+                   </div>
+                {% endif %}
+                
+                {% if sayfaBilgileri('seo_aciklama') %}
+                    <div class="short-desc mt-3">
+                        {{ sayfaBilgileri('seo_aciklama') }}
+                    </div>
+                {% endif %}
+                
+                {% if sayfaBilgileri('bundle').durum %}
+                    <div class="pd-bundle-vertical-wrapper" data-product-bundle="{{ sayfaBilgileri('ID') }}">
+                        {% for urun in sayfaBilgileri('bundle').urunler %}
+                            {% include '@default/addons/product_bundles/card_vertical.twig' %}
+                        {% endfor %}
+                    </div>
+                {% endif %}
+                
+                {% if sayfaBilgileri('stok') > 0 %}
+                    {% if sayfaBilgileri('varyantlar') %}
+                        <div class="variant-box">
+                            <ul>
+                                {% for index, varyant in sayfaBilgileri('varyantlar').liste %}
+                                    <li class="variant">
+                                        <div class="name"><span>{{ buyukCevir(varyant.baslik) }}:</div>
+                                        <select class="form-control" data-variant="{{ index }}" data-variant-name="{{ varyant.baslik }}">
+                                            <option value="">{{ cevir('lutfen_secin') }}</option>
+                                            {% for var in varyant.degerler %}
+                                                <option value="{{ var.deger }}" data-variant-value="{{ var.deger }}">{{ var.deger }}</option>
+                                            {% endfor %}
+                                        </select>
+                                        <div class="options">
+                                            {% for var in varyant.degerler %}
+                                                <a href="javascript:;" 
+                                                data-variant="{{ index }}"
+                                                data-variant-value="{{ var.deger }}"
+                                                onclick="changeProductPageVariant(
+                                                    PRODUCT_FAST_CART_{{ sayfaBilgileri('ID') }},
+                                                    'div[data-fast-cart-product-id=\'{{ sayfaBilgileri('modal_kodu') }}\'] .variant-box', 
+                                                    'div[data-fast-cart-product-id=\'{{ sayfaBilgileri('modal_kodu') }}\'] .sale-variant-price', 
+                                                    '{{ var.deger }}', 
+                                                    {{ var.stokta_var_mi ? 'true' : 'false' }}, 
+                                                    {{ index }})"
+                                                class="{{ var.stokta_var_mi ? '' : 'sold-out' }}">
+                                                    {{ var.deger }}                   
+                                                </a>
+                                            {% endfor %}
+                                        </div>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    {% endif %}
+                    
+                    {% include '@default/addons/product_special_fields.twig'  %}
+                    
+                    <div class="product-buttons">
+                        <div class="product-quantity">
+                            <a href="javascript:;" class="btn btn-minus"
+                                onclick="productQuantityBox(
+                                    'decrement',
+                                    'div[data-fast-cart-product-id=\'{{ sayfaBilgileri('modal_kodu') }}\'] .product-quantity'
+                                )">
+                                <i class="fas fa-minus"></i>
+                            </a>
+                            <input class="form-control" name="quantity"
+                                data-version="2"
+                                data-decimal="{{ sayfaBilgileri('birim_ondalik_sayisi') }}"
+                                data-min="{{ sayfaBilgileri('birim_minimum_miktar') }}"
+                                data-increase="{{ sayfaBilgileri('birim_artis_miktari') }}"
+                                data-initial="{{ sayfaBilgileri('birim_baslangic_miktari') }}"
+                                value="{{ sayfaBilgileri('birim_baslangic_miktari') }}"
+                                onkeypress="return productQuantityBox(
+                                    'change',
+                                    'div[data-fast-cart-product-id=\'{{ sayfaBilgileri('modal_kodu') }}\'] .product-quantity',
+                                    event
+                                )"/>
+                            <a href="javascript:;" class="btn btn-plus"
+                                onclick="productQuantityBox(
+                                    'increment',
+                                    'div[data-fast-cart-product-id=\'{{ sayfaBilgileri('modal_kodu') }}\'] .product-quantity'
+                                )">
+                                <i class="fas fa-plus"></i>
+                            </a>
+                        </div>
+                        
+                        
+                        <div class="buttons">
+                            <button class="btn btn-cart" 
+                                onclick="addCart(
+                                        {{ sayfaBilgileri('ID') }}, 
+                                        'card', 
+                                        {
+                                            {% if sayfaBilgileri('varyantlar') %}
+                                                checkVariant: true,
+                                                variantCount: {{ sayfaBilgileri('varyantlar').ozet.count | raw }},
+                                                variantDiv: 'div[data-fast-cart-product-id=\'{{ sayfaBilgileri('modal_kodu') }}\'] .variant-box',
+                                            {% endif %}
+                                            quantity: $('div[data-fast-cart-product-id=\'{{ sayfaBilgileri('modal_kodu') }}\'] input[name=quantity]').val(),
+                                            hideNativeModal: '{{ sayfaBilgileri('modal_kodu') }}'
+                                        }
+                                    )">
+                                {{ buyukCevir('sepete_ekle') }}
+                            </button>
+                        </div>
+                       
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    
+{% endblock %}

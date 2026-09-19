@@ -1,0 +1,16 @@
+{% extends varsayilanBlokModul() %}
+
+{% block modulBaslik %}
+    {{ sayfaBilgileri('baslik') }}
+{% endblock %} 
+
+{% block modulIcerik %}
+    <div class="alert alert-success">
+        {{ cevir('kampanya_kodu') }}: <strong>{{ sayfaBilgileri('kod') }}</strong>
+        <ul class="mt-3">
+            <li>{{ cevir('baslangic_tarihi') }}: {{ sayfaBilgileri('baslangic_tarihi') }}</li>
+            <li>{{ cevir('bitis_tarihi') }}: {{ sayfaBilgileri('bitis_tarihi') }}</li>
+        </ul> 
+    </div>
+    {{ sayfaBilgileri('icerik') }}
+{% endblock %} 

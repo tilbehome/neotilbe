@@ -1,0 +1,9 @@
+{% extends varsayilanBlokModul() %}
+
+{% block modulBaslik %}
+    {{ sayfaBilgileri('baslik') }}
+{% endblock %} 
+
+{% block modulIcerik %}
+    {% include 'moduller/statik_sayfalar/alt_sayfalar/' ~ sayfaBilgileri('tema_dosyasi') ~ '.twig' %}
+{% endblock %}

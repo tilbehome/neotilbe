@@ -1,0 +1,14 @@
+{% extends "sablon.twig" %}
+
+ 
+{% block temaHeadEtiketleri %}
+    <meta property="og:title" content="{{ sayfaBilgileri('seo_baslik') }}" />
+    <meta property="og:site_name" content="{{ domain() }}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="{{ sayfaBilgileri('link') }}" />
+    <meta property="og:keywords" content="{{ sayfaBilgileri('seo_anahtar_kelimeler') }}" />
+    <meta property="og:description" content="{{ sayfaBilgileri('seo_aciklama') }}" />
+    <meta property="og:image" content="{{ sayfaBilgileri('seo_resim').link }}" />
+    <meta property="og:image:width" content="{{ sayfaBilgileri('seo_resim').genislik }}" />
+    <meta property="og:image:height" content="{{ sayfaBilgileri('seo_resim').yukseklik }}" />
+{% endblock %}  

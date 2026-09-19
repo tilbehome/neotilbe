@@ -1,0 +1,12 @@
+ <form class="order-detail-form" action="" method="post" onsubmit="return orderDetailForm(this, '.order-detail-response')">    
+    <label>{{ cevir('eposta_adresi') }} <span class="text-danger">*</span></label>
+    <input type="text" class="form-control m-input " name="email" value="">
+    <div class="mt-3"></div>
+    <label>{{ cevir('siparis_numarasi') }} <span class="text-danger">*</span></label>
+	<input type="text" class="form-control m-input " name="order_no" value="">
+    <div class="mt-3"></div>  
+
+    <button type="submit" class="btn btn-success">{{ cevir('sorgula') }}</button>
+</form>  
+
+<div class="order-detail-response mt-3"></div>

@@ -1,0 +1,16 @@
+{% extends varsayilanBlokModul() %}
+
+{% block modulIcerik %}
+    <div class="list-menu">
+        {% for baslik in modul.basliklar %}
+            <a href="{{ baslik.link }}">
+                {% if baslik.resim_var_mi %}
+                    <div class="image">
+                        <img src="{{ baslik.resim }}" alt="" />
+                    </div>
+                {% endif %}
+                <div class="title">{{ baslik.baslik }}</div>
+            </a>
+        {% endfor %}
+    </div>
+{% endblock %}

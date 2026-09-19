@@ -1,0 +1,35 @@
+{% extends varsayilanBlokModul() %}
+
+{% block modulIcerik %}
+    <div class="password-reset-container">
+        <div class="password-reset-header">
+            <h2 class="password-reset-title">Yeni Şifrenizi Belirleyin 🔐</h2>
+            <p class="password-reset-subtitle">Güvenliğiniz için güçlü bir şifre oluşturun.</p>
+        </div>
+
+        <form class="password-reset-form" action="" method="post" onsubmit="return userRenewPassword(this)">
+            <input type="hidden" name="returnUrl" value="{{ returnUrl() }}" />
+            <input type="hidden" name="email" value="{{ sayfaBilgileri('eposta') }}" />
+            <input type="hidden" name="code" value="{{ sayfaBilgileri('kod') }}" />
+
+            <input type="password" class="password-reset-input" name="password" placeholder="Yeni şifrenizi girin" required>
+            <input type="password" class="password-reset-input" name="repassword" placeholder="Yeni şifrenizi tekrar girin" required>
+
+            <button class="password-reset-btn" type="submit">
+                <i class="fa fa-check"></i> Yeni Şifreyi Onayla
+            </button>
+        </form>
+
+        <!-- 🔒 Güvenlik ve Bilgilendirme -->
+        <div class="password-reset-info-boxes">
+            <div class="password-reset-info">
+                <i class="fa fa-shield-alt"></i>
+                <p>Güçlü bir şifre belirleyin. Harf, rakam ve sembol içermelidir.</p>
+            </div>
+            <div class="password-reset-info">
+                <i class="fa fa-lock"></i>
+                <p>Şifrenizi kimseyle paylaşmayın. Hesabınızı güvende tutun.</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

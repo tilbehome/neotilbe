@@ -1,0 +1,247 @@
+{% extends varsayilanBlokModul() %}
+
+{% block modulIcerik %}  
+    
+    {% if temaAyarlari('footer', 'footer_pazaryeri') %}
+        <div class="stores">
+            <div class="container">
+                <div class="cards">
+                    {% for pazaryeri in pazaryeriLinkleri() %}
+                        <div class="card mt-3">
+                            <div class="card-body">
+                                <a href="{{ pazaryeri.link }}" target="_blank">
+                                    <img src="{{ ortakDosyalar('/assets/images/' ~ pazaryeri.prefix ~ '.png') }}" 
+                                        class="d-block w-100" alt="{{ pazaryeri.name }} {{ cevir('magazamiz') }}" />
+                                </a>
+                            </div>
+                        </div> 
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    {% endif %}
+    
+    <footer> 
+        <div class="bb"> 
+            <div class="container">
+                <div class="row">
+                   
+                    <div class="col-md-8">
+                        <div class="info">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="title text-left" onclick="mobileFooterToggle(1)">{{ cevir('kurumsal') }}</div>
+                                    <div class="fs f1">
+                                        <ul>
+                                            {% for sayfa in dinamikSayfaLinkleri() %}
+                                                <li>
+                                                    <a href="{{ sayfa.link }}">
+                                                        {{ sayfa.baslik }}
+                                                    </a>
+                                                </li>
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="title text-left" onclick="mobileFooterToggle(2)">{{ cevir('musteri_hizmetleri') }}</div>
+                                    <div class="fs f2">
+                                        <ul>
+                                            {% for sayfa in statikSayfaLinkleri() %}
+                                                <li>
+                                                    <a href="{{ sayfa.link }}">
+                                                        {{ sayfa.baslik }}
+                                                    </a>
+                                                </li>
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="title text-left" onclick="mobileFooterToggle(3)">{{ cevir('bize_ulasin') }}</div>
+                                    <div class="fs f3">
+                                        {{ ayarlar('footer_iletisim') | raw }}
+                                        
+                                        <div class="contact-info">
+                                            {% if ayarlar('musteri_hizmetleri') is not empty %}
+                                                <div class="contact-item">
+                                                    <a href="tel:{{ayarlar('musteri_hizmetleri')}}">
+                                                       <i class="fa fa-headset"></i>
+                                                       {{ayarlar('musteri_hizmetleri')}}
+                                                    </a>
+                                                </div>
+                                            {% endif %}
+                                            
+                                            {% if ayarlar('eposta_adresi') is not empty %}
+                                                <div class="contact-item">
+                                                    <a href="mailto:{{ayarlar('eposta_adresi')}}">
+                                                        <i class="fa fa-solid fa-envelope"></i>
+                                                        {{ayarlar('eposta_adresi')}}
+                                                    </a>
+                                                </div>
+                                            {% endif %}
+                                            
+                                            {% if ayarlar('adres') is not empty %}
+                                                <div class="contact-item">
+                                                    <i class="fas fa-map-marked"></i>
+                                                    <div>{{ayarlar('adres')}}</div>
+                                                </div>
+                                            {% endif %}
+                                        </div>
+                                        
+                                        <div class="social-media mt-4 mb-4">
+                                            <div class="social-media-title mb-3">{{cevir('bizi_takip_edin')}}</div>
+                                            
+                                            {% if ayarlar('facebook_adresi') is not empty %}
+                                                <a href="{{ ayarlar('facebook_adresi') }}" class="fb" target="_blank">
+                                                   <i class="fab fa-facebook-f"></i>
+                                                </a>
+                                            {% endif %}
+                                            
+                                            {% if ayarlar('twitter_adresi') is not empty %}
+                                                <a href="{{ ayarlar('twitter_adresi') }}" class="tw" target="_blank">
+                                                    <i class="fab fa-twitter"></i>
+                                                </a>
+                                            {% endif %}
+                                            
+                                            {% if ayarlar('instagram_adresi') is not empty %}
+                                                <a href="{{ ayarlar('instagram_adresi') }}" class="ins" target="_blank">
+                                                    <i class="fab fa-instagram"></i>
+                                                </a>
+                                            {% endif %}
+                                            
+                                            {% if ayarlar('youtube_adresi') is not empty %}
+                                                <a href="{{ ayarlar('youtube_adresi') }}" class="yt" target="_blank">
+                                                    <i class="fab fa-youtube"></i>
+                                                </a>
+                                            {% endif %}
+                                            
+                                            {% if ayarlar('linkedin_adresi') is not empty %}
+                                                <a href="{{ ayarlar('linkedin_adresi') }}" class="lnk" target="_blank">
+                                                    <i class="fab fa-linkedin"></i>
+                                                </a>
+                                            {% endif %}
+                                            
+                                            {% if ayarlar('pinterest_adresi') is not empty %}
+                                                <a href="{{ ayarlar('pinterest_adresi') }}" class="pnt" target="_blank">
+                                                    <i class="fab fa-pinterest"></i>
+                                                </a>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-md-4 pr-5">
+                        <div class="logo-area">
+                            <a href="{{ statikLinkler('site_adresi') }}" class="logo">
+                                <img src="{{ logoAdresi('footer') }}" alt="" />
+                            </a>
+                        </div>
+                        
+                        
+                        {% if temaAyarlari('footer','ebulten') %}
+                            <div class="newsletter-content mb-4 mt-4">
+                                <div class="newsletter-title">
+                                    {{cevir('ebulten_tercihleri_aciklama')}}
+                                </div>
+                           
+                             
+                                <form class="newsletter-form" action=""
+                                    method="post"
+                                    onsubmit="return emailNewsletter(this)">
+                                    
+                                    
+                                    <input type="email"
+                                        class="form-control newsletter-input"
+                                        name="email"
+                                        placeholder="{{ cevir('email_bulten_eposta_adresini_yazin') }}">
+                                
+                                    <button type="submit" class="btn btn-submit">
+                                        <i class="far fa-envelope mr-2"></i> {{cevir('gonder')}}
+                                    </button>
+                                
+                                </form>
+                             </div>
+                        {% endif %}
+                        
+                        {% if temaAyarlari('footer','sms_bulten') %}
+                            <div class="sms-newsletter-content mb-4 mt-4">
+                                <div class="newsletter-title">
+                                    {{cevir('sms_bulten_kutu_aciklama')}}
+                                </div>
+                             
+                                <form class="sms-newsletter-form" action=""
+                                     method="post"
+                                    onsubmit="return smsNewsletter(this)">
+                                    <input type="text"
+                                        class="form-control form-phone-control"
+                                        name="phone">
+                                
+                                    <button type="submit" class="btn btn-submit">
+                                        <i class="far fa-envelope mr-2"></i> {{cevir('gonder')}}
+                                    </button>
+                                
+                                </form>
+                            </div>
+                        {% endif %}
+                        
+                        {% if statikLinkler('app_store') or statikLinkler('play_store') %}
+                                        
+                            <div class="mobile-app">
+                                
+                                <div class="mobile-app-title mb-3">{{cevir('mobil_uygulamalarimiz')}}</div>
+                                
+                                <div class="d-flex">
+                                    {% if statikLinkler('app_store') %}
+                                
+                                        <a class="mr-3" href="{{statikLinkler('app_store')}}" target="_blank">
+                                            <img src="{{temaDosyalari('/assets/images/appstore.png')}}">
+                                        </a>
+                                    
+                                    {% endif %}
+                                    
+                                    {% if statikLinkler('play_store') %}
+                                    
+                                        <a href="{{statikLinkler('play_store')}}" target="_blank">
+                                            <img src="{{temaDosyalari('/assets/images/playstore.png')}}">
+                                        </a>
+                                    
+                                    {% endif %}
+                                </div>
+                                
+                            </div>
+                        
+                        {% endif %}
+                       
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        <div class="bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                        {{ ayarlar('footer') | raw }} 
+                    </div>
+                    <div class="col-md-3">
+                        <div class="right-image">    
+                        {% if temaAyarlari('footer','kredi_kartlari') %}
+                            {% if iyzicoAktifMi() %}
+                                {{ gorsel.lazy(temaDosyalari('/assets/images/iyzico.png'), 'cards') }}
+                            {% elseif krediKartiAktifMi() %}
+                                {{ gorsel.lazy(temaDosyalari('/assets/images/cards.png'), 'cards') }}
+                            
+                            {% endif %}
+                            
+                        {% endif %}
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> 
+
+{% endblock %}

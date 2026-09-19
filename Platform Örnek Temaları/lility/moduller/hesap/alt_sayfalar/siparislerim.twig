@@ -1,0 +1,36 @@
+{% if kullaniciSiparisSayisi() > 0 %}
+    <div class="table-responsive">
+	    <table class="table table-hover table-striped">
+		    <thead class="thead-dark">
+			    <tr>
+					<th>{{ cevir('siparis_numarasi') }}</th>
+					<th>{{ cevir('ad') }} {{ cevir('soyad') }}</th>
+					<th>{{ cevir('tutar') }}</th>
+					<th>{{ cevir('tarih') }}</th>
+					<th>{{ cevir('durum') }}</th>
+				</tr>
+			</thead>
+			<tbody>
+                {% for siparis in kullaniciSiparisleri() %}
+                    <tr>
+                        <td><a href="{{ siparis.link }}">{{ siparis.siparis_no }}</a></td>
+                        <td>{{ siparis.ad }} {{ siparis.soyad }}</td>
+                        <td>{{ siparis.tutar }}</td>
+                        <td>{{ siparis.tarih }}</td>
+                        <td>
+                            {{ siparis.siparis_durumu }}
+                            {% if siparis.iptal_edilebilir and ayarlar('kullanici_siparis_iptal') %}
+                                 <button class="btn btn-danger btn-sm ml-3" onclick="userCancelOrder('{{ siparis.siparis_no }}')">{{ cevir('iptal_et') }}</button>
+                            {% endif %}
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+{% else %}
+    <div class="alert alert-info">
+        {{ cevir('siparisiniz_bulunmamaktadir') }}
+    </div>  
+{% endif %}

@@ -1,0 +1,15 @@
+{% extends varsayilanBlokModul() %}
+
+{% block modulBaslik %}
+    <i class="fas fa-shipping-fast"></i>
+    {{ cevir('kargo_bilgileri') }}
+{% endblock %}
+
+{% block modulClass %}
+    payment-shipping-info d-none
+{% endblock %} 
+
+{% block modulIcerik %}
+    <form class="payment-form-group-1" data-payment-box-form="shipping-info">
+    </form>
+{% endblock %}

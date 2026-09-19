@@ -1,0 +1,35 @@
+<div class="my-vouchers">
+    {% if kullaniciHediyeCekleriSayisi() > 0 %}
+    {% for hediye_ceki in kullaniciHediyeCekleri() %}
+    <div class="item">
+        <div class="meta">
+            <div class="name">{{ hediye_ceki.baslik }}</div>
+            <div class="date">
+                {{ cevir('x_y_tarihleri_arasinda_gecerlidir', {
+                x: hediye_ceki.baslangic_tarihi,
+                y: hediye_ceki.bitis_tarihi
+                }) }}
+            </div>
+            <a href="{{ hediye_ceki.link }}" class="link">
+                {{ cevir('hediye_ceki_detaylari') }}
+            </a>
+        </div>
+        <div class="info">
+            <div class="discount">
+                <span>{{ hediye_ceki.indirim }}</span>
+            </div>
+            <div class="code" onclick="copyElement('voucher-code', true)">
+                <span class="value" id="my-voucher-code-{{ hediye_ceki.ID }}">{{ hediye_ceki.kod }}</span>
+                <button type="button" class="btn btn-copy"
+                        onclick="copyElement('my-voucher-code-{{ hediye_ceki.ID }}', true)"><i class="far fa-copy"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+    {% else %}
+    <div class="alert alert-info">
+        {{ cevir('hediye_cekiniz_bulunmamaktadir') }}
+    </div>
+    {% endif %}
+</div>

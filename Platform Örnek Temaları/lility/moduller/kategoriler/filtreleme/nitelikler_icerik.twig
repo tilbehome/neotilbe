@@ -1,0 +1,12 @@
+<div class="list-wrap" data-simplebar data-simplebar-auto-hide="false">
+    <ul class="list">
+        {% for deger in sayfaBilgileri('nitelikler')[nitelik_sirasi].degerler %}
+             <li>
+                <div class="lag-checkbox">
+                    <input id="cat-filter-attribute-{{ deger.ID }}" name="smart-cat-filtreler[{{ nitelik.ID }}][]" value="{{ deger.ID }}" data-smart-cat-search="1" data-smart-cat-attribute="1" data-smart-cat-attribute-id="{{ nitelik.ID }}" type="checkbox" {{ deger.secili ? 'checked' : '' }}>
+                    <label for="cat-filter-attribute-{{ deger.ID }}">{{ deger.adi }}</label><span></span>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+</div>

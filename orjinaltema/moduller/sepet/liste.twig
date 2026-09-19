@@ -1,0 +1,185 @@
+{% extends sepetBilgileri('durum')
+    ? varsayilanBlokModul()
+    : varsayilanBosDosya() %}
+
+{% block modulIcerik %} 
+    {% if sepetBilgileri('urunler') %} 
+        <div class="shopping-cart-1">
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr> 
+                            <th class="th-product">
+                                {{ cevir('sepet_urun_baslik') }}
+                            </th>
+                            <th class="th-price">
+                                {{ cevir('sepet_fiyat_baslik') }}
+                            </th>
+                            <th class="th-quantity">
+                                {{ cevir('sepet_miktar_baslik') }}
+                            </th>
+                            <th class="th-total-price">
+                                {{ cevir('sepet_tutar_baslik') }}
+                            </th>
+                            {% if ayarlar('urun_bazinda_kargo_ucreti') and sepetBilgileri('ozet').kargo_ucreti_var_mi %}
+                                <th class="th-cargo">
+                                    {{ cevir('sepet_kargo_baslik') }}
+                                </th>
+                            {% endif %}
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for sepet in sepetBilgileri('urunler') %}
+                            <tr data-cart-product-id="{{ sepet.ID }}"> 
+                                <td class="td-product">
+                                    <div class="product">
+                                        <div class="image">
+                                            <a href="{{ sepet.urun.link }}">
+                                                {{ gorsel.lazy(sepet.urun.resim) }}
+                                            </a>
+                                        </div>
+                                        <div class="p-info">
+                                            <a href="{{ sepet.urun.link }}" class="name">
+                                                {{ sepet.urun.adi }}
+                                            </a>
+                                            <div class="variants">
+                                                {% for varyant in sepet.varyantlar %}
+                                                    <div class="variant">
+                                                        {{ varyant.adi }}: 
+                                                        <span>{{ varyant.deger }}</span>
+                                                    </div>
+                                                {% endfor %}
+                                            </div>
+                                            <button class="btn btn-danger btn-remove" type="button" 
+                                            onclick="removeCart({{ sepet.ID }}, 'refresh-page')">
+                                                {{ cevir('sepet_urunu_sil') }}
+                                            </button>
+                                            {% if sepet.bundle_urunler|length > 1 %}
+                                                <div class="bundle-item-count bundle-item-tg" onclick="$('tr[data-cart-product-id={{ sepet.ID }}] .bundle-item-tg').toggleClass('active'); $('tr[data-cart-product-id={{ sepet.ID }}] .bundle-updown-icon').toggleClass('fa-chevron-up')">
+                                                    {{ cevir('x_urun', {x: sepet.bundle_urunler|length}) }}
+                                                    <i class="fas fa-chevron-down bundle-updown-icon"></i>
+                                                </div>
+                                                <div class="bundle-products bundle-item-tg">
+                                                    {% for bundle_urun in sepet.bundle_urunler %}
+                                                        <div class="bundle-item">
+                                    
+                                                            <div class="bundle-image">
+                                                                {{ gorsel.lazy(bundle_urun.urun.resim, '', bundle_urun.adi_alt, '') }}
+                                                            </div>
+                                        
+                                                            <div class="bundle-info">
+                                                                <div class="title">
+                                                                    <span class="unit">{{ bundle_urun.bundle_miktari }} x</span>
+                                                                    {{ bundle_urun.urun.adi }}
+                                                                </div>
+                                                                {% for varyant in bundle_urun.varyantlar %}
+                                                                    <div class="variant">
+                                                                        {{ varyant.adi }}: <span>{{ varyant.deger }}</span>
+                                                                    </div>
+                                                                {% endfor %}
+                                                            </div>
+                                                        </div>
+                                                    {% endfor %}
+                                                </div>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="td-price">
+                                    {% if sepet.promosyon.kontrol %}
+                                        <span class="old-value">
+                                            {% if ayarlar('siparis_kdv_haric_gosterim') %}
+                                                {{ sepet.promosyon.fiyat_kdv_haric }}
+                                            {% else %}
+                                                {{ sepet.promosyon.fiyat }}
+                                            {% endif %}
+                                        </span>
+                                    {% endif %}
+                                    <span class="value">
+                                        {% if ayarlar('siparis_kdv_haric_gosterim') %}
+                                            {{ sepet.fiyat_kdv_haric }}
+                                        {% else %}
+                                            {{ sepet.fiyat }}
+                                        {% endif %}
+                                    </span> 
+                                </td> 
+                                <td class="td-quantity">
+                                    <div class="product-quantity">
+                                        <a href="javascript:;" class="btn btn-minus"
+                                            onclick="productQuantityBox(
+                                                'decrement',
+                                                'tr[data-cart-product-id=\'{{ sepet.ID }}\'] .product-quantity'
+                                            );
+                                            ">
+                                            <i class="fas fa-minus"></i>
+                                        </a>
+                                        <input class="form-control" 
+                                            name="quantity" 
+                                            data-version="2"
+                                            data-decimal="{{ sepet.birim_ondalik_sayisi }}"
+                                            data-min="{{ sepet.birim_minimum_miktar }}"
+                                            data-increase="{{ sepet.birim_artis_miktari }}"
+                                            data-initial="{{ sepet.birim_baslangic_miktari }}"
+                                            value="{{ sepet.adet }}"
+                                            data-base-value="{{ sepet.adet }}"
+                                            onkeypress="return productQuantityBox(
+                                                'change',
+                                                'tr[data-cart-product-id=\'{{ sepet.ID }}\'] .product-quantity',
+                                                event
+                                            );"
+                                            onchange="updateCartQuantity({{ sepet.ID }}, 'table', 'tr[data-cart-product-id=\'{{ sepet.ID }}\'] input', 'refresh-page');" />
+                                        <a href="javascript:;" class="btn btn-plus"
+                                            onclick="productQuantityBox(
+                                                'increment',
+                                                'tr[data-cart-product-id=\'{{ sepet.ID }}\'] .product-quantity'
+                                            );
+                                            ">
+                                            <i class="fas fa-plus"></i>
+                                        </a>
+                                    </div>
+                                    <div class="product-quantity-type">{{ sepet.birim_str }}</div>
+                                </td>
+                                <td class="td-total-price">
+                                    {% if sepet.promosyon.kontrol %}
+                                        <span class="old-value">
+                                            {% if ayarlar('siparis_kdv_haric_gosterim') %}
+                                                {{ sepet.promosyon.tutar_kdv_haric }}
+                                            {% else %}
+                                                {{ sepet.promosyon.tutar }}
+                                            {% endif %}
+                                        </span>
+                                    {% endif %}
+                                    <span class="value">
+                                        {% if ayarlar('siparis_kdv_haric_gosterim') %}
+                                            {{ sepet.tutar_kdv_haric }}
+                                        {% else %}
+                                            {{ sepet.tutar }}
+                                        {% endif %}
+                                    </span> 
+                                </td>
+                                {% if ayarlar('urun_bazinda_kargo_ucreti') and sepetBilgileri('ozet').kargo_ucreti_var_mi %}
+                                    <td class="td-cargo">
+                                        <span class="label">
+                                            {{ cevir('sepet_kargo_baslik') }}
+                                        </span>
+                                        <span class="value">
+                                            {{ sepet.kargo }}
+                                        </span>
+                                    </td>
+                                {% endif %}
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div> 
+
+        <div class="shopping-buttons-1">
+            <a href="{{ statikLinkler('site_adresi') }}" class="btn btn-light btn-continue">
+                <i class="fa fa-chevron-left"></i> {{ cevir('alisverise_devam_et') }}
+            </a>
+        </div>
+       
+    {% endif %}
+
+{% endblock %}

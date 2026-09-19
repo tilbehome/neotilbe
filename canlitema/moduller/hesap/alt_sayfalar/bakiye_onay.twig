@@ -1,0 +1,15 @@
+{% if sayfaBilgileri('islem').onaylandi_mi %}
+
+    <div class="alert alert-success">
+        {{ cevir('bakiye_yukleme_basarili') }}
+    </div>
+
+{% else %}
+    <div class="alert alert-success">
+        {{ cevir('bakiye_yukleme_onay_bekliyor') }}
+    </div>
+{% endif %}
+
+<a href="javascript:;" class="btn btn-success" onclick="showNativeModal('dealerPaymentInvoice', [{name: 'id', value: {{ sayfaBilgileri('islem').ID }} }])">
+    {{ cevir('islem_dekontu') }}
+</a>

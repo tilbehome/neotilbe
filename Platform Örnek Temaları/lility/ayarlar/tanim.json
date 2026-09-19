@@ -1,0 +1,14 @@
+{
+    "id": "___lility",
+    "adi": "Lility",
+    "aciklama": "Lility",
+    "kapak": "kapak.png",
+    "resimler": [
+        "1.png",
+        "2.png",
+        "3.png"
+    ],
+    "cekirdek_ayarlari": {
+        "urun_listeleme_tum_resimler": true
+    }
+}

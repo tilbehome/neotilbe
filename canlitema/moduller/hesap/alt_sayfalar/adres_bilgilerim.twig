@@ -1,0 +1,195 @@
+<div class="alert alert-info">
+    <strong>{{ cevir('adres_bilgilerim_baslik') }}</strong><br />
+    {{ cevir('adres_bilgilerim_aciklama') }}
+</div>   
+
+<form class="user-address-info-form" action="" method="post" onsubmit="return ajaxFormGate('POST', 'User', 'updateUserAddress', this)">            
+    
+    <div class="row">
+
+        <div class="col-md-4">
+            <label>{{ cevir('ad') }}</label>
+	        <input type="text" class="form-control m-input " name="delivery_name" value="{{ kullaniciBilgileri('teslimat_adi') }}">
+        </div>
+        <div class="col-md-4">
+            <label>{{ cevir('soyad') }}</label>
+	        <input type="text" class="form-control m-input " name="delivery_lastname" value="{{ kullaniciBilgileri('teslimat_soyadi') }}">
+        </div>
+        <div class="col-md-4"> 
+            <label>{{ cevir('cep_telefonu') }}</label>
+	        <input type="text" class="form-control form-phone-control m-input " name="delivery_phone" value="{{ kullaniciBilgileri('teslimat_telefonu') }}">
+        </div>
+
+    </div>
+
+    <div class="mt-3"></div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="">
+                <label>{{ cevir('ulke') }}</label>
+                <select name="country" class="form-control" 
+                    onChange="selectChangeCountry('.user-address-info-form', 'country', 'city', 'district')">
+                    {% for ulke in ulkeler(kullaniciBilgileri('ulke')) %}
+                        <option {% if ulke.selected %} selected {% endif %} value="{{ ulke.ID }}">{{ ulke.adi }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="">
+                <label>{{ cevir('il') }}</label>
+                <select name="city" class="form-control"
+                    onChange="selectChangeCity('.user-address-info-form', 'city', 'district')">
+                    {% for il in iller(kullaniciBilgileri('ulke'), kullaniciBilgileri('il')) %}
+                        <option {% if il.selected %} selected {% endif %} value="{{ il.ID }}">{{ il.adi }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="">
+                <label>{{ cevir('ilce') }}</label>
+                <select name="district" class="form-control">
+                    {% for ilce in ilceler(kullaniciBilgileri('il'), kullaniciBilgileri('ilce')) %}
+                        <option {% if ilce.selected %} selected {% endif %} value="{{ ilce.ID }}">{{ ilce.adi }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-3"></div>
+
+	<label>{{ cevir('adres') }}</label>
+	<textarea name="address" rows="" cols="" class="form-control">{{ kullaniciBilgileri('adres') }}</textarea>
+
+    <div class="mt-3"></div>
+
+    <div class="invoice-info-description">
+        <input type="checkbox" name="invoice" id="inputInvoice" value="1"
+        {{ kullaniciBilgileri('fatura_bilgileri_farkli') == 1 ? 'checked' : '' }}
+         onchange="$('.user-address-info-form .invoice-info').toggleClass('d-none');"> 
+        <label for="inputInvoice">
+            {{ cevir('farkli_fatura_bilgileri') }}
+        </label>
+    </div>
+
+    <div class="invoice-info {{ kullaniciBilgileri('fatura_bilgileri_farkli') == 1 ? '' : 'd-none' }}">
+
+           <div class="row">
+                <div class="col-md-12">
+                    <div class="invoice-type">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="invoice_type" 
+                            {{ kullaniciBilgileri('kurumsal_fatura') == 0 ? 'checked' : '' }}
+                            id="inputInvoiceType0" 
+                            onChange="
+                            $('.user-address-info-form .invoice-type-0').removeClass('d-none');
+                            $('.user-address-info-form .invoice-type-1').addClass('d-none');
+                            "
+                            value="0" checked>
+                            <label class="form-check-label" for="inputInvoiceType0">{{ cevir('bireysel') }}</label>
+                        </div>
+                        <div class="form-check form-check-inline ml-5">
+                            <input class="form-check-input" type="radio" name="invoice_type" 
+                            {{ kullaniciBilgileri('kurumsal_fatura') == 1 ? 'checked' : '' }}
+                            id="inputInvoiceType1" 
+                            onChange="
+                            $('.user-address-info-form .invoice-type-1').removeClass('d-none');
+                            $('.user-address-info-form .invoice-type-0').addClass('d-none');
+                            "
+                            value="1">
+                            <label class="form-check-label" for="inputInvoiceType1">{{ cevir('kurumsal') }}</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="inputInvoiceName">{{ cevir('ad_soyad_unvan') }}</label>
+                        <input type="text" class="form-control" id="inputInvoiceName" name="invoice_name" value="{{ kullaniciBilgileri('fatura_unvan') }}">
+                    </div>
+                </div>
+            </div>
+
+            <div class="invoice-type-0 {{ kullaniciBilgileri('kurumsal_fatura') == 1 ? 'd-none' : '' }}">
+                <div class="row">
+                    <div class="col-md-12">
+                         <div class="form-group">
+                            <label for="inputInvoiceTC">{{ cevir('tc_kimlik_no') }} </label>
+                            <input type="text" class="form-control" id="inputInvoiceTC" name="invoice_tc" value="{{ kullaniciBilgileri('fatura_tc') }}">
+                        </div>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="invoice-type-1 {{ kullaniciBilgileri('kurumsal_fatura') == 0 ? 'd-none' : '' }}">
+                <div class="row">
+                    <div class="col-md-6">
+                         <div class="form-group">
+                            <label for="inputInvoiceTaxNo">{{ cevir('vergi_no') }}</label>
+                            <input type="text" class="form-control" id="inputInvoiceTaxNo" name="invoice_tax_no" value="{{ kullaniciBilgileri('vergi_no') }}">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                         <div class="form-group">
+                            <label for="inputInvoiceTaxBranch">{{ cevir('vergi_dairesi') }}</label>
+                            <input type="text" class="form-control" id="inputInvoiceTaxBranch" name="invoice_tax_branch" value="{{ kullaniciBilgileri('vergi_dairesi') }}">
+                        </div>
+                    </div>
+                </div>  
+            </div>
+         
+            <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label form="inputInvoiceCountry">{{ cevir('ulke') }} </label> 
+                            <select name="invoice_country" id="inputInvoiceCountry" class="form-control" 
+                                onChange="selectChangeCountry('.user-address-info-form', 'invoice_country', 'invoice_city', 'invoice_district')">
+                                {% for ulke in ulkeler(kullaniciBilgileri('fatura_ulke')) %}
+                                    <option {% if ulke.selected %} selected {% endif %} value="{{ ulke.ID }}">{{ ulke.adi }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                    </div>
+   
+
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label form="inputInvoiceCity">{{ cevir('il') }}</label>
+                        <select name="invoice_city"  id="inputInvoiceCity" class="form-control"
+                            onChange="selectChangeCity('.user-address-info-form', 'invoice_city', 'invoice_district')">
+                            {% for il in iller(kullaniciBilgileri('fatura_ulke'), kullaniciBilgileri('fatura_il')) %}
+                                <option {% if il.selected %} selected {% endif %} value="{{ il.ID }}">{{ il.adi }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label form="inputInvoiceDistrict">{{ cevir('ilce') }}</label>
+                        <select name="invoice_district" id="inputInvoiceDistrict" class="form-control">
+                            {% for ilce in ilceler(kullaniciBilgileri('fatura_il'), kullaniciBilgileri('fatura_ilce')) %}
+                                <option {% if ilce.selected %} selected {% endif %} value="{{ ilce.ID }}">{{ ilce.adi }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="inputInvoiceAddress">{{ cevir('adres') }}</label>
+                        <textarea name="invoice_address" class="form-control" id="inputInvoiceAddress">{{ kullaniciBilgileri('fatura_adres') }}</textarea>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <button type="submit" class="btn btn-success mt-3">{{ cevir('kaydet') }}</button>
+</form>	

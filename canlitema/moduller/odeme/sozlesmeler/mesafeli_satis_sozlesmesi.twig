@@ -1,0 +1,19 @@
+{% extends varsayilanModal() %}
+
+{% block modalKodu %}
+    {{ sayfaBilgileri('modal_kodu') }}
+{% endblock %}
+
+{% block modalBoyutu %}
+    lg
+{% endblock %}
+
+{% block modalBaslik %}
+    {{ cevir('mesafeli_satis_sozlesmesi_baslik') }}
+{% endblock %}
+
+{% block modalIcerik %}
+    <div class="payment-agreement-text">
+        {{ siparisSozlesme('mesafeli_satis_sozlesmesi') | raw }}
+    </div>
+{% endblock %} 

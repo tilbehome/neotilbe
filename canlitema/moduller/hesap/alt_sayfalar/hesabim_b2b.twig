@@ -1,0 +1,55 @@
+<div class="description">
+    {{ cevir('hesabim_aciklama') }}   
+ </div>
+<div class="hello">
+    <div class="title">{{ cevir('merhaba') }}, {{ kullaniciBilgileri('ad') }} {{ kullaniciBilgileri('soyad') }}</div>
+    <div class="title text-primary">{{ cevir('bakiye') }}: <strong class="{% if kullaniciBilgileri('bakiye') > 0 %} text-success {% else %} text-danger {% endif %}">{{ kullaniciBilgileri('bakiye_str') }}</strong></div>
+    {% if kullaniciBilgileri('xml_durumu') %}
+        {% if ayarlar('b2b_xml_aboneligi_sureli') %}
+            {% if not kullaniciBilgileri('xml_abonelik_durumu') %}
+                {% if ayarlar('b2b_xml_abonelik_odemeleri') %}
+                    <div class="alert alert-danger text-danger">
+                        {{ cevir('xml_aboneligi_sure_doldu') }}
+                        <a href="{{ statikLinkler('bakiye_yukle') }}">
+                            {{ cevir('buraya_tiklayarak_odeme_yapabilirsiniz') }}
+                        </a>
+                    </div>
+                {% else %}
+                    <div class="alert alert-danger text-danger">
+                        {{ cevir('xml_aboneligi_sure_doldu') }}
+                    </div>
+                {% endif %}
+            {% else %}
+                 <div class="title">
+                    {{ cevir('xml_aboneligi_bitis_tarihi') }}: {{ kullaniciBilgileri('xml_aboneligi_bitis_tarihi') }}
+                </div>
+            {% endif %}
+        {% endif %}
+        <div class="title text-success">
+            {{ cevir('xml_linki') }}: {{ kullaniciBilgileri('xml_linki') }}
+        </div>
+        {% if ayarlar('b2b_xml_ip_kisitlamasi') %}
+            <div class="title">
+                {{ cevir('izinli_xml_ipleri') }}: {{ kullaniciBilgileri('xml_ip_adresleri') }}
+            </div>
+        {% endif %}
+    {% elseif not ayarlar('b2b_xml_aboneligi_sureli') %}
+        <div class="alert alert-danger">
+            {{ cevir('xml_pasif_uyari') }}
+        </div>
+    {% endif %}
+</div> 
+<div class="link-boxes">
+    <div class="col-md-12">
+        <div class="row">
+            {% for sayfa in kullaniciSayfalari() %}
+                <div class="col-6 col-md-4">
+                    <a class="link-box lb-1" href="{{ sayfa.link }}">
+                        <span><i class="{{ sayfa.ikon }}"></i></span>
+                        {{ sayfa.baslik }}                   
+                    </a> 
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

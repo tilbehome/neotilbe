@@ -1,0 +1,20 @@
+<div class="alert alert-info">
+    <strong>{{ cevir('eposta_sifre_bilgileri_baslik') }}</strong><br />
+    {{ cevir('eposta_sifre_bilgileri_aciklama') }}
+</div>        
+
+<form class="user-security-form" action="" method="post" onsubmit="return ajaxFormGate('POST', 'User', 'updateUserSecurity', this)">    
+    <label>{{ cevir('eposta_adresi') }} <span class="text-danger">*</span></label>
+	<input type="text" class="form-control m-input " name="email" value="{{ kullaniciBilgileri('eposta') }}">
+    
+    <div class="mt-3"></div>
+    
+    <label>{{ cevir('yeni_sifre') }} <small class="text-dark">{{ cevir('degistirmeyeceksiniz_bos_birakin') }}</small></label>
+	<input type="password" class="form-control m-input " name="password" value="">
+    
+    <label>{{ cevir('yeni_sifre_onayla') }} <small class="text-dark">{{ cevir('degistirmeyeceksiniz_bos_birakin') }}</small></label>
+	<input type="password" class="form-control m-input " name="password2" value="">
+
+    
+    <button type="submit" class="btn btn-success mt-3">{{ cevir('kaydet') }}</button>
+</form>

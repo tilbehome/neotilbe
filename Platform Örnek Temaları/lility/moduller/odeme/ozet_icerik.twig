@@ -1,0 +1,22 @@
+<table class="table table-hover summary">
+    <tfoot>
+        {% for ozet in siparisOzetListe() %}
+            <tr>
+                <th>{{ ozet.baslik }}</th>
+                <th colspan="2">{{ ozet.deger }}</th>
+            </tr>
+        {% endfor %}
+        <tr>
+            <th>
+                {{ cevir('genel_toplam') }}
+                <br /> 
+                {{ cevir('kdv_dahil') }}
+            </th>
+            <th colspan="2">
+                <span class="final">
+                    {{ siparisOzeti('genel_toplam') }}
+                </span>
+            </th>
+        </tr>
+    </tfoot>
+</table>

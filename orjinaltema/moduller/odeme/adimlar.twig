@@ -1,0 +1,19 @@
+{% extends varsayilanBlokModul() %}
+
+{% block modulIcerik %}
+    <div class="payment-steps-1">
+        <a href="{{ sayfaBilgileri('odeme_adimi') <= 2 ? statikLinkler('odeme') : 'javascript:;' }}" 
+            class="step step-1 {{ sayfaBilgileri('odeme_adimi') == 1 ? 'active' : 'completed' }}">
+            <div class="circle">1</div>
+            {{ cevir('teslimat_bilgileri') }}
+        </a>
+        <div class="step step-2 {{ sayfaBilgileri('odeme_adimi') == 2 ? 'active' : (sayfaBilgileri('odeme_adimi') > 2 ? 'completed' : '') }}">
+            <div class="circle">2</div>
+            {{ cevir('odeme_bilgileri') }}
+        </div>
+        <div class="step step-3 {{ sayfaBilgileri('odeme_adimi') == 3 ? 'active' : '' }}">
+            <div class="circle">3</div>
+            {{ cevir('siparis_onayi') }}
+        </div>
+    </div> 
+{% endblock %}

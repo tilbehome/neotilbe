@@ -1,0 +1,69 @@
+<div class="payment-page-title-block">
+            <h4 class="d12fg154dfg">Sepet Özeti</h4>
+            <img src="https://www.tilbehome.com/theme/___shuttle/assets/images/secure_logo-1.webp?v=1741124574" alt="Icon">
+        </div>
+        <p class="tilbe-sub">Tüm indirimler sepetinize otomatik uygulanır.</p>
+        
+        {# 🚚 Profesyonel Zarif Bedava Kargo Barı #}
+{% set kargoLimit = 500 %}
+{% set toplam = sepetBilgileri('ozet').genel_toplam %}
+{% set kalan = kargoLimit - toplam %}
+{% set progress = (toplam / kargoLimit) * 100 %}
+{% if progress > 100 %}{% set progress = 100 %}{% endif %}
+
+<div class="inset-shipping-bar {% if kalan <= 0 %}free-shipping-active{% endif %}">
+    <div class="inset-bar-progress" style="width: {{ progress }}%;"></div>
+    <div class="inset-bar-content">
+        <div class="inset-bar-icon">
+            <i class="fa fa-truck"></i>
+        </div>
+        <div class="inset-bar-text">
+            {% if kalan > 0 %}
+          <div class="inset-bar-message">
+    Sepetine <strong>{{ kalan|number_format(2, ',', '.') }} TL</strong> daha ürün ekle, ücretsiz kargo fırsatını kaçırma!  <a href="/viral-urunler" class="inset-bar-arrow">  &#10148;</a>
+</div>
+            {% else %}
+                <span class="inset-bar-free">Bu Siparişte Kargo Bedava!</span>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+
+
+<hr>
+
+<table class="table table-hover summary">
+    <tfoot>
+        {% for ozet in siparisOzetListe() %}
+            <tr>
+                <th>{{ ozet.baslik }}</th>
+                <th colspan="2">{{ ozet.deger }}</th>
+            </tr>
+        {% endfor %}
+    
+
+<tr>
+    <th>Teslimat Süresi</th>
+    <td>
+        <span class="teslimatTooltip">
+            1 İş Günü
+            <span class="tooltipText">Uzak bölgeler veya kırsal adreslerde teslimat süresi değişebilir.</span>
+        </span>
+    </td>
+</tr>
+
+
+        
+        
+        <tr>
+            <th><h5>{{ cevir('genel_toplam') }}</h5>
+            <span>(KDV Dahil)</span></th>
+            <th colspan="2">
+                <span class="final">
+                    {{ siparisOzeti('genel_toplam') }}
+                </span>
+            </th>
+        </tr>
+    </tfoot>
+</table>

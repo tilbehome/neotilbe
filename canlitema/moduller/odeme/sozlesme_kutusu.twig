@@ -1,0 +1,53 @@
+{% extends sayfaBilgileri('odeme_adimi') == 2
+    ? varsayilanBlokModul()
+    : varsayilanBosDosya() %}
+
+{% block modulIcerik %}
+
+    <form class="payment-agreement-checbox-1 sozlesme-kenarlik" data-payment-box-form="agreement-info">
+        <div class="form-check form-check-inline mesaj02">
+            <input class="form-check-inputbaba" type="checkbox" name="agreement_approval" 
+            id="paymentAgreementChecbox" value="1" checked />
+            <label for="paymentAgreementChecbox" class="ml-2 mesaj-01">
+                {{ cevir('x_ve_y_kabul_ediyorum', {
+                    x: '<a href="javascript:;" onclick="showNativeModal(\'orderAgreement1\')">'~cevir('on_bilgilendirme_formu')~'</a>',
+                    y: '<a href="javascript:;" onclick="showNativeModal(\'orderAgreement2\')">'~cevir('mesafeli_satis_sozlesmesini')~'</a>',
+                }) | raw }}
+            </label>
+        </div>
+        
+        {% if temaAyarlari('genel','kvkk_aydinlatma_metnini') %}
+        
+            <div class="form-check form-check-inline mesaj02">
+                <input type="hidden" name="kvkk_check" value="1" />
+                <input class="form-check-inputbaba" type="checkbox" name="kvkk_approval" 
+                id="paymentKvkkCheckbox" value="1" checked />
+                <label for="paymentKvkkCheckbox" class="ml-2">
+                    {{ cevir('x_okudum_ve_kabul_ediyorum', {
+                        x: '<a href="javascript:;" onclick="showNativeModal(\'kvkkRule\')">'~cevir('kvkk_aydinlatma_metnini')~'</a>',
+                    }) | raw }}
+               
+                </label>
+            </div>
+        
+        {% endif %}
+        
+        {% if temaAyarlari('genel','ticari_elektronik_ileti_metnini') %}
+        
+            <div class="form-check form-check-inline mesaj02">
+                <input class="form-check-inputbaba" type="checkbox" name="newsletter_approval" 
+                id="paymentNewsletterCheckbox" value="1" checked />
+                <label for="paymentNewsletterCheckbox" class="ml-2">
+                    {{ cevir('x_okudum_ve_kabul_ediyorum', {
+                        x: '<a href="javascript:;" onclick="showNativeModal(\'commercialMessageRule\')">'~cevir('ticari_elektronik_ileti_metnini')~'</a>',
+                    }) | raw }}
+               
+                </label>
+            </div>
+        
+        {% endif %}
+        
+        
+        
+    </form>
+{% endblock %}

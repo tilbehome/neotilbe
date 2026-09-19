@@ -1,0 +1,47 @@
+{% extends varsayilanBlokModul() %}
+
+{% block modulIcerik %}
+
+    <div id="{{ modul.ozel_data_kodu }}" class="carousel carousel-type-1 slide carousel-fade" data-ride="carousel">
+        <div class="carousel-image-wrapper">
+            <div class="carousel-inner">
+                {% for index, manset in modul.mansetler %}
+                    <div class="carousel-item {{ index == 0 ? 'active' : '' }}">
+                        <a href="{{ manset.link }}" {{ (manset.yeni_pencere ? 'target="_blank"':'') | raw }}>
+                            {{ gorsel.lazy(manset.resim, 'd-block w-100') }}
+                        </a>
+                        {% if modul.icerik_baslik or modul.icerik_aciklama %}
+                            <div class="carousel-caption d-none d-md-block">
+                                {% if modul.icerik_baslik %}
+                                    <h5>{{ manset.baslik }}</h5>
+                                {% endif %}
+                                {% if modul.icerik_aciklama %}
+                                    <p>{{ manset.aciklama }}</p>
+                                {% endif %}
+                            </div>
+                        {% endif %}
+                    </div>
+                {% endfor %} 
+            </div>
+             <a class="carousel-control-prev" href="#{{ modul.ozel_data_kodu }}" role="button" data-slide="prev">
+                    <i class="fas fa-chevron-left"></i>
+            </a>
+            <a class="carousel-control-next" href="#{{ modul.ozel_data_kodu }}" role="button" data-slide="next">
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+        <ol class="carousel-indicators">
+            {% for index, manset in modul.mansetler %}
+                <li data-target="#{{ modul.ozel_data_kodu }}" data-slide-to="{{ index }}" class="{{ index == 0 ? 'active' : '' }}">
+                    {{ gorsel.lazy(gorselBoyutlandir(manset.buyuk_resim, 'headline', 'manset_kucuk_resim'), 'd-block w-100') }}
+                </li>
+            {% endfor %}
+        </ol>
+       
+    </div>
+    
+    
+    
+    
+
+{% endblock %}

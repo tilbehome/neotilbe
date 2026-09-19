@@ -1,0 +1,76 @@
+<div class="tilbe-anasayfa01-card-product">
+    <div class="tilbe-anasayfa01-card-product-inner">
+        {% if urun.ucretsiz_kargo and temaAyarlari('urun_karti', 'ucretsiz_kargo') %}
+            <div class="tilbe-anasayfa01-free-cargo-badge"><img src="https://www.tilbehome.com/theme/___shuttle/assets/icons8-cargo-48.png?v=1735315721" style="width:12px; height:12px;">HIZLI TESLİMAT</div>
+            <div class="tilbe-anasayfa01-hizli-teslimat"><img src="https://www.tilbehome.com/theme/___shuttle/assets/gift.png?v=1735316142" style="width:12px; height:12px;">KARGO BEDAVA</div>
+        {% endif %}
+    
+        <div class="tilbe-anasayfa01-image-wrapper">
+            {% if temaAyarlari('urun_karti','urun_etiket') %}
+                {{ urunEklentileri.etiketler(urun) }}
+            {% endif %}
+            {% if temaAyarlari('urun_karti', 'favori_buton') %}
+                {% include 'moduller/urunler/kart_favori_listesi.twig' %}
+            {% endif %}
+            <div class="tilbe-anasayfa01-image">
+                <div id="product-card-carousel-{{ modul.ozel_data_kodu }}-{{ urun.ID }}" class="tilbe-anasayfa01-carousel">
+                    <div class="tilbe-anasayfa01-carousel-outer">
+                        <div class="tilbe-anasayfa01-carousel-inner">
+                            {% for index, resim in urun.resimler %}
+                                <div class="tilbe-anasayfa01-carousel-item {{ index == 0 ? 'active' : '' }}">
+                                    <a href="{{ urun.link }}">
+                                        <img src="{{ resim.normal }}" alt="{{ urun.adi }}" class="tilbe-anasayfa01-product-image" />
+                                    </a>
+                                </div>
+                            {% endfor %}
+                        </div>
+                        {% if urun.resimler |length > 1 %}
+                            <a class="tilbe-anasayfa01-carousel-control-prev" href="#product-card-carousel-{{ modul.ozel_data_kodu }}-{{ urun.ID }}" role="button" data-slide="prev">
+                                <i class="fa fa-chevron-left"></i>
+                            </a>
+                            <a class="tilbe-anasayfa01-carousel-control-next" href="#product-card-carousel-{{ modul.ozel_data_kodu }}-{{ urun.ID }}" role="button" data-slide="next">
+                                <i class="fa fa-chevron-right"></i>
+                            </a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="{{ urun.link }}" class="tilbe-anasayfa01-c-p-i-link" title="{{ urun.adi_alt }}">
+            <h1 class="tilbe-anasayfa01-itlewrtwrts">{{ urun.adi }}</h1>
+            {% if temaAyarlari('urun_karti', 'degerlendirmeler') %}
+                {% include 'moduller/urunler/kart_degerlendirmeler.twig' %}
+            {% endif %}
+            <div class="tilbe-anasayfa01-card-product-content">
+                {% if temaAyarlari('urun_karti', 'marka') %}
+                    {% if markaListeBilgileri(urun.marka_id) %}
+                        <div class="tilbe-anasayfa01-brand">
+                           {{  markaListeBilgileri(urun.marka_id).adi }}
+                        </div>
+                    {% endif %}
+                {% endif %}
+                {% if temaAyarlari('urun_karti', 'urun_kodu') %}
+                    <div class="tilbe-anasayfa01-product-code">
+                        {{ urun.urun_kodu }}
+                    </div>
+                {% endif %}
+                {% if temaAyarlari('urun_karti', 'barkod') %}
+                    <div class="tilbe-anasayfa01-barcode">
+                        {{ urun.barkod }}
+                    </div>
+                {% endif %}
+            </div>
+            <div class="tilbe-anasayfa01-price-group">
+                <div class="tilbe-anasayfa01-prices">
+                    {% if urun.indirim %}
+                        <div class="tilbe-anasayfa01-list-price">{{ urun.piyasa_fiyati }}</div>
+                    {% endif %}
+                    <div class="tilbe-anasayfa01-sale-price {% if urun.indirimli_fiyatlar.sabit_indirim.aktif %} tilbe-anasayfa01-sale-price-2 {% endif %}">
+                        {{ urun.fiyat }}
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+{% extends sayfaBilgileri('blog_var_mi')
+    ? varsayilanBlokModul()
+    : varsayilanBosDosya() %}
+ 
+{% block modulIcerik %}
+    {% if sayfaBilgileri('blog_var_mi') %}
+        <div class="raw-content category-blog-single" data-simplebar data-simplebar-auto-hide="false">
+            <h3>{{ sayfaBilgileri('blog').baslik }}</h3>
+            {{ sayfaBilgileri('blog').icerik | raw }}
+        </div>
+    {% endif %}
+{% endblock %}   

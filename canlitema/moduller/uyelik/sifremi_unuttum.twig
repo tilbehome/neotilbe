@@ -1,0 +1,30 @@
+{% extends varsayilanBlokModul() %}
+
+{% block modulIcerik %}
+    <div class="forgot-password-container">
+        <div class="forgot-password-header">
+            <h2 class="forgot-password-title">Şifrenizi Sıfırlayın 🔐</h2>
+            <p class="forgot-password-subtitle">E-posta adresinizi girerek şifre sıfırlama bağlantısını alabilirsiniz.</p>
+        </div>
+
+        <form class="forgot-password-form" action="" method="post" onsubmit="return userForgotPassword(this)">
+            <input type="hidden" name="returnUrl" value="{{ returnUrl() }}" />
+            <input type="text" class="forgot-password-input" name="email" placeholder="E-posta adresinizi girin" required>
+            <button type="submit" class="forgot-password-btn">
+                <i class="fa fa-paper-plane"></i> Şifre Sıfırlama Linki Gönder
+            </button>
+        </form>
+
+        <!-- 🔒 Güvenlik & Bilgilendirme -->
+        <div class="forgot-password-info-boxes">
+            <div class="forgot-password-info">
+                <i class="fa fa-lock"></i>
+                <p>Bilgileriniz 256-bit SSL ile korunmaktadır.</p>
+            </div>
+            <div class="forgot-password-info">
+                <i class="fa fa-envelope"></i>
+                <p>E-posta adresiniz üçüncü şahıslarla paylaşılmaz.</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

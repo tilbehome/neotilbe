@@ -1,0 +1,13 @@
+{% extends varsayilanBlokModul() %}
+
+{% block modulIcerik %}
+    <ul>
+        {% for blog in modul.liste %}
+            <li>
+                <a href="{{ blog.link }}">
+                    {{ blog.baslik }}
+                </a>
+            </li>
+        {% endfor %} 
+    </ul>
+{% endblock %} 

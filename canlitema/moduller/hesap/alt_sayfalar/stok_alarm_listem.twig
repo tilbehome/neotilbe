@@ -1,0 +1,59 @@
+{% if kullaniciStokAlarmSayisi() > 0 %}
+
+    <div class="account-action-buttons">
+        <button type="button" class="btn btn-danger" onclick="userDeleteProductQuantityAlerts('.price-alert-table')">
+            <i class="fa fa-times"></i>
+            {{ cevir('secilenleri_sil') }}
+        </button>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-hover table-striped price-alert-table">
+            <thead class="thead-dark">
+            <tr>
+                <th class="align-top">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" onChange="tableSelectAll(this, '.price-alert-table')">
+                    </div>
+                </th>
+                <th>{{ cevir('resim') }}</th>
+                <th>{{ cevir('urun_adi') }}</th>
+                <th>{{ cevir('urun_fiyati') }}</th>
+                <th>{{ cevir('eklenme_tarihi') }}</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for liste in kullaniciStokAlarmlari() %}
+                <tr data-user-product-alert-list="{{ liste.ID }}">
+                    <td class="align-middle">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" name="price_alert_ids[]" value="{{ liste.ID }}">
+                        </div>
+                    </td>
+                    <td style="width: 100px" class="align-middle">
+                        <a href="{{ liste.link }}" class="d-block">
+                            {{ gorsel.lazy(liste.resim, 'd-block w-100 image', liste.adi_alt) }}
+                        </a>
+                    </td>
+                    <td  class="align-middle">
+                        <a href="{{ liste.link }}" class="d-block title">
+                            <strong>{{ liste.adi }}</strong><br />
+                            <small>{{ liste.varyant }}</small>
+                        </a>
+                    </td>
+                    <td  class="align-middle">{{ urunFiyati(liste.urun_id, liste.varyant_listesi) }}</td>
+                    <td  class="align-middle">{{ liste.tarih }}</td>
+                    <td  class="align-middle">
+                        <a href="javascript:;" class="remove text-danger" onclick="userDeleteProductQuantityAlert({{ liste.ID }})"><i class="fa fa-times"></i></a>
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% else %}
+    <div class="alert alert-info">
+        {{ cevir('stok_alarm_listeniz_bos') }}
+    </div>
+{% endif %}

@@ -1,0 +1,44 @@
+<form class="eft-form" action="" method="post" onsubmit="return bankEftForm(this)">
+    <label>{{ cevir('siparis_numarasi') }} <span class="text-danger">*</span></label>
+	<input type="text" class="form-control m-input " name="order_no" value=""><div class="mt-2"></div>
+	<div class="">
+        <label>{{ cevir('odeme_yapilan_banka') }} <span class="text-danger">*</span></label>
+        <select name="bank_id" class="form-control selectpicker" 
+        data-live-search="true" data-size="10" data-divider="true" data-actions-box="true">
+            {% for hesap in havaleBilgileri() %}
+                <option value="{{ hesap.ID }}">{{ hesap.banka_adi }}</option>
+            {% endfor %}
+		</select>
+	</div>
+	<div class="mt-2"></div>
+    <div class="">
+		<label>{{ cevir('tarih') }} <span class="text-danger">*</span></label>
+        <input type="text" name="date" class="form-control datepicker" value="{{ "now"|date("Y-m-d") }}" readonly="readonly">
+    </div>
+    <div class="mt-4"></div>				
+    <button type="submit" class="btn btn-success">{{ cevir('gonder') }}</button>
+</form>	
+
+
+<div class="table-responsive mt-3">
+    <table class="table table-bordered table-striped table-sm">
+        <thead>
+            <tr>
+                <th>{{ cevir('banka') }}</th>
+                <th>{{ cevir('sube') }}</th>
+                <th>{{ cevir('iban') }}</th>
+                <th>{{ cevir('hesap_sahibi') }}</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for hesap in havaleBilgileri() %}
+                <tr>
+                    <td>{{ hesap.banka_adi }}</td>
+                    <td>{{ hesap.banka_sube_adi }} {{ hesap.banka_sube_kodu }}</td>
+                    <td>{{ hesap.banka_iban_no }}</td>
+                    <td>{{ hesap.hesap_sahibi }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>

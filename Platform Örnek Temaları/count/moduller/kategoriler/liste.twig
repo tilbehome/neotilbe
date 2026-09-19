@@ -1,0 +1,14 @@
+{% extends varsayilanBlokModul() %}
+
+{% block modulIcerik %}
+    <ul>
+        {% for index, kategori in tumKategoriler(0, modul.limit) %}
+            <li>
+                <a href="{{ kategori.link }}">
+                    <i class="fas fa-angle-right"></i>
+                    {{ kategori.adi }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

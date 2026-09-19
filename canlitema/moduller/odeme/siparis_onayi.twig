@@ -1,0 +1,14 @@
+{% extends sayfaBilgileri('odeme_adimi') == 3
+    ? varsayilanBlokModul()
+    : varsayilanBosDosya() %}
+
+{% block modulIcerik %}
+    <div class="payment-success-alert">
+        <div style="text-align: center;"><img alt="ONAYLANDI" src="https://cdn.qukasoft.com/f/525751/bzR6WWFuWTM5SzQ4TmkwZ0g0TnI/images/uploads/URUN-FOTOLAR/1.png" style="width: 285px; height: 248px;" /></div>
+        <p> </p>
+        <h4 class="text-success">{{ cevir('siparisiniz_basariyla_olusturuldu') }}</h4>
+        <p> </p>
+        <h5 class="bg-dark text-white p-3 mb-4">{{ cevir('siparis_numaraniz') }}: {{ sayfaBilgileri('siparis_numarasi') }}</h4>
+        {{ sayfaBilgileri('odeme_yontemi_aciklama') | raw }}
+   </div>
+{% endblock %}

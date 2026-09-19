@@ -1,0 +1,16 @@
+{% extends varsayilanBlokModul() %}
+
+{% block modulBaslik %}
+    {{ kullaniciBilgileri('ad') }} {{ kullaniciBilgileri('soyad') }}
+{% endblock %} 
+
+{% block modulIcerik %}
+    <div class="list-menu">
+        {% for sayfa in kullaniciSayfalari() %}
+            <a href="{{ sayfa.link }}">
+                <span class="mr-2"><i class="{{ sayfa.ikon }}"></i></span>
+                {{ sayfa.baslik }}
+            </a>
+        {% endfor %}
+    </div>
+{% endblock %} 

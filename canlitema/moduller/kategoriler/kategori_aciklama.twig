@@ -1,0 +1,11 @@
+{% extends varsayilanBlokModul() %}
+
+{% block modulBaslik %}
+    {{ sayfaBilgileri('adi') }}
+{% endblock %} 
+
+{% block modulIcerik %}
+    <div class="category-description">
+        {{ sayfaBilgileri('aciklama') }}
+    </div>
+{% endblock %}

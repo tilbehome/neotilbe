@@ -1,0 +1,23 @@
+{% extends varsayilanBlokModul() %}
+ 
+{% block modulIcerik %}
+    <nav aria-label="breadcrumb" class="breadcrumb-wrapper">
+        <ol class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
+            <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                <a itemprop="item" href="{{ statikLinkler('site_adresi') }}">
+                <span itemprop='name'>{{ cevir('breadcrumb_anasayfa') }}</span>
+                <meta itemprop="position" content="1" />
+                </a>
+            </li>
+            {% for sira, veri in sayfaBilgileri('breadcrumb') %}
+                <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                    <a itemprop="item" href="{{ veri.link }}">
+                        <span itemprop='name'>{{ veri.baslik }}</span>
+                        <meta itemprop="position" content="{{ sira + 2 }}" />
+                    </a>
+                </li>
+            {% endfor %}
+        </ol>
+    </nav>
+{% endblock %} 
+

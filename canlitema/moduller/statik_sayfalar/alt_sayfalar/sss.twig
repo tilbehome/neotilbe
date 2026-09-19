@@ -1,0 +1,19 @@
+<div class="faq" itemscope itemtype="https://schema.org/FAQPage">
+    {% for soru in sikcaSorulanSorular() %}
+        <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <a class="btn btn-block btn-secondary" data-toggle="collapse" 
+               href="#collapse-{{ soru.ID }}" role="button" aria-expanded="false" aria-controls="collapse-{{ soru.ID }}"
+               itemprop="name">
+                {{ soru.soru }}
+            </a>
+            <div class="collapse" id="collapse-{{ soru.ID }}">
+                <div class="card card-body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        {{ soru.cevap | raw }}
+                    </div>
+                </div>
+            </div>
+            <div class="mb-1"></div>
+        </div>
+    {% endfor %}
+</div>

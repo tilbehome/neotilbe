@@ -1,0 +1,52 @@
+<div class="product-customer-actions">
+
+  
+        <div class="action favourite" data-favourite-product-id="{{ sayfaBilgileri('ID') }}">
+            <a href="javascript:;"
+               class="button {{ sayfaBilgileri('favori_mi') ? 'd-none' : 'd-block' }} add-favorite"
+               onclick="userProductFavourite('add', {{ sayfaBilgileri('ID') }})">
+                <i class="far fa-heart"></i>
+                <span>{{ basHarfBuyukCevir('favorilerime_ekle') }}</span>
+            </a>
+            <a href="javascript:;"
+               class="button {{ sayfaBilgileri('favori_mi') ? 'd-block' : 'd-none' }} remove-favorite"
+               onclick="userProductFavourite('remove', {{ sayfaBilgileri('ID') }})">
+                <i class="fa fa-heart"></i>
+                <span>{{ basHarfBuyukCevir('favorilerimden_cikar') }}</span>
+            </a>
+        </div>
+   
+
+  
+        <div class="action recommend">
+            <a href="javascript:;" class="button"
+               data-toggle="tooltip" data-placement="bottom" title="{{ cevir('tavsiye_et_kisa_aciklama') }}"
+               onclick="visitorProductRecommend({{ sayfaBilgileri('ID') }})">
+                <i class="far fa-envelope"></i>
+                <span>{{ basHarfBuyukCevir('tavsiye_et') }}</span>
+            </a>
+        </div>
+   
+    
+        <div class="action compare">
+            <a href="javascript:;" class="button"
+               data-toggle="tooltip" data-placement="bottom" title="{{ cevir('urun_karsilastir_kisa_aciklama') }}"
+               onclick="preCompareList({{ sayfaBilgileri('ID') }})">
+                <i class="fas fa-exchange-alt"></i>
+                <span>{{ basHarfBuyukCevir('urun_karsilastir') }}</span>
+                <span data-compare-list-count>{% if karsilastirmaListesiSayisi() > 0 %} ({{ karsilastirmaListesiSayisi() }}) {% endif %}</span>
+            </a>
+        </div>
+   
+        <div class="action price-alert">
+            <a href="javascript:;" class="button"
+               data-toggle="tooltip" data-placement="bottom" title="{{ cevir('fiyat_alarmi_kisa_aciklama') }}"
+               onclick="userProductPriceAlert({{ sayfaBilgileri('ID') }})">
+                <i class="far fa-bell"></i>
+                <span>{{ basHarfBuyukCevir('fiyat_alarmi') }}</span>
+            </a>
+        </div>
+ 
+  
+   
+</div>

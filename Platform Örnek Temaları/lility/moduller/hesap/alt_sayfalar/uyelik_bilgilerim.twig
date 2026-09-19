@@ -1,0 +1,55 @@
+<div class="alert alert-info">
+    <strong>{{ cevir('uyelik_bilgilerim_baslik') }}</strong><br />
+    {{ cevir('uyelik_bilgilerim_aciklama') }}
+</div>        
+
+<form class="user-info-form" action="" method="post" onsubmit="return ajaxFormGate('POST', 'User', 'updateUserInfo', this)">   
+
+    <div class="row">
+        <div class="col-md-6">
+            <label>{{ cevir('adiniz') }} <span class="text-danger">*</span></label>
+	        <input type="text" class="form-control m-input " name="name" value="{{ kullaniciBilgileri('ad') }}">
+        </div>
+        <div class="col-md-6">
+            <label>{{ cevir('soyadiniz') }} <span class="text-danger">*</span></label>
+	        <input type="text" class="form-control m-input " name="lastname" value="{{ kullaniciBilgileri('soyad') }}">
+        </div>
+    </div>
+
+    <div class="mt-3"></div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <label>{{ cevir('tc_kimlik_no') }}</label>
+	        <input type="text" class="form-control m-input " name="national_id" value="{{ kullaniciBilgileri('tc_no') }}">
+        </div>
+        <div class="col-md-6">
+            <div class="">
+                <label>{{ cevir('cep_telefonu') }}</label>
+	            <input type="text" class="form-control form-phone-control m-input " name="mobile_phone" value="{{ kullaniciBilgileri('cep_telefonu') }}">
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-3"></div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <label>{{ cevir('dogum_tarihi') }}</label>
+            <input type="text" name="birthdate" class="form-control datepicker" value="{{ kullaniciBilgileri('dogum_tarihi') }}" readonly="readonly">
+        </div>
+        <div class="col-md-6">
+            <div class="">
+                <label>{{ cevir('cinsiyet') }}</label>
+                <select name="gender" class="form-control selectpicker" data-live-search="true" data-size="10" data-divider="true" data-actions-box="true">
+                    {% for cinsiyet in cinsiyetler() %}
+                        <option {% if cinsiyet.value == kullaniciBilgileri('cinsiyet') %} selected {% endif %} value="{{ cinsiyet.value }}">{{ cinsiyet.name }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+        </div>
+    </div>
+    
+
+    <button type="submit" class="btn btn-success mt-3">{{ cevir('kaydet') }}</button>
+</form>

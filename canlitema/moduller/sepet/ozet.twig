@@ -1,0 +1,123 @@
+{% extends sepetBilgileri('durum') 
+    ? varsayilanBlokModul() 
+    : varsayilanBosDosya() %}
+
+{% block modulIcerik %}
+
+
+    <div class="payment-cart-summary-1">
+        <div class="payment-page-title-block">
+            <h4 class="d12fg154dfg">Sipariş Özeti</h4>
+            <img src="https://www.tilbehome.com/theme/___shuttle/assets/images/secure_logo-1.webp?v=1741124574" alt="Icon">
+        </div>
+     
+{# 🚚 Profesyonel Zarif Bedava Kargo Barı #}
+{% set kargoLimit = 500 %}
+{% set toplam = sepetBilgileri('ozet').genel_toplam %}
+{% set kalan = kargoLimit - toplam %}
+{% set progress = (toplam / kargoLimit) * 100 %}
+{% if progress > 100 %}{% set progress = 100 %}{% endif %}
+
+<div class="inset-shipping-bar {% if kalan <= 0 %}free-shipping-active{% endif %}">
+    <div class="inset-bar-progress" style="width: {{ progress }}%;"></div>
+    <div class="inset-bar-content">
+        <div class="inset-bar-icon">
+            <i class="fa fa-truck"></i>
+        </div>
+        <div class="inset-bar-text">
+            {% if kalan > 0 %}
+          <div class="inset-bar-message">
+    Sepetine <strong>{{ kalan|number_format(2, ',', '.') }} TL</strong> daha ürün ekle, ücretsiz kargo fırsatını kaçırma!  <a href="/viral-urunler" class="inset-bar-arrow">  &#10148;</a>
+</div>
+            {% else %}
+                <span class="inset-bar-free">Bu Siparişte Kargo Bedava!</span>
+            {% endif %}
+        </div>
+    </div>
+</div>
+        <table class="table summary">
+            <tfoot class="table-alt-cizgi">
+                {% if ayarlar('siparis_kdv_haric_gosterim') %}
+                    <tr>
+                        <th>{{ cevir('urunler_toplami') }}</th>
+                        <th>{{ sepetBilgileri('ozet').toplam_kdv_haric }}</th>
+                    </tr>
+                    <tr>
+                        <th>{{ cevir('toplam_kdv') }}</th>
+                        <th>{{ sepetBilgileri('ozet').toplam_kdv }}</th>
+                    </tr>
+                {% else %}
+                    <tr>
+                        <th>{{ cevir('urunler_toplami') }}</th>
+                        <th>{{ sepetBilgileri('ozet').toplam }}</th>
+                    </tr>
+                {% endif %}
+
+ {# İndirim Bilgisi #}
+{% set ozet = sepetBilgileri('ozet') %}
+{% if ozet.indirim_var_mi and ozet.indirim.tutar is defined %}
+<tr>
+    <th>İndirim Toplamı</th>
+    <th>
+        <span class="span16">
+            -{{ ozet.indirim.tutar | default(0) | number_format(2, ',', '.') }} TL
+        </span>
+    </th>
+</tr>
+{% endif %}
+
+{# Hediye Çeki #}
+{% if ozet.indirim_var_mi and ozet.indirim.kod is defined and ozet.indirim.kod is not empty %}
+<tr>
+    <th>{{ cevir('hediye_ceki') }}</th>
+    <th>
+        {{ ozet.indirim.kod | e }}
+        <a href="javascript:;" onclick="removeVoucherCode('refresh-page')" class="remove-voucher text-danger">
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </a>
+    </th>
+</tr>
+{% endif %}
+
+ {% if sepetBilgileri('ozet').kargo_ucreti_var_mi %}
+                    <tr>
+                        <th>{{ cevir('kargo_ucreti') }}</th>
+                        <th>{{ sepetBilgileri('ozet').kargo }}</th>
+                    </tr>
+                {% endif %} 
+
+                {# Genel Toplam #}
+                <tr>
+                    <th class="genel-toplam-ozet">{{ cevir('genel_toplam') }} </th>
+                    <th>
+                        <span class="final">
+                            {{ sepetBilgileri('ozet').genel_toplam }}
+                        </span>
+                        <p class="final-vergi-dahil-text">Kdv Dahil</p>
+                    </th>
+                </tr>
+            </tfoot>
+        </table>
+{# === MINI TRUST BADGES – CHECKOUT CTA ÜSTÜ === #}
+<div class="checkout-mini-trust-x4">
+    
+    <div class="trust-item">
+        <i class="fas fa-credit-card"></i>
+        <span>Güvenli Ödeme</span>
+    </div>
+    <div class="trust-item">
+        <i class="fas fa-undo"></i>
+        <span>Kolay İade</span>
+    </div>
+</div>
+
+
+
+        <div class="payment-final-buttons-1">
+            <a href="{{ statikLinkler('odeme_uyelik_kontrolu') }}" class="btn btn-complete btn-theme-1">SEPETİ ONAYLA <i class="fa fa-check"></i></a>
+        </div>
+    </div>
+    
+
+
+{% endblock %}

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Tilbe Home — Footer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+
+<!-- ═══ FOOTER SVG SPRITE (self-contained) ═══ -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <symbol id="i-truck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.62l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 12.4L10.9286 14L14.5 10"/><path d="M3 10.4167C3 7.21907 3 5.62028 3.37752 5.08241C3.75503 4.54454 5.25832 4.02996 8.26491 3.00079L8.83772 2.80472C10.405 2.26824 11.1886 2 12 2C12.8114 2 13.595 2.26824 15.1623 2.80472L15.7351 3.00079C18.7417 4.02996 20.245 4.54454 20.6225 5.08241C21 5.62028 21 7.21907 21 10.4167C21 10.8996 21 11.4234 21 11.9914C21 14.4963 20.1632 16.4284 19 17.9041M3.19284 14C4.05026 18.2984 7.57641 20.5129 9.89856 21.5273C10.62 21.8424 10.9807 22 12 22C13.0193 22 13.38 21.8424 14.1014 21.5273C14.6796 21.2747 15.3324 20.9478 16 20.5328"/></symbol>
+  <symbol id="i-rotate" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7H15C17.7614 7 20 9.23857 20 12C20 14.7614 17.7614 17 15 17M4 7L7 4M4 7L7 10M8 17H11"/></symbol>
+  <symbol id="i-head" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 17V12C21 10.1599 20.4478 8.44877 19.5 7.02331M3 17V12C3 7.02944 7.02944 3 12 3C13.4368 3 14.795 3.33671 16 3.93552"/><path d="M22 15.5V17.5"/><path d="M2 15.5V17.5"/><path d="M8 13.8446C8 13.0802 8 12.698 7.82526 12.4323C7.73733 12.2985 7.62061 12.188 7.4844 12.1095C7.21371 11.9535 6.84812 11.9896 6.11694 12.0617C4.88487 12.1831 4.26884 12.2439 3.82737 12.5764C3.60394 12.7448 3.41638 12.9593 3.27646 13.2067C3 13.6955 3 14.3395 3 15.6276V17.1933C3 18.4685 3 19.1061 3.28198 19.5986C3.38752 19.7829 3.51981 19.9491 3.67416 20.0913C4.08652 20.4714 4.68844 20.5901 5.89227 20.8275C6.73944 20.9945 7.16302 21.078 7.47564 20.9021C7.591 20.8372 7.69296 20.7493 7.77572 20.6434C8 20.3565 8 19.9078 8 19.0104V13.8446Z"/><path d="M16 13.8446C16 13.0802 16 12.698 16.1747 12.4323C16.2627 12.2985 16.3794 12.188 16.5156 12.1095C16.7863 11.9535 17.1519 11.9896 17.8831 12.0617C19.1151 12.1831 19.7312 12.2439 20.1726 12.5764C20.3961 12.7448 20.5836 12.9593 20.7235 13.2067C21 13.6955 21 14.3395 21 15.6276V17.1933C21 18.4685 21 19.1061 20.718 19.5986C20.6125 19.7829 20.4802 19.9491 20.3258 20.0913C19.9135 20.4714 19.3116 20.5901 18.1077 20.8275C17.2606 20.9945 16.837 21.078 16.5244 20.9021C16.409 20.8372 16.307 20.7493 16.2243 20.6434C16 20.3565 16 19.9078 16 19.0104V13.8446Z"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.33 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></symbol>
+  <symbol id="i-whatsapp" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.47-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51-.17 0-.37-.01-.57-.01-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.7.3 1.26.49 1.69.62.72.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.3.18-1.42-.07-.12-.27-.2-.57-.35m-5.42 7.4h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37A9.86 9.86 0 0 1 2.16 11.9c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.9 7c0 5.45-4.44 9.88-9.89 9.88M20.46 3.49A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.69 1.45c6.55 0 11.89-5.34 11.89-11.89a11.82 11.82 0 0 0-3.48-8.42z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17.25 11.2513C17.7356 10.0935 18 8.86093 18 7.70031C18 4.55211 15.3137 2 12 2C8.68629 2 6 4.55211 6 7.70031C6 10.8238 7.91499 14.4687 10.9028 15.7721C11.5993 16.076 12.4007 16.076 13.0972 15.7721C14.0514 15.3558 14.8963 14.7007 15.6042 13.9M15 22L12 19M12 19L9 22M12 19V14"/><circle cx="12" cy="8" r="2"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 7V12L15 14"/></symbol>
+  <symbol id="i-chev-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></symbol>
+  <symbol id="i-arrow-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m2 7 10 6 10-6"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></symbol>
+  <!-- Social -->
+  <symbol id="i-ig" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-fb" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M13.5 21v-8h2.7l.4-3.2h-3.1V7.8c0-.9.3-1.6 1.6-1.6h1.7V3.3c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.5-4 4.1v2.5H7.7V13h2.7v8h3.1Z"/></symbol>
+  <symbol id="i-tt" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M19.6 8.3V5.6a4.3 4.3 0 0 1-2.3-.7A4.2 4.2 0 0 1 15.4 2h-2.7v13.6a2.3 2.3 0 1 1-2.3-2.3v-2.7a5 5 0 1 0 5 5V9a7.1 7.1 0 0 0 4.2 1.4V8.3a4.5 4.5 0 0 1 0-.1Z"/></symbol>
+  <symbol id="i-yt" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M23 7.5a3.9 3.9 0 0 0-2.7-2.7C17.9 4 12 4 12 4s-5.9 0-8.3.8A3.9 3.9 0 0 0 1 7.5 40.7 40.7 0 0 0 .5 12a40.7 40.7 0 0 0 .5 4.5 3.9 3.9 0 0 0 2.7 2.7C6.1 20 12 20 12 20s5.9 0 8.3-.8a3.9 3.9 0 0 0 2.7-2.7 40.7 40.7 0 0 0 .5-4.5 40.7 40.7 0 0 0-.5-4.5ZM10 15.5v-7l6 3.5-6 3.5Z"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M18.2 3h3.3l-7.3 8.3L22.7 21h-6.6l-5.2-6.8L5 21H1.7l7.8-9-8-9h6.8l4.7 6.2L18.2 3Zm-1.1 16.1h1.8L7 4.8H5L17.1 19.1Z"/></symbol>
+</svg>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="f">
+
+  <!-- 1. Trust strip — 4 value prop üst bar -->
+  <div class="f-trust">
+    <div class="f-c">
+      <div class="f-trust-grid">
+        <div class="f-trust-i">
+          <div class="f-trust-ic"><svg class="ic"><use href="#i-truck"/></svg></div>
+          <div class="f-trust-t"><strong>Ücretsiz Kargo</strong><small>500₺ üzeri siparişlerde</small></div>
+        </div>
+        <div class="f-trust-i">
+          <div class="f-trust-ic"><svg class="ic"><use href="#i-rotate"/></svg></div>
+          <div class="f-trust-t"><strong>14 Gün Koşulsuz İade</strong><small>Ücretsiz iade garantisi</small></div>
+        </div>
+        <div class="f-trust-i">
+          <div class="f-trust-ic"><svg class="ic"><use href="#i-shield"/></svg></div>
+          <div class="f-trust-t"><strong>Güvenli Ödeme</strong><small>256-bit SSL şifreleme</small></div>
+        </div>
+        <div class="f-trust-i">
+          <div class="f-trust-ic"><svg class="ic"><use href="#i-head"/></svg></div>
+          <div class="f-trust-t"><strong>7/24 Destek</strong><small>WhatsApp & telefon</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Main grid -->
+  <div class="f-main">
+    <div class="f-c">
+      <div class="f-grid">
+
+        <!-- Brand + About + Store info + Social + App -->
+        <div class="f-brand">
+          <a class="f-logo" href="https://www.tilbehome.com/" aria-label="Tilbe Home">
+            <img src="https://cdn.qukasoft.com/f/525751/cGNDVUoyVTArYkI4Tmk4Z1RvTTZKYms9/l/logo-41490448-sw260sh50.webp" alt="Tilbe Home">
+          </a>
+          <p class="f-about">Ev, mutfak, banyo ve dekorasyon ürünlerinde güvenilir online alışveriş sitesi. Kaliteli ürünler, hızlı kargo ve kolay iade garantisiyle her siparişte yanınızdayız.</p>
+
+          <!-- Store info cards -->
+          <div class="f-info">
+            <div class="f-info-i">
+              <div class="f-info-ic"><svg class="ic"><use href="#i-pin"/></svg></div>
+              <div class="f-info-t"><strong>Merkez Depo</strong><span>Sakarya / Serdivan</span></div>
+            </div>
+            <div class="f-info-i">
+              <div class="f-info-ic"><svg class="ic"><use href="#i-clock"/></svg></div>
+              <div class="f-info-t"><strong>Çalışma Saatleri</strong><span>Pzt–Cmt · 09:00–18:00</span></div>
+            </div>
+          </div>
+
+          <!-- Social -->
+          <div class="f-social-wrap">
+            <div class="f-social-l">Bizi takip et</div>
+            <div class="f-social">
+              <a href="https://instagram.com/tilbehome" target="_blank" rel="noopener" aria-label="Instagram"><svg class="ic"><use href="#i-ig"/></svg></a>
+              <a href="https://facebook.com/tilbehome" target="_blank" rel="noopener" aria-label="Facebook"><svg class="ic ic--solid"><use href="#i-fb"/></svg></a>
+              <a href="https://tiktok.com/@tilbehome" target="_blank" rel="noopener" aria-label="TikTok"><svg class="ic ic--solid"><use href="#i-tt"/></svg></a>
+              <a href="https://youtube.com/@tilbehome" target="_blank" rel="noopener" aria-label="YouTube"><svg class="ic ic--solid"><use href="#i-yt"/></svg></a>
+              <a href="https://x.com/tilbehome" target="_blank" rel="noopener" aria-label="X / Twitter"><svg class="ic ic--solid"><use href="#i-x"/></svg></a>
+            </div>
+          </div>
+
+          <!-- App store badges -->
+          <div class="f-app">
+            <a class="f-app-b" href="#" aria-label="App Store'dan indir">
+              <svg class="f-app-ic" viewBox="0 0 24 24" fill="currentColor"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+              <div class="f-app-t"><small>İndir</small><strong>App Store</strong></div>
+            </a>
+            <a class="f-app-b" href="#" aria-label="Google Play'den indir">
+              <svg class="f-app-ic" viewBox="0 0 24 24" fill="currentColor"><path d="M3.61 1.814a1.5 1.5 0 0 0-.61 1.2v18c0 .48.226.92.61 1.2l10.386-10.4L3.61 1.814zM14.54 13.5l2.88 2.88-13.35 7.5c.1 0 .2-.03.3-.08l10.17-5.8zm-.006-3.005L4.37.125c-.1-.05-.2-.08-.3-.08l13.36 7.5-2.9 2.95zm6.556 1.505c.67-.37.67-1.37 0-1.74l-3.35-1.92-3.19 3.24 3.19 3.24 3.35-1.82z"/></svg>
+              <div class="f-app-t"><small>İndir</small><strong>Google Play</strong></div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Popüler Kategoriler -->
+        <div class="f-col">
+          <h3 class="f-col-h">Popüler Kategoriler</h3>
+          <ul class="f-col-l">
+            <li><a href="https://www.tilbehome.com/ev-yasam-c-1">Ev & Yaşam</a></li>
+            <li><a href="https://www.tilbehome.com/sofra-mutfak-c-75">Sofra & Mutfak</a></li>
+            <li><a href="https://www.tilbehome.com/sofra-mutfak/rendeler-c-67">Rendeler</a></li>
+            <li><a href="https://www.tilbehome.com/ev-bakim-temizlik">Temizlik Ürünleri</a></li>
+            <li><a href="https://www.tilbehome.com/elektronik-urunler">Elektronik</a></li>
+            <li><a href="https://www.tilbehome.com/oto-aksesuar">Oto Aksesuar</a></li>
+            <li><a href="https://www.tilbehome.com/kamp-malzemesi">Outdoor & Kamp</a></li>
+            <li><a href="https://www.tilbehome.com/viral-urunler">Viral Ürünler</a></li>
+            <li><a href="https://www.tilbehome.com/yeni-urunler">Yeni Ürünler</a></li>
+            <li><a href="https://www.tilbehome.com/ev-yasam/banyo-urunleri-c-100">Banyo Ürünleri</a></li>
+            <li><a href="https://www.tilbehome.com/saklama-kutusu">Saklama Kapları</a></li>
+          </ul>
+        </div>
+
+        <!-- Kurumsal -->
+        <div class="f-col">
+          <h3 class="f-col-h">Kurumsal</h3>
+          <ul class="f-col-l">
+            <li><a href="https://www.tilbehome.com/hakkimizda-sid1">Hakkımızda</a></li>
+            <li><a href="https://www.tilbehome.com/tilbe-home-guvenilir-mi-sitemiz-ve-markamiz-hakkinda-her-sey">Tilbe Home Güvenilir mi?</a></li>
+            <li><a href="https://www.tilbehome.com/kampanyalar">Kampanyalar & Fırsatlar</a></li>
+            <li><a href="https://www.tilbehome.com/en-cok-satilanlar">Çok Satılan Ürünler</a></li>
+            <li><a href="https://www.tilbehome.com/yeni-urunler">Yeni Gelen Ürünler</a></li>
+            <li><a href="https://www.tilbehome.com/trend-urunler">Trend Ürünler</a></li>
+            <li><a href="https://www.tilbehome.com/markalar">Markalar</a></li>
+            <li><a href="https://www.tilbehome.com/bayilik">Bayilik Başvurusu</a></li>
+            <li><a href="https://www.tilbehome.com/toptan-satis">Toptan Satış</a></li>
+            <li><a href="https://www.tilbehome.com/blog">Blog</a></li>
+            <li><a href="https://www.tilbehome.com/iletisim-sid4">Bize Yazın</a></li>
+          </ul>
+        </div>
+
+        <!-- Müşteri Hizmetleri -->
+        <div class="f-col">
+          <h3 class="f-col-h">Müşteri Hizmetleri</h3>
+          <ul class="f-col-l">
+            <li><a href="https://www.tilbehome.com/siparis-takip-sid0">Kargom Nerede?</a></li>
+            <li><a href="https://www.tilbehome.com/kolay-iade">Kolay İade & Değişim</a></li>
+            <li><a href="https://www.tilbehome.com/yardim">Sıkça Sorulan Sorular</a></li>
+            <li><a href="https://www.tilbehome.com/teslimat-kargo">Teslimat & Kargo</a></li>
+            <li><a href="https://www.tilbehome.com/iptal-iade-kosullari">İptal ve İade Koşulları</a></li>
+            <li><a href="https://www.tilbehome.com/havale-bildirim-sid0">Havale Bildirimleri</a></li>
+            <li><a href="https://www.tilbehome.com/kapida-odeme">Kapıda Ödeme</a></li>
+            <li><a href="https://www.tilbehome.com/siparis-rehberi">Sipariş Rehberi</a></li>
+            <li><a href="https://www.tilbehome.com/odeme-secenekleri">Ödeme Seçenekleri</a></li>
+            <li><a href="mailto:destek@tilbehome.com">E-posta Destek</a></li>
+            <li><a href="https://wa.me/05308895434" target="_blank" rel="noopener">WhatsApp Destek</a></li>
+          </ul>
+        </div>
+
+        <!-- Bilgi & Sözleşmeler + Bize Ulaşın (combined premium column) -->
+        <div class="f-col f-col--contact">
+          <h3 class="f-col-h">Bize Ulaşın</h3>
+
+          <!-- Hızlı kargo takip — öne çıkarılmış -->
+          <form class="f-track" action="https://www.tilbehome.com/siparis-takip-sid0" method="get" role="search">
+            <label class="f-track-l">
+              <svg class="ic"><use href="#i-truck"/></svg>
+              <span>Kargo Takip</span>
+            </label>
+            <div class="f-track-in">
+              <input type="text" class="f-track-i" name="siparisno" placeholder="Sipariş numaranı gir…" autocomplete="off" inputmode="numeric">
+              <button type="submit" class="f-track-b" aria-label="Takip et"><svg class="ic"><use href="#i-chev-right"/></svg></button>
+            </div>
+          </form>
+
+          <!-- İletişim kartları -->
+          <a class="f-contact-b f-contact-b--tel" href="tel:+905308895434">
+            <div class="f-contact-ic"><svg class="ic"><use href="#i-phone"/></svg></div>
+            <div class="f-contact-t">
+              <small>Çağrı Merkezi</small>
+              <strong>0530 889 54 34</strong>
+            </div>
+          </a>
+
+          <a class="f-contact-b f-contact-b--wa" href="https://wa.me/05308895434" target="_blank" rel="noopener">
+            <div class="f-contact-ic"><svg class="ic ic--solid"><use href="#i-whatsapp"/></svg></div>
+            <div class="f-contact-t">
+              <small>WhatsApp · <span class="f-live"><span class="f-live-dot"></span>Şu an aktif</span></small>
+              <strong>Hemen Yaz</strong>
+            </div>
+            <svg class="ic f-contact-ch"><use href="#i-chev-right"/></svg>
+          </a>
+
+          <!-- Bilgi & sözleşmeler accordion -->
+          <details class="f-legal">
+            <summary>Bilgi & Sözleşmeler</summary>
+            <ul class="f-col-l">
+              <li><a href="https://www.tilbehome.com/mesafeli-satis">Mesafeli Satış Sözleşmesi</a></li>
+              <li><a href="https://www.tilbehome.com/gizlilik">Gizlilik Politikası</a></li>
+              <li><a href="https://www.tilbehome.com/kvkk-aydinlatma">KVKK Aydınlatma Metni</a></li>
+              <li><a href="https://www.tilbehome.com/cerez-politikasi">Çerez Politikası</a></li>
+              <li><a href="https://www.tilbehome.com/kullanici-sozlesmesi">Kullanıcı Sözleşmesi</a></li>
+              <li><a href="https://www.tilbehome.com/cayma-hakki">Cayma Hakkı Formu</a></li>
+              <li><a href="https://www.tilbehome.com/kvkk-basvuru">KVKK Başvuru Formu</a></li>
+              <li><a href="https://www.tilbehome.com/on-bilgilendirme">Ön Bilgilendirme Formu</a></li>
+              <li><a href="https://www.tilbehome.com/uyelik-sozlesmesi">Üyelik Sözleşmesi</a></li>
+            </ul>
+          </details>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Trust badges + Payment strip -->
+  <div class="f-trust2">
+    <div class="f-c">
+      <div class="f-trust2-in">
+        <div class="f-pay">
+          <span class="f-pay-l">Güvenli ödeme</span>
+          <div class="f-pay-logos">
+            <span class="f-pay-logo" title="Visa">VISA</span>
+            <span class="f-pay-logo" title="Mastercard">MC</span>
+            <span class="f-pay-logo" title="American Express">AMEX</span>
+            <span class="f-pay-logo" title="Troy">TROY</span>
+            <span class="f-pay-logo" title="Bonus">BONUS</span>
+          </div>
+        </div>
+        <div class="f-badges">
+          <div class="f-badge"><svg class="ic"><use href="#i-shield"/></svg><strong>256-bit SSL</strong></div>
+          <div class="f-badge"><svg class="ic"><use href="#i-check"/></svg><strong>3D Secure</strong></div>
+          <div class="f-badge"><svg class="ic"><use href="#i-shield"/></svg><strong>ETBİS Kayıtlı</strong></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. Copyright bar -->
+  <div class="f-btm">
+    <div class="f-c">
+      <div class="f-btm-in">
+        <div class="f-copy">© 2026 <strong>Tilbe Home</strong> · Tüm hakları saklıdır</div>
+        <nav class="f-btm-nav" aria-label="Alt politika linkleri">
+          <a href="https://www.tilbehome.com/gizlilik">Gizlilik</a>
+          <span class="f-btm-sep"></span>
+          <a href="https://www.tilbehome.com/cerez-politikasi">Çerez</a>
+          <span class="f-btm-sep"></span>
+          <a href="https://www.tilbehome.com/kullanici-sozlesmesi">Kullanım</a>
+          <span class="f-btm-sep"></span>
+          <a href="https://www.tilbehome.com/iletisim-sid4">İletişim</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+</footer>
+
+<!-- Back to top floating button -->
+<button class="f-top" id="fTop" type="button" aria-label="Başa dön" hidden>
+  <svg class="ic"><use href="#i-arrow-up"/></svg>
+</button>
+
+<!-- Demo note -->
+<div class="f-demo">
+  <strong>Footer v1</strong> · ayrı dosya · <a href="tilbe-header-v5.html">Header dosyası</a> · aynı <code>style.css</code> + <code>script.js</code>
+</div>
+
+</body>
+</html>

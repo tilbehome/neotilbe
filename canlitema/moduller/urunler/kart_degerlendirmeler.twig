@@ -1,0 +1,34 @@
+{% set toplam_yildiz = 5 %}
+{% set ortalama = urun.degerlendirme.ortalama_oy|default(0) %}
+{% set oy_sayisi = urun.degerlendirme.oy_sayisi|default(0) %}
+
+<div class="product-reviews d-flex align-items-center">
+    <!-- Ortalama puan (sadece değerlendirme varsa göster) -->
+    {% if oy_sayisi > 0 %}
+        <span class="count me-2">
+            {{ ortalama|number_format(1, '.', ',') }}
+        </span>
+    {% endif %}
+
+    <!-- Yıldızlar -->
+    <div class="stars d-flex">
+        {% for i in 1..toplam_yildiz %}
+            {% if ortalama >= i %}
+                <span class="star fill"><i class="fa fa-star"></i></span>
+            {% elseif ortalama >= i - 0.5 %}
+                <span class="star fill">
+                    <i class="fa fa-star-half"></i>
+                    <i class="fa fa-star dark"></i>
+                </span>
+            {% else %}
+                <span class="star"><i class="fa fa-star dark"></i></span>
+            {% endif %}
+        {% endfor %}
+    </div>
+
+    <!-- Oy sayısı + Foto ikon (her zaman gösterilir) -->
+    <span class="count ms-2 {{ oy_sayisi == 0 ? 'text-muted' : '' }}">
+        ({{ oy_sayisi }})
+        <i class="fa fa-camera"></i>
+    </span>
+</div>

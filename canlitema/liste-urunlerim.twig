@@ -1,0 +1,43 @@
+<div class="card-list-product">
+    <div class="card-list-product-inner">
+        <a href="{{ urun.link }}" class="c-l-p-i-link" title="{{ urun.adi_alt }}">
+
+
+
+            <div class="image-wrapper">
+                <div class="image">
+                    {{ gorsel.lazy(urun.resim, '', urun.adi_alt) }}
+                </div>
+            </div>
+
+            
+
+            <div class="info">
+                <div class="title">
+                    {{ urun.adi }}
+                </div>
+
+            </div>
+
+            <div class="price-group">
+
+                <div class="prices">
+                    
+                    {% if urun.indirim %}
+                        <div class="discount">{{ urun.indirim_orani_str }} {{ cevir('indirim_k') }}</div>
+                        <div class="list-price">
+                            {{ urun.piyasa_fiyati }}
+                        </div>
+                    {% endif %}
+
+                     <div class="sale-price">{{ urun.fiyat }}</div>
+
+                </div>
+
+            </div>
+
+        </a>
+		
+		
+    </div>
+</div>

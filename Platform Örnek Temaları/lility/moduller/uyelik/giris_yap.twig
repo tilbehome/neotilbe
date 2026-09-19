@@ -1,0 +1,126 @@
+{% extends varsayilanBlokModul() %}
+
+{% block modulIcerik %}
+
+    {% if sayfaBilgileri('sayfa') == 'uyeliksiz-alisveris' and not ayarlar('sadece_uyeler_alisveris_yapabilir') %}
+        <a href="{{ statikLinkler('odeme') }}" class="btn btn-primary btn-without-login">
+			{{ cevir('uye_olmadan_devam_et') }} <i class="coreicon-right-arrow ml-3"></i>
+	    </a> 
+    {% endif %}
+
+    <nav>
+      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <a class="nav-item nav-link active mr-2" id="nav-login-tab" data-toggle="tab" href="#nav-login" role="tab" aria-controls="nav-login" aria-selected="true">
+            {{cevir('giris_yap')}}
+        </a>
+        <a class="nav-item nav-link ml-2" id="nav-register-tab" data-toggle="tab" href="#nav-register" role="tab" aria-controls="nav-register" aria-selected="false">
+            {{cevir('uye_ol')}}
+        </a>
+      </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="nav-login" role="tabpanel" aria-labelledby="nav-login-tab">
+          <form class="login-form" action="" method="post" onSubmit="return userLogin(this)">
+            <input type="hidden" name="returnUrl" value="{{ returnUrl() }}" />
+            <label>{{ cevir('eposta_adresiniz') }}</label>
+            <input type="text" class="form-control m-input " name="email" value="">
+            <div class="mt-3"></div>
+            <label>{{ cevir('sifre') }}</label>
+            <input type="password" class="form-control m-input " name="password" value="">
+            <div class="mt-3"></div>
+            <button class="btn btn-success mb-2" type="submit">{{ cevir('giris_yap_buton') }}</button>
+            {% if facebookLogin().aktif %}
+                <a href="{{ facebookLogin().link }}" class="btn btn-fb-login mb-2">
+    			    <span><i class="fab fa-facebook-f"></i></span>
+    				{{ cevir('facebook_ile_giris_yap') }}
+    		    </a>
+            {% endif %}
+            {% if googleLogin().aktif %}
+                <a href="{{ googleLogin().link }}" class="btn btn-google-login mb-2">
+                    <span><i class="fab fa-google"></i></span>
+                    {{ cevir('google_ile_giris_yap') }}
+                </a>
+            {% endif %}
+            <div class="text-center">
+                <a href="{{ statikLinkler('sifremi_unuttum') }}" class="font-weight-500">
+                    {{ cevir('sifremi_unuttum') }}
+                </a>
+            </div>
+        </form>
+      </div>
+      <div class="tab-pane fade" id="nav-register" role="tabpanel" aria-labelledby="nav-register-tab">
+           <form class="common-register-form" action="" method="post" onsubmit="return userRegister(this)">
+                <input type="hidden" name="returnUrl" value="{{ returnUrl() }}" />
+                <div class="register_description">
+                    <div class="alert alert-info">{{ cevir('uyelik_sayfasi_aciklama') }}</div>
+                </div>
+                <div class="mws-form-inline">
+                    <div class="row mb-3">
+                        <div class="col-md-6 mb-2">
+                            <label>{{ cevir('ad') }} <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control m-input small" name="name" value="">
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <label>{{ cevir('soyad') }} <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control m-input small" name="lastname" value="">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6 mb-2">
+                            <label>{{ cevir('eposta') }} <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control m-input small" name="email" value="">
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <label>{{ cevir('telefon_numarasi') }}</label>
+                            <input type="text" class="form-control form-phone-control m-input small" name="phone" value="">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6 mb-2">
+                            <label>{{ cevir('sifre') }} <span class="text-danger">*</span></label>
+                            <input type="password" class="form-control m-input small" name="password" value="">
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <label>{{ cevir('sifre_tekrar') }} <span class="text-danger">*</span></label>
+                            <input type="password" class="form-control m-input small" name="password2" value="">
+                        </div>
+                    </div>
+        
+        
+                    <div class="d-flex">
+                        <label> </label>
+                        <input type="checkbox" class="ibutton" name="newsletter_email" id="checkMailEnewsletter" value="1" style="margin-right: 10px">
+                        <label for="checkMailEnewsletter" class="ml-2">
+                            {{ cevir('eposta_ebulten_kayit_onayi') | raw }}
+                        </label>
+                    </div>
+        
+        
+                    <div class="d-flex">
+                        <label> </label>
+                        <input type="checkbox" class="ibutton" name="newsletter_sms" id="checkSmsEnewsletter" value="1" style="margin-right: 10px">
+                        <label for="checkSmsEnewsletter" class="ml-2">
+                            {{ cevir('sms_ebulten_kayit_onayi') | raw }}
+                        </label>
+                    </div>
+        
+                    <div class="d-flex">
+                        <label> </label>
+                        <input type="checkbox" class="ibutton" name="user_rules" id="checkUserRule" value="1" style="margin-right: 10px">
+                        <label for="checkUserRule" class="ml-2">
+                            {{ cevir('x_ve_y_okudum_ve_kabul_ediyorum', {
+                                x: '<a href="javascript:;" onclick="showNativeModal(\'userAgreement\')">'~cevir('uyelik_kurallarini')~'</a>',
+                                y: '<a href="javascript:;" onclick="showNativeModal(\'kvkkRule\')">'~cevir('kvkk_aydinlatma_metnini')~'</a>'
+        
+                            }) | raw }}
+                        </label>
+                    </div>
+        
+        
+                    <div class="mt-3"></div>
+                    <button class="btn btn-success">{{ cevir('kayit_ol_buton') }}</button>
+                </div>
+            </form>
+      </div>
+    </div>
+{% endblock %}

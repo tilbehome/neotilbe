@@ -1,0 +1,45 @@
+{% extends varsayilanModal() %}
+
+{% block modalKodu %}
+    {{ sayfaBilgileri('modal_kodu') }}
+{% endblock %}
+
+{% block modalBoyutu %}
+    md
+{% endblock %}
+
+{% block modalBaslik %}
+    {{ cevir('uye_girisi') }}
+{% endblock %}
+
+{% block modalIcerik %}
+
+    <form class="login-form login-form-modal" action="" method="post" onSubmit="return userLogin(this)">
+        <label>{{ cevir('eposta_adresiniz') }}</label>
+        <input type="text" class="form-control m-input " name="email" value="">
+        <div class="mt-3"></div>
+        <label>{{ cevir('sifre') }}</label>
+        <input type="password" class="form-control m-input " name="password" value="">
+        <div class="mt-3"></div>
+        <div class="buttons">
+            <button class="btn btn-success btn-sm mr-1 mb-2" type="submit">{{ cevir('giris_yap_buton') }}</button>
+            {% if facebookLogin().aktif %}
+                <a href="{{ facebookLogin().link }}" class="btn btn-fb-login btn-sm mr-1 mb-2">
+                    <span><i class="fab fa-facebook-f"></i></span>
+                    {{ cevir('facebook_ile_giris_yap') }}
+                </a>
+            {% endif %}
+            {% if googleLogin().aktif %}
+                <a href="{{ googleLogin().link }}" class="btn btn-google-login btn-sm mr-1 mb-2">
+                    <span><i class="fab fa-google"></i></span>
+                    {{ cevir('google_ile_giris_yap') }}
+                </a>
+            {% endif %}
+            {{cevir('veya')}} 
+		    <a href="{{ statikLinkler('uye_ol') }}" class="btn btn-secondary btn-sm ml-1">{{ cevir('kayit_ol') }}</a>
+            
+        </div>
+    </form> 
+    
+
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends varsayilanBlokModul() %}
+
+{% block modulClass %}
+    p-g-mod-t-cat-display-{{ sayfaBilgileri('gosterim') }}
+{% endblock %}
+
+{% block modulIcerik %}
+
+    <div class="category-filter-list">
+        <div class="list-wrap" data-simplebar data-simplebar-auto-hide="false">
+            <ul class="list">
+                {% for liste in sayfaBilgileri('listeleme_tipleri') %}
+                    <li>
+                        <div class="lag-checkbox">
+                            <input id="cat-filter-list-{{ liste.ID }}" name="smart-cat-list" value="{{ liste.ID }}" data-smart-cat-search="1" type="radio" {{ liste.secili ? 'checked data-checked' : '' }}>
+                            <label for="cat-filter-list-{{ liste.ID }}">{{ liste.baslik }}</label>
+                            <span></span>
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+{% endblock %} 

@@ -1,0 +1,20 @@
+<div class="description">
+    {{ cevir('hesabim_aciklama') }}   
+ </div>
+<div class="hello">
+    <div class="title">{{ cevir('merhaba') }}, {{ kullaniciBilgileri('ad') }} {{ kullaniciBilgileri('soyad') }}</div>
+</div> 
+<div class="link-boxes">
+    <div class="col-md-12">
+        <div class="row">
+            {% for sayfa in kullaniciSayfalari() %}
+                <div class="col-6 col-md-4">
+                    <a class="link-box lb-1" href="{{ sayfa.link }}">
+                        <span><i class="{{ sayfa.ikon }}"></i></span>
+                        {{ sayfa.baslik }}                   
+                    </a> 
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

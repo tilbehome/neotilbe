@@ -1,0 +1,84 @@
+{% extends varsayilanSablon() %} 
+
+{% block headEtiketleri %}
+
+    {{ block('temaHeadEtiketleri') }}
+    {{ fontBilgileri(temaAyarlari('genel','font')).html | raw }}
+    <style type="text/css">
+        body {
+            {{ fontBilgileri(temaAyarlari('genel', 'font')).css | raw }}
+        }
+        :root{
+            --body-bg:{{ temaAyarlari('renk','body_renk') }};
+            --menu-bg-color: {{ temaAyarlari('renk','menu_arkaplan_renk') }};
+            --menu-color: {{ temaAyarlari('renk','menu_renk') }};
+            --menu-color-hover: {{ temaAyarlari('renk','menu_renk_hover') }};
+            --main-color: {{ temaAyarlari('renk','ana_renk') }};
+            --main-color2: {{ temaAyarlari('renk','ana_renk_2') }};
+            --header-top-color: {{ temaAyarlari('renk','ust_bar_renk') }};
+            --header-top-color-hover: {{ temaAyarlari('renk','ust_bar_renk_hover') }};
+            --add-cart-list: {{ temaAyarlari('renk','sepete_ekle') }};
+            --add-cart-list-hover: {{ temaAyarlari('renk','sepete_ekle_hover') }};
+            --add-cart-list-bg: {{ temaAyarlari('renk','sepete_ekle_arkaplan') }};
+            --add-cart-list-bg-hover: {{ temaAyarlari('renk','sepete_ekle_arkaplan_hover') }};
+            --buy-now: {{ temaAyarlari('renk','hemen_al') }};
+            --buy-now-bg: {{ temaAyarlari('renk','hemen_al_arkaplan') }};
+            --buy-now-hover: {{ temaAyarlari('renk','hemen_al_hover') }};
+            --buy-now-bg-hover: {{ temaAyarlari('renk','hemen_al_arkaplan_hover') }};
+            --add-cart-detail:{{ temaAyarlari('renk','sepete_ekle_detay') }};
+            --add-cart-detail-bg:{{ temaAyarlari('renk','sepete_ekle_detay_arkaplan') }};
+            --add-cart-detail-hover:{{ temaAyarlari('renk','sepete_ekle_detay_hover') }};
+            --add-cart-detail-bg-hover:{{ temaAyarlari('renk','sepete_ekle_detay_arkaplan_hover') }};
+            --complete-payment:{{ temaAyarlari('renk','odeme_tamamla') }};
+            --complete-payment-bg:{{ temaAyarlari('renk','odeme_tamamla_arkaplan') }};
+            --complete-payment-hover:{{ temaAyarlari('renk','odeme_tamamla_hover') }};
+            --complete-payment-bg-hover:{{ temaAyarlari('renk','odeme_tamamla_arkaplan_hover') }};
+            --transition-time: {{ temaAyarlari('renk','gecis_suresi') }}s ease-out;
+        };
+        
+    </style>
+    <link rel="stylesheet" type="text/css" href="{{ temaDosyalari('/assets/style.css') }}" />
+    <style type="text/css">
+        {% if temaAyarlari('genel','odeme_sepet_ust_alan_gizleme') %}
+            .cart-body .h-contact,
+            .payment-body .h-contact,
+            .cart-body .h-banner,
+            .payment-body .h-banner{
+                display: none !important;
+            }
+        
+        {% endif %}
+        {% if temaAyarlari('genel','container_genislik') %}
+            @media(min-width:1240px){
+                .container,
+                .container-sm,
+                .container-md,
+                .container-lg,
+                .container-xl {
+                    max-width: {{temaAyarlari('genel','container_genislik')}}px !important;
+                    width: 97%;
+                }
+            }
+        {% endif %}
+    </style>
+   
+{% endblock %}
+ 
+
+{% block footerKodlari %}
+    <div class="overlay d-none">
+        <div class="spinner-border spin" role="status">
+            <span class="sr-only">{{ cevir('yukleniyor') }}...</span>
+        </div>
+    </div> 
+    
+    <div class="op-black"></div>
+    <div class="op-black-2"></div>
+    
+    <script type="text/javascript">
+        var swal_alert_timer = {{ temaAyarlari('genel', 'alert_timer') }};
+    </script>
+    <script type="text/javascript" src="{{ temaDosyalari('/assets/scripts.js') }}" /></script>
+
+    {{ block('temaFooterKodlari') }}
+{% endblock %}

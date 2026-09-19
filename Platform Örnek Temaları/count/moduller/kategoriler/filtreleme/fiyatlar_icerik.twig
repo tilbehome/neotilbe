@@ -1,0 +1,13 @@
+<div class="list-wrap" data-simplebar data-simplebar-auto-hide="false">
+    <ul class="list">
+        {% for fiyat in sayfaBilgileri('fiyat_araligi') %}
+            <li>
+                <div class="lag-checkbox">
+                    <input id="cat-filter-price-{{ fiyat.ID }}" name="smart-cat-fiyatlar" value="{{ fiyat.ID }}" data-smart-cat-search="1" type="radio" {{ fiyat.secili ? 'checked data-checked' : '' }}>
+                    <label for="cat-filter-price-{{ fiyat.ID }}">{{ fiyat.baslik }}</label>
+                    <span></span>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+</div>

@@ -1,0 +1,60 @@
+{% extends sepetBilgileri('durum')
+    ? varsayilanBlokModul()
+    : varsayilanBosDosya() %}
+
+{% block modulIcerik %}
+    <div class="payment-cart-summary-1">
+        <table class="table summary">
+            <tfoot> 
+                {% if ayarlar('siparis_kdv_haric_gosterim') %}
+                    <tr>
+                        <th>{{ cevir('urunler_toplami') }}</th>
+                        <th>{{ sepetBilgileri('ozet').toplam_kdv_haric }}</th>
+                    </tr>
+                    <tr>
+                        <th>{{ cevir('toplam_kdv') }}</th>
+                        <th>{{ sepetBilgileri('ozet').toplam_kdv }}</th>
+                    </tr>
+                {% else %}
+                    <tr>
+                        <th>{{ cevir('urunler_toplami') }}</th>
+                        <th>{{ sepetBilgileri('ozet').toplam }}</th>
+                    </tr>
+                {% endif %} 
+                {% if sepetBilgileri('ozet').kargo_ucreti_var_mi %}
+                    <tr>
+                        <th>{{ cevir('kargo_ucreti') }}</th>
+                        <th>{{ sepetBilgileri('ozet').kargo }}</th>
+                    </tr>
+                {% endif %} 
+                {% if sepetBilgileri('ozet').indirim_var_mi %}
+                    <tr>
+                        <th>{{ cevir('indirim_tutari') }} {{ sepetBilgileri('ozet').indirim.miktar }}</th>
+                        <th>-{{ sepetBilgileri('ozet').indirim.tutar }}</th>
+                    </tr>
+                {% endif %}
+                {% if sepetBilgileri('ozet').indirim_var_mi %}
+                    {% if sepetBilgileri('ozet').indirim.kod is not empty  %}
+                        <tr>
+                            <th>{{ cevir('hediye_ceki') }}</th>
+                            <th>
+                                {{ sepetBilgileri('ozet').indirim.kod }}
+                                <a href="javascript:;" onclick="removeVoucherCode('refresh-page')" class="remove-vocuher text-danger">
+                                    <i class="fa fa-times"></i>
+                                </a>
+                            </th>
+                        </tr>
+                    {% endif %}
+                {% endif %}
+                <tr>
+                    <th>{{ cevir('genel_toplam') }} <br /> {{ cevir('kdv_dahil') }}</th>
+                    <th>
+                        <span class="final">
+                            {{ sepetBilgileri('ozet').genel_toplam }}
+                        </span>
+                    </th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+{% endblock %}  

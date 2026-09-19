@@ -1,0 +1,56 @@
+<div id="product-profile-carousel-{{ sayfaBilgileri('ID') }}" class="carousel slide" data-ride="carousel">
+    <div class="carousel-outer">
+        {{ urunEklentileri.etiketler(sayfaBilgileri('ID')) }}
+        <div class="carousel-inner">
+     
+            {% for index, resim in sayfaBilgileri('videolu_resimler') %}
+                <div class="carousel-item {{ index == 0 ? 'active' : '' }}">
+                    {% if resim.tipi == 'video' %}
+                        <div class="video">
+                            <video muted="" onloadeddata="this.play();" loop="" autoplay="" playsinline="" webkit-playsinline="">
+                                <source src="{{ resim.video_url }}" type="{{ resim.video_tipi }}">
+                                </source>
+                            </video>
+                        </div>
+                    {% else %}
+                        <a href="{{ resim.buyuk }}" data-fancybox="images" data-caption="{{ sayfaBilgileri('adi_alt') }}">
+                            <img src="{{ resim.normal }}" alt="{{ sayfaBilgileri('adi_alt') }}">
+                        </a>
+                    {% endif %}
+                    {% if temaAyarlari('urun_karti', 'favori_buton') %} 
+                {% include 'moduller/urunler/kart_favori_listesi.twig' %}
+            {% endif %}
+                    
+                </div>
+            {% endfor %}
+        </div>
+        {% if sayfaBilgileri('videolu_resimler')|length > 1 %}
+            <a class="carousel-control-prev" href="#product-profile-carousel-{{ sayfaBilgileri('ID') }}" role="button" data-slide="prev">
+                <i class="fa fa-chevron-left"></i>
+            </a>
+            <a class="carousel-control-next" href="#product-profile-carousel-{{ sayfaBilgileri('ID') }}" role="button" data-slide="next">
+                <i class="fa fa-chevron-right"></i>
+            </a>
+        {% endif %}
+    </div>
+    <ol class="carousel-indicators">
+        {% for index, resim in sayfaBilgileri('videolu_resimler') %}
+            {% if resim.tipi == 'video' %}
+            <li data-target="#product-profile-carousel-{{ sayfaBilgileri('ID') }}" 
+                data-slide-to="{{ index }}" class="{{ index == 0 ? 'active' : '' }}">
+                <div class="video-play">
+                    <img class="d-block w-100" src="{{ resim.thumb }}" alt="{{ sayfaBilgileri('adi_alt') }}">
+                     <i class="fa fa-play-circle" aria-hidden="true"></i>
+                </div>
+            </li>
+            {% else %}
+                <li data-target="#product-profile-carousel-{{ sayfaBilgileri('ID') }}" 
+                    data-slide-to="{{ index }}" class="{{ index == 0 ? 'active' : '' }}">
+                    <img class="d-block w-100" src="{{ resim.thumb }}" alt="{{ sayfaBilgileri('adi_alt') }}">
+                </li>
+            {% endif %}
+            
+        {% endfor %}
+    </ol>
+
+</div>

@@ -1,0 +1,119 @@
+<div id="product-profile-carousel-{{ sayfaBilgileri('ID') }}" class="carousel slide" data-ride="carousel">
+    <div class="row">
+        <div class="col-md-2">
+             <ol class="carousel-indicators">
+                 
+                {% for index, resim in sayfaBilgileri('videolu_resimler') %}
+                    {% if resim.tipi == 'video' %}
+                    <li data-target="#product-profile-carousel-{{ sayfaBilgileri('ID') }}" 
+                        data-slide-to="{{ index }}" class="{{ index == 0 ? 'active' : '' }}">
+                        <div class="video-play">
+                            <img class="d-block w-100" src="{{ resim.thumb }}" alt="{{ sayfaBilgileri('adi_alt') }}">
+                             <i class="fa fa-play-circle" aria-hidden="true"></i>
+                        </div>
+                    </li>
+                    {% else %}
+                        <li data-target="#product-profile-carousel-{{ sayfaBilgileri('ID') }}" 
+                            data-slide-to="{{ index }}" class="{{ index == 0 ? 'active' : '' }}">
+                            <img class="d-block w-100" src="{{ resim.thumb }}" alt="{{ sayfaBilgileri('adi_alt') }}">
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ol>
+        </div>
+        <div class="col-md-10">
+             <div class="carousel-outer">
+               
+                {% if sayfaBilgileri('indirim') %}
+                    <div class="discount">
+                        <span class="rate">{{ sayfaBilgileri('indirim_orani_str') }}</span>
+                    </div>
+                {% endif %}
+                <div class="carousel-outer">
+               
+                <div class="carousel-inner">
+                          
+                   {% for index, resim in sayfaBilgileri('videolu_resimler') %}
+                        <div class="carousel-item {{ index == 0 ? 'active' : '' }}">
+                                {% if resim.tipi == 'video' %}
+                                    <div class="video position-relative">
+                                        <video id="video-{{ index }}" muted loop playsinline webkit-playsinline>
+                                            <source src="{{ resim.video_url }}" type="{{ resim.video_tipi }}">
+                                            </source>
+                                        </video>
+                                        <button class="video-play-btn" onclick="playVideo('{{ index }}', this)">
+                                            <i class="fa fa-play-circle"></i>
+                                        </button>
+                                    </div>
+                                {% else %}
+                                <a href="{{ resim.buyuk }}" data-fancybox="images" data-caption="{{ sayfaBilgileri('adi_alt') }}">
+                                    <img src="{{ resim.normal }}" alt="{{ sayfaBilgileri('adi_alt') }}">
+                                </a>
+                            {% endif %}
+                        </div>
+                    {% endfor %}
+                </div>
+                
+                <script>
+                    function playVideo(index, btn) {
+    var video = document.getElementById("video-" + index);
+    if (video.paused) {
+        video.play();
+        btn.style.display = "none"; // play’e basınca buton kaybolsun
+    } else {
+        video.pause();
+        btn.style.display = "block"; // tekrar gözüksün
+    }
+}
+
+                </script>
+                
+                
+                {% if sayfaBilgileri('resimler')|length > 1 %}
+                    <a class="carousel-control-prev" href="#product-profile-carousel-{{ sayfaBilgileri('ID') }}" role="button" data-slide="prev">
+                        <i class="fa fa-chevron-left"></i>
+                    </a>
+                    <a class="carousel-control-next" href="#product-profile-carousel-{{ sayfaBilgileri('ID') }}" role="button" data-slide="next">
+                        <i class="fa fa-chevron-right"></i>
+                    </a>
+                {% endif %}
+            </div>
+                {% if sayfaBilgileri('resimler')|length > 1 %}
+                    <a class="carousel-control-prev" href="#product-profile-carousel-{{ sayfaBilgileri('ID') }}" role="button" data-slide="prev">
+                        <i class="fa fa-chevron-left"></i>
+                    </a>
+                    <a class="carousel-control-next" href="#product-profile-carousel-{{ sayfaBilgileri('ID') }}" role="button" data-slide="next">
+                        <i class="fa fa-chevron-right"></i>
+                    </a>
+                {% endif %}
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
+
+{# Videoyu kontrol edip butonu gösteren HTML #}
+<div id="video-button-container-987" class="video-wrapper-987" style="display: none;">
+    <button id="video-button-987" class="video-btn-987" onclick="openVideoPopup()">
+        <i class="fas fa-play video-icon-987"></i>
+        <span class="video-text-987">Ürün Videosunu İzle</span>
+    </button>
+</div>
+
+{# Popup için gerekli HTML ve JS #}
+<div id="video-popup-987" class="video-popup-hidden-987" onclick="closeVideoPopup(event)">
+    <div id="popup-content-987" class="video-popup-content-987">
+        <span id="close-popup-987" class="close-popup-btn-987" onclick="closeVideoPopup()">&times;</span>
+        <div id="video-container-987" class="video-container-987"></div>
+    </div>
+</div>
+
+{# Eğer video yoksa buton #}
+<div id="video-button-container-988" class="video-wrapper-988" style="display: none;">
+    <button id="video-button-988" class="video-btn-988" disabled>
+        <i class="fas fa-clock video-icon-988"></i>
+        <span class="video-text-988">Ürün Videosu Yakında Eklenecek</span>
+    </button>
+</div>

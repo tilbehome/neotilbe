@@ -1,0 +1,47 @@
+{% extends varsayilanBlokModul() %}
+
+{% block modulBaslik %}
+    {{ sayfaBilgileri('baslik') }}
+{% endblock %} 
+
+{% block modulExtra %}
+    <div class="help-search-tool">
+		<form action="{{ statikLinkler('yardim_ara') }}" method="get">
+            <div class="input-box">
+                <input type="text" name="k" class="form-control" placeholder="{{ cevir('yardim_form_aciklama_2') }}" />
+            </div>
+            <button type="submit" class="btn btn-orange btn-send">{{ cevir('ara') }}</button>
+        </form>
+	</div>
+{% endblock %}
+
+{% block modulIcerik %}
+    {% if sayfaBilgileri('maddeler') %}
+        <div class="help-entries">
+            <div class="accordion" id="accordion-{{ sayfaBilgileri('ID') }}">
+                {% for madde in sayfaBilgileri('maddeler') %}
+                    <div class="card">
+                        <div class="card-header" id="accordion-head-{{ madde.ID }}">
+                            <a href="javascript:;" class="{{ madde.aktif ? '' : 'collapsed' }}" data-toggle="collapse" 
+                            data-target="#accordion-{{ madde.ID }}" aria-expanded="{{ madde.aktif ? 'true' : 'false' }}" 
+                            aria-controls="accordion-{{ madde.ID }}">
+                                {{ madde.baslik }}
+                            </a>
+                        </div>
+                        <div id="accordion-{{ madde.ID }}" class="collapse {{ madde.aktif ? 'show' : '' }}" 
+                        aria-labelledby="accordion-head-{{ madde.ID }}" data-parent="#accordion-{{ sayfaBilgileri('ID') }}">
+                            <div class="card-body">
+                                {{ madde.aciklama | raw }}
+                            </div>
+                        </div>
+                    </div>
+                    
+                {% endfor %}
+            </div>
+        </div>
+    {% else %}
+        <div class="alert alert-warning">
+            {{ cevir('yardim_arama_sonuc_bulunamadi') }}
+        </div>
+    {% endif %}
+{% endblock %}

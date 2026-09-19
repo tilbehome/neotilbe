@@ -1,0 +1,177 @@
+{% extends varsayilanBlokModul() %}
+
+{% block modulIcerik %}
+    <div class="login-body p-g-mod-t-4">
+
+        <!-- Tablar (Üye Girişi ve Üye Ol) -->
+        <ul class="nav nav-tabs" id="login-register-tabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="nav-login-tab" data-toggle="tab" href="#nav-login" role="tab" aria-controls="nav-login" aria-selected="true">Üye Girişi</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="nav-register-tab" data-toggle="tab" href="#nav-register" role="tab" aria-controls="nav-register" aria-selected="false">Üye Ol</a>
+            </li>
+        </ul>
+                <!-- 🛒 Başlık Alanı -->
+                <br>
+        <div class="checkout-header">
+            <h2 class="checkout-title">Hızlı ve Güvenli Giriş 🚀</h2>
+           
+        </div>
+        <div class="tab-content" id="login-register-tabs-content">
+            <!-- 🔑 Giriş Yap Formu -->
+            <div class="tab-pane fade show active" id="nav-login" role="tabpanel" aria-labelledby="nav-login-tab">
+                <form class="login-form" action="" method="post" onsubmit="return userLogin(this)">
+				                    <!-- ✅ Üye Olmadan Devam Et -->
+                    {% if sayfaBilgileri('sayfa') == 'uyeliksiz-alisveris' and not ayarlar('sadece_uyeler_alisveris_yapabilir') %}
+                        <div class="guest-checkout">
+                             <p class="guest-info">Üye olmadan da alışverişinizi tamamlayabilirsiniz.</p>
+                            <a href="{{ statikLinkler('odeme') }}" class="btn btn-without-login">
+                                <i class="fa fa-user-check"></i> Üye Olmadan Devam Et
+                            </a>
+                           
+                        </div>
+                    {% endif %}
+                    <br>
+                    <br>
+<div class="x9sdfkfj social-login-19kfsj">
+    <p class="login-title-3kfdks">Sosyal hesabınız ile güvenli giriş</p>
+
+    <div class="social-buttons-sjkd9">
+        {% if facebookLogin().aktif %}
+            <a href="{{ facebookLogin().link }}" class="btn-78dfgj">
+                <i class="fab fa-facebook-f"></i> <br>Facebook ile Giriş Yap
+            </a>
+        {% endif %}
+
+        {% if googleLogin().aktif %}
+            <a href="{{ googleLogin().link }}" class="btn-89kfdg">
+                <i class="fab fa-google"></i> <br>Google ile Giriş Yap
+            </a>
+        {% endif %}
+
+    </div>
+</div>
+				
+                    <input type="hidden" name="returnUrl" value="{{ returnUrl() }}" />
+                    <input type="text" class="form-control" name="email" placeholder="E-posta adresinizi girin">
+                    <div class="password-container">
+                        <input type="password" class="form-control password" name="password" placeholder="Şifrenizi girin">
+                        <i class="fa fa-eye toggle-password" onclick="togglePasswordVisibility('password')"></i>
+                    </div>
+                    <a href="{{ statikLinkler('sifremi_unuttum') }}" class="forgot-password">Şifremi Unuttum</a>
+                    
+                    <button class="btn btn-success btn-block" type="submit">
+                        <i class="fa fa-sign-in-alt"></i>  Güvenli Giriş Yap
+                    </button>
+                    
+
+                </form>
+            </div>
+
+
+            <!-- ✨ Üye Ol Formu -->
+            <div class="tab-pane fade" id="nav-register" role="tabpanel" aria-labelledby="nav-register-tab">
+                <form class="register-form" action="" method="post" onsubmit="return userRegister(this)">
+                    <input type="hidden" name="returnUrl" value="{{ returnUrl() }}" />
+                    
+
+<div class="x9sdfkfj social-login-19kfsj">
+    <p class="login-title-3kfdks">Sosyal hesabınız ile Üye Olun</p>
+
+    <div class="social-buttons-sjkd9">
+        {% if facebookLogin().aktif %}
+            <a href="{{ facebookLogin().link }}" class="btn-78dfgj">
+                <i class="fab fa-facebook-f"></i> <br>Facebook ile Üye Ol
+            </a>
+        {% endif %}
+
+        {% if googleLogin().aktif %}
+            <a href="{{ googleLogin().link }}" class="btn-89kfdg">
+                <i class="fab fa-google"></i> <br>Google ile Üye Ol
+            </a>
+        {% endif %}
+
+
+    </div>
+</div>
+
+
+                    <input type="text" class="form-control" name="name" placeholder="Adınızı girin">
+                    <input type="text" class="form-control" name="lastname" placeholder="Soyadınızı girin">
+                    <input type="email" class="form-control" name="email" placeholder="E-posta adresinizi girin">
+                    <input type="text" class="form-control" name="phone" placeholder="Telefon numaranızı girin">
+                    <div class="password-container">
+                        <input type="password" class="form-control password" name="password" placeholder="Şifrenizi belirleyin">
+                        <i class="fa fa-eye toggle-password" onclick="togglePasswordVisibility('password')"></i>
+                    </div>
+                    <div class="password-container">
+                        <input type="password" class="form-control password" name="password2" placeholder="Şifrenizi tekrar girin">
+                        <i class="fa fa-eye toggle-password" onclick="togglePasswordVisibility('password2')"></i>
+                    </div>
+                    
+                    <div class="alert alert-warning font-size-12 rounded-10">
+      Şifreniz en az 8 karakter uzunluğunda olmalı,
+      <br>
+      En az bir harf, rakam veya özel karakter içermelidir.
+    </div>
+    
+      <div class="a4fgh-checkbox-group">
+        <input type="checkbox" name="newsletter_email" id="checkMailEnewsletter" checked>
+        <label for="checkMailEnewsletter">E-posta ile özel fırsatlar almayı kabul ediyorum.</label>
+    </div>
+
+    <div class="a4fgh-checkbox-group">
+        <input type="checkbox" name="newsletter_sms" id="checkSmsEnewsletter" checked>
+        <label for="checkSmsEnewsletter">SMS ile kampanya bildirimleri almak istiyorum.</label>
+    </div>
+
+    <div class="a4fgh-checkbox-group">
+        <input type="checkbox" name="user_rules" id="checkUserRule" checked>
+        <label for="checkUserRule">Kullanım şartlarını okudum ve kabul ediyorum.</label>
+    </div>
+            
+                    <button class="btn btn-success btn-block">
+                        <i class="fa fa-user-plus"></i> Üye Ol
+                    </button>
+                </form>
+                
+                            <br>
+            <br>
+            <a href="https://www.tilbehome.com/uye-giris" class="text-center font-size-12 success-light w-100">
+      Hesabın var mı ? Giriş Yap!
+    </a>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        function togglePasswordVisibility(passwordField) {
+            var passwordInput = document.querySelector(`[name="${passwordField}"]`);
+            var icon = passwordInput.nextElementSibling;
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                icon.classList.remove("fa-eye");
+                icon.classList.add("fa-eye-slash");
+            } else {
+                passwordInput.type = "password";
+                icon.classList.remove("fa-eye-slash");
+                icon.classList.add("fa-eye");
+            }
+        }
+    </script>
+<script>
+    function userLogin(form) {
+        var rememberMe = document.getElementById("remember-me").checked;
+        var rememberMeInput = document.createElement("input");
+        rememberMeInput.type = "hidden";
+        rememberMeInput.name = "remember-me";
+        rememberMeInput.value = rememberMe ? "1" : "0";
+        form.appendChild(rememberMeInput);
+        return true; // form gönderilmeli
+    }
+</script>
+
+ 
+{% endblock %}

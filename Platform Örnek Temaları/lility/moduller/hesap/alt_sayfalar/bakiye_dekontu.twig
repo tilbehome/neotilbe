@@ -1,0 +1,26 @@
+{% extends varsayilanModal() %}
+
+{% block modalKodu %}
+    {{ sayfaBilgileri('modal_kodu') }}
+{% endblock %}
+
+{% block modalBoyutu %}
+    lg
+{% endblock %}
+
+{% block modalBaslik %}
+    {{ cevir('islem_dekontu') }}
+{% endblock %}
+
+{% block modalIcerik %}
+    <div id="print-{{ sayfaBilgileri('modal_kodu') }}">
+        {{ sayfaBilgileri('dekont') | raw }}
+    </div>
+{% endblock %} 
+
+{% block modalFooter %}
+    <button type="button" class="btn btn-secondary btn-sm" onclick="printById('print-{{ sayfaBilgileri('modal_kodu') }}', '{{ cevir('islem_dekontu') }}')">
+        <i class="fa fa-print mr-1"></i>
+        {{ cevir('yazdir') }}
+    </button>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends varsayilanBlokModul() %}
+
+{% block modulBaslik %}
+    <i class="fas fa-file-alt"></i>
+    {{ cevir('kargo_sablonu') }}
+{% endblock %}
+
+{% block modulClass %}
+    payment-shipping-template
+{% endblock %} 
+
+{% block modulIcerik %}
+    <form class="payment-form-group-1" data-payment-box-form="shipping-template">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group" data-payment-input="name">
+                    <label for="orderShipmentfile">{{ cevir('kargo_sablonu') }}</label>
+                    <input type="file" class="form-control" id="orderShipmentfile" name="shipment_file">
+                </div>
+            </div>
+        </div>
+    </form>
+{% endblock %}

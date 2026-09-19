@@ -1,0 +1,44 @@
+<div class="shipment-methods">
+    {% for firma in sayfaBilgileri('kargo_firmalari') %}
+        <div class="method  {{ firma.aktif ? 'active' : '' }}" onclick="$('#orderInputShipmentMethod{{ firma.ID }}').prop('checked', true).change()">
+            <div class="checkbox">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="shipment_method" 
+                    id="orderInputShipmentMethod{{ firma.ID }}" value="{{ firma.ID }}" {{ firma.aktif ? 'checked' : '' }} />
+                </div>
+            </div>
+            <div class="name">
+                {% if firma.logo is not empty %}
+                    <div class="image">
+                        {{ gorsel.lazy(firma.logo) }}
+                    </div>
+                {% endif %} 
+                <div class="info">
+                    <span>{{ firma.adi }}</span>
+                    <small>{{ firma.aciklama }}</small> 
+                    {% if kullaniciGirisYaptiMi() and firma.b2b_ozel_teslimat %}
+                        {% if kullaniciBilgileri('bayi_durumu') %} 
+                            <span class="time">
+                                {% if firma.b2b_ozel_teslimat_gun > 0 %}
+                                    {{ cevir('b2b_kargo_teslimat_gun', {x:firma.b2b_ozel_teslimat_gun}) }}
+                                {% else %}
+                                    {{ cevir('b2b_kargo_teslimat_ayni_gun') }}
+                                {% endif %}
+                            </span>
+                        {% endif %}
+                    {% endif %}
+                </div>
+            </div>
+            <div class="price">
+                {% if firma.ucretsiz %}
+                    <span class="text-success">{{ cevir('odeme_ucretsiz') }}</span>
+                {% else %}
+                    <span class="value">{{ firma.ucret }}</span>
+                {% endif %}
+            </div>
+        </div>
+    {% endfor %}
+</div> 
+<script type="text/javascript">
+    $('input[name=shipment_method]:checked').change();
+</script>

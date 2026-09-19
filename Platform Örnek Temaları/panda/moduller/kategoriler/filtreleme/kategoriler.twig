@@ -1,0 +1,12 @@
+{% extends varsayilanBlokModul() %}
+
+{% block modulClass %}
+    p-g-mod-t-cat-display-{{ sayfaBilgileri('gosterim') }}
+{% endblock %}
+
+{% block modulIcerik %}
+
+    <div class="category-filter-list cat-display-type-{{ sayfaBilgileri('gosterim') }}" data-smart-cat-filter="sub-categories">
+    </div>
+
+{% endblock %} 

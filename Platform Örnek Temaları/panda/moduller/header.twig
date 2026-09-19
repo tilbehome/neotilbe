@@ -1,0 +1,383 @@
+{% extends varsayilanBlokModul() %}
+
+{% block modulIcerik %}
+
+    <header class="desktop"> 
+        <section class="h-contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="info">
+                            <a href="tel:{{ayarlar('musteri_hizmetleri')}}" class="item pl-0">
+                                <i class="{{ temaAyarlari('icon','iletisim') }}"></i>
+                                <span>
+                                    {{ ayarlar('musteri_hizmetleri') }}
+                                </span>
+                            </a>
+                            <a href="mailto:{{ ayarlar('eposta_adresi') }}" class="item">
+                                <i class="{{ temaAyarlari('icon','mail') }}"></i>
+                                <span>
+                                    {{ ayarlar('eposta_adresi') }}
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="social-media float-right">
+                            {% if ayarlar('facebook_adresi') is not empty %}
+                                <a href="{{ ayarlar('facebook_adresi') }}" class="fb" target="_blank">
+                                   <i class="fab fa-facebook-f"></i>
+                                </a>
+                            {% endif %}
+                            
+                            {% if ayarlar('twitter_adresi') is not empty %}
+                                <a href="{{ ayarlar('twitter_adresi') }}" class="tw" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            {% endif %}
+                            
+                            {% if ayarlar('instagram_adresi') is not empty %}
+                                <a href="{{ ayarlar('instagram_adresi') }}" class="ins" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            {% endif %}
+                            
+                            {% if ayarlar('youtube_adresi') is not empty %}
+                                <a href="{{ ayarlar('youtube_adresi') }}" class="yt" target="_blank">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            {% endif %}
+                            
+                            {% if ayarlar('linkedin_adresi') is not empty %}
+                                <a href="{{ ayarlar('linkedin_adresi') }}" class="lnk" target="_blank">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            {% endif %}
+                            
+                            {% if ayarlar('pinterest_adresi') is not empty %}
+                                <a href="{{ ayarlar('pinterest_adresi') }}" class="pnt" target="_blank">
+                                    <i class="fab fa-pinterest"></i>
+                                </a>
+                            {% endif %}
+                        </div>
+                        <div class="info float-right">
+                            {{ dil.kutu1('left', 'mr-3') }}
+                            {{ paraBirimi.kutu1('left', 'mr-3') }}
+                            <a href="{{ statikLinkler('siparis_takip') }}" class="item">{{ cevir('siparis_takip') }}</a>
+                            <a href="{{ statikLinkler('yardim') }}" class="item">{{ cevir('yardim_baslik') }}</a>
+                            <a href="{{ statikLinkler('iletisim') }}" class="item">{{ cevir('iletisim') }}</a>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="h-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="logo header-area first">
+                            <a href="{{ statikLinkler('site_adresi') }}" >
+                                <img src="{{ logoAdresi() }}" alt="" />
+                            </a>
+                            
+                            <div class="h-btn ml-3">
+                                <div class="dropdown-category">
+                                    <div class="btn-categories">
+                                       <i class="fas fa-bars"></i>
+                                           {{cevir('kategoriler')}}
+                                           
+                                        <i class="fa fa-angle-down ml-3" aria-hidden="true"></i>
+                                    </div>
+                                      {% include 'moduller/diger/left_category.twig' %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="header-area">
+                            <div class="search">
+                                {% if temaAyarlari('header_area','search_tipi')  == "tip_1" %}
+                                <form action="{{ statikLinkler('arama') }}" method="get" data-choose-action="redirect" data-smart-product-search>
+                                {% elseif temaAyarlari('header_area','search_tipi')  == "tip_2" %}
+                                <form action="{{ statikLinkler('arama') }}" method="get" data-choose-action="redirect" data-smart-product-search-image>
+                                {% else %}
+                                <form action="{{ statikLinkler('arama') }}" method="get" data-choose-action="redirect" data-advanced-product-search>
+                                {% endif %}
+                                    <div class="input-box">
+                                        <input type="text" name="k" class="form-control" placeholder="{{ cevir('arama_alani_aciklama') }}"/>
+                                    </div>
+                                    <button type="submit" class="btn btn-orange btn-send"> <i class="{{ temaAyarlari('icon','search') }}"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="header-area last">
+                            <div class="header-bar">
+                                
+                                {{ teslimatLokasyonu.kutu1() }}
+                                
+                                <div class="bar-link bar-user mr-4">
+                                    <span class="icon">
+                                        <i class="{{ temaAyarlari('icon','hesabim') }}"></i>
+                                    </span>
+                                    <div class="link">
+                                        {% if kullaniciGirisYaptiMi() == false %}
+                                            <a href="{{ statikLinkler('uye_girisi') }}"><span class="name">{{ cevir('giris_yap') }}</span></a>
+                                            <a href="{{ statikLinkler('uye_ol') }}"><span class="name">{{ cevir('uye_ol') }}</span></a>
+                                        {% else %}
+                                            <a href="{{ statikLinkler('hesabim') }}"><span class="name">{{ cevir('hesabim') }}</span></a>
+                                            <a href="javascript:;" onclick="userLogout();">{{ cevir('cikis_yap') }}</a>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                                
+                                <div class="dropdown header-cart-hover"> 
+                                    <a class="bar-link bar-cart" href="{{ statikLinkler('sepet') }}" id="console-menu-3" role="button">
+                                        <span class="icon">
+                                             <i class="{{ temaAyarlari('icon','sepetim') }}"></i>
+                                            <span class="count" data-cart-quantity>{{ sepetOzeti('adet') }}</span>
+                                        </span>
+                                        <span class="name">{{ cevir('sepetim') }}</span>
+                                    </a>
+                                  
+                                    <div class="dropdown-menu" aria-labelledby="console-menu-3">
+                                        <div class="top-header">
+                                            <span class="title">
+                                                {{ cevir('sepetim') }} 
+                                                <span class="count2" data-cart-quantity>{{ sepetOzeti('adet') }} </span>
+                                                <span class="count2-description">{{ basHarfBuyukCevir('urun') }}</span>
+                                            </span>
+                                        </div>
+                                                    
+                                        <div class="products" data-cart-products></div>
+                                        <div class="summary" data-cart-summary></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+    </header>
+
+    <header class="mobile">
+        <div class="op-black"></div>
+        <div class="left">
+            <a href="javascript:;" class="icon-group ml-1 btn-sidebar-menu">
+                <i class="{{ temaAyarlari('icon','mobil_menu') }}"></i>
+            </a>
+            <a href="javascript:;" class="icon-group ml-1 btn-sidebar-menu ml-2">
+                <i class="{{ temaAyarlari('icon','mobil_search') }}"></i>
+            </a>
+        </div>
+        <div class="center">
+            <div class="logo">
+                <a href="{{ statikLinkler('site_adresi') }}">
+                    <img src="{{ logoAdresi('mobil') }}" alt="" />
+                </a>
+            </div>
+        </div>
+        <div class="right">
+            <a href="{{ statikLinkler('sepet') }}" class="icon-group mr-3">
+                <i class="{{ temaAyarlari('icon','mobil_sepet') }}"></i>
+                <span class="badge" data-cart-quantity>{{ sepetOzeti('adet') }}</span>
+            </a>
+            <a href="javascript:;" class="icon-group mr-1 btn-sidebar-user">
+                <i class="{{ temaAyarlari('icon','mobil_user') }}"></i>
+            </a>
+        </div>
+        <div class="clearfix"></div>
+        
+        {% if temaAyarlari('header_area','mobil_menu_tipi')  == "tip_1" %}
+        
+        <nav class="sidebar-menu">
+            <section class="mobile-search">
+                <form action="{{ statikLinkler('arama') }}" method="get">
+                    <div class="input-box">
+                        <input type="text" name="k" class="form-control" placeholder="{{ cevir('ara_aciklama') }}" />
+                    </div>
+                    <button type="submit" class="btn btn-orange btn-send"><i class="{{ temaAyarlari('icon','search') }}"></i></button>
+                </form>
+                <div class="clearfix"></div>
+            </section>
+            <div class="scrollbar">
+                <div class="categories">
+                    <ul>
+                        {{ kategoriMenuHTMLGorunum() }}
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        {% else %}
+        
+        <nav class="sidebar-menu-type-2">
+             <div class="logo-area">
+                <a href="{{ statikLinkler('site_adresi') }}" >
+                    <img src="{{ logoAdresi() }}" alt="" />
+                </a>
+                <div class="mobile-menu-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            <div class="scrollbar">
+                <section class="mobile-search">
+                    <form action="{{ statikLinkler('arama') }}" method="get"  data-choose-action="redirect" data-smart-mobile-product-search-image >
+                        <div class="input-box">
+                            <input type="text" name="k" class="form-control" placeholder="{{ cevir('ara_aciklama') }}" />
+                        </div>
+                        <button type="submit" class="btn btn-orange btn-send">
+                            <div>
+                                <i class="coreicon-search"></i>
+                            </div>
+                        </button>
+                    </form>
+                    <div class="clearfix"></div>
+                </section>
+                
+                <div class="mobil-area-title">
+                   {{buyukCevir('tum_kategoriler')}}
+                </div>
+                
+                <div class="categories">
+                    <ul>
+                        {% if temaAyarlari('header_area','kategori_icon') %}
+                            {{ kategoriMenuHTMLGorunum(true,true,'resim') }}
+                        {% else %}
+                            {{ kategoriMenuHTMLGorunum() }}
+                        {% endif %}
+                    </ul>
+                </div>
+                
+                <div class="mobil-area-title">
+                    {{buyukCevir('yardim_merkezi')}}
+                </div>    
+                    <div class="mobil-area-2">
+                        
+                        {% if kullaniciGirisYaptiMi() == false %}
+                         
+                            <div class="short-link border-1">
+                                <a href="{{ statikLinkler('uye_girisi') }}">
+                                    <i class="coreicon-user-3"></i>
+                                    {{ cevir('giris_yap') }}
+                                </a>
+                            </div>
+                            <div class="short-link border-2">
+                                <a href="{{ statikLinkler('uye_ol') }}">
+                                    <i class="coreicon-user-4"></i>
+                                    {{ cevir('uye_ol') }}
+                                </a>
+                            </div>
+                            
+                        {% else %}
+                        
+                            <div class="short-link border-1">
+                                <a href="{{ statikLinkler('hesabim') }}">
+                                    <i class="coreicon-user-3"></i>
+                                    {{ cevir('hesabim') }}
+                                </a>
+                            </div>
+                            <div class="short-link border-2">
+                                <a href="{{ statikLinkler('hesabim') }}/favori-listem">
+                                    <i class="coreicon-heart-empty"></i>
+                                    {{ cevir('favorilerim') }}
+                                </a>
+                            </div>
+                        
+                        {% endif %}
+                        
+                        <div class="short-link border-3">
+                             <a href="{{statikLinkler('siparis_takip')}}">
+                                <i class="coreicon-cart"></i>
+                                {{ cevir('siparis_takip') }}
+                            </a>
+                        </div>
+                        <div class="short-link border-4">
+                             <a href="{{statikLinkler('sss')}}">
+                                <i class="coreicon-note"></i> 
+                                {{ cevir('sss') }}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        {% endif %}
+
+        <nav class="sidebar-user">
+            <div class="title">
+                {{ cevir('hesabim') }}
+                <a href="javascript:;" class="btn-sidebar-user btn-close">
+                    <i class="fas fa-times-circle"></i>
+                </a>
+            </div>
+            <div class="scrollbar">
+                {% if kullaniciGirisYaptiMi() == false %}
+                    <div class="login-menu">
+                        <a href="{{ statikLinkler('uye_girisi') }}"><i class="{{ temaAyarlari('icon','hesabim') }}"></i> {{ cevir('giris_yap') }}</a>
+                        <a href="{{ statikLinkler('uye_ol') }}"><i class="{{ temaAyarlari('icon','hesabim') }}"></i> {{ cevir('uye_ol') }}</a>
+                        <a href="{{ statikLinkler('sifremi_unuttum') }}"><i class="{{ temaAyarlari('icon','hesabim') }}"></i>{{ cevir('sifremi_unuttum') }}</a>
+                    </div>
+                {% else %}
+                    <div class="login-menu">
+                        {% for sayfa in kullaniciSayfalari() %}
+                            <a href="{{ sayfa.link }}">
+                                <i class="{{ sayfa.ikon }}"></i>
+                                {{ sayfa.baslik }}
+                            </a>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            
+                <div class="title-alt">
+                    {{ cevir('musteri_hizmetleri') }}
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <i class="{{ temaAyarlari('icon','iletisim') }} mr-2"></i>
+                                {{ ayarlar('musteri_hizmetleri') }}
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:{{ ayarlar('eposta_adresi') }}">
+                                <i class="{{ temaAyarlari('icon','mail') }} mr-2"></i>
+                                <span>
+                                    {{ ayarlar('eposta_adresi') }}
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="title-alt">
+                    {{ cevir('diger') }}
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        {% for sayfa in dinamikSayfaLinkleri() %}
+                            <li>
+                                <a href="{{ sayfa.link }}">
+                                    {{ sayfa.baslik }}
+                                </a>
+                            </li>
+                        {% endfor %}
+                        {% for sayfa in statikSayfaLinkleri() %}
+                            <li>
+                                <a href="{{ sayfa.link }}">
+                                    {{ sayfa.baslik }}
+                                </a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="mobile-header-space"></div>
+{% endblock %}

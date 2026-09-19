@@ -1,0 +1,18 @@
+<div class="card-blog">
+    <div class="image">
+        <a href="{{ blog.link }}" title="{{ blog.baslik_alt }}">
+            {{ gorsel.lazy(blog.resim, '', blog.baslik_alt) }}
+        </a>
+    </div>
+   
+    <a href="{{ blog.link }}" title="{{ blog.baslik_alt }}" class="title">
+        {{ blog.baslik }}
+    </a>
+   
+    <div class="buttons">
+        <a href="{{ blog.link }}" class="btn btn-read-more btn-sm">
+            {{ buyukCevir('hemen_oku') }}
+            <i class="fa fa-chevron-right"></i>
+        </a>
+    </div>
+</div>

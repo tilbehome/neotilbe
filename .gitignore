@@ -1,0 +1,32 @@
+# Local credentials and private configuration
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+secrets.json
+
+# Local runtime, editor and operating-system artifacts
+node_modules/
+__pycache__/
+*.pyc
+.cache/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+__MACOSX/
+*.tmp
+*.log
+
+# Private exports (theme templates and reference documents stay tracked)
+/private-exports/
+/customer-exports/
+/order-exports/
+
+# Contains literal API credentials in bundled PHP examples; keep original locally.
+/Platform Dökümanları/web_servis_ornek.zip

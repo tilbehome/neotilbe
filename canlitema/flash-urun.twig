@@ -1,0 +1,63 @@
+<div class="cstm-manset-block">
+    <div class="countdown">
+        <div class="countdown-item"><div id="days">0</div><span>Gün</span></div>
+        <div class="countdown-item"><div id="hours">00</div><span>Saat</span></div>
+        <div class="countdown-item"><div id="minutes">00</div><span>Dakika</span></div>
+        <div class="countdown-item"><div id="seconds">00</div><span>Saniye</span></div>
+    </div>
+    <div class="cmanset-write">
+        <h1>Alışverişte Çifte Kazanç Fırsatı!</h1>
+        <span>Sepetine 3 Farklı Ürün At, Veya Çok Al Çok Kazan!</span>
+        <a href="/tumu-c-0?siralama=cok-satanlar">Tüm Ürünleri Göster</a>
+    </div>
+    <div class="cmanset-bg">
+        <img src="https://www.tilbehome.com/theme/___shuttle/cmanset-discount.svg?v=1733320416" alt="manşet flaş indirim icon">
+    </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+
+    // İki basamaklı sayı gösterimi için yardımcı fonksiyon
+    function padNumber(number) {
+        return number.toString().padStart(2, '0');
+    }
+
+    // Gelecek Pazartesi saat 23:59:59'u hesaplar
+    function getNextMonday() {
+        const now = new Date();
+        const dayOfWeek = now.getDay(); // 0: Pazar, 1: Pazartesi
+        const daysUntilMonday = (1 - dayOfWeek + 7) % 7;
+
+        const targetDate = new Date(now);
+        targetDate.setDate(now.getDate() + daysUntilMonday);
+        targetDate.setHours(23, 59, 59, 999);
+
+        return targetDate.getTime();
+    }
+
+    // Geri sayım değerlerini günceller
+    function updateCountdown() {
+        const now = new Date().getTime();
+        const remainingTime = Math.max(targetTime - now, 0);
+
+        const days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+
+        document.getElementById("days").textContent = days;
+        document.getElementById("hours").textContent = padNumber(hours);
+        document.getElementById("minutes").textContent = padNumber(minutes);
+        document.getElementById("seconds").textContent = padNumber(seconds);
+
+        // Geri sayım bittiğinde yeni hedef zamanı ayarla
+        if (remainingTime <= 0) {
+            targetTime = getNextMonday();
+        }
+    }
+
+    let targetTime = getNextMonday();
+    setInterval(updateCountdown, 1000);
+});
+</script>

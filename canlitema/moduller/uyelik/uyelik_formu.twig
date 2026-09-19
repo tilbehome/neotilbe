@@ -1,0 +1,63 @@
+<div class="ana-register-container">
+
+    <!-- Teklif Bölümü -->
+    <div class="cta-offer">
+        <p><strong>Hoş Geldiniz! Üye Olun, Fırsatları Kaçırmayın!</strong></p>
+        <p>Hızlı ve güvenli bir şekilde üye olup, özel indirimlerden ve fırsatlardan hemen yararlanmaya başlayın!</p>
+    </div>
+
+    <form action="" method="post" onsubmit="return userRegister(this)">
+        <input type="hidden" name="returnUrl" value="{{ returnUrl() }}" />
+
+        <div class="ana-form-group">
+            <label>Ad <span class="text-danger">*</span></label>
+            <input type="text" name="name" placeholder="Adınızı girin" />
+        </div>
+
+        <div class="ana-form-group">
+            <label>Soyad <span class="text-danger">*</span></label>
+            <input type="text" name="lastname" placeholder="Soyadınızı girin" />
+        </div>
+
+        <div class="ana-form-group">
+            <label>E-posta <span class="text-danger">*</span></label>
+            <input type="email" name="email" placeholder="Geçerli bir e-posta adresi" />
+        </div>
+
+        <div class="ana-form-group">
+            <label>Telefon Numarası</label>
+            <input type="text" name="phone" placeholder="Telefon numaranızı girin" />
+        </div>
+
+        <div class="ana-form-group">
+            <label>Şifre <span class="text-danger">*</span></label>
+            <input type="password" name="password" placeholder="Şifrenizi oluşturun" />
+        </div>
+
+        <div class="ana-form-group">
+            <label>Şifre Tekrar <span class="text-danger">*</span></label>
+            <input type="password" name="password2" placeholder="Şifrenizi tekrar girin" />
+        </div>
+
+        <div class="ana-checkbox-group">
+            <input type="checkbox" name="newsletter_email" id="checkMailEnewsletter" checked>
+            <label for="checkMailEnewsletter">E-posta ile özel fırsatlar almayı kabul ediyorum.</label>
+        </div>
+
+        <div class="ana-checkbox-group">
+            <input type="checkbox" name="newsletter_sms" id="checkSmsEnewsletter" checked>
+            <label for="checkSmsEnewsletter">SMS ile kampanya bildirimleri almak istiyorum.</label>
+        </div>
+
+        <div class="ana-checkbox-group">
+            <input type="checkbox" name="user_rules" id="checkUserRule" checked>
+            <label for="checkUserRule">Kullanım şartlarını okudum ve kabul ediyorum.</label>
+        </div>
+
+        <button type="submit" class="ana-register-btn">Hemen Üye Ol!</button>
+    </form>
+
+
+    <!-- Güvenlik Vurgusu -->
+    <p class="security-note">Verileriniz güvenliğiniz için şifrelenmiş ve gizli tutulacaktır.</p>
+</div>

@@ -1,0 +1,173 @@
+{% extends sepetBilgileri('durum')
+    ? varsayilanBlokModul()
+    : varsayilanBosDosya() %}
+
+{% block modulIcerik %} 
+    {% if sepetBilgileri('urunler') %} 
+
+
+{% set indirim_mesaji = '' %}
+{% set uniqueProductIds = [] %}
+
+{% for sepet in sepetBilgileri('urunler') %}
+    {% set productId = sepet.ID %}
+    {% if productId not in uniqueProductIds %}
+        {% set uniqueProductIds = uniqueProductIds | merge([productId]) %}
+    {% endif %}
+{% endfor %}
+
+{% set uniqueProductCount = uniqueProductIds | length %}
+
+{% if uniqueProductCount >= 3 %}
+    {% set indirim_mesaji = "Tebrikler! Flash İndirim Uygulanmıştır" %}
+{% elseif uniqueProductCount == 2 %}
+    {% set indirim_mesaji = "Sepetine farklı ( 1 ) ürün daha ekle indirim kazan" %}
+{% elseif uniqueProductCount == 1 %}
+    {% set indirim_mesaji = "Sepetine farklı ( 2 ) ürün daha ekle indirim kazan" %}
+{% endif %}
+
+{# İndirim mesajı ve ilerleme çubuğu #}
+{% if indirim_mesaji %}
+    <div class="liste-farkli-urun-bilgi9">
+        <div class="liste-farkli-urun9">
+            <span class="liste-farkli-vurgulama9">{{ indirim_mesaji }}</span>
+            <div class="farkli-urun0-progess">
+                {% for i in 1..3 %}
+                    <div class="farkli-urun9-progess-item {% if i <= uniqueProductCount %}completed{% endif %}"></div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endif %}
+
+
+        <div class="shopping-cart-1">
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <tbody>
+                        {% for sepet in sepetBilgileri('urunler') %}
+
+                           <tr class="cart-product-row {{ sepet.promosyon.kontrol ? 'promotion-product-item-card-x123 best-deal-x123' : '' }}" data-cart-product-id="{{ sepet.ID }}">
+    
+
+    
+                                    <td class="td-product">       
+    <div class="product">
+
+        
+        <div class="static-badge-x123">
+            <i class="fas fa-lock"></i> Sepetinde Rezerve Edildi
+        </div>
+
+        {% if sepet.promosyon.kontrol %}
+            <div class="best-deal-badge-x123">
+                <i class="fas fa-bolt"></i> Bu Üründe İndirim Var !
+            </div>
+        {% endif %}
+        
+        
+        
+
+                                    
+                                        <div class="image">
+                                            <a href="{{ sepet.urun.link }}">
+                                                {{ gorsel.lazy(sepet.urun.resim) }}
+                                            </a>
+                                        </div>
+                                        
+                                        <div class="p-info">
+                                            <a href="{{ sepet.urun.link }}" class="name">
+                                                {{ sepet.urun.adi }}
+                                            </a>
+                                            
+            
+                                            <div class="variants">
+                                                {% for varyant in sepet.varyantlar %}
+                                                    <div class="variant">
+                                                        {{ varyant.adi }}: 
+                                                        <span>{{ varyant.deger }}</span>
+                                                    </div>
+                                                {% endfor %}
+                                            </div>
+                                <div class="discount-prompt social-proof" style="display:flex; align-items:center; gap:5px;">
+    
+    Bu ürünü <strong>{{ 10 + (sepet.urun.ID * 7 % 100) }}</strong> kişi <i class="fas fa-heart"></i> favorilere ekledi
+
+</div>
+
+
+                                <td class="td-quantity">
+                                    <div class="product-quantity ekleme">
+<button class="btn btn-danger btn-remove" type="button" onclick="removeCart({{ sepet.ID }}, 'refresh-page')" title="Ürünü Sepetten Çıkar"><i class="fa fa-trash-alt"></i></button>
+                                        <a href="javascript:;" class="btn btn-minus-99"
+                                            onclick="productQuantityBox(
+                                                'decrement',
+                                                'tr[data-cart-product-id=\'{{ sepet.ID }}\'] .product-quantity'
+                                            );
+                                            ">
+                                            <i class="fas fa-minus"></i>
+                                        </a>
+                                        <input class="form-control" 
+                                            data-base-value="{{ sepet.adet }}"
+                                            name="quantity" data-value-type="{{ sepet.birim }}"
+                                            value="{{ sepet.adet }}"
+                                            onkeypress="return productQuantityBox(
+                                                'change',
+                                                'tr[data-cart-product-id=\'{{ sepet.ID }}\'] .product-quantity',
+                                                event
+                                            );"
+                                            onchange="updateCartQuantity({{ sepet.ID }}, 'table', 'tr[data-cart-product-id=\'{{ sepet.ID }}\'] input', 'refresh-page');" />
+                                        <a href="javascript:;" class="btn btn-plus99"
+                                            onclick="productQuantityBox(
+                                                'increment',
+                                                'tr[data-cart-product-id=\'{{ sepet.ID }}\'] .product-quantity'
+                                            );
+                                            ">
+                                            <i class="fas fa-plus"></i>
+                                        </a>
+
+                                    </div>
+                                </td>
+                                <td class="td-total-price">
+                                    {% if sepet.promosyon.kontrol %}
+                                        <span class="old-value">
+                                            {% if ayarlar('siparis_kdv_haric_gosterim') %}
+                                                {{ sepet.promosyon.tutar_kdv_haric }}
+                                            {% else %}
+                                                {{ sepet.promosyon.tutar }}
+                                            {% endif %}
+                                        </span>
+                                    {% endif %}
+                                    <span class="value">
+                                        {% if ayarlar('siparis_kdv_haric_gosterim') %}
+                                            {{ sepet.tutar_kdv_haric }}
+                                        {% else %}
+                                            {{ sepet.tutar }}
+                                        {% endif %}
+                                    </span> 
+                                </td>
+                                {% if ayarlar('urun_bazinda_kargo_ucreti') and sepetBilgileri('ozet').kargo_ucreti_var_mi %}
+                                    <td class="td-cargo">
+                                        <span class="label">
+                                            {{ cevir('sepet_kargo_baslik') }}
+                                        </span>
+                                        <span class="value">
+                                            {{ sepet.kargo }}
+                                        </span>
+                                    </td>
+                                {% endif %}
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div> 
+<div class="shopping-buttons-1">
+    <a href="javascript:void(0);" onclick="window.history.back();" class="btn btn-light btn-continue">
+        <i class="fa fa-chevron-left"></i> {{ cevir('alisverise_devam_et') }}
+    </a>
+</div>
+
+    {% endif %}
+
+{% endblock %}

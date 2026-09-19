@@ -1,0 +1,22 @@
+<a href="{{ statikLinkler('musteri_hizmetleri') }}">&lt;&lt;  {{ cevir('geri_don') }}</a>
+
+<form class="mws-form mt-2" action="" method="post" onsubmit="return userNewTicket(this)">
+    <div class="mws-form-inline">
+        <label>{{ cevir('konu') }} <span class="text-danger">*</span></label>
+        <input type="text" class="form-control m-input " name="topic" value="">
+        <div class="mt-3"></div>
+        <label>{{ cevir('siparis_numarasi') }}</label>
+        <input type="text" class="form-control m-input " name="order_no" value="">
+        <div class="mt-3"></div>
+        <label>{{ cevir('urun_adi') }}</label>
+        <input type="text" class="form-control m-input " name="product_name" value="">
+        <div class="mt-3"></div>
+        <label>{{ cevir('mesaj') }} <span class="text-danger">*</span></label>
+        <textarea name="message" rows="" cols="" class="form-control " style=""></textarea>
+        <div class="mt-3"></div>
+        <div class="mws-button-row">
+            <input type="submit" value="{{ cevir('gonder') }}" class="btn btn-success">
+            <div class="cb"></div>
+        </div>
+    </div>
+</form>

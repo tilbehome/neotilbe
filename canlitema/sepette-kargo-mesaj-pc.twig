@@ -1,0 +1,26 @@
+{# Sepetteki ürünlerin toplam tutarını hesapla ve gerekli değerleri ayarla #}
+{% set kargo_limiti = 500 %}
+{% set genel_toplam = 0 %}
+
+{% for sepet in sepetBilgileri('urunler') %}
+    {% set genel_toplam = genel_toplam + (sepet.fiyat * sepet.adet) %}
+{% endfor %}
+
+{% set eksik_tutar = kargo_limiti - genel_toplam %}
+
+<div class="kargo-kampanya-sepet-pc">
+    <div class="kampanya-kutu">
+        <h3 class="kampanya-baslik">
+            Kargo Kampanyası 
+            <img src="https://www.tilbehome.com/theme/___shuttle/assets/images/hizli-kargo-pc.webp?v=1741264126" alt="Kargo Kampanyası" class="kampanya-img">
+        </h3> 
+        <p class="kampanya-aciklama">
+            <span class="magaza-adi">Tilbe Home</span> Mağazamızdan 
+            {% if eksik_tutar > 0 %}
+                <span class="eksik-tutar">{{ eksik_tutar | number_format(2, ',', '.') }} TL</span>'lik ürün daha ekleyin, ürünleriniz için kargo ücreti ödemeyin!
+            {% else %}
+                <span class="tebrikler">Tebrikler! Ücretsiz Kargo Avantajını Kazandınız!</span>
+            {% endif %}
+        </p>
+    </div>
+</div>

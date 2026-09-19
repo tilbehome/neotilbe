@@ -1,0 +1,15 @@
+{% extends varsayilanBlokModul() %}
+
+{% block modulIcerik %}
+    <div class="box" id="user_login_right">
+        <div class="userPanelTitle" id="uptPass">
+            <h4>{{ cevir('giris_yap') }}</h4>
+            {{ cevir('giris_yap_aciklama_1') }}<br/>
+            {{ cevir('giris_yap_aciklama_2') }}
+            <br /><br />
+            <a href="{{ statikLinkler('uye_girisi') }}" class="btn btn-primary">
+                {{ cevir('giris_yap') }}									
+            </a>
+        </div>
+    </div>
+{% endblock %} 

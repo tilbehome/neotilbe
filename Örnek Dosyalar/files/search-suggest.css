@@ -1,0 +1,130 @@
+/* ═══════════════════════════════════════════════════════════════════
+   TILBE HOME — SEARCH SUGGEST STYLES
+   ───────────────────────────────────────────────────────────────────
+   "Şunu mu demek istediniz?" öneri bloğunun stili.
+   
+   Mevcut design token'ları kullanır (--accent, --ink, --border, vb)
+   — yeni token tanımlamaz.
+═══════════════════════════════════════════════════════════════════ */
+
+/* ─── Öneri container'ı ─── */
+/* Desktop: .h-sd (arama dropdown) içinde, en üstte */
+/* Mobile: .fs-body içinde, en üstte */
+.h-suggest {
+  padding: 12px 18px 14px;
+  border-bottom: 1px solid var(--border2);
+  background: linear-gradient(180deg, #FFF7F2 0%, transparent 100%);
+  animation: suggestSlide .25s cubic-bezier(.4,0,.2,1);
+}
+
+/* Mobile için biraz farklı padding */
+.fs-body .h-suggest {
+  padding: 14px 16px 16px;
+  margin: -18px -16px 14px;
+  border-bottom: 1px solid var(--border2);
+}
+
+@keyframes suggestSlide {
+  from { opacity: 0; transform: translateY(-4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ─── Üst etiket ─── */
+.h-suggest-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--ink5);
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  margin-bottom: 8px;
+}
+
+/* Mobile'da etiket biraz daha büyük */
+.fs-body .h-suggest-label {
+  font-size: 11.5px;
+  margin-bottom: 10px;
+}
+
+/* ─── Öneri butonu ─── */
+.h-suggest-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px 12px;
+  border: 1.5px solid rgba(255, 107, 44, .18);
+  background: var(--white);
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: var(--font);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: -.01em;
+  text-align: left;
+  transition: border-color .15s, background .15s, transform .15s;
+}
+
+/* Mobile'da buton biraz daha büyük tap target */
+.fs-body .h-suggest-btn {
+  padding: 12px 14px;
+  font-size: 14.5px;
+}
+
+.h-suggest-btn:hover {
+  border-color: var(--accent);
+  background: var(--accent-l);
+  transform: translateY(-1px);
+}
+
+.h-suggest-btn:active {
+  transform: translateY(0);
+}
+
+/* ─── Sol ikon (search) ─── */
+.h-suggest-btn > .ic:first-child {
+  font-size: 17px;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+/* ─── Öneri metni ─── */
+.h-suggest-text {
+  flex: 1;
+  color: var(--ink);
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Kelimeye özel vurgu — hover'da accent renk */
+.h-suggest-btn:hover .h-suggest-text {
+  color: var(--accent-h);
+}
+
+/* ─── Sağ ok ─── */
+.h-suggest-arrow {
+  font-size: 12px;
+  color: var(--ink6);
+  flex-shrink: 0;
+  transition: color .15s, transform .15s;
+}
+
+.h-suggest-btn:hover .h-suggest-arrow {
+  color: var(--accent);
+  transform: translateX(3px);
+}
+
+/* ─── Reduced motion desteği ─── */
+@media (prefers-reduced-motion: reduce) {
+  .h-suggest {
+    animation: none;
+  }
+  .h-suggest-btn,
+  .h-suggest-btn:hover,
+  .h-suggest-arrow {
+    transition: none;
+    transform: none;
+  }
+}

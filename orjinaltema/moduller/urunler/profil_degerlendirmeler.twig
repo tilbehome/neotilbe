@@ -1,0 +1,17 @@
+<div class="product-reviews">
+    <div class="stars">
+        {% for degerlendirme in sayfaBilgileri('degerlendirme').liste %}
+            <span class="star {{ degerlendirme.aktif ? 'fill' : '' }}">
+                {% if degerlendirme.tip == 'half' %}
+                    <i class="fa fa-star-half"></i>
+                    <i class="fa fa-star dark"></i>
+                {% else %}
+                    <i class="fa fa-star"></i>
+                {% endif %}
+            </span>
+        {% endfor %}
+    </div>
+    {% if sayfaBilgileri('degerlendirme').oy_sayisi > 0 %}
+        <span class="count">({{ sayfaBilgileri('degerlendirme').oy_sayisi }})</span>
+    {% endif %}
+</div>

@@ -1,0 +1,9 @@
+<div class="list-wrap" data-simplebar data-simplebar-auto-hide="false">
+    <ul class="list">
+        {% for kategori in sayfaBilgileri('alt_kategoriler') %}
+            <li class="{{ sayfaBilgileri('ID') == kategori.ID ? 'active' : '' }}">
+                <a href="{{ kategori.link }}" title="{{ kategori.adi_alt }}">{% if sayfaBilgileri('gosterim') == 1 %}<i class="fa fa-chevron-right"></i>{% endif %}{{ kategori.adi }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>

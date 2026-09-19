@@ -1,0 +1,95 @@
+<section class="menu">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="mega-menu">
+                    <ul class="navbar-nav">
+                        {% for kategori in tumKategoriler(0, temaAyarlari('genel', 'ust_menu_limit')) %}
+                            <li class="nav-item {% if kategori.alt_kategori_var_mi == true %}dropdown{% endif %}"> 
+                            
+                                <a class="nav-link dropdown-toggle" href="{{ kategori.link }}" id="mega-menu-{{ kategori.ID }}" data-parent-id="{{ kategori.ID }}" role="button">
+                                     {% if kategori.resim == true and temaAyarlari('header_area','kategori_icon') %}
+                                        <img src="{{ kategori.resim }}" class="subtitle-img" alt="" />
+                                    {% endif %}
+                                     <span class="under-category">{{ basHarfBuyukCevir(kategori.adi) }}</span>
+                                </a>
+                                
+                                 {% if kategori.alt_kategori_var_mi == true %}
+                                    <div class="dropdown-menu" aria-labelledby="mega-menu-{{ kategori.ID }}">
+                                            <div class="mega-menu-container">
+                                                <div class="container-fluid" >
+                                                
+                                                    <div class="row">
+                                                        {% if temaAyarlari('header_area','mega_menu_resim') %}
+                                                        <div class="col-md-7">
+                                                        {% else %}
+                                                        <div class="col-md-12">
+                                                        {% endif %}                
+                                                            <div class="row h-100">
+                                                        
+                                                            {% for liste_index, alt_kategoriler in listeyiBol(kategori.alt_kategoriler, 3)  %}
+                                                                <div class="col">
+                                                                    {% for alt_kategori_1 in alt_kategoriler %}
+                                                                        <div class="sub-cat">
+                                                                            <a class="sub-title" data-parent-id="{{ kategori.ID }}" data-id="{{ alt_kategori_1.ID }}" href="{{ alt_kategori_1.link }}">
+                                                                                 {{ cevir(alt_kategori_1.adi) }}
+                                                                            </a>
+                                                                            <ul>
+                                                                                {% if alt_kategori_1.alt_kategori_var_mi == true and temaAyarlari('header_area','alt_kategori_seviye') %}
+                                                                                    {% for index, alt_kategori_2 in alt_kategori_1.alt_kategoriler %}
+                                                                                        <li>
+                                                                                            <a href="{{ alt_kategori_2.link }}">
+                                                                                                <span class="sub-category"> {{ alt_kategori_2.adi }} </span>
+                                                                                            </a>
+                                                                                            {{ (index + 1) < alt_kategori_1.alt_kategoriler|length ? '': '' | raw }}
+                                                                                        </li>
+                                                                                    {% endfor %}
+                                                                                {% endif %}
+                                                                            </ul>
+                                                                        </div>
+                                                                    {% endfor %}
+                                                                </div>
+                                                            {% endfor %}
+        
+                                                             </div>
+                                                        </div>
+                                                        {% if temaAyarlari('header_area','mega_menu_resim') %}
+                                                        
+                                                        <div class="col-md-5">
+                                                            <div class="row">
+                                                                {% for liste_index, alt_kategoriler in listeyiBol(kategori.alt_kategoriler, 2)  %}
+                                                                    <div class="col-md-6">
+                                                                        {% for alt_kategori_1 in alt_kategoriler %}
+                                                                            {% if alt_kategori_1.resim_var_mi %}
+                                                                                <a class="sub-title-img-container" href="{{alt_kategori_1.link}}">
+                                                                                    <img src="{{alt_kategori_1.resim}}">
+                                                                                    <div class="sub-title">
+                                                                                        {{ cevir(alt_kategori_1.adi) }}
+                                                                                    </div>
+                                                                                </a>
+                                                                            {% endif %}
+                                                                        {% endfor %}
+                                                                    </div>
+                                                                {% endfor %}
+                                                            </div>
+                                                        </div>
+                                                       
+                                                        {% endif %}    
+                                                        
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                    </div>   
+                                {% endif %}
+                            </li>
+                        {% endfor %}
+                        
+                        
+                    </ul>
+                 </div>
+            </div>
+        
+        </div>
+    </div>
+</section>

@@ -1,0 +1,14 @@
+<div class="faq">
+    {% for soru in sikcaSorulanSorular() %}
+        <a class="btn btn-block btn-secondary" data-toggle="collapse" 
+        href="#collapse-{{ soru.ID }}" role="button" aria-expanded="false" aria-controls="collapse-{{ soru.ID }}">
+            {{ soru.soru }}
+        </a>
+        <div class="collapse" id="collapse-{{ soru.ID }}">
+            <div class="card card-body">
+                {{ soru.cevap | raw }}
+            </div>
+        </div>
+        <div class="mb-1"></div>
+    {% endfor %}
+</div>

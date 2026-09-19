@@ -1,0 +1,54 @@
+<div class="flash-banner-wrap92">
+  <div class="timer-box92">
+    <div class="timer-unit92"><div id="days">4</div><span>Gün</span></div>
+    <div class="timer-unit92"><div id="hours">8</div><span>Saat</span></div>
+    <div class="timer-unit92"><div id="minutes">7</div><span>Dakika</span></div>
+    <div class="timer-unit92"><div id="seconds">1</div><span>Saniye</span></div>
+  </div>
+  <div class="flash-textbox92">
+    <h1>Sınırlı Süreli Flash İndirimler</h1>
+    <span>Sepetine 3 farklı ürün atarak indirim kazan.</span>
+    <a href="https://www.tilbehome.com/viral-urunler">Popüler Ürünleri incele</a>
+  </div>
+ 
+</div>
+
+<script>
+  function getNextMonday() {
+    let now = new Date();
+    let dayOfWeek = now.getDay();
+    let daysUntilMonday = (1 - dayOfWeek + 7) % 7;
+    if (daysUntilMonday === 0 && now.getHours() < 23) {
+      return new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59).getTime();
+    } else {
+      let nextMonday = new Date(now);
+      nextMonday.setDate(now.getDate() + daysUntilMonday);
+      nextMonday.setHours(23, 59, 59, 999);
+      return nextMonday.getTime();
+    }
+  }
+
+  let targetTime = getNextMonday();
+
+  function updateCountdown() {
+    let now = new Date().getTime();
+    let remainingTime = targetTime - now;
+    let days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
+    let seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+
+    document.getElementById("days").textContent = days;
+    document.getElementById("hours").textContent = hours;
+    document.getElementById("minutes").textContent = minutes;
+    document.getElementById("seconds").textContent = seconds;
+
+    if (remainingTime <= 0) {
+      clearInterval(interval);
+      targetTime = getNextMonday();
+      interval = setInterval(updateCountdown, 1000);
+    }
+  }
+
+  let interval = setInterval(updateCountdown, 1000);
+</script>

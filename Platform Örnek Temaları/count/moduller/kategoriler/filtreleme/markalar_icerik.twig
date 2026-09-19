@@ -1,0 +1,12 @@
+<div class="list-wrap" data-simplebar data-simplebar-auto-hide="false">
+    <ul class="list">
+        {% for marka in sayfaBilgileri('markalar') %}
+            <li>
+                <div class="lag-checkbox">
+                    <input id="cat-filter-brand-{{ marka.ID }}" name="smart-cat-markalar[]" value="{{ marka.ID }}" data-smart-cat-search="1" type="checkbox" {{ marka.secili ? 'checked' : '' }}>
+                    <label for="cat-filter-brand-{{ marka.ID }}">{{ marka.adi }}</label><span></span>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+</div>

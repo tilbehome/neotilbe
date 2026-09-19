@@ -1,0 +1,47 @@
+<div class="description mb-3">
+    {{ cevir('favori_listesi_aciklama') }}
+</div>
+
+{% if kullaniciFavoriListesiSayisi() > 0 %}
+    <div class="table-responsive">
+	    <table class="table table-hover">
+		    <thead>
+			    <tr>
+					<th>{{ cevir('favori_liste_urun') }}</th>
+					<th></th>
+					<th></th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+                {% for favori in kullaniciFavoriListesi() %}
+                    <tr>
+                        <td style="width: 100px">
+                            <a href="{{ favori.link }}" class="d-block">
+                                {{ gorsel.lazy(favori.resim, 'd-block w-100 image', favori.adi_alt) }}
+                            </a>
+                        </td>
+                        <td>
+                            <a href="{{ favori.link }}" class="d-block title">
+                                <strong>{{ favori.adi }}</strong>
+                            </a>
+                            <small>{{ favori.tarih }}</small>
+                        </td>
+                        <td>
+                            <a href="javascript:;" onclick="addCart({{ favori.ID }}, 'account')" class="btn btn-orange btn-sm btn-cart">
+                                {{ cevir('sepete_ekle') }}
+                            </a>
+                        </td>
+                        <td>
+                            <a href="javascript:;" class="remove text-danger" onclick="userProductFavourite('remove', {{ favori.ID }}, 'account')"><i class="fa fa-times"></i></a>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% else %}
+    <div class="alert alert-info">
+        {{ cevir('favori_listeniz_bos') }}
+    </div>  
+{% endif %}

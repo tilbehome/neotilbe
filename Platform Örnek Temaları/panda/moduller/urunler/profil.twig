@@ -1,0 +1,405 @@
+{% extends varsayilanBlokModul() %}
+
+{% block modulBaslik %}
+    {{ sayfaBilgileri('adi') }}
+{% endblock %} 
+
+{% block modulIcerik %}
+    <div class="product-profile-1" data-product-id="{{ sayfaBilgileri('ID') }}">
+        <div class="row">
+            <div class="col-lg-6">
+                {% if temaAyarlari('urun_profili','resim_alani') == 'tip_1' %}
+                    {% include 'moduller/urunler/resim_alani_tipi/carousel_atli_karinca.twig' %}
+                {% elseif temaAyarlari('urun_profili','resim_alani') == 'tip_2' %}
+                    {% include 'moduller/urunler/resim_alani_tipi/normal_altta.twig' %}
+                {% else %}
+                     {% include 'moduller/urunler/resim_alani_tipi/carousel_sol.twig' %}
+                {% endif %}
+            </div>
+
+            <div class="col-lg-6">
+                <h1 class="title">{{ sayfaBilgileri('adi') }}</h1>
+                <ul class="product-profile-info">
+                    {% if sayfaBilgileri('on_detay') and temaAyarlari('urun_profili', 'on_detay') %}
+                        <li>
+                            <div class="product-short-desc">
+                                {{sayfaBilgileri('on_detay')}}
+                            </div>
+                        </li>
+                    {% endif %}
+                    {% if temaAyarlari('urun_profili', 'degerlendirmeler') %}
+                        <li>
+                            {% include 'moduller/urunler/profil_degerlendirmeler.twig' %}
+                        </li>
+                    {% endif %}
+                    {% if temaAyarlari('urun_profili', 'urun_kodu') %}
+                        <li>
+                            {{ cevir('urun_kodu') }}: <span class="value">{{ sayfaBilgileri('urun_kodu') }}</span>
+                        </li>
+                    {% endif %}
+                    {% if sayfaBilgileri('barkod') and temaAyarlari('urun_profili', 'barkod') %}
+                        <li>
+                            {{ cevir('barkod') }}: <span class="value">{{ sayfaBilgileri('barkod') }}</span>
+                        </li>
+                    {% endif %}
+                    {% if sayfaBilgileri('marka') and temaAyarlari('urun_profili', 'marka') %}
+                        <li>
+                            {{ cevir('marka') }}: 
+                            <a href="{{ sayfaBilgileri('marka').link }}" title="{{ sayfaBilgileri('marka').adi_alt }}">
+                                <span class="value">{{ sayfaBilgileri('marka').adi }}</span>
+                            </a>
+                        </li>
+                    {% endif %}
+                    {% if sayfaBilgileri('kategori') and temaAyarlari('urun_profili', 'kategori') %}
+                        <li>
+                            {{ cevir('kategori') }}: 
+                            <a href="{{ sayfaBilgileri('kategori').link }}" title="{{ sayfaBilgileri('kategori').adi_alt }}">
+                                <span class="value">{{ sayfaBilgileri('kategori').adi }}</span>
+                            </a>
+                        </li>
+                    {% endif %}
+                    
+                    {% if sayfaBilgileri('nitelikler') and temaAyarlari('urun_profili', 'nitelikler') %}
+                        {% for nitelik in sayfaBilgileri('nitelikler') %}
+                            {% if nitelik.degerler %}
+                                <li>
+                                    {{ nitelik.adi }}: 
+                                    {% for index, deger in nitelik.degerler %}
+                                        {% if index > 0 and index < nitelik.degerler|length %}
+                                            ,
+                                        {% endif %}
+                                        <a href="{{ deger.link }}"><span class="value">{{ deger.adi }}</span></a>
+                                    {% endfor %}
+                                </li>
+                            {% endif %}
+                        {% endfor %}
+                    {% endif %}
+                    
+                    {% if temaAyarlari('urun_profili', 'stok') %}
+                        <li>
+                            {{ cevir('stok') }}: 
+                            <span class="value">
+                                {% if sayfaBilgileri('stok') > 20 %}
+                                    <span class="text-success">20+</span>
+                                {% elseif sayfaBilgileri('stok') > 0 %}
+                                    <span class="text-success">{{ sayfaBilgileri('stok') }}</span>
+                                {% else %}
+                                    <span class="text-danger">{{ cevir('stokta_yok') }}</span>
+                                {% endif %}
+                            </span>
+                        </li>
+                    {% endif %}
+                    
+                    {% if sayfaBilgileri('iliskili_urunler') and temaAyarlari('urun_profili', 'iliskili_urunler') %}
+                        <li class="mt-2">
+                            <span class="value">{{ sayfaBilgileri('iliskili_urunler').grup_adi }}: {{ sayfaBilgileri('iliskili_urunler').secili_deger }}</span>
+                            <div class="related-products">
+                                {% for urun in sayfaBilgileri('iliskili_urunler').liste %}
+                                    <a href="{{ urun.link }}" class="{{ urun.aktif ? 'active' : '' }}" title="{{ urun.adi_alt }}">
+                                        <img src="{{ urun.resim }}" alt="{{ urun.adi_alt }}" />
+                                        <span>{{ urun.deger }}</span>
+                                    </a> 
+                                {% endfor %}
+                            </div>
+                        </li>
+                    {% endif %}
+                    
+                    <li>
+                        <div class="product-price-group">
+                            {% if sayfaBilgileri('indirim') %}
+                                <div class="discount">
+                                    <span class="rate">{{ sayfaBilgileri('indirim_orani_str') }}</span>
+                                    <span>{{ cevir('indirim_k') }}</span>
+                                </div>
+                            {% endif %}
+
+                            <div class="prices">
+                                {% if sayfaBilgileri('indirim')  %}
+                                    <div class="list-price sale-list-price">{{ sayfaBilgileri('piyasa_fiyati')  }}</div>
+                                {% endif %}
+                                <div class="sale-price sale-variant-price {% if sayfaBilgileri('indirimli_fiyatlar').sabit_indirim.aktif and temaAyarlari('urun_profili','sabit_indirim') %} line-through {% endif %}">
+                                    {{ sayfaBilgileri('fiyat') }}
+                                </div>
+                            </div>
+
+                            {% if sayfaBilgileri('ucretsiz_kargo') and temaAyarlari('urun_profili', 'ucretsiz_kargo') %}
+                                <div class="free-cargo-badge">{{ cevir('kargo_bedava') }}</div>
+                            {% endif %}
+                        </div>
+                        
+                        {% if sayfaBilgileri('indirimli_fiyatlar').sabit_indirim.aktif and temaAyarlari('urun_profili','sabit_indirim') %}
+                           <div class="sale-price-discount">
+                                <span class="mr-2">{{ cevir('sepetteki_fiyat') }}</span>
+                                <div class="sale-price sale-discounted-price">
+                                    {{ sayfaBilgileri('indirimli_fiyatlar').sabit_indirim.kdv_dahil }}
+                                </div>
+                           </div>
+                        {% endif %}
+                    </li>
+                    
+                    {% if ayarlar('havale_indirim_miktari') > 0 and temaAyarlari('urun_profili','havale_indirimi') %}
+                        <div class="product-transfer-discount mt-2 mb-2">
+                            {{cevir('havale_eft_ile')}} <strong class="sale-eft-price">{{ urunHavaleFiyati(sayfaBilgileri(''))}}</strong>{{cevir('ye_satin_alin')}}
+                        </div>
+                    {% endif %}
+                    
+                    {% if temaAyarlari('urun_profili','baslayan_taksitle') %}
+                        <div class="product-rate">
+                            {% set taksit_bilgisi = urunTaksitBilgisi(sayfaBilgileri(),'max_installment') %}
+                            {% if taksit_bilgisi %}
+                                    {{ taksit_bilgisi.aylik }} {{cevir('baslayan_taksitle')}}
+                            {% endif %}
+                        </div>
+                    {% endif %}
+                    
+                    {% if sayfaBilgileri('kargolanma_suresi').var_mi %}
+                        <li>
+                            {% if sayfaBilgileri('kargolanma_suresi').tip == 1 %}
+                                <span class="font-weight-500">{{ cevir('ayni_gun_kargoda') }}</span>
+                            {% else %}
+                                <span class="font-weight-500">{{ cevir('x_gunu_kargoda', {x: sayfaBilgileri('kargolanma_suresi').tarih}) }}</span>
+                            {% endif %}
+                        </li>
+                    {% endif %}
+                </ul> 
+
+               {% if sayfaBilgileri('varyantlar') and sayfaBilgileri('stok') > 0 %}
+                    <div class="variant-box mb-2">
+                        <ul>
+                            {% for index, varyant in sayfaBilgileri('varyantlar').liste %}
+                               {% if temaAyarlari('urun_profili','varyant_tipi')  == "tip_1" %}
+                                    <li class="variant">
+                                        <div class="name"><span>{{ varyant.baslik }}:</span></div>
+                                        <select class="form-control" data-variant="{{ index }}" data-variant-name="{{ varyant.baslik }}">
+                                            <option value="">{{ cevir('lutfen_secin') }}</option>
+                                            {% for varyant_sira, var in varyant.degerler %}
+                                                <option value="{{ var.deger }}" data-variant-value="{{ var.deger }}" {{ var.stokta_var_mi and index == 0 and varyant_sira == 0 ? 'selected' : '' }}>{{ var.deger }}</option>
+                                            {% endfor %}
+                                        </select>
+                                        <div class="options">
+                                            {% for varyant_sira, var in varyant.degerler %}
+                                                <a href="javascript:;"
+                                                   data-variant="{{ index }}"
+                                                   data-variant-value="{{ var.deger }}"
+                                                   onclick="changeProductPageVariant(
+                                                           PRODUCT_PAGE_DATA,
+                                                           'div[data-product-id=\'{{ sayfaBilgileri('ID') }}\'] .variant-box',
+                                                           'div[data-product-id=\'{{ sayfaBilgileri('ID') }}\'] .sale-variant-price',
+                                                           '{{ var.deger }}',
+                                                   {{ var.stokta_var_mi ? 'true' : 'false' }},
+                                                   {{ index }})"
+                                                   class="{{ var.stokta_var_mi ? '' : 'sold-out' }} {{ var.stokta_var_mi and index == 0 and varyant_sira == 0 ? 'active' : '' }}">
+                                                    {{ var.deger }}
+                                                </a>
+                                            {% endfor %}
+                                        </div>
+                                    </li>
+                                {% else %}
+                                    <li class="variant">
+                                        <div class="name"><span>{{ varyant.baslik }}:</span></div>
+                                        <select class="form-control d-block" data-variant="{{ index }}" data-variant-name="{{ varyant.baslik }}"
+                                                onchange=$('a[data-vx-value=\"{{ index }}--'+$(this).val()+'\"]').click()>
+                                            {% for var in varyant.degerler %}
+                                                <option value="{{ var.deger }}" data-quantity-check="{{ var.deger }}" data-variant-value="{{ var.deger }}">{{ var.deger }}</option>
+                                            {% endfor %}
+                                        </select>
+                                        <div class="options d-none">
+                                            {% for var in varyant.degerler %}
+                                                <a href="javascript:;"
+                                                   data-variant="{{ index }}"
+                                                   data-variant-value="{{ var.deger }}"
+                                                   data-vx-value="{{ index }}--{{ var.deger }}"
+                                                   onclick="changeProductPageVariant(
+                                                           PRODUCT_PAGE_DATA,
+                                                           'div[data-product-id=\'{{ sayfaBilgileri('ID') }}\'] .variant-box',
+                                                           'div[data-product-id=\'{{ sayfaBilgileri('ID') }}\'] .sale-variant-price',
+                                                           '{{ var.deger }}',
+                                                   {{ var.stokta_var_mi ? 'true' : 'false' }},
+                                                   {{ index }})"
+                                                   class="{{ var.stokta_var_mi ? '' : 'sold-out' }}">
+                                                    {{ var.deger }}
+                                                </a>
+                                            {% endfor %}
+                                        </div>
+                                    </li>
+                                {% endif %}
+                            {% endfor %}
+                        </ul>
+                    </div>
+                {% endif %}
+               
+                {% if temaAyarlari('urun_profili', 'beden_olcu') and sayfaBilgileri('beden_olcu') %}
+                    <div class="product-size-box">
+                        <a href="{{ sayfaBilgileri('beden_olcu').resim }}" data-fancybox="product-sizes" data-caption="{{ sayfaBilgileri('beden_olcu').aciklama_alt }}">
+                            {{ sayfaBilgileri('beden_olcu').baslik }}
+                        </a>
+                    </div>
+                {% endif %}
+                
+                {% include '@default/addons/product_special_fields.twig'  %}
+                
+                {% if sayfaBilgileri('stok') > 0 %}
+                    <div class="product-buttons">
+                        {% if temaAyarlari('urun_profili','birim') %}
+                              <div class="product-unit">
+                                 <input class="select-radio" type="radio" checked=""> {{ sayfaBilgileri('birim_str') }}
+                              </div>
+                        {% endif %}
+                        
+                        {% if sayfaBilgileri('parca_listesi') is empty %}
+                            <div class="product-quantity">
+                                <a href="javascript:;" class="btn btn-minus"
+                                    onclick="productQuantityBox(
+                                        'decrement',
+                                        'div[data-product-id=\'{{ sayfaBilgileri('ID') }}\'] .product-quantity'
+                                    )">
+                                    <i class="fas fa-minus"></i>
+                                </a>
+                                <input class="form-control" name="quantity"
+                                    data-version="2"
+                                    data-decimal="{{ sayfaBilgileri('birim_ondalik_sayisi') }}"
+                                    data-min="{{ sayfaBilgileri('birim_minimum_miktar') }}"
+                                    data-increase="{{ sayfaBilgileri('birim_artis_miktari') }}"
+                                    data-initial="{{ sayfaBilgileri('birim_baslangic_miktari') }}"
+                                    value="{{ sayfaBilgileri('birim_baslangic_miktari') }}"
+                                    onkeypress="return productQuantityBox(
+                                        'change',
+                                        'div[data-product-id=\'{{ sayfaBilgileri('ID') }}\'] .product-quantity',
+                                        event
+                                    )"/>
+                                <a href="javascript:;" class="btn btn-plus"
+                                    onclick="productQuantityBox(
+                                        'increment',
+                                        'div[data-product-id=\'{{ sayfaBilgileri('ID') }}\'] .product-quantity'
+                                    )">
+                                    <i class="fas fa-plus"></i>
+                                </a>
+                            </div>
+                        {% endif %}
+                        
+                        <button class="btn btn-cart btn-color-1" 
+                            onclick="addCart(
+                                    {{ sayfaBilgileri('ID') }}, 
+                                    'product', 
+                                    {
+                                        {% if sayfaBilgileri('varyantlar') %}
+                                            checkVariant: true,
+                                            variantCount: {{ sayfaBilgileri('varyantlar').ozet.count | raw }},
+                                            variantDiv: 'div[data-product-id=\'{{ sayfaBilgileri('ID') }}\'] .variant-box',
+                                        {% endif %}
+                                        quantity: $('div[data-product-id=\'{{ sayfaBilgileri('ID') }}\'] input[name=quantity]').val(),
+                                    }
+                                )">
+                            <i class="{{ temaAyarlari('icon','sepetim') }}"></i>
+                            {{ cevir('sepete_ekle') }}
+                        </button>
+                        
+                        {% if temaAyarlari('urun_profili', 'hemen_al') %}
+                            <button class="btn btn-fast-buy btn-color-2" 
+                                onclick="addCart(
+                                    {{ sayfaBilgileri('ID') }}, 
+                                    'product', 
+                                    {
+                                        redirectPayment: true,
+                                        {% if sayfaBilgileri('varyantlar') %}
+                                            checkVariant: true,
+                                            variantCount: {{ sayfaBilgileri('varyantlar').ozet.count | raw }},
+                                            variantDiv: 'div[data-product-id=\'{{ sayfaBilgileri('ID') }}\'] .variant-box',
+                                        {% endif %}
+                                        quantity: $('div[data-product-id=\'{{ sayfaBilgileri('ID') }}\'] input[name=quantity]').val(),
+                                    }
+                                )">
+                                <i class="fas fa-lira-sign"></i>
+                                {{ cevir('hemen_al') }}
+                            </button>
+                        {% endif %}
+                        {% if temaAyarlari('urun_profili', 'whatsapp_buton') %}
+                            <a href="https://api.whatsapp.com/send?phone={{ whatsappNumara() }}&text={{ sayfaBilgileri('link') }}" 
+                                class="btn btn-wp" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                                {{ cevir('whatsapp_ile_siparis_ver') }}
+                            </a>
+                        {% endif %}
+                    </div>
+                    {% if sayfaBilgileri('parca_listesi') is not empty %}
+                        <a href="#product-piece-list" class="btn btn-primary d-block mt-2 mb-2">
+                            <i class="fas fa-columns mr-2"></i> {{ cevir('alabileceginiz_parca_secenekler') }}
+                        </a>
+                    {% endif %}
+                {% else %}
+                    <div class="alert alert-danger mt-2">
+                        {{ cevir('stokta_yok_aciklama') }}
+                    </div>
+                {% endif %}
+                
+                {% if temaAyarlari('urun_profili', 'favori_listesi') %}
+                    {% include 'moduller/urunler/profil_favori_listesi.twig' %}
+                {% endif %}
+
+                <div class="product-badges">
+                    {% if temaAyarlari('urun_profili', 'yerli_uretim') and sayfaBilgileri('yerli_uretim')  %}
+                        <div class="p-badge domestic">
+                            {{ gorsel.lazy(ortakDosyalar('/assets/images/yerli-uretim.png')) }}
+                        </div>
+                    {% endif %}
+                    {% if temaAyarlari('urun_profili', 'hizli_gonderi')  %}
+                        <div class="p-badge shipping-fast">
+                            <i class="fas fa-shipping-fast"></i>
+                            <span>{{ cevir('hizli_gonderi') }}</span>
+                        </div>
+                    {% endif %}
+                    {% if temaAyarlari('urun_profili', 'guvenli_alisveris')  %}
+                        <div class="p-badge door-payment">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>{{ cevir('guvenli_alisveris') }}</span>
+                        </div>
+                    {% endif %}
+                    {% if temaAyarlari('urun_profili', 'iade_ve_degisim')  %}
+                        <div class="p-badge credit-card">
+                            <i class="fas fa-retweet"></i>
+                            <span>{{ cevir('iade_ve_degisim') }}</span>
+                        </div>
+                    {% endif %}
+                </div>
+
+                {% if temaAyarlari('urun_profili', 'sosyal_medya_butonlari')  %}
+                    <div class="social-share-special"></div>
+                {% endif %}
+
+        </div>
+    </div>
+</div>
+    
+    
+
+{% endblock %} 
+
+
+{% block modulFooterKodlari %}
+
+    <script type="text/javascript">
+        const PRODUCT_PAGE_DATA = {
+             price: '{{ sayfaBilgileri('fiyat') }}',
+            {% if sayfaBilgileri('indirim')  %}
+                listPrice: '{{ sayfaBilgileri('piyasa_fiyati') }}',
+            {% endif %}
+            {% if ayarlar('havale_indirim_miktari') > 0 %}
+                eftPrice: '{{ urunHavaleFiyati(sayfaBilgileri(''))}}',
+            {% endif %}
+            {% if sayfaBilgileri('indirimli_fiyatlar').sabit_indirim.aktif  %}
+                discountedPrice: '{{ sayfaBilgileri('indirimli_fiyatlar').sabit_indirim.kdv_dahil }}',
+            {% endif %}
+            {% if sayfaBilgileri('varyantlar') %}
+                variants: {{ sayfaBilgileri('varyantlar').json | raw }}
+            {% endif %}
+        }
+        
+        $(".social-share-special").jsSocials({
+            showLabel: false,
+            showCount: false,
+            shares: ["twitter", "facebook", "googleplus", "linkedin", "pinterest", "whatsapp"]
+        });
+        
+    </script>
+    
+{% endblock %}

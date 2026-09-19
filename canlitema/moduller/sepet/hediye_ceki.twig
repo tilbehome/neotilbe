@@ -1,0 +1,39 @@
+{% extends ayarlar('hediye_ceki_kullanimi') and not sepetBilgileri('ozet').indirim_var_mi and sepetBilgileri('durum')
+    ? varsayilanBlokModul()
+    : varsayilanBosDosya() %}
+
+{% block modulIcerik %}
+
+<div class="discount-section">
+    <!-- Aç/Kapa İçin Checkbox -->
+    <input type="checkbox" id="discount-toggle">
+
+    <!-- Başlık (Tıklanınca Açılır) -->
+    <label for="discount-toggle" class="discount-header">
+        <span class="plus-icon"><i class="coreicon-gift-1"></i></span>
+        <span>İndirim Kodu Ekle</span>
+    </label>
+
+    <!-- Başlangıçta GİZLENEN Kutu -->
+    <div class="hidden-summary-box">
+
+   {% if ayarlar('hediye_ceki_kullanimi') and not sepetBilgileri('ozet').indirim_var_mi %}
+
+       <p>İndirim kodunuzu girerek uygula tıklayın.</p>
+        <form action="" method="POST" class="voucher-code-form" onsubmit="return useVoucherCode(this, 'refresh-page')">
+            <div class="input-group">
+                <input class="form-control" name="code" value="" />
+                <div class="input-group-append">
+                    <button type="submit" class="btn btn-secondary btn-sm">
+                        {{ cevir('kullan') }}
+                    </button> 
+                </div>
+            </div>
+        </form>
+	
+    </div>
+</div>
+
+        
+    {% endif %}
+{% endblock %}

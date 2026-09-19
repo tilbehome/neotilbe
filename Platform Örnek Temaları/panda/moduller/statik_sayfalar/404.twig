@@ -1,0 +1,50 @@
+{% extends varsayilanBlokModul() %}
+
+{% block modulIcerik %}
+
+    {% if temaAyarlari('genel','404_tip')  == "tip_1" %}
+    
+        <div class="e404-page-type-1 text-center">
+            <img class="e404-pic" src="{{temaDosyalari('/assets/images/404/404.png')}}">
+            
+            <div class="e404-title">
+                {{buyukCevir('404_hata')}}
+            </div>
+            
+            <div class="e404-description">
+                {{cevir('404_hata_mesaj')}}
+            </div>
+            
+            <a href="{{statikLinkler('site_adresi')}}" class="e404-btn">
+                {{cevir('anasayfaya_git')}}
+            </a>
+        </div>
+        
+    {% elseif temaAyarlari('genel','404_tip')  == "tip_2" %}
+    
+        <div class="e404-page-type-2">
+            <img class="e404-pic" src="{{temaDosyalari('/assets/images/404/404_tip_2.png')}}">
+            
+            <div class="e404-content">
+                
+                <div class="e404-logo">
+                    <img src="{{ logoAdresi() }}" alt="" />
+                </div>
+                
+                <div class="e404-title">
+                    {{buyukCevir('404_hata')}}
+                </div>
+                
+                <div class="e404-description">
+                    {{cevir('404_hata_mesaj')}}
+                </div>
+                
+                <a href="{{statikLinkler('site_adresi')}}" class="e404-btn">
+                    {{cevir('anasayfaya_git')}}
+                </a>
+            </div>
+        </div>
+    
+    {% endif %}
+    
+{% endblock %}

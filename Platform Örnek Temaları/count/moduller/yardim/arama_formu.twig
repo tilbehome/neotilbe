@@ -1,0 +1,13 @@
+{% extends varsayilanBlokModul() %}
+ 
+{% block modulIcerik %}
+    <div class="help-search-wrapper">
+		<div class="title">{{ modul.name }}</div>
+		<form action="{{ statikLinkler('yardim_ara') }}" method="get">
+            <div class="input-box">
+                <input type="text" name="k" class="form-control" placeholder="{{ cevir('yardim_form_aciklama') }}" />
+            </div>
+            <button type="submit" class="btn btn-orange btn-send">{{ cevir('ara') }}</button>
+        </form>
+	</div>
+{% endblock %}

@@ -1,0 +1,35 @@
+{% if bayiHareketleriSayisi() > 0 %}
+    <div class="table-responsive">
+	    <table class="table table-striped table-bordered table-hover table-sm" id="data-table-dealer-actions">
+		    <thead class="thead-dark">
+			    <tr>
+                    <th>{{ cevir('tarih') }}</th>
+                    <th>{{ cevir('islem') }}</th>
+                    <th>{{ cevir('aciklama') }}</th>
+                    <th>{{ cevir('borc') }}</th>
+                    <th>{{ cevir('alacak') }}</th>
+                    <th>{{ cevir('bakiye') }}</th>
+                    <th>{{ cevir('durum') }}</th>
+				</tr>
+			</thead>
+			<tbody>
+                {% for hareket in bayiHareketleri() %}
+                    <tr>
+                        <td data-order="{{ siparis.tarih_base }}">{{ hareket.tarih }}</td>
+                        <td>{{ hareket.islem }}</td>
+                        <td>{{ hareket.aciklama }}</td>
+                        <td data-order="{{ siparis.borc_base }}">{{ hareket.borc }}</td>
+                        <td data-order="{{ siparis.alacak_base }}">{{ hareket.alacak }}</td>
+                        <td><span class="{{ hareket.bakiye_durum == 'arti' ? 'text-success' : 'text-danger' }}">{{ hareket.bakiye }}</span></td>
+                        <td><span class="text-{{ hareket.durum_renk }}">{{ hareket.durum }}</span></td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+{% else %}
+    <div class="alert alert-info">
+        {{ cevir('bayi_hareketi_bulunmamaktadir') }}
+    </div>  
+{% endif %}

@@ -1,0 +1,17 @@
+{% extends sepetBilgileri('durum')
+    ? varsayilanBosDosya()
+    : varsayilanBlokModul() %}
+
+{% block modulIcerik %}
+    
+   <div class="cart-empty-alert">
+        <h6>{{ cevir('sepet_bos_uyari_1') }}</h6>
+        <span>{{ cevir('sepet_bos_uyari_2') }}</span>
+
+        <a href="{{ statikLinkler('site_adresi') }}" class="btn btn-success btn-theme-2">
+            {{ cevir('alisverise_basla') }} <i class="fa fa-chevron-right"></i> 
+        </a>
+
+   </div>
+
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends sayfaBilgileri('ek_bilgi') is not empty 
+    ? varsayilanBlokModul()
+    : varsayilanBosDosya() %}
+ 
+{% block modulIcerik %}
+    {% if sayfaBilgileri('ek_bilgi') is not empty %}
+        <div class="raw-content category-blog-single category-detail-single" data-simplebar data-simplebar-auto-hide="false">
+            {{ sayfaBilgileri('ek_bilgi') | raw }}
+        </div>
+    {% endif %}
+{% endblock %}  

@@ -1,0 +1,24 @@
+<form class="enewsletter-info-form" action="" method="post" onsubmit="return ajaxFormGate('POST', 'User', 'updateEnewsletter', this)">
+
+
+    <div class="enewsletter-info-description">
+        <input type="checkbox" name="newsletter_email" id="inputEmail" value="1"
+                {{ kullaniciBilgileri('email_bulten_durumu') == 1 ? 'checked' : '' }}>
+        <label for="inputEmail">
+            {{ cevir('eposta_ebulten_kayit_onayi') }}
+        </label>
+    </div>
+
+    <div class="mb-3"></div>
+
+    <div class="enewsletter-info-description">
+        <input type="checkbox" name="newsletter_sms" id="inputSms" value="1"
+                {{ kullaniciBilgileri('sms_bulten_durumu') == 1 ? 'checked' : '' }}>
+        <label for="inputSms">
+            {{ cevir('sms_ebulten_kayit_onayi') }}
+        </label>
+    </div>
+
+
+    <button type="submit" class="btn btn-success mt-3">{{ cevir('kaydet') }}</button>
+</form>

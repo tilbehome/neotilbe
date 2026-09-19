@@ -1,0 +1,25 @@
+{% extends varsayilanBlokModul() %}
+
+{% block modulBaslik %}
+    {{ sayfaBilgileri('baslik') }}
+{% endblock %} 
+
+{% block modulIcerik %}
+    <div class="date">
+        {{ cevir('tarih') }}: {{ sayfaBilgileri('tarih') }}
+    </div>
+
+    <div class="image">
+        <img src="{{ sayfaBilgileri('resim') }}" alt="{{ sayfaBilgileri('baslik_alt') }}">
+    </div>
+
+    <div class="description">
+        {{ sayfaBilgileri('aciklama') }}
+    </div>
+
+    <div class="detail">
+        {{ sayfaBilgileri('icerik') | raw }}
+    </div>
+
+    <div class="social-share"></div>
+{% endblock %} 

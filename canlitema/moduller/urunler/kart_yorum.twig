@@ -1,0 +1,19 @@
+<div class="card-comment">
+    <div class="info">
+        <div class="stars">
+            {% for i in 1..5 %}
+                <i class="fa fa-star {{ i <= yorum.puan ? 'active' : '' }}"></i>
+            {% endfor %}
+        </div>
+        <span class="date">{{ yorum.tarih }}</span>
+    </div>
+    <a class="product" href="{{ yorum.urun.link }}">
+        <div class="image">
+            {{ gorsel.lazy(yorum.urun.resim, '', '') }}
+        </div>
+        <div class="customer">
+            <div class="name">{{ yorum.adi }}</div>
+            <div class="comment">{{ yorum.yorum }}</div>
+        </div>
+    </a>
+</div>

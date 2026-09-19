@@ -1,0 +1,34 @@
+<section class="menu">
+    <div class="single-menu-container">   
+       <div class="container">
+           <ul class="single-menu pl-0 ml-0">
+               {% for kategori in tumKategoriler(0, temaAyarlari('genel', 'ust_menu_limit')) %}
+               
+                <li>
+                    
+                    <a  href="{{ kategori.link }}" class="sub-single-item"> {{ kategori.adi }}</a>
+                    {% if kategori.alt_kategori_var_mi == true %}
+                      <ul class="single-sub-menu">
+                          {% for index, alt_kategori_1 in kategori.alt_kategoriler %}
+                               <li>
+                                   <a href="{{ alt_kategori_1.link }}" class="single-item">{{ alt_kategori_1.adi }}</a>
+                               
+                                       
+                                      {% if alt_kategori_1.alt_kategori_var_mi == true and temaAyarlari('header_area','alt_kategori_seviye') %}
+                                         <ul>
+                                            {% for index, alt_kategori_2 in alt_kategori_1.alt_kategoriler %}
+                                                 <li><a href="{{ alt_kategori_2.link }}" class="single-item">{{ alt_kategori_2.adi }}</a></li>
+                                            {% endfor %}
+                                         </ul>
+                                      {% endif %}
+                                    
+                               </li>
+                           {% endfor %}
+                      </ul>
+                     {% endif %}
+                 </li>
+                {% endfor %}
+          </ul>
+       </div>
+    </div>
+</section>

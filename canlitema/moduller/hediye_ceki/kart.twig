@@ -1,0 +1,25 @@
+<div class="card-voucher">
+    <div class="meta">
+        <div class="name">{{ hediye_ceki.baslik }}</div>
+        <div class="date">
+            {{ cevir('x_y_tarihleri_arasinda_gecerlidir', {
+                x: hediye_ceki.baslangic_tarihi,
+                y: hediye_ceki.bitis_tarihi
+            }) }}
+        </div>
+        <a href="{{ hediye_ceki.link }}" class="link">
+            {{ cevir('detaylar') }}
+        </a>
+    </div>
+    <div class="info">
+        <div class="discount">
+            <span>{{ hediye_ceki.indirim }}</span>
+        </div>
+        <div class="code" onclick="copyElement('voucher-code', true)">
+            <span class="value" id="voucher-code-{{ hediye_ceki.ID }}">{{ hediye_ceki.kod }}</span>
+            <button type="button" class="btn btn-copy"
+                    onclick="copyElement('voucher-code-{{ hediye_ceki.ID }}', true)"><i class="far fa-copy"></i>
+            </button>
+        </div>
+    </div>
+</div>

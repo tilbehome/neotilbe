@@ -1,0 +1,46 @@
+{% extends varsayilanBlokModul() %}
+
+{% block modulBaslik %}
+    {{ sayfaBilgileri('baslik') }}
+{% endblock %} 
+
+{% block modulIcerik %}
+    <div class="user-dashboard">
+        {% include 'moduller/hesap/alt_sayfalar/' ~ sayfaBilgileri('tema_dosyasi') ~ '.twig' %}
+    </div>
+{% endblock %} 
+
+
+{% block modulFooterKodlari %}
+
+    {% if sayfaBilgileri('tema_dosyasi') == 'bayi_hareketlerim' %}
+        {{ dataTableKodlari() | raw }}
+        <script type="text/javascript">
+        $(function(){
+            $('#data-table-dealer-actions').DataTable({
+                processing: false,
+                serverSide: false,
+                bFilter: true,
+                responsive: true,
+                order: [[0, 'asc']],
+                language: DATATABLE_LANGUAGE,
+                pageLength: 15,
+                lengthMenu: [ 15, 30, 50, 75, 100],
+            });
+        });
+        </script>
+    {% endif %}
+
+    {% if sayfaBilgileri('hata_mesaji') is not empty %}
+        <script type="text/javascript">
+        $(function(){
+            showAlert({
+                title: LANG_HELPER.error,
+                text: '{{ sayfaBilgileri('hata_mesaji') }}',
+                status: 'error',
+                buttonTitle: LANG_HELPER.ok
+            });
+        });
+        </script>
+    {% endif %}
+{% endblock %}

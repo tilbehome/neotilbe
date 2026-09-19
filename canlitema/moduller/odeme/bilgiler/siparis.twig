@@ -1,0 +1,55 @@
+{% extends varsayilanBlokModul() %}
+
+{% block modulBaslik %}
+<div class="payment-page-title-block">
+<h4><img src="https://www.tilbehome.com/theme/___shuttle/assets/images/icons8-order-completed-50.png?v=1738946257">Sipariş Notu</h4>
+</div>
+{% endblock %}
+
+
+{% block modulIcerik %}
+
+
+
+<div class"hediye-paket-mesaj">
+    <form class="payment-form-group-1" data-payment-box-form="order-info">
+
+        {% if ayarlar('hediye_paketi_kullanimi') %}
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group19 hediye-aciklama54">
+
+                        <label>
+                            {{ cevir('hediye_paketi') }}
+                            {% if ayarlar('hediye_paketi_ucreti') > 0 %}
+                                <span class="gift-pack-price">(+{{ hediyePaketiUcreti() }})</span>
+                            {% endif %}
+                        </label>
+                        <div class="clearfix"></div>
+
+                        <input type="checkbox" name="gift_pack" id="orderInputGift" 
+                        {{ siparisBilgileri('gift_pack') ? 'checked' : '' }}
+                        value="1" > 
+                        <label for="orderInputGift" class="ml-2">
+                            {{ cevir('hediye_paketi_aciklama') }}
+                        </label>
+
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+
+        {% if ayarlar('siparis_notu') %}
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+
+                        <textarea name="notes" placeholder="Siparişinizle ilgili notlarınızı buraya yazabilirsiniz." class="form-control" id="orderInputNotes">{{ siparisBilgileri('notes') }}</textarea>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,87 @@
+<div class="card-product">
+    <div class="card-product-inner">
+        <div class="image-wrapper">
+            {% if temaAyarlari('urun_karti', 'resim') %} 
+                <div class="image">
+                    <div id="product-card-carousel-{{ modul.ozel_data_kodu }}-{{ urun.ID }}" class="carousel">
+                        <div class="carousel-outer">
+                            <div class="carousel-inner">
+                                {% for index, resim in urun.resimler %}
+                                    <div class="carousel-item {{ index == 0 ? 'active' : '' }}">
+                                        <a href="{{ urun.link }}">
+                                            {{ gorsel.lazy(resim.normal) }}
+                                        </a>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                            {% if urun.resimler |length > 1 %}
+                                <a class="carousel-control-prev" href="#product-card-carousel-{{ modul.ozel_data_kodu }}-{{ urun.ID }}" role="button" data-slide="prev">
+                                    <i class="fa fa-chevron-left"></i>
+                                </a>
+                                <a class="carousel-control-next" href="#product-card-carousel-{{ modul.ozel_data_kodu }}-{{ urun.ID }}" role="button" data-slide="next">
+                                    <i class="fa fa-chevron-right"></i>
+                                </a>
+                            {% endif %}
+                            
+                            {% if urun.resimler | length > 1 and urun.resimler | length <= 4 %}
+                            
+                            <ol class="carousel-indicators">
+                                {% for index, resim in urun.resimler %}
+                                    <li data-target="#product-card-carousel-{{ modul.ozel_data_kodu }}-{{ urun.ID }}" 
+                                        data-slide-to="{{ index }}" class="{{ index == 0 ? 'active' : '' }}">
+                                    </li>
+                                {% endfor %}
+                            </ol>
+                        
+                            {% endif %}
+                                
+                        </div>
+                    </div>
+                </div>
+            {% else %}
+                <a href="{{ urun.link }}" class="c-p-i-link" title="{{ urun.adi_alt }}">
+                    <div class="image">
+                        {% if urun.video_var_mi %}
+                            <div class="video">
+                                <video 
+                                muted="" onloadeddata="this.play();"
+                                loop="" autoplay="" playsinline=""
+                                webkit-playsinline="">
+                                    <source src="{{ urun.video_url }}" type="{{ urun.video_tipi }}">
+                                    </source>
+                                </video>
+                            </div>
+                        {% endif %}
+                        {{ gorsel.lazy(urun.resim, '', urun.adi_alt) }}
+                    </div>
+                </a>
+            {% endif %}
+        </div>
+        <a href="{{ urun.link }}" class="c-p-i-link" title="{{ urun.adi_alt }}">
+            <div class="title">
+                {{ urun.adi }}
+            </div>    
+            <div class="price-group">
+                <div class="prices">
+        
+                        <div class="list-price">
+                             {% if urun.indirim %}
+                            {{ urun.piyasa_fiyati }}
+                              {% endif %}
+                        </div>
+                  
+                     <div class="sale-price">
+                         <span class="homepage-sale-desc">
+                         {% if urun.indirim %}
+                         {{ buyukCevir('indirim') }}
+                         {% else %}
+                         {{ buyukCevir('bugune_ozel') }}
+                         {% endif %}
+                         </span>
+                         {{ urun.fiyat }}
+                         </div>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>

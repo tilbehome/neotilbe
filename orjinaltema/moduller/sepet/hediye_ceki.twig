@@ -1,0 +1,18 @@
+{% extends ayarlar('hediye_ceki_kullanimi') and not sepetBilgileri('ozet').hediye_ceki_var_mi and sepetBilgileri('durum')
+    ? varsayilanBlokModul()
+    : varsayilanBosDosya() %}
+
+{% block modulIcerik %}
+   {% if ayarlar('hediye_ceki_kullanimi') and not sepetBilgileri('ozet').hediye_ceki_var_mi %}
+        <form action="" method="POST" class="voucher-code-form" onsubmit="return useVoucherCode(this, 'refresh-page')">
+            <div class="input-group">
+                <input class="form-control" placeholder="{{ cevir('hediye_ceki_kodunu_girin') }}" name="code" value="" />
+                <div class="input-group-append">
+                    <button type="submit" class="btn btn-secondary btn-sm">
+                        {{ cevir('kullan') }}
+                    </button> 
+                </div>
+            </div>
+        </form>
+    {% endif %}
+{% endblock %}  

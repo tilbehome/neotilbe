@@ -1,0 +1,21 @@
+{% extends varsayilanBlokModul() %}
+
+{% block modulIcerik %}
+    {% if sayfaBilgileri('icerik').icerik_sayisi > 0 %}
+        <div class="row">
+            {% for marka in sayfaBilgileri('icerik').liste %}
+                <div class="{{ modul.listeleme_class }} col-list-p-v-1">
+                    {% include modul.kart %}
+                </div>
+            {% endfor %}
+        </div>
+
+        <div class="pagination-wrapper">
+            {% include modul.sayfalar  %}
+        </div>
+    {% else %}
+        <div class="alert alert-warning">
+            {{ cevir('marka_bulunamadi') }}
+        </div>
+    {% endif %}
+{% endblock %} 

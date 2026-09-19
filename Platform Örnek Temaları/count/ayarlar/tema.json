@@ -1,0 +1,1194 @@
+{
+    "genel": {
+        "_tanim": "Genel Bilgiler",
+        "font": {
+            "veri_tipi": "string",
+            "deger": "poppins",
+            "form": {
+                "aciklama": "Font Tipi",
+                "tipi": "fontpicker"
+            }
+        },
+        "alert_timer": {
+            "veri_tipi": "integer",
+            "deger": 10,
+            "form": {
+                "aciklama": "Alert Kapanma Süresi(Sn.)",
+                "tipi": "text",
+                "sutun": "col-md-4"
+            }
+        },
+        "404_tip": {
+            "veri_tipi": "string",
+            "deger": "tip_1",
+            "form": {
+                "aciklama": "404 Sayfası",
+                "tipi": "selectbox",
+                "degerler": [
+                    {
+                        "name": "Normal 404 Sayfası",
+                        "value": "tip_1"
+                    },
+                    {
+                        "name": "İki Bölümlü 404 Sayfası (Görselli)",
+                        "value": "tip_2"
+                    }
+                ]
+            }
+        },
+        "ust_menu_limit": {
+            "veri_tipi": "integer",
+            "deger": 10,
+            "form": {
+                "aciklama": "Üst Menü Limiti",
+                "tipi": "text",
+                "sutun": "col-md-6"
+            }
+        },
+        "container_genislik": {
+            "veri_tipi": "integer",
+            "deger": 1280,
+            "form": {
+                "aciklama": "Ekran Genişliği (Container Width) - Px",
+                "tipi": "text",
+                "sutun": "col-md-6"
+            }
+        },
+        "kvkk_aydinlatma_metnini": {
+            "veri_tipi": "boolean",
+            "deger": 1,
+            "form": {
+                "aciklama": "Ödeme Sayfası - KVKK Metni",
+                "tipi": "checkbox"
+            }
+        },
+        "ticari_elektronik_ileti_metnini": {
+            "veri_tipi": "boolean",
+            "deger": 1,
+            "form": {
+                "aciklama": "Ödeme Sayfası - Ticareti İleti Metni",
+                "tipi": "checkbox"
+            }
+        },
+        "kargo_fisi": {
+            "veri_tipi": "boolean",
+            "deger": 1,
+            "form": {
+                "aciklama": "Ödeme Formunda Kargo Fişi Yükleme",
+                "tipi": "checkbox"
+            }
+        },
+        "odeme_sepet_ust_alan_gizleme": {
+            "veri_tipi": "boolean",
+            "deger": 0,
+            "form": {
+                "aciklama": "Ödeme & Sepet Sayfasında Üst Barları Gizle",
+                "tipi": "checkbox",
+                "sutun": "col-md-4"
+            }
+        },
+        "lazy_load": {
+            "veri_tipi": "boolean",
+            "deger": 1,
+            "form": {
+                "aciklama": "Lazy Load eklentisi",
+                "tipi": "checkbox",
+                "sutun": "col-md-4"
+            }
+        },
+        "lazy_load_efekt_suresi": {
+            "veri_tipi": "integer",
+            "deger": 200,
+            "form": {
+                "aciklama": "Lazy Load Efekt Süresi",
+                "tipi": "text",
+                "sutun": "col-md-4"
+            }
+        },
+        "alert_type": {
+            "veri_tipi": "string",
+            "deger": "soft",
+            "form": {
+                "aciklama": "Alert(Uyarı) Tipi",
+                "tipi": "alertpicker",
+                "sutun": "col-md-4"
+            }
+        }
+    },
+    "hizli_linkler": {
+        "_tanim": "Hızlı Linkler",
+        "item": {
+            "veri_tipi": "boolean",
+            "deger": 1,
+            "form": {
+                "aciklama": "Hızlı Link Alanı Durum ",
+                "tipi": "checkbox",
+                "sutun": "col-md-12"
+            }
+        },
+        "item_1_adi": {
+            "veri_tipi": "string",
+            "deger": "Günün Ürünleri",
+            "form": {
+                "aciklama": "1. Menü Adı ",
+                "tipi": "text",
+                "sutun": "col-md-3"
+            }
+        },
+        "item_1_link": {
+            "veri_tipi": "string",
+            "deger": "#",
+            "form": {
+                "aciklama": "1. Menü Linki ",
+                "tipi": "text",
+                "sutun": "col-md-3"
+            }
+        },
+        "item_1_renk": {
+            "veri_tipi": "string",
+            "deger": "#9b59b6",
+            "form": {
+                "aciklama": "1. Menü İkon Rengi ",
+                "tipi": "colorpicker",
+                "sutun": "col-md-3"
+            }
+        },
+        "item_1_ikon": {
+            "veri_tipi": "string",
+            "deger": "coreicon-star-1",
+            "form": {
+                "aciklama": "1. Menü İkon ",
+                "tipi": "iconpicker",
+                "sutun": "col-md-3"
+            }
+        },
+        "item_2_adi": {
+            "veri_tipi": "string",
+            "deger": "Kampanyalar",
+            "form": {
+                "aciklama": "2. Menü Adı ",
+                "tipi": "text",
+                "sutun": "col-md-3"
+            }
+        },
+        "item_2_link": {
+            "veri_tipi": "string",
+            "deger": "#",
+            "form": {
+                "aciklama": "2. Menü Linki ",
+                "tipi": "text",
+                "sutun": "col-md-3"
+            }
+        },
+        "item_2_renk": {
+            "veri_tipi": "string",
+            "deger": "#ffce00",
+            "form": {
+                "aciklama": "2. Menü İkon Rengi ",
+                "tipi": "colorpicker",
+                "sutun": "col-md-3"
+            }
+        },
+        "item_2_ikon": {
+            "veri_tipi": "string",
+            "deger": "coreicon-star-1",
+            "form": {
+                "aciklama": "2. Menü İkon ",
+                "tipi": "iconpicker",
+                "sutun": "col-md-3"
+            }
+        },
+        "item_3_adi": {
+            "veri_tipi": "string",
+            "deger": "Yardım",
+            "form": {
+                "aciklama": "3. Menü Adı ",
+                "tipi": "text",
+                "sutun": "col-md-3"
+            }
+        },
+        "item_3_link": {
+            "veri_tipi": "string",
+            "deger": "#",
+            "form": {
+                "aciklama": "3. Menü Linki ",
+                "tipi": "text",
+                "sutun": "col-md-3"
+            }
+        },
+        "item_3_renk": {
+            "veri_tipi": "string",
+            "deger": "#000000",
+            "form": {
+                "aciklama": "3. Menü İkon Rengi ",
+                "tipi": "colorpicker",
+                "sutun": "col-md-3"
+            }
+        },
+        "item_3_ikon": {
+            "veri_tipi": "string",
+            "deger": "coreicon-star-1",
+            "form": {
+                "aciklama": "3. Menü İkon ",
+                "tipi": "iconpicker",
+                "sutun": "col-md-3"
+            }
+        },
+        "item_4_adi": {
+            "veri_tipi": "string",
+            "deger": "Keşfet",
+            "form": {
+                "aciklama": "4. Menü Adı ",
+                "tipi": "text",
+                "sutun": "col-md-3"
+            }
+        },
+        "item_4_link": {
+            "veri_tipi": "string",
+            "deger": "#",
+            "form": {
+                "aciklama": "4. Menü Linki ",
+                "tipi": "text",
+                "sutun": "col-md-3"
+            }
+        },
+        "item_4_renk": {
+            "veri_tipi": "string",
+            "deger": "#000000",
+            "form": {
+                "aciklama": "4. Menü İkon Rengi ",
+                "tipi": "colorpicker",
+                "sutun": "col-md-3"
+            }
+        },
+        "item_4_ikon": {
+            "veri_tipi": "string",
+            "deger": "coreicon-star-1",
+            "form": {
+                "aciklama": "4. Menü İkon ",
+                "tipi": "iconpicker",
+                "sutun": "col-md-3"
+            }
+        },
+        "item_5_adi": {
+            "veri_tipi": "string",
+            "deger": "Popüler",
+            "form": {
+                "aciklama": "5. Menü Adı ",
+                "tipi": "text",
+                "sutun": "col-md-3"
+            }
+        },
+        "item_5_link": {
+            "veri_tipi": "string",
+            "deger": "#",
+            "form": {
+                "aciklama": "5. Menü Linki ",
+                "tipi": "text",
+                "sutun": "col-md-3"
+            }
+        },
+        "item_5_renk": {
+            "veri_tipi": "string",
+            "deger": "#000000",
+            "form": {
+                "aciklama": "5. Menü İkon Rengi ",
+                "tipi": "colorpicker",
+                "sutun": "col-md-3"
+            }
+        },
+        "item_5_ikon": {
+            "veri_tipi": "string",
+            "deger": "coreicon-star-1",
+            "form": {
+                "aciklama": "5. Menü İkon ",
+                "tipi": "iconpicker",
+                "sutun": "col-md-3"
+            }
+        },
+        "item_6_adi": {
+            "veri_tipi": "string",
+            "deger": "Süper Fırsat",
+            "form": {
+                "aciklama": "6. Menü Adı ",
+                "tipi": "text",
+                "sutun": "col-md-3"
+            }
+        },
+        "item_6_link": {
+            "veri_tipi": "string",
+            "deger": "#",
+            "form": {
+                "aciklama": "6. Menü Linki ",
+                "tipi": "text",
+                "sutun": "col-md-3"
+            }
+        },
+        "item_6_renk": {
+            "veri_tipi": "string",
+            "deger": "#000000",
+            "form": {
+                "aciklama": "6. Menü İkon Rengi ",
+                "tipi": "colorpicker",
+                "sutun": "col-md-3"
+            }
+        },
+        "item_6_ikon": {
+            "veri_tipi": "string",
+            "deger": "coreicon-star-1",
+            "form": {
+                "aciklama": "6. Menü İkon ",
+                "tipi": "iconpicker",
+                "sutun": "col-md-3"
+            }
+        },
+        "item_7_adi": {
+            "veri_tipi": "string",
+            "deger": "Yeni Gelenler",
+            "form": {
+                "aciklama": "7. Menü Adı ",
+                "tipi": "text",
+                "sutun": "col-md-3"
+            }
+        },
+        "item_7_link": {
+            "veri_tipi": "string",
+            "deger": "#",
+            "form": {
+                "aciklama": "7. Menü Linki ",
+                "tipi": "text",
+                "sutun": "col-md-3"
+            }
+        },
+        "item_7_renk": {
+            "veri_tipi": "string",
+            "deger": "#000000",
+            "form": {
+                "aciklama": "7. Menü İkon Rengi ",
+                "tipi": "colorpicker",
+                "sutun": "col-md-3"
+            }
+        },
+        "item_7_ikon": {
+            "veri_tipi": "string",
+            "deger": "coreicon-star-1",
+            "form": {
+                "aciklama": "7. Menü İkon ",
+                "tipi": "iconpicker",
+                "sutun": "col-md-3"
+            }
+        }
+    },
+    "icon": {
+        "_tanim": "İkonlar",
+        "sepetim": {
+            "veri_tipi": "string",
+            "deger": "coreicon-cart-2",
+            "form": {
+                "aciklama": "Sepet İkonu",
+                "tipi": "iconpicker"
+            }
+        },
+        "urun_gor": {
+            "veri_tipi": "string",
+            "deger": "coreicon-search-1",
+            "form": {
+                "aciklama": "İncele İkonu",
+                "tipi": "iconpicker"
+            }
+        },
+        "urun_incele": {
+            "veri_tipi": "string",
+            "deger": "fas fa-binoculars",
+            "form": {
+                "aciklama": "Gör İkonu",
+                "tipi": "iconpicker"
+            }
+        },
+        "hesabim": {
+            "veri_tipi": "string",
+            "deger": "coreicon-user-5",
+            "form": {
+                "aciklama": "Hesabım İkonu",
+                "tipi": "iconpicker"
+            }
+        },
+        "search": {
+            "veri_tipi": "string",
+            "deger": "coreicon-search-1",
+            "form": {
+                "aciklama": "Arama İkonu",
+                "tipi": "iconpicker"
+            }
+        },
+        "iletisim": {
+            "veri_tipi": "string",
+            "deger": "coreicon-megaphone",
+            "form": {
+                "aciklama": "İletişim İkonu",
+                "tipi": "iconpicker"
+            }
+        },
+        "mail": {
+            "veri_tipi": "string",
+            "deger": "coreicon-envelope-1",
+            "form": {
+                "aciklama": "Mail İkonu",
+                "tipi": "iconpicker"
+            }
+        },
+        "mobil_menu": {
+            "veri_tipi": "string",
+            "deger": "fas fa-align-right",
+            "form": {
+                "aciklama": "Mobil Menü İkonu",
+                "tipi": "iconpicker"
+            }
+        },
+        "mobil_search": {
+            "veri_tipi": "string",
+            "deger": "coreicon-search-1",
+            "form": {
+                "aciklama": "Mobil Arama İkonu",
+                "tipi": "iconpicker"
+            }
+        },
+        "mobil_sepet": {
+            "veri_tipi": "string",
+            "deger": "coreicon-basket-2",
+            "form": {
+                "aciklama": "Mobil Sepet İkonu",
+                "tipi": "iconpicker"
+            }
+        },
+        "mobil_user": {
+            "veri_tipi": "string",
+            "deger": "coreicon-user-5",
+            "form": {
+                "aciklama": "Mobil Hesabım İkonu",
+                "tipi": "iconpicker"
+            }
+        }
+    },
+    "renk": {
+        "_tanim": "Renkler",
+        "gecis_suresi": {
+            "veri_tipi": "string",
+            "deger": ".4",
+            "form": {
+                "aciklama": "Renk Geçiş Süresi (Üzerinde)",
+                "tipi": "text"
+            }
+        },
+        "body_renk": {
+            "veri_tipi": "string",
+            "deger": "#ffffff",
+            "form": {
+                "aciklama": "Body Renk",
+                "tipi": "colorpicker"
+            }
+        },
+        "ust_bar_renk": {
+            "veri_tipi": "string",
+            "deger": "#000000",
+            "form": {
+                "aciklama": "Üst Bar Yazı Rengi",
+                "tipi": "colorpicker"
+            }
+        },
+        "ust_bar_renk_hover": {
+            "veri_tipi": "string",
+            "deger": "#2a73b7",
+            "form": {
+                "aciklama": "Üst Bar Yazı Rengi (Üzerinde)",
+                "tipi": "colorpicker"
+            }
+        },
+        "menu_renk": {
+            "veri_tipi": "string",
+            "deger": "#444444",
+            "form": {
+                "aciklama": "Menü Yazı Rengi",
+                "tipi": "colorpicker"
+            }
+        },
+        "menu_renk_hover": {
+            "veri_tipi": "string",
+            "deger": "#444444",
+            "form": {
+                "aciklama": "Menü Yazı Rengi (Üzerinde)",
+                "tipi": "colorpicker"
+            }
+        },
+        "menu_arkaplan_renk": {
+            "veri_tipi": "string",
+            "deger": "#f7f7f7",
+            "form": {
+                "aciklama": "Menü Arkaplan Rengi",
+                "tipi": "colorpicker"
+            }
+        },
+        "ana_renk": {
+            "veri_tipi": "string",
+            "deger": "#36b257",
+            "form": {
+                "aciklama": "Ana Renk",
+                "tipi": "colorpicker",
+                "sutun": "col-md-6"
+            }
+        },
+        "ana_renk_2": {
+            "veri_tipi": "string",
+            "deger": "#fa8900",
+            "form": {
+                "aciklama": "Ana Renk 2",
+                "tipi": "colorpicker",
+                "sutun": "col-md-6"
+            }
+        },
+        "sepete_ekle": {
+            "veri_tipi": "string",
+            "deger": "#ffffff",
+            "form": {
+                "aciklama": "Sepete Ekle Yazı Rengi",
+                "tipi": "colorpicker",
+                "sutun": "col-md-6"
+            }
+        },
+        "sepete_ekle_hover": {
+            "veri_tipi": "string",
+            "deger": "#ffffff",
+            "form": {
+                "aciklama": "Sepete Ekle Yazı Rengi (Üzerinde)",
+                "tipi": "colorpicker",
+                "sutun": "col-md-6"
+            }
+        },
+        "sepete_ekle_arkaplan": {
+            "veri_tipi": "string",
+            "deger": "#35b257",
+            "form": {
+                "aciklama": "Sepete Ekle Arkaplan Rengi",
+                "tipi": "colorpicker",
+                "sutun": "col-md-6"
+            }
+        },
+        "sepete_ekle_arkaplan_hover": {
+            "veri_tipi": "string",
+            "deger": "#35b257",
+            "form": {
+                "aciklama": "Sepete Ekle Arkaplan (Üzerinde)",
+                "tipi": "colorpicker",
+                "sutun": "col-md-6"
+            }
+        },
+        "sepete_ekle_detay": {
+            "veri_tipi": "string",
+            "deger": "#36b257",
+            "form": {
+                "aciklama": "Detay Sayfası Sepete Ekle Yazı Rengi",
+                "tipi": "colorpicker",
+                "sutun": "col-md-6"
+            }
+        },
+        "sepete_ekle_detay_hover": {
+            "veri_tipi": "string",
+            "deger": "#ffffff",
+            "form": {
+                "aciklama": "Detay Sayfası Sepete Ekle Yazı Rengi (Üzerinde)",
+                "tipi": "colorpicker",
+                "sutun": "col-md-6"
+            }
+        },
+        "sepete_ekle_detay_arkaplan": {
+            "veri_tipi": "string",
+            "deger": "#ffffff",
+            "form": {
+                "aciklama": "Detay Sayfası Sepete Ekle Arkaplan Rengi",
+                "tipi": "colorpicker",
+                "sutun": "col-md-6"
+            }
+        },
+        "sepete_ekle_detay_arkaplan_hover": {
+            "veri_tipi": "string",
+            "deger": "#35b257",
+            "form": {
+                "aciklama": "Detay Sayfası Sepete Ekle Arkaplan Rengi (Üzerinde)",
+                "tipi": "colorpicker",
+                "sutun": "col-md-6"
+            }
+        },
+        "hemen_al": {
+            "veri_tipi": "string",
+            "deger": "#fafafa",
+            "form": {
+                "aciklama": "Hemen Al Yazı Rengi",
+                "tipi": "colorpicker",
+                "sutun": "col-md-6"
+            }
+        },
+        "hemen_al_hover": {
+            "veri_tipi": "string",
+            "deger": "#ffffff",
+            "form": {
+                "aciklama": "Hemen Al Yazı Rengi (Üzerinde)",
+                "tipi": "colorpicker",
+                "sutun": "col-md-6"
+            }
+        },
+        "hemen_al_arkaplan": {
+            "veri_tipi": "string",
+            "deger": "#949494",
+            "form": {
+                "aciklama": "Hemen Al Arkaplan Rengi",
+                "tipi": "colorpicker",
+                "sutun": "col-md-6"
+            }
+        },
+        "hemen_al_arkaplan_hover": {
+            "veri_tipi": "string",
+            "deger": "#747272",
+            "form": {
+                "aciklama": "Hemen Al Arkaplan Rengi (Üzerinde)",
+                "tipi": "colorpicker",
+                "sutun": "col-md-6"
+            }
+        },
+        "odeme_tamamla": {
+            "veri_tipi": "string",
+            "deger": "#ffffff",
+            "form": {
+                "aciklama": "Alışverişi Tamamla Yazı Rengi",
+                "tipi": "colorpicker",
+                "sutun": "col-md-6"
+            }
+        },
+        "odeme_tamamla_hover": {
+            "veri_tipi": "string",
+            "deger": "#ffffff",
+            "form": {
+                "aciklama": "Alışverişi Tamamla Yazı Rengi (Üzerinde)",
+                "tipi": "colorpicker",
+                "sutun": "col-md-6"
+            }
+        },
+        "odeme_tamamla_arkaplan": {
+            "veri_tipi": "string",
+            "deger": "#4dc761",
+            "form": {
+                "aciklama": "Alışverişi Tamamla Arkaplan Rengi",
+                "tipi": "colorpicker",
+                "sutun": "col-md-6"
+            }
+        },
+        "odeme_tamamla_arkaplan_hover": {
+            "veri_tipi": "string",
+            "deger": "#3aa14b",
+            "form": {
+                "aciklama": "Alışverişi Tamamla Arkaplan Rengi (Üzerinde)",
+                "tipi": "colorpicker",
+                "sutun": "col-md-6"
+            }
+        }
+    },
+    "footer": {
+        "_tanim": "Alt Bilgi",
+        "footer_pazaryeri": {
+            "veri_tipi": "boolean",
+            "deger": 1,
+            "form": {
+                "aciklama": "Footer Pazaryeri Linkleri",
+                "tipi": "checkbox"
+            }
+        },
+        "kredi_kartlari": {
+            "veri_tipi": "boolean",
+            "deger": 1,
+            "form": {
+                "aciklama": "Footer Kredi Kartları",
+                "tipi": "checkbox"
+            }
+        },
+        "ebulten": {
+            "veri_tipi": "boolean",
+            "deger": 1,
+            "form": {
+                "aciklama": "E-Bülten",
+                "tipi": "checkbox"
+            }
+        },
+        "sms_bulten": {
+            "veri_tipi": "boolean",
+            "deger": 1,
+            "form": {
+                "aciklama": "SMS Bülten",
+                "tipi": "checkbox"
+            }
+        },
+        "footer_menu_limit": {
+            "veri_tipi": "integer",
+            "deger": 5,
+            "form": {
+                "aciklama": "Footer Menü Limiti",
+                "tipi": "text",
+                "sutun": "col-md-4"
+            }
+        },
+        "group1": {
+            "veri_tipi": "html",
+            "deger": "<div class=\"icon-group\">\r\n<div class=\"inf\">\r\n<div class=\"name\">Hızlı Teslimat<\/div>\r\n<i class=\"coreicon-cargo-4\"><\/i>\r\n<div class=\"description\">Siparişleriniz en kısa sürede elinize ulaşır.<\/div>\r\n<\/div>\r\n<\/div>\r\n<div class=\"icon-group\">\r\n<div class=\"inf\">\r\n<div class=\"name\">Güvenli Alışveriş<\/div>\r\n<i class=\"coreicon-credit-card\"><\/i>\r\n<div class=\"description\">Güvenli ve kolay ödeme sistemi<\/div>\r\n<\/div>\r\n<\/div>\r\n<div class=\"icon-group\">\r\n<div class=\"inf\">\r\n<div class=\"name\">Geniş Ürün Yelpazesi<\/div>\r\n<i class=\"coreicon-box-1\"><\/i>\r\n<div class=\"description\">Binlerce ürün ve kampanya seçeneği<\/div>\r\n<\/div>\r\n<\/div>\r\n<div class=\"icon-group\">\r\n<div class=\"inf\">\r\n<div class=\"name\">7 \/ 24 DESTEK<\/div>\r\n<i class=\"coreicon-time-1\"><\/i>\r\n<div class=\"description\">Öneri ve şikayetlerinizi bize iletebilirsiniz.<\/div>\r\n<\/div>\r\n<\/div>",
+            "form": {
+                "aciklama": "1. Ikon Grubu",
+                "tipi": "textarea",
+                "yukseklik": 150
+            }
+        }
+    },
+    "header_area": {
+        "_tanim": "Header Alanı",
+        "search_tipi": {
+            "veri_tipi": "string",
+            "deger": "tip_2",
+            "form": {
+                "aciklama": "Arama Alanı",
+                "tipi": "selectbox",
+                "degerler": [
+                    {
+                        "name": "Normal Arama Alanı",
+                        "value": "tip_1"
+                    },
+                    {
+                        "name": "Resimli Arama Alanı",
+                        "value": "tip_2"
+                    },
+                    {
+                        "name": "Gelişmiş Arama Alanı",
+                        "value": "tip_3"
+                    }
+                ]
+            }
+        },
+        "menu_tipi": {
+            "veri_tipi": "string",
+            "deger": "tip_3",
+            "form": {
+                "aciklama": "Menu",
+                "tipi": "selectbox",
+                "degerler": [
+                    {
+                        "name": "Mega Menu",
+                        "value": "tip_1"
+                    },
+                    {
+                        "name": "Single Menu",
+                        "value": "tip_2"
+                    },
+                    {
+                        "name": "Mega Menu Virgül",
+                        "value": "tip_3"
+                    }
+                ]
+            }
+        },
+        "mobil_menu_tipi": {
+            "veri_tipi": "string",
+            "deger": "tip_2",
+            "form": {
+                "aciklama": "Mobil",
+                "tipi": "selectbox",
+                "degerler": [
+                    {
+                        "name": "Menü Tip 1",
+                        "value": "tip_1"
+                    },
+                    {
+                        "name": "Menü Tip 2",
+                        "value": "tip_2"
+                    }
+                ]
+            }
+        },
+        "mega_menu_resim": {
+            "deger_tipi": "boolean",
+            "deger": "1",
+            "form": {
+                "aciklama": "Mega Menü Resim",
+                "tipi": "checkbox"
+            }
+        },
+        "alt_kategori_seviye": {
+            "deger_tipi": "boolean",
+            "deger": "1",
+            "form": {
+                "aciklama": "Alt Kategori Seviye",
+                "tipi": "checkbox"
+            }
+        },
+        "kategori_icon": {
+            "deger_tipi": "boolean",
+            "deger": "1",
+            "form": {
+                "aciklama": "Kategori İkon",
+                "tipi": "checkbox"
+            }
+        }
+    },
+    "urun_karti": {
+        "_tanim": "Ürün Kartı",
+        "resim": {
+            "deger_tipi": "boolean",
+            "deger": "",
+            "form": {
+                "aciklama": "Değişen Resimli",
+                "tipi": "checkbox"
+            }
+        },
+        "tukendi": {
+            "deger_tipi": "boolean",
+            "deger": "",
+            "form": {
+                "aciklama": "Ürün Ortasında Tükendi Yazısı",
+                "tipi": "checkbox"
+            }
+        },
+        "urun_etiket": {
+            "deger_tipi": "boolean",
+            "deger": "1",
+            "form": {
+                "aciklama": "Ürün Etiketi",
+                "tipi": "checkbox"
+            }
+        },
+        "urun_kodu": {
+            "deger_tipi": "boolean",
+            "deger": "",
+            "form": {
+                "aciklama": "Ürün Kodu",
+                "tipi": "checkbox"
+            }
+        },
+        "barkod": {
+            "deger_tipi": "boolean",
+            "deger": "",
+            "form": {
+                "aciklama": "Barkod",
+                "tipi": "checkbox"
+            }
+        },
+        "marka": {
+            "deger_tipi": "boolean",
+            "deger": "",
+            "form": {
+                "aciklama": "Marka",
+                "tipi": "checkbox"
+            }
+        },
+        "degerlendirmeler": {
+            "deger_tipi": "boolean",
+            "deger": "1",
+            "form": {
+                "aciklama": "Değerlendirme Yıldızları",
+                "tipi": "checkbox"
+            }
+        },
+        "ucretsiz_kargo": {
+            "deger_tipi": "boolean",
+            "deger": "1",
+            "form": {
+                "aciklama": "Ücretsiz Kargo Etiketi",
+                "tipi": "checkbox"
+            }
+        },
+        "sabit_indirim": {
+            "deger_tipi": "boolean",
+            "deger": "",
+            "form": {
+                "aciklama": "Sabit İndirim Fiyatı",
+                "tipi": "checkbox"
+            }
+        },
+        "favori_buton": {
+            "deger_tipi": "boolean",
+            "deger": "",
+            "form": {
+                "aciklama": "Favorilere Ekle Buton",
+                "tipi": "checkbox"
+            }
+        },
+        "sepete_ekle": {
+            "deger_tipi": "boolean",
+            "deger": "",
+            "form": {
+                "aciklama": "Sepete Ekle Sabit Buton",
+                "tipi": "checkbox"
+            }
+        },
+        "adet_secim": {
+            "deger_tipi": "boolean",
+            "deger": "",
+            "form": {
+                "aciklama": "Adet Seçimi",
+                "tipi": "checkbox"
+            }
+        },
+        "birim": {
+            "deger_tipi": "boolean",
+            "deger": "",
+            "form": {
+                "aciklama": "Birim Gösterimi (Adet,Kilogram vb)",
+                "tipi": "checkbox"
+            }
+        },
+        "sepete_ekle_right": {
+            "deger_tipi": "boolean",
+            "deger": "",
+            "form": {
+                "aciklama": "Sepete Ekle Sağdan Açılır Buton",
+                "tipi": "checkbox"
+            }
+        },
+        "sepete_ekle_down": {
+            "deger_tipi": "boolean",
+            "deger": "1",
+            "form": {
+                "aciklama": "Sepete Ekle Aşağıdan Açılır Buton",
+                "tipi": "checkbox"
+            }
+        }
+    },
+    "urun_profili": {
+        "_tanim": "Ürün Detay",
+        "varyant_tipi": {
+            "veri_tipi": "string",
+            "deger": "tip_2",
+            "form": {
+                "aciklama": "Varyant Tipi",
+                "tipi": "selectbox",
+                "degerler": [
+                    {
+                        "name": "Opsiyon Varyant Alanı (Option)",
+                        "value": "tip_1"
+                    },
+                    {
+                        "name": " Seçim Alanı (Select - Açılır)",
+                        "value": "tip_2"
+                    }
+                ]
+            }
+        },
+        "resim_alani": {
+            "veri_tipi": "string",
+            "deger": "tip_1",
+            "form": {
+                "aciklama": "Resim Alanı",
+                "tipi": "selectbox",
+                "degerler": [
+                    {
+                        "name": "Carousel(Atlı Karınca)",
+                        "value": "tip_1"
+                    },
+                    {
+                        "name": " Normal",
+                        "value": "tip_2"
+                    },
+                    {
+                        "name": " Carousel(Atlı Karınca Sol)",
+                        "value": "tip_3"
+                    }
+                ]
+            }
+        },
+        "baslayan_taksitle": {
+            "deger_tipi": "boolean",
+            "deger": "",
+            "form": {
+                "aciklama": "XX'den Başlayan Taksitle",
+                "tipi": "checkbox"
+            }
+        },
+        "degerlendirmeler": {
+            "deger_tipi": "boolean",
+            "deger": "1",
+            "form": {
+                "aciklama": "Değerlendirme Yıldızları",
+                "tipi": "checkbox"
+            }
+        },
+        "urun_kodu": {
+            "deger_tipi": "boolean",
+            "deger": "",
+            "form": {
+                "aciklama": "Ürün Kodu",
+                "tipi": "checkbox"
+            }
+        },
+        "barkod": {
+            "deger_tipi": "boolean",
+            "deger": "",
+            "form": {
+                "aciklama": "Barkod",
+                "tipi": "checkbox"
+            }
+        },
+        "marka": {
+            "deger_tipi": "boolean",
+            "deger": "",
+            "form": {
+                "aciklama": "Marka",
+                "tipi": "checkbox"
+            }
+        },
+        "kategori": {
+            "deger_tipi": "boolean",
+            "deger": "",
+            "form": {
+                "aciklama": "Kategori",
+                "tipi": "checkbox"
+            }
+        },
+        "stok": {
+            "deger_tipi": "boolean",
+            "deger": "",
+            "form": {
+                "aciklama": "Stok Miktarı",
+                "tipi": "checkbox"
+            }
+        },
+        "iliskili_urunler": {
+            "deger_tipi": "boolean",
+            "deger": "",
+            "form": {
+                "aciklama": "İlişkili Ürünler",
+                "tipi": "checkbox"
+            }
+        },
+        "sabit_indirim": {
+            "deger_tipi": "boolean",
+            "deger": "",
+            "form": {
+                "aciklama": "Sabit İndirim Fiyatı",
+                "tipi": "checkbox"
+            }
+        },
+        "on_detay": {
+            "deger_tipi": "boolean",
+            "deger": "1",
+            "form": {
+                "aciklama": "Ön Detay",
+                "tipi": "checkbox"
+            }
+        },
+        "hemen_al": {
+            "deger_tipi": "boolean",
+            "deger": "",
+            "form": {
+                "aciklama": "Hemen Al Butonu",
+                "tipi": "checkbox"
+            }
+        },
+        "yerli_uretim": {
+            "deger_tipi": "boolean",
+            "deger": "1",
+            "form": {
+                "aciklama": "Yerli Ürtelim Logosu",
+                "tipi": "checkbox"
+            }
+        },
+        "hizli_gonderi": {
+            "deger_tipi": "boolean",
+            "deger": "1",
+            "form": {
+                "aciklama": "Hızlı Gönderi Etiketi",
+                "tipi": "checkbox"
+            }
+        },
+        "guvenli_alisveris": {
+            "deger_tipi": "boolean",
+            "deger": "1",
+            "form": {
+                "aciklama": "Güvenli Alışveriş Etiketi",
+                "tipi": "checkbox"
+            }
+        },
+        "iade_ve_degisim": {
+            "deger_tipi": "boolean",
+            "deger": "1",
+            "form": {
+                "aciklama": "İade ve Değişim Etiketi",
+                "tipi": "checkbox"
+            }
+        },
+        "ucretsiz_kargo": {
+            "deger_tipi": "boolean",
+            "deger": "1",
+            "form": {
+                "aciklama": "Ücretsiz Kargo Etiketi",
+                "tipi": "checkbox"
+            }
+        },
+        "havale_indirimi": {
+            "deger_tipi": "boolean",
+            "deger": "",
+            "form": {
+                "aciklama": "Havale İndirimi",
+                "tipi": "checkbox"
+            }
+        },
+        "sosyal_medya_butonlari": {
+            "deger_tipi": "boolean",
+            "deger": "",
+            "form": {
+                "aciklama": "Sosyal Medya Butonları",
+                "tipi": "checkbox"
+            }
+        },
+        "whatsapp_buton": {
+            "deger_tipi": "boolean",
+            "deger": "",
+            "form": {
+                "aciklama": "Whatsapp İle Sipariş Ver Butonu",
+                "tipi": "checkbox"
+            }
+        },
+        "favori_listesi": {
+            "deger_tipi": "boolean",
+            "deger": "",
+            "form": {
+                "aciklama": "Favorilerime Ekle Butonu",
+                "tipi": "checkbox"
+            }
+        },
+        "nitelikler": {
+            "deger_tipi": "boolean",
+            "deger": "",
+            "form": {
+                "aciklama": "Ürün Profilinde Nitelikler",
+                "tipi": "checkbox"
+            }
+        },
+        "nitelikler_2": {
+            "deger_tipi": "boolean",
+            "deger": "",
+            "form": {
+                "aciklama": "Ürün Açıklamasında Nitelikler",
+                "tipi": "checkbox"
+            }
+        },
+        "birim": {
+            "deger_tipi": "boolean",
+            "deger": "",
+            "form": {
+                "aciklama": "Birim Gösterimi (Adet,Kilogram vb)",
+                "tipi": "checkbox"
+            }
+        },
+        "beden_olcu": {
+            "deger_tipi": "boolean",
+            "deger": "",
+            "form": {
+                "aciklama": "Beden, Ölçü Banner Grubu",
+                "tipi": "checkbox"
+            }
+        }
+    }
+}

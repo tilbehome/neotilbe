@@ -1,0 +1,53 @@
+{% extends sayfaBilgileri('odeme_adimi') < 3
+    ? varsayilanBlokModul()
+    : varsayilanBosDosya() %}
+
+{% block modulIcerik %}
+    <div>
+        <div class="payment-cart-summary-1">
+            <a href="javascript:;" class="p-list-button" onclick="$('.payment-cart-summary-1 .p-list').toggleClass('d-none')">
+                <i class="fas fa-caret-down"></i>
+                <span>Sepetteki Ürünleri Göster</span>
+            </a>
+            <div class="p-list d-none">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th class="th-product">{{ cevir('sepet_urun_baslik') }}</th>
+                            <th class="th-quantity">{{ cevir('sepet_miktar_baslik') }}</th>
+                            <th class="th-total-price">{{ cevir('sepet_tutar_baslik') }}</th>
+                        </tr>
+                    </thead>
+                    <tbody> 
+                        {% for sepet in sepetBilgileri('urunler') %}
+                            <tr>
+                                <td class="td-product">
+                                    <a href="{{ sepet.urun.link }}" class="name" target="_blank">
+                                        {{ sepet.urun.adi }}
+                                    </a>
+                                    <div class="variants">
+                                        {% for varyant in sepet.varyantlar %}
+                                            <span>{{ varyant.deger }}</span> 
+                                        {% endfor %}
+                                    </div>
+                                </td>
+                                <td class="td-quantity">
+                                    {{ sepet.adet }} {{ sepet.birim_kisa_str }}
+                                </td>
+                                <td class="td-total-price">
+                                    {% if ayarlar('siparis_kdv_haric_gosterim') %}
+                                        {{ sepet.tutar_kdv_haric }}
+                                    {% else %}
+                                        {{ sepet.tutar }}
+                                    {% endif %}
+                                </td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>  
+            <div data-payment-cart="summary"> 
+            </div>
+        </div>
+    </div>
+{% endblock %}

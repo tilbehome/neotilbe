@@ -1,0 +1,36 @@
+<div class="menu-left menu-left-index">
+        <ul class="f-ul">
+    {% for kategori in tumKategoriler(0, temaAyarlari('genel', 'ust_menu_limit')) %}
+        <li class="f-li"> 
+            <a class="f-item" href="{{ kategori.link }}">
+                
+                <span class="name float-left">
+                    {% if kategori.resim_var_mi == true  and temaAyarlari('header_area','kategori_icon') %}
+                        <img src="{{ kategori.resim }}" class="mr-2" alt="" />
+                    {% endif %}
+                    {{ kategori.adi }}
+                </span>
+                
+                <span class="icon float-right"><i class="fas fa-chevron-right"></i></span>
+                
+               <div class="clearfix"></div>
+            </a>
+            {% if kategori.alt_kategori_var_mi == true %}
+                <div class="menu-deep-box">
+                    {% for index, alt_kategori_1 in kategori.alt_kategoriler %}
+                        <a class="title" href="{{ alt_kategori_1.link }}">
+                            {{ alt_kategori_1.adi }}
+                        </a>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        </li>
+    {% endfor %}
+    
+    <li class="f-li">
+        <a href="{{statikLinkler('site_adresi')}}/arama" class="f-item">
+            <i class="fa fa-plus-square mr-2" aria-hidden="true"></i>
+            <span class="name">{{cevir('tumunu_gor')}}</span></a>
+    </li>
+</ul>
+</div>

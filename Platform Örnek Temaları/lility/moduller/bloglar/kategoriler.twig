@@ -1,0 +1,13 @@
+{% extends varsayilanBlokModul() %}
+
+{% block modulIcerik %}
+    <ul>
+        {% for kategori in modul.liste %}
+            <li>
+                <a href="{{ kategori.link }}">
+                    {{ kategori.baslik }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %} 

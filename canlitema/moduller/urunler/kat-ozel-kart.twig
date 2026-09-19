@@ -1,0 +1,230 @@
+<div class="card-product">
+    <div class="card-product-inner">
+        {% if urun.ucretsiz_kargo and temaAyarlari('urun_karti', 'ucretsiz_kargo') %}
+            <div class="free-cargo-badge">{{ cevir('kargo_bedava') }}</div>
+        {% endif %}
+    
+        <div class="image-wrapper">
+            
+            {% if temaAyarlari('urun_karti','urun_etiket') %}
+                {{ urunEklentileri.etiketler(urun) }}
+            {% endif %}
+            
+            {% if temaAyarlari('urun_karti', 'favori_buton') %} 
+                {% include 'moduller/urunler/kart_favori_listesi.twig' %}
+            {% endif %}
+            
+            {% if temaAyarlari('urun_karti', 'resim') %} 
+                <div class="image">
+                    <div id="product-card-carousel-{{ modul.ozel_data_kodu }}-{{ urun.ID }}" class="carousel">
+                        <div class="carousel-outer">
+                            <div class="carousel-inner">
+                                {% for index, resim in urun.resimler %}
+                                    <div class="carousel-item {{ index == 0 ? 'active' : '' }}">
+                                        <a href="{{ urun.link }}">
+                                            {{ gorsel.lazy(resim.normal) }}
+                                        </a>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                            {% if urun.resimler |length > 1 %}
+                                <a class="carousel-control-prev" href="#product-card-carousel-{{ modul.ozel_data_kodu }}-{{ urun.ID }}" role="button" data-slide="prev">
+                                    <i class="fa fa-chevron-left"></i>
+                                </a>
+                                <a class="carousel-control-next" href="#product-card-carousel-{{ modul.ozel_data_kodu }}-{{ urun.ID }}" role="button" data-slide="next">
+                                    <i class="fa fa-chevron-right"></i>
+                                </a>
+                            {% endif %}
+                            
+                            {% if urun.resimler | length > 1 and urun.resimler | length <= 4 %}
+                            
+                            <ol class="carousel-indicators">
+                                {% for index, resim in urun.resimler %}
+                                    <li data-target="#product-card-carousel-{{ modul.ozel_data_kodu }}-{{ urun.ID }}" 
+                                        data-slide-to="{{ index }}" class="{{ index == 0 ? 'active' : '' }}">
+                                    </li>
+                                {% endfor %}
+                            </ol>
+                        
+                            {% endif %}
+                                
+                        </div>
+                    </div>
+                </div>
+            {% else %}
+                <a href="{{ urun.link }}" class="c-p-i-link" title="{{ urun.adi_alt }}">
+                    <div class="image">
+                        {% if urun.video_var_mi %}
+                            <div class="video">
+                                <video 
+                                muted="" onloadeddata="this.play();"
+                                loop="" autoplay="" playsinline=""
+                                webkit-playsinline="">
+                                    <source src="{{ urun.video_url }}" type="{{ urun.video_tipi }}">
+                                    </source>
+                                </video>
+                            </div>
+                        {% endif %}
+                        {{ gorsel.lazy(urun.resim, '', urun.adi_alt) }}
+                    </div>
+                </a>
+            {% endif %}
+            
+            {% if temaAyarlari('urun_karti', 'sepete_ekle_right') %}
+                <div class="buttons-wrapper right-to-left">
+                    <div class="button-group">
+                        <div class="cart-group">
+                            {% if urun.stok > 0 %}
+                                <a onclick="showNativeModal('productVariantBox', {'id':  {{ urun.ID }} });" class="btn btn-preview">
+                                    <span class="btn-text">
+                                        <i class="{{ temaAyarlari('icon','urun_gor') }}"></i>
+                                    </span>
+                                </a>
+                                
+                                <a href="{{ urun.link }}" class="btn btn-show">
+                                    <i class="{{ temaAyarlari('icon','urun_incele') }}"></i>
+                                </a>
+                                
+                                <a href="javascript:;" onclick="addCart({{ urun.ID }}, 'card')"
+                                    class="btn btn-cart-right">
+                                    <i class="{{ temaAyarlari('icon','sepetim') }}"></i>
+                                </a>
+                            {% else %}
+                                <a href="javascript:;" onclick="addCart({{ urun.ID }}, 'card')" class="btn btn-cart btn-color-1 disabled">
+                                    <span class="btn-text"><i class="{{ temaAyarlari('icon','sepetim') }}" aria-hidden="true"></i>{{cevir('stokta_yok_buton')}}</span>
+                                </a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+           
+             {% if temaAyarlari('urun_karti', 'sepete_ekle_down') %}
+                <div class="buttons-wrapper down-to-top">
+                    <div class="button-group">
+                        <div class="cart-group">
+                            {% if urun.stok > 0 %}
+                                
+                            {% else %}
+                                <a href="javascript:;" onclick="addCart({{ urun.ID }}, 'card')" class="btn btn-cart disabled">
+                                    <span class="btn-text"><i class="mr-2 {{ temaAyarlari('icon','sepetim') }}" aria-hidden="true"></i> {{cevir('stokta_yok_buton')}}</span>
+                                </a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+            
+            {% if urun.stok == 0 and temaAyarlari('urun_karti','tukendi') %}
+                <div class="it-over">
+                    {{ cevir('tukendi') }}
+                </div>
+            {% endif %}
+        </div>
+        
+        <a href="{{ urun.link }}" class="c-p-i-link" title="{{ urun.adi_alt }}">
+           
+        
+            <div class="title">
+                {{ urun.adi }}
+            </div>
+             {% if temaAyarlari('urun_karti', 'degerlendirmeler') %}
+                {% include 'moduller/urunler/kart_degerlendirmeler.twig' %}
+            {% endif %}
+            <div class="card-product-content">
+                {% if temaAyarlari('urun_karti', 'marka') %}
+                    {% if markaListeBilgileri(urun.marka_id) %}
+                        <div class="brand">
+                           {{  markaListeBilgileri(urun.marka_id).adi }}
+                        </div>
+                    {% endif %}
+                {% endif %}
+                 
+                {% if temaAyarlari('urun_karti', 'urun_kodu') %}
+                    <div class="product-code">
+                        {{ urun.urun_kodu }}
+                    </div>
+                {% endif %}
+                 
+                {% if temaAyarlari('urun_karti', 'barkod') %}
+                    <div class="barcode">
+                        {{ urun.barkod }}
+                    </div>
+                {% endif %}
+            </div>
+             
+            <div class="price-group">
+                {% if urun.indirim %}
+                    <div class="discount">{{ urun.indirim_orani_str }}</div>
+                {% endif %}
+        
+                <div class="prices">
+        
+                    {% if urun.indirim %}
+                        <div class="list-price">{{ urun.piyasa_fiyati }}</div>
+                    {% endif %}
+        
+                     <div class="sale-price {% if urun.indirimli_fiyatlar.sabit_indirim.aktif and temaAyarlari('urun_karti','sabit_indirim') %} line-through {% endif %}">{{ urun.fiyat }}</div>
+                </div>
+            </div>
+            
+            {% if urun.indirimli_fiyatlar.sabit_indirim.aktif and temaAyarlari('urun_karti','sabit_indirim') %}
+                <div class="sale-price-basket">
+                    {{ basHarfBuyukCevir('sepetteki_fiyat') }}
+                    <div class="sale-price">
+                        {{ urun.indirimli_fiyatlar.sabit_indirim.kdv_dahil }}
+                    </div>
+                </div>
+            {% endif %}
+        </a>
+        
+        
+        {% if temaAyarlari('urun_karti','adet_secim') %}
+           <div class="quantity" data-product-card-quantity="{{ urun.ID }}">
+                <a href="javascript:;" class="btn btn-minus"
+                    onclick="productQuantityBox(
+                    'decrement',
+                    'div[data-product-card-quantity=\'{{ urun.ID }}\']'
+                    )">
+                    <i class="fas fa-minus"></i>
+                </a>
+                <input class="form-control" name="quantity" 
+                    data-quantity-type="{{ urun.birim }}" value="1"
+                    onkeypress="return productQuantityBox(
+                    'change',
+                    'div[data-product-card-quantity=\'{{ urun.ID }}\']',
+                    event)"/>
+                <a href="javascript:;" class="btn btn-plus"
+                    onclick="productQuantityBox(
+                    'increment',
+                    'div[data-product-card-quantity=\'{{ urun.ID }}\']'
+                    )">
+                    <i class="fas fa-plus"></i>
+                </a>
+            </div>
+         {% endif %}
+         
+         
+         {% if temaAyarlari('urun_karti','birim') %}
+            <div class="product-unit">
+                {{ urun.birim_str }}
+            </div>
+         {% endif %}
+        
+        {% if temaAyarlari('urun_karti', 'sepete_ekle') %}
+            <div class="buttons">
+                {% if urun.stok > 0 %}
+                    <a href="javascript:;" onclick="addCart({{ urun.ID }}, 'card')"
+                       class="btn btn-cart ">
+                        <i class="{{ temaAyarlari('icon','sepetim') }} mr-2"></i>
+                       {{ cevir('sepete_ekle') }}
+                    </a>
+                {% else %}
+                    <a href="javascript:;" onclick="addCart({{ urun.ID }}, 'card')" class="btn btn-cart disabled">
+                        {{ cevir('stokta_yok_buton') }}
+                    </a>
+                {% endif %}
+            </div>
+        {% endif %}
+    </div>
+</div>

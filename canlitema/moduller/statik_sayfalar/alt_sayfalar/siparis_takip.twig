@@ -1,0 +1,70 @@
+<!-- 🧭 Breadcrumb Yapısı (Sayfa Yolu) -->
+<nav class="breadcrumb-wrapper" itemscope itemtype="https://schema.org/BreadcrumbList">
+  <ul class="breadcrumb" style="list-style:none; padding:0; margin:0;">
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a itemprop="item" href="https://www.tilbehome.com/">
+        <span itemprop="name">Anasayfa</span>
+      </a>
+      <meta itemprop="position" content="1" />
+    </li>
+    ›
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a itemprop="item" href="https://www.tilbehome.com/siparis-takip-sid0">
+        <span itemprop="name">Sipariş Takip</span>
+      </a>
+      <meta itemprop="position" content="2" />
+    </li>
+  </ul>
+</nav>
+
+<!-- 🧾 Sipariş Takip Sayfası (Microdata ile) -->
+<div class="order-detail-wrapper" itemscope itemtype="https://schema.org/Order">
+  <meta itemprop="url" content="https://www.tilbehome.com/siparis-takip-sid0">
+  <meta itemprop="seller" content="Tilbe Home">
+  <meta itemprop="orderStatus" content="https://schema.org/OrderProcessing">
+  <meta itemprop="priceCurrency" content="TRY">
+
+  <h1 itemprop="name">Sipariş Sorgulama 🚀</h1>
+  <h2 itemprop="description">Sipariş durumunuzu anında öğrenin</h2>
+
+  <div class="explanation" itemprop="additionalType" content="https://schema.org/TrackAction">
+    <span itemprop="disambiguatingDescription">
+      Sipariş numaranızı ve e-posta adresinizi girerek sipariş detaylarınıza kolayca ulaşabilirsiniz.
+    </span>
+  </div>
+
+  <form class="order-detail-form" action="" method="post"
+        onsubmit="return orderDetailForm(this, '.order-detail-response')"
+        itemprop="potentialAction" itemscope itemtype="https://schema.org/TrackAction">
+
+    <meta itemprop="target" content="https://www.tilbehome.com/siparis-takip-sid0">
+    <meta itemprop="query-input" content="required email">
+    <meta itemprop="query-input" content="required orderNumber">
+
+    <label>E-posta Adresi <span class="text-danger">*</span></label>
+    <input type="text" class="form-control m-input" name="email" value="" itemprop="email">
+    <div class="mt-3"></div>
+
+    <label>Sipariş Numarası <span class="text-danger">*</span></label>
+    <input type="text" class="form-control m-input" name="order_no" value="" itemprop="orderNumber">
+    <div class="mt-3"></div>  
+
+    <button type="submit" class="btn btn-success"
+            itemprop="actionStatus"
+            content="https://schema.org/ActiveActionStatus">
+      Sipariş Sorgula
+    </button>
+  </form>  
+
+  <div class="order-detail-response mt-3" itemprop="result"></div>
+
+  <!-- 🏢 Marka Bilgisi -->
+  <div itemscope itemtype="https://schema.org/Organization" itemprop="seller">
+    <meta itemprop="name" content="Tilbe Home">
+    <meta itemprop="url" content="https://www.tilbehome.com">
+    <meta itemprop="logo" content="https://www.tilbehome.com/theme/logo.png">
+    <meta itemprop="sameAs" content="https://www.instagram.com/tilbehome">
+    <meta itemprop="sameAs" content="https://www.facebook.com/tilbehome">
+    <meta itemprop="sameAs" content="https://www.youtube.com/@tilbehome">
+  </div>
+</div>

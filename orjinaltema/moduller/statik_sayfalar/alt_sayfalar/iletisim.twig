@@ -1,0 +1,33 @@
+<div class="contact_content">{{ sayfaBilgileri('icerik') | raw }}</div>
+
+{{ ayarlar('google_maps') | raw }}
+
+<form class="contact-form" action="" method="post" onsubmit="return contactForm(this)">
+    <h6>{{ cevir('iletisim_formu') }}</h2>
+    <hr />
+	<div class="row">
+        <div class="col-md-12 mt-1">
+            <label>{{ cevir('ad_soyad') }} <span class="text-danger">*</span></label>
+            <input type="text" class="form-control m-input " name="name" value="">
+        </div>
+        <div class="col-md-12 mt-1">
+            <label>{{ cevir('telefon_numaraniz') }} <span class="text-danger">*</span></label>
+            <input type="text" class="form-control m-input " name="phone" value="">
+        </div>
+        <div class="col-md-12 mt-1">
+            <label>{{ cevir('eposta_adresiniz') }} <span class="text-danger">*</span></label>
+            <input type="text" class="form-control m-input " name="email" value="">
+        </div>
+        <div class="col-md-12 mt-1">
+            <label>{{ cevir('konu') }} <span class="text-danger">*</span></label>
+            <input type="text" class="form-control m-input " name="subject" value="">
+        </div>
+        <div class="col-md-12 mt-1">
+            <label>{{ cevir('mesajiniz') }} <span class="text-danger">*</span></label>
+            <textarea name="message" rows="" cols="" class="form-control "  style=""></textarea>
+	    </div>					
+    </div>
+	<div class="form-group mt-3">
+		<button type="submit" class="btn btn-success">{{ cevir('gonder') }}</button>
+	</div>
+</form>

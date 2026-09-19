@@ -1,0 +1,26 @@
+{% extends varsayilanBlokModul() %}
+ 
+{% block modulIcerik %}
+    <nav aria-label="breadcrumb" class="breadcrumb-wrapper">
+        <ol class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
+            <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                <a itemprop="item" href="{{ statikLinkler('site_adresi') }}">
+                <span itemprop='name'>{{ cevir('breadcrumb_anasayfa') }}</span>
+                <meta itemprop="position" content="1" />
+                </a>
+            </li>
+            <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                <a itemprop="item" href="{{ statikLinkler('yardim') }}">
+                <span itemprop='name'>{{ cevir('yardim_baslik') }}</span>
+                <meta itemprop="position" content="2" />
+                </a>
+            </li>
+            <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                <a itemprop="item" href="{{ sayfaBilgileri('link') }}">
+                <span itemprop='name'>{{ sayfaBilgileri('baslik') }}</span>
+                <meta itemprop="position" content="3" />
+                </a>
+            </li>
+        </ol>
+    </nav>
+{% endblock %}

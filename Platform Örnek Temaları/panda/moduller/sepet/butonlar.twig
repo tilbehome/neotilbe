@@ -1,0 +1,15 @@
+{% extends sepetBilgileri('durum')
+    ? varsayilanBlokModul()
+    : varsayilanBosDosya() %}
+
+{% block modulIcerik %}
+    
+    <div class="payment-final-buttons-1">
+
+        <a href="{{ statikLinkler('odeme_uyelik_kontrolu') }}" class="btn btn-complete btn-theme-1">
+            {{ cevir('alisverisi_tamamla') }} <i class="fa fa-chevron-right"></i>
+        </a>
+
+    </div>
+
+{% endblock %}

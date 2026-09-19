@@ -1,0 +1,31 @@
+<div class="alert alert-info">
+    {{ cevir('musteri_hizmetleri_aciklama') }}
+</div>        
+<a href="{{ statikLinkler('yeni_destek_bildirimi') }}" class="btn btn-primary mb-3">   
+    {{ cevir('yeni_destek_bildirimi') }}         
+</a>   
+
+{% if kullaniciDestekBildirimleriSayisi() > 0 %}
+    <div class="table-responsive">
+	    <table class="table table-hover table-striped">
+		    <thead class="thead-dark">
+			    <tr>
+					<th>{{ cevir('konu') }}</th>
+					<th>{{ cevir('siparis_numarasi') }}</th>
+					<th>{{ cevir('tarih') }}</th>
+					<th>{{ cevir('durum') }}</th>
+				</tr>
+			</thead>
+			<tbody>
+                {% for bildirim in kullaniciDestekBildirimleri() %}
+                    <tr>
+                        <td><a href="{{ bildirim.link }}">{{ bildirim.konu }}</a></td>
+                        <td>{{ bildirim.siparis_no }}</td>
+                        <td>{{ bildirim.tarih }}</td>
+                        <td>{{ bildirim.durum }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endif %}

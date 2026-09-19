@@ -1,0 +1,158 @@
+{% extends varsayilanBlokModul() %}
+
+{% block modulBaslik %}
+    {{ sayfaBilgileri('adi') }}
+{% endblock %} 
+
+{% block modulIcerik %}
+
+    {% if sayfaBilgileri('gosterim') == 1 %}
+
+        {% if sayfaBilgileri('kategoriler').sayi > 0 %}
+            <div class="category-pg-inner">
+                <div class="row">
+                    {% for kategori in sayfaBilgileri('kategoriler').liste %}
+                        <div class="{{ modul.listeleme_class }} col-list-p-v-1">
+                            {% include modul.kategori_kart %}
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        {% else %}
+            <div class="category-pg-inner">
+                <div class="alert alert-warning">
+                    {{ cevir('kategori_bulunamadi') }}
+                </div>
+            </div>
+        {% endif %}
+
+    {% else %}
+    
+
+        <div class="d-none d-lg-block">
+            <div class="category-filter-order">
+                <div class="list-wrap">
+                    <ul class="list">
+                        <li>
+                            <select class="form-control form-select category-filter-order-desktop"
+                                onchange="catFilterOrder(this)">
+                                {% for siralama in sayfaBilgileri('siralama_tipleri') %}
+                                    <option  {{ siralama.secili ? 'selected' : '' }} value="{{ siralama.ID }}">{{ siralama.baslik }}</option>
+                                {% endfor %}
+                            </select>
+                            
+                            {% for siralama in sayfaBilgileri('siralama_tipleri') %}
+                                <li class="category-filter-order-mobile">
+                                    <div class="lag-checkbox">
+                                        <input id="cat-filter-order-{{ siralama.ID }}" name="smart-cat-siralama" value="{{ siralama.ID }}" data-search-value="{{ siralama.ID }}" data-smart-cat-search="1" type="radio" {{ siralama.secili ? 'checked' : '' }}>
+                                        <label for="cat-filter-order-{{ siralama.ID }}">{{ siralama.baslik }}</label>
+                                    </div>
+                                </li>
+                            {% endfor %}
+                        </li>
+                        
+                        <li>
+                            <div class="product-view-select">
+                                <a href="javascript:;" class="two-view" onclick="categoryViewType(6, 6, 2)">
+                                    <div></div>
+                                    <div></div>
+                                </a>
+                                <a href="javascript:;" class="three-view" onclick="categoryViewType(4, 4, 3)">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </a>
+                                <a href="javascript:;" class="four-view" onclick="categoryViewType(4, 3, 4)">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </a>
+                            </div>
+                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        {% include 'moduller/kategoriler/responsive_butonlar.twig'  %}
+
+        {% if sayfaBilgileri('icerik').icerik_sayisi > 0 %}
+            <div class="row">
+                {% for urun in sayfaBilgileri('icerik').liste %}
+                    <div class="{{ modul.listeleme_class }} col-list-p-v-1">
+                        {% include modul.kart %}
+                    </div>
+                {% endfor %}
+            </div>
+
+            <div class="pagination-wrapper">
+                {% include modul.sayfalar  %}
+            </div>
+        {% else %}
+            <div class="p-2">
+                <div class="alert alert-warning">
+                    {{ cevir('urun_bulunamadi') }}
+                </div>
+            </div> 
+        {% endif %}
+    {% endif %}
+{% endblock %} 
+
+{% block modulFooterKodlari %}
+    <script type="text/javascript">
+        const CATEGORY_PAGE_DATA = {
+            k: '{{ sayfaBilgileri('aranan')|replace({'"': ''}) }}',
+            url: '{{ sayfaBilgileri('ana_link')|replace({'"': ''}) }}',
+            filtreleme: '{{ sayfaBilgileri('filtreleme_anahtari') }}',
+        };
+        $(function(){
+            smartCategoryFilters(CATEGORY_PAGE_DATA);
+             
+            // Category View
+            if (localStorage.getItem('category-view-type') == 2){
+                categoryViewType(6, 6, 2);
+            }else if (localStorage.getItem('category-view-type') == 3){
+                categoryViewType(4, 4, 3);
+            }else if (localStorage.getItem('category-view-type') == 4){
+                categoryViewType(4, 3, 4);
+            }
+        });
+        
+        function categoryViewType(cls1, cls2, type){
+            $(".p-g-mod-t-20 .col-list-p-v-1").removeClass()
+                .addClass("col-6 col-sm-6 col-md-6 col-lg-"+cls1+" col-xl-"+cls2+" col-list-p-v-1");
+                localStorage.setItem('category-view-type', type);
+        }
+        
+        // Category Active
+        
+        if (localStorage.getItem('category-view-type') == 2){
+            $(".two-view").addClass("active");
+        }else if (localStorage.getItem('category-view-type') == 3){
+            $(".three-view").addClass("active");
+        }else if (localStorage.getItem('category-view-type') == 4){
+            $(".four-view").addClass("active");
+        }
+        
+        $(".two-view").click(function(){
+            $(".product-view-select a").removeClass("active");
+            $(".two-view").addClass("active");
+        });
+        
+        $(".three-view").click(function(){
+            $(".product-view-select a").removeClass("active");
+            $(".three-view").addClass("active");
+        });
+        
+        $(".four-view").click(function(){
+            $(".product-view-select a").removeClass("active");
+            $(".four-view").addClass("active");
+        });
+        
+        function catFilterOrder(element){
+            $("#cat-filter-order-"+$(element).val()).prop('checked', true).click();
+        }
+    </script>
+{% endblock %}

@@ -1,0 +1,52 @@
+{% if sepetBilgileri('urunler') %} 
+    <div class="ajax-shopping-cart">
+        {% for sepet in sepetBilgileri('urunler') %}
+            <div class="product" data-ajax-cart-product-id="{{ sepet.ID }}">
+                <div class="image">
+                    <a href="{{ sepet.urun.link }}">
+                        {{ gorsel.lazy(sepet.urun.resim) }}
+                    </a>
+                </div>
+                <div class="info">
+                      <a href="{{ sepet.urun.link }}" class="name">
+                                                {{ sepet.urun.adi }}
+                                            </a>
+                                            <div class="variants">
+                                                {% for varyant in sepet.varyantlar %}
+                                                    <div class="variant">
+                                                        {{ varyant.adi }}: 
+                                                        <span>{{ varyant.deger }}</span>
+                                                    </div>
+                                                {% endfor %}
+                                            </div>
+                                            
+                        <div class="price">
+                            <span class="value">
+                                               {% if ayarlar('siparis_kdv_haric_gosterim') %}
+                                            {{ sepet.fiyat_kdv_haric }}
+                                        {% else %}
+                                            {{ sepet.fiyat }} 
+                                        {% endif %}
+                                        X {{ sepet.adet }} {{ sepet.birim_kisa_str }}
+                            </span> 
+                        </div>
+                                            
+                                         
+                </div>
+                
+                <button class="btn btn-danger btn-remove" type="button" 
+                onclick="removeCart({{ sepet.ID }}, 'fetch-cart-ajax')">
+                   x
+                </button>
+               
+            </div>
+        {% endfor %}
+    </div>
+
+        
+{% else %}       
+    <div class="ajax-cart-empty">
+        <div class="mb-3"><strong>{{ cevir('sepet_bos_uyari_1') }}</strong></div>
+        <span>{{ cevir('sepet_bos_uyari_2') }}</span>
+   </div>
+{% endif %}

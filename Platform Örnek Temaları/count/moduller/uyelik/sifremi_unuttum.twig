@@ -1,0 +1,10 @@
+{% extends varsayilanBlokModul() %}
+
+{% block modulIcerik %}
+    <form class="password-form" action="" method="post" onsubmit="return userForgotPassword(this)">
+        <input type="hidden" name="returnUrl" value="{{ returnUrl() }}" />
+        <label>{{ cevir('eposta_adresiniz') }}</label>
+        <input type="text" class="form-control m-input " name="email" value="">								
+        <button type="submit" class="btn btn-success mt-4">{{ cevir('gonder') }}</button>
+    </form>
+{% endblock %} 

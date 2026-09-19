@@ -1,0 +1,43 @@
+<a href="{{ statikLinkler('musteri_hizmetleri') }}">&lt;&lt;  {{ cevir('geri_don') }}</a>
+<div class="clearfix"></div>
+
+<div class="table-responsive mt-2">
+    <table class="table">				
+        <thead class="thead-dark">	
+            <tr>
+                <th>{{ cevir('mesaj') }}</th>						
+                <th>{{ cevir('gonderen') }}</th>						
+                <th>{{ cevir('tarih') }}</th>					
+            </tr>
+        </thead>
+        <tbody>
+            {% for yanit in sayfaBilgileri('destek_detaylari').yanitlar %}
+                <tr>
+                    <td>{{ yanit.mesaj }}</td>
+                    {% if yanit.gonderen_tipi == 0 %}
+                        <td class="bg-danger text-white">{{ yanit.gonderen }}</td>
+                    {% else %}
+                        <td class="">{{ yanit.gonderen }}</td>
+                    {% endif %}
+                    <td>{{ yanit.tarih }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+
+<form action="" class="mt-2" method="post" onsubmit="return userReplyTicket(this, {{ sayfaBilgileri('destek_detaylari').ID }})">
+    <div class="userPanelTitle">
+        <h5>{{ cevir('cevap_yaz') }}</h5>
+        <hr> 
+    </div>
+    <div class="mws-form-inline">
+        <label>{{ cevir('mesaj') }} <span class="text-danger">*</span></label>
+        <textarea name="message" rows="" cols="" class="form-control " style=""></textarea>
+        <div class="mws-button-row">
+            <input type="submit" value="{{ cevir('gonder') }}" class="btn btn-success mt-3">
+            <div class="cb"></div>
+        </div>
+    </div>
+</form>

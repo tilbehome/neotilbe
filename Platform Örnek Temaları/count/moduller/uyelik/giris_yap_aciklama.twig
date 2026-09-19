@@ -1,0 +1,24 @@
+{% extends varsayilanBlokModul() %}
+
+{% block modulIcerik %}
+    <div class="box">
+        <div class="userPanelTitle">
+            <h4>{{ cevir('sifremi_unuttum') }}</h4>
+            {{ cevir('sifremi_unuttum_aciklama') }}
+            <br />
+            <a href="{{ statikLinkler('sifremi_unuttum') }}" class="btn btn-danger mb-3 mt-3">
+                {{ cevir('sifremi_hatirlat') }}								
+            </a>
+        </div>
+        <div class="userPanelTitle" id="uptNew">
+            <h4>{{ cevir('yeni_uyelik') }}</h4>
+            {{ cevir('yeni_uyelik_aciklama_1') }}<br />
+            {{ cevir('yeni_uyelik_aciklama_2') }}
+            <br />
+            <a href="{{ statikLinkler('uye_ol') }}" class="btn btn-primary">
+                {{ cevir('uye_ol') }}						
+            </a>
+        </div>
+    </div>
+{% endblock %} 
+

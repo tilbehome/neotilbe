@@ -1,0 +1,122 @@
+<div class="jumbotron p-4">
+        <div class="mws-form-row">
+            <label class="mws-form-label">{{ cevir('siparis_numarasi') }}</label>
+            <div class="mws-form-item">
+                <b>{{ sayfaBilgileri('siparis_bilgileri').siparis_no }}</b>
+            </div>
+        </div>
+        <hr />
+        <div class="mws-form-row">
+            <label class="mws-form-label">{{ cevir('ad') }} {{ cevir('soyad') }}</label>
+            <div class="mws-form-item">
+                <b>{{ sayfaBilgileri('siparis_bilgileri').ad }} {{ sayfaBilgileri('siparis_bilgileri').soyad }}</b>
+            </div>
+        </div>
+        <hr />
+        <div class="mws-form-row">
+            <label class="mws-form-label">{{ cevir('tarih') }}</label>
+            <div class="mws-form-item">
+                {{ sayfaBilgileri('siparis_bilgileri').tarih }}
+            </div>
+        </div>
+        <hr />
+        <div class="mws-form-row">
+            <label class="mws-form-label">{{ cevir('kargo_firmasi') }}</label>
+            <div class="mws-form-item">
+                {{ sayfaBilgileri('siparis_bilgileri').kargo_firmasi }}
+            </div>
+        </div>
+        <hr />
+        <div class="mws-form-row">
+            <label class="mws-form-label">{{ cevir('kargo_takip_no') }}</label>
+            <div class="mws-form-item">
+                <strong>{{ sayfaBilgileri('siparis_bilgileri').kargo_takip_no }}</strong>
+            </div>
+        </div>
+        <hr />
+        <div class="mws-form-row">
+            <label class="mws-form-label">{{ cevir('kargo_takip_linki') }}</label>
+            <div class="mws-form-item">
+                <a href="{{ sayfaBilgileri('siparis_bilgileri').kargo_takip_linki }}" target="_blank">
+                    <strong>
+                        {{ sayfaBilgileri('siparis_bilgileri').kargo_takip_linki }}
+                    </strong>
+                </a>
+            </div>
+        </div>
+        <hr />
+        <div class="mws-form-row">
+            <label class="mws-form-label">{{ cevir('durum') }}</label>
+            <div class="mws-form-item text-success">
+                <b><u>{{ sayfaBilgileri('siparis_bilgileri').siparis_durumu }}</b></u>
+            </div>
+        </div>
+        <hr />
+        <div class="mws-form-row">
+            <label class="mws-form-label">{{ cevir('odeme_yontemi') }}</label>
+            <div class="mws-form-item">
+                <b>{{ sayfaBilgileri('siparis_bilgileri').odeme_yontemi }}</b>
+            </div>
+        </div>
+</div>
+<div class="table-responsive">
+        <table class="table table-hover table-order">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th class="product">{{ cevir('sepet_urun_baslik') }}</th>
+                    <th class="text-right">{{ cevir('sepet_fiyat_baslik') }}</th>
+                    <th class="text-right">{{ cevir('sepet_miktar_baslik') }}</th>
+                    <th class="text-right">{{ cevir('sepet_tutar_baslik') }}</th>
+                </tr>
+            </thead>
+            <tbody>   
+                {% for urun in sayfaBilgileri('siparis_bilgileri').urunler %}
+                    <tr>
+                        <td>{{ urun.sira }}</td>
+                        <td>
+                            {{ urun.adi }}
+                            {% for varyant in urun.varyantlar %}
+                                <div class="item">
+                                    {{ varyant.adi }}: 
+                                    <span>{{ varyant.deger }}</span>
+                                </div>
+                            {% endfor %}
+                        </td>
+                        <td class="text-right">
+                            {% if ayarlar('siparis_kdv_haric_gosterim') %}
+                                {{ urun.fiyat_kdv_haric }}
+                            {% else %}
+                                {{ urun.fiyat }}
+                            {% endif %}
+                        </td>
+                        <td class="text-right">{{ urun.adet }} {{ urun.birim_kisa_str }}</td>
+                        <td class="text-right">
+                            {% if ayarlar('siparis_kdv_haric_gosterim') %}
+                                {{ urun.tutar_kdv_haric }}
+                            {% else %}
+                                {{ urun.tutar }}
+                            {% endif %}
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+            <tfoot class="text-right">
+                {% for ozet in sayfaBilgileri('siparis_bilgileri').ozet_liste %}
+                    <tr>
+                        <th colspan="3">{{ ozet.baslik }}</th>
+                        <th colspan="2">{{ ozet.deger }}</th>
+                    </tr>
+                {% endfor %}
+                
+                <tr>
+                    <th colspan="3">{{ cevir('genel_toplam') }}</th>
+                    <th colspan="2">
+                        <span class="final text-success">
+                            {{ sayfaBilgileri('siparis_bilgileri').ozet.genel_toplam }}
+                        </span>
+                    </th>
+                </tr>
+            </tfoot>
+        </table>
+</div>

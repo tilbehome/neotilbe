@@ -1,0 +1,63 @@
+{% extends varsayilanBlokModul() %}
+
+{% block modulBaslik %}
+    <i class="fa fa-lira-sign"></i>
+    {{ cevir('odeme_bilgileri') }}
+{% endblock %}
+
+{% block moduleIcerikReset %}
+    aktif
+{% endblock %}
+
+{% block modulIcerik %}
+    <div class="payment-form-group-1" data-payment-box-form="payment-info" data-active-payment-method="{{ sayfaBilgileri('aktif_odeme_yontemi') }}">
+        {% if sayfaBilgileri('odeme_yontemleri') %}
+
+            <div class="payment-form-methods">
+                <ul class="nav nav-tabs" role="tablist">
+                    {% for index, metod in sayfaBilgileri('odeme_yontemleri') %}
+                        <li class="nav-item">
+                            <a class="nav-link {{ metod.aktif ? 'active show' : '' }}" id="payment-methods-control-{{ index }}" 
+                                data-toggle="tab" href="#payment-methods-content-{{ index }}" 
+                                onclick="changePaymentMethod({{ metod.ID }})"
+                                role="tab" aria-controls="payment-methods-control-{{ index }}" aria-selected="true">
+                                {{ metod.baslik }}
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+                <div class="tab-content">
+                    {% for index, metod in sayfaBilgileri('odeme_yontemleri') %}
+                        <div class="tab-pane fade {{ metod.aktif ? 'active show' : '' }}" 
+                            data-payment-method-content="{{ metod.ID }}"
+                            data-payment-method-initialize="0"
+                            id="payment-methods-content-{{ index }}" role="tabpanel" 
+                            aria-labelledby="payment-methods-control-{{ index }}">
+
+
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        {% else %}
+            <div class="alert alert-danger">
+                {{ cevir('odeme_yontemi_bulunamadi') }}
+            </div>
+        {% endif %}
+    </div>
+{% endblock %}
+
+{% block modulFooterKodlari %}
+    {% if sayfaBilgileri('hata_mesaji') is not empty %}
+        <script type="text/javascript">
+        $(function(){
+            showAlert({
+                title: LANG_HELPER.error,
+                text: '{{ sayfaBilgileri('hata_mesaji') }}',
+                status: 'error',
+                buttonTitle: LANG_HELPER.ok
+            });
+        });
+        </script>
+    {% endif %}
+{% endblock %}

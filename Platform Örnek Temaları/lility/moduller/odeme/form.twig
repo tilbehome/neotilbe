@@ -1,0 +1,19 @@
+{% if sayfaBilgileri('odeme_adimi') == 1 %}
+    {% include 'moduller/odeme/bilgiler/adres.twig' %} 
+
+    {% include 'moduller/odeme/bilgiler/kargo.twig' %}{% include siparisTeslimatZamanlari() %} 
+
+    {% if kullaniciGirisYaptiMi() and temaAyarlari('genel','kargo_fisi') %}
+        {% if kullaniciBilgileri('bayi_durumu') %} 
+            {% include 'moduller/odeme/bilgiler/kargo_sablonu.twig' %} 
+        {% endif %}
+    {% endif %}
+    
+    {% if ayarlar('siparis_notu') or ayarlar('hediye_paketi_kullanimi') %}
+        {% include 'moduller/odeme/bilgiler/siparis.twig' %} 
+    {% endif %}
+{% elseif sayfaBilgileri('odeme_adimi') == 2 %}
+
+    {% include 'moduller/odeme/bilgiler/odeme.twig' %} 
+
+{% endif %}

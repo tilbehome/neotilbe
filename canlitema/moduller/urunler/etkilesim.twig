@@ -1,0 +1,118 @@
+{% extends varsayilanBlokModul() %}
+
+{% block modulIcerik %}
+
+<div class="product-customer-actions">
+
+    {% if modul.favoriye_ekle %}
+        <div class="action favourite" data-favourite-product-id="{{ sayfaBilgileri('ID') }}">
+            <a href="javascript:;"
+               class="button {{ sayfaBilgileri('favori_mi') ? 'd-none' : 'd-block' }} add-favorite"
+               onclick="userProductFavourite('add', {{ sayfaBilgileri('ID') }})">
+                <i class="far fa-heart"></i>
+                <span>{{ basHarfBuyukCevir('favorilerime_ekle') }}</span>
+            </a>
+            <a href="javascript:;"
+               class="button {{ sayfaBilgileri('favori_mi') ? 'd-block' : 'd-none' }} remove-favorite"
+               onclick="userProductFavourite('remove', {{ sayfaBilgileri('ID') }})">
+                <i class="fa fa-heart"></i>
+                <span>{{ basHarfBuyukCevir('favorilerimden_cikar') }}</span>
+            </a>
+        </div>
+    {% endif %}
+
+    {% if modul.tavsiye_et %}
+        <div class="action recommend">
+            <a href="javascript:;" class="button"
+               data-toggle="tooltip" data-placement="bottom" title="{{ cevir('tavsiye_et_kisa_aciklama') }}"
+               onclick="visitorProductRecommend({{ sayfaBilgileri('ID') }})">
+                <i class="far fa-envelope"></i>
+                <span>{{ basHarfBuyukCevir('tavsiye_et') }}</span>
+            </a>
+        </div>
+    {% endif %}
+
+    {% if modul.yorum_yaz %}
+        <div class="action comment">
+            <a href="javascript:;" class="button"
+               data-toggle="tooltip" data-placement="bottom" title="{{ cevir('yorum_yaz_kisa_aciklama') }}"
+               onclick="userProductComment({{ sayfaBilgileri('ID') }})">
+                <i class="far fa-comment-dots"></i>
+                <span>{{ basHarfBuyukCevir('yorum_yaz') }}</span>
+            </a>
+        </div>
+    {% endif %}
+
+    {% if modul.karsilastir %}
+        <div class="action compare">
+            <a href="javascript:;" class="button"
+               data-toggle="tooltip" data-placement="bottom" title="{{ cevir('urun_karsilastir_kisa_aciklama') }}"
+               onclick="preCompareList({{ sayfaBilgileri('ID') }})">
+                <i class="fas fa-exchange-alt"></i>
+                <span>{{ basHarfBuyukCevir('urun_karsilastir') }}</span>
+                <span data-compare-list-count>{% if karsilastirmaListesiSayisi() > 0 %} ({{ karsilastirmaListesiSayisi() }}) {% endif %}</span>
+            </a>
+        </div>
+    {% endif %}
+
+    {% if modul.fiyat_alarmi and sayfaBilgileri('stok') > 0 %}
+        <div class="action price-alert">
+            <a href="javascript:;" class="button"
+               data-toggle="tooltip" data-placement="bottom" title="{{ cevir('fiyat_alarmi_kisa_aciklama') }}"
+               onclick="userProductPriceAlert({{ sayfaBilgileri('ID') }})">
+                <i class="far fa-bell"></i>
+                <span>{{ basHarfBuyukCevir('fiyat_alarmi') }}</span>
+            </a>
+        </div>
+    {% endif %}
+
+    {% if modul.stok_alarmi %}
+        <div class="action quantity-alert {{ varyantIlkStokKontrol(sayfaBilgileri()) ? 'd-none' : '' }}"
+            data-user-product-quantity-alert="{{ sayfaBilgileri('ID') }}">
+            <a href="javascript:;"
+               data-toggle="tooltip" data-placement="bottom"
+               title="{{ cevir('stok_alarmi_kisa_aciklama') }}"
+               class="button {{ kullaniciStokAlarmKontrol(sayfaBilgileri('ID')) ? '' : 'd-none' }} remove-quantity-alert"
+               onclick="userProductQuantityAlert({{ sayfaBilgileri('ID') }}, 'remove')">
+                <i class="far fa-check-circle"></i>
+                <span>{{ basHarfBuyukCevir('gelince_haber_ver') }}</span>
+            </a>
+            <a href="javascript:;"
+               data-toggle="tooltip" data-placement="bottom"
+               title="{{ cevir('stok_alarmi_kisa_aciklama') }}"
+               class="button {{ kullaniciStokAlarmKontrol(sayfaBilgileri('ID')) ? 'd-none' : '' }} add-quantity-alert"
+               onclick="userProductQuantityAlert({{ sayfaBilgileri('ID') }}, 'add')">
+                <i class="far fa-circle"></i>
+                <span>{{ basHarfBuyukCevir('gelince_haber_ver') }}</span>
+            </a>
+        </div>
+    {% endif %}
+
+    {% if modul.telefonla_siparis %}
+        <div class="action phone-request">
+            <a href="javascript:;" class="button"
+               data-toggle="tooltip" data-placement="bottom" title="{{ cevir('telefonla_siparis_aciklama') }}"
+               onclick="phoneOrderRequest({{ sayfaBilgileri('ID') }})">
+                <i class="fas fa-phone-alt"></i>
+                <span>{{ basHarfBuyukCevir('telefonla_siparis') }}</span>
+            </a>
+        </div>
+    {% endif %}
+
+    {% if modul.urun_onerileri %}
+        <div class="action product-suggestion">
+            <a href="javascript:;" class="button"
+               data-toggle="tooltip" data-placement="bottom" title="{{ cevir('urun_onerileri_aciklama') }}"
+               onclick="productSuggestion({{ sayfaBilgileri('ID') }})">
+                <i class="far fa-flag"></i>
+                <span>{{ basHarfBuyukCevir('urun_onerileri') }}</span>
+            </a>
+        </div>
+    {% endif %}
+</div>
+
+{% endblock %}
+
+{% block modulFooterKodlari %}
+
+{% endblock %}

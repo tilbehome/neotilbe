@@ -1,0 +1,24 @@
+{% extends sayfaBilgileri('odeme_adimi') < 3
+    ? varsayilanBlokModul()
+    : varsayilanBosDosya() %}
+
+{% block modulIcerik %}
+    
+    <div class="payment-final-buttons-1">
+        {% if sayfaBilgileri('odeme_adimi') == 1 %}
+            <button class="btn btn-complete btn-theme-1" onclick="completePaymentStep()">
+                {{ cevir('odeme_islemleri') }} <i class="fa fa-chevron-right"></i>
+            </button>
+        {% elseif sayfaBilgileri('odeme_adimi') == 2 %}
+            {% if sayfaBilgileri('odeme_yontemleri') %}
+                <button class="btn btn-complete btn-theme-1" onclick="completePaymentStep(2)">
+                    {{ cevir('siparisi_tamamla') }} <i class="fa fa-chevron-right"></i>
+                </button>
+            {% endif %}
+           
+        {% endif %}
+
+    </div>
+
+
+{% endblock %}

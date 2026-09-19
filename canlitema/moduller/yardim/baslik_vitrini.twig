@@ -1,0 +1,26 @@
+{% extends varsayilanBlokModul() %}
+
+{% block modulIcerik %}
+    
+    <div class="row">
+        {% for baslik in modul.basliklar %}
+            <div class="{{ modul.listeleme_class }} col-list-p-v-1">
+                <div class="card-help-title">
+                    
+                    {% if baslik.resim_var_mi %}
+                        <div class="image">
+                            <img src="{{ baslik.resim }}" alt="" />
+                        </div>
+                    {% endif %}
+                    <a href="{{ baslik.link }}" class="title">{{ baslik.baslik }}</a>
+                    <div class="entries">
+                        {% for madde in baslik.maddeler %}
+                            <a href="{{ baslik.link }}?m={{ madde.ID }}#accordion-head-{{ madde.ID }}">{{ madde.kisa_baslik }}</a>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    
+{% endblock %}

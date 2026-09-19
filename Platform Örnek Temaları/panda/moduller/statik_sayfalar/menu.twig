@@ -1,0 +1,16 @@
+{% extends varsayilanBlokModul() %}
+
+{% block modulIcerik %}
+    <div class="list-menu">
+        {% for sayfa in dinamikSayfaLinkleri() %}
+            <a href="{{ sayfa.link }}">
+                {{ sayfa.baslik }}
+            </a>
+        {% endfor %}
+        {% for sayfa in statikSayfaLinkleri() %}
+            <a href="{{ sayfa.link }}">
+                {{ sayfa.baslik }}
+            </a>
+        {% endfor %}
+    </div>
+{% endblock %} 
