@@ -5610,8 +5610,8 @@
   {
     "file": "canlitema/moduller/odeme/bilgiler/odeme.twig",
     "category": "Twig şablonları",
-    "bytes": 3256,
-    "sha256": "72283347777bc8d5424945b112827a7234dd4454166bcd75758324a8abc1ef45",
+    "bytes": 3226,
+    "sha256": "3e398f8a13bfd28070d9874b13497f5f99f0c24261183893517e17e5812565b0",
     "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
@@ -5634,12 +5634,6 @@
         "kind": "inline-event",
         "lines": [
           38
-        ]
-      },
-      {
-        "kind": "absolute-theme-url",
-        "lines": [
-          20
         ]
       },
       {

@@ -49,6 +49,12 @@ for(const entry of manifest.files) {
 }
 const paths = new Set(entries);
 let sourceRefs=0;
+const legacyThemePaths=[];
+for(const entry of entries.filter(p=>/\.(?:twig|css|js|json)$/.test(p))) {
+    fs.readFileSync(path.join(temp,entry),'utf8').split('\n').forEach((line,i)=>{
+        if(/\/theme\/(?:___shuttle|goldtheme)\//.test(line)) legacyThemePaths.push({file:entry,line:i+1});
+    });
+}
 for(const entry of entries.filter(p=>p.endsWith('.twig'))) {
     const source=fs.readFileSync(path.join(temp,entry),'utf8');
     for(const match of source.matchAll(/temaDosyalari\(\s*['"]([^'"]+)['"]\s*\)/g)) {
@@ -59,6 +65,7 @@ for(const entry of entries.filter(p=>p.endsWith('.twig'))) {
 }
 const result={commit:manifest.commit,id:manifest.id,extractedToFreshDirectory:true,files:entries.length,
     gitContentMatched:true,onlyIdentityMetadataDiffers:true,caseSensitiveStaticTwigReferences:sourceRefs,
+    literalLegacyThemePaths:legacyThemePaths,
     excludedFileTypesFound:0,commonCredentialPatternsFound:0,opaqueSettingsPrivacyVerified:false,
     platformImportVerified:false,note:'Dynamic paths, external resources, runtime loading and opaque settings isolation need platform verification.'};
 fs.writeFileSync(path.join(candidate,'extraction-check.json'),JSON.stringify(result,null,2)+'\n');

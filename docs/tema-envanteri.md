@@ -223,7 +223,7 @@ Listelendi yalnız otomatik envanterdir; incelendi yalnız review.scope içindek
 | `canlitema/moduller/odeme/bilgiler/kargo.twig` | 445 | incelendi (belirtilen kapsam); düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
 | `canlitema/moduller/odeme/bilgiler/kargo_icerik.twig` | 2195 | incelendi (belirtilen kapsam); düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor | 0 sabit şablon bağı; 2 inceleme sinyali |
 | `canlitema/moduller/odeme/bilgiler/kargo_sablonu.twig` | 748 | incelendi (belirtilen kapsam); platformda doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
-| `canlitema/moduller/odeme/bilgiler/odeme.twig` | 3256 | incelendi (belirtilen kapsam); düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor | 0 sabit şablon bağı; 3 inceleme sinyali |
+| `canlitema/moduller/odeme/bilgiler/odeme.twig` | 3226 | incelendi (belirtilen kapsam); düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor | 0 sabit şablon bağı; 2 inceleme sinyali |
 | `canlitema/moduller/odeme/bilgiler/siparis.twig` | 1932 | incelendi (belirtilen kapsam); düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
 | `canlitema/moduller/odeme/butonlar.twig` | 850 | incelendi (belirtilen kapsam); platformda doğrulama bekliyor | 0 sabit şablon bağı; 1 inceleme sinyali |
 | `canlitema/moduller/odeme/form.twig` | 727 | incelendi (belirtilen kapsam); platformda doğrulama bekliyor | 5 sabit şablon bağı; 0 inceleme sinyali |

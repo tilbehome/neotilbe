@@ -183,5 +183,11 @@
     "file": "canlitema/sepette-kargo-mesaj-pc.twig",
     "line": 15,
     "asset": "assets/images/hizli-kargo-pc.webp"
+  },
+  {
+    "file": "canlitema/moduller/odeme/bilgiler/odeme.twig",
+    "line": 20,
+    "asset": "assets/images/iyzico-ile-ode.png",
+    "evidence": "Original Gold export entry SHA256 matches local file; active goldtheme URL replaced with temaDosyalari"
   }
 ]

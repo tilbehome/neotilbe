@@ -114,9 +114,9 @@
   {
     "id": "S4",
     "location": "header.twig ve birçok dosyada /theme/___shuttle URL",
-    "remedy": "Mevcut varlığı helper’a bağla; olmayan dosyayı icat etme",
+    "remedy": "Mevcut varlığı helper’a bağla; olmayan dosyayı icat etme; ödeme iyzico görselinin goldtheme bağı da mevcut yerel aynı görsele taşındı",
     "status": "37 bağlantıda onarım/yerel doğrulama; diğer dinamik/CSS yolları açık",
-    "evidence": "tema-kaynak-baglari.json; onizleme-hazirligi.md"
+    "evidence": "tema-kaynak-baglari.json; onizleme-hazirligi.md; kapsamli-denetim.md sınır durumları"
   },
   {
     "id": "S5",
