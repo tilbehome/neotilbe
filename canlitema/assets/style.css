@@ -6249,13 +6249,17 @@ header.mobile .icon-group .badge {
     align-items: center
 }
 
+.sidebar-menu:not(.active),.sidebar-menu-type-2:not(.active),.sidebar-user:not(.active) {
+    visibility: hidden;
+}
+
 .sidebar-menu,.sidebar-user {
     background: #fff;
     width: 250px;
     position: fixed;
     top: 0;
     height: calc(100vh);
-    transition: all .3s
+    transition: margin-left .3s, margin-right .3s
 }
 
 .sidebar-user {
@@ -6662,7 +6666,7 @@ footer .bar p {
     position: fixed;
     top: 0;
     height: calc(100vh);
-    transition: all .3s;
+    transition: margin-left .3s;
     z-index: 9999;
     left: 0;
     margin-left: -100%

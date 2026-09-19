@@ -2,33 +2,83 @@ $(function(){
     /* Sidebar Buttons */
     var menuSelector = '.sidebar-menu, .sidebar-menu-type-2';
     var panelSelector = menuSelector + ', .sidebar-user';
+    var menuOpener;
+    var userOpener;
+
+    function modalOwnsFocus() {
+        return !!document.querySelector('.modal.show, .swal-overlay--show-modal');
+    }
+
+    function panelControls() {
+        return $(panelSelector).filter('.active').find('a[href], button, input, select, textarea, [tabindex]')
+            .filter(function () {
+                return !this.disabled && this.tabIndex >= 0 && $(this).is(':visible') &&
+                    window.getComputedStyle(this).visibility !== 'hidden';
+            });
+    }
+
+    function focusSidebar(opener) {
+        if (modalOwnsFocus()) return;
+        var controls = panelControls();
+        var target = controls[0] || opener;
+        if (target && target.isConnected && $(target).is(':visible')) target.focus();
+    }
 
     function syncSidebarState() {
         var isOpen = $(panelSelector).is('.active');
+        $(panelSelector).each(function () {
+            var open = $(this).hasClass('active');
+            this.toggleAttribute('inert', !open);
+            this.setAttribute('aria-hidden', open ? 'false' : 'true');
+        });
+        $('.btn-sidebar-menu').attr('aria-expanded', $(menuSelector).is('.active') ? 'true' : 'false');
+        $('.btn-sidebar-user').attr('aria-expanded', $('.sidebar-user').is('.active') ? 'true' : 'false');
         $('.op-black').toggleClass('show', isOpen).toggleClass('hide', !isOpen);
         // Own only this lock; platform panels and modals keep their own locks.
         $('body').toggleClass('tilbe-sidebar-open', isOpen);
     }
 
     $(".btn-sidebar-user").click(function () {
+        if (!$(this).closest(panelSelector).length) userOpener = this;
         $('.sidebar-user').toggleClass("active");
         syncSidebarState();
+        focusSidebar(userOpener);
     });
     $(".btn-sidebar-menu").click(function () {
+        menuOpener = this;
         $(menuSelector).toggleClass('active', !$(menuSelector).is('.active'));
         syncSidebarState();
+        focusSidebar(menuOpener);
     });
     $(".mobile-menu-close").click(function(){
         $(menuSelector).removeClass('active');
         syncSidebarState();
+        focusSidebar(menuOpener);
     });
     $(".op-black").click(function () {
+        var opener = $(menuSelector).is('.active') ? menuOpener : userOpener;
         if ($(menuSelector).is('.active')) {
             $(menuSelector).removeClass('active');
         } else {
             $('.sidebar-user').removeClass('active');
         }
         syncSidebarState();
+        focusSidebar(opener);
+    });
+    $(document).on('keydown.tilbeSidebar', function (event) {
+        if (!$(panelSelector).is('.active') || modalOwnsFocus()) return;
+        if (event.key === 'Escape') {
+            event.preventDefault();
+            $('.op-black').first().trigger('click');
+        } else if (event.key === 'Tab') {
+            var controls = panelControls();
+            if (!controls.length) return;
+            var current = controls.index(document.activeElement);
+            if (current < 0 || (event.shiftKey && current === 0) || (!event.shiftKey && current === controls.length - 1)) {
+                event.preventDefault();
+                controls[event.shiftKey ? controls.length - 1 : 0].focus();
+            }
+        }
     });
     syncSidebarState();
 
