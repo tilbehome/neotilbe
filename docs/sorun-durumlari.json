@@ -430,5 +430,29 @@
     "source": "tema kodu",
     "status": "düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor",
     "evidence": "platform-uyum-08-kontrol.md"
+  },
+  {
+    "id": "MENU2",
+    "location": "assets/scripts.js:8; assets/style.css:6252",
+    "remedy": "Kapalı panelin odak alması; açılış/kapanış/Tab/Escape davranışı",
+    "source": "tema kodu",
+    "status": "düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor",
+    "evidence": "platform-uyum-09-kontrol.md"
+  },
+  {
+    "id": "HTML3",
+    "location": "moduller/header.twig:250; mobil banner bağlantısı",
+    "remedy": "Promosyon div ul dışına taşındı; fazla a kapanışı kaldırıldı",
+    "source": "tema kodu",
+    "status": "düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor",
+    "evidence": "platform-uyum-09-kontrol.md"
+  },
+  {
+    "id": "CARD2",
+    "location": "moduller/urunler/kat-ozel-kart.twig:102",
+    "remedy": "Eksik stoklu alt satın alma düğmesi geri kondu",
+    "source": "tema kodu",
+    "status": "düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor",
+    "evidence": "platform-uyum-09-kontrol.md"
   }
 ]

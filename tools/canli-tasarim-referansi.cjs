@@ -73,7 +73,9 @@ const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
         const height=Math.min(state.result.value.height,14000);
         const shot=await send('Page.captureScreenshot',{format:'png',captureBeyondViewport:true,clip:{x:0,y:0,width,height,scale:1}});
         const file='artifacts/live-reference/'+label+'-'+width+'.png';fs.writeFileSync(file,Buffer.from(shot.data,'base64'));
-        report.views.push({width,captureHeight:height,file,...state.result.value,visuallyInspected:false});
+        const viewport=await send('Page.captureScreenshot',{format:'png',captureBeyondViewport:false});
+        const viewportFile='artifacts/live-reference/'+label+'-'+width+'-viewport.png';fs.writeFileSync(viewportFile,Buffer.from(viewport.data,'base64'));
+        report.views.push({width,captureHeight:height,file,viewportFile,...state.result.value,visuallyInspected:false});
     }
     fs.writeFileSync('artifacts/live-reference/'+label+'.json',JSON.stringify(report,null,2)+'\n');
     console.log(JSON.stringify(report,null,2));

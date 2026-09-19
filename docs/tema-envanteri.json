@@ -3002,8 +3002,8 @@
   {
     "file": "canlitema/assets/scripts.js",
     "category": "JavaScript",
-    "bytes": 8104,
-    "sha256": "a4b6f625b25e7dafcc765cc66c89c813f301a8fb048a69ead02906de54d39c9d",
+    "bytes": 10405,
+    "sha256": "06054d1614e504a2b55b5b24b19f26d495182f606176b4d8b924336a49192612",
     "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
@@ -3013,10 +3013,10 @@
       "platformdaDogrulamaBekliyor": true
     },
     "review": {
-      "scope": "Menü kilidi, ödeme dosya gönderimi, varyant select köprüsü; 05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil; 06 raporundaki somut onarım; dosya geneli kabul değil; 08 raporundaki sınırlı footer/form/kaynak/etiket onarımları; tüm dosya kabulü değil",
+      "scope": "Menü kilidi, ödeme dosya gönderimi, varyant select köprüsü; 05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil; 06 raporundaki somut onarım; dosya geneli kabul değil; 08 raporundaki sınırlı footer/form/kaynak/etiket onarımları; tüm dosya kabulü değil; 09 raporundaki menü/kart/HTML onarımları; bütün dosya kabulü değil",
       "fixed": true,
       "local": true,
-      "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md; platform-uyum-08-kontrol.md"
+      "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md; platform-uyum-08-kontrol.md; platform-uyum-09-kontrol.md"
     },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "kontrol edildi: yerel ayrıştırma başarılı",
@@ -3081,8 +3081,8 @@
   {
     "file": "canlitema/assets/style.css",
     "category": "CSS",
-    "bytes": 312121,
-    "sha256": "08056bdb85ef6a4b09d13ef60a425f1b70b4721f43a1a85ee94b9920a40d95ca",
+    "bytes": 312276,
+    "sha256": "f3c0074aa66bded7f7454d17a1da21d9a6f658ef8d9af2f0569b4970ae81d5b3",
     "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
@@ -3092,10 +3092,10 @@
       "platformdaDogrulamaBekliyor": true
     },
     "review": {
-      "scope": "Tam AST/değer/medya incelemesi; kanıtlı tekrar temizliği, bağlı seçiciler ve sınırlı yerel görsel kontrol; tüm sayfa/durum kabulü değil; 08 raporundaki sınırlı footer/form/kaynak/etiket onarımları; tüm dosya kabulü değil",
+      "scope": "Tam AST/değer/medya incelemesi; kanıtlı tekrar temizliği, bağlı seçiciler ve sınırlı yerel görsel kontrol; tüm sayfa/durum kabulü değil; 08 raporundaki sınırlı footer/form/kaynak/etiket onarımları; tüm dosya kabulü değil; 09 raporundaki menü/kart/HTML onarımları; bütün dosya kabulü değil",
       "fixed": true,
       "local": true,
-      "evidence": "css-denetimi.md; css-temizlik-kaniti.json; css-cascade-results.json; platform-uyum-08-kontrol.md"
+      "evidence": "css-denetimi.md; css-temizlik-kaniti.json; css-cascade-results.json; platform-uyum-08-kontrol.md; platform-uyum-09-kontrol.md"
     },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
@@ -4051,8 +4051,8 @@
   {
     "file": "canlitema/moduller/header.twig",
     "category": "Twig şablonları",
-    "bytes": 18123,
-    "sha256": "9588137e7ee64ca7847e2d0d6dbbb2f6389643e30f887d364a35ccd73fdccee5",
+    "bytes": 18049,
+    "sha256": "5127b45c99de89a14e2ca4cac111bd317832a128074c5b7ac9523c29c477e156",
     "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
@@ -4062,10 +4062,10 @@
       "platformdaDogrulamaBekliyor": true
     },
     "review": {
-      "scope": "Yalnız yerel görsel kaynak bağlantıları; dosyanın diğer işlevleri incelenmiş sayılmaz; 08 raporundaki sınırlı footer/form/kaynak/etiket onarımları; tüm dosya kabulü değil",
+      "scope": "Yalnız yerel görsel kaynak bağlantıları; dosyanın diğer işlevleri incelenmiş sayılmaz; 08 raporundaki sınırlı footer/form/kaynak/etiket onarımları; tüm dosya kabulü değil; 09 raporundaki menü/kart/HTML onarımları; bütün dosya kabulü değil",
       "fixed": true,
       "local": true,
-      "evidence": "onizleme-hazirligi.md; tema-kaynak-baglari.json; platform-uyum-08-kontrol.md"
+      "evidence": "onizleme-hazirligi.md; tema-kaynak-baglari.json; platform-uyum-08-kontrol.md; platform-uyum-09-kontrol.md"
     },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
@@ -6950,8 +6950,8 @@
   {
     "file": "canlitema/moduller/urunler/kat-ozel-kart.twig",
     "category": "Twig şablonları",
-    "bytes": 11386,
-    "sha256": "7afa7fff4ca73e0969a51904b1b82477c7ae182e65520bf6d154883f1a2302c7",
+    "bytes": 11668,
+    "sha256": "4d2d35971daa3d0138554fcf510ce99e095723b09fe0176571ad8158b0c0adc2",
     "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
@@ -6961,10 +6961,10 @@
       "platformdaDogrulamaBekliyor": true
     },
     "review": {
-      "scope": "06 raporundaki somut onarım; dosya geneli kabul değil",
+      "scope": "06 raporundaki somut onarım; dosya geneli kabul değil; 09 raporundaki menü/kart/HTML onarımları; bütün dosya kabulü değil",
       "fixed": true,
       "local": true,
-      "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md"
+      "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md; platform-uyum-09-kontrol.md"
     },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
@@ -6977,7 +6977,7 @@
       },
       {
         "target": "moduller/urunler/kart_degerlendirmeler.twig",
-        "line": 132,
+        "line": 135,
         "platform": false,
         "exists": true
       }
@@ -6988,10 +6988,11 @@
         "lines": [
           78,
           88,
-          185,
-          193,
-          198,
-          217
+          107,
+          188,
+          196,
+          201,
+          220
         ]
       },
       {

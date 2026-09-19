@@ -12,10 +12,10 @@
     "evidence": "kapsamli-denetim.md; platform-uyum-03-kontrol.md; önceki kontrol raporları"
   },
   "canlitema/assets/scripts.js": {
-    "scope": "Menü kilidi, ödeme dosya gönderimi, varyant select köprüsü; 05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil; 06 raporundaki somut onarım; dosya geneli kabul değil; 08 raporundaki sınırlı footer/form/kaynak/etiket onarımları; tüm dosya kabulü değil",
+    "scope": "Menü kilidi, ödeme dosya gönderimi, varyant select köprüsü; 05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil; 06 raporundaki somut onarım; dosya geneli kabul değil; 08 raporundaki sınırlı footer/form/kaynak/etiket onarımları; tüm dosya kabulü değil; 09 raporundaki menü/kart/HTML onarımları; bütün dosya kabulü değil",
     "fixed": true,
     "local": true,
-    "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md; platform-uyum-08-kontrol.md"
+    "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md; platform-uyum-08-kontrol.md; platform-uyum-09-kontrol.md"
   },
   "canlitema/moduller/sepet/ozet.twig": {
     "scope": "Fiyat/kargo helper sözleşmesi, bağımsız hesapların kaldırılması",
@@ -120,10 +120,10 @@
     "evidence": "platform-uyum-04-kontrol.md; platform-uyum-08-kontrol.md"
   },
   "canlitema/moduller/header.twig": {
-    "scope": "Yalnız yerel görsel kaynak bağlantıları; dosyanın diğer işlevleri incelenmiş sayılmaz; 08 raporundaki sınırlı footer/form/kaynak/etiket onarımları; tüm dosya kabulü değil",
+    "scope": "Yalnız yerel görsel kaynak bağlantıları; dosyanın diğer işlevleri incelenmiş sayılmaz; 08 raporundaki sınırlı footer/form/kaynak/etiket onarımları; tüm dosya kabulü değil; 09 raporundaki menü/kart/HTML onarımları; bütün dosya kabulü değil",
     "fixed": true,
     "local": true,
-    "evidence": "onizleme-hazirligi.md; tema-kaynak-baglari.json; platform-uyum-08-kontrol.md"
+    "evidence": "onizleme-hazirligi.md; tema-kaynak-baglari.json; platform-uyum-08-kontrol.md; platform-uyum-09-kontrol.md"
   },
   "canlitema/moduller/odeme/adimlar.twig": {
     "scope": "Yalnız yerel görsel kaynak bağlantıları; dosyanın diğer işlevleri incelenmiş sayılmaz",
@@ -186,10 +186,10 @@
     "evidence": "platform-uyum-04-kontrol.md"
   },
   "canlitema/assets/style.css": {
-    "scope": "Tam AST/değer/medya incelemesi; kanıtlı tekrar temizliği, bağlı seçiciler ve sınırlı yerel görsel kontrol; tüm sayfa/durum kabulü değil; 08 raporundaki sınırlı footer/form/kaynak/etiket onarımları; tüm dosya kabulü değil",
+    "scope": "Tam AST/değer/medya incelemesi; kanıtlı tekrar temizliği, bağlı seçiciler ve sınırlı yerel görsel kontrol; tüm sayfa/durum kabulü değil; 08 raporundaki sınırlı footer/form/kaynak/etiket onarımları; tüm dosya kabulü değil; 09 raporundaki menü/kart/HTML onarımları; bütün dosya kabulü değil",
     "fixed": true,
     "local": true,
-    "evidence": "css-denetimi.md; css-temizlik-kaniti.json; css-cascade-results.json; platform-uyum-08-kontrol.md"
+    "evidence": "css-denetimi.md; css-temizlik-kaniti.json; css-cascade-results.json; platform-uyum-08-kontrol.md; platform-uyum-09-kontrol.md"
   },
   "canlitema/moduller/hediye_ceki/kart.twig": {
     "scope": "05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil",
@@ -1062,10 +1062,10 @@
     "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md"
   },
   "canlitema/moduller/urunler/kat-ozel-kart.twig": {
-    "scope": "06 raporundaki somut onarım; dosya geneli kabul değil",
+    "scope": "06 raporundaki somut onarım; dosya geneli kabul değil; 09 raporundaki menü/kart/HTML onarımları; bütün dosya kabulü değil",
     "fixed": true,
     "local": true,
-    "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md"
+    "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md; platform-uyum-09-kontrol.md"
   },
   "canlitema/apgoogle.png": {
     "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",

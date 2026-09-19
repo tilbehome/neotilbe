@@ -93,6 +93,21 @@
         "visuallyInspected": true,
         "limitation": "Tam sayfa küçültülmüş genel görünüm; ekran altı lazy kaynaklar yüklenmeyebilir. Etkileşim/önizleme kabulü değil."
       }
-    ]
+    ],
+    "viewportSupplement": {
+      "timestamp": "2026-09-19T12:51:25.145Z",
+      "views": [
+        {
+          "width": 375,
+          "file": "artifacts/live-reference/product-375-viewport.png",
+          "visuallyInspected": true
+        },
+        {
+          "width": 1440,
+          "file": "artifacts/live-reference/product-1440-viewport.png",
+          "visuallyInspected": true
+        }
+      ]
+    }
   }
 ]

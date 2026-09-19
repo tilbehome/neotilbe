@@ -10,7 +10,17 @@
           "tip_2",
           "tip_3"
         ],
-        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor",
+        "explicitThemeReferences": [
+          {
+            "file": "canlitema/moduller/header.twig",
+            "line": 77
+          },
+          {
+            "file": "canlitema/moduller/header.twig",
+            "line": 79
+          }
+        ]
       },
       "menu_tipi": {
         "type": "selectbox",
@@ -19,7 +29,17 @@
           "tip_2",
           "tip_3"
         ],
-        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor",
+        "explicitThemeReferences": [
+          {
+            "file": "canlitema/moduller/header.twig",
+            "line": 147
+          },
+          {
+            "file": "canlitema/moduller/header.twig",
+            "line": 149
+          }
+        ]
       },
       "mobil_menu_tipi": {
         "type": "selectbox",
@@ -27,85 +47,381 @@
           "tip_1",
           "tip_2"
         ],
-        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor",
+        "explicitThemeReferences": [],
+        "note": "Tema Twig kaynaklarında açık çağrı yok; platform varsayılan şablonu/ayar işleme yolu bilinmiyor. Kullanılmadığına kanıt değildir."
       },
       "mega_menu_resim": {
         "type": "checkbox",
-        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor",
+        "explicitThemeReferences": [
+          {
+            "file": "canlitema/moduller/diger/mega_menu.twig",
+            "line": 20
+          },
+          {
+            "file": "canlitema/moduller/diger/mega_menu.twig",
+            "line": 53
+          }
+        ]
       },
       "alt_kategori_seviye": {
         "type": "checkbox",
-        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor",
+        "explicitThemeReferences": [
+          {
+            "file": "canlitema/moduller/diger/mega_menu.twig",
+            "line": 35
+          },
+          {
+            "file": "canlitema/moduller/diger/mega_menu_side.twig",
+            "line": 29
+          },
+          {
+            "file": "canlitema/moduller/diger/single_menu.twig",
+            "line": 17
+          }
+        ]
       },
       "kategori_icon": {
         "type": "checkbox",
-        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor",
+        "explicitThemeReferences": [
+          {
+            "file": "canlitema/moduller/header.twig",
+            "line": 259
+          },
+          {
+            "file": "canlitema/moduller/diger/kategori_icon.twig",
+            "line": 1
+          }
+        ]
       },
       "favorilerim": {
         "type": "checkbox",
-        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor",
+        "explicitThemeReferences": [
+          {
+            "file": "canlitema/moduller/header.twig",
+            "line": 110
+          },
+          {
+            "file": "canlitema/moduller/header.twig",
+            "line": 188
+          }
+        ]
       }
     },
     "urun_karti": {
       "resim": {
         "type": "checkbox",
-        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor",
+        "explicitThemeReferences": [
+          {
+            "file": "canlitema/ozel-moduller/flash-urunler-hots.twig",
+            "line": 16
+          },
+          {
+            "file": "canlitema/moduller/urunler/anasayfa_kart.twig",
+            "line": 4
+          },
+          {
+            "file": "canlitema/moduller/urunler/kart.twig",
+            "line": 16
+          },
+          {
+            "file": "canlitema/moduller/urunler/kat-ozel-kart.twig",
+            "line": 17
+          }
+        ]
       },
       "tukendi": {
         "type": "checkbox",
-        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor",
+        "explicitThemeReferences": [
+          {
+            "file": "canlitema/ozel-moduller/flash-urunler-hots.twig",
+            "line": 96
+          },
+          {
+            "file": "canlitema/moduller/urunler/kart.twig",
+            "line": 113
+          },
+          {
+            "file": "canlitema/moduller/urunler/kat-ozel-kart.twig",
+            "line": 121
+          }
+        ]
       },
       "urun_etiket": {
         "type": "checkbox",
-        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor",
+        "explicitThemeReferences": [
+          {
+            "file": "canlitema/liste-kartim.twig",
+            "line": 9
+          },
+          {
+            "file": "canlitema/ozel-moduller/flash-urunler-hots.twig",
+            "line": 8
+          },
+          {
+            "file": "canlitema/moduller/urunler/kart.twig",
+            "line": 8
+          },
+          {
+            "file": "canlitema/moduller/urunler/kat-ozel-kart.twig",
+            "line": 9
+          }
+        ]
       },
       "urun_kodu": {
         "type": "checkbox",
-        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor",
+        "explicitThemeReferences": [
+          {
+            "file": "canlitema/liste-kartim.twig",
+            "line": 53
+          },
+          {
+            "file": "canlitema/ozel-moduller/flash-urunler-hots.twig",
+            "line": 119
+          },
+          {
+            "file": "canlitema/moduller/urunler/kart.twig",
+            "line": 136
+          },
+          {
+            "file": "canlitema/moduller/urunler/kat-ozel-kart.twig",
+            "line": 146
+          }
+        ]
       },
       "barkod": {
         "type": "checkbox",
-        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor",
+        "explicitThemeReferences": [
+          {
+            "file": "canlitema/liste-kartim.twig",
+            "line": 58
+          },
+          {
+            "file": "canlitema/ozel-moduller/flash-urunler-hots.twig",
+            "line": 125
+          },
+          {
+            "file": "canlitema/moduller/urunler/kart.twig",
+            "line": 142
+          },
+          {
+            "file": "canlitema/moduller/urunler/kat-ozel-kart.twig",
+            "line": 152
+          }
+        ]
       },
       "marka": {
         "type": "checkbox",
-        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor",
+        "explicitThemeReferences": [
+          {
+            "file": "canlitema/liste-kartim.twig",
+            "line": 46
+          },
+          {
+            "file": "canlitema/ozel-moduller/flash-urunler-hots.twig",
+            "line": 111
+          },
+          {
+            "file": "canlitema/moduller/urunler/kart.twig",
+            "line": 128
+          },
+          {
+            "file": "canlitema/moduller/urunler/kat-ozel-kart.twig",
+            "line": 138
+          }
+        ]
       },
       "degerlendirmeler": {
         "type": "checkbox",
-        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor",
+        "explicitThemeReferences": [
+          {
+            "file": "canlitema/liste-kartim.twig",
+            "line": 42
+          },
+          {
+            "file": "canlitema/ozel-moduller/flash-urunler-hots.twig",
+            "line": 106
+          },
+          {
+            "file": "canlitema/moduller/urunler/kart.twig",
+            "line": 123
+          },
+          {
+            "file": "canlitema/moduller/urunler/kat-ozel-kart.twig",
+            "line": 134
+          }
+        ]
       },
       "ucretsiz_kargo": {
         "type": "checkbox",
-        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor",
+        "explicitThemeReferences": [
+          {
+            "file": "canlitema/liste-kartim.twig",
+            "line": 3
+          },
+          {
+            "file": "canlitema/ozel-moduller/flash-urunler-hots.twig",
+            "line": 3
+          },
+          {
+            "file": "canlitema/moduller/urunler/kart.twig",
+            "line": 3
+          },
+          {
+            "file": "canlitema/moduller/urunler/kat-ozel-kart.twig",
+            "line": 3
+          }
+        ]
       },
       "sabit_indirim": {
         "type": "checkbox",
-        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor",
+        "explicitThemeReferences": [
+          {
+            "file": "canlitema/ozel-moduller/flash-urunler-hots.twig",
+            "line": 142
+          },
+          {
+            "file": "canlitema/ozel-moduller/flash-urunler-hots.twig",
+            "line": 148
+          },
+          {
+            "file": "canlitema/moduller/urunler/kart.twig",
+            "line": 159
+          },
+          {
+            "file": "canlitema/moduller/urunler/kart.twig",
+            "line": 165
+          },
+          {
+            "file": "canlitema/moduller/urunler/kat-ozel-kart.twig",
+            "line": 170
+          },
+          {
+            "file": "canlitema/moduller/urunler/kat-ozel-kart.twig",
+            "line": 174
+          }
+        ]
       },
       "favori_buton": {
         "type": "checkbox",
-        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor",
+        "explicitThemeReferences": [
+          {
+            "file": "canlitema/liste-kartim.twig",
+            "line": 12
+          },
+          {
+            "file": "canlitema/ozel-moduller/flash-urunler-hots.twig",
+            "line": 12
+          },
+          {
+            "file": "canlitema/moduller/urunler/kart.twig",
+            "line": 12
+          },
+          {
+            "file": "canlitema/moduller/urunler/kat-ozel-kart.twig",
+            "line": 13
+          },
+          {
+            "file": "canlitema/moduller/urunler/resim_alani_tipi/carousel_atli_karinca.twig",
+            "line": 20
+          }
+        ]
       },
       "sepete_ekle": {
         "type": "checkbox",
-        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+        "status": "incelendi; stok ve bağımsız seçenek birleşimleri yerel Twig ile doğrulandı; görsel/platform kabulü bekliyor",
+        "explicitThemeReferences": [
+          {
+            "file": "canlitema/moduller/urunler/kart.twig",
+            "line": 207
+          },
+          {
+            "file": "canlitema/moduller/urunler/kat-ozel-kart.twig",
+            "line": 217
+          }
+        ]
       },
       "adet_secim": {
         "type": "checkbox",
-        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+        "status": "incelendi; stok ve bağımsız seçenek birleşimleri yerel Twig ile doğrulandı; görsel/platform kabulü bekliyor",
+        "explicitThemeReferences": [
+          {
+            "file": "canlitema/ozel-moduller/flash-urunler-hots.twig",
+            "line": 164
+          },
+          {
+            "file": "canlitema/moduller/urunler/kart.twig",
+            "line": 176
+          },
+          {
+            "file": "canlitema/moduller/urunler/kat-ozel-kart.twig",
+            "line": 185
+          }
+        ]
       },
       "birim": {
         "type": "checkbox",
-        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor",
+        "explicitThemeReferences": [
+          {
+            "file": "canlitema/ozel-moduller/flash-urunler-hots.twig",
+            "line": 189
+          },
+          {
+            "file": "canlitema/moduller/urunler/kart.twig",
+            "line": 201
+          },
+          {
+            "file": "canlitema/moduller/urunler/kat-ozel-kart.twig",
+            "line": 211
+          }
+        ]
       },
       "sepete_ekle_right": {
         "type": "checkbox",
-        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+        "status": "incelendi; stok ve bağımsız seçenek birleşimleri yerel Twig ile doğrulandı; görsel/platform kabulü bekliyor",
+        "explicitThemeReferences": [
+          {
+            "file": "canlitema/ozel-moduller/flash-urunler-hots.twig",
+            "line": 65
+          },
+          {
+            "file": "canlitema/moduller/urunler/kart.twig",
+            "line": 65
+          },
+          {
+            "file": "canlitema/moduller/urunler/kat-ozel-kart.twig",
+            "line": 73
+          }
+        ]
       },
       "sepete_ekle_down": {
         "type": "checkbox",
-        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+        "status": "incelendi; stok ve bağımsız seçenek birleşimleri yerel Twig ile doğrulandı; görsel/platform kabulü bekliyor",
+        "explicitThemeReferences": [
+          {
+            "file": "canlitema/moduller/urunler/kart.twig",
+            "line": 94
+          },
+          {
+            "file": "canlitema/moduller/urunler/kat-ozel-kart.twig",
+            "line": 102
+          }
+        ]
       }
     },
     "urun_profili": {
@@ -115,7 +431,13 @@
           "tip_1",
           "tip_2"
         ],
-        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor",
+        "explicitThemeReferences": [
+          {
+            "file": "canlitema/moduller/urunler/profil.twig",
+            "line": 209
+          }
+        ]
       },
       "resim_alani": {
         "type": "selectbox",
@@ -124,103 +446,249 @@
           "tip_2",
           "tip_3"
         ],
-        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor",
+        "explicitThemeReferences": [
+          {
+            "file": "canlitema/moduller/urunler/profil.twig",
+            "line": 15
+          },
+          {
+            "file": "canlitema/moduller/urunler/profil.twig",
+            "line": 17
+          }
+        ]
       },
       "baslayan_taksitle": {
         "type": "checkbox",
-        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor",
+        "explicitThemeReferences": [
+          {
+            "file": "canlitema/moduller/urunler/profil.twig",
+            "line": 156
+          }
+        ]
       },
       "degerlendirmeler": {
         "type": "checkbox",
-        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor",
+        "explicitThemeReferences": [
+          {
+            "file": "canlitema/moduller/urunler/hizli_sepet_kutusu.twig",
+            "line": 75
+          },
+          {
+            "file": "canlitema/moduller/urunler/profil.twig",
+            "line": 60
+          }
+        ]
       },
       "urun_kodu": {
         "type": "checkbox",
-        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor",
+        "explicitThemeReferences": [],
+        "note": "Tema Twig kaynaklarında açık çağrı yok; platform varsayılan şablonu/ayar işleme yolu bilinmiyor. Kullanılmadığına kanıt değildir."
       },
       "barkod": {
         "type": "checkbox",
-        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor",
+        "explicitThemeReferences": [
+          {
+            "file": "canlitema/moduller/urunler/profil.twig",
+            "line": 78
+          }
+        ]
       },
       "marka": {
         "type": "checkbox",
-        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor",
+        "explicitThemeReferences": [
+          {
+            "file": "canlitema/moduller/urunler/profil.twig",
+            "line": 84
+          }
+        ]
       },
       "kategori": {
         "type": "checkbox",
-        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor",
+        "explicitThemeReferences": [
+          {
+            "file": "canlitema/moduller/urunler/profil.twig",
+            "line": 93
+          }
+        ]
       },
       "stok": {
         "type": "checkbox",
-        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor",
+        "explicitThemeReferences": [
+          {
+            "file": "canlitema/moduller/urunler/profil.twig",
+            "line": 102
+          }
+        ]
       },
       "iliskili_urunler": {
         "type": "checkbox",
-        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor",
+        "explicitThemeReferences": [
+          {
+            "file": "canlitema/moduller/urunler/profil.twig",
+            "line": 118
+          }
+        ]
       },
       "sabit_indirim": {
         "type": "checkbox",
-        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor",
+        "explicitThemeReferences": [
+          {
+            "file": "canlitema/moduller/urunler/hizli_sepet_kutusu.twig",
+            "line": 85
+          },
+          {
+            "file": "canlitema/moduller/urunler/hizli_sepet_kutusu.twig",
+            "line": 91
+          },
+          {
+            "file": "canlitema/moduller/urunler/profil.twig",
+            "line": 151
+          },
+          {
+            "file": "canlitema/moduller/urunler/profil.twig",
+            "line": 189
+          }
+        ]
       },
       "on_detay": {
         "type": "checkbox",
-        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor",
+        "explicitThemeReferences": [
+          {
+            "file": "canlitema/moduller/urunler/profil.twig",
+            "line": 56
+          }
+        ]
       },
       "hemen_al": {
         "type": "checkbox",
-        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor",
+        "explicitThemeReferences": [
+          {
+            "file": "canlitema/moduller/urunler/profil.twig",
+            "line": 338
+          }
+        ]
       },
       "yerli_uretim": {
         "type": "checkbox",
-        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor",
+        "explicitThemeReferences": [],
+        "note": "Tema Twig kaynaklarında açık çağrı yok; platform varsayılan şablonu/ayar işleme yolu bilinmiyor. Kullanılmadığına kanıt değildir."
       },
       "hizli_gonderi": {
         "type": "checkbox",
-        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor",
+        "explicitThemeReferences": [],
+        "note": "Tema Twig kaynaklarında açık çağrı yok; platform varsayılan şablonu/ayar işleme yolu bilinmiyor. Kullanılmadığına kanıt değildir."
       },
       "guvenli_alisveris": {
         "type": "checkbox",
-        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor",
+        "explicitThemeReferences": [],
+        "note": "Tema Twig kaynaklarında açık çağrı yok; platform varsayılan şablonu/ayar işleme yolu bilinmiyor. Kullanılmadığına kanıt değildir."
       },
       "iade_ve_degisim": {
         "type": "checkbox",
-        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor",
+        "explicitThemeReferences": [],
+        "note": "Tema Twig kaynaklarında açık çağrı yok; platform varsayılan şablonu/ayar işleme yolu bilinmiyor. Kullanılmadığına kanıt değildir."
       },
       "ucretsiz_kargo": {
         "type": "checkbox",
-        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor",
+        "explicitThemeReferences": [],
+        "note": "Tema Twig kaynaklarında açık çağrı yok; platform varsayılan şablonu/ayar işleme yolu bilinmiyor. Kullanılmadığına kanıt değildir."
       },
       "havale_indirimi": {
         "type": "checkbox",
-        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor",
+        "explicitThemeReferences": [
+          {
+            "file": "canlitema/moduller/urunler/profil.twig",
+            "line": 179
+          }
+        ]
       },
       "sosyal_medya_butonlari": {
         "type": "checkbox",
-        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor",
+        "explicitThemeReferences": [],
+        "note": "Tema Twig kaynaklarında açık çağrı yok; platform varsayılan şablonu/ayar işleme yolu bilinmiyor. Kullanılmadığına kanıt değildir."
       },
       "whatsapp_buton": {
         "type": "checkbox",
-        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor",
+        "explicitThemeReferences": [
+          {
+            "file": "canlitema/moduller/urunler/profil.twig",
+            "line": 358
+          }
+        ]
       },
       "favori_listesi": {
         "type": "checkbox",
-        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor",
+        "explicitThemeReferences": [
+          {
+            "file": "canlitema/moduller/urunler/hizli_sepet_kutusu.twig",
+            "line": 34
+          },
+          {
+            "file": "canlitema/moduller/urunler/profil.twig",
+            "line": 315
+          }
+        ]
       },
       "nitelikler": {
         "type": "checkbox",
-        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor",
+        "explicitThemeReferences": [
+          {
+            "file": "canlitema/moduller/urunler/profil.twig",
+            "line": 468
+          }
+        ]
       },
       "nitelikler_2": {
         "type": "checkbox",
-        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor",
+        "explicitThemeReferences": [
+          {
+            "file": "canlitema/moduller/urunler/detay_aciklama.twig",
+            "line": 7
+          }
+        ]
       },
       "birim": {
         "type": "checkbox",
-        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor",
+        "explicitThemeReferences": [
+          {
+            "file": "canlitema/moduller/urunler/profil.twig",
+            "line": 284
+          }
+        ]
       },
       "beden_olcu": {
         "type": "checkbox",
-        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor",
+        "explicitThemeReferences": [
+          {
+            "file": "canlitema/moduller/urunler/profil.twig",
+            "line": 271
+          }
+        ]
       }
     }
   }

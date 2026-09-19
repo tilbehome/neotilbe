@@ -119,6 +119,9 @@ Güncel durumun tek kaynağı `sorun-durumlari.json`; aşağıdaki tablo bu kay�
 | ASSET2 | assets/style.css | Altı arka plan URL bağı yerel aynı dosyalara taşındı | düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor | platform-uyum-08-kontrol.md |
 | A11Y8 | moduller/header.twig | Arama, logo, hesap etiketi ve yerel menü kapatma düğmesi | düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor | platform-uyum-08-kontrol.md |
 | FOOT2 | moduller/footer.twig | Boş ayarlı sosyal bağlantılar üretilmiyor | düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor | platform-uyum-08-kontrol.md |
+| MENU2 | assets/scripts.js:8; assets/style.css:6252 | Kapalı panelin odak alması; açılış/kapanış/Tab/Escape davranışı | düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor | platform-uyum-09-kontrol.md |
+| HTML3 | moduller/header.twig:250; mobil banner bağlantısı | Promosyon div ul dışına taşındı; fazla a kapanışı kaldırıldı | düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor | platform-uyum-09-kontrol.md |
+| CARD2 | moduller/urunler/kat-ozel-kart.twig:102 | Eksik stoklu alt satın alma düğmesi geri kondu | düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor | platform-uyum-09-kontrol.md |
 <!-- CURRENT_ISSUES_END -->
 
 ## Platformla kesinleştirilmesi gerekenler
