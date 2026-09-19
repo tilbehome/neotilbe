@@ -133,7 +133,7 @@ Listelendi yalnız otomatik envanterdir; incelendi yalnız review.scope içindek
 | `canlitema/assets/scripts.js` | 5385 | incelendi (belirtilen kapsam); düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor | kontrol edildi: yerel ayrıştırma başarılı |
 | `canlitema/assets/smartbanner.css` | 6466 | listelendi; platformda doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
 | `canlitema/assets/smartbanner.js` | 16305 | listelendi; platformda doğrulama bekliyor | kontrol edildi: yerel ayrıştırma başarılı |
-| `canlitema/assets/style.css` | 311737 | listelendi; platformda doğrulama bekliyor | 0 sabit şablon bağı; 1 inceleme sinyali |
+| `canlitema/assets/style.css` | 311841 | incelendi (belirtilen kapsam); düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor | 0 sabit şablon bağı; 1 inceleme sinyali |
 | `canlitema/assets/tahmini-kargom.js` | 2368 | incelendi (belirtilen kapsam); platformda doğrulama bekliyor | doğrulama bekliyor: missing ) after argument list |
 | `canlitema/assets/urun-fav-sayma-eklenti.js` | 228 | listelendi; platformda doğrulama bekliyor | kontrol edildi: yerel ayrıştırma başarılı |
 | `canlitema/assets/yazifont/sourcesanspro-regular.otf` | 229588 | listelendi; platformda doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
@@ -166,7 +166,7 @@ Listelendi yalnız otomatik envanterdir; incelendi yalnız review.scope içindek
 | `canlitema/moduller/diger/mega_menu.twig` | 6039 | listelendi; platformda doğrulama bekliyor | 1 sabit şablon bağı; 1 inceleme sinyali |
 | `canlitema/moduller/diger/mega_menu_side.twig` | 4770 | listelendi; platformda doğrulama bekliyor | 1 sabit şablon bağı; 1 inceleme sinyali |
 | `canlitema/moduller/diger/single_menu.twig` | 1784 | listelendi; platformda doğrulama bekliyor | 1 sabit şablon bağı; 0 inceleme sinyali |
-| `canlitema/moduller/footer.twig` | 45352 | incelendi (belirtilen kapsam); düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor | 0 sabit şablon bağı; 5 inceleme sinyali |
+| `canlitema/moduller/footer.twig` | 45809 | incelendi (belirtilen kapsam); düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor | 0 sabit şablon bağı; 3 inceleme sinyali |
 | `canlitema/moduller/header.twig` | 18001 | incelendi (belirtilen kapsam); düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor | 3 sabit şablon bağı; 0 inceleme sinyali |
 | `canlitema/moduller/hediye_ceki/icerik.twig` | 542 | listelendi; platformda doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
 | `canlitema/moduller/hediye_ceki/kart.twig` | 972 | listelendi; platformda doğrulama bekliyor | 0 sabit şablon bağı; 1 inceleme sinyali |
@@ -290,7 +290,7 @@ Listelendi yalnız otomatik envanterdir; incelendi yalnız review.scope içindek
 | `canlitema/ozel-moduller/dikey-ev-1.webp` | 43112 | listelendi; platformda doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
 | `canlitema/ozel-moduller/double-walled-glasses.webp` | 596022 | listelendi; platformda doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
 | `canlitema/ozel-moduller/ev-gerecleri-masaustu-liste.twig` | 280 | listelendi; platformda doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
-| `canlitema/ozel-moduller/flash-urunler-hots.twig` | 11320 | listelendi; platformda doğrulama bekliyor | 2 sabit şablon bağı; 2 inceleme sinyali |
+| `canlitema/ozel-moduller/flash-urunler-hots.twig` | 9815 | incelendi (belirtilen kapsam); düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor | 2 sabit şablon bağı; 2 inceleme sinyali |
 | `canlitema/ozel-moduller/istockphoto-1131375112-612x612-photoroom.png` | 70991 | listelendi; platformda doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
 | `canlitema/ozel-moduller/kampanya-urunlerim.twig` | 298 | listelendi; platformda doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
 | `canlitema/ozel-moduller/matara-masaustu-liste.twig` | 270 | listelendi; platformda doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |

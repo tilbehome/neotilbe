@@ -1,5 +1,7 @@
 # Ayrı tema önizlemesi ve yerel aday hazırlığı — 19.09.2026
 
+**Güncelleme:** Kullanıcının proje köküne eklediği iki özgün dışa aktarım incelendi. Önceki aşağıdaki "arşiv yok/ZIP üretilmedi" notları tarihsel durumu anlatır. Güncel ZIP yöntemi ve kabul sınırları [platform-uyum-04-kontrol.md](platform-uyum-04-kontrol.md) içindedir; aday artık örnekle aynı kök yapısında ZIP üretebilir. Platformda yüklenebilirlik hâlâ doğrulanmadı.
+
 Kullanıcının verdiği `?theme_preview=goldtheme`, yönetici oturumuna bağlı mevcut aktif temanın önizlemesidir. Çalışma dalı burada yüklü değildir. Ekran görüntüsü bu dalın doğrulaması değildir; ayrı test mağazası doğrulanmadı. Yönetici ekranına erişilmedi, kayıt/yükleme/etkinleştirme yapılmadı.
 
 [Qukasoft Tema Yönetimi](https://help.qukasoft.com/tasarim/tema-yonetimi) belgesi, Tasarım > Temalar > Temalarım altında Tema Yükle işlemini ve etkinleştirmeden Önizle seçeneğini ayrı tanımlar. Ayrıca etkinleştirmede mevcut banner yapısının otomatik aktarılmadığını belirtir. Belge arşiv kök yapısını, aynı kimlikli yüklemenin üzerine yazma davranışını veya ayarların izolasyonunu açıklamaz. Yerel `Platform Dökümanları/template.pdf` s.49–50 tema tanımını açıklar; bu, ZIP içe aktarma sözleşmesini tek başına doğrulamaz.

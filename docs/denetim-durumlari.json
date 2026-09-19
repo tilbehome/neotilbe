@@ -114,10 +114,10 @@
     "evidence": "onizleme-hazirligi.md; tema-kaynak-baglari.json"
   },
   "canlitema/moduller/footer.twig": {
-    "scope": "Yalnız yerel görsel kaynak bağlantıları; dosyanın diğer işlevleri incelenmiş sayılmaz",
+    "scope": "Kategori dialog odağı/kaydırma; sahte sayacın kaldırılması; iletişim HTML ve erişilebilir adlar; gerçek görsel kabul açık",
     "fixed": true,
     "local": true,
-    "evidence": "onizleme-hazirligi.md; tema-kaynak-baglari.json"
+    "evidence": "platform-uyum-04-kontrol.md"
   },
   "canlitema/moduller/header.twig": {
     "scope": "Yalnız yerel görsel kaynak bağlantıları; dosyanın diğer işlevleri incelenmiş sayılmaz",
@@ -178,5 +178,17 @@
     "fixed": true,
     "local": true,
     "evidence": "onizleme-hazirligi.md; tema-kaynak-baglari.json"
+  },
+  "canlitema/ozel-moduller/flash-urunler-hots.twig": {
+    "scope": "Sahte satış/ziyaretçi yerine stok alanı; carousel alternatif metinleri; diğer kart durumları açık",
+    "fixed": true,
+    "local": true,
+    "evidence": "platform-uyum-04-kontrol.md"
+  },
+  "canlitema/assets/style.css": {
+    "scope": "Giriş yerleşimi, menü kilitleri ve kategori dialog kilidi; bütün CSS kabulü açık",
+    "fixed": true,
+    "local": true,
+    "evidence": "platform-uyum-04-kontrol.md; önceki kontrol raporları"
   }
 }

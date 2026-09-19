@@ -2304,17 +2304,22 @@
   },
   {
     "file": "canlitema/assets/style.css",
-    "bytes": 311737,
-    "sha256": "10af7b401025cb350762ddb30bdf37c020f6451f0c1017e969e94c6de8731b0d",
-    "status": "listelendi",
+    "bytes": 311841,
+    "sha256": "1eb9cb85c40ebd26bba4e81be84b55bffaf1942c27a84fb48e3fa42b13bff449",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
-      "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "incelendi": true,
+      "duzeltildi": true,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Giriş yerleşimi, menü kilitleri ve kategori dialog kilidi; bütün CSS kabulü açık",
+      "fixed": true,
+      "local": true,
+      "evidence": "platform-uyum-04-kontrol.md; önceki kontrol raporları"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -3041,8 +3046,8 @@
   },
   {
     "file": "canlitema/moduller/footer.twig",
-    "bytes": 45352,
-    "sha256": "2fec8c189f044c713883ee169c4e86ed898903e2fabb52254f7bd3c1e13fc3cd",
+    "bytes": 45809,
+    "sha256": "a46b332e4408549800743f33af74adedc1ddb658729fdafd8be13bb824ab5910",
     "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
@@ -3052,10 +3057,10 @@
       "platformdaDogrulamaBekliyor": true
     },
     "review": {
-      "scope": "Yalnız yerel görsel kaynak bağlantıları; dosyanın diğer işlevleri incelenmiş sayılmaz",
+      "scope": "Kategori dialog odağı/kaydırma; sahte sayacın kaldırılması; iletişim HTML ve erişilebilir adlar; gerçek görsel kabul açık",
       "fixed": true,
       "local": true,
-      "evidence": "onizleme-hazirligi.md; tema-kaynak-baglari.json"
+      "evidence": "platform-uyum-04-kontrol.md"
     },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
@@ -3064,37 +3069,24 @@
       {
         "kind": "inline-event",
         "lines": [
-          191,
-          211,
-          231,
-          303,
-          327
+          213,
+          233,
+          253,
+          325,
+          350
         ]
       },
       {
         "kind": "raw-output",
         "lines": [
-          401
-        ]
-      },
-      {
-        "kind": "html-sink",
-        "lines": [
-          470
-        ]
-      },
-      {
-        "kind": "random-data",
-        "lines": [
-          434,
-          449
+          424
         ]
       },
       {
         "kind": "lazy-loading",
         "lines": [
-          407,
-          409
+          430,
+          432
         ]
       }
     ]
@@ -6263,17 +6255,22 @@
   },
   {
     "file": "canlitema/ozel-moduller/flash-urunler-hots.twig",
-    "bytes": 11320,
-    "sha256": "f54c9d183a5faacb86f5a1823ef4d049a3b599ff53e47ee32fd6b7fc8803d348",
-    "status": "listelendi",
+    "bytes": 9815,
+    "sha256": "055f7d0b3c59557ffba5c0400191b8942b85f51a20550ddab2ab3f30d933dbf7",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
-      "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "incelendi": true,
+      "duzeltildi": true,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Sahte satış/ziyaretçi yerine stok alanı; carousel alternatif metinleri; diğer kart durumları açık",
+      "fixed": true,
+      "local": true,
+      "evidence": "platform-uyum-04-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [
@@ -6297,9 +6294,9 @@
           70,
           80,
           85,
-          208,
-          216,
-          221
+          167,
+          175,
+          180
         ]
       },
       {

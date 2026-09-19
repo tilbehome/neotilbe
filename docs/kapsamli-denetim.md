@@ -51,6 +51,8 @@ Her satır için masaüstü 1440, tablet 768 ve mobil 375 px; klavye/odak, conso
 
 ## Sorun kaydı
 
+Son tur: [platform-uyum-04-kontrol.md](platform-uyum-04-kontrol.md). D5 flash kart sahte sosyal kanıtı, M2 kategori dialog odağı/kilidi ve A4 footer alan adları onarıldı. Yeni özgün ZIP'lerin kök yapısı incelendi; gizlilik onayı verilmeyen kaynak arşivler gönderilmedi. Yerel tamamlanan/kalan ve Qukasoft'a bağlı işler ayrı listelenir.
+
 Güncel satış akışı turu: [platform-uyum-03-kontrol.md](platform-uyum-03-kontrol.md). S2 üç kargo bileşeninde platform helper'ına bağlandı; S5 yinelenen dosya POST'u kaldırıldı; V1 varyant değer aktarımı, F2 hesap favori satırı ve A3 alan adları onarıldı. Kaynak/yerel kanıt mevcut, Q kabulü bekliyor. K6 iki eski dosyanın açık yükleme bağlantısı bulunamadı; bilinmeyen modül ayarı nedeniyle kullanılmıyor denmedi, hata açık tutuldu. Aşağıdaki eski tespit satırları tarihsel konumları korur; güncel durum bu bağlantıdaki kayıtlarla birlikte okunmalıdır.
 
 Satırlar ilk tespit konumlarını kullanır; dosya düzenlendikçe satır kayabilir. Kaynak sembolü/alan adı kalıcı arama dayanağıdır.

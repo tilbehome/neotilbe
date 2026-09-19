@@ -29,5 +29,10 @@ __MACOSX/
 /order-exports/
 /artifacts/
 
+# Read-only exports: opaque settings cannot yet be cleared for publication.
+/goldtheme_backup_20260919_123922.zip
+/shuttleorj_backup_20260919_124053.zip
+/referans-arsivler/*.zip
+
 # Contains literal API credentials in bundled PHP examples; keep original locally.
 /Platform Dökümanları/web_servis_ornek.zip
