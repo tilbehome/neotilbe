@@ -4,15 +4,15 @@
     <div class="payment-steps-1 hide-line">
         <a href="{{ sayfaBilgileri('odeme_adimi') <= 2 ? statikLinkler('odeme') : 'javascript:;' }}" 
             class="step step-1 {{ sayfaBilgileri('odeme_adimi') == 1 ? 'active' : 'completed' }}">
-            <div class="circle"><img src="https://www.tilbehome.com/theme/___shuttle/assets/images/paymentstep-teslimat.svg?v=1733583924"></div>
+            <div class="circle"><img src="{{ temaDosyalari('/assets/images/paymentstep-teslimat.svg') }}"></div>
             {{ cevir('teslimat_bilgileri') }}
         </a>
         <div class="step step-2 {{ sayfaBilgileri('odeme_adimi') == 2 ? 'active' : (sayfaBilgileri('odeme_adimi') > 2 ? 'completed' : '') }}">
-            <div class="circle"><img src="https://www.tilbehome.com/theme/___shuttle/assets/images/paymentstep-odeme.svg?v=1733583898"></div>
+            <div class="circle"><img src="{{ temaDosyalari('/assets/images/paymentstep-odeme.svg') }}"></div>
             {{ cevir('odeme_bilgileri') }}
         </div>
         <div class="step step-3 {{ sayfaBilgileri('odeme_adimi') == 3 ? 'active' : '' }}">
-            <div class="circle"><img src="https://www.tilbehome.com/theme/___shuttle/assets/images/paymentstep-siparisonayi.svg?v=1733583916"></div>
+            <div class="circle"><img src="{{ temaDosyalari('/assets/images/paymentstep-siparisonayi.svg') }}"></div>
             {{ cevir('siparis_onayi') }}
         </div>
     </div> 

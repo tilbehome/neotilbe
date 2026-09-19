@@ -1,0 +1,187 @@
+[
+  {
+    "file": "canlitema/flash-urun.twig",
+    "line": 14,
+    "asset": "cmanset-discount.svg"
+  },
+  {
+    "file": "canlitema/liste-kartim.twig",
+    "line": 4,
+    "asset": "assets/icons8-cargo-48.png"
+  },
+  {
+    "file": "canlitema/liste-kartim.twig",
+    "line": 5,
+    "asset": "assets/gift.png"
+  },
+  {
+    "file": "canlitema/moduller/footer.twig",
+    "line": 7,
+    "asset": "banks.webp"
+  },
+  {
+    "file": "canlitema/moduller/footer.twig",
+    "line": 272,
+    "asset": "assets/images/tilbehome-etbis.jpeg"
+  },
+  {
+    "file": "canlitema/moduller/footer.twig",
+    "line": 287,
+    "asset": "assets/images/tilbehomeetbis.webp"
+  },
+  {
+    "file": "canlitema/moduller/header.twig",
+    "line": 164,
+    "asset": "resimler1/mobil-header-banner.webp"
+  },
+  {
+    "file": "canlitema/moduller/header.twig",
+    "line": 178,
+    "asset": "assets/menu-left.svg"
+  },
+  {
+    "file": "canlitema/moduller/header.twig",
+    "line": 193,
+    "asset": "assets/yeni-heart.svg"
+  },
+  {
+    "file": "canlitema/moduller/header.twig",
+    "line": 201,
+    "asset": "assets/images/mobil-kullanici.svg"
+  },
+  {
+    "file": "canlitema/moduller/header.twig",
+    "line": 209,
+    "asset": "assets/yenicart.svg"
+  },
+  {
+    "file": "canlitema/moduller/header.twig",
+    "line": 256,
+    "asset": "firsatlar.svg"
+  },
+  {
+    "file": "canlitema/moduller/odeme/adimlar.twig",
+    "line": 7,
+    "asset": "assets/images/paymentstep-teslimat.svg"
+  },
+  {
+    "file": "canlitema/moduller/odeme/adimlar.twig",
+    "line": 11,
+    "asset": "assets/images/paymentstep-odeme.svg"
+  },
+  {
+    "file": "canlitema/moduller/odeme/adimlar.twig",
+    "line": 15,
+    "asset": "assets/images/paymentstep-siparisonayi.svg"
+  },
+  {
+    "file": "canlitema/moduller/odeme/bilgiler/adres.twig",
+    "line": 5,
+    "asset": "assets/images/paymentpage-location.svg"
+  },
+  {
+    "file": "canlitema/moduller/odeme/bilgiler/kargo.twig",
+    "line": 5,
+    "asset": "assets/images/icons8-in-transit-64.png"
+  },
+  {
+    "file": "canlitema/moduller/odeme/bilgiler/siparis.twig",
+    "line": 5,
+    "asset": "assets/images/icons8-order-completed-50.png"
+  },
+  {
+    "file": "canlitema/moduller/odeme/ozet_icerik.twig",
+    "line": 3,
+    "asset": "assets/images/secure_logo-1.webp"
+  },
+  {
+    "file": "canlitema/moduller/sepet/ozet.twig",
+    "line": 11,
+    "asset": "assets/images/secure_logo-1.webp"
+  },
+  {
+    "file": "canlitema/moduller/urunler/profil_degerlendirmeler.twig",
+    "line": 22,
+    "asset": "yorum-foto-var.svg"
+  },
+  {
+    "file": "canlitema/ozel-moduller/banner-anasayfa1.twig",
+    "line": 2,
+    "asset": "resimler1/01.webp"
+  },
+  {
+    "file": "canlitema/ozel-moduller/banner-anasayfa1.twig",
+    "line": 3,
+    "asset": "resimler1/06.webp"
+  },
+  {
+    "file": "canlitema/ozel-moduller/banner-anasayfa1.twig",
+    "line": 4,
+    "asset": "resimler1/05.webp"
+  },
+  {
+    "file": "canlitema/ozel-moduller/banner-anasayfa1.twig",
+    "line": 5,
+    "asset": "resimler1/04.webp"
+  },
+  {
+    "file": "canlitema/ozel-moduller/banner-anasayfa1.twig",
+    "line": 6,
+    "asset": "resimler1/03.webp"
+  },
+  {
+    "file": "canlitema/ozel-moduller/banner-anasayfa1.twig",
+    "line": 7,
+    "asset": "resimler1/08.webp"
+  },
+  {
+    "file": "canlitema/ozel-moduller/banner-anasayfa1.twig",
+    "line": 8,
+    "asset": "resimler1/02.webp"
+  },
+  {
+    "file": "canlitema/ozel-moduller/banner-anasayfa1.twig",
+    "line": 9,
+    "asset": "resimler1/07.webp"
+  },
+  {
+    "file": "canlitema/ozel-moduller/banner-anasayfa1.twig",
+    "line": 10,
+    "asset": "resimler1/09.webp"
+  },
+  {
+    "file": "canlitema/ozel-moduller/dikey-banner-anasayfa.twig",
+    "line": 2,
+    "asset": "resimler1/dikey-pet-1.webp"
+  },
+  {
+    "file": "canlitema/ozel-moduller/dikey-banner-anasayfa.twig",
+    "line": 3,
+    "asset": "resimler1/dikey-cilt-1.webp"
+  },
+  {
+    "file": "canlitema/ozel-moduller/dikey-banner-anasayfa.twig",
+    "line": 4,
+    "asset": "resimler1/dikey-ev-1.webp"
+  },
+  {
+    "file": "canlitema/sepet-guvenli-odeme-pc.twig",
+    "line": 6,
+    "asset": "assets/images/masaustu-banner/verifield.png"
+  },
+  {
+    "file": "canlitema/sepet-guvenli-odeme-pc.twig",
+    "line": 19,
+    "asset": "assets/images/tilbehomeetbis.webp"
+  },
+  {
+    "file": "canlitema/sepette-indirim.twig",
+    "line": 3,
+    "asset": "resimler1/firsat-banner-min.webp"
+  },
+  {
+    "file": "canlitema/sepette-kargo-mesaj-pc.twig",
+    "line": 15,
+    "asset": "assets/images/hizli-kargo-pc.webp"
+  }
+]

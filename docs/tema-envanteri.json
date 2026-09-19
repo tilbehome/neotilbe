@@ -1278,8 +1278,8 @@
   },
   {
     "file": "canlitema/assets/style.css",
-    "bytes": 311625,
-    "sha256": "5cebeee341f12ef98cffd7f073680aafc0f9794e2060469eeff8bf2ec60ebde4",
+    "bytes": 311737,
+    "sha256": "10af7b401025cb350762ddb30bdf37c020f6451f0c1017e969e94c6de8731b0d",
     "status": "doğrulama bekliyor",
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
@@ -1450,8 +1450,8 @@
   },
   {
     "file": "canlitema/flash-sayac.twig",
-    "bytes": 2101,
-    "sha256": "ea787df7718ae467a2eca25256b57fefb675ab0bbf807ac6530ca16579d7bf27",
+    "bytes": 2466,
+    "sha256": "2c500dc4e63f9a3a99a579d811f94bb2b4ab6ab8589d70d83d5ed2946188e1c7",
     "status": "doğrulama bekliyor",
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
@@ -1467,8 +1467,8 @@
   },
   {
     "file": "canlitema/flash-urun.twig",
-    "bytes": 2606,
-    "sha256": "0b80ec099545493fb3b6fe24bc08f3786d039b7a17a51d2d81a94e6c5cd76836",
+    "bytes": 3083,
+    "sha256": "1758f7437f7d761640484d96b10f7bb2383716484322e28bdffa35759e8685d4",
     "status": "doğrulama bekliyor",
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
@@ -1478,12 +1478,6 @@
         "kind": "heading-h1",
         "lines": [
           9
-        ]
-      },
-      {
-        "kind": "absolute-theme-url",
-        "lines": [
-          14
         ]
       }
     ]
@@ -1500,8 +1494,8 @@
   },
   {
     "file": "canlitema/liste-kartim.twig",
-    "bytes": 4414,
-    "sha256": "6d078c1ff274341f5b5dddb63b4fe4cb3e38f0fca34cab01c25b3ceeedb7f61e",
+    "bytes": 4350,
+    "sha256": "9adec4a2f4940a36c6b293a02cb48be40b3a731aac1d5806ab2cbd53c1816dc8",
     "status": "doğrulama bekliyor",
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
@@ -1524,13 +1518,6 @@
         "kind": "heading-h1",
         "lines": [
           41
-        ]
-      },
-      {
-        "kind": "absolute-theme-url",
-        "lines": [
-          4,
-          5
         ]
       }
     ]
@@ -1744,8 +1731,8 @@
   },
   {
     "file": "canlitema/moduller/footer.twig",
-    "bytes": 45450,
-    "sha256": "7724d9a4395afc9ffe2d9d61e0f0c2e60f9aa3dcec51f96829bd7af29e61b0f6",
+    "bytes": 45352,
+    "sha256": "2fec8c189f044c713883ee169c4e86ed898903e2fabb52254f7bd3c1e13fc3cd",
     "status": "doğrulama bekliyor",
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
@@ -1781,14 +1768,6 @@
         ]
       },
       {
-        "kind": "absolute-theme-url",
-        "lines": [
-          7,
-          272,
-          287
-        ]
-      },
-      {
         "kind": "lazy-loading",
         "lines": [
           407,
@@ -1799,8 +1778,8 @@
   },
   {
     "file": "canlitema/moduller/header.twig",
-    "bytes": 18199,
-    "sha256": "72abaf1e592f15138300b79bdddc4141f6c906e9fc7d0506892026c5c1443b6a",
+    "bytes": 18001,
+    "sha256": "07b73dcc4e7524babb722484cb55690564e9acefc5f8390fb7cde727b24e6cbd",
     "status": "doğrulama bekliyor",
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
@@ -1824,19 +1803,7 @@
         "exists": true
       }
     ],
-    "signals": [
-      {
-        "kind": "absolute-theme-url",
-        "lines": [
-          164,
-          178,
-          193,
-          201,
-          209,
-          256
-        ]
-      }
-    ]
+    "signals": []
   },
   {
     "file": "canlitema/moduller/hediye_ceki/icerik.twig",
@@ -2546,27 +2513,18 @@
   },
   {
     "file": "canlitema/moduller/odeme/adimlar.twig",
-    "bytes": 1193,
-    "sha256": "b1830c258fc7e3248ac7df794184201e8243aa5647633bb9dfd94582aba9b063",
+    "bytes": 1097,
+    "sha256": "9f80f035b18851de13054ebe00686dda27679cc5200b16f40baf477970140341",
     "status": "doğrulama bekliyor",
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
-    "signals": [
-      {
-        "kind": "absolute-theme-url",
-        "lines": [
-          7,
-          11,
-          15
-        ]
-      }
-    ]
+    "signals": []
   },
   {
     "file": "canlitema/moduller/odeme/bilgiler/adres.twig",
-    "bytes": 15859,
-    "sha256": "c258545bdbbdbfb22a6e2f9f33dece0c141b6018ec5253b996d723f805f05ea8",
+    "bytes": 15827,
+    "sha256": "3e4102c80399a6863457bcc48057061d44b9eb70afae33eb972c5c654306d9a9",
     "status": "doğrulama bekliyor",
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
@@ -2577,31 +2535,18 @@
         "lines": [
           128
         ]
-      },
-      {
-        "kind": "absolute-theme-url",
-        "lines": [
-          5
-        ]
       }
     ]
   },
   {
     "file": "canlitema/moduller/odeme/bilgiler/kargo.twig",
-    "bytes": 477,
-    "sha256": "fba098853317d85c72486d5e4ee05aaecc93682af3b0690856345cdec65e1b20",
+    "bytes": 445,
+    "sha256": "6fcd96dbdae373391b464db0a133ed7596dec9fdc51ddf326622b9c0fc84868e",
     "status": "doğrulama bekliyor",
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
-    "signals": [
-      {
-        "kind": "absolute-theme-url",
-        "lines": [
-          5
-        ]
-      }
-    ]
+    "signals": []
   },
   {
     "file": "canlitema/moduller/odeme/bilgiler/kargo_icerik.twig",
@@ -2667,20 +2612,13 @@
   },
   {
     "file": "canlitema/moduller/odeme/bilgiler/siparis.twig",
-    "bytes": 1964,
-    "sha256": "36c136110fd96f085e2f229b58c29030d5ff8246b3e183fef0e02ebd7f860425",
+    "bytes": 1932,
+    "sha256": "ceec752e0603e29403feb05341b9046bfe206d1b0a589bec676a104a7e026aba",
     "status": "doğrulama bekliyor",
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
-    "signals": [
-      {
-        "kind": "absolute-theme-url",
-        "lines": [
-          5
-        ]
-      }
-    ]
+    "signals": []
   },
   {
     "file": "canlitema/moduller/odeme/butonlar.twig",
@@ -2760,20 +2698,13 @@
   },
   {
     "file": "canlitema/moduller/odeme/ozet_icerik.twig",
-    "bytes": 2284,
-    "sha256": "5d91a0026080b2506fbfe35ce9f5621d2c047369389cabefaca64be262cc4b7f",
+    "bytes": 2252,
+    "sha256": "2a16e648ef6c605176ab3e83d5b81a4cf995cd66eb6d50f978a510a4d30ddd73",
     "status": "doğrulama bekliyor",
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
-    "signals": [
-      {
-        "kind": "absolute-theme-url",
-        "lines": [
-          3
-        ]
-      }
-    ]
+    "signals": []
   },
   {
     "file": "canlitema/moduller/odeme/siparis_onayi.twig",
@@ -2961,8 +2892,8 @@
   },
   {
     "file": "canlitema/moduller/sepet/ozet.twig",
-    "bytes": 4346,
-    "sha256": "fcf0db02d82ad3e884cc9886a2bb62f0463c5554f5d62d2ed694d0865b867cac",
+    "bytes": 4314,
+    "sha256": "af119eb7ce49c824c46d2f50cb171b796d5765034fb28ac3f3088e747ed1e1c0",
     "status": "doğrulama bekliyor",
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
@@ -2972,12 +2903,6 @@
         "kind": "inline-event",
         "lines": [
           75
-        ]
-      },
-      {
-        "kind": "absolute-theme-url",
-        "lines": [
-          11
         ]
       }
     ]
@@ -3617,20 +3542,13 @@
   },
   {
     "file": "canlitema/moduller/urunler/profil_degerlendirmeler.twig",
-    "bytes": 1119,
-    "sha256": "6cc6416423585f1150fd14594736eab9768195b43e0384b0b9ced88f878db5fb",
+    "bytes": 1087,
+    "sha256": "f0de82a97654bdd92452f6634a8e41dcd0b3204ae353dcd78f135d8c05a53560",
     "status": "doğrulama bekliyor",
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
-    "signals": [
-      {
-        "kind": "absolute-theme-url",
-        "lines": [
-          22
-        ]
-      }
-    ]
+    "signals": []
   },
   {
     "file": "canlitema/moduller/urunler/profil_favori_listesi.twig",
@@ -3878,28 +3796,13 @@
   },
   {
     "file": "canlitema/ozel-moduller/banner-anasayfa1.twig",
-    "bytes": 1276,
-    "sha256": "30e63b377c0c901f1fd971b3a1ce0e182c4880acfd70b080373810e08f9f12d4",
+    "bytes": 1105,
+    "sha256": "2f179fcac93bf7612058dbb2fb52a07c667bce9f17f8883cbb2ae99aa98f01ea",
     "status": "doğrulama bekliyor",
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
-    "signals": [
-      {
-        "kind": "absolute-theme-url",
-        "lines": [
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8,
-          9,
-          10
-        ]
-      }
-    ]
+    "signals": []
   },
   {
     "file": "canlitema/ozel-moduller/bardak-masaustu-liste.twig",
@@ -3913,22 +3816,13 @@
   },
   {
     "file": "canlitema/ozel-moduller/dikey-banner-anasayfa.twig",
-    "bytes": 522,
-    "sha256": "a87dd6542156a67f7892497756270fde68957fd9bd9603a125c353ba29e27637",
+    "bytes": 426,
+    "sha256": "bc2d013f6d9d75bd1066fe87b68d68263afab3764f78d06b110006b33493f7ef",
     "status": "doğrulama bekliyor",
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
-    "signals": [
-      {
-        "kind": "absolute-theme-url",
-        "lines": [
-          2,
-          3,
-          4
-        ]
-      }
-    ]
+    "signals": []
   },
   {
     "file": "canlitema/ozel-moduller/dikey-cilt-1.webp",
@@ -4838,21 +4732,13 @@
   },
   {
     "file": "canlitema/sepet-guvenli-odeme-pc.twig",
-    "bytes": 4060,
-    "sha256": "0b8e18f9f649624e34589a7bcecebdc73a65351341defbb6766b064ecb4c49bf",
+    "bytes": 3996,
+    "sha256": "8fb70ddb7d94d29b682857403b74a21965e4bd94d71081a3bee5f69768b9991d",
     "status": "doğrulama bekliyor",
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
-    "signals": [
-      {
-        "kind": "absolute-theme-url",
-        "lines": [
-          6,
-          19
-        ]
-      }
-    ]
+    "signals": []
   },
   {
     "file": "canlitema/sepette-1000-tl-75-indirim.twig",
@@ -4866,37 +4752,23 @@
   },
   {
     "file": "canlitema/sepette-indirim.twig",
-    "bytes": 250,
-    "sha256": "6acf34d9e70f3499b332ac1de6d7e3c8be8949120a2897684dbb2563b48d1a6b",
+    "bytes": 218,
+    "sha256": "2001442f7a72ac37b513544d2baa436a059d07999f0b643bfb136957e02f60ac",
     "status": "doğrulama bekliyor",
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
-    "signals": [
-      {
-        "kind": "absolute-theme-url",
-        "lines": [
-          3
-        ]
-      }
-    ]
+    "signals": []
   },
   {
     "file": "canlitema/sepette-kargo-mesaj-pc.twig",
-    "bytes": 1153,
-    "sha256": "6f6626c2f2f5c314ace85ed9c07f297903343f7765075c5a614d2d4767b41bc4",
+    "bytes": 1121,
+    "sha256": "71cd8e2307813ce35fc27b49a5ce703b7fe0948d04f821db1c1396b070df0c90",
     "status": "doğrulama bekliyor",
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
-    "signals": [
-      {
-        "kind": "absolute-theme-url",
-        "lines": [
-          15
-        ]
-      }
-    ]
+    "signals": []
   },
   {
     "file": "canlitema/video-listeleme.twig",

@@ -1,9 +1,9 @@
 <div class="flash-banner-wrap92">
   <div class="timer-box92">
-    <div class="timer-unit92"><div id="days">4</div><span>Gün</span></div>
-    <div class="timer-unit92"><div id="hours">8</div><span>Saat</span></div>
-    <div class="timer-unit92"><div id="minutes">7</div><span>Dakika</span></div>
-    <div class="timer-unit92"><div id="seconds">1</div><span>Saniye</span></div>
+    <div class="timer-unit92"><div data-countdown-part="days">4</div><span>Gün</span></div>
+    <div class="timer-unit92"><div data-countdown-part="hours">8</div><span>Saat</span></div>
+    <div class="timer-unit92"><div data-countdown-part="minutes">7</div><span>Dakika</span></div>
+    <div class="timer-unit92"><div data-countdown-part="seconds">1</div><span>Saniye</span></div>
   </div>
   <div class="flash-textbox92">
     <h1>Sınırlı Süreli Flash İndirimler</h1>
@@ -14,6 +14,9 @@
 </div>
 
 <script>
+(function () {
+  const root = document.currentScript && document.currentScript.previousElementSibling;
+  if (!root) return;
   function getNextMonday() {
     let now = new Date();
     let dayOfWeek = now.getDay();
@@ -31,6 +34,7 @@
   let targetTime = getNextMonday();
 
   function updateCountdown() {
+    if (!root.isConnected) { clearInterval(interval); return; }
     let now = new Date().getTime();
     let remainingTime = targetTime - now;
     let days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
@@ -38,10 +42,10 @@
     let minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
     let seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
 
-    document.getElementById("days").textContent = days;
-    document.getElementById("hours").textContent = hours;
-    document.getElementById("minutes").textContent = minutes;
-    document.getElementById("seconds").textContent = seconds;
+    root.querySelector('[data-countdown-part="days"]').textContent = days;
+    root.querySelector('[data-countdown-part="hours"]').textContent = hours;
+    root.querySelector('[data-countdown-part="minutes"]').textContent = minutes;
+    root.querySelector('[data-countdown-part="seconds"]').textContent = seconds;
 
     if (remainingTime <= 0) {
       clearInterval(interval);
@@ -51,4 +55,6 @@
   }
 
   let interval = setInterval(updateCountdown, 1000);
+  updateCountdown();
+})();
 </script>

@@ -1,8 +1,8 @@
 <div class="tilbe-anasayfa01-card-product">
     <div class="tilbe-anasayfa01-card-product-inner">
         {% if urun.ucretsiz_kargo and temaAyarlari('urun_karti', 'ucretsiz_kargo') %}
-            <div class="tilbe-anasayfa01-free-cargo-badge"><img src="https://www.tilbehome.com/theme/___shuttle/assets/icons8-cargo-48.png?v=1735315721" style="width:12px; height:12px;">HIZLI TESLİMAT</div>
-            <div class="tilbe-anasayfa01-hizli-teslimat"><img src="https://www.tilbehome.com/theme/___shuttle/assets/gift.png?v=1735316142" style="width:12px; height:12px;">KARGO BEDAVA</div>
+            <div class="tilbe-anasayfa01-free-cargo-badge"><img src="{{ temaDosyalari('/assets/icons8-cargo-48.png') }}" style="width:12px; height:12px;">HIZLI TESLİMAT</div>
+            <div class="tilbe-anasayfa01-hizli-teslimat"><img src="{{ temaDosyalari('/assets/gift.png') }}" style="width:12px; height:12px;">KARGO BEDAVA</div>
         {% endif %}
     
         <div class="tilbe-anasayfa01-image-wrapper">

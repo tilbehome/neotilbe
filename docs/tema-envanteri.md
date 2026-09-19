@@ -133,7 +133,7 @@ Dosya durumu bütün dosyanın kabul durumudur; belirli bir hatanın düzeltilme
 | `canlitema/assets/scripts.js` | 5443 | doğrulama bekliyor | kontrol edildi: yerel ayrıştırma başarılı |
 | `canlitema/assets/smartbanner.css` | 6466 | doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
 | `canlitema/assets/smartbanner.js` | 16305 | doğrulama bekliyor | kontrol edildi: yerel ayrıştırma başarılı |
-| `canlitema/assets/style.css` | 311625 | doğrulama bekliyor | 0 sabit şablon bağı; 1 inceleme sinyali |
+| `canlitema/assets/style.css` | 311737 | doğrulama bekliyor | 0 sabit şablon bağı; 1 inceleme sinyali |
 | `canlitema/assets/tahmini-kargom.js` | 2368 | doğrulama bekliyor | doğrulama bekliyor: missing ) after argument list |
 | `canlitema/assets/urun-fav-sayma-eklenti.js` | 228 | doğrulama bekliyor | kontrol edildi: yerel ayrıştırma başarılı |
 | `canlitema/assets/yazifont/sourcesanspro-regular.otf` | 229588 | doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
@@ -149,10 +149,10 @@ Dosya durumu bütün dosyanın kabul durumudur; belirli bir hatanın düzeltilme
 | `canlitema/dekoratif-urunler.webp` | 32064 | doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
 | `canlitema/firsatlar.svg` | 3971 | doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
 | `canlitema/flash-discount.svg` | 1039 | doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
-| `canlitema/flash-sayac.twig` | 2101 | doğrulama bekliyor | 0 sabit şablon bağı; 1 inceleme sinyali |
-| `canlitema/flash-urun.twig` | 2606 | doğrulama bekliyor | 0 sabit şablon bağı; 2 inceleme sinyali |
+| `canlitema/flash-sayac.twig` | 2466 | doğrulama bekliyor | 0 sabit şablon bağı; 1 inceleme sinyali |
+| `canlitema/flash-urun.twig` | 3083 | doğrulama bekliyor | 0 sabit şablon bağı; 1 inceleme sinyali |
 | `canlitema/kamp-urunleri.webp` | 54116 | doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
-| `canlitema/liste-kartim.twig` | 4414 | doğrulama bekliyor | 2 sabit şablon bağı; 2 inceleme sinyali |
+| `canlitema/liste-kartim.twig` | 4350 | doğrulama bekliyor | 2 sabit şablon bağı; 1 inceleme sinyali |
 | `canlitema/liste-urunlerim.twig` | 1109 | doğrulama bekliyor | 0 sabit şablon bağı; 1 inceleme sinyali |
 | `canlitema/moduller/bloglar/anasayfa_kart.twig` | 549 | doğrulama bekliyor | 0 sabit şablon bağı; 1 inceleme sinyali |
 | `canlitema/moduller/bloglar/en_cok_okunanlar.twig` | 292 | doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
@@ -166,8 +166,8 @@ Dosya durumu bütün dosyanın kabul durumudur; belirli bir hatanın düzeltilme
 | `canlitema/moduller/diger/mega_menu.twig` | 6039 | doğrulama bekliyor | 1 sabit şablon bağı; 1 inceleme sinyali |
 | `canlitema/moduller/diger/mega_menu_side.twig` | 4770 | doğrulama bekliyor | 1 sabit şablon bağı; 1 inceleme sinyali |
 | `canlitema/moduller/diger/single_menu.twig` | 1784 | doğrulama bekliyor | 1 sabit şablon bağı; 0 inceleme sinyali |
-| `canlitema/moduller/footer.twig` | 45450 | doğrulama bekliyor | 0 sabit şablon bağı; 6 inceleme sinyali |
-| `canlitema/moduller/header.twig` | 18199 | doğrulama bekliyor | 3 sabit şablon bağı; 1 inceleme sinyali |
+| `canlitema/moduller/footer.twig` | 45352 | doğrulama bekliyor | 0 sabit şablon bağı; 5 inceleme sinyali |
+| `canlitema/moduller/header.twig` | 18001 | doğrulama bekliyor | 3 sabit şablon bağı; 0 inceleme sinyali |
 | `canlitema/moduller/hediye_ceki/icerik.twig` | 542 | doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
 | `canlitema/moduller/hediye_ceki/kart.twig` | 972 | doğrulama bekliyor | 0 sabit şablon bağı; 1 inceleme sinyali |
 | `canlitema/moduller/hesap/alt_sayfalar/2fa.twig` | 721 | doğrulama bekliyor | 0 sabit şablon bağı; 1 inceleme sinyali |
@@ -216,17 +216,17 @@ Dosya durumu bütün dosyanın kabul durumudur; belirli bir hatanın düzeltilme
 | `canlitema/moduller/kategoriler/sayfalama.twig` | 6768 | doğrulama bekliyor | 1 sabit şablon bağı; 0 inceleme sinyali |
 | `canlitema/moduller/markalar/kart.twig` | 314 | doğrulama bekliyor | 0 sabit şablon bağı; 1 inceleme sinyali |
 | `canlitema/moduller/markalar/sayfalama.twig` | 632 | doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
-| `canlitema/moduller/odeme/adimlar.twig` | 1193 | doğrulama bekliyor | 0 sabit şablon bağı; 1 inceleme sinyali |
-| `canlitema/moduller/odeme/bilgiler/adres.twig` | 15859 | doğrulama bekliyor | 0 sabit şablon bağı; 2 inceleme sinyali |
-| `canlitema/moduller/odeme/bilgiler/kargo.twig` | 477 | doğrulama bekliyor | 0 sabit şablon bağı; 1 inceleme sinyali |
+| `canlitema/moduller/odeme/adimlar.twig` | 1097 | doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
+| `canlitema/moduller/odeme/bilgiler/adres.twig` | 15827 | doğrulama bekliyor | 0 sabit şablon bağı; 1 inceleme sinyali |
+| `canlitema/moduller/odeme/bilgiler/kargo.twig` | 445 | doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
 | `canlitema/moduller/odeme/bilgiler/kargo_icerik.twig` | 2122 | doğrulama bekliyor | 0 sabit şablon bağı; 2 inceleme sinyali |
 | `canlitema/moduller/odeme/bilgiler/kargo_sablonu.twig` | 748 | doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
 | `canlitema/moduller/odeme/bilgiler/odeme.twig` | 3216 | doğrulama bekliyor | 0 sabit şablon bağı; 3 inceleme sinyali |
-| `canlitema/moduller/odeme/bilgiler/siparis.twig` | 1964 | doğrulama bekliyor | 0 sabit şablon bağı; 1 inceleme sinyali |
+| `canlitema/moduller/odeme/bilgiler/siparis.twig` | 1932 | doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
 | `canlitema/moduller/odeme/butonlar.twig` | 850 | doğrulama bekliyor | 0 sabit şablon bağı; 1 inceleme sinyali |
 | `canlitema/moduller/odeme/form.twig` | 727 | doğrulama bekliyor | 5 sabit şablon bağı; 0 inceleme sinyali |
 | `canlitema/moduller/odeme/ozet.twig` | 2533 | doğrulama bekliyor | 0 sabit şablon bağı; 1 inceleme sinyali |
-| `canlitema/moduller/odeme/ozet_icerik.twig` | 2284 | doğrulama bekliyor | 0 sabit şablon bağı; 1 inceleme sinyali |
+| `canlitema/moduller/odeme/ozet_icerik.twig` | 2252 | doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
 | `canlitema/moduller/odeme/siparis_onayi.twig` | 726 | doğrulama bekliyor | 0 sabit şablon bağı; 1 inceleme sinyali |
 | `canlitema/moduller/odeme/sozlesme_kutusu.twig` | 2485 | doğrulama bekliyor | 0 sabit şablon bağı; 2 inceleme sinyali |
 | `canlitema/moduller/odeme/sozlesmeler/mesafeli_satis_sozlesmesi.twig` | 405 | doğrulama bekliyor | 0 sabit şablon bağı; 1 inceleme sinyali |
@@ -237,7 +237,7 @@ Dosya durumu bütün dosyanın kabul durumudur; belirli bir hatanın düzeltilme
 | `canlitema/moduller/sepet/butonlar.twig` | 403 | doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
 | `canlitema/moduller/sepet/hediye_ceki.twig` | 1367 | doğrulama bekliyor | 0 sabit şablon bağı; 1 inceleme sinyali |
 | `canlitema/moduller/sepet/liste.twig` | 8126 | doğrulama bekliyor | 0 sabit şablon bağı; 2 inceleme sinyali |
-| `canlitema/moduller/sepet/ozet.twig` | 4346 | doğrulama bekliyor | 0 sabit şablon bağı; 2 inceleme sinyali |
+| `canlitema/moduller/sepet/ozet.twig` | 4314 | doğrulama bekliyor | 0 sabit şablon bağı; 1 inceleme sinyali |
 | `canlitema/moduller/sepet/sepet_bos.twig` | 488 | doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
 | `canlitema/moduller/statik_sayfalar/404.twig` | 2300 | doğrulama bekliyor | 0 sabit şablon bağı; 1 inceleme sinyali |
 | `canlitema/moduller/statik_sayfalar/alt_sayfalar/havale_bildirim.twig` | 4806 | doğrulama bekliyor | 0 sabit şablon bağı; 4 inceleme sinyali |
@@ -265,7 +265,7 @@ Dosya durumu bütün dosyanın kabul durumudur; belirli bir hatanın düzeltilme
 | `canlitema/moduller/urunler/liste_kart.twig` | 1101 | doğrulama bekliyor | 0 sabit şablon bağı; 1 inceleme sinyali |
 | `canlitema/moduller/urunler/normal_resim.twig` | 3174 | doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
 | `canlitema/moduller/urunler/profil.twig` | 30116 | doğrulama bekliyor | 6 sabit şablon bağı; 5 inceleme sinyali |
-| `canlitema/moduller/urunler/profil_degerlendirmeler.twig` | 1119 | doğrulama bekliyor | 0 sabit şablon bağı; 1 inceleme sinyali |
+| `canlitema/moduller/urunler/profil_degerlendirmeler.twig` | 1087 | doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
 | `canlitema/moduller/urunler/profil_favori_listesi.twig` | 561 | doğrulama bekliyor | 0 sabit şablon bağı; 1 inceleme sinyali |
 | `canlitema/moduller/urunler/resim_alani_tipi/carousel_atli_karinca.twig` | 2951 | doğrulama bekliyor | 1 sabit şablon bağı; 0 inceleme sinyali |
 | `canlitema/moduller/urunler/resim_alani_tipi/carousel_sol.twig` | 5949 | doğrulama bekliyor | 0 sabit şablon bağı; 1 inceleme sinyali |
@@ -283,9 +283,9 @@ Dosya durumu bütün dosyanın kabul durumudur; belirli bir hatanın düzeltilme
 | `canlitema/moduller/yardim/breadcrumb.twig` | 1362 | doğrulama bekliyor | 0 sabit şablon bağı; 1 inceleme sinyali |
 | `canlitema/moduller/yardim/madde_listesi.twig` | 2062 | doğrulama bekliyor | 0 sabit şablon bağı; 1 inceleme sinyali |
 | `canlitema/ozel-moduller/8899.jpg` | 393084 | doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
-| `canlitema/ozel-moduller/banner-anasayfa1.twig` | 1276 | doğrulama bekliyor | 0 sabit şablon bağı; 1 inceleme sinyali |
+| `canlitema/ozel-moduller/banner-anasayfa1.twig` | 1105 | doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
 | `canlitema/ozel-moduller/bardak-masaustu-liste.twig` | 296 | doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
-| `canlitema/ozel-moduller/dikey-banner-anasayfa.twig` | 522 | doğrulama bekliyor | 0 sabit şablon bağı; 1 inceleme sinyali |
+| `canlitema/ozel-moduller/dikey-banner-anasayfa.twig` | 426 | doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
 | `canlitema/ozel-moduller/dikey-cilt-1.webp` | 39348 | doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
 | `canlitema/ozel-moduller/dikey-ev-1.webp` | 43112 | doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
 | `canlitema/ozel-moduller/double-walled-glasses.webp` | 596022 | doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
@@ -360,9 +360,9 @@ Dosya durumu bütün dosyanın kabul durumudur; belirli bir hatanın düzeltilme
 | `canlitema/sayfalar/uye_ol.twig` | 77 | doğrulama bekliyor | 1 sabit şablon bağı; 0 inceleme sinyali |
 | `canlitema/sayfalar/yardim.twig` | 79 | doğrulama bekliyor | 1 sabit şablon bağı; 0 inceleme sinyali |
 | `canlitema/sayfalar/yardim_detay.twig` | 79 | doğrulama bekliyor | 1 sabit şablon bağı; 0 inceleme sinyali |
-| `canlitema/sepet-guvenli-odeme-pc.twig` | 4060 | doğrulama bekliyor | 0 sabit şablon bağı; 1 inceleme sinyali |
+| `canlitema/sepet-guvenli-odeme-pc.twig` | 3996 | doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
 | `canlitema/sepette-1000-tl-75-indirim.twig` | 1159 | doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
-| `canlitema/sepette-indirim.twig` | 250 | doğrulama bekliyor | 0 sabit şablon bağı; 1 inceleme sinyali |
-| `canlitema/sepette-kargo-mesaj-pc.twig` | 1153 | doğrulama bekliyor | 0 sabit şablon bağı; 1 inceleme sinyali |
+| `canlitema/sepette-indirim.twig` | 218 | doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
+| `canlitema/sepette-kargo-mesaj-pc.twig` | 1121 | doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
 | `canlitema/video-listeleme.twig` | 5404 | doğrulama bekliyor | 0 sabit şablon bağı; 1 inceleme sinyali |
 | `canlitema/yorum-foto-var.svg` | 1601 | doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
