@@ -3,7 +3,7 @@
     <div class="tilbe-bv04kf-category-title">Popüler Videolar</div>
 
     <!-- Video Galeri Swiper -->
-    <swiper-container class="swiper-container" space-between="20" loop="true" autoplay="true" autoplay-delay="3000">
+    <swiper-container init="false" class="swiper-container" space-between="20" loop="true" autoplay="true" autoplay-delay="3000">
         <!-- Video 1 -->
         <swiper-slide class="tilbe-bv04kf-video-item" onclick="openModal('https://www.youtube.com/embed/NBDPrVt-O6M')">
             <img class="tilbe-bv04kf-video-thumbnail" src="https://img.youtube.com/vi/NBDPrVt-O6M/maxresdefault.jpg" alt="Video 1">
@@ -68,30 +68,37 @@
 </div>
 
 <!-- Swiper ve Scriptler -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js" defer></script>
+<script>
+(function () {
+    if (!window.customElements) return;
+    const source = 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js';
+    if (!customElements.get('swiper-container') &&
+        !Array.from(document.scripts).some(script => script.src === source)) {
+        const loader = document.createElement('script');
+        loader.src = source;
+        loader.async = true;
+        document.head.appendChild(loader);
+    }
+    customElements.whenDefined('swiper-container').then(function () {
+        document.querySelectorAll('.tilbe-bv04kf-categoray swiper-container').forEach(function (element) {
+            if (!element.isConnected || element.initialized) return;
+            Object.assign(element, {
+                spaceBetween: 20,
+                loop: true,
+                autoplay: { delay: 3000 },
+                breakpoints: {
+                    320: { slidesPerView: 2 },
+                    768: { slidesPerView: 2 },
+                    1024: { slidesPerView: 6 }
+                }
+            });
+            element.initialize();
+        });
+    });
+})();
+</script>
 
 <script>
-    // Swiper başlangıç parametreleri
-    const swiper = new Swiper('.swiper-container', {
-        spaceBetween: 20, // Slaytlar arasındaki boşluk
-        loop: true, // Sonsuz kaydırma
-        autoplay: {
-            delay: 3000, // 3 saniye geçiş
-        },
-        breakpoints: {
-            // Ekran boyutuna göre gösterilen video sayısı
-            320: {
-                slidesPerView: 2, // Mobilde 1 video
-            },
-            768: {
-                slidesPerView: 2, // Tablet boyutlarında 2 video
-            },
-            1024: {
-                slidesPerView: 6, // Desktop'ta 3 video
-            },
-        },
-    });
-
     // Video açma fonksiyonu
     function openModal(videoUrl) {
         const iframe = document.getElementById('videoIframe');

@@ -21,6 +21,7 @@ function conditionFixture(source, conditions, values = {}) {
     assert.equal(stack.length, 0);
     return result.replace(/\{\{([\s\S]*?)\}\}/g, (_, expression) => values[expression.trim()] ?? 'fixture');
 }
+exports.conditionFixture = conditionFixture;
 exports.payload = read => {
     const profile = read('canlitema/moduller/urunler/profil.twig').replaceAll('\r\n', '\n');
     assert(profile.includes("onclick=\"window.location.href=this.getAttribute('data-search-url')\""));

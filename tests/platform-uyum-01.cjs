@@ -67,6 +67,8 @@ const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
     const payload = {
         fixture,
         extra: require('./platform-uyum-02-cases.cjs').payload(read),
+        sales: require('./platform-uyum-03-cases.cjs').payload(read),
+        salesRun: require('./platform-uyum-03-cases.cjs').run.toString(),
         templateScripts: [...template.matchAll(/<script\b[^>]*>([\s\S]*?)<\/script>/g)].map(m => m[1]),
         jquery: read('Platform Dosyaları/template-assets/plugins/bootstrap.js').split('\n')[1],
         login,
@@ -198,6 +200,7 @@ const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
             check(document.querySelector('input').value === '1.6', 'Reference quantity helper accepts decimal unit');
             window.productQuantityBox('decrement', '.product-quantity');
             check(document.querySelector('input').value === '1.5', 'Reference quantity helper decrements decimal unit');
+            await (0, eval)('(' + p.salesRun + ')')(p.sales, check);
             return results;
         }).toString() + ')(' + JSON.stringify(payload) + ')'
     });
