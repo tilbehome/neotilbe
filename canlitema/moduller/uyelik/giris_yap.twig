@@ -54,10 +54,10 @@
 </div>
 				
                     <input type="hidden" name="returnUrl" value="{{ returnUrl() }}" />
-                    <input type="text" class="form-control" name="email" placeholder="E-posta adresinizi girin">
+                    <input aria-label="E-posta adresinizi girin" type="text" class="form-control" name="email" placeholder="E-posta adresinizi girin">
                     <div class="password-container">
-                        <input type="password" class="form-control password" name="password" placeholder="Şifrenizi girin">
-                        <i class="fa fa-eye toggle-password" onclick="togglePasswordVisibility(this)"></i>
+                        <input aria-label="Şifrenizi girin" type="password" class="form-control password" name="password" placeholder="Şifrenizi girin">
+                        <button type="button" class="fa fa-eye toggle-password" aria-label="Şifreyi göster" aria-pressed="false" onclick="togglePasswordVisibility(this)"></button>
                     </div>
                     <a href="{{ statikLinkler('sifremi_unuttum') }}" class="forgot-password">Şifremi Unuttum</a>
                     
@@ -97,17 +97,17 @@
 </div>
 
 
-                    <input type="text" class="form-control" name="name" placeholder="Adınızı girin">
-                    <input type="text" class="form-control" name="lastname" placeholder="Soyadınızı girin">
-                    <input type="email" class="form-control" name="email" placeholder="E-posta adresinizi girin">
-                    <input type="text" class="form-control" name="phone" placeholder="Telefon numaranızı girin">
+                    <input aria-label="Adınızı girin" type="text" class="form-control" name="name" placeholder="Adınızı girin">
+                    <input aria-label="Soyadınızı girin" type="text" class="form-control" name="lastname" placeholder="Soyadınızı girin">
+                    <input aria-label="E-posta adresinizi girin" type="email" class="form-control" name="email" placeholder="E-posta adresinizi girin">
+                    <input aria-label="Telefon numaranızı girin" type="text" class="form-control" name="phone" placeholder="Telefon numaranızı girin">
                     <div class="password-container">
-                        <input type="password" class="form-control password" name="password" placeholder="Şifrenizi belirleyin">
-                        <i class="fa fa-eye toggle-password" onclick="togglePasswordVisibility(this)"></i>
+                        <input aria-label="Şifrenizi belirleyin" type="password" class="form-control password" name="password" placeholder="Şifrenizi belirleyin">
+                        <button type="button" class="fa fa-eye toggle-password" aria-label="Şifreyi göster" aria-pressed="false" onclick="togglePasswordVisibility(this)"></button>
                     </div>
                     <div class="password-container">
-                        <input type="password" class="form-control password" name="password2" placeholder="Şifrenizi tekrar girin">
-                        <i class="fa fa-eye toggle-password" onclick="togglePasswordVisibility(this)"></i>
+                        <input aria-label="Şifrenizi tekrar girin" type="password" class="form-control password" name="password2" placeholder="Şifrenizi tekrar girin">
+                        <button type="button" class="fa fa-eye toggle-password" aria-label="Şifreyi göster" aria-pressed="false" onclick="togglePasswordVisibility(this)"></button>
                     </div>
                     
                     <div class="alert alert-warning font-size-12 rounded-10">
@@ -151,6 +151,9 @@
             var container = icon.closest('.password-container');
             var passwordInput = container && container.querySelector('input.password');
             if (!passwordInput) return;
+            var showPassword = passwordInput.type === 'password';
+            icon.setAttribute('aria-pressed', showPassword ? 'true' : 'false');
+            icon.setAttribute('aria-label', showPassword ? 'Şifreyi gizle' : 'Şifreyi göster');
             if (passwordInput.type === "password") {
                 passwordInput.type = "text";
                 icon.classList.remove("fa-eye");

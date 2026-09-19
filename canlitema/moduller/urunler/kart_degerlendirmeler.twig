@@ -5,7 +5,7 @@
 <div class="product-reviews d-flex align-items-center">
     <!-- Ortalama puan (sadece değerlendirme varsa göster) -->
     {% if oy_sayisi > 0 %}
-        <span class="count me-2">
+        <span class="count mr-2">
             {{ ortalama|number_format(1, '.', ',') }}
         </span>
     {% endif %}
@@ -27,7 +27,7 @@
     </div>
 
     <!-- Oy sayısı + Foto ikon (her zaman gösterilir) -->
-    <span class="count ms-2 {{ oy_sayisi == 0 ? 'text-muted' : '' }}">
+    <span class="count ml-2 {{ oy_sayisi == 0 ? 'text-muted' : '' }}">
         ({{ oy_sayisi }})
         <i class="fa fa-camera"></i>
     </span>

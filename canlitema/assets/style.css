@@ -4218,7 +4218,12 @@ body,html {
 /*==============================
   ÖDEME TABS (KART / KAPIDA)
 ==============================*/
-.payment-form-group-1 .nav-tabs {
+.payment-form-group-1 .password-container .toggle-password:focus-visible {
+    outline: 2px solid #1d4ed8;
+    outline-offset: 3px;
+}
+
+.nav-tabs {
     display: flex;
     justify-content: space-between;
     border: 0;
@@ -12722,7 +12727,7 @@ header.desktop .easy-autocomplete-container {
     }
 }
 
-.login-body .p-g-mod-t-4 .checkout-login-container {
+.login-body.p-g-mod-t-4 .checkout-login-container {
     margin: 0 auto;
     padding: 15px;
     background: #fff;
@@ -12730,7 +12735,7 @@ header.desktop .easy-autocomplete-container {
     box-shadow: 0 4px 12px rgba(0,0,0,.08)
 }
 
-.login-body .p-g-mod-t-4 .checkout-title {
+.login-body.p-g-mod-t-4 .checkout-title {
     font-size: 18px;
     font-weight: 600;
     color: #222;
@@ -12741,20 +12746,20 @@ header.desktop .easy-autocomplete-container {
     margin-top: -8px
 }
 
-.login-body .p-g-mod-t-4 .checkout-subtitle {
+.login-body.p-g-mod-t-4 .checkout-subtitle {
     font-size: 15px;
     color: #666;
     text-align: center;
     margin-bottom: 20px
 }
 
-.login-body .p-g-mod-t-4 .guest-checkout {
+.login-body.p-g-mod-t-4 .guest-checkout {
     text-align: center;
     margin-bottom: -5px;
     margin-top: 25px
 }
 
-.login-body .p-g-mod-t-4 .btn-without-login {
+.login-body.p-g-mod-t-4 .btn-without-login {
     font-size: 15px;
     padding: 12px 18px;
     border-radius: 8px;
@@ -12765,23 +12770,23 @@ header.desktop .easy-autocomplete-container {
     font-weight: 600
 }
 
-.login-body .p-g-mod-t-4 .btn-without-login:hover {
+.login-body.p-g-mod-t-4 .btn-without-login:hover {
     background: #28a745;
     color: #fff;
     box-shadow: 0 3px 6px rgba(40,167,69,.2)
 }
 
-.login-body .p-g-mod-t-4 .guest-info {
+.login-body.p-g-mod-t-4 .guest-info {
     font-size: 13px;
     color: #888;
     margin-top: 6px
 }
 
-.login-body .p-g-mod-t-4 .form-group {
+.login-body.p-g-mod-t-4 .form-group {
     margin-bottom: 18px
 }
 
-.login-body .p-g-mod-t-4 .form-control {
+.login-body.p-g-mod-t-4 .form-control {
     height: 60px;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -12790,13 +12795,13 @@ header.desktop .easy-autocomplete-container {
     transition: border .3s ease-in-out
 }
 
-.login-body .p-g-mod-t-4 .form-control:focus {
+.login-body.p-g-mod-t-4 .form-control:focus {
     border-color: #28a745;
     box-shadow: 0 0 6px rgba(40,167,69,.2);
     outline: 0
 }
 
-.login-body .p-g-mod-t-4 .login-form input,.login-body .p-g-mod-t-4 .register-form input {
+.login-body.p-g-mod-t-4 .login-form input,.login-body.p-g-mod-t-4 .register-form input {
     display: block;
     margin-bottom: 15px;
     background-color: #fff!important
@@ -12889,7 +12894,7 @@ header.desktop .easy-autocomplete-container {
     text-decoration: none
 }
 
-.customer-support a:hover,.login-body .p-g-mod-t-4 .forgot-password:hover,.login-body .p-g-mod-t-4 .forgot-passwords:hover,.whatsapp-link:hover {
+.customer-support a:hover,.login-body.p-g-mod-t-4 .forgot-password:hover,.login-body.p-g-mod-t-4 .forgot-passwords:hover,.whatsapp-link:hover {
     text-decoration: underline
 }
 
@@ -12916,7 +12921,7 @@ header.desktop .easy-autocomplete-container {
     }
 }
 
-.login-body .p-g-mod-t-4 .forgot-password,.login-body .p-g-mod-t-4 .forgot-passwords {
+.login-body.p-g-mod-t-4 .forgot-password,.login-body.p-g-mod-t-4 .forgot-passwords {
     text-align: right;
     font-size: 13px;
     color: #28a745;
@@ -12929,11 +12934,11 @@ header.desktop .easy-autocomplete-container {
     margin-right: 15px
 }
 
-.login-body .p-g-mod-t-4 .forgot-passwords {
+.login-body.p-g-mod-t-4 .forgot-passwords {
     text-align: left
 }
 
-.login-body .p-g-mod-t-4 .btn-success {
+.login-body.p-g-mod-t-4 .btn-success {
     background: #36b252;
     color: #fff;
     font-size: 16px;
@@ -12944,16 +12949,16 @@ header.desktop .easy-autocomplete-container {
     width: 100%
 }
 
-.login-body .p-g-mod-t-4 .btn-success:hover {
+.login-body.p-g-mod-t-4 .btn-success:hover {
     background: #218838;
     box-shadow: 0 3px 6px rgba(40,167,69,.2)
 }
 
-.login-body .p-g-mod-t-4 .checkout-tabs {
+.login-body.p-g-mod-t-4 .checkout-tabs {
     margin-bottom: 25px
 }
 
-.login-body .p-g-mod-t-4 .nav-tabs {
+.login-body.p-g-mod-t-4 .nav-tabs {
     display: flex;
     justify-content: center;
     border: 0;
@@ -12961,7 +12966,7 @@ header.desktop .easy-autocomplete-container {
     padding: 1px 0 0
 }
 
-.login-body .p-g-mod-t-4 .nav-tabs .nav-link {
+.login-body.p-g-mod-t-4 .nav-tabs .nav-link {
     padding: 12px 50px;
     font-size: 15px;
     font-weight: 600;
@@ -12996,14 +13001,14 @@ header.desktop .easy-autocomplete-container {
     display: inline-block
 }
 
-.login-body .p-g-mod-t-4 .nav-tabs .nav-link.active {
+.login-body.p-g-mod-t-4 .nav-tabs .nav-link.active {
     background-color: #fff;
     z-index: 1;
     transform: scaleX(1.2);
     border: 1px solid #dee2e6
 }
 
-.login-body .p-g-mod-t-4 .nav-tabs .nav-link:not(.active) {
+.login-body.p-g-mod-t-4 .nav-tabs .nav-link:not(.active) {
     background-color: #f8f9fa;
     border: 1px solid #dee2e6;
     position: relative
@@ -13067,28 +13072,28 @@ header.desktop .easy-autocomplete-container {
     background-color: #333
 }
 
-.login-body .p-g-mod-t-4 .nav-tabs .nav-link:hover {
+.login-body.p-g-mod-t-4 .nav-tabs .nav-link:hover {
     background: #fff;
     color: #28a745
 }
 
-.login-body .p-g-mod-t-4 .tab-content {
+.login-body.p-g-mod-t-4 .tab-content {
     padding: 20px
 }
 
-.login-body .p-g-mod-t-4 .social-login {
+.login-body.p-g-mod-t-4 .social-login {
     text-align: center;
     margin-top: 18px
 }
 
-.login-body .p-g-mod-t-4 .social-login p {
+.login-body.p-g-mod-t-4 .social-login p {
     font-size: 14px;
     font-weight: 600;
     color: #555;
     margin-bottom: 12px
 }
 
-.login-body .p-g-mod-t-4 .social-login .btn {
+.login-body.p-g-mod-t-4 .social-login .btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -13101,25 +13106,25 @@ header.desktop .easy-autocomplete-container {
     transition: all .3s ease-in-out
 }
 
-.login-body .p-g-mod-t-4 .btn-facebook {
+.login-body.p-g-mod-t-4 .btn-facebook {
     background: #3b5998;
     color: #fff
 }
 
-.login-body .p-g-mod-t-4 .btn-facebook:hover {
+.login-body.p-g-mod-t-4 .btn-facebook:hover {
     background: #2d4373
 }
 
-.login-body .p-g-mod-t-4 .btn-google {
+.login-body.p-g-mod-t-4 .btn-google {
     background: #db4437;
     color: #fff
 }
 
-.login-body .p-g-mod-t-4 .btn-google:hover {
+.login-body.p-g-mod-t-4 .btn-google:hover {
     background: #c1351d
 }
 
-.login-body .p-g-mod-t-4 .social-login .btn i {
+.login-body.p-g-mod-t-4 .social-login .btn i {
     font-size: 18px;
     margin-right: 8px
 }
@@ -13221,11 +13226,11 @@ header.desktop .easy-autocomplete-container {
         padding: 20px
     }
 
-    .login-body .p-g-mod-t-4 .tab-content {
+    .login-body.p-g-mod-t-4 .tab-content {
         padding: 0
     }
 
-    .login-body .p-g-mod-t-4 .nav-tabs .nav-link {
+    .login-body.p-g-mod-t-4 .nav-tabs .nav-link {
         padding: 12px 46px;
         font-size: 15px
     }
@@ -15179,6 +15184,9 @@ div#product-balance-block {
 }
 
 .password-container .toggle-password {
+    background: transparent;
+    border: 0;
+    padding: 0;
     position: absolute;
     top: 50%;
     right: 10px;
