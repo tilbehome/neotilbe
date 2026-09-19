@@ -1,5 +1,7 @@
 # Tilbe Home — İlk İnceleme ve Düzeltme Planı
 
+> Bu belge ilk incelemenin tarihsel kaydıdır. Güncel, bütün temayı kapsayan onarım planı ve sorun durumları [kapsamli-denetim.md](kapsamli-denetim.md), 360 dosyanın durum envanteri [tema-envanteri.md](tema-envanteri.md) içindedir. İlk üç düzeltme toplam kapsamı sınırlamaz.
+
 Tarih: 19 Eylül 2026. Kapsam: yerel Gold özelleştirmesinin Qukasoft referansları ve Shuttle ile statik karşılaştırılması. Tema veya referans kaynakları değiştirilmedi. Canlı mağazaya, müşteri verilerine ve mağaza API uçlarına istek gönderilmedi.
 
 ## 1. Proje ve Git durumu
