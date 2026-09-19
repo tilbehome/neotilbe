@@ -1,0 +1,270 @@
+{
+  "baselineCommit": "67e49d63e9d8efe778b3a167d73629708b8a35a9",
+  "beforeBytes": 313245,
+  "afterBytes": 311774,
+  "removed": [
+    {
+      "line": 608,
+      "endLine": 611,
+      "start": 10652,
+      "end": 10748,
+      "scope": [
+        "@media (max-width:992px)"
+      ],
+      "selector": ".corporate-feature-card,.service-item",
+      "body": "{width:50%;margin-bottom:30px}",
+      "duplicateOf": 889,
+      "reason": "Identical later rule in identical media scope"
+    },
+    {
+      "line": 613,
+      "endLine": 616,
+      "start": 10756,
+      "end": 10820,
+      "scope": [
+        "@media (max-width:992px)"
+      ],
+      "selector": ".info-column",
+      "body": "{width:100%;float:none}",
+      "duplicateOf": 894,
+      "reason": "Identical later rule in identical media scope"
+    },
+    {
+      "line": 618,
+      "endLine": 622,
+      "start": 10828,
+      "end": 10992,
+      "scope": [
+        "@media (max-width:992px)"
+      ],
+      "selector": ".corporate-market-block .market-links,.corporate-market-block .social-links-corporate",
+      "body": "{width:100%;float:none;text-align:left}",
+      "duplicateOf": 899,
+      "reason": "Identical later rule in identical media scope"
+    },
+    {
+      "line": 631,
+      "endLine": 633,
+      "start": 11126,
+      "end": 11173,
+      "scope": [
+        "@media (max-width:600px)"
+      ],
+      "selector": ".corporate-h1",
+      "body": "{font-size:28px}",
+      "duplicateOf": 911,
+      "reason": "Identical later rule in identical media scope"
+    },
+    {
+      "line": 635,
+      "endLine": 639,
+      "start": 11181,
+      "end": 11300,
+      "scope": [
+        "@media (max-width:600px)"
+      ],
+      "selector": ".corporate-feature-card,.service-item",
+      "body": "{width:100%;float:none;margin-bottom:20px}",
+      "duplicateOf": 915,
+      "reason": "Identical later rule in identical media scope"
+    },
+    {
+      "line": 646,
+      "endLine": 648,
+      "start": 11419,
+      "end": 11498,
+      "scope": [
+        "@media (max-width:600px)"
+      ],
+      "selector": ".corporate-feature-card,.info-column,.service-item",
+      "body": "{padding:0}",
+      "duplicateOf": 926,
+      "reason": "Identical later rule in identical media scope"
+    },
+    {
+      "line": 650,
+      "endLine": 652,
+      "start": 11506,
+      "end": 11566,
+      "scope": [
+        "@media (max-width:600px)"
+      ],
+      "selector": ".social-links-corporate",
+      "body": "{text-align:center}",
+      "duplicateOf": 930,
+      "reason": "Identical later rule in identical media scope"
+    },
+    {
+      "line": 9478,
+      "endLine": 9480,
+      "start": 190305,
+      "end": 190359,
+      "scope": [
+        "@media (max-width:991px)"
+      ],
+      "selector": ".cstm-manset-block",
+      "body": "{max-height:250px}",
+      "duplicateOf": 9871,
+      "reason": "Identical later rule in identical media scope"
+    },
+    {
+      "line": 9871,
+      "endLine": 9873,
+      "start": 199330,
+      "end": 199384,
+      "scope": [
+        "@media (max-width:991px)"
+      ],
+      "selector": ".cstm-manset-block",
+      "body": "{max-height:250px}",
+      "duplicateOf": 10041,
+      "reason": "Identical later rule in identical media scope"
+    },
+    {
+      "line": 10041,
+      "endLine": 10043,
+      "start": 203206,
+      "end": 203260,
+      "scope": [
+        "@media (max-width:991px)"
+      ],
+      "selector": ".cstm-manset-block",
+      "body": "{max-height:250px}",
+      "duplicateOf": 10055,
+      "reason": "Identical later rule in identical media scope"
+    },
+    {
+      "line": 625,
+      "start": 11035,
+      "end": 11053,
+      "selector": ".social-links-corporate",
+      "scope": [
+        "@media (max-width:992px)"
+      ],
+      "property": "text-align",
+      "value": "center",
+      "important": false,
+      "retainedLine": 906,
+      "reason": "Identical later declaration, selector and media scope"
+    },
+    {
+      "line": 7363,
+      "start": 142757,
+      "end": 142772,
+      "selector": ".product-profile-1 .product-short-desc",
+      "scope": [
+        "@media (max-width:768px)"
+      ],
+      "property": "font-size",
+      "value": "12px",
+      "important": false,
+      "retainedLine": 7384,
+      "reason": "Identical later declaration, selector and media scope"
+    },
+    {
+      "line": 7364,
+      "start": 142783,
+      "end": 142799,
+      "selector": ".product-profile-1 .product-short-desc",
+      "scope": [
+        "@media (max-width:768px)"
+      ],
+      "property": "line-height",
+      "value": "1.5",
+      "important": false,
+      "retainedLine": 7385,
+      "reason": "Identical later declaration, selector and media scope"
+    },
+    {
+      "line": 9933,
+      "start": 200803,
+      "end": 200826,
+      "selector": ".cstm-manset-block",
+      "scope": [
+        "@media (max-width:991px)"
+      ],
+      "property": "max-height",
+      "value": "250px",
+      "important": false,
+      "retainedLine": 10042,
+      "reason": "Identical later declaration, selector and media scope"
+    },
+    {
+      "line": 13740,
+      "start": 277400,
+      "end": 277415,
+      "selector": ".product-buttons-container .btn-custom",
+      "scope": [
+        "@media (max-width:768px)"
+      ],
+      "property": "font-size",
+      "value": "14px",
+      "important": false,
+      "retainedLine": 13949,
+      "reason": "Identical later declaration, selector and media scope"
+    },
+    {
+      "start": 95307,
+      "end": 95343,
+      "line": 4958,
+      "text": "border-bottom: none!important;",
+      "reason": "Same rule later valid shorthand wins"
+    },
+    {
+      "start": 140706,
+      "end": 140727,
+      "line": 7259,
+      "text": "position: left;",
+      "reason": "Invalid CSS value ignored by browser"
+    },
+    {
+      "start": 143715,
+      "end": 143736,
+      "line": 7407,
+      "text": "position: left;",
+      "reason": "Invalid CSS value ignored by browser"
+    },
+    {
+      "start": 146968,
+      "end": 146996,
+      "line": 7556,
+      "text": "align-items: left;",
+      "reason": "Invalid CSS value ignored by browser"
+    },
+    {
+      "start": 147928,
+      "end": 147952,
+      "line": 7601,
+      "text": "align-items: left;",
+      "reason": "Invalid CSS value ignored by browser"
+    },
+    {
+      "start": 206720,
+      "end": 206744,
+      "line": 10226,
+      "text": "align-items: left;",
+      "reason": "Invalid CSS value ignored by browser"
+    },
+    {
+      "start": 279696,
+      "end": 279757,
+      "line": 13854,
+      "text": "background: linear-gradient(to bottom,#ff9800,#d97706);",
+      "reason": "Same rule later valid shorthand wins"
+    },
+    {
+      "start": 298011,
+      "end": 298106,
+      "line": 14778,
+      "endLine": 14782,
+      "reason": "Unconditional later font-size already identical"
+    },
+    {
+      "start": 298258,
+      "end": 298413,
+      "line": 14792,
+      "endLine": 14798,
+      "reason": "Invalid 768x media; all declarations superseded below even if corrected"
+    }
+  ]
+}

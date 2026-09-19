@@ -3057,8 +3057,8 @@
   {
     "file": "canlitema/assets/style.css",
     "category": "CSS",
-    "bytes": 313245,
-    "sha256": "9a9ad7ffa0013fd62c61080b39d0e3addc04a938ac6497d1d68b6efc7c404de0",
+    "bytes": 311774,
+    "sha256": "f079d1013eae7569e4afa436a5bcdab707e063eb329006c972c264842e60ac82",
     "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
@@ -3068,10 +3068,10 @@
       "platformdaDogrulamaBekliyor": true
     },
     "review": {
-      "scope": "Giriş yerleşimi, menü kilitleri ve kategori dialog kilidi; bütün CSS kabulü açık; 05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil; 06 raporundaki somut onarım; dosya geneli kabul değil",
+      "scope": "Tam AST/değer/medya incelemesi; kanıtlı tekrar temizliği, bağlı seçiciler ve sınırlı yerel görsel kontrol; tüm sayfa/durum kabulü değil",
       "fixed": true,
       "local": true,
-      "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md"
+      "evidence": "css-denetimi.md; css-temizlik-kaniti.json; css-cascade-results.json"
     },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
@@ -3080,12 +3080,12 @@
       {
         "kind": "absolute-theme-url",
         "lines": [
-          4690,
-          8879,
-          8972,
-          9069,
-          9199,
-          9289
+          4656,
+          8838,
+          8931,
+          9028,
+          9158,
+          9248
         ]
       }
     ]

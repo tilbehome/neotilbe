@@ -186,10 +186,10 @@
     "evidence": "platform-uyum-04-kontrol.md"
   },
   "canlitema/assets/style.css": {
-    "scope": "Giriş yerleşimi, menü kilitleri ve kategori dialog kilidi; bütün CSS kabulü açık; 05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil; 06 raporundaki somut onarım; dosya geneli kabul değil",
+    "scope": "Tam AST/değer/medya incelemesi; kanıtlı tekrar temizliği, bağlı seçiciler ve sınırlı yerel görsel kontrol; tüm sayfa/durum kabulü değil",
     "fixed": true,
     "local": true,
-    "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md"
+    "evidence": "css-denetimi.md; css-temizlik-kaniti.json; css-cascade-results.json"
   },
   "canlitema/moduller/hediye_ceki/kart.twig": {
     "scope": "05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil",

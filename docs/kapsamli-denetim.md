@@ -109,6 +109,7 @@ Güncel durumun tek kaynağı `sorun-durumlari.json`; aşağıdaki tablo bu kay�
 | SB1 | assets/smartbanner.js; sablon.twig | HTML metin kaçışı, pushSelector ve mevcut transition helperını koruma | onarım uygulandı; rapordaki yerel kapsam doğrulandı; platform kabulü açık | platform-uyum-06-kontrol.md |
 | HTML2 | odeme/siparis_onayi.twig; kategoriler/filtreleme/fiyatlar.twig | Başlık kapanışı ve fiyat kontrol adları | onarım uygulandı; rapordaki yerel kapsam doğrulandı; platform kabulü açık | platform-uyum-06-kontrol.md |
 | JS2 | urunler/hizli_sepet_kutusu.twig; siparislerim.twig; bakiye_dekontu.twig | Biçimli fiyat JS kaçışı; sipariş/yazdırma metnini data niteliğiyle taşıma | onarım uygulandı; rapordaki yerel kapsam doğrulandı; platform kabulü açık | platform-uyum-06-kontrol.md |
+| CSS3 | canlitema/assets/style.css; başlangıç satırları css-temizlik-kaniti.json | Aynı medya kapsamındaki tekrarlar, ezilen ve geçersiz bildirimler kaldırıldı; Gold cascade korundu | onarım uygulandı; 11 genişlikte yerel cascade doğrulandı; tam sayfa/platform görsel kabulü açık | css-denetimi.md; css-cascade-results.json |
 <!-- CURRENT_ISSUES_END -->
 
 ## Platformla kesinleştirilmesi gerekenler

@@ -605,51 +605,17 @@ body,html {
 }
 
 @media (max-width:992px) {
-    .corporate-feature-card,.service-item {
-        width: 50%;
-        margin-bottom: 30px
-    }
-
-    .info-column {
-        width: 100%;
-        float: none
-    }
-
-    .corporate-market-block .market-links,.corporate-market-block .social-links-corporate {
-        width: 100%;
-        float: none;
-        text-align: left
-    }
-
     .social-links-corporate {
-        text-align: center;
         margin-top: 20px
     }
 }
 
 @media (max-width:600px) {
-    .corporate-h1 {
-        font-size: 28px
-    }
-
-    .corporate-feature-card,.service-item {
-        width: 100%;
-        float: none;
-        margin-bottom: 20px
-    }
-
     .corporate-feature-grid,.corporate-info-2col {
         margin-left: 0;
         margin-right: 0
     }
 
-    .corporate-feature-card,.info-column,.service-item {
-        padding: 0
-    }
-
-    .social-links-corporate {
-        text-align: center
-    }
 }
 
 .corporate-wrapper {
@@ -4955,7 +4921,6 @@ body.loaded .loader-container {
 }
 
 .shipment-methods .method:last-child {
-    border-bottom: none!important;
     overflow: hidden!important;
     border-bottom: 1px solid rgba(0,0,0,.07)!important
 }
@@ -7256,7 +7221,6 @@ footer .bar p {
 
 .product-profile-1 .profile-ust-baslik {
     flex-direction: column;
-    position: left;
     flex-wrap: nowrap;
     text-align: left;
     width: 100%
@@ -7360,8 +7324,6 @@ footer .bar p {
     }
 
     .product-profile-1 .product-short-desc {
-        font-size: 12px;
-        line-height: 1.5;
         margin: 6px 0 12px
     }
 }
@@ -7404,7 +7366,6 @@ footer .bar p {
 
 .profile-ust-baslik {
     flex-direction: column;
-    position: left;
     flex-wrap: nowrap;
     text-align: left;
     width: 100%
@@ -7553,7 +7514,6 @@ footer .bar p {
 
     .ppriceg-right {
         display: flex;
-        align-items: left;
         justify-content: left;
         height: 100%;
         min-width: 300px;
@@ -7598,7 +7558,6 @@ footer .bar p {
 
 .ppriceg-right {
     display: flex;
-    align-items: left;
     justify-content: left;
     height: 100%;
     min-width: 300px;
@@ -9475,10 +9434,6 @@ header.desktop .header-bar .bar-cart .icon .count {
 }
 
 @media (max-width:991px) {
-    .cstm-manset-block {
-        max-height: 250px
-    }
-
     .pattern-group-body .card-product .card-product-inner .free-cargo-badge,.pattern-group-body .card-product .card-product-inner .hizli-teslimat {
         align-items: center;
         border-radius: 3px;
@@ -9868,10 +9823,6 @@ header.desktop .header-cart-hover .btn-remove {
         display: none
     }
 
-    .cstm-manset-block {
-        max-height: 250px
-    }
-
     .custom-module-code-10564 .card-product .card-product-inner .title,.custom-module-code-8397 .card-product .card-product-inner .title {
         width: 95%;
         padding: 0;
@@ -9930,7 +9881,6 @@ header.desktop .header-cart-hover .btn-remove {
 @media (max-width:991px) {
     .cstm-manset-block {
         padding-bottom: 50px;
-        max-height: 250px
     }
 }
 
@@ -10038,9 +9988,6 @@ header.desktop .header-cart-hover .btn-remove {
         flex-direction: column-reverse
     }
 
-    .cstm-manset-block {
-        max-height: 250px
-    }
 }
 
 .category-short-description {
@@ -10223,7 +10170,6 @@ header.desktop .header-cart-hover .btn-remove {
 }
 
 .pbc-item99 {
-    align-items: left;
     gap: 5px;
     height: 75px;
     border: 1px solid #ebf5ff;
@@ -13737,7 +13683,6 @@ cat-responsive-buttons .c-r-p-bar {
 
 @media (max-width:768px) {
     .product-buttons-container .btn-custom {
-        font-size: 14px;
         padding: 12px 8px
     }
 }
@@ -13851,7 +13796,6 @@ cat-responsive-buttons .c-r-p-bar {
 }
 
 .video-btn-988 {
-    background: linear-gradient(to bottom,#ff9800,#d97706);
     padding: 3px 6px;
     border-radius: 50px;
     gap: 10px;
@@ -14775,26 +14719,12 @@ div#product-balance-block {
     letter-spacing: -.03em
 }
 
-@media (max-width:1200px) {
-    .final-vergi-dahil-text {
-        font-size: 12px
-    }
-}
-
 .final-vergi-dahil-text {
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
     letter-spacing: -.03em;
     color: #a1a1a1
-}
-
-@media (max-width:768x) {
-    .payment-cart-summary-1 {
-        padding: 20px 15px 0;
-        margin-bottom: 15px;
-        margin-top: -8px
-    }
 }
 
 @media (max-width:991px) {

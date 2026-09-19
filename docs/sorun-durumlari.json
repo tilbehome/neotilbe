@@ -355,5 +355,12 @@
     "remedy": "Biçimli fiyat JS kaçışı; sipariş/yazdırma metnini data niteliğiyle taşıma",
     "status": "onarım uygulandı; rapordaki yerel kapsam doğrulandı; platform kabulü açık",
     "evidence": "platform-uyum-06-kontrol.md"
+  },
+  {
+    "id": "CSS3",
+    "location": "canlitema/assets/style.css; başlangıç satırları css-temizlik-kaniti.json",
+    "remedy": "Aynı medya kapsamındaki tekrarlar, ezilen ve geçersiz bildirimler kaldırıldı; Gold cascade korundu",
+    "status": "onarım uygulandı; 11 genişlikte yerel cascade doğrulandı; tam sayfa/platform görsel kabulü açık",
+    "evidence": "css-denetimi.md; css-cascade-results.json"
   }
 ]

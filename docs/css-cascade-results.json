@@ -1,0 +1,51 @@
+{
+  "baseline": "67e49d6",
+  "networkBlocked": true,
+  "scope": "Synthetic affected selectors, reference CSS before theme CSS; not full page or Qukasoft",
+  "results": [
+    {
+      "width": 320,
+      "allComputedPropertiesEqual": true
+    },
+    {
+      "width": 375,
+      "allComputedPropertiesEqual": true
+    },
+    {
+      "width": 600,
+      "allComputedPropertiesEqual": true
+    },
+    {
+      "width": 601,
+      "allComputedPropertiesEqual": true
+    },
+    {
+      "width": 768,
+      "allComputedPropertiesEqual": true
+    },
+    {
+      "width": 769,
+      "allComputedPropertiesEqual": true
+    },
+    {
+      "width": 991,
+      "allComputedPropertiesEqual": true
+    },
+    {
+      "width": 992,
+      "allComputedPropertiesEqual": true
+    },
+    {
+      "width": 993,
+      "allComputedPropertiesEqual": true
+    },
+    {
+      "width": 1200,
+      "allComputedPropertiesEqual": true
+    },
+    {
+      "width": 1440,
+      "allComputedPropertiesEqual": true
+    }
+  ]
+}
