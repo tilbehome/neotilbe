@@ -11,30 +11,29 @@
             <img src="{{ temaDosyalari('/assets/images/secure_logo-1.webp') }}" alt="Icon">
         </div>
      
-{# 🚚 Profesyonel Zarif Bedava Kargo Barı #}
-{% set kargoLimit = 500 %}
-{% set toplam = sepetBilgileri('ozet').genel_toplam %}
-{% set kalan = kargoLimit - toplam %}
-{% set progress = (toplam / kargoLimit) * 100 %}
-{% if progress > 100 %}{% set progress = 100 %}{% endif %}
-
-<div class="inset-shipping-bar {% if kalan <= 0 %}free-shipping-active{% endif %}">
-    <div class="inset-bar-progress" style="width: {{ progress }}%;"></div>
+{# Shipping eligibility and formatted remainder belong to the platform. #}
+{% set kargoUcretsiz = ucretsizKargoLimitleri('ucretsiz_kargo') %}
+{% set kargoKalanGoster = ucretsizKargoLimitleri('kalan_tutar_goster') %}
+{% if kargoUcretsiz or kargoKalanGoster %}
+<div class="inset-shipping-bar {% if kargoUcretsiz %}free-shipping-active{% endif %}">
+    {% if kargoUcretsiz %}
+        <div class="inset-bar-progress" style="width: 100%;"></div>
+    {% endif %}
     <div class="inset-bar-content">
-        <div class="inset-bar-icon">
-            <i class="fa fa-truck"></i>
-        </div>
+        <div class="inset-bar-icon"><i class="fa fa-truck" aria-hidden="true"></i></div>
         <div class="inset-bar-text">
-            {% if kalan > 0 %}
-          <div class="inset-bar-message">
-    Sepetine <strong>{{ kalan|number_format(2, ',', '.') }} TL</strong> daha ürün ekle, ücretsiz kargo fırsatını kaçırma!  <a href="/viral-urunler" class="inset-bar-arrow">  &#10148;</a>
-</div>
-            {% else %}
+            {% if kargoUcretsiz %}
                 <span class="inset-bar-free">Bu Siparişte Kargo Bedava!</span>
+            {% else %}
+                <div class="inset-bar-message">
+                    Sepetine <strong>{{ ucretsizKargoLimitleri('kalan_tutar') }}</strong> daha ürün ekle, ücretsiz kargo fırsatını kaçırma!
+                    <a href="/viral-urunler" class="inset-bar-arrow" aria-label="Ürünleri incele">&#10148;</a>
+                </div>
             {% endif %}
         </div>
     </div>
 </div>
+{% endif %}
         <table class="table summary">
             <tfoot class="table-alt-cizgi">
                 {% if ayarlar('siparis_kdv_haric_gosterim') %}

@@ -212,19 +212,19 @@
                                         <select class="form-control" data-variant="{{ index }}" data-variant-name="{{ varyant.baslik }}">
                                             <option value="">{{ cevir('lutfen_secin') }}</option>
                                             {% for var in varyant.degerler %}
-                                                <option value="{{ var.deger }}" data-variant-value="{{ var.deger }}">{{ var.deger }}</option>
+                                                <option value="{{ var.deger | e }}" data-variant-value="{{ var.deger | e }}">{{ var.deger }}</option>
                                             {% endfor %}
                                         </select>
                                         <div class="options">
                                             {% for var in varyant.degerler %}
                                                 <a href="javascript:;"
                                                    data-variant="{{ index }}"
-                                                   data-variant-value="{{ var.deger }}"
+                                                   data-variant-value="{{ var.deger | e }}"
                                                    onclick="changeProductPageVariant(
                                                            PRODUCT_PAGE_DATA,
                                                            'div[data-product-id=\'{{ sayfaBilgileri('ID') }}\'] .variant-box',
                                                            'div[data-product-id=\'{{ sayfaBilgileri('ID') }}\'] .sale-variant-price',
-                                                           '{{ var.deger }}',
+                                                           this.getAttribute('data-variant-value'),
                                                    {{ var.stokta_var_mi ? 'true' : 'false' }},
                                                    {{ index }})"
                                                    class="{{ var.stokta_var_mi ? '' : 'sold-out' }}">
@@ -237,23 +237,23 @@
                                     <li class="variant">
                                         <div class="name"><span>{{ varyant.baslik }}:</span></div>
                                         <select class="form-control d-block" data-variant="{{ index }}" data-variant-name="{{ varyant.baslik }}"
-                                                onchange=$('a[data-vx-value=\"{{ index }}--'+$(this).val()+'\"]').click()>
+                                                onchange="tilbeSelectProductVariant(this)">
                                             <option value="">{{ cevir('lutfen_secin') }}</option>
                                             {% for var in varyant.degerler %}
-                                                <option value="{{ var.deger }}" data-quantity-check="{{ var.deger }}" data-variant-value="{{ var.deger }}">{{ var.deger }}</option>
+                                                <option value="{{ var.deger | e }}" data-quantity-check="{{ var.deger | e }}" data-variant-value="{{ var.deger | e }}">{{ var.deger }}</option>
                                             {% endfor %}
                                         </select>
                                         <div class="options d-none">
                                             {% for var in varyant.degerler %}
                                                 <a href="javascript:;"
                                                    data-variant="{{ index }}"
-                                                   data-variant-value="{{ var.deger }}"
-                                                   data-vx-value="{{ index }}--{{ var.deger }}"
+                                                   data-variant-value="{{ var.deger | e }}"
+                                                   data-vx-value="{{ index }}--{{ var.deger | e }}"
                                                    onclick="changeProductPageVariant(
                                                            PRODUCT_PAGE_DATA,
                                                            'div[data-product-id=\'{{ sayfaBilgileri('ID') }}\'] .variant-box',
                                                            'div[data-product-id=\'{{ sayfaBilgileri('ID') }}\'] .sale-variant-price',
-                                                           '{{ var.deger }}',
+                                                           this.getAttribute('data-variant-value'),
                                                    {{ var.stokta_var_mi ? 'true' : 'false' }},
                                                    {{ index }})"
                                                    class="{{ var.stokta_var_mi ? '' : 'sold-out' }}">

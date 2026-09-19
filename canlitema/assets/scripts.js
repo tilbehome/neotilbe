@@ -128,22 +128,7 @@ function addCartSuccessEvent(id, page, settings, data, result){
     });
 }
 
-/* Kargo Fişi Ekleme */
-function completeBeforePaymentStep(step){
-    if (step == 1){
-        if ($("*[data-payment-box-form='shipping-template'] #orderShipmentfile").length == 0) return false;
-        var file = $("*[data-payment-box-form='shipping-template'] #orderShipmentfile")[0].files[0];
-        if (file === undefined) return false;
-        var files = new FormData();
-        files.append('shipment_file', file);
-        ajaxFormGate(
-            'POST', 'Payment', 'shipmentFile', files, false, function(result){
-                
-            }, false
-        );
-    }
-    return true;
-}
+// Shipment files are submitted by the platform completePaymentStep FormData path.
 
 /* Footer Menü Toogle */
 function mobileFooterToggle(cls1){
@@ -168,3 +153,15 @@ $(document).ready(function(){
         });
     });
 });
+// Match the selected value as data, never as a CSS selector or JavaScript source.
+function tilbeSelectProductVariant(select) {
+    var group = select.closest(".variant");
+    if (!group) return;
+    var choices = group.querySelectorAll("a[data-variant-value]");
+    for (var i = 0; i < choices.length; i++) {
+        if (choices[i].getAttribute("data-variant-value") === select.value) {
+            choices[i].click();
+            return;
+        }
+    }
+}

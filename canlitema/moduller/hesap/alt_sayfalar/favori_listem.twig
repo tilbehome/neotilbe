@@ -15,7 +15,7 @@
 			</thead>
 			<tbody>
                 {% for favori in kullaniciFavoriListesi() %}
-                    <tr>
+                    <tr data-user-product-id="{{ favori.ID }}">
                         <td style="width: 100px">
                             <a href="{{ favori.link }}" class="d-block">
                                 {{ gorsel.lazy(favori.resim, 'd-block w-100 image', favori.adi_alt) }}
@@ -33,7 +33,7 @@
                             </a>
                         </td>
                         <td>
-                            <a href="javascript:;" class="remove text-danger" onclick="userProductFavourite('remove', {{ favori.ID }}, 'account')"><i class="fa fa-times"></i></a>
+                            <a href="javascript:;" class="remove text-danger" aria-label="Favorilerimden kaldır" onclick="userProductFavourite('remove', {{ favori.ID }}, 'account')"><i class="fa fa-times"></i></a>
                         </td>
                     </tr>
                 {% endfor %}

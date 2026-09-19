@@ -9,7 +9,7 @@
 
         <form class="forgot-password-form" action="" method="post" onsubmit="return userForgotPassword(this)">
             <input type="hidden" name="returnUrl" value="{{ returnUrl() }}" />
-            <input type="text" class="forgot-password-input" name="email" placeholder="E-posta adresinizi girin" required>
+            <input type="text" class="forgot-password-input" name="email" aria-label="E-posta adresinizi girin" placeholder="E-posta adresinizi girin" required>
             <button type="submit" class="forgot-password-btn">
                 <i class="fa fa-paper-plane"></i> Şifre Sıfırlama Linki Gönder
             </button>
