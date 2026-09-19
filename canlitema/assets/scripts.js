@@ -165,3 +165,22 @@ function tilbeSelectProductVariant(select) {
         }
     }
 }
+
+// Resolve the video from the clicked control, not a repeated index/global ID.
+function tilbePlayProductVideo(button) {
+    var holder = button.closest('.video');
+    var video = holder && holder.querySelector('video');
+    if (!video || button.disabled) return;
+    button.disabled = true;
+    function started() {
+        button.disabled = false;
+        video.controls = true;
+        button.style.display = 'none';
+    }
+    function failed() { button.disabled = false; }
+    try {
+        var playing = video.play();
+        if (playing && typeof playing.then === 'function') playing.then(started, failed);
+        else started();
+    } catch (error) { failed(); }
+}

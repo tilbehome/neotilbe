@@ -1,3 +1,4 @@
+<div data-tilbe-video-gallery>
 <!-- Ana Kategori Div -->
 <div class="tilbe-bv04kf-categoray">
     <div class="tilbe-bv04kf-category-title">Popüler Videolar</div>
@@ -5,7 +6,7 @@
     <!-- Video Galeri Swiper -->
     <swiper-container init="false" class="swiper-container" space-between="20" loop="true" autoplay="true" autoplay-delay="3000">
         <!-- Video 1 -->
-        <swiper-slide class="tilbe-bv04kf-video-item" onclick="openModal('https://www.youtube.com/embed/NBDPrVt-O6M')">
+        <swiper-slide class="tilbe-bv04kf-video-item" data-video-src="https://www.youtube.com/embed/NBDPrVt-O6M" role="button" tabindex="0" aria-label="Videoyu aç">
             <img class="tilbe-bv04kf-video-thumbnail" src="https://img.youtube.com/vi/NBDPrVt-O6M/maxresdefault.jpg" alt="Video 1">
             <div class="tilbe-bv04kf-video-icon">&#9654;</div> <!-- Video ikonu -->
             <div class="tilbe-bv04kf-video-content">
@@ -15,7 +16,7 @@
         </swiper-slide>
 
         <!-- Video 2 -->
-        <swiper-slide class="tilbe-bv04kf-video-item" onclick="openModal('https://www.youtube.com/embed/ddHsLcN402Y')">
+        <swiper-slide class="tilbe-bv04kf-video-item" data-video-src="https://www.youtube.com/embed/ddHsLcN402Y" role="button" tabindex="0" aria-label="Videoyu aç">
             <img class="tilbe-bv04kf-video-thumbnail" src="https://img.youtube.com/vi/ddHsLcN402Y/maxresdefault.jpg" alt="Video 2">
             <div class="tilbe-bv04kf-video-icon">&#9654;</div> <!-- Video ikonu -->
             <div class="tilbe-bv04kf-video-content">
@@ -25,7 +26,7 @@
         </swiper-slide>
 
         <!-- Video 3 -->
-        <swiper-slide class="tilbe-bv04kf-video-item" onclick="openModal('https://www.youtube.com/embed/IYesAhg48B4')">
+        <swiper-slide class="tilbe-bv04kf-video-item" data-video-src="https://www.youtube.com/embed/IYesAhg48B4" role="button" tabindex="0" aria-label="Videoyu aç">
             <img class="tilbe-bv04kf-video-thumbnail" src="https://img.youtube.com/vi/IYesAhg48B4/maxresdefault.jpg" alt="Video 3">
             <div class="tilbe-bv04kf-video-icon">&#9654;</div> <!-- Video ikonu -->
             <div class="tilbe-bv04kf-video-content">
@@ -35,7 +36,7 @@
         </swiper-slide>
 
         <!-- Video 4 -->
-        <swiper-slide class="tilbe-bv04kf-video-item" onclick="openModal('https://www.youtube.com/embed/VHPmYUbFqZg')">
+        <swiper-slide class="tilbe-bv04kf-video-item" data-video-src="https://www.youtube.com/embed/VHPmYUbFqZg" role="button" tabindex="0" aria-label="Videoyu aç">
             <img class="tilbe-bv04kf-video-thumbnail" src="https://img.youtube.com/vi/VHPmYUbFqZg/maxresdefault.jpg" alt="Video 4">
             <div class="tilbe-bv04kf-video-icon">&#9654;</div> <!-- Video ikonu -->
             <div class="tilbe-bv04kf-video-content">
@@ -45,7 +46,7 @@
         </swiper-slide>
 
         <!-- Video 5 -->
-        <swiper-slide class="tilbe-bv04kf-video-item" onclick="openModal('https://www.youtube.com/embed/rj6a_sT5nKc')">
+        <swiper-slide class="tilbe-bv04kf-video-item" data-video-src="https://www.youtube.com/embed/rj6a_sT5nKc" role="button" tabindex="0" aria-label="Videoyu aç">
             <img class="tilbe-bv04kf-video-thumbnail" src="https://img.youtube.com/vi/rj6a_sT5nKc/maxresdefault.jpg" alt="Video 5">
             <div class="tilbe-bv04kf-video-icon">&#9654;</div> <!-- Video ikonu -->
             <div class="tilbe-bv04kf-video-content">
@@ -60,10 +61,10 @@
 </div>
 
 <!-- Video Modal -->
-<div class="tilbe-bv04kf-modal" id="videoModal">
+<div class="tilbe-bv04kf-modal" data-tilbe-video-dialog hidden role="dialog" aria-modal="true" aria-label="Ürün videosu">
     <div class="tilbe-bv04kf-modal-content">
-        <span class="tilbe-bv04kf-close-modal" onclick="closeModal()">&times;</span>
-        <iframe id="videoIframe" width="100%" height="100%" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <button type="button" class="tilbe-bv04kf-close-modal" data-video-close aria-label="Videoyu kapat">&times;</button>
+        <iframe title="Ürün videosu oynatıcısı" width="100%" height="100%" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
 </div>
 
@@ -98,18 +99,5 @@
 })();
 </script>
 
-<script>
-    // Video açma fonksiyonu
-    function openModal(videoUrl) {
-        const iframe = document.getElementById('videoIframe');
-        iframe.src = videoUrl; // Video URL'sini iframe'e ekliyoruz
-        document.getElementById('videoModal').style.display = 'block'; // Modal'ı açıyoruz
-    }
-
-    // Modal'ı kapama fonksiyonu
-    function closeModal() {
-        const iframe = document.getElementById('videoIframe');
-        iframe.src = ''; // iframe kaynağını temizliyoruz
-        document.getElementById('videoModal').style.display = 'none'; // Modal'ı kapatıyoruz
-    }
-</script>
+</div>
+<script src="{{ temaDosyalari('/assets/video-gallery.js') }}" defer></script>

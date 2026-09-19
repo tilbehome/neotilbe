@@ -37,11 +37,11 @@
                         <div class="carousel-item {{ index == 0 ? 'active' : '' }}">
                                 {% if resim.tipi == 'video' %}
                                     <div class="video position-relative">
-                                        <video id="video-{{ index }}" muted loop playsinline webkit-playsinline>
+                                        <video muted loop playsinline webkit-playsinline>
                                             <source src="{{ resim.video_url }}" type="{{ resim.video_tipi }}">
-                                            </source>
+
                                         </video>
-                                        <button class="video-play-btn" onclick="playVideo('{{ index }}', this)">
+                                        <button type="button" class="video-play-btn" aria-label="Ürün videosunu oynat" onclick="tilbePlayProductVideo(this)">
                                             <i class="fa fa-play-circle"></i>
                                         </button>
                                     </div>
@@ -54,35 +54,14 @@
                     {% endfor %}
                 </div>
                 
-                <script>
-                    function playVideo(index, btn) {
-    var video = document.getElementById("video-" + index);
-    if (video.paused) {
-        video.play();
-        btn.style.display = "none"; // play’e basınca buton kaybolsun
-    } else {
-        video.pause();
-        btn.style.display = "block"; // tekrar gözüksün
-    }
-}
-
-                </script>
                 
                 
-                {% if sayfaBilgileri('resimler')|length > 1 %}
-                    <a class="carousel-control-prev" href="#product-profile-carousel-{{ sayfaBilgileri('ID') }}" role="button" data-slide="prev">
-                        <i class="fa fa-chevron-left"></i>
-                    </a>
-                    <a class="carousel-control-next" href="#product-profile-carousel-{{ sayfaBilgileri('ID') }}" role="button" data-slide="next">
-                        <i class="fa fa-chevron-right"></i>
-                    </a>
-                {% endif %}
             </div>
-                {% if sayfaBilgileri('resimler')|length > 1 %}
-                    <a class="carousel-control-prev" href="#product-profile-carousel-{{ sayfaBilgileri('ID') }}" role="button" data-slide="prev">
+                {% if sayfaBilgileri('videolu_resimler')|length > 1 %}
+                    <a class="carousel-control-prev" href="#product-profile-carousel-{{ sayfaBilgileri('ID') }}" role="button" aria-label="Önceki görsel" data-slide="prev">
                         <i class="fa fa-chevron-left"></i>
                     </a>
-                    <a class="carousel-control-next" href="#product-profile-carousel-{{ sayfaBilgileri('ID') }}" role="button" data-slide="next">
+                    <a class="carousel-control-next" href="#product-profile-carousel-{{ sayfaBilgileri('ID') }}" role="button" aria-label="Sonraki görsel" data-slide="next">
                         <i class="fa fa-chevron-right"></i>
                     </a>
                 {% endif %}

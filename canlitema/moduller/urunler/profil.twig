@@ -396,11 +396,11 @@
   </div>
 
   <div class="campaignTimerRow Bottom">
-    <div class="timer" id="timer-1">
-      <div id="day" class="time-box"><span>00</span><small>Gün</small></div>
-      <div id="hour" class="time-box"><span>00</span><small>Saat</small></div>
-      <div id="min" class="time-box"><span>00</span><small>Dakika</small></div>
-      <div id="sec" class="time-box"><span>00</span><small>Saniye</small></div>
+    <div class="timer">
+      <div data-shipment-part="day" class="time-box"><span>00</span><small>Gün</small></div>
+      <div data-shipment-part="hour" class="time-box"><span>00</span><small>Saat</small></div>
+      <div data-shipment-part="min" class="time-box"><span>00</span><small>Dakika</small></div>
+      <div data-shipment-part="sec" class="time-box"><span>00</span><small>Saniye</small></div>
     </div>
   </div>
 </div>
@@ -412,10 +412,20 @@
     <div class="kampanya-wrap-99x">
        
 <h2 class="kampanya-title-99x">ÜRÜNÜN KAMPANYALARI</h2>
+        {% set urunKargoUcretsiz = ucretsizKargoLimitleri('ucretsiz_kargo') %}
+        {% set urunKargoKalanGoster = ucretsizKargoLimitleri('kalan_tutar_goster') %}
+        {% if urunKargoUcretsiz or urunKargoKalanGoster %}
         <div class="kampanya-item-99x">
             <div class="kampanya-icon-99x"><i class="fa fa-shipping-fast"></i></div>
-            <div class="kampanya-text-99x">500 TL ve Üzeri <b>Kargo Bedava!</b></div>
+            <div class="kampanya-text-99x">
+                {% if urunKargoUcretsiz %}
+                    Sepetinizde <b>Kargo Bedava!</b>
+                {% else %}
+                    Ücretsiz kargo için sepetinize <b>{{ ucretsizKargoLimitleri('kalan_tutar') }}</b> daha ekleyin.
+                {% endif %}
+            </div>
         </div>
+        {% endif %}
 
         <div class="kampanya-item-99x">
             <div class="kampanya-icon-99x"><i class="fa fa-lock"></i></div>
@@ -520,11 +530,24 @@ document.addEventListener("DOMContentLoaded", function() {
 </script>
 
 <script>
+(function () {
+  document.querySelectorAll('.campaignTimerDiv').forEach(function (root) {
+    if (root.dataset.shipmentTimerReady) return;
+    const title = root.querySelector('.count-end-block .title');
+    const parts = {};
+    for (const key of ['day', 'hour', 'min', 'sec']) {
+      parts[key] = root.querySelector('[data-shipment-part="' + key + '"] span');
+      if (!parts[key]) return;
+    }
+    if (!title) return;
+    root.dataset.shipmentTimerReady = 'true';
+
 function getTurkeyTime() {
   return new Date(new Date().toLocaleString("en-US", { timeZone: "Europe/Istanbul" }));
 }
 
 function updateCountdown() {
+  if (!root.isConnected) return;
   const now = getTurkeyTime();
   const day = now.getDay(); // 0: Pazar, 1: Pazartesi ... 6: Cumartesi
   const hours = now.getHours();
@@ -573,16 +596,19 @@ function updateCountdown() {
   const minutesLeft = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
   const secondsLeft = Math.floor((timeDiff % (1000 * 60)) / 1000);
 
-  document.querySelector(".count-end-block .title").innerHTML = titleText;
-  document.querySelector("#day span").textContent = String(daysLeft).padStart(2, "0");
-  document.querySelector("#hour span").textContent = String(hoursLeft).padStart(2, "0");
-  document.querySelector("#min span").textContent = String(minutesLeft).padStart(2, "0");
-  document.querySelector("#sec span").textContent = String(secondsLeft).padStart(2, "0");
+  title.innerHTML = titleText;
+  parts.day.textContent = String(daysLeft).padStart(2, "0");
+  parts.hour.textContent = String(hoursLeft).padStart(2, "0");
+  parts.min.textContent = String(minutesLeft).padStart(2, "0");
+  parts.sec.textContent = String(secondsLeft).padStart(2, "0");
 
   setTimeout(updateCountdown, 1000);
 }
 
 updateCountdown();
+
+  });
+})();
 </script>
 
 
