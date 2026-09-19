@@ -1,6 +1,7 @@
 param([Parameter(Mandatory=$true)][string]$Candidate)
 $ErrorActionPreference = 'Stop'
 Add-Type -AssemblyName System.IO.Compression.FileSystem
+Add-Type -AssemblyName System.IO.Compression
 $candidatePath = (Resolve-Path -LiteralPath $Candidate).Path
 $manifest = Get-Content -LiteralPath (Join-Path $candidatePath 'manifest.json') -Raw -Encoding UTF8 | ConvertFrom-Json
 $source = Join-Path $candidatePath 'theme-source'
