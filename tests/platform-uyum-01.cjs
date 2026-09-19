@@ -244,6 +244,15 @@ const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
             'Login control layout at ' + width + ': ' + JSON.stringify(layout.result.value));
         console.log('PASS Login fixture layout', width);
     }
+    const desktopMenu = await send('Runtime.evaluate', { returnByValue: true, expression: `(() => {
+        document.body.innerHTML = '<header class="desktop"><div class="mega-menu"><ul><li class="dropdown nav-item"><a href="#fixture" class="nav-link">Kategori</a><div class="dropdown-menu"><a href="#child">Alt kategori</a></div></li></ul></div></header>';
+        document.querySelector('.nav-link').focus();
+        const first = getComputedStyle(document.querySelector('.dropdown-menu')).display !== 'none';
+        document.querySelector('.dropdown-menu a').focus();
+        return first && getComputedStyle(document.querySelector('.dropdown-menu')).display !== 'none';
+    })()` });
+    assert.equal(desktopMenu.result.value, true, 'Desktop menu keeps submenu visible through keyboard focus at 1440');
+    console.log('PASS Desktop menu keyboard focus at 1440');
     const visualDir = path.join(root, 'artifacts', 'visual-05');
     fs.mkdirSync(visualDir, { recursive: true });
     for (const [width, height] of [[375, 900], [768, 900], [1440, 900], [844, 390]]) {
@@ -258,6 +267,30 @@ const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
         const shot = await send('Page.captureScreenshot', { format: 'png' });
         fs.writeFileSync(path.join(visualDir, 'video-' + width + '.png'), Buffer.from(shot.data, 'base64'));
     }
+    const cardFixture = path.join(root, 'artifacts/real-twig/cards.html');
+    if (fs.existsSync(cardFixture)) {
+        const priceFixture = fs.readFileSync(path.join(root, 'artifacts/real-twig/fast-cart.js'), 'utf8');
+        const price = await send('Runtime.evaluate', { returnByValue: true,
+            expression: priceFixture + ';PRODUCT_FAST_CART_42.price' });
+        assert(!price.exceptionDetails, 'Rendered fast-cart price script must parse');
+        assert.equal(price.result.value, "1'234,50 CHF", 'Platform-formatted price survives JavaScript escaping');
+        for (const width of [375, 768, 1440]) {
+            await send('Emulation.setDeviceMetricsOverride', { width, height: 900, deviceScaleFactor: 1, mobile: false });
+            const layout = await send('Runtime.evaluate', { returnByValue: true, expression:
+                'document.body.className="";document.body.innerHTML=' + JSON.stringify(fs.readFileSync(cardFixture, 'utf8')) + ';' +
+                '(() => ({overflow:document.documentElement.scrollWidth>innerWidth, cards:document.querySelectorAll(".card-product").length, stockColor:getComputedStyle(document.querySelector(".it-over")).color}))()' });
+            assert(!layout.exceptionDetails, JSON.stringify(layout.exceptionDetails));
+            assert.equal(layout.result.value.cards, 2);
+            assert.equal(layout.result.value.overflow, false, 'Card fixture viewport overflow ' + width);
+            assert.equal(layout.result.value.stockColor, 'rgb(51, 51, 51)', 'Stock badge text contrasts with light overlay');
+            const decoded = await send('Runtime.evaluate', { awaitPromise: true, returnByValue: true,
+                expression: 'Promise.all([...document.images].map(image=>image.decode())).then(()=>true)' });
+            assert(!decoded.exceptionDetails, 'Local placeholder images must decode before capture');
+            const shot = await send('Page.captureScreenshot', { format: 'png' });
+            fs.writeFileSync(path.join(visualDir, 'cards-' + width + '.png'), Buffer.from(shot.data, 'base64'));
+        }
+        console.log('PASS Real local Twig card fixtures fit 375/768/1440; screenshots saved, visual inspection remains separate.');
+    } else console.log('NOT RUN card visuals: generate artifacts/real-twig/cards.html with tests/twig-local.php first.');
     console.log('Passed:', result.result.value.length + 5, '(offline browser; platform/server behavior not certified); video shell screenshots saved.');
 })().catch(error => {
     console.error(error);

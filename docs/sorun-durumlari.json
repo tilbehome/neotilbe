@@ -177,9 +177,9 @@
   {
     "id": "D4",
     "location": "sepet/liste.twig rezervasyon rozeti, profil.twig sabit 500 TL ve kargo sayacı",
-    "remedy": "Ürün sabit 500 TL kaldırıldı; platform kargo helperı ve üç yerel Twig dalı geçti. Rezervasyon/saat/teslimat mağaza doğrulaması açık.",
+    "remedy": "500 TL platform helperına bağlandı; sepet rezervasyon iddiası kaldırıldı. Teslimat/saat takviminin mağaza dayanağı açık.",
     "status": "kargo tutarı onarıldı ve yerelde doğrulandı; diğer beyanlar/platform kabulü bekliyor",
-    "evidence": "platform-uyum-05-kontrol.md"
+    "evidence": "platform-uyum-05-kontrol.md; platform-uyum-06-kontrol.md"
   },
   {
     "id": "V1",
@@ -285,5 +285,75 @@
     "remedy": "Video öğe izolasyonu, play hata/tekrar yönetimi ve tek ok çifti",
     "status": "onarım uygulandı; rapordaki yerel kontroller geçti; platform kabulü bekliyor",
     "evidence": "platform-uyum-05-kontrol.md"
+  },
+  {
+    "id": "PROMO1",
+    "location": "sepette-1000-tl-75-indirim.twig:1",
+    "remedy": "Sabit indirim matematiği yerine platform özetinin indirim bayrağı",
+    "status": "onarım uygulandı; rapordaki yerel kapsam doğrulandı; platform kabulü açık",
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  {
+    "id": "MENU1",
+    "location": "moduller/diger/mega_menu.twig:54; style.css:6005",
+    "remedy": "Koşullu sütun kapanışı, görsel adı ve focus-within klavye erişimi",
+    "status": "onarım uygulandı; rapordaki yerel kapsam doğrulandı; platform kabulü açık",
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  {
+    "id": "CARD1",
+    "location": "urunler/kart.twig; kat-ozel-kart.twig",
+    "remedy": "Stok dışı native disabled kontrol, görsel/kontrol adları",
+    "status": "onarım uygulandı; rapordaki yerel kapsam doğrulandı; platform kabulü açık",
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  {
+    "id": "CSS2",
+    "location": "assets/style.css:8735",
+    "remedy": "Açık fonda beyaz stok metni #333 ile okunur oldu",
+    "status": "onarım uygulandı; rapordaki yerel kapsam doğrulandı; platform kabulü açık",
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  {
+    "id": "SHIP1",
+    "location": "odeme/bilgiler/kargo_icerik.twig:3",
+    "remedy": "Radio tıklamasında çift change engellendi",
+    "status": "onarım uygulandı; rapordaki yerel kapsam doğrulandı; platform kabulü açık",
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  {
+    "id": "GALLERY2",
+    "location": "urunler/resim_alani_tipi; atli_karinca_resim.twig; carousel_atli_karinca.twig",
+    "remedy": "Etiket makrosuna tam ürün nesnesi",
+    "status": "onarım uygulandı; rapordaki yerel kapsam doğrulandı; platform kabulü açık",
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  {
+    "id": "HELP2",
+    "location": "yardim/madde_listesi.twig; assets/scripts.js",
+    "remedy": "Eski yardım fragment hedefleri korundu",
+    "status": "onarım uygulandı; rapordaki yerel kapsam doğrulandı; platform kabulü açık",
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  {
+    "id": "SB1",
+    "location": "assets/smartbanner.js; sablon.twig",
+    "remedy": "HTML metin kaçışı, pushSelector ve mevcut transition helperını koruma",
+    "status": "onarım uygulandı; rapordaki yerel kapsam doğrulandı; platform kabulü açık",
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  {
+    "id": "HTML2",
+    "location": "odeme/siparis_onayi.twig; kategoriler/filtreleme/fiyatlar.twig",
+    "remedy": "Başlık kapanışı ve fiyat kontrol adları",
+    "status": "onarım uygulandı; rapordaki yerel kapsam doğrulandı; platform kabulü açık",
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  {
+    "id": "JS2",
+    "location": "urunler/hizli_sepet_kutusu.twig; siparislerim.twig; bakiye_dekontu.twig",
+    "remedy": "Biçimli fiyat JS kaçışı; sipariş/yazdırma metnini data niteliğiyle taşıma",
+    "status": "onarım uygulandı; rapordaki yerel kapsam doğrulandı; platform kabulü açık",
+    "evidence": "platform-uyum-06-kontrol.md"
   }
 ]

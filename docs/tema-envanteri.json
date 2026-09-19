@@ -2368,8 +2368,8 @@
   {
     "file": "canlitema/assets/scripts.js",
     "category": "JavaScript",
-    "bytes": 6056,
-    "sha256": "bdca7d2ae96d06a7667e6bfdc2718f73c43fc6b60a8d80425cebbaff71a30ec9",
+    "bytes": 6606,
+    "sha256": "8b813b455d1dc8275897eef0afb01c68439a7a115fb9ce93de3983601997ee48",
     "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
@@ -2379,10 +2379,10 @@
       "platformdaDogrulamaBekliyor": true
     },
     "review": {
-      "scope": "Menü kilidi, ödeme dosya gönderimi, varyant select köprüsü; 05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil",
+      "scope": "Menü kilidi, ödeme dosya gönderimi, varyant select köprüsü; 05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil; 06 raporundaki somut onarım; dosya geneli kabul değil",
       "fixed": true,
       "local": true,
-      "evidence": "platform-uyum-05-kontrol.md"
+      "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md"
     },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "kontrol edildi: yerel ayrıştırma başarılı",
@@ -2394,15 +2394,20 @@
     "category": "CSS",
     "bytes": 6466,
     "sha256": "e282f29a37ae036c62bb910ac12ea7e4c4b7408063f7a60d327e7ef2e1cd7c4d",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu kaynak/ayar yapısı ve kullanım bağlantıları; CSS/ayarların tüm cihaz ve canlı kombinasyonları kabul edilmedi",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -2411,34 +2416,8 @@
   {
     "file": "canlitema/assets/smartbanner.js",
     "category": "JavaScript",
-    "bytes": 16305,
-    "sha256": "2da7e5235eacce8495a914baf166a1f0b80d5eca6b892f452670a64a81154182",
-    "status": "listelendi",
-    "stages": {
-      "listelendi": true,
-      "incelendi": false,
-      "duzeltildi": false,
-      "yereldeDogrulandi": false,
-      "platformdaDogrulamaBekliyor": true
-    },
-    "review": null,
-    "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
-    "syntax": "kontrol edildi: yerel ayrıştırma başarılı",
-    "refs": [],
-    "signals": [
-      {
-        "kind": "metadata",
-        "lines": [
-          371
-        ]
-      }
-    ]
-  },
-  {
-    "file": "canlitema/assets/style.css",
-    "category": "CSS",
-    "bytes": 312942,
-    "sha256": "fbcc32079ad8a195a6f0ccd173ba095ed04cd3a7ea073f4dc121ee32666753d6",
+    "bytes": 16717,
+    "sha256": "18766e8d6f730cb4a3a7b189e4627b867bfa648cf358cb0247cfb0d324cf8403",
     "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
@@ -2448,10 +2427,41 @@
       "platformdaDogrulamaBekliyor": true
     },
     "review": {
-      "scope": "Giriş yerleşimi, menü kilitleri ve kategori dialog kilidi; bütün CSS kabulü açık; 05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil",
+      "scope": "06 raporundaki somut onarım; dosya geneli kabul değil",
       "fixed": true,
       "local": true,
-      "evidence": "platform-uyum-05-kontrol.md"
+      "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md"
+    },
+    "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
+    "syntax": "kontrol edildi: yerel ayrıştırma başarılı",
+    "refs": [],
+    "signals": [
+      {
+        "kind": "metadata",
+        "lines": [
+          376
+        ]
+      }
+    ]
+  },
+  {
+    "file": "canlitema/assets/style.css",
+    "category": "CSS",
+    "bytes": 313245,
+    "sha256": "9a9ad7ffa0013fd62c61080b39d0e3addc04a938ac6497d1d68b6efc7c404de0",
+    "status": "incelendi (belirtilen kapsam)",
+    "stages": {
+      "listelendi": true,
+      "incelendi": true,
+      "duzeltildi": true,
+      "yereldeDogrulandi": true,
+      "platformdaDogrulamaBekliyor": true
+    },
+    "review": {
+      "scope": "Giriş yerleşimi, menü kilitleri ve kategori dialog kilidi; bütün CSS kabulü açık; 05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil; 06 raporundaki somut onarım; dosya geneli kabul değil",
+      "fixed": true,
+      "local": true,
+      "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md"
     },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
@@ -2499,15 +2509,20 @@
     "category": "JavaScript",
     "bytes": 228,
     "sha256": "e27a32706f31c628b307b40a5d1d014e6b1d42b16ff5d370cb3618e41235e281",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu kaynak/ayar yapısı ve kullanım bağlantıları; CSS/ayarların tüm cihaz ve canlı kombinasyonları kabul edilmedi",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "kontrol edildi: yerel ayrıştırma başarılı",
     "refs": [],
@@ -2642,15 +2657,20 @@
     "category": "Tema ayarları",
     "bytes": 1673,
     "sha256": "95d7c07be3ed50181590dd9ce206dd8853d1115f652e278d440ff2925554d9dd",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu kaynak/ayar yapısı ve kullanım bağlantıları; CSS/ayarların tüm cihaz ve canlı kombinasyonları kabul edilmedi",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "kontrol edildi: yerel ayrıştırma başarılı",
     "refs": [],
@@ -2661,15 +2681,20 @@
     "category": "Tema ayarları",
     "bytes": 176,
     "sha256": "d0f73cbd360ee35ec31f4d7d5666fb170187f465ef08733348014789b3c49ce1",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu kaynak/ayar yapısı ve kullanım bağlantıları; CSS/ayarların tüm cihaz ve canlı kombinasyonları kabul edilmedi",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "kontrol edildi: yerel ayrıştırma başarılı",
     "refs": [],
@@ -2680,15 +2705,20 @@
     "category": "Tema ayarları",
     "bytes": 13876,
     "sha256": "fa8ad638955921ffbba3bb645db9686680d387d1055ad6387ead3fc3054904da",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu kaynak/ayar yapısı ve kullanım bağlantıları; CSS/ayarların tüm cihaz ve canlı kombinasyonları kabul edilmedi",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "kontrol edildi: yerel ayrıştırma başarılı",
     "refs": [],
@@ -2919,15 +2949,20 @@
     "category": "Twig şablonları",
     "bytes": 1109,
     "sha256": "6a588baef148ecf78074f4e2485c8e189b5f190458945816ecf7b76b37be1d12",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -2945,15 +2980,20 @@
     "category": "Twig şablonları",
     "bytes": 549,
     "sha256": "f103959a5f55dc9d1922cfb86656958682b3b9541bced595b19d2e563548bfae",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -3057,15 +3097,20 @@
     "category": "Twig şablonları",
     "bytes": 303,
     "sha256": "817555c3b0c0f582bb009b3f3ab168413ff1f13936b19433a877e8506fe2f752",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -3076,15 +3121,20 @@
     "category": "Twig şablonları",
     "bytes": 706,
     "sha256": "e8681944d88a4e8e49a3357592c4a5d62adffeb01d950b5b738411dde5ff1b0d",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -3095,15 +3145,20 @@
     "category": "Twig şablonları",
     "bytes": 269,
     "sha256": "99564ba4576081232465205c16a63b3b72ec157a20e4184814bf8aeb87a8eade",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -3121,15 +3176,20 @@
     "category": "Twig şablonları",
     "bytes": 212,
     "sha256": "5fccf1021e4bbdf24d89a04d9bcc614d38784646e7a885b10011268568d46801",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -3145,17 +3205,22 @@
   {
     "file": "canlitema/moduller/diger/kategori_icon.twig",
     "category": "Twig şablonları",
-    "bytes": 219,
-    "sha256": "d84d705f9084883da55da1aab09cb13bb7ce31fbe8dc1b00ac57f20ac48305c8",
-    "status": "listelendi",
+    "bytes": 239,
+    "sha256": "681ebd4bb6fef57538a8b2a74e8abab1f75ef97dc4bdf62a41fda2d563ddf563",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
-      "duzeltildi": false,
+      "incelendi": true,
+      "duzeltildi": true,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.; 06 raporundaki somut onarım; dosya geneli kabul değil",
+      "fixed": true,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -3164,17 +3229,22 @@
   {
     "file": "canlitema/moduller/diger/mega_menu.twig",
     "category": "Twig şablonları",
-    "bytes": 6039,
-    "sha256": "3dd9e720a1aff35cd26c8d9748a93803f7909d4468fe197332e28514e04c4e18",
-    "status": "listelendi",
+    "bytes": 6066,
+    "sha256": "352b3ad0cbccde1fd41ef3f188fd678ca00378e1062a917780e4e3844eed26b7",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
-      "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "incelendi": true,
+      "duzeltildi": true,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.; 06 raporundaki somut onarım; dosya geneli kabul değil",
+      "fixed": true,
+      "local": true,
+      "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [
@@ -3500,21 +3570,21 @@
   {
     "file": "canlitema/moduller/hesap/alt_sayfalar/bakiye_dekontu.twig",
     "category": "Twig şablonları",
-    "bytes": 662,
-    "sha256": "d0c24990cf34e7f8f66619f8d8d31fac0df28191d13f78bb74f9940d61f0f0af",
+    "bytes": 770,
+    "sha256": "aeb090d0d2d13cd15c27fde279574988c0a05495bc5f4a7e71b0f43269e48b0b",
     "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
       "incelendi": true,
-      "duzeltildi": false,
+      "duzeltildi": true,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
     "review": {
-      "scope": "Kaynak okundu: platform helper/olay seçicileri, boş dal ve HTML yapısı; gerçek veri/görsel kabulü açık",
-      "fixed": false,
+      "scope": "Kaynak okundu: platform helper/olay seçicileri, boş dal ve HTML yapısı; gerçek veri/görsel kabulü açık; 06 raporundaki somut onarım; dosya geneli kabul değil",
+      "fixed": true,
       "local": false,
-      "evidence": "platform-uyum-05-kontrol.md"
+      "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md"
     },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
@@ -3658,15 +3728,20 @@
     "category": "Twig şablonları",
     "bytes": 47,
     "sha256": "81792df292c084c51090f476c7b2ffaf97920f3ae5f6d309c8c503c059022f57",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -4003,21 +4078,21 @@
   {
     "file": "canlitema/moduller/hesap/alt_sayfalar/siparislerim.twig",
     "category": "Twig şablonları",
-    "bytes": 1441,
-    "sha256": "2598665362f71c36f9c5cfdbae9866ff28c425d0eecec5f1ac04f9ed286c44d4",
+    "bytes": 1506,
+    "sha256": "0fb9cee0fe4248ed86c326756c8ad0f5b46eb63d0d855fd0ebab1679e0a7f6c6",
     "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
       "incelendi": true,
-      "duzeltildi": false,
+      "duzeltildi": true,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
     "review": {
-      "scope": "Kaynak okundu: platform helper/olay seçicileri, boş dal ve HTML yapısı; gerçek veri/görsel kabulü açık",
-      "fixed": false,
+      "scope": "Kaynak okundu: platform helper/olay seçicileri, boş dal ve HTML yapısı; gerçek veri/görsel kabulü açık; 06 raporundaki somut onarım; dosya geneli kabul değil",
+      "fixed": true,
       "local": false,
-      "evidence": "platform-uyum-05-kontrol.md"
+      "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md"
     },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
@@ -4198,15 +4273,20 @@
     "category": "Twig şablonları",
     "bytes": 1090,
     "sha256": "a1009fd28ea8f7f9c8f715c43f890ef7b7789388569e3c966270f30ee6f01093",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -4255,17 +4335,22 @@
   {
     "file": "canlitema/moduller/kategoriler/filtreleme/fiyatlar.twig",
     "category": "Twig şablonları",
-    "bytes": 1048,
-    "sha256": "82f126362d30fd4846dec670fd5af38d92abebeb2c9aaabf2ae7b5b01d74efc8",
-    "status": "listelendi",
+    "bytes": 1149,
+    "sha256": "a5d68b7d03c9b52d9de886bab8c700b60d42432b0bfe91caae7f707584d6b722",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
-      "duzeltildi": false,
+      "incelendi": true,
+      "duzeltildi": true,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.; 06 raporundaki somut onarım; dosya geneli kabul değil",
+      "fixed": true,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -4300,15 +4385,20 @@
     "category": "Twig şablonları",
     "bytes": 315,
     "sha256": "73cadf0b763d5e8ada1b4c485b87a04bc77d66a24be0215c206394f6fd7c460a",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -4319,15 +4409,20 @@
     "category": "Twig şablonları",
     "bytes": 482,
     "sha256": "0d65e4014e018a363739b08b44d2d7dc5963070468a3db58c5ab1936dc2be882",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -4338,15 +4433,20 @@
     "category": "Twig şablonları",
     "bytes": 948,
     "sha256": "e9e7d33c1e39ff33403b5307f7178fb421cb1f3899d140daa220e89b6b91a5a8",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -4357,15 +4457,20 @@
     "category": "Twig şablonları",
     "bytes": 255,
     "sha256": "fe78d2185c0d9b832b2f07780304ea4eb499e0da955ef55b6dabf80fca8efdca",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -4376,15 +4481,20 @@
     "category": "Twig şablonları",
     "bytes": 582,
     "sha256": "8f68c477912bce1b0814f96d365d20d19392f6ef7cc6edd60019407c96f94144",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -4395,15 +4505,20 @@
     "category": "Twig şablonları",
     "bytes": 260,
     "sha256": "acac322c50458c4d97fe68d3c56159d2d8ced4415c499332bae7de466f3117b5",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -4438,15 +4553,20 @@
     "category": "Twig şablonları",
     "bytes": 271,
     "sha256": "4c8a075c25ce678a0e43ea93ed9ba113c5fcf56f5171f703a5edb362b7e94371",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -4457,15 +4577,20 @@
     "category": "Twig şablonları",
     "bytes": 345,
     "sha256": "40040293ed1c17c6762a65df84685e1001a4b4e8c7f2ce4723ac814ff22102fb",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -4483,15 +4608,20 @@
     "category": "Twig şablonları",
     "bytes": 249,
     "sha256": "9c8ecb656d5312c4c5ac40be94efe901681d9b525bbd9b47fd7baa09586ad1a4",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -4502,15 +4632,20 @@
     "category": "Twig şablonları",
     "bytes": 393,
     "sha256": "4061ade094965ad217a929ff87f98529b19e44ba2efd53a95e5e84b4a0bdb198",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -4521,15 +4656,20 @@
     "category": "Twig şablonları",
     "bytes": 430,
     "sha256": "e8d0e92c9ab0ac92005cf3a9baf96cf055fe6129bdfca6bc48ad178e213451c1",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -4742,17 +4882,22 @@
   {
     "file": "canlitema/moduller/odeme/bilgiler/kargo_icerik.twig",
     "category": "Twig şablonları",
-    "bytes": 2122,
-    "sha256": "3b393f58802211cb784c67cfe0b74bbbda1e2d8743130a3d58284fa0f36830e4",
-    "status": "listelendi",
+    "bytes": 2195,
+    "sha256": "cfcfded7de65fec8641a200674f660fb447670e60a6a00e2825aa231a91bb6fe",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
-      "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "incelendi": true,
+      "duzeltildi": true,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 raporundaki somut onarım; dosya geneli kabul değil",
+      "fixed": true,
+      "local": true,
+      "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -5008,16 +5153,21 @@
     "file": "canlitema/moduller/odeme/siparis_onayi.twig",
     "category": "Twig şablonları",
     "bytes": 726,
-    "sha256": "ef6922bf5b6075f4284ce7bb16054215a7500bac29f35b1696a0e33c3c7eb162",
-    "status": "listelendi",
+    "sha256": "aa8036645e8f12ef7d61766863d2b997524852044a5aa08db6ff9bf6d18acf3e",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
-      "duzeltildi": false,
+      "incelendi": true,
+      "duzeltildi": true,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.; 06 raporundaki somut onarım; dosya geneli kabul değil",
+      "fixed": true,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -5077,15 +5227,20 @@
     "category": "Twig şablonları",
     "bytes": 405,
     "sha256": "f1e0bf0eebb1fa0e3c0804cfb135f2638d9f5231b0c1ea2673c720da76b156be",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -5103,15 +5258,20 @@
     "category": "Twig şablonları",
     "bytes": 399,
     "sha256": "9a323f176acd4715fd15d1798ce55a59b6431f9bd6fd6c9ec4464b56d4404e96",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -5129,15 +5289,20 @@
     "category": "Twig şablonları",
     "bytes": 5,
     "sha256": "e09bd551d13a33a134d64a0b10f61f8c30e0ddd731867774d1fb96395fa2ae5b",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -5216,15 +5381,20 @@
     "category": "Twig şablonları",
     "bytes": 403,
     "sha256": "6d37f37218e3e8d753fdc450a06ab71ca2ad86d97027af30356ba7bb54faa893",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -5264,17 +5434,22 @@
   {
     "file": "canlitema/moduller/sepet/liste.twig",
     "category": "Twig şablonları",
-    "bytes": 8126,
-    "sha256": "7e3bc3bd50c25dd75194064045c365eb6e23825c9023bd43a24ff2ee8d7201b8",
-    "status": "listelendi",
+    "bytes": 8249,
+    "sha256": "bc4173659558eb4a84921c9a6410a742159bb282eb3cb949d6db9218c2a1d4da",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
-      "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "incelendi": true,
+      "duzeltildi": true,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 raporundaki somut onarım; dosya geneli kabul değil",
+      "fixed": true,
+      "local": true,
+      "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -5334,15 +5509,20 @@
     "category": "Twig şablonları",
     "bytes": 488,
     "sha256": "d5e86b65a461f37230ff5aa1127819d13aea15a1aff354b1a3a5820a0de05903",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -5468,15 +5648,20 @@
     "category": "Twig şablonları",
     "bytes": 36,
     "sha256": "808fb751bb155bf3e2dddfa7f336dc53ed328b12b5d86ba4bfb7e3c4d21676ee",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -5494,15 +5679,20 @@
     "category": "Twig şablonları",
     "bytes": 1953,
     "sha256": "0af30521a26f38fc2a8a269b43d2ce5325e0507e532195f37d62ace23bdfbdfc",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu kaynak/ayar yapısı ve kullanım bağlantıları; CSS/ayarların tüm cihaz ve canlı kombinasyonları kabul edilmedi",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -5534,15 +5724,20 @@
     "category": "Twig şablonları",
     "bytes": 904,
     "sha256": "57e563896cbdd41f0245fe32968c5dad7bdfb3e5e160e1b9dd759d1b2edc19d4",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -5568,15 +5763,20 @@
     "category": "Twig şablonları",
     "bytes": 261,
     "sha256": "d15e41def0183a7cdcd6a49182366aea8197646211429a08563eed8257818fe1",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [
@@ -5594,15 +5794,20 @@
     "category": "Twig şablonları",
     "bytes": 440,
     "sha256": "72515b479e5f5399f93a187fee6886e2770c728b307500cec6abf7f03d449d80",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -5611,17 +5816,22 @@
   {
     "file": "canlitema/moduller/urunler/anasayfa_kart.twig",
     "category": "Twig şablonları",
-    "bytes": 4365,
-    "sha256": "eadaf8fbc30d6cd2c337424e5047bda87fe8151b39a126d7e6af6c689fbad992",
-    "status": "listelendi",
+    "bytes": 4441,
+    "sha256": "bcc477230cbcb2d00ecce5346c58345340cc3d7080dfa13c82d538c91634807f",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
-      "duzeltildi": false,
+      "incelendi": true,
+      "duzeltildi": true,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.; 06 raporundaki somut onarım; dosya geneli kabul değil",
+      "fixed": true,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -5638,17 +5848,22 @@
   {
     "file": "canlitema/moduller/urunler/atli_karinca_resim.twig",
     "category": "Twig şablonları",
-    "bytes": 1638,
-    "sha256": "f89a1531b875b45f91b70561f046014bfd96ad8097fe527dc5a7ea4c09d369ba",
-    "status": "listelendi",
+    "bytes": 1694,
+    "sha256": "cfcd38479dd2166cad965c92ae6f8b9f1891891543f5314fc38df58eda4ecd94",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
-      "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "incelendi": true,
+      "duzeltildi": true,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.; 06 raporundaki somut onarım; dosya geneli kabul değil",
+      "fixed": true,
+      "local": true,
+      "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -5657,17 +5872,22 @@
   {
     "file": "canlitema/moduller/urunler/carousel_atli_karinca.twig",
     "category": "Twig şablonları",
-    "bytes": 1638,
-    "sha256": "f89a1531b875b45f91b70561f046014bfd96ad8097fe527dc5a7ea4c09d369ba",
-    "status": "listelendi",
+    "bytes": 1694,
+    "sha256": "cfcd38479dd2166cad965c92ae6f8b9f1891891543f5314fc38df58eda4ecd94",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
-      "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "incelendi": true,
+      "duzeltildi": true,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.; 06 raporundaki somut onarım; dosya geneli kabul değil",
+      "fixed": true,
+      "local": true,
+      "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -5678,15 +5898,20 @@
     "category": "Twig şablonları",
     "bytes": 1343,
     "sha256": "aa8a7b863cfeb5119a188314f2e373dc382678ad9de904db3f628f1c7406825f",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -5704,15 +5929,20 @@
     "category": "Twig şablonları",
     "bytes": 164,
     "sha256": "98a3c7f68a128708c60ec75a3e171f0bc6023513455bc5864ae9837882b92342",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -5723,15 +5953,20 @@
     "category": "Twig şablonları",
     "bytes": 174,
     "sha256": "a0cef1cf1b4ef77b099129ca33640440ae3a49a33a89c27bc4246b4e42cbc90f",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -5749,15 +5984,20 @@
     "category": "Twig şablonları",
     "bytes": 103,
     "sha256": "f7103862cfce9816da7a0eaf4d774be7ff92bf152bb104f99eb123a0003d6447",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -5838,8 +6078,8 @@
   {
     "file": "canlitema/moduller/urunler/hizli_sepet_kutusu.twig",
     "category": "Twig şablonları",
-    "bytes": 11325,
-    "sha256": "6c84149008b8aa8c7a944e0e2b9814029d28798e2eec01d78d1d527f4e800697",
+    "bytes": 11358,
+    "sha256": "00dc0bc7560ea85996cc567629692a05caed4326e4b9189bc669c1a593bee4d8",
     "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
@@ -5849,10 +6089,10 @@
       "platformdaDogrulamaBekliyor": true
     },
     "review": {
-      "scope": "Varyant değerinin JS içine ham yazılması",
+      "scope": "Varyant değerinin JS içine ham yazılması; 06 raporundaki somut onarım; dosya geneli kabul değil",
       "fixed": true,
       "local": true,
-      "evidence": "kapsamli-denetim.md; platform-uyum-03-kontrol.md; önceki kontrol raporları"
+      "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md"
     },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
@@ -5899,17 +6139,22 @@
   {
     "file": "canlitema/moduller/urunler/kart.twig",
     "category": "Twig şablonları",
-    "bytes": 11275,
-    "sha256": "ca6608fd3b27663ad66c86aa597fe24209fd93c37af30574119d473a486205c2",
-    "status": "listelendi",
+    "bytes": 11474,
+    "sha256": "e4757ae64a163a6fb7d4653c76358db835e97befc841794e6cf17595f76fbaaf",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
-      "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "incelendi": true,
+      "duzeltildi": true,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 raporundaki somut onarım; dosya geneli kabul değil",
+      "fixed": true,
+      "local": true,
+      "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [
@@ -5932,14 +6177,11 @@
         "lines": [
           70,
           80,
-          85,
           99,
-          104,
           179,
           187,
           192,
-          210,
-          216
+          210
         ]
       },
       {
@@ -5956,15 +6198,20 @@
     "category": "Twig şablonları",
     "bytes": 1242,
     "sha256": "fa057026afa83afcd81cfce454c493cfa6f9ad136a25a538fbc98b90bab9aa69",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -6007,15 +6254,20 @@
     "category": "Twig şablonları",
     "bytes": 616,
     "sha256": "8363ab1462d496b682c8de303c6f0dd5fffb7c7e3bfb61bb66a46cd13e80102e",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -6031,17 +6283,22 @@
   {
     "file": "canlitema/moduller/urunler/kat-ozel-kart.twig",
     "category": "Twig şablonları",
-    "bytes": 11187,
-    "sha256": "8dac231b0ba74cdebcee2add07d4dccf96879882954f1fd6b74281e4adbc3caf",
-    "status": "listelendi",
+    "bytes": 11386,
+    "sha256": "7afa7fff4ca73e0969a51904b1b82477c7ae182e65520bf6d154883f1a2302c7",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
-      "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "incelendi": true,
+      "duzeltildi": true,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 raporundaki somut onarım; dosya geneli kabul değil",
+      "fixed": true,
+      "local": true,
+      "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [
@@ -6064,13 +6321,10 @@
         "lines": [
           78,
           88,
-          93,
-          109,
           185,
           193,
           198,
-          217,
-          223
+          217
         ]
       },
       {
@@ -6087,15 +6341,20 @@
     "category": "Twig şablonları",
     "bytes": 1101,
     "sha256": "6236f49aebd74eb5322b67803491377bae7e3e4245157eb403d2b2b8183812ca",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -6296,8 +6555,8 @@
   {
     "file": "canlitema/moduller/urunler/resim_alani_tipi/carousel_atli_karinca.twig",
     "category": "Twig şablonları",
-    "bytes": 2983,
-    "sha256": "3528fad927d146fc544d415b2a5629ac9dc95b71ae5bf88190377b5939625cde",
+    "bytes": 2979,
+    "sha256": "826c947c0a34c87c1f0883f55d8579076687293bfd00da5239732ae31067a67d",
     "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
@@ -6307,10 +6566,10 @@
       "platformdaDogrulamaBekliyor": true
     },
     "review": {
-      "scope": "05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil",
+      "scope": "05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil; 06 raporundaki somut onarım; dosya geneli kabul değil",
       "fixed": true,
       "local": true,
-      "evidence": "platform-uyum-05-kontrol.md"
+      "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md"
     },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
@@ -6361,21 +6620,21 @@
   {
     "file": "canlitema/moduller/urunler/resim_alani_tipi/normal_altta.twig",
     "category": "Twig şablonları",
-    "bytes": 5197,
-    "sha256": "2a7a7458dd44a4e3356c1764208c4b798c07e3553ca2793a1c2ed0f48cdae84b",
+    "bytes": 5189,
+    "sha256": "5518480399a39eab504f177fff90b32eb08a4448f1f0f19f73deb18e73660ec6",
     "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
       "incelendi": true,
-      "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "duzeltildi": true,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
     "review": {
-      "scope": "Kaynak okundu: platform helper/olay seçicileri, boş dal ve HTML yapısı; gerçek veri/görsel kabulü açık",
-      "fixed": false,
-      "local": false,
-      "evidence": "platform-uyum-05-kontrol.md"
+      "scope": "Kaynak okundu: platform helper/olay seçicileri, boş dal ve HTML yapısı; gerçek veri/görsel kabulü açık; 06 raporundaki somut onarım; dosya geneli kabul değil",
+      "fixed": true,
+      "local": true,
+      "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md"
     },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
@@ -6422,15 +6681,20 @@
     "category": "Twig şablonları",
     "bytes": 829,
     "sha256": "1239a6a6b8546e3de442bc18ceffa41a1a52f35f7243ed10488b50989b96862f",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -6527,15 +6791,20 @@
     "category": "Twig şablonları",
     "bytes": 516,
     "sha256": "686ea1e0d6a1c88b70fdddb960757c079a8a89f0477f90084b44a679217c6f9e",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -6601,15 +6870,20 @@
     "category": "Twig şablonları",
     "bytes": 517,
     "sha256": "aaf854fbf9fd68ebacdf1d940b7d9a5285345cb99ae7a8ac8470ceef2ecc0841",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -6620,15 +6894,20 @@
     "category": "Twig şablonları",
     "bytes": 992,
     "sha256": "fac472115e1cd2a838317ee7e1b0daff66e0de3cf2b091c0bebebc92afc7e562",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -6639,15 +6918,20 @@
     "category": "Twig şablonları",
     "bytes": 1362,
     "sha256": "4a19e97bf3bc997e023dd891b9b83eb8e2fa2f097ef78c612f4c5b7ac467729f",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -6666,8 +6950,8 @@
   {
     "file": "canlitema/moduller/yardim/madde_listesi.twig",
     "category": "Twig şablonları",
-    "bytes": 2296,
-    "sha256": "0444a91c28700042e952a5334e2027328bbf9f92cce0616e1110dc65bf3e83ee",
+    "bytes": 2332,
+    "sha256": "6db7a838da244ac1a2089acc771976ae86172bcf880d87a154bbcdfff3dbf3b7",
     "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
@@ -6677,10 +6961,10 @@
       "platformdaDogrulamaBekliyor": true
     },
     "review": {
-      "scope": "05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil",
+      "scope": "05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil; 06 raporundaki somut onarım; dosya geneli kabul değil",
       "fixed": true,
       "local": true,
-      "evidence": "platform-uyum-05-kontrol.md"
+      "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md"
     },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
@@ -6742,15 +7026,20 @@
     "category": "Twig şablonları",
     "bytes": 296,
     "sha256": "86cef63ec3ea5084d76a72627c76603650e89e3d4baa69a0abb0216fc9c76ce6",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -6842,15 +7131,20 @@
     "category": "Twig şablonları",
     "bytes": 280,
     "sha256": "f3170cdeeebe60eddb3a7b285ee9d1ebfc452abcb2314f759203f86eef6bf40a",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -6936,15 +7230,20 @@
     "category": "Twig şablonları",
     "bytes": 298,
     "sha256": "bb1bc9352d3db30dce99169271cd4415eb4b841cefdfb8ca0566abe1561c2381",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -6955,15 +7254,20 @@
     "category": "Twig şablonları",
     "bytes": 270,
     "sha256": "31a29f199cba1437938abbdb5310cf18db2d09aac3999f6737f25bbee98d960e",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -7031,15 +7335,20 @@
     "category": "Twig şablonları",
     "bytes": 333,
     "sha256": "bf9b0e106fc70b56dcc1e36a6fcdd9e5582486376be8ed9bdaf6ba62ad3e0490",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -7050,15 +7359,20 @@
     "category": "Twig şablonları",
     "bytes": 276,
     "sha256": "17318ea974efb17edb1fccc1a2d99e8008445392b3e1c8ca0a2c44e238dbddc3",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -7865,21 +8179,21 @@
   {
     "file": "canlitema/sablon.twig",
     "category": "Twig şablonları",
-    "bytes": 4711,
-    "sha256": "a144f60d7c4093ba1bf7d54dde5b5117279841764405458fe6ae733a4fa0a477",
+    "bytes": 4747,
+    "sha256": "d2d474ab74c841ed682182c7754cb3ee4f9beb1af28456ad635b49e0559fa8f1",
     "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
       "incelendi": true,
-      "duzeltildi": false,
+      "duzeltildi": true,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
     "review": {
-      "scope": "Script ekleme noktaları ve miras; canlı inject sırası belirsiz",
-      "fixed": false,
+      "scope": "Script ekleme noktaları ve miras; canlı inject sırası belirsiz; 06 raporundaki somut onarım; dosya geneli kabul değil",
+      "fixed": true,
       "local": false,
-      "evidence": "kapsamli-denetim.md; platform-uyum-03-kontrol.md; önceki kontrol raporları"
+      "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md"
     },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
@@ -7899,15 +8213,20 @@
     "category": "Twig şablonları",
     "bytes": 97,
     "sha256": "b97884c8e6012a68d15e29c4d3882a65a09d2977e505fe2a35a54d5870ca9d29",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [
@@ -7925,15 +8244,20 @@
     "category": "Twig şablonları",
     "bytes": 77,
     "sha256": "4b18502aa96c6b394de57ffde6fa12247e79a16b898d2143ca65bbb47d89e748",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [
@@ -7951,15 +8275,20 @@
     "category": "Twig şablonları",
     "bytes": 785,
     "sha256": "5257069d88fe1deb8b10f8a7ac79af683c7fcc36ff2d5e76771131124572af66",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [
@@ -7977,15 +8306,20 @@
     "category": "Twig şablonları",
     "bytes": 517,
     "sha256": "19fe7e0f3e659ec5f0996b5da50373f76c1f76f4c497b2c7530e0765e1c1cff5",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [
@@ -8003,15 +8337,20 @@
     "category": "Twig şablonları",
     "bytes": 80,
     "sha256": "efa39d318835821a7827f9c3ebf6785bfc031dfe5e3011abd9a531795dd34e38",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [
@@ -8029,15 +8368,20 @@
     "category": "Twig şablonları",
     "bytes": 77,
     "sha256": "4b18502aa96c6b394de57ffde6fa12247e79a16b898d2143ca65bbb47d89e748",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [
@@ -8055,15 +8399,20 @@
     "category": "Twig şablonları",
     "bytes": 859,
     "sha256": "cad9e87433e459319cee6f39d62a23e98be4eeddaa15f780b24a83a05cda4e93",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [
@@ -8081,15 +8430,20 @@
     "category": "Twig şablonları",
     "bytes": 80,
     "sha256": "d6e3571dc0dead79dd27206e60f1ab0736eabea90813ca643653d96be63bf62d",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [
@@ -8107,15 +8461,20 @@
     "category": "Twig şablonları",
     "bytes": 80,
     "sha256": "d6e3571dc0dead79dd27206e60f1ab0736eabea90813ca643653d96be63bf62d",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [
@@ -8133,15 +8492,20 @@
     "category": "Twig şablonları",
     "bytes": 80,
     "sha256": "d6e3571dc0dead79dd27206e60f1ab0736eabea90813ca643653d96be63bf62d",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [
@@ -8159,15 +8523,20 @@
     "category": "Twig şablonları",
     "bytes": 78,
     "sha256": "4776a75fc4ce825a520300913ae44f937e42493d677dd277c983861278f7b3df",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [
@@ -8185,15 +8554,20 @@
     "category": "Twig şablonları",
     "bytes": 77,
     "sha256": "a846a15171ba612844955593eb5c62e192a953eccbbc3e9e6ece47bbde2e1b41",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [
@@ -8211,15 +8585,20 @@
     "category": "Twig şablonları",
     "bytes": 80,
     "sha256": "efa39d318835821a7827f9c3ebf6785bfc031dfe5e3011abd9a531795dd34e38",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [
@@ -8237,15 +8616,20 @@
     "category": "Twig şablonları",
     "bytes": 786,
     "sha256": "d537c6f09c2c5063ada2ae366fa43fd4cdaf01d04850506999d13a8a9037524b",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [
@@ -8263,15 +8647,20 @@
     "category": "Twig şablonları",
     "bytes": 77,
     "sha256": "4b18502aa96c6b394de57ffde6fa12247e79a16b898d2143ca65bbb47d89e748",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [
@@ -8289,15 +8678,20 @@
     "category": "Twig şablonları",
     "bytes": 77,
     "sha256": "879be4c82e8f7f3d7554c1578d8464a06ca50bb7ff2589f12e75d812b68179bd",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [
@@ -8315,15 +8709,20 @@
     "category": "Twig şablonları",
     "bytes": 79,
     "sha256": "094ea32cab16138669162b0d5d7134083b223451dfab5fca8e7cfb270a6e8658",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [
@@ -8341,15 +8740,20 @@
     "category": "Twig şablonları",
     "bytes": 79,
     "sha256": "094ea32cab16138669162b0d5d7134083b223451dfab5fca8e7cfb270a6e8658",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [
@@ -8389,17 +8793,22 @@
   {
     "file": "canlitema/sepette-1000-tl-75-indirim.twig",
     "category": "Twig şablonları",
-    "bytes": 1159,
-    "sha256": "41d186a5ae7a22f6f824d1fedbfe7ce8ac92641869d3609acd16f043e6663173",
-    "status": "listelendi",
+    "bytes": 634,
+    "sha256": "b8ed76b463154b6ec694c4a1e03f1ad540094a22019d25b605e5fc492ebc86f8",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
-      "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "incelendi": true,
+      "duzeltildi": true,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.; 06 raporundaki somut onarım; dosya geneli kabul değil",
+      "fixed": true,
+      "local": true,
+      "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],

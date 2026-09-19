@@ -30,10 +30,40 @@ exports.payload = read => {
     assert(!read('canlitema/moduller/statik_sayfalar/404.twig').includes('itemprop="url"'));
     const voucher = read('canlitema/moduller/hediye_ceki/kart.twig').replace(/\{%[\s\S]*?%\}/g, '')
         .replace(/\{\{ hediye_ceki.ID \}\}/g, '21').replace(/\{\{[\s\S]*?\}\}/g, 'fixture');
-    return { markup, voucher, script: read('canlitema/assets/video-gallery.js'), timer, forms, categoryScript, query,
+    const shipping = read('canlitema/moduller/odeme/bilgiler/kargo_icerik.twig').replace(/<script[\s\S]*?<\/script>/g, '')
+        .replace(/\{%[\s\S]*?%\}/g, '').replace(/\{\{ firma.ID \}\}/g, '21')
+        .replace(/\{\{[\s\S]*?\}\}/g, '');
+    return { markup, voucher, shipping, smartbanner: read('canlitema/assets/smartbanner.js'), script: read('canlitema/assets/video-gallery.js'), timer, forms, categoryScript, query,
         cards: card('21', false) + card('21', false) + card('99', true) };
 };
 exports.run = async function (p, check) {
+    document.body.innerHTML = p.shipping;
+    let shipmentChanges = 0;
+    const shipment = document.querySelector('[name="shipment_method"]');
+    $(shipment).on('change', () => { shipmentChanges++; });
+    shipment.click();
+    check(shipmentChanges === 1, 'Shipment radio native click emits one change');
+    document.querySelector('.method .price').click();
+    check(shipmentChanges === 2 && shipment.checked, 'Shipment row click still selects and dispatches once');
+    document.body.innerHTML = '<meta name="google-play-app" content="app-id=local.fixture">';
+    const transition = $.fn.emulateTransitionEnd || function () { return this; };
+    $.fn.emulateTransitionEnd = transition;
+    (0, eval)(p.smartbanner);
+    $.smartbanner.Constructor.prototype.getCookie = () => null;
+    const banner = new $.smartbanner.Constructor({force:'android', scale:1, layer:true, speedIn:0, speedOut:0,
+        title:'<img id="unsafe-banner-node" src="x">', author:'Fixture', pushSelector:'body'});
+    check(!document.getElementById('unsafe-banner-node') && document.querySelector('.sb-info strong').textContent.includes('<img'),
+        'Smartbanner treats title as text instead of HTML');
+    check($.fn.emulateTransitionEnd === transition && document.body.style.paddingTop !== '',
+        'Smartbanner preserves existing transition helper and applies configured push target');
+    banner.hide(); document.body.style.paddingTop = '';
+    document.body.innerHTML = '<div data-help-entry-id="7"></div>';
+    let scrolled = 0;
+    document.querySelector('[data-help-entry-id]').scrollIntoView = () => { scrolled++; };
+    window.location.hash = 'accordion-head-7';
+    await new Promise(resolve => setTimeout(resolve, 20));
+    check(scrolled > 0, 'Legacy help fragment reaches the new instance-scoped heading');
+    window.location.hash = '';
     document.body.innerHTML = p.voucher;
     const copied = [];
     window.copyElement = id => { if (!document.getElementById(id)) throw new Error('Missing copy target'); copied.push(id); };

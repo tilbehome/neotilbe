@@ -670,6 +670,9 @@
         "helpRepeatedModulesAndEqualPageEntryIds": "passed",
         "paymentEscapedErrorAndTabState": "passed",
         "productShippingFreeRemainderHidden": "passed",
-        "galleryFavoriteExplicitProductContext": "passed"
+        "galleryFavoriteExplicitProductContext": "passed",
+        "galleryLabelProductDataAndPlatformDiscountFlag": "passed",
+        "cardStockBranches": "passed",
+        "megaMenuImageOnOffBalance": "passed"
     }
 }

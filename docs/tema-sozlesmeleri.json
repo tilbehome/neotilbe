@@ -946,7 +946,7 @@
     "listed": true,
     "manuallyReviewed": false,
     "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
-    "identicalToOriginal": true,
+    "identicalToOriginal": false,
     "twigHelpers": [
       "temaAyarlari"
     ],
@@ -1323,11 +1323,7 @@
             "declaredInPlatformReference": false
           },
           {
-            "name": "sayfaBilgileri",
-            "declaredInPlatformReference": false
-          },
-          {
-            "name": "cevir",
+            "name": "getAttribute",
             "declaredInPlatformReference": false
           }
         ]
@@ -1804,6 +1800,10 @@
           {
             "name": "userCancelOrder",
             "declaredInPlatformReference": false
+          },
+          {
+            "name": "getAttribute",
+            "declaredInPlatformReference": false
           }
         ]
       }
@@ -2032,7 +2032,7 @@
     "listed": true,
     "manuallyReviewed": false,
     "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
-    "identicalToOriginal": true,
+    "identicalToOriginal": false,
     "twigHelpers": [
       "cevir",
       "sayfaBilgileri",
@@ -2470,7 +2470,7 @@
     "listed": true,
     "manuallyReviewed": false,
     "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
-    "identicalToOriginal": true,
+    "identicalToOriginal": false,
     "twigHelpers": [
       "cevir",
       "kullaniciBilgileri",
@@ -2482,6 +2482,10 @@
       {
         "line": 3,
         "calls": [
+          {
+            "name": "closest",
+            "declaredInPlatformReference": false
+          },
           {
             "name": "prop",
             "declaredInPlatformReference": false
@@ -3221,7 +3225,7 @@
     "listed": true,
     "manuallyReviewed": false,
     "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
-    "identicalToOriginal": true,
+    "identicalToOriginal": false,
     "twigHelpers": [
       "etiketler",
       "sayfaBilgileri"
@@ -3500,6 +3504,7 @@
       "ayarlar",
       "buyukCevir",
       "cevir",
+      "e",
       "sayfaBilgileri",
       "temaAyarlari",
       "urunHavaleFiyati",
@@ -3625,25 +3630,7 @@
         ]
       },
       {
-        "line": 85,
-        "calls": [
-          {
-            "name": "addCart",
-            "declaredInPlatformReference": true
-          }
-        ]
-      },
-      {
         "line": 99,
-        "calls": [
-          {
-            "name": "addCart",
-            "declaredInPlatformReference": true
-          }
-        ]
-      },
-      {
-        "line": 104,
         "calls": [
           {
             "name": "addCart",
@@ -3680,15 +3667,6 @@
       },
       {
         "line": 210,
-        "calls": [
-          {
-            "name": "addCart",
-            "declaredInPlatformReference": true
-          }
-        ]
-      },
-      {
-        "line": 216,
         "calls": [
           {
             "name": "addCart",
@@ -3797,24 +3775,6 @@
         ]
       },
       {
-        "line": 93,
-        "calls": [
-          {
-            "name": "addCart",
-            "declaredInPlatformReference": true
-          }
-        ]
-      },
-      {
-        "line": 109,
-        "calls": [
-          {
-            "name": "addCart",
-            "declaredInPlatformReference": true
-          }
-        ]
-      },
-      {
         "line": 185,
         "calls": [
           {
@@ -3843,15 +3803,6 @@
       },
       {
         "line": 217,
-        "calls": [
-          {
-            "name": "addCart",
-            "declaredInPlatformReference": true
-          }
-        ]
-      },
-      {
-        "line": 223,
         "calls": [
           {
             "name": "addCart",
@@ -5005,8 +4956,6 @@
     "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
     "identicalToOriginal": null,
     "twigHelpers": [
-      "number_format",
-      "round",
       "sepetBilgileri"
     ],
     "inlineEvents": [],

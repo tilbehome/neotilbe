@@ -51,7 +51,7 @@ Her satır için masaüstü 1440, tablet 768 ve mobil 375 px; klavye/odak, conso
 
 ## Sorun kaydı
 
-Son tur: [platform-uyum-05-kontrol.md](platform-uyum-05-kontrol.md). Video/favori/form/kategori/yardım/ödeme metni ve hediye çeki onarımları, gerçek yerel Twig ayrıştırması ve sınırları bu raporda kayıtlıdır. Önceki tur durumları aşağıdaki tek güncel kayıtta birleştirildi.
+Son tur: [platform-uyum-06-kontrol.md](platform-uyum-06-kontrol.md); önceki [05 turu](platform-uyum-05-kontrol.md). Video/favori/form/kategori/yardım/ödeme metni ve hediye çeki onarımları, gerçek yerel Twig ayrıştırması ve sınırları bu raporda kayıtlıdır. Önceki tur durumları aşağıdaki tek güncel kayıtta birleştirildi.
 
 Güncel durumun tek kaynağı `sorun-durumlari.json`; aşağıdaki tablo bu kayıttan üretilir. Önceki raporlar tarihsel kanıttır, güncel açık/kapalı durum için bu tablo geçerlidir.
 
@@ -83,7 +83,7 @@ Güncel durumun tek kaynağı `sorun-durumlari.json`; aşağıdaki tablo bu kay�
 | B2 | sepet/liste.twig quantity input data-value-type; referans productQuantityBox data-quantity-type okuyor | Referansın okuduğu niteliğe bağlandı; gerçek referans yardımcıyla 1.5→1.6→1.5 T | düzeltildi ve doğrulandı (K/T); diğer birim/min/max kuralları Q bekliyor | ilk-inceleme.md (ilk tespit); önceki kontrol raporları |
 | C1 | kart_degerlendirmeler.twig:8,30 Bootstrap 5 me/ms yardımcıları, referans Bootstrap 4 | mr-2/ml-2 ile mevcut pakete bağlandı K | düzeltildi ve doğrulandı (K); canlı kütüphane sürümü Q bekliyor | ilk-inceleme.md (ilk tespit); önceki kontrol raporları |
 | F1 | kart_favori_listesi.twig:1 kart urun.ID yerine sayfaBilgileri ID kapsayıcısı; orijinalde de var | urun.ID, kanonik favori listesinden ilk durum ve ekle/kaldır kontrolleri. | onarım uygulandı; yerel callback doğrulandı; helper/performans Q kabulü bekliyor | platform-uyum-05-kontrol.md |
-| D4 | sepet/liste.twig rezervasyon rozeti, profil.twig sabit 500 TL ve kargo sayacı | Ürün sabit 500 TL kaldırıldı; platform kargo helperı ve üç yerel Twig dalı geçti. Rezervasyon/saat/teslimat mağaza doğrulaması açık. | kargo tutarı onarıldı ve yerelde doğrulandı; diğer beyanlar/platform kabulü bekliyor | platform-uyum-05-kontrol.md |
+| D4 | sepet/liste.twig rezervasyon rozeti, profil.twig sabit 500 TL ve kargo sayacı | 500 TL platform helperına bağlandı; sepet rezervasyon iddiası kaldırıldı. Teslimat/saat takviminin mağaza dayanağı açık. | kargo tutarı onarıldı ve yerelde doğrulandı; diğer beyanlar/platform kabulü bekliyor | platform-uyum-05-kontrol.md; platform-uyum-06-kontrol.md |
 | V1 | urunler/profil.twig ve hizli_sepet_kutusu.twig | Varyant değeri JS dizgesinden data niteliğine taşındı | onarım uygulandı; yerelde doğrulandı (rapordaki kapsam); platform kabulü bekliyor | platform-uyum-03-kontrol.md |
 | F2 | hesap/alt_sayfalar/favori_listem.twig | data-user-product-id geri bağlandı | onarım uygulandı; yerelde doğrulandı (rapordaki kapsam); platform kabulü bekliyor | platform-uyum-03-kontrol.md |
 | A3 | uyelik/sifre_yenileme.twig; sifremi_unuttum.twig | Alan erişilebilir adları | onarım uygulandı; yerelde doğrulandı (rapordaki kapsam); platform kabulü bekliyor | platform-uyum-03-kontrol.md |
@@ -99,6 +99,16 @@ Güncel durumun tek kaynağı `sorun-durumlari.json`; aşağıdaki tablo bu kay�
 | PAY1 | hesap/icerik.twig; odeme/bilgiler/odeme.twig | Hata mesajı JS kaçışı ve ödeme tab ARIA ilişkisi | onarım uygulandı; rapordaki yerel kontroller geçti; platform kabulü bekliyor | platform-uyum-05-kontrol.md |
 | A6 | sepet/ajax_liste.twig; fiyat/stok alarm listeleri; profil/hızlı favori | Ürün adıyla erişilebilir kontrol isimleri | onarım uygulandı; kaynak kontrolü; tarayıcı/ekran okuyucu kabulü açık | platform-uyum-05-kontrol.md |
 | PV1 | urunler/resim_alani_tipi/carousel_sol.twig; assets/scripts.js | Video öğe izolasyonu, play hata/tekrar yönetimi ve tek ok çifti | onarım uygulandı; rapordaki yerel kontroller geçti; platform kabulü bekliyor | platform-uyum-05-kontrol.md |
+| PROMO1 | sepette-1000-tl-75-indirim.twig:1 | Sabit indirim matematiği yerine platform özetinin indirim bayrağı | onarım uygulandı; rapordaki yerel kapsam doğrulandı; platform kabulü açık | platform-uyum-06-kontrol.md |
+| MENU1 | moduller/diger/mega_menu.twig:54; style.css:6005 | Koşullu sütun kapanışı, görsel adı ve focus-within klavye erişimi | onarım uygulandı; rapordaki yerel kapsam doğrulandı; platform kabulü açık | platform-uyum-06-kontrol.md |
+| CARD1 | urunler/kart.twig; kat-ozel-kart.twig | Stok dışı native disabled kontrol, görsel/kontrol adları | onarım uygulandı; rapordaki yerel kapsam doğrulandı; platform kabulü açık | platform-uyum-06-kontrol.md |
+| CSS2 | assets/style.css:8735 | Açık fonda beyaz stok metni #333 ile okunur oldu | onarım uygulandı; rapordaki yerel kapsam doğrulandı; platform kabulü açık | platform-uyum-06-kontrol.md |
+| SHIP1 | odeme/bilgiler/kargo_icerik.twig:3 | Radio tıklamasında çift change engellendi | onarım uygulandı; rapordaki yerel kapsam doğrulandı; platform kabulü açık | platform-uyum-06-kontrol.md |
+| GALLERY2 | urunler/resim_alani_tipi; atli_karinca_resim.twig; carousel_atli_karinca.twig | Etiket makrosuna tam ürün nesnesi | onarım uygulandı; rapordaki yerel kapsam doğrulandı; platform kabulü açık | platform-uyum-06-kontrol.md |
+| HELP2 | yardim/madde_listesi.twig; assets/scripts.js | Eski yardım fragment hedefleri korundu | onarım uygulandı; rapordaki yerel kapsam doğrulandı; platform kabulü açık | platform-uyum-06-kontrol.md |
+| SB1 | assets/smartbanner.js; sablon.twig | HTML metin kaçışı, pushSelector ve mevcut transition helperını koruma | onarım uygulandı; rapordaki yerel kapsam doğrulandı; platform kabulü açık | platform-uyum-06-kontrol.md |
+| HTML2 | odeme/siparis_onayi.twig; kategoriler/filtreleme/fiyatlar.twig | Başlık kapanışı ve fiyat kontrol adları | onarım uygulandı; rapordaki yerel kapsam doğrulandı; platform kabulü açık | platform-uyum-06-kontrol.md |
+| JS2 | urunler/hizli_sepet_kutusu.twig; siparislerim.twig; bakiye_dekontu.twig | Biçimli fiyat JS kaçışı; sipariş/yazdırma metnini data niteliğiyle taşıma | onarım uygulandı; rapordaki yerel kapsam doğrulandı; platform kabulü açık | platform-uyum-06-kontrol.md |
 <!-- CURRENT_ISSUES_END -->
 
 ## Platformla kesinleştirilmesi gerekenler

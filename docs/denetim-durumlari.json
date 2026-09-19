@@ -12,10 +12,10 @@
     "evidence": "kapsamli-denetim.md; platform-uyum-03-kontrol.md; önceki kontrol raporları"
   },
   "canlitema/assets/scripts.js": {
-    "scope": "Menü kilidi, ödeme dosya gönderimi, varyant select köprüsü; 05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil",
+    "scope": "Menü kilidi, ödeme dosya gönderimi, varyant select köprüsü; 05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil; 06 raporundaki somut onarım; dosya geneli kabul değil",
     "fixed": true,
     "local": true,
-    "evidence": "platform-uyum-05-kontrol.md"
+    "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md"
   },
   "canlitema/moduller/sepet/ozet.twig": {
     "scope": "Fiyat/kargo helper sözleşmesi, bağımsız hesapların kaldırılması",
@@ -30,10 +30,10 @@
     "evidence": "platform-uyum-05-kontrol.md"
   },
   "canlitema/moduller/urunler/hizli_sepet_kutusu.twig": {
-    "scope": "Varyant değerinin JS içine ham yazılması",
+    "scope": "Varyant değerinin JS içine ham yazılması; 06 raporundaki somut onarım; dosya geneli kabul değil",
     "fixed": true,
     "local": true,
-    "evidence": "kapsamli-denetim.md; platform-uyum-03-kontrol.md; önceki kontrol raporları"
+    "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md"
   },
   "canlitema/moduller/hesap/alt_sayfalar/favori_listem.twig": {
     "scope": "Platform remove account seçicisi",
@@ -72,10 +72,10 @@
     "evidence": "kapsamli-denetim.md; platform-uyum-03-kontrol.md; önceki kontrol raporları"
   },
   "canlitema/sablon.twig": {
-    "scope": "Script ekleme noktaları ve miras; canlı inject sırası belirsiz",
-    "fixed": false,
+    "scope": "Script ekleme noktaları ve miras; canlı inject sırası belirsiz; 06 raporundaki somut onarım; dosya geneli kabul değil",
+    "fixed": true,
     "local": false,
-    "evidence": "kapsamli-denetim.md; platform-uyum-03-kontrol.md; önceki kontrol raporları"
+    "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md"
   },
   "canlitema/video-listeleme.twig": {
     "scope": "Swiper Element yükleme ve başlangıç yaşam döngüsü; modal erişilebilirliği açık; 05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil",
@@ -186,10 +186,10 @@
     "evidence": "platform-uyum-04-kontrol.md"
   },
   "canlitema/assets/style.css": {
-    "scope": "Giriş yerleşimi, menü kilitleri ve kategori dialog kilidi; bütün CSS kabulü açık; 05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil",
+    "scope": "Giriş yerleşimi, menü kilitleri ve kategori dialog kilidi; bütün CSS kabulü açık; 05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil; 06 raporundaki somut onarım; dosya geneli kabul değil",
     "fixed": true,
     "local": true,
-    "evidence": "platform-uyum-05-kontrol.md"
+    "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md"
   },
   "canlitema/moduller/hediye_ceki/kart.twig": {
     "scope": "05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil",
@@ -324,10 +324,10 @@
     "evidence": "platform-uyum-05-kontrol.md"
   },
   "canlitema/moduller/urunler/resim_alani_tipi/carousel_atli_karinca.twig": {
-    "scope": "05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil",
+    "scope": "05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil; 06 raporundaki somut onarım; dosya geneli kabul değil",
     "fixed": true,
     "local": true,
-    "evidence": "platform-uyum-05-kontrol.md"
+    "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md"
   },
   "canlitema/moduller/urunler/resim_alani_tipi/carousel_sol.twig": {
     "scope": "05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil",
@@ -354,10 +354,10 @@
     "evidence": "platform-uyum-05-kontrol.md"
   },
   "canlitema/moduller/yardim/madde_listesi.twig": {
-    "scope": "05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil",
+    "scope": "05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil; 06 raporundaki somut onarım; dosya geneli kabul değil",
     "fixed": true,
     "local": true,
-    "evidence": "platform-uyum-05-kontrol.md"
+    "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md"
   },
   "canlitema/assets/video-gallery.js": {
     "scope": "05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil",
@@ -474,10 +474,10 @@
     "evidence": "platform-uyum-05-kontrol.md"
   },
   "canlitema/moduller/urunler/resim_alani_tipi/normal_altta.twig": {
-    "scope": "Kaynak okundu: platform helper/olay seçicileri, boş dal ve HTML yapısı; gerçek veri/görsel kabulü açık",
-    "fixed": false,
-    "local": false,
-    "evidence": "platform-uyum-05-kontrol.md"
+    "scope": "Kaynak okundu: platform helper/olay seçicileri, boş dal ve HTML yapısı; gerçek veri/görsel kabulü açık; 06 raporundaki somut onarım; dosya geneli kabul değil",
+    "fixed": true,
+    "local": true,
+    "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md"
   },
   "canlitema/moduller/hediye_ceki/icerik.twig": {
     "scope": "Kaynak okundu: platform helper/olay seçicileri, boş dal ve HTML yapısı; gerçek veri/görsel kabulü açık",
@@ -522,10 +522,10 @@
     "evidence": "platform-uyum-05-kontrol.md"
   },
   "canlitema/moduller/hesap/alt_sayfalar/bakiye_dekontu.twig": {
-    "scope": "Kaynak okundu: platform helper/olay seçicileri, boş dal ve HTML yapısı; gerçek veri/görsel kabulü açık",
-    "fixed": false,
+    "scope": "Kaynak okundu: platform helper/olay seçicileri, boş dal ve HTML yapısı; gerçek veri/görsel kabulü açık; 06 raporundaki somut onarım; dosya geneli kabul değil",
+    "fixed": true,
     "local": false,
-    "evidence": "platform-uyum-05-kontrol.md"
+    "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md"
   },
   "canlitema/moduller/hesap/alt_sayfalar/hesabim_b2b.twig": {
     "scope": "Kaynak okundu: platform helper/olay seçicileri, boş dal ve HTML yapısı; gerçek veri/görsel kabulü açık",
@@ -558,15 +558,513 @@
     "evidence": "platform-uyum-05-kontrol.md"
   },
   "canlitema/moduller/hesap/alt_sayfalar/siparislerim.twig": {
-    "scope": "Kaynak okundu: platform helper/olay seçicileri, boş dal ve HTML yapısı; gerçek veri/görsel kabulü açık",
-    "fixed": false,
+    "scope": "Kaynak okundu: platform helper/olay seçicileri, boş dal ve HTML yapısı; gerçek veri/görsel kabulü açık; 06 raporundaki somut onarım; dosya geneli kabul değil",
+    "fixed": true,
     "local": false,
-    "evidence": "platform-uyum-05-kontrol.md"
+    "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md"
   },
   "canlitema/moduller/hesap/menu.twig": {
     "scope": "Kaynak okundu: platform helper/olay seçicileri, boş dal ve HTML yapısı; gerçek veri/görsel kabulü açık",
     "fixed": false,
     "local": false,
     "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/liste-urunlerim.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/moduller/bloglar/anasayfa_kart.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/moduller/bloglar/kategoriler.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/moduller/bloglar/sayfalama.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/moduller/diger/banner_kart.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/moduller/diger/instagram_feed_kart.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/moduller/diger/kategori_icon.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.; 06 raporundaki somut onarım; dosya geneli kabul değil",
+    "fixed": true,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/hesap/alt_sayfalar/cuzdanim.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/moduller/kategoriler/breadcrumb.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/moduller/kategoriler/filtreleme/fiyatlar.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.; 06 raporundaki somut onarım; dosya geneli kabul değil",
+    "fixed": true,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/kategoriler/filtreleme/kategoriler.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/moduller/kategoriler/filtreleme/kategoriler_icerik.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/moduller/kategoriler/filtreleme/listeler.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/moduller/kategoriler/filtreleme/markalar.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/moduller/kategoriler/filtreleme/markalar_icerik.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/moduller/kategoriler/filtreleme/nitelikler.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/moduller/kategoriler/filtreleme/yukleniyor.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/moduller/kategoriler/kart.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/moduller/kategoriler/kategori_aciklama.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/moduller/kategoriler/liste.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/moduller/kategoriler/ozel_blog.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/moduller/odeme/siparis_onayi.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.; 06 raporundaki somut onarım; dosya geneli kabul değil",
+    "fixed": true,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/odeme/sozlesmeler/mesafeli_satis_sozlesmesi.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/moduller/odeme/sozlesmeler/on_bilgilendirme_formu.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/moduller/sayfam-urun/sayfam-urun.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/moduller/sepet/butonlar.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/moduller/sepet/sepet_bos.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/moduller/statik_sayfalar/alt_sayfalar/sayfa.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/moduller/statik_sayfalar/alt_sayfalar/sss.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/moduller/statik_sayfalar/icerik.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/moduller/statik_sayfalar/menu.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/moduller/urunler/atli_karinca_resim.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.; 06 raporundaki somut onarım; dosya geneli kabul değil",
+    "fixed": true,
+    "local": true,
+    "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/urunler/carousel_atli_karinca.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.; 06 raporundaki somut onarım; dosya geneli kabul değil",
+    "fixed": true,
+    "local": true,
+    "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/urunler/detay_aciklama.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/moduller/urunler/detay_taksitler.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/moduller/urunler/detay_teslimat.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/moduller/urunler/detay_yorumlar.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/moduller/urunler/kart_degerlendirmeler.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/moduller/urunler/kart_yorum.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/moduller/urunler/liste_kart.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/moduller/uyelik/giris_yap_aciklama.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/moduller/uyelik/sifremi_unuttum_aciklama.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/moduller/yardim/baslik_listesi.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/moduller/yardim/baslik_vitrini.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/moduller/yardim/breadcrumb.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/ozel-moduller/bardak-masaustu-liste.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/ozel-moduller/ev-gerecleri-masaustu-liste.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/ozel-moduller/kampanya-urunlerim.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/ozel-moduller/matara-masaustu-liste.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/ozel-moduller/rende-masaustu-liste.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/ozel-moduller/viral-trend-masaustu-liste.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/sayfalar/404.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/sayfalar/anasayfa.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/sayfalar/blog_detay.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/sayfalar/bloglar.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/sayfalar/hediye_ceki.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/sayfalar/hesabim.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/sayfalar/kategoriler.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/sayfalar/markalar.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/sayfalar/odeme.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/sayfalar/sepet.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/sayfalar/sifre_yenileme.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/sayfalar/sifremi_unuttum.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/sayfalar/statik_sayfalar.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/sayfalar/urun_detay.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/sayfalar/uye_girisi.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/sayfalar/uye_ol.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/sayfalar/yardim.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/sayfalar/yardim_detay.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/sepette-1000-tl-75-indirim.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.; 06 raporundaki somut onarım; dosya geneli kabul değil",
+    "fixed": true,
+    "local": true,
+    "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/diger/mega_menu.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.; 06 raporundaki somut onarım; dosya geneli kabul değil",
+    "fixed": true,
+    "local": true,
+    "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/urunler/anasayfa_kart.twig": {
+    "scope": "06 turu: kaynak elle okundu; miras/dinamik include, veri ve boş dallar, HTML, görsel alt/bağlantı ve platform olayları. Görsel/sunucu kabulü yok.; 06 raporundaki somut onarım; dosya geneli kabul değil",
+    "fixed": true,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md"
+  },
+  "canlitema/assets/smartbanner.css": {
+    "scope": "06 turu kaynak/ayar yapısı ve kullanım bağlantıları; CSS/ayarların tüm cihaz ve canlı kombinasyonları kabul edilmedi",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/urun-fav-sayma-eklenti.js": {
+    "scope": "06 turu kaynak/ayar yapısı ve kullanım bağlantıları; CSS/ayarların tüm cihaz ve canlı kombinasyonları kabul edilmedi",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/ayarlar/tanim.json": {
+    "scope": "06 turu kaynak/ayar yapısı ve kullanım bağlantıları; CSS/ayarların tüm cihaz ve canlı kombinasyonları kabul edilmedi",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/ayarlar/resim_boyutlari.json": {
+    "scope": "06 turu kaynak/ayar yapısı ve kullanım bağlantıları; CSS/ayarların tüm cihaz ve canlı kombinasyonları kabul edilmedi",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/ayarlar/tema.json": {
+    "scope": "06 turu kaynak/ayar yapısı ve kullanım bağlantıları; CSS/ayarların tüm cihaz ve canlı kombinasyonları kabul edilmedi",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/moduller/statik_sayfalar/alt_sayfalar/siparis_takip.twig": {
+    "scope": "06 turu kaynak/ayar yapısı ve kullanım bağlantıları; CSS/ayarların tüm cihaz ve canlı kombinasyonları kabul edilmedi",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/smartbanner.js": {
+    "scope": "06 raporundaki somut onarım; dosya geneli kabul değil",
+    "fixed": true,
+    "local": true,
+    "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/odeme/bilgiler/kargo_icerik.twig": {
+    "scope": "06 raporundaki somut onarım; dosya geneli kabul değil",
+    "fixed": true,
+    "local": true,
+    "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/sepet/liste.twig": {
+    "scope": "06 raporundaki somut onarım; dosya geneli kabul değil",
+    "fixed": true,
+    "local": true,
+    "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/urunler/kart.twig": {
+    "scope": "06 raporundaki somut onarım; dosya geneli kabul değil",
+    "fixed": true,
+    "local": true,
+    "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/urunler/kat-ozel-kart.twig": {
+    "scope": "06 raporundaki somut onarım; dosya geneli kabul değil",
+    "fixed": true,
+    "local": true,
+    "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md"
   }
 }
