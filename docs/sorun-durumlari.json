@@ -362,5 +362,33 @@
     "remedy": "Aynı medya kapsamındaki tekrarlar, ezilen ve geçersiz bildirimler kaldırıldı; Gold cascade korundu",
     "status": "onarım uygulandı; 11 genişlikte yerel cascade doğrulandı; tam sayfa/platform görsel kabulü açık",
     "evidence": "css-denetimi.md; css-cascade-results.json"
+  },
+  {
+    "id": "PV2",
+    "location": "profil.twig; carousel_sol.twig; assets/product-video-popup.js",
+    "remedy": "Alternatif video X hatası, odak/scroll/temizleme ve ekran dışı kapanış kontrolü onarıldı",
+    "status": "onarım uygulandı; yerelde doğrulandı; platform kabulü bekliyor",
+    "evidence": "platform-uyum-07-kontrol.md"
+  },
+  {
+    "id": "CSS4",
+    "location": "assets/style.css: footer mobil siyah important kuralı",
+    "remedy": "Koyu fondaki çalışma saatine mevcut açık footer rengi döndü",
+    "status": "onarım uygulandı; yerelde doğrulandı; platform kabulü bekliyor",
+    "evidence": "platform-uyum-07-kontrol.md"
+  },
+  {
+    "id": "LOGIN2",
+    "location": "uyelik/giris_yap.twig sosyal giriş kapsayıcıları",
+    "remedy": "Sağlayıcılar kapalıyken boş sosyal giriş alanı gösterilmiyor",
+    "status": "onarım uygulandı; yerelde doğrulandı; platform kabulü bekliyor",
+    "evidence": "platform-uyum-07-kontrol.md"
+  },
+  {
+    "id": "LAYOUT1",
+    "location": "Platform Dosyaları/template-assets/style.min.css; footer.twig; sepet/ozet.twig; sepet/butonlar.twig",
+    "remedy": "Mobil sabit CTA ve alt navigasyon örtüşmesi; etkin blok yerleşimi/gerçek DOM gerekli",
+    "status": "yerel birleşimde görüldü; platformda doğrulama bekliyor",
+    "evidence": "platform-uyum-07-kontrol.md"
   }
 ]

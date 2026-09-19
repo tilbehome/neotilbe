@@ -1,6 +1,6 @@
 # Tam tema dosya envanteri
 
-Üreten: `node tools/tema-envanteri.cjs`. 361 dosya; hiçbir dosya kapsam dışı bırakılmadı.
+Üreten: `node tools/tema-envanteri.cjs`. 362 dosya; hiçbir dosya kapsam dışı bırakılmadı.
 
 Listelendi yalnız otomatik envanterdir; incelendi yalnız review.scope içindeki kaynak incelemesidir. Düzeltildi ve yerelde doğrulandı ayrı aşamalardır; bütün dosyanın kabulü değildir. İncelenmeyen dosyalar listelendi olarak kalır. Alt kontroller, SHA-256, satırlı sinyaller ve bağımlılıklar `tema-envanteri.json` içinde. Sinyaller hata hükmü değildir. İşlev/onarım durumları `kapsamli-denetim.md` içinde izlenir.
 
@@ -130,10 +130,11 @@ Listelendi yalnız otomatik envanterdir; incelendi yalnız review.scope içindek
 | `canlitema/assets/menu-left.svg` | 170 | incelendi (belirtilen kapsam); yerelde doğrulandı; platformda doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
 | `canlitema/assets/new-share.svg` | 791 | incelendi (belirtilen kapsam); yerelde doğrulandı; platformda doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
 | `canlitema/assets/notification-svgrepo-com.svg` | 3497 | incelendi (belirtilen kapsam); yerelde doğrulandı; platformda doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
+| `canlitema/assets/product-video-popup.js` | 3421 | incelendi (belirtilen kapsam); düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor | kontrol edildi: yerel ayrıştırma başarılı |
 | `canlitema/assets/scripts.js` | 6606 | incelendi (belirtilen kapsam); düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor | kontrol edildi: yerel ayrıştırma başarılı |
 | `canlitema/assets/smartbanner.css` | 6466 | incelendi (belirtilen kapsam); platformda doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
 | `canlitema/assets/smartbanner.js` | 16717 | incelendi (belirtilen kapsam); düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor | kontrol edildi: yerel ayrıştırma başarılı |
-| `canlitema/assets/style.css` | 311774 | incelendi (belirtilen kapsam); düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor | 0 sabit şablon bağı; 1 inceleme sinyali |
+| `canlitema/assets/style.css` | 311905 | incelendi (belirtilen kapsam); düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor | 0 sabit şablon bağı; 1 inceleme sinyali |
 | `canlitema/assets/tahmini-kargom.js` | 2368 | incelendi (belirtilen kapsam); platformda doğrulama bekliyor | doğrulama bekliyor: missing ) after argument list |
 | `canlitema/assets/urun-fav-sayma-eklenti.js` | 228 | incelendi (belirtilen kapsam); düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor | kontrol edildi: yerel ayrıştırma başarılı |
 | `canlitema/assets/video-gallery.js` | 3877 | incelendi (belirtilen kapsam); düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor | kontrol edildi: yerel ayrıştırma başarılı |
@@ -265,13 +266,13 @@ Listelendi yalnız otomatik envanterdir; incelendi yalnız review.scope içindek
 | `canlitema/moduller/urunler/kat-ozel-kart.twig` | 11386 | incelendi (belirtilen kapsam); düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor | 2 sabit şablon bağı; 2 inceleme sinyali |
 | `canlitema/moduller/urunler/liste_kart.twig` | 1101 | incelendi (belirtilen kapsam); platformda doğrulama bekliyor | 0 sabit şablon bağı; 1 inceleme sinyali |
 | `canlitema/moduller/urunler/normal_resim.twig` | 3174 | incelendi (belirtilen kapsam); platformda doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
-| `canlitema/moduller/urunler/profil.twig` | 31083 | incelendi (belirtilen kapsam); düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor | 6 sabit şablon bağı; 5 inceleme sinyali |
+| `canlitema/moduller/urunler/profil.twig` | 29687 | incelendi (belirtilen kapsam); düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor | 6 sabit şablon bağı; 5 inceleme sinyali |
 | `canlitema/moduller/urunler/profil_degerlendirmeler.twig` | 1087 | incelendi (belirtilen kapsam); düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
 | `canlitema/moduller/urunler/profil_favori_listesi.twig` | 622 | incelendi (belirtilen kapsam); düzeltildi; platformda doğrulama bekliyor | 0 sabit şablon bağı; 1 inceleme sinyali |
 | `canlitema/moduller/urunler/resim_alani_tipi/carousel_atli_karinca.twig` | 2979 | incelendi (belirtilen kapsam); düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor | 1 sabit şablon bağı; 0 inceleme sinyali |
-| `canlitema/moduller/urunler/resim_alani_tipi/carousel_sol.twig` | 5027 | incelendi (belirtilen kapsam); düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor | 0 sabit şablon bağı; 1 inceleme sinyali |
+| `canlitema/moduller/urunler/resim_alani_tipi/carousel_sol.twig` | 5120 | incelendi (belirtilen kapsam); düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor | 0 sabit şablon bağı; 1 inceleme sinyali |
 | `canlitema/moduller/urunler/resim_alani_tipi/normal_altta.twig` | 5189 | incelendi (belirtilen kapsam); düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
-| `canlitema/moduller/uyelik/giris_yap.twig` | 8516 | incelendi (belirtilen kapsam); düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor | 0 sabit şablon bağı; 1 inceleme sinyali |
+| `canlitema/moduller/uyelik/giris_yap.twig` | 8652 | incelendi (belirtilen kapsam); düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor | 0 sabit şablon bağı; 1 inceleme sinyali |
 | `canlitema/moduller/uyelik/giris_yap_aciklama.twig` | 829 | incelendi (belirtilen kapsam); platformda doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
 | `canlitema/moduller/uyelik/hizli_giris_kutusu.twig` | 2002 | incelendi (belirtilen kapsam); düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
 | `canlitema/moduller/uyelik/sifre_yenileme.twig` | 1788 | incelendi (belirtilen kapsam); düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor | 0 sabit şablon bağı; 1 inceleme sinyali |

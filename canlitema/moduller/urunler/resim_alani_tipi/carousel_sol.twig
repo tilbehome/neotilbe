@@ -75,16 +75,16 @@
 
 {# Videoyu kontrol edip butonu gösteren HTML #}
 <div id="video-button-container-987" class="video-wrapper-987" style="display: none;">
-    <button id="video-button-987" class="video-btn-987" onclick="openVideoPopup()">
+    <button id="video-button-987" class="video-btn-987" type="button" aria-haspopup="dialog" aria-controls="video-popup-987">
         <i class="fas fa-play video-icon-987"></i>
         <span class="video-text-987">Ürün Videosunu İzle</span>
     </button>
 </div>
 
 {# Popup için gerekli HTML ve JS #}
-<div id="video-popup-987" class="video-popup-hidden-987" onclick="closeVideoPopup(event)">
+<div id="video-popup-987" class="video-popup-hidden-987" hidden role="dialog" aria-modal="true" aria-label="Ürün videosu">
     <div id="popup-content-987" class="video-popup-content-987">
-        <span id="close-popup-987" class="close-popup-btn-987" onclick="closeVideoPopup()">&times;</span>
+        <button type="button" id="close-popup-987" class="close-popup-btn-987" aria-label="Videoyu kapat">&times;</button>
         <div id="video-container-987" class="video-container-987"></div>
     </div>
 </div>

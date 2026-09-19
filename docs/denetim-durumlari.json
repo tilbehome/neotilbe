@@ -24,10 +24,10 @@
     "evidence": "kapsamli-denetim.md; platform-uyum-03-kontrol.md; önceki kontrol raporları"
   },
   "canlitema/moduller/urunler/profil.twig": {
-    "scope": "Fiyat/taksit HTML, varyant değerlerinin JS bağlamından çıkarılması; 05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil",
+    "scope": "Fiyat/taksit HTML, varyant değerlerinin JS bağlamından çıkarılması; 05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil; alternatif video/sosyal giriş ilgili onarım ve yerel kapsam (bütün dosya kabulü değil)",
     "fixed": true,
     "local": true,
-    "evidence": "platform-uyum-05-kontrol.md"
+    "evidence": "platform-uyum-05-kontrol.md; platform-uyum-07-kontrol.md"
   },
   "canlitema/moduller/urunler/hizli_sepet_kutusu.twig": {
     "scope": "Varyant değerinin JS içine ham yazılması; 06 raporundaki somut onarım; dosya geneli kabul değil",
@@ -48,10 +48,10 @@
     "evidence": "platform-uyum-05-kontrol.md"
   },
   "canlitema/moduller/uyelik/giris_yap.twig": {
-    "scope": "Platform giriş, parola izolasyonu, yerel klavye ve görünüm",
+    "scope": "Platform giriş, parola izolasyonu, yerel klavye ve görünüm; alternatif video/sosyal giriş ilgili onarım ve yerel kapsam (bütün dosya kabulü değil)",
     "fixed": true,
     "local": true,
-    "evidence": "kapsamli-denetim.md; platform-uyum-03-kontrol.md; önceki kontrol raporları"
+    "evidence": "kapsamli-denetim.md; platform-uyum-03-kontrol.md; önceki kontrol raporları; platform-uyum-07-kontrol.md"
   },
   "canlitema/moduller/uyelik/sifre_yenileme.twig": {
     "scope": "Platform alan adları ve erişilebilir alan adı",
@@ -330,10 +330,10 @@
     "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md"
   },
   "canlitema/moduller/urunler/resim_alani_tipi/carousel_sol.twig": {
-    "scope": "05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil",
+    "scope": "05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil; alternatif video/sosyal giriş ilgili onarım ve yerel kapsam (bütün dosya kabulü değil)",
     "fixed": true,
     "local": true,
-    "evidence": "platform-uyum-05-kontrol.md"
+    "evidence": "platform-uyum-05-kontrol.md; platform-uyum-07-kontrol.md"
   },
   "canlitema/moduller/uyelik/hizli_giris_kutusu.twig": {
     "scope": "05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil",
@@ -2158,5 +2158,11 @@
     "fixed": false,
     "local": false,
     "evidence": "platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/product-video-popup.js": {
+    "scope": "; alternatif video/sosyal giriş ilgili onarım ve yerel kapsam (bütün dosya kabulü değil)",
+    "fixed": true,
+    "local": true,
+    "evidence": "platform-uyum-07-kontrol.md"
   }
 }

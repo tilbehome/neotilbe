@@ -34,6 +34,7 @@
                     {% endif %}
                     <br>
                     <br>
+{% if facebookLogin().aktif or googleLogin().aktif %}
 <div class="x9sdfkfj social-login-19kfsj">
     <p class="login-title-3kfdks">Sosyal hesabınız ile güvenli giriş</p>
 
@@ -52,6 +53,7 @@
 
     </div>
 </div>
+{% endif %}
 				
                     <input type="hidden" name="returnUrl" value="{{ returnUrl() }}" />
                     <input aria-label="E-posta adresinizi girin" type="text" class="form-control" name="email" placeholder="E-posta adresinizi girin">
@@ -76,6 +78,7 @@
                     <input type="hidden" name="returnUrl" value="{{ returnUrl() }}" />
                     
 
+{% if facebookLogin().aktif or googleLogin().aktif %}
 <div class="x9sdfkfj social-login-19kfsj">
     <p class="login-title-3kfdks">Sosyal hesabınız ile Üye Olun</p>
 
@@ -95,6 +98,7 @@
 
     </div>
 </div>
+{% endif %}
 
 
                     <input aria-label="Adınızı girin" type="text" class="form-control" name="name" placeholder="Adınızı girin">

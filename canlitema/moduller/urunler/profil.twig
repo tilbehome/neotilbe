@@ -490,44 +490,7 @@
 
 {% block modulFooterKodlari %}
 
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-    const youtubeIframe = document.querySelector("iframe[src*='youtube.com']");
-    const btn987 = document.getElementById("video-button-container-987");
-    const btn988 = document.getElementById("video-button-container-988");
-
-    if(youtubeIframe && btn987) btn987.style.display = "block";
-    else if(btn988) btn988.style.display = "block";
-
-    window.openVideoPopup = function() {
-        const container = document.getElementById("video-container-987");
-        if(!youtubeIframe || !container) return;
-
-        container.innerHTML = "";
-        const newIframe = youtubeIframe.cloneNode(true);
-        newIframe.style.width = "100%";
-        newIframe.style.height = "100%";
-        container.appendChild(newIframe);
-
-        const popup = document.getElementById("video-popup-987");
-        if(popup) popup.style.display = "flex";
-    }
-
-    window.closeVideoPopup = function(event){
-        if(event.target.id !== "video-popup-987" && event.target.id !== "close-popup-987") return;
-
-        const popup = document.getElementById("video-popup-987");
-        if(popup) popup.style.display = "none";
-
-        const container = document.getElementById("video-container-987");
-        if(container){
-            const iframe = container.querySelector("iframe");
-            if(iframe) iframe.src = "";
-            container.innerHTML = "";
-        }
-    }
-});
-</script>
+<script src="{{ temaDosyalari('/assets/product-video-popup.js') }}" defer></script>
 
 <script>
 (function () {

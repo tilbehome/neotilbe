@@ -1,0 +1,3047 @@
+{
+  "scope": "Local explicit composition; private Qukasoft base, macros, active module placement and language data are not reproduced. No server transactions.",
+  "pages": [
+    {
+      "name": "home",
+      "rendered": true,
+      "visualInspected": true,
+      "views": [
+        {
+          "width": 375,
+          "height": 4379,
+          "footerTextColor": "rgb(222, 222, 222)",
+          "documentWidth": 360,
+          "overflow": [
+            {
+              "tag": "DIV",
+              "class": "logo-area",
+              "left": -360,
+              "right": 0
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -350,
+              "right": -69
+            },
+            {
+              "tag": "IMG",
+              "class": "",
+              "left": -350,
+              "right": -69.015625
+            },
+            {
+              "tag": "DIV",
+              "class": "mobile-menu-close",
+              "left": -69,
+              "right": -29
+            },
+            {
+              "tag": "I",
+              "class": "fas fa-times",
+              "left": -69,
+              "right": -29
+            },
+            {
+              "tag": "DIV",
+              "class": "scrollbar",
+              "left": -360,
+              "right": 0
+            },
+            {
+              "tag": "DIV",
+              "class": "categories",
+              "left": -360,
+              "right": -15
+            },
+            {
+              "tag": "UL",
+              "class": "",
+              "left": -360,
+              "right": -15
+            },
+            {
+              "tag": "DIV",
+              "class": "mms-12345",
+              "left": -360,
+              "right": -15
+            },
+            {
+              "tag": "A",
+              "class": "mms-link-67890",
+              "left": -360,
+              "right": -187.5
+            },
+            {
+              "tag": "DIV",
+              "class": "items-11223",
+              "left": -360,
+              "right": -187.5
+            },
+            {
+              "tag": "IMG",
+              "class": "",
+              "left": -326.765625,
+              "right": -296.765625
+            },
+            {
+              "tag": "DIV",
+              "class": "mobil-area-title",
+              "left": -347,
+              "right": -25
+            },
+            {
+              "tag": "DIV",
+              "class": "mobil-area-2",
+              "left": -344,
+              "right": -31
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-1",
+              "left": -344,
+              "right": -187.5
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -334,
+              "right": -198.5
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-2",
+              "left": -187.5,
+              "right": -31
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -177.5,
+              "right": -41
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-3",
+              "left": -344,
+              "right": -187.5
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -334,
+              "right": -198.5
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-4",
+              "left": -187.5,
+              "right": -31
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -177.5,
+              "right": -41
+            },
+            {
+              "tag": "DIV",
+              "class": "title",
+              "left": 360,
+              "right": 610
+            },
+            {
+              "tag": "DIV",
+              "class": "scrollbar",
+              "left": 360,
+              "right": 610
+            },
+            {
+              "tag": "DIV",
+              "class": "login-menu",
+              "left": 360,
+              "right": 595
+            }
+          ],
+          "captureHeight": 4379,
+          "visualInspected": true
+        },
+        {
+          "width": 768,
+          "height": 2954,
+          "footerTextColor": "rgb(222, 222, 222)",
+          "documentWidth": 753,
+          "overflow": [
+            {
+              "tag": "DIV",
+              "class": "logo-area",
+              "left": -753,
+              "right": 0
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -743,
+              "right": -443
+            },
+            {
+              "tag": "IMG",
+              "class": "",
+              "left": -743,
+              "right": -443
+            },
+            {
+              "tag": "DIV",
+              "class": "mobile-menu-close",
+              "left": -69,
+              "right": -29
+            },
+            {
+              "tag": "I",
+              "class": "fas fa-times",
+              "left": -69,
+              "right": -29
+            },
+            {
+              "tag": "DIV",
+              "class": "scrollbar",
+              "left": -753,
+              "right": 0
+            },
+            {
+              "tag": "DIV",
+              "class": "categories",
+              "left": -753,
+              "right": -15
+            },
+            {
+              "tag": "UL",
+              "class": "",
+              "left": -753,
+              "right": -15
+            },
+            {
+              "tag": "DIV",
+              "class": "mms-12345",
+              "left": -753,
+              "right": -15
+            },
+            {
+              "tag": "A",
+              "class": "mms-link-67890",
+              "left": -753,
+              "right": -384
+            },
+            {
+              "tag": "DIV",
+              "class": "items-11223",
+              "left": -753,
+              "right": -384
+            },
+            {
+              "tag": "IMG",
+              "class": "",
+              "left": -621.515625,
+              "right": -591.515625
+            },
+            {
+              "tag": "DIV",
+              "class": "mobil-area-title",
+              "left": -740,
+              "right": -25
+            },
+            {
+              "tag": "DIV",
+              "class": "mobil-area-2",
+              "left": -737,
+              "right": -31
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-1",
+              "left": -737,
+              "right": -384
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -727,
+              "right": -395
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-2",
+              "left": -384,
+              "right": -31
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -374,
+              "right": -41
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-3",
+              "left": -737,
+              "right": -384
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -727,
+              "right": -395
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-4",
+              "left": -384,
+              "right": -31
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -374,
+              "right": -41
+            },
+            {
+              "tag": "DIV",
+              "class": "title",
+              "left": 753,
+              "right": 1003
+            },
+            {
+              "tag": "DIV",
+              "class": "scrollbar",
+              "left": 753,
+              "right": 1003
+            },
+            {
+              "tag": "DIV",
+              "class": "login-menu",
+              "left": 753,
+              "right": 988
+            }
+          ],
+          "captureHeight": 2954,
+          "visualInspected": true
+        },
+        {
+          "width": 1440,
+          "height": 2775,
+          "footerTextColor": "rgb(222, 222, 222)",
+          "documentWidth": 1425,
+          "overflow": [],
+          "captureHeight": 2775,
+          "visualInspected": true
+        }
+      ],
+      "platformAccepted": false,
+      "inspectionEvidence": "platform-uyum-07-kontrol.md: synthetic composition images inspected during this repair; not all settings/states"
+    },
+    {
+      "name": "category",
+      "rendered": true,
+      "visualInspected": true,
+      "views": [
+        {
+          "width": 375,
+          "height": 3121,
+          "footerTextColor": "rgb(222, 222, 222)",
+          "documentWidth": 360,
+          "overflow": [
+            {
+              "tag": "DIV",
+              "class": "logo-area",
+              "left": -360,
+              "right": 0
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -350,
+              "right": -69
+            },
+            {
+              "tag": "IMG",
+              "class": "",
+              "left": -350,
+              "right": -69.015625
+            },
+            {
+              "tag": "DIV",
+              "class": "mobile-menu-close",
+              "left": -69,
+              "right": -29
+            },
+            {
+              "tag": "I",
+              "class": "fas fa-times",
+              "left": -69,
+              "right": -29
+            },
+            {
+              "tag": "DIV",
+              "class": "scrollbar",
+              "left": -360,
+              "right": 0
+            },
+            {
+              "tag": "DIV",
+              "class": "categories",
+              "left": -360,
+              "right": -15
+            },
+            {
+              "tag": "UL",
+              "class": "",
+              "left": -360,
+              "right": -15
+            },
+            {
+              "tag": "DIV",
+              "class": "mms-12345",
+              "left": -360,
+              "right": -15
+            },
+            {
+              "tag": "A",
+              "class": "mms-link-67890",
+              "left": -360,
+              "right": -187.5
+            },
+            {
+              "tag": "DIV",
+              "class": "items-11223",
+              "left": -360,
+              "right": -187.5
+            },
+            {
+              "tag": "IMG",
+              "class": "",
+              "left": -326.765625,
+              "right": -296.765625
+            },
+            {
+              "tag": "DIV",
+              "class": "mobil-area-title",
+              "left": -347,
+              "right": -25
+            },
+            {
+              "tag": "DIV",
+              "class": "mobil-area-2",
+              "left": -344,
+              "right": -31
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-1",
+              "left": -344,
+              "right": -187.5
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -334,
+              "right": -198.5
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-2",
+              "left": -187.5,
+              "right": -31
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -177.5,
+              "right": -41
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-3",
+              "left": -344,
+              "right": -187.5
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -334,
+              "right": -198.5
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-4",
+              "left": -187.5,
+              "right": -31
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -177.5,
+              "right": -41
+            },
+            {
+              "tag": "DIV",
+              "class": "title",
+              "left": 360,
+              "right": 610
+            },
+            {
+              "tag": "DIV",
+              "class": "scrollbar",
+              "left": 360,
+              "right": 610
+            },
+            {
+              "tag": "DIV",
+              "class": "login-menu",
+              "left": 360,
+              "right": 595
+            }
+          ],
+          "captureHeight": 3121,
+          "visualInspected": true
+        },
+        {
+          "width": 768,
+          "height": 1696,
+          "footerTextColor": "rgb(222, 222, 222)",
+          "documentWidth": 753,
+          "overflow": [
+            {
+              "tag": "DIV",
+              "class": "logo-area",
+              "left": -753,
+              "right": 0
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -743,
+              "right": -443
+            },
+            {
+              "tag": "IMG",
+              "class": "",
+              "left": -743,
+              "right": -443
+            },
+            {
+              "tag": "DIV",
+              "class": "mobile-menu-close",
+              "left": -69,
+              "right": -29
+            },
+            {
+              "tag": "I",
+              "class": "fas fa-times",
+              "left": -69,
+              "right": -29
+            },
+            {
+              "tag": "DIV",
+              "class": "scrollbar",
+              "left": -753,
+              "right": 0
+            },
+            {
+              "tag": "DIV",
+              "class": "categories",
+              "left": -753,
+              "right": -15
+            },
+            {
+              "tag": "UL",
+              "class": "",
+              "left": -753,
+              "right": -15
+            },
+            {
+              "tag": "DIV",
+              "class": "mms-12345",
+              "left": -753,
+              "right": -15
+            },
+            {
+              "tag": "A",
+              "class": "mms-link-67890",
+              "left": -753,
+              "right": -384
+            },
+            {
+              "tag": "DIV",
+              "class": "items-11223",
+              "left": -753,
+              "right": -384
+            },
+            {
+              "tag": "IMG",
+              "class": "",
+              "left": -621.515625,
+              "right": -591.515625
+            },
+            {
+              "tag": "DIV",
+              "class": "mobil-area-title",
+              "left": -740,
+              "right": -25
+            },
+            {
+              "tag": "DIV",
+              "class": "mobil-area-2",
+              "left": -737,
+              "right": -31
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-1",
+              "left": -737,
+              "right": -384
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -727,
+              "right": -395
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-2",
+              "left": -384,
+              "right": -31
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -374,
+              "right": -41
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-3",
+              "left": -737,
+              "right": -384
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -727,
+              "right": -395
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-4",
+              "left": -384,
+              "right": -31
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -374,
+              "right": -41
+            },
+            {
+              "tag": "DIV",
+              "class": "title",
+              "left": 753,
+              "right": 1003
+            },
+            {
+              "tag": "DIV",
+              "class": "scrollbar",
+              "left": 753,
+              "right": 1003
+            },
+            {
+              "tag": "DIV",
+              "class": "login-menu",
+              "left": 753,
+              "right": 988
+            }
+          ],
+          "captureHeight": 1696,
+          "visualInspected": true
+        },
+        {
+          "width": 1440,
+          "height": 1633,
+          "footerTextColor": "rgb(222, 222, 222)",
+          "documentWidth": 1425,
+          "overflow": [],
+          "captureHeight": 1633,
+          "visualInspected": true
+        }
+      ],
+      "platformAccepted": false,
+      "inspectionEvidence": "platform-uyum-07-kontrol.md: synthetic composition images inspected during this repair; not all settings/states"
+    },
+    {
+      "name": "product",
+      "rendered": true,
+      "visualInspected": true,
+      "views": [
+        {
+          "width": 375,
+          "height": 2687,
+          "footerTextColor": "rgb(222, 222, 222)",
+          "documentWidth": 360,
+          "overflow": [
+            {
+              "tag": "DIV",
+              "class": "logo-area",
+              "left": -360,
+              "right": 0
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -350,
+              "right": -69
+            },
+            {
+              "tag": "IMG",
+              "class": "",
+              "left": -350,
+              "right": -69.015625
+            },
+            {
+              "tag": "DIV",
+              "class": "mobile-menu-close",
+              "left": -69,
+              "right": -29
+            },
+            {
+              "tag": "I",
+              "class": "fas fa-times",
+              "left": -69,
+              "right": -29
+            },
+            {
+              "tag": "DIV",
+              "class": "scrollbar",
+              "left": -360,
+              "right": 0
+            },
+            {
+              "tag": "DIV",
+              "class": "categories",
+              "left": -360,
+              "right": -15
+            },
+            {
+              "tag": "UL",
+              "class": "",
+              "left": -360,
+              "right": -15
+            },
+            {
+              "tag": "DIV",
+              "class": "mms-12345",
+              "left": -360,
+              "right": -15
+            },
+            {
+              "tag": "A",
+              "class": "mms-link-67890",
+              "left": -360,
+              "right": -187.5
+            },
+            {
+              "tag": "DIV",
+              "class": "items-11223",
+              "left": -360,
+              "right": -187.5
+            },
+            {
+              "tag": "IMG",
+              "class": "",
+              "left": -326.765625,
+              "right": -296.765625
+            },
+            {
+              "tag": "DIV",
+              "class": "mobil-area-title",
+              "left": -347,
+              "right": -25
+            },
+            {
+              "tag": "DIV",
+              "class": "mobil-area-2",
+              "left": -344,
+              "right": -31
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-1",
+              "left": -344,
+              "right": -187.5
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -334,
+              "right": -198.5
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-2",
+              "left": -187.5,
+              "right": -31
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -177.5,
+              "right": -41
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-3",
+              "left": -344,
+              "right": -187.5
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -334,
+              "right": -198.5
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-4",
+              "left": -187.5,
+              "right": -31
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -177.5,
+              "right": -41
+            },
+            {
+              "tag": "DIV",
+              "class": "title",
+              "left": 360,
+              "right": 610
+            },
+            {
+              "tag": "DIV",
+              "class": "scrollbar",
+              "left": 360,
+              "right": 610
+            },
+            {
+              "tag": "DIV",
+              "class": "login-menu",
+              "left": 360,
+              "right": 595
+            }
+          ],
+          "captureHeight": 2687,
+          "visualInspected": true
+        },
+        {
+          "width": 768,
+          "height": 2119,
+          "footerTextColor": "rgb(222, 222, 222)",
+          "documentWidth": 753,
+          "overflow": [
+            {
+              "tag": "DIV",
+              "class": "logo-area",
+              "left": -753,
+              "right": 0
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -743,
+              "right": -443
+            },
+            {
+              "tag": "IMG",
+              "class": "",
+              "left": -743,
+              "right": -443
+            },
+            {
+              "tag": "DIV",
+              "class": "mobile-menu-close",
+              "left": -69,
+              "right": -29
+            },
+            {
+              "tag": "I",
+              "class": "fas fa-times",
+              "left": -69,
+              "right": -29
+            },
+            {
+              "tag": "DIV",
+              "class": "scrollbar",
+              "left": -753,
+              "right": 0
+            },
+            {
+              "tag": "DIV",
+              "class": "categories",
+              "left": -753,
+              "right": -15
+            },
+            {
+              "tag": "UL",
+              "class": "",
+              "left": -753,
+              "right": -15
+            },
+            {
+              "tag": "DIV",
+              "class": "mms-12345",
+              "left": -753,
+              "right": -15
+            },
+            {
+              "tag": "A",
+              "class": "mms-link-67890",
+              "left": -753,
+              "right": -384
+            },
+            {
+              "tag": "DIV",
+              "class": "items-11223",
+              "left": -753,
+              "right": -384
+            },
+            {
+              "tag": "IMG",
+              "class": "",
+              "left": -621.515625,
+              "right": -591.515625
+            },
+            {
+              "tag": "DIV",
+              "class": "mobil-area-title",
+              "left": -740,
+              "right": -25
+            },
+            {
+              "tag": "DIV",
+              "class": "mobil-area-2",
+              "left": -737,
+              "right": -31
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-1",
+              "left": -737,
+              "right": -384
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -727,
+              "right": -395
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-2",
+              "left": -384,
+              "right": -31
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -374,
+              "right": -41
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-3",
+              "left": -737,
+              "right": -384
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -727,
+              "right": -395
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-4",
+              "left": -384,
+              "right": -31
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -374,
+              "right": -41
+            },
+            {
+              "tag": "DIV",
+              "class": "title",
+              "left": 753,
+              "right": 1003
+            },
+            {
+              "tag": "DIV",
+              "class": "scrollbar",
+              "left": 753,
+              "right": 1003
+            },
+            {
+              "tag": "DIV",
+              "class": "login-menu",
+              "left": 753,
+              "right": 988
+            }
+          ],
+          "captureHeight": 2119,
+          "visualInspected": true
+        },
+        {
+          "width": 1440,
+          "height": 1172,
+          "footerTextColor": "rgb(222, 222, 222)",
+          "documentWidth": 1425,
+          "overflow": [],
+          "captureHeight": 1172,
+          "visualInspected": true
+        }
+      ],
+      "platformAccepted": false,
+      "inspectionEvidence": "platform-uyum-07-kontrol.md: synthetic composition images inspected during this repair; not all settings/states"
+    },
+    {
+      "name": "cart",
+      "rendered": true,
+      "visualInspected": true,
+      "views": [
+        {
+          "width": 375,
+          "height": 2222,
+          "footerTextColor": "rgb(222, 222, 222)",
+          "documentWidth": 360,
+          "overflow": [
+            {
+              "tag": "DIV",
+              "class": "logo-area",
+              "left": -360,
+              "right": 0
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -350,
+              "right": -69
+            },
+            {
+              "tag": "IMG",
+              "class": "",
+              "left": -350,
+              "right": -69.015625
+            },
+            {
+              "tag": "DIV",
+              "class": "mobile-menu-close",
+              "left": -69,
+              "right": -29
+            },
+            {
+              "tag": "I",
+              "class": "fas fa-times",
+              "left": -69,
+              "right": -29
+            },
+            {
+              "tag": "DIV",
+              "class": "scrollbar",
+              "left": -360,
+              "right": 0
+            },
+            {
+              "tag": "DIV",
+              "class": "categories",
+              "left": -360,
+              "right": -15
+            },
+            {
+              "tag": "UL",
+              "class": "",
+              "left": -360,
+              "right": -15
+            },
+            {
+              "tag": "DIV",
+              "class": "mms-12345",
+              "left": -360,
+              "right": -15
+            },
+            {
+              "tag": "A",
+              "class": "mms-link-67890",
+              "left": -360,
+              "right": -187.5
+            },
+            {
+              "tag": "DIV",
+              "class": "items-11223",
+              "left": -360,
+              "right": -187.5
+            },
+            {
+              "tag": "IMG",
+              "class": "",
+              "left": -326.765625,
+              "right": -296.765625
+            },
+            {
+              "tag": "DIV",
+              "class": "mobil-area-title",
+              "left": -347,
+              "right": -25
+            },
+            {
+              "tag": "DIV",
+              "class": "mobil-area-2",
+              "left": -344,
+              "right": -31
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-1",
+              "left": -344,
+              "right": -187.5
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -334,
+              "right": -198.5
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-2",
+              "left": -187.5,
+              "right": -31
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -177.5,
+              "right": -41
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-3",
+              "left": -344,
+              "right": -187.5
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -334,
+              "right": -198.5
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-4",
+              "left": -187.5,
+              "right": -31
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -177.5,
+              "right": -41
+            },
+            {
+              "tag": "DIV",
+              "class": "title",
+              "left": 360,
+              "right": 610
+            },
+            {
+              "tag": "DIV",
+              "class": "scrollbar",
+              "left": 360,
+              "right": 610
+            },
+            {
+              "tag": "DIV",
+              "class": "login-menu",
+              "left": 360,
+              "right": 595
+            }
+          ],
+          "captureHeight": 2222,
+          "visualInspected": true
+        },
+        {
+          "width": 768,
+          "height": 1486,
+          "footerTextColor": "rgb(222, 222, 222)",
+          "documentWidth": 753,
+          "overflow": [
+            {
+              "tag": "DIV",
+              "class": "logo-area",
+              "left": -753,
+              "right": 0
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -743,
+              "right": -443
+            },
+            {
+              "tag": "IMG",
+              "class": "",
+              "left": -743,
+              "right": -443
+            },
+            {
+              "tag": "DIV",
+              "class": "mobile-menu-close",
+              "left": -69,
+              "right": -29
+            },
+            {
+              "tag": "I",
+              "class": "fas fa-times",
+              "left": -69,
+              "right": -29
+            },
+            {
+              "tag": "DIV",
+              "class": "scrollbar",
+              "left": -753,
+              "right": 0
+            },
+            {
+              "tag": "DIV",
+              "class": "categories",
+              "left": -753,
+              "right": -15
+            },
+            {
+              "tag": "UL",
+              "class": "",
+              "left": -753,
+              "right": -15
+            },
+            {
+              "tag": "DIV",
+              "class": "mms-12345",
+              "left": -753,
+              "right": -15
+            },
+            {
+              "tag": "A",
+              "class": "mms-link-67890",
+              "left": -753,
+              "right": -384
+            },
+            {
+              "tag": "DIV",
+              "class": "items-11223",
+              "left": -753,
+              "right": -384
+            },
+            {
+              "tag": "IMG",
+              "class": "",
+              "left": -621.515625,
+              "right": -591.515625
+            },
+            {
+              "tag": "DIV",
+              "class": "mobil-area-title",
+              "left": -740,
+              "right": -25
+            },
+            {
+              "tag": "DIV",
+              "class": "mobil-area-2",
+              "left": -737,
+              "right": -31
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-1",
+              "left": -737,
+              "right": -384
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -727,
+              "right": -395
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-2",
+              "left": -384,
+              "right": -31
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -374,
+              "right": -41
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-3",
+              "left": -737,
+              "right": -384
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -727,
+              "right": -395
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-4",
+              "left": -384,
+              "right": -31
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -374,
+              "right": -41
+            },
+            {
+              "tag": "DIV",
+              "class": "title",
+              "left": 753,
+              "right": 1003
+            },
+            {
+              "tag": "DIV",
+              "class": "scrollbar",
+              "left": 753,
+              "right": 1003
+            },
+            {
+              "tag": "DIV",
+              "class": "login-menu",
+              "left": 753,
+              "right": 988
+            }
+          ],
+          "captureHeight": 1486,
+          "visualInspected": true
+        },
+        {
+          "width": 1440,
+          "height": 1186,
+          "footerTextColor": "rgb(222, 222, 222)",
+          "documentWidth": 1425,
+          "overflow": [],
+          "captureHeight": 1186,
+          "visualInspected": true
+        }
+      ],
+      "platformAccepted": false,
+      "inspectionEvidence": "platform-uyum-07-kontrol.md: synthetic composition images inspected during this repair; not all settings/states"
+    },
+    {
+      "name": "empty-cart",
+      "rendered": true,
+      "visualInspected": true,
+      "views": [
+        {
+          "width": 375,
+          "height": 1890,
+          "footerTextColor": "rgb(222, 222, 222)",
+          "documentWidth": 360,
+          "overflow": [
+            {
+              "tag": "DIV",
+              "class": "logo-area",
+              "left": -360,
+              "right": 0
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -350,
+              "right": -69
+            },
+            {
+              "tag": "IMG",
+              "class": "",
+              "left": -350,
+              "right": -69.015625
+            },
+            {
+              "tag": "DIV",
+              "class": "mobile-menu-close",
+              "left": -69,
+              "right": -29
+            },
+            {
+              "tag": "I",
+              "class": "fas fa-times",
+              "left": -69,
+              "right": -29
+            },
+            {
+              "tag": "DIV",
+              "class": "scrollbar",
+              "left": -360,
+              "right": 0
+            },
+            {
+              "tag": "DIV",
+              "class": "categories",
+              "left": -360,
+              "right": -15
+            },
+            {
+              "tag": "UL",
+              "class": "",
+              "left": -360,
+              "right": -15
+            },
+            {
+              "tag": "DIV",
+              "class": "mms-12345",
+              "left": -360,
+              "right": -15
+            },
+            {
+              "tag": "A",
+              "class": "mms-link-67890",
+              "left": -360,
+              "right": -187.5
+            },
+            {
+              "tag": "DIV",
+              "class": "items-11223",
+              "left": -360,
+              "right": -187.5
+            },
+            {
+              "tag": "IMG",
+              "class": "",
+              "left": -326.765625,
+              "right": -296.765625
+            },
+            {
+              "tag": "DIV",
+              "class": "mobil-area-title",
+              "left": -347,
+              "right": -25
+            },
+            {
+              "tag": "DIV",
+              "class": "mobil-area-2",
+              "left": -344,
+              "right": -31
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-1",
+              "left": -344,
+              "right": -187.5
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -334,
+              "right": -198.5
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-2",
+              "left": -187.5,
+              "right": -31
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -177.5,
+              "right": -41
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-3",
+              "left": -344,
+              "right": -187.5
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -334,
+              "right": -198.5
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-4",
+              "left": -187.5,
+              "right": -31
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -177.5,
+              "right": -41
+            },
+            {
+              "tag": "DIV",
+              "class": "title",
+              "left": 360,
+              "right": 610
+            },
+            {
+              "tag": "DIV",
+              "class": "scrollbar",
+              "left": 360,
+              "right": 610
+            },
+            {
+              "tag": "DIV",
+              "class": "login-menu",
+              "left": 360,
+              "right": 595
+            }
+          ],
+          "captureHeight": 1890,
+          "visualInspected": true
+        },
+        {
+          "width": 768,
+          "height": 1204,
+          "footerTextColor": "rgb(222, 222, 222)",
+          "documentWidth": 753,
+          "overflow": [
+            {
+              "tag": "DIV",
+              "class": "logo-area",
+              "left": -753,
+              "right": 0
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -743,
+              "right": -443
+            },
+            {
+              "tag": "IMG",
+              "class": "",
+              "left": -743,
+              "right": -443
+            },
+            {
+              "tag": "DIV",
+              "class": "mobile-menu-close",
+              "left": -69,
+              "right": -29
+            },
+            {
+              "tag": "I",
+              "class": "fas fa-times",
+              "left": -69,
+              "right": -29
+            },
+            {
+              "tag": "DIV",
+              "class": "scrollbar",
+              "left": -753,
+              "right": 0
+            },
+            {
+              "tag": "DIV",
+              "class": "categories",
+              "left": -753,
+              "right": -15
+            },
+            {
+              "tag": "UL",
+              "class": "",
+              "left": -753,
+              "right": -15
+            },
+            {
+              "tag": "DIV",
+              "class": "mms-12345",
+              "left": -753,
+              "right": -15
+            },
+            {
+              "tag": "A",
+              "class": "mms-link-67890",
+              "left": -753,
+              "right": -384
+            },
+            {
+              "tag": "DIV",
+              "class": "items-11223",
+              "left": -753,
+              "right": -384
+            },
+            {
+              "tag": "IMG",
+              "class": "",
+              "left": -621.515625,
+              "right": -591.515625
+            },
+            {
+              "tag": "DIV",
+              "class": "mobil-area-title",
+              "left": -740,
+              "right": -25
+            },
+            {
+              "tag": "DIV",
+              "class": "mobil-area-2",
+              "left": -737,
+              "right": -31
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-1",
+              "left": -737,
+              "right": -384
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -727,
+              "right": -395
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-2",
+              "left": -384,
+              "right": -31
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -374,
+              "right": -41
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-3",
+              "left": -737,
+              "right": -384
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -727,
+              "right": -395
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-4",
+              "left": -384,
+              "right": -31
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -374,
+              "right": -41
+            },
+            {
+              "tag": "DIV",
+              "class": "title",
+              "left": 753,
+              "right": 1003
+            },
+            {
+              "tag": "DIV",
+              "class": "scrollbar",
+              "left": 753,
+              "right": 1003
+            },
+            {
+              "tag": "DIV",
+              "class": "login-menu",
+              "left": 753,
+              "right": 988
+            }
+          ],
+          "captureHeight": 1204,
+          "visualInspected": true
+        },
+        {
+          "width": 1440,
+          "height": 1024,
+          "footerTextColor": "rgb(222, 222, 222)",
+          "documentWidth": 1425,
+          "overflow": [],
+          "captureHeight": 1024,
+          "visualInspected": true
+        }
+      ],
+      "platformAccepted": false,
+      "inspectionEvidence": "platform-uyum-07-kontrol.md: synthetic composition images inspected during this repair; not all settings/states"
+    },
+    {
+      "name": "payment",
+      "rendered": true,
+      "visualInspected": true,
+      "views": [
+        {
+          "width": 375,
+          "height": 1764,
+          "footerTextColor": "rgb(222, 222, 222)",
+          "documentWidth": 360,
+          "overflow": [
+            {
+              "tag": "DIV",
+              "class": "logo-area",
+              "left": -360,
+              "right": 0
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -350,
+              "right": -69
+            },
+            {
+              "tag": "IMG",
+              "class": "",
+              "left": -350,
+              "right": -69.015625
+            },
+            {
+              "tag": "DIV",
+              "class": "mobile-menu-close",
+              "left": -69,
+              "right": -29
+            },
+            {
+              "tag": "I",
+              "class": "fas fa-times",
+              "left": -69,
+              "right": -29
+            },
+            {
+              "tag": "DIV",
+              "class": "scrollbar",
+              "left": -360,
+              "right": 0
+            },
+            {
+              "tag": "DIV",
+              "class": "categories",
+              "left": -360,
+              "right": -15
+            },
+            {
+              "tag": "UL",
+              "class": "",
+              "left": -360,
+              "right": -15
+            },
+            {
+              "tag": "DIV",
+              "class": "mms-12345",
+              "left": -360,
+              "right": -15
+            },
+            {
+              "tag": "A",
+              "class": "mms-link-67890",
+              "left": -360,
+              "right": -187.5
+            },
+            {
+              "tag": "DIV",
+              "class": "items-11223",
+              "left": -360,
+              "right": -187.5
+            },
+            {
+              "tag": "IMG",
+              "class": "",
+              "left": -326.765625,
+              "right": -296.765625
+            },
+            {
+              "tag": "DIV",
+              "class": "mobil-area-title",
+              "left": -347,
+              "right": -25
+            },
+            {
+              "tag": "DIV",
+              "class": "mobil-area-2",
+              "left": -344,
+              "right": -31
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-1",
+              "left": -344,
+              "right": -187.5
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -334,
+              "right": -198.5
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-2",
+              "left": -187.5,
+              "right": -31
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -177.5,
+              "right": -41
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-3",
+              "left": -344,
+              "right": -187.5
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -334,
+              "right": -198.5
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-4",
+              "left": -187.5,
+              "right": -31
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -177.5,
+              "right": -41
+            },
+            {
+              "tag": "DIV",
+              "class": "title",
+              "left": 360,
+              "right": 610
+            },
+            {
+              "tag": "DIV",
+              "class": "scrollbar",
+              "left": 360,
+              "right": 610
+            },
+            {
+              "tag": "DIV",
+              "class": "login-menu",
+              "left": 360,
+              "right": 595
+            }
+          ],
+          "captureHeight": 1764,
+          "visualInspected": true
+        },
+        {
+          "width": 768,
+          "height": 1077,
+          "footerTextColor": "rgb(222, 222, 222)",
+          "documentWidth": 753,
+          "overflow": [
+            {
+              "tag": "DIV",
+              "class": "logo-area",
+              "left": -753,
+              "right": 0
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -743,
+              "right": -443
+            },
+            {
+              "tag": "IMG",
+              "class": "",
+              "left": -743,
+              "right": -443
+            },
+            {
+              "tag": "DIV",
+              "class": "mobile-menu-close",
+              "left": -69,
+              "right": -29
+            },
+            {
+              "tag": "I",
+              "class": "fas fa-times",
+              "left": -69,
+              "right": -29
+            },
+            {
+              "tag": "DIV",
+              "class": "scrollbar",
+              "left": -753,
+              "right": 0
+            },
+            {
+              "tag": "DIV",
+              "class": "categories",
+              "left": -753,
+              "right": -15
+            },
+            {
+              "tag": "UL",
+              "class": "",
+              "left": -753,
+              "right": -15
+            },
+            {
+              "tag": "DIV",
+              "class": "mms-12345",
+              "left": -753,
+              "right": -15
+            },
+            {
+              "tag": "A",
+              "class": "mms-link-67890",
+              "left": -753,
+              "right": -384
+            },
+            {
+              "tag": "DIV",
+              "class": "items-11223",
+              "left": -753,
+              "right": -384
+            },
+            {
+              "tag": "IMG",
+              "class": "",
+              "left": -621.515625,
+              "right": -591.515625
+            },
+            {
+              "tag": "DIV",
+              "class": "mobil-area-title",
+              "left": -740,
+              "right": -25
+            },
+            {
+              "tag": "DIV",
+              "class": "mobil-area-2",
+              "left": -737,
+              "right": -31
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-1",
+              "left": -737,
+              "right": -384
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -727,
+              "right": -395
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-2",
+              "left": -384,
+              "right": -31
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -374,
+              "right": -41
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-3",
+              "left": -737,
+              "right": -384
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -727,
+              "right": -395
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-4",
+              "left": -384,
+              "right": -31
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -374,
+              "right": -41
+            },
+            {
+              "tag": "DIV",
+              "class": "title",
+              "left": 753,
+              "right": 1003
+            },
+            {
+              "tag": "DIV",
+              "class": "scrollbar",
+              "left": 753,
+              "right": 1003
+            },
+            {
+              "tag": "DIV",
+              "class": "login-menu",
+              "left": 753,
+              "right": 988
+            }
+          ],
+          "captureHeight": 1077,
+          "visualInspected": true
+        },
+        {
+          "width": 1440,
+          "height": 900,
+          "footerTextColor": "rgb(222, 222, 222)",
+          "documentWidth": 1440,
+          "overflow": [],
+          "captureHeight": 900,
+          "visualInspected": true
+        }
+      ],
+      "platformAccepted": false,
+      "inspectionEvidence": "platform-uyum-07-kontrol.md: synthetic composition images inspected during this repair; not all settings/states"
+    },
+    {
+      "name": "login",
+      "rendered": true,
+      "visualInspected": true,
+      "views": [
+        {
+          "width": 375,
+          "height": 3151,
+          "footerTextColor": "rgb(222, 222, 222)",
+          "documentWidth": 360,
+          "overflow": [
+            {
+              "tag": "DIV",
+              "class": "logo-area",
+              "left": -360,
+              "right": 0
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -350,
+              "right": -69
+            },
+            {
+              "tag": "IMG",
+              "class": "",
+              "left": -350,
+              "right": -69.015625
+            },
+            {
+              "tag": "DIV",
+              "class": "mobile-menu-close",
+              "left": -69,
+              "right": -29
+            },
+            {
+              "tag": "I",
+              "class": "fas fa-times",
+              "left": -69,
+              "right": -29
+            },
+            {
+              "tag": "DIV",
+              "class": "scrollbar",
+              "left": -360,
+              "right": 0
+            },
+            {
+              "tag": "DIV",
+              "class": "categories",
+              "left": -360,
+              "right": -15
+            },
+            {
+              "tag": "UL",
+              "class": "",
+              "left": -360,
+              "right": -15
+            },
+            {
+              "tag": "DIV",
+              "class": "mms-12345",
+              "left": -360,
+              "right": -15
+            },
+            {
+              "tag": "A",
+              "class": "mms-link-67890",
+              "left": -360,
+              "right": -187.5
+            },
+            {
+              "tag": "DIV",
+              "class": "items-11223",
+              "left": -360,
+              "right": -187.5
+            },
+            {
+              "tag": "IMG",
+              "class": "",
+              "left": -326.765625,
+              "right": -296.765625
+            },
+            {
+              "tag": "DIV",
+              "class": "mobil-area-title",
+              "left": -347,
+              "right": -25
+            },
+            {
+              "tag": "DIV",
+              "class": "mobil-area-2",
+              "left": -344,
+              "right": -31
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-1",
+              "left": -344,
+              "right": -187.5
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -334,
+              "right": -198.5
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-2",
+              "left": -187.5,
+              "right": -31
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -177.5,
+              "right": -41
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-3",
+              "left": -344,
+              "right": -187.5
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -334,
+              "right": -198.5
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-4",
+              "left": -187.5,
+              "right": -31
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -177.5,
+              "right": -41
+            },
+            {
+              "tag": "DIV",
+              "class": "title",
+              "left": 360,
+              "right": 610
+            },
+            {
+              "tag": "DIV",
+              "class": "scrollbar",
+              "left": 360,
+              "right": 610
+            },
+            {
+              "tag": "DIV",
+              "class": "login-menu",
+              "left": 360,
+              "right": 595
+            }
+          ],
+          "captureHeight": 3151,
+          "visualInspected": true
+        },
+        {
+          "width": 768,
+          "height": 2372,
+          "footerTextColor": "rgb(222, 222, 222)",
+          "documentWidth": 753,
+          "overflow": [
+            {
+              "tag": "DIV",
+              "class": "logo-area",
+              "left": -753,
+              "right": 0
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -743,
+              "right": -443
+            },
+            {
+              "tag": "IMG",
+              "class": "",
+              "left": -743,
+              "right": -443
+            },
+            {
+              "tag": "DIV",
+              "class": "mobile-menu-close",
+              "left": -69,
+              "right": -29
+            },
+            {
+              "tag": "I",
+              "class": "fas fa-times",
+              "left": -69,
+              "right": -29
+            },
+            {
+              "tag": "DIV",
+              "class": "scrollbar",
+              "left": -753,
+              "right": 0
+            },
+            {
+              "tag": "DIV",
+              "class": "categories",
+              "left": -753,
+              "right": -15
+            },
+            {
+              "tag": "UL",
+              "class": "",
+              "left": -753,
+              "right": -15
+            },
+            {
+              "tag": "DIV",
+              "class": "mms-12345",
+              "left": -753,
+              "right": -15
+            },
+            {
+              "tag": "A",
+              "class": "mms-link-67890",
+              "left": -753,
+              "right": -384
+            },
+            {
+              "tag": "DIV",
+              "class": "items-11223",
+              "left": -753,
+              "right": -384
+            },
+            {
+              "tag": "IMG",
+              "class": "",
+              "left": -621.515625,
+              "right": -591.515625
+            },
+            {
+              "tag": "DIV",
+              "class": "mobil-area-title",
+              "left": -740,
+              "right": -25
+            },
+            {
+              "tag": "DIV",
+              "class": "mobil-area-2",
+              "left": -737,
+              "right": -31
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-1",
+              "left": -737,
+              "right": -384
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -727,
+              "right": -395
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-2",
+              "left": -384,
+              "right": -31
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -374,
+              "right": -41
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-3",
+              "left": -737,
+              "right": -384
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -727,
+              "right": -395
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-4",
+              "left": -384,
+              "right": -31
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -374,
+              "right": -41
+            },
+            {
+              "tag": "DIV",
+              "class": "title",
+              "left": 753,
+              "right": 1003
+            },
+            {
+              "tag": "DIV",
+              "class": "scrollbar",
+              "left": 753,
+              "right": 1003
+            },
+            {
+              "tag": "DIV",
+              "class": "login-menu",
+              "left": 753,
+              "right": 988
+            }
+          ],
+          "captureHeight": 2372,
+          "visualInspected": true
+        },
+        {
+          "width": 1440,
+          "height": 2205,
+          "footerTextColor": "rgb(222, 222, 222)",
+          "documentWidth": 1425,
+          "overflow": [],
+          "captureHeight": 2205,
+          "visualInspected": true
+        }
+      ],
+      "platformAccepted": false,
+      "inspectionEvidence": "platform-uyum-07-kontrol.md: synthetic composition images inspected during this repair; not all settings/states"
+    },
+    {
+      "name": "account",
+      "rendered": true,
+      "visualInspected": true,
+      "views": [
+        {
+          "width": 375,
+          "height": 2149,
+          "footerTextColor": "rgb(222, 222, 222)",
+          "documentWidth": 360,
+          "overflow": [
+            {
+              "tag": "DIV",
+              "class": "logo-area",
+              "left": -360,
+              "right": 0
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -350,
+              "right": -69
+            },
+            {
+              "tag": "IMG",
+              "class": "",
+              "left": -350,
+              "right": -69.015625
+            },
+            {
+              "tag": "DIV",
+              "class": "mobile-menu-close",
+              "left": -69,
+              "right": -29
+            },
+            {
+              "tag": "I",
+              "class": "fas fa-times",
+              "left": -69,
+              "right": -29
+            },
+            {
+              "tag": "DIV",
+              "class": "scrollbar",
+              "left": -360,
+              "right": 0
+            },
+            {
+              "tag": "DIV",
+              "class": "categories",
+              "left": -360,
+              "right": -15
+            },
+            {
+              "tag": "UL",
+              "class": "",
+              "left": -360,
+              "right": -15
+            },
+            {
+              "tag": "DIV",
+              "class": "mms-12345",
+              "left": -360,
+              "right": -15
+            },
+            {
+              "tag": "A",
+              "class": "mms-link-67890",
+              "left": -360,
+              "right": -187.5
+            },
+            {
+              "tag": "DIV",
+              "class": "items-11223",
+              "left": -360,
+              "right": -187.5
+            },
+            {
+              "tag": "IMG",
+              "class": "",
+              "left": -326.765625,
+              "right": -296.765625
+            },
+            {
+              "tag": "DIV",
+              "class": "mobil-area-title",
+              "left": -347,
+              "right": -25
+            },
+            {
+              "tag": "DIV",
+              "class": "mobil-area-2",
+              "left": -344,
+              "right": -31
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-1",
+              "left": -344,
+              "right": -187.5
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -334,
+              "right": -198.5
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-2",
+              "left": -187.5,
+              "right": -31
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -177.5,
+              "right": -41
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-3",
+              "left": -344,
+              "right": -187.5
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -334,
+              "right": -198.5
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-4",
+              "left": -187.5,
+              "right": -31
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -177.5,
+              "right": -41
+            },
+            {
+              "tag": "DIV",
+              "class": "title",
+              "left": 360,
+              "right": 610
+            },
+            {
+              "tag": "DIV",
+              "class": "scrollbar",
+              "left": 360,
+              "right": 610
+            },
+            {
+              "tag": "DIV",
+              "class": "login-menu",
+              "left": 360,
+              "right": 595
+            }
+          ],
+          "captureHeight": 2149,
+          "visualInspected": true
+        },
+        {
+          "width": 768,
+          "height": 1280,
+          "footerTextColor": "rgb(222, 222, 222)",
+          "documentWidth": 753,
+          "overflow": [
+            {
+              "tag": "DIV",
+              "class": "logo-area",
+              "left": -753,
+              "right": 0
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -743,
+              "right": -443
+            },
+            {
+              "tag": "IMG",
+              "class": "",
+              "left": -743,
+              "right": -443
+            },
+            {
+              "tag": "DIV",
+              "class": "mobile-menu-close",
+              "left": -69,
+              "right": -29
+            },
+            {
+              "tag": "I",
+              "class": "fas fa-times",
+              "left": -69,
+              "right": -29
+            },
+            {
+              "tag": "DIV",
+              "class": "scrollbar",
+              "left": -753,
+              "right": 0
+            },
+            {
+              "tag": "DIV",
+              "class": "categories",
+              "left": -753,
+              "right": -15
+            },
+            {
+              "tag": "UL",
+              "class": "",
+              "left": -753,
+              "right": -15
+            },
+            {
+              "tag": "DIV",
+              "class": "mms-12345",
+              "left": -753,
+              "right": -15
+            },
+            {
+              "tag": "A",
+              "class": "mms-link-67890",
+              "left": -753,
+              "right": -384
+            },
+            {
+              "tag": "DIV",
+              "class": "items-11223",
+              "left": -753,
+              "right": -384
+            },
+            {
+              "tag": "IMG",
+              "class": "",
+              "left": -621.515625,
+              "right": -591.515625
+            },
+            {
+              "tag": "DIV",
+              "class": "mobil-area-title",
+              "left": -740,
+              "right": -25
+            },
+            {
+              "tag": "DIV",
+              "class": "mobil-area-2",
+              "left": -737,
+              "right": -31
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-1",
+              "left": -737,
+              "right": -384
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -727,
+              "right": -395
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-2",
+              "left": -384,
+              "right": -31
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -374,
+              "right": -41
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-3",
+              "left": -737,
+              "right": -384
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -727,
+              "right": -395
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-4",
+              "left": -384,
+              "right": -31
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -374,
+              "right": -41
+            },
+            {
+              "tag": "DIV",
+              "class": "title",
+              "left": 753,
+              "right": 1003
+            },
+            {
+              "tag": "DIV",
+              "class": "scrollbar",
+              "left": 753,
+              "right": 1003
+            },
+            {
+              "tag": "DIV",
+              "class": "login-menu",
+              "left": 753,
+              "right": 988
+            }
+          ],
+          "captureHeight": 1280,
+          "visualInspected": true
+        },
+        {
+          "width": 1440,
+          "height": 1117,
+          "footerTextColor": "rgb(222, 222, 222)",
+          "documentWidth": 1425,
+          "overflow": [],
+          "captureHeight": 1117,
+          "visualInspected": true
+        }
+      ],
+      "platformAccepted": false,
+      "inspectionEvidence": "platform-uyum-07-kontrol.md: synthetic composition images inspected during this repair; not all settings/states"
+    },
+    {
+      "name": "content",
+      "rendered": true,
+      "visualInspected": true,
+      "views": [
+        {
+          "width": 375,
+          "height": 1645,
+          "footerTextColor": "rgb(222, 222, 222)",
+          "documentWidth": 360,
+          "overflow": [
+            {
+              "tag": "DIV",
+              "class": "logo-area",
+              "left": -360,
+              "right": 0
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -350,
+              "right": -69
+            },
+            {
+              "tag": "IMG",
+              "class": "",
+              "left": -350,
+              "right": -69.015625
+            },
+            {
+              "tag": "DIV",
+              "class": "mobile-menu-close",
+              "left": -69,
+              "right": -29
+            },
+            {
+              "tag": "I",
+              "class": "fas fa-times",
+              "left": -69,
+              "right": -29
+            },
+            {
+              "tag": "DIV",
+              "class": "scrollbar",
+              "left": -360,
+              "right": 0
+            },
+            {
+              "tag": "DIV",
+              "class": "categories",
+              "left": -360,
+              "right": -15
+            },
+            {
+              "tag": "UL",
+              "class": "",
+              "left": -360,
+              "right": -15
+            },
+            {
+              "tag": "DIV",
+              "class": "mms-12345",
+              "left": -360,
+              "right": -15
+            },
+            {
+              "tag": "A",
+              "class": "mms-link-67890",
+              "left": -360,
+              "right": -187.5
+            },
+            {
+              "tag": "DIV",
+              "class": "items-11223",
+              "left": -360,
+              "right": -187.5
+            },
+            {
+              "tag": "IMG",
+              "class": "",
+              "left": -326.765625,
+              "right": -296.765625
+            },
+            {
+              "tag": "DIV",
+              "class": "mobil-area-title",
+              "left": -347,
+              "right": -25
+            },
+            {
+              "tag": "DIV",
+              "class": "mobil-area-2",
+              "left": -344,
+              "right": -31
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-1",
+              "left": -344,
+              "right": -187.5
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -334,
+              "right": -198.5
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-2",
+              "left": -187.5,
+              "right": -31
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -177.5,
+              "right": -41
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-3",
+              "left": -344,
+              "right": -187.5
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -334,
+              "right": -198.5
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-4",
+              "left": -187.5,
+              "right": -31
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -177.5,
+              "right": -41
+            },
+            {
+              "tag": "DIV",
+              "class": "title",
+              "left": 360,
+              "right": 610
+            },
+            {
+              "tag": "DIV",
+              "class": "scrollbar",
+              "left": 360,
+              "right": 610
+            },
+            {
+              "tag": "DIV",
+              "class": "login-menu",
+              "left": 360,
+              "right": 595
+            }
+          ],
+          "captureHeight": 1645,
+          "visualInspected": true
+        },
+        {
+          "width": 768,
+          "height": 959,
+          "footerTextColor": "rgb(222, 222, 222)",
+          "documentWidth": 753,
+          "overflow": [
+            {
+              "tag": "DIV",
+              "class": "logo-area",
+              "left": -753,
+              "right": 0
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -743,
+              "right": -443
+            },
+            {
+              "tag": "IMG",
+              "class": "",
+              "left": -743,
+              "right": -443
+            },
+            {
+              "tag": "DIV",
+              "class": "mobile-menu-close",
+              "left": -69,
+              "right": -29
+            },
+            {
+              "tag": "I",
+              "class": "fas fa-times",
+              "left": -69,
+              "right": -29
+            },
+            {
+              "tag": "DIV",
+              "class": "scrollbar",
+              "left": -753,
+              "right": 0
+            },
+            {
+              "tag": "DIV",
+              "class": "categories",
+              "left": -753,
+              "right": -15
+            },
+            {
+              "tag": "UL",
+              "class": "",
+              "left": -753,
+              "right": -15
+            },
+            {
+              "tag": "DIV",
+              "class": "mms-12345",
+              "left": -753,
+              "right": -15
+            },
+            {
+              "tag": "A",
+              "class": "mms-link-67890",
+              "left": -753,
+              "right": -384
+            },
+            {
+              "tag": "DIV",
+              "class": "items-11223",
+              "left": -753,
+              "right": -384
+            },
+            {
+              "tag": "IMG",
+              "class": "",
+              "left": -621.515625,
+              "right": -591.515625
+            },
+            {
+              "tag": "DIV",
+              "class": "mobil-area-title",
+              "left": -740,
+              "right": -25
+            },
+            {
+              "tag": "DIV",
+              "class": "mobil-area-2",
+              "left": -737,
+              "right": -31
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-1",
+              "left": -737,
+              "right": -384
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -727,
+              "right": -395
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-2",
+              "left": -384,
+              "right": -31
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -374,
+              "right": -41
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-3",
+              "left": -737,
+              "right": -384
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -727,
+              "right": -395
+            },
+            {
+              "tag": "DIV",
+              "class": "short-link border-4",
+              "left": -384,
+              "right": -31
+            },
+            {
+              "tag": "A",
+              "class": "",
+              "left": -374,
+              "right": -41
+            },
+            {
+              "tag": "DIV",
+              "class": "title",
+              "left": 753,
+              "right": 1003
+            },
+            {
+              "tag": "DIV",
+              "class": "scrollbar",
+              "left": 753,
+              "right": 1003
+            },
+            {
+              "tag": "DIV",
+              "class": "login-menu",
+              "left": 753,
+              "right": 988
+            }
+          ],
+          "captureHeight": 959,
+          "visualInspected": true
+        },
+        {
+          "width": 1440,
+          "height": 900,
+          "footerTextColor": "rgb(222, 222, 222)",
+          "documentWidth": 1440,
+          "overflow": [],
+          "captureHeight": 900,
+          "visualInspected": true
+        }
+      ],
+      "platformAccepted": false,
+      "inspectionEvidence": "platform-uyum-07-kontrol.md: synthetic composition images inspected during this repair; not all settings/states"
+    }
+  ]
+}

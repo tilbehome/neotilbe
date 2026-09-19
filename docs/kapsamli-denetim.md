@@ -110,6 +110,10 @@ Güncel durumun tek kaynağı `sorun-durumlari.json`; aşağıdaki tablo bu kay�
 | HTML2 | odeme/siparis_onayi.twig; kategoriler/filtreleme/fiyatlar.twig | Başlık kapanışı ve fiyat kontrol adları | onarım uygulandı; rapordaki yerel kapsam doğrulandı; platform kabulü açık | platform-uyum-06-kontrol.md |
 | JS2 | urunler/hizli_sepet_kutusu.twig; siparislerim.twig; bakiye_dekontu.twig | Biçimli fiyat JS kaçışı; sipariş/yazdırma metnini data niteliğiyle taşıma | onarım uygulandı; rapordaki yerel kapsam doğrulandı; platform kabulü açık | platform-uyum-06-kontrol.md |
 | CSS3 | canlitema/assets/style.css; başlangıç satırları css-temizlik-kaniti.json | Aynı medya kapsamındaki tekrarlar, ezilen ve geçersiz bildirimler kaldırıldı; Gold cascade korundu | onarım uygulandı; 11 genişlikte yerel cascade doğrulandı; tam sayfa/platform görsel kabulü açık | css-denetimi.md; css-cascade-results.json |
+| PV2 | profil.twig; carousel_sol.twig; assets/product-video-popup.js | Alternatif video X hatası, odak/scroll/temizleme ve ekran dışı kapanış kontrolü onarıldı | onarım uygulandı; yerelde doğrulandı; platform kabulü bekliyor | platform-uyum-07-kontrol.md |
+| CSS4 | assets/style.css: footer mobil siyah important kuralı | Koyu fondaki çalışma saatine mevcut açık footer rengi döndü | onarım uygulandı; yerelde doğrulandı; platform kabulü bekliyor | platform-uyum-07-kontrol.md |
+| LOGIN2 | uyelik/giris_yap.twig sosyal giriş kapsayıcıları | Sağlayıcılar kapalıyken boş sosyal giriş alanı gösterilmiyor | onarım uygulandı; yerelde doğrulandı; platform kabulü bekliyor | platform-uyum-07-kontrol.md |
+| LAYOUT1 | Platform Dosyaları/template-assets/style.min.css; footer.twig; sepet/ozet.twig; sepet/butonlar.twig | Mobil sabit CTA ve alt navigasyon örtüşmesi; etkin blok yerleşimi/gerçek DOM gerekli | yerel birleşimde görüldü; platformda doğrulama bekliyor | platform-uyum-07-kontrol.md |
 <!-- CURRENT_ISSUES_END -->
 
 ## Platformla kesinleştirilmesi gerekenler
