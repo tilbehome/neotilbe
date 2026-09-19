@@ -67,7 +67,7 @@
                     <div class="col-md-3">
                         <div class="logo header-area">
                             <a href="{{ statikLinkler('site_adresi') }}" >
-                                <img src="{{ logoAdresi() }}" alt="" />
+                                <img src="{{ logoAdresi() }}" alt="Tilbe Home" />
                             </a>
                         </div>
                     </div>
@@ -82,9 +82,9 @@
                                 <form action="{{ statikLinkler('arama') }}" method="get" data-choose-action="redirect" data-advanced-product-search>
                                 {% endif %}
                                     <div class="input-box">
-                                        <input type="text" name="k" class="form-control" placeholder="{{ cevir('arama_alani_aciklama') }}"/>
+                                        <input type="text" name="k" aria-label="Ürün ara" class="form-control" placeholder="{{ cevir('arama_alani_aciklama') }}"/>
                                     </div>
-                                    <button type="submit" class="btn btn-orange btn-send"> <i class="{{ temaAyarlari('icon','search') }}"></i></button>
+                                    <button type="submit" class="btn btn-orange btn-send" aria-label="Ürün ara"> <i class="{{ temaAyarlari('icon','search') }}"></i></button>
                                 </form>
                             </div>
                         </div>
@@ -181,7 +181,7 @@
         <div class="center">
         <div class="logo">
         <a href="{{ statikLinkler('site_adresi') }}">
-        <img src="{{ logoAdresi('mobil') }}" alt="" />
+        <img src="{{ logoAdresi('mobil') }}" alt="Tilbe Home" />
         </a>
         </div>
         </div>
@@ -198,7 +198,7 @@
                                 
         <a href="javascript:;" class="icon-group mr-2 btn-sidebar-user">
         <span class="icon">
-        <img src="{{ temaDosyalari('/assets/images/mobil-kullanici.svg') }}" alt="favorilerim">
+        <img src="{{ temaDosyalari('/assets/images/mobil-kullanici.svg') }}" alt="Hesabım">
         </span>
         </a>
             
@@ -221,11 +221,11 @@
             <div class="easy-autocomplete" style="width: 95%;">
             <form action="{{ statikLinkler('arama') }}" method="get"  data-choose-action="redirect" data-smart-mobile-product-search-image >
             <div class="input-box">
-            <input type="text" name="k" aria-label="anasayfamobil-search" class="form-control" placeholder=" Aradığınız ürünün adını yazınız " />
+            <input type="text" name="k" aria-label="Ürün ara" class="form-control" placeholder=" Aradığınız ürünün adını yazınız " />
 			
 			<button type="submit" class="btn mobil-btn" aria-label="Ürün ara"></button>
             
-            <button type="submit" class="btn mobil-btn-2" aria-label="anasayfamobil-search">Ara</button>
+            <button type="submit" class="btn mobil-btn-2" aria-label="Ürün ara">Ara</button>
             </div>
             </form>
 			</div>
@@ -237,11 +237,11 @@
         <nav class="sidebar-menu-type-2">
              <div class="logo-area">
                 <a href="{{ statikLinkler('site_adresi') }}" >
-                    <img src="{{ logoAdresi() }}" alt="" />
+                    <img src="{{ logoAdresi() }}" alt="Tilbe Home" />
                 </a>
-                <div class="mobile-menu-close">
-                    <i class="fas fa-times"></i>
-                </div>
+                <button type="button" class="mobile-menu-close" aria-label="Menüyü kapat">
+                    <i class="fas fa-times" aria-hidden="true"></i>
+                </button>
             </div>
             
             

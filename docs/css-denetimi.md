@@ -55,3 +55,5 @@ Değer denetleyicisinin `-ms-flexbox` ve video `min(...calc(...))` uyarıları o
 ## Ana onarıma devam sırası
 
 Birleşik header/footer ile ana sayfa, kategori/arama, ürün, sepet/ödeme, üyelik/hesap ve içerik fixture'ları → yerel açık sorunlar → kaynak commit'inden ayrı kimlikli güncel paket → sayfa/işlem bazında Qukasoft kabulü. Önizleme erişimi yerel çalışmayı durdurmaz.
+
+08 turu sonrası güncel CSS: 312.121 bayt. Yukarıdaki 311.774 bayt yalnız kanıtlı temizliğin sonucudur; sonraki footer/video/erişilebilirlik onarımları ayrı eklenmiştir. Altı arka plan URL eşliği css-kaynak-baglari.json içindedir.

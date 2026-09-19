@@ -23,6 +23,8 @@ $twig->addFunction(new Twig\TwigFunction('temaDosyalari',static fn($key)=>'__the
 $twig->addFunction(new Twig\TwigFunction('kullaniciGirisYaptiMi',static function()use(&$loggedIn){return $loggedIn;}));
 $twig->addFunction(new Twig\TwigFunction('listeyiBol',static fn($items,$n)=>array_chunk($items,$n)));
 $socialActive=false;
+$storeOptions=[];
+$twig->addFunction(new Twig\TwigFunction('ayarlar',static function($key)use(&$storeOptions){return $storeOptions[$key]??null;}));
 $twig->addFunction(new Twig\TwigFunction('facebookLogin',static function()use(&$socialActive){return ['aktif'=>$socialActive,'link'=>'#local-social'];}));
 $categories=[['ID'=>1,'adi'=>'Uzun kategori ve mutfak aksesuarları','link'=>'#category','resim'=>null,'alt_kategoriler'=>[]]];
 $twig->addFunction(new Twig\TwigFunction('tumKategoriler',static fn(...$args)=>$categories));
@@ -38,6 +40,11 @@ if(str_contains($loginWithoutSocial,'social-login-19kfsj'))throw new RuntimeExce
 $socialActive=true;
 if(!str_contains($render('moduller/uyelik/giris_yap.twig'),'Facebook ile Giriş Yap'))throw new RuntimeException('Enabled social login missing');
 $socialActive=false;
+$emptySocialFooter=$render('moduller/footer.twig');
+if(str_contains($emptySocialFooter,'aria-label="Facebook"'))throw new RuntimeException('Empty social URL remains clickable');
+$storeOptions=['facebook_adresi'=>'#local-facebook'];
+if(!str_contains($render('moduller/footer.twig'),'href="#local-facebook"'))throw new RuntimeException('Configured social link missing');
+$storeOptions=[];
 $header=$render('moduller/header.twig'); $footer=$render('moduller/footer.twig');
 preg_match('/<style type="text\/css">([\s\S]*?)<\/style>/',file_get_contents($root.'/canlitema/sablon.twig'),$match);
 $variables=$twig->createTemplate($match[1])->render([]);

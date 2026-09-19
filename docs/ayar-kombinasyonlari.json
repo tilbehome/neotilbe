@@ -1,0 +1,227 @@
+{
+  "source": "canlitema/ayarlar/tema.json",
+  "scope": "Tanımlı seçenek envanteri; canlı değer veya bütün kombinasyonların kabulü değil",
+  "groups": {
+    "header_area": {
+      "search_tipi": {
+        "type": "selectbox",
+        "choices": [
+          "tip_1",
+          "tip_2",
+          "tip_3"
+        ],
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+      },
+      "menu_tipi": {
+        "type": "selectbox",
+        "choices": [
+          "tip_1",
+          "tip_2",
+          "tip_3"
+        ],
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+      },
+      "mobil_menu_tipi": {
+        "type": "selectbox",
+        "choices": [
+          "tip_1",
+          "tip_2"
+        ],
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+      },
+      "mega_menu_resim": {
+        "type": "checkbox",
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+      },
+      "alt_kategori_seviye": {
+        "type": "checkbox",
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+      },
+      "kategori_icon": {
+        "type": "checkbox",
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+      },
+      "favorilerim": {
+        "type": "checkbox",
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+      }
+    },
+    "urun_karti": {
+      "resim": {
+        "type": "checkbox",
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+      },
+      "tukendi": {
+        "type": "checkbox",
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+      },
+      "urun_etiket": {
+        "type": "checkbox",
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+      },
+      "urun_kodu": {
+        "type": "checkbox",
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+      },
+      "barkod": {
+        "type": "checkbox",
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+      },
+      "marka": {
+        "type": "checkbox",
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+      },
+      "degerlendirmeler": {
+        "type": "checkbox",
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+      },
+      "ucretsiz_kargo": {
+        "type": "checkbox",
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+      },
+      "sabit_indirim": {
+        "type": "checkbox",
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+      },
+      "favori_buton": {
+        "type": "checkbox",
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+      },
+      "sepete_ekle": {
+        "type": "checkbox",
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+      },
+      "adet_secim": {
+        "type": "checkbox",
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+      },
+      "birim": {
+        "type": "checkbox",
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+      },
+      "sepete_ekle_right": {
+        "type": "checkbox",
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+      },
+      "sepete_ekle_down": {
+        "type": "checkbox",
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+      }
+    },
+    "urun_profili": {
+      "varyant_tipi": {
+        "type": "selectbox",
+        "choices": [
+          "tip_1",
+          "tip_2"
+        ],
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+      },
+      "resim_alani": {
+        "type": "selectbox",
+        "choices": [
+          "tip_1",
+          "tip_2",
+          "tip_3"
+        ],
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+      },
+      "baslayan_taksitle": {
+        "type": "checkbox",
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+      },
+      "degerlendirmeler": {
+        "type": "checkbox",
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+      },
+      "urun_kodu": {
+        "type": "checkbox",
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+      },
+      "barkod": {
+        "type": "checkbox",
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+      },
+      "marka": {
+        "type": "checkbox",
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+      },
+      "kategori": {
+        "type": "checkbox",
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+      },
+      "stok": {
+        "type": "checkbox",
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+      },
+      "iliskili_urunler": {
+        "type": "checkbox",
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+      },
+      "sabit_indirim": {
+        "type": "checkbox",
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+      },
+      "on_detay": {
+        "type": "checkbox",
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+      },
+      "hemen_al": {
+        "type": "checkbox",
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+      },
+      "yerli_uretim": {
+        "type": "checkbox",
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+      },
+      "hizli_gonderi": {
+        "type": "checkbox",
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+      },
+      "guvenli_alisveris": {
+        "type": "checkbox",
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+      },
+      "iade_ve_degisim": {
+        "type": "checkbox",
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+      },
+      "ucretsiz_kargo": {
+        "type": "checkbox",
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+      },
+      "havale_indirimi": {
+        "type": "checkbox",
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+      },
+      "sosyal_medya_butonlari": {
+        "type": "checkbox",
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+      },
+      "whatsapp_buton": {
+        "type": "checkbox",
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+      },
+      "favori_listesi": {
+        "type": "checkbox",
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+      },
+      "nitelikler": {
+        "type": "checkbox",
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+      },
+      "nitelikler_2": {
+        "type": "checkbox",
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+      },
+      "birim": {
+        "type": "checkbox",
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+      },
+      "beden_olcu": {
+        "type": "checkbox",
+        "status": "listelendi; bağlantı incelemesi sınırlı; kombinasyon kabulü bekliyor"
+      }
+    }
+  }
+}

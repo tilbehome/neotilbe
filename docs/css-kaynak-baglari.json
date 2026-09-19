@@ -1,0 +1,48 @@
+{
+  "reference": "goldtheme_backup_20260919_123922.zip",
+  "scope": "Both files compared read-only with export SHA256; no live server request",
+  "entries": [
+    {
+      "line": 4656,
+      "target": "resimler1/bg-resmi10.png",
+      "relative": "../resimler1/bg-resmi10.png",
+      "sha256": "605d4ed9a4c563f0403e2a4020be623c18042b89aaac882ee5ea7a96b2c0c41e",
+      "referenceExportHashMatch": true
+    },
+    {
+      "line": 8853,
+      "target": "assets/images/masaustu-banner/transparan-arka-plan.webp",
+      "relative": "images/masaustu-banner/transparan-arka-plan.webp",
+      "sha256": "beac719a20b644abcb5937c457990f1c7c2bccc07e03dda8e3dabf768ddcfd3b",
+      "referenceExportHashMatch": true
+    },
+    {
+      "line": 8946,
+      "target": "assets/images/masaustu-banner/transparan-arka-plan.webp",
+      "relative": "images/masaustu-banner/transparan-arka-plan.webp",
+      "sha256": "beac719a20b644abcb5937c457990f1c7c2bccc07e03dda8e3dabf768ddcfd3b",
+      "referenceExportHashMatch": true
+    },
+    {
+      "line": 9043,
+      "target": "assets/images/masaustu-banner/transparan-arka-plan.webp",
+      "relative": "images/masaustu-banner/transparan-arka-plan.webp",
+      "sha256": "beac719a20b644abcb5937c457990f1c7c2bccc07e03dda8e3dabf768ddcfd3b",
+      "referenceExportHashMatch": true
+    },
+    {
+      "line": 9173,
+      "target": "assets/images/masaustu-banner/transparan-arka-plan.webp",
+      "relative": "images/masaustu-banner/transparan-arka-plan.webp",
+      "sha256": "beac719a20b644abcb5937c457990f1c7c2bccc07e03dda8e3dabf768ddcfd3b",
+      "referenceExportHashMatch": true
+    },
+    {
+      "line": 9263,
+      "target": "assets/images/masaustu-banner/transparan-arka-plan.webp",
+      "relative": "images/masaustu-banner/transparan-arka-plan.webp",
+      "sha256": "beac719a20b644abcb5937c457990f1c7c2bccc07e03dda8e3dabf768ddcfd3b",
+      "referenceExportHashMatch": true
+    }
+  ]
+}

@@ -210,10 +210,10 @@
                                 
                                 
 <div class="col-md-4">
-  <div class="title text-left" onclick="mobileFooterToggle(1)">
+  <button type="button" class="title text-left footer-group-toggle" aria-controls="tilbe-footer-group-1" aria-expanded="true" onclick="mobileFooterToggle(1, this)">
     <i class="fa fa-building"></i> Kurumsal
-  </div>
-  <div class="fs f1">
+  </button>
+  <div id="tilbe-footer-group-1" class="fs f1">
     <ul>
       <li><a href="https://www.tilbehome.com/hakkimizda-sid1">Hakkımızda</a></li>
       <li><a href="https://www.tilbehome.com/tilbe-home-guvenilir-mi-sitemiz-ve-markamiz-hakkinda-her-sey">Tilbe Home Güvenilir mi?</a></li>
@@ -230,10 +230,10 @@
 
 
   <div class="col-md-4">
-  <div class="title text-left" onclick="mobileFooterToggle(2)">
+  <button type="button" class="title text-left footer-group-toggle" aria-controls="tilbe-footer-group-2" aria-expanded="true" onclick="mobileFooterToggle(2, this)">
     <i class="fa fa-headset"></i> {{ cevir('musteri_hizmetleri') }}
-  </div>
-  <div class="fs f2">
+  </button>
+  <div id="tilbe-footer-group-2" class="fs f2">
     <ul>
       <li><a href="https://www.tilbehome.com/siparis-takip-sid0">Kargom Nerede?</a></li>
       <li><a href="https://www.tilbehome.com/kolay-iade">Kolay İade & Değişim</a></li>
@@ -250,11 +250,11 @@
                                
 
 <div class="col-md-4">
-  <div class="title text-left" onclick="mobileFooterToggle(3)">
+  <button type="button" class="title text-left footer-group-toggle" aria-controls="tilbe-footer-group-3" aria-expanded="true" onclick="mobileFooterToggle(3, this)">
     <i class="fa fa-headset"></i> {{ cevir('bize_ulasin') }}
-  </div>
+  </button>
 
-  <div class="fs f3 contact-info">
+  <div id="tilbe-footer-group-3" class="fs f3 contact-info">
     <ul class="contact-list">
 
   <li class="contact-item"><a href="tel:05308895434" target="_blank" class="telephone" aria-label="Telefonla arayın"><i class="fa fa-phone"></i> 0530 889 54 34</a></li>
@@ -395,12 +395,24 @@ src="data:image/jpeg;base64, iVBORw0KGgoAAAANSUhEUgAAAIIAAACWCAYAAAASRFBwAAAAAXN
     <i class="fa fa-share-alt"></i> {{ cevir('bizi_takip_edin') }}
   </div>
   <div class="footer-social-icons">
+    {% if ayarlar('facebook_adresi') %}
     <a href="{{ ayarlar('facebook_adresi') }}" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+    {% endif %}
+    {% if ayarlar('twitter_adresi') %}
     <a href="{{ ayarlar('twitter_adresi') }}" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+    {% endif %}
+    {% if ayarlar('instagram_adresi') %}
     <a href="{{ ayarlar('instagram_adresi') }}" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    {% endif %}
+    {% if ayarlar('youtube_adresi') %}
     <a href="{{ ayarlar('youtube_adresi') }}" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+    {% endif %}
+    {% if ayarlar('linkedin_adresi') %}
     <a href="{{ ayarlar('linkedin_adresi') }}" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    {% endif %}
+    {% if ayarlar('pinterest_adresi') %}
     <a href="{{ ayarlar('pinterest_adresi') }}" target="_blank" rel="noopener" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+    {% endif %}
     <a href="https://www.tiktok.com/@tilbehome" target="_blank" class="tiktok" rel="noopener" aria-label="TikTok">
   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 448 512">
     <path d="M448,209.9a210.1,210.1,0,0,1-122.8-39.2V349.6c0,89.1-72.2,161.2-161.2,161.2S2.8,438.7,2.8,349.6,75,188.4,164,188.4a161,161,0,0,1,23.6,1.8V263.7A97.1,97.1,0,0,0,164,262c-48.1,0-87.1,39-87.1,87.1s39,87.1,87.1,87.1,87.1-39,87.1-87.1V0h74.1a135.6,135.6,0,0,0,122.8,122.8Z"/>

@@ -69,6 +69,7 @@ function hideLoader(){
 }
 
 function showAlert(data, callback){
+    var alertOpener = document.activeElement;
     var config = {
         title: data.title ? data.title : '',
         text: data.text ? data.text : '',
@@ -88,10 +89,17 @@ function showAlert(data, callback){
     config.timerProgressBar = true;
     if (data.buttonList){
         config.buttons = data.buttonList;
-        swal(config).then(callback);
-    }else{
-        swal(config);
     }
+    swal(config).then(function(value) {
+        var active = document.activeElement;
+        var alertHasFocus = active && active.closest && active.closest('.swal-modal');
+        if (alertOpener && alertOpener.isConnected && alertOpener.getClientRects().length &&
+            !document.querySelector('.swal-overlay--show-modal, .modal.show') &&
+            (active === document.body || alertHasFocus)) {
+            alertOpener.focus();
+        }
+        if (data.buttonList && typeof callback === 'function') callback(value);
+    });
 }
 
 
@@ -131,11 +139,29 @@ function addCartSuccessEvent(id, page, settings, data, result){
 // Shipment files are submitted by the platform completePaymentStep FormData path.
 
 /* Footer Menü Toogle */
-function mobileFooterToggle(cls1){
-    if ($(document).width() < 991) {
-          $('.f'+cls1).toggle()
+function mobileFooterToggle(cls1, trigger) {
+    if (window.matchMedia('(max-width:991px)').matches) {
+        var footer = trigger && trigger.closest('footer');
+        var groups = footer ? $(footer).find('.f' + cls1) : $('footer .f' + cls1);
+        groups.toggle();
+        if (trigger) trigger.setAttribute('aria-expanded', groups.is(':visible') ? 'true' : 'false');
     }
 }
+
+$(function () {
+    function syncFooterGroups() {
+        var mobile = window.matchMedia('(max-width:991px)').matches;
+        document.querySelectorAll('footer .footer-group-toggle').forEach(function (button) {
+            var group = document.getElementById(button.getAttribute('aria-controls'));
+            if (!group) return;
+            if (!mobile) group.style.removeProperty('display');
+            button.disabled = !mobile;
+            button.setAttribute('aria-expanded', $(group).is(':visible') ? 'true' : 'false');
+        });
+    }
+    syncFooterGroups();
+    $(window).off('resize.tilbeFooter').on('resize.tilbeFooter', syncFooterGroups);
+});
 
 $(document).ready(function(){
     $(function () {

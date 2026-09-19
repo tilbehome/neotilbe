@@ -390,5 +390,45 @@
     "remedy": "Mobil sabit CTA ve alt navigasyon örtüşmesi; etkin blok yerleşimi/gerçek DOM gerekli",
     "status": "yerel birleşimde görüldü; platformda doğrulama bekliyor",
     "evidence": "platform-uyum-07-kontrol.md"
+  },
+  {
+    "id": "FOOT1",
+    "location": "moduller/footer.twig; assets/scripts.js; assets/style.css",
+    "remedy": "Footer klavye, aria ve masaüstüne geçiş görünürlüğü",
+    "source": "tema kodu",
+    "status": "düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor",
+    "evidence": "platform-uyum-08-kontrol.md"
+  },
+  {
+    "id": "FORM1",
+    "location": "assets/scripts.js:showAlert",
+    "remedy": "Hata penceresi sonrası odak dönüşü; başka modalı koruma",
+    "source": "tema kodu",
+    "status": "düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor",
+    "evidence": "platform-uyum-08-kontrol.md"
+  },
+  {
+    "id": "ASSET2",
+    "location": "assets/style.css",
+    "remedy": "Altı arka plan URL bağı yerel aynı dosyalara taşındı",
+    "source": "tema kodu",
+    "status": "düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor",
+    "evidence": "platform-uyum-08-kontrol.md"
+  },
+  {
+    "id": "A11Y8",
+    "location": "moduller/header.twig",
+    "remedy": "Arama, logo, hesap etiketi ve yerel menü kapatma düğmesi",
+    "source": "tema kodu",
+    "status": "düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor",
+    "evidence": "platform-uyum-08-kontrol.md"
+  },
+  {
+    "id": "FOOT2",
+    "location": "moduller/footer.twig",
+    "remedy": "Boş ayarlı sosyal bağlantılar üretilmiyor",
+    "source": "tema kodu",
+    "status": "düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor",
+    "evidence": "platform-uyum-08-kontrol.md"
   }
 ]

@@ -114,6 +114,11 @@ Güncel durumun tek kaynağı `sorun-durumlari.json`; aşağıdaki tablo bu kay�
 | CSS4 | assets/style.css: footer mobil siyah important kuralı | Koyu fondaki çalışma saatine mevcut açık footer rengi döndü | onarım uygulandı; yerelde doğrulandı; platform kabulü bekliyor | platform-uyum-07-kontrol.md |
 | LOGIN2 | uyelik/giris_yap.twig sosyal giriş kapsayıcıları | Sağlayıcılar kapalıyken boş sosyal giriş alanı gösterilmiyor | onarım uygulandı; yerelde doğrulandı; platform kabulü bekliyor | platform-uyum-07-kontrol.md |
 | LAYOUT1 | Platform Dosyaları/template-assets/style.min.css; footer.twig; sepet/ozet.twig; sepet/butonlar.twig | Mobil sabit CTA ve alt navigasyon örtüşmesi; etkin blok yerleşimi/gerçek DOM gerekli | yerel birleşimde görüldü; platformda doğrulama bekliyor | platform-uyum-07-kontrol.md |
+| FOOT1 | moduller/footer.twig; assets/scripts.js; assets/style.css | Footer klavye, aria ve masaüstüne geçiş görünürlüğü | düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor | platform-uyum-08-kontrol.md |
+| FORM1 | assets/scripts.js:showAlert | Hata penceresi sonrası odak dönüşü; başka modalı koruma | düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor | platform-uyum-08-kontrol.md |
+| ASSET2 | assets/style.css | Altı arka plan URL bağı yerel aynı dosyalara taşındı | düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor | platform-uyum-08-kontrol.md |
+| A11Y8 | moduller/header.twig | Arama, logo, hesap etiketi ve yerel menü kapatma düğmesi | düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor | platform-uyum-08-kontrol.md |
+| FOOT2 | moduller/footer.twig | Boş ayarlı sosyal bağlantılar üretilmiyor | düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor | platform-uyum-08-kontrol.md |
 <!-- CURRENT_ISSUES_END -->
 
 ## Platformla kesinleştirilmesi gerekenler

@@ -4,7 +4,7 @@
     {
       "name": "home",
       "rendered": true,
-      "visualInspected": true,
+      "visualInspected": false,
       "views": [
         {
           "width": 375,
@@ -31,7 +31,7 @@
               "right": -69.015625
             },
             {
-              "tag": "DIV",
+              "tag": "BUTTON",
               "class": "mobile-menu-close",
               "left": -69,
               "right": -29
@@ -164,7 +164,7 @@
             }
           ],
           "captureHeight": 4379,
-          "visualInspected": true
+          "visualInspected": false
         },
         {
           "width": 768,
@@ -191,7 +191,7 @@
               "right": -443
             },
             {
-              "tag": "DIV",
+              "tag": "BUTTON",
               "class": "mobile-menu-close",
               "left": -69,
               "right": -29
@@ -324,7 +324,7 @@
             }
           ],
           "captureHeight": 2954,
-          "visualInspected": true
+          "visualInspected": false
         },
         {
           "width": 1440,
@@ -333,16 +333,14 @@
           "documentWidth": 1425,
           "overflow": [],
           "captureHeight": 2775,
-          "visualInspected": true
+          "visualInspected": false
         }
-      ],
-      "platformAccepted": false,
-      "inspectionEvidence": "platform-uyum-07-kontrol.md: synthetic composition images inspected during this repair; not all settings/states"
+      ]
     },
     {
       "name": "category",
       "rendered": true,
-      "visualInspected": true,
+      "visualInspected": false,
       "views": [
         {
           "width": 375,
@@ -369,7 +367,7 @@
               "right": -69.015625
             },
             {
-              "tag": "DIV",
+              "tag": "BUTTON",
               "class": "mobile-menu-close",
               "left": -69,
               "right": -29
@@ -502,7 +500,7 @@
             }
           ],
           "captureHeight": 3121,
-          "visualInspected": true
+          "visualInspected": false
         },
         {
           "width": 768,
@@ -529,7 +527,7 @@
               "right": -443
             },
             {
-              "tag": "DIV",
+              "tag": "BUTTON",
               "class": "mobile-menu-close",
               "left": -69,
               "right": -29
@@ -662,7 +660,7 @@
             }
           ],
           "captureHeight": 1696,
-          "visualInspected": true
+          "visualInspected": false
         },
         {
           "width": 1440,
@@ -671,16 +669,14 @@
           "documentWidth": 1425,
           "overflow": [],
           "captureHeight": 1633,
-          "visualInspected": true
+          "visualInspected": false
         }
-      ],
-      "platformAccepted": false,
-      "inspectionEvidence": "platform-uyum-07-kontrol.md: synthetic composition images inspected during this repair; not all settings/states"
+      ]
     },
     {
       "name": "product",
       "rendered": true,
-      "visualInspected": true,
+      "visualInspected": false,
       "views": [
         {
           "width": 375,
@@ -707,7 +703,7 @@
               "right": -69.015625
             },
             {
-              "tag": "DIV",
+              "tag": "BUTTON",
               "class": "mobile-menu-close",
               "left": -69,
               "right": -29
@@ -840,7 +836,7 @@
             }
           ],
           "captureHeight": 2687,
-          "visualInspected": true
+          "visualInspected": false
         },
         {
           "width": 768,
@@ -867,7 +863,7 @@
               "right": -443
             },
             {
-              "tag": "DIV",
+              "tag": "BUTTON",
               "class": "mobile-menu-close",
               "left": -69,
               "right": -29
@@ -1000,7 +996,7 @@
             }
           ],
           "captureHeight": 2119,
-          "visualInspected": true
+          "visualInspected": false
         },
         {
           "width": 1440,
@@ -1009,16 +1005,14 @@
           "documentWidth": 1425,
           "overflow": [],
           "captureHeight": 1172,
-          "visualInspected": true
+          "visualInspected": false
         }
-      ],
-      "platformAccepted": false,
-      "inspectionEvidence": "platform-uyum-07-kontrol.md: synthetic composition images inspected during this repair; not all settings/states"
+      ]
     },
     {
       "name": "cart",
       "rendered": true,
-      "visualInspected": true,
+      "visualInspected": false,
       "views": [
         {
           "width": 375,
@@ -1045,7 +1039,7 @@
               "right": -69.015625
             },
             {
-              "tag": "DIV",
+              "tag": "BUTTON",
               "class": "mobile-menu-close",
               "left": -69,
               "right": -29
@@ -1178,7 +1172,7 @@
             }
           ],
           "captureHeight": 2222,
-          "visualInspected": true
+          "visualInspected": false
         },
         {
           "width": 768,
@@ -1205,7 +1199,7 @@
               "right": -443
             },
             {
-              "tag": "DIV",
+              "tag": "BUTTON",
               "class": "mobile-menu-close",
               "left": -69,
               "right": -29
@@ -1338,7 +1332,7 @@
             }
           ],
           "captureHeight": 1486,
-          "visualInspected": true
+          "visualInspected": false
         },
         {
           "width": 1440,
@@ -1347,16 +1341,14 @@
           "documentWidth": 1425,
           "overflow": [],
           "captureHeight": 1186,
-          "visualInspected": true
+          "visualInspected": false
         }
-      ],
-      "platformAccepted": false,
-      "inspectionEvidence": "platform-uyum-07-kontrol.md: synthetic composition images inspected during this repair; not all settings/states"
+      ]
     },
     {
       "name": "empty-cart",
       "rendered": true,
-      "visualInspected": true,
+      "visualInspected": false,
       "views": [
         {
           "width": 375,
@@ -1383,7 +1375,7 @@
               "right": -69.015625
             },
             {
-              "tag": "DIV",
+              "tag": "BUTTON",
               "class": "mobile-menu-close",
               "left": -69,
               "right": -29
@@ -1516,7 +1508,7 @@
             }
           ],
           "captureHeight": 1890,
-          "visualInspected": true
+          "visualInspected": false
         },
         {
           "width": 768,
@@ -1543,7 +1535,7 @@
               "right": -443
             },
             {
-              "tag": "DIV",
+              "tag": "BUTTON",
               "class": "mobile-menu-close",
               "left": -69,
               "right": -29
@@ -1676,7 +1668,7 @@
             }
           ],
           "captureHeight": 1204,
-          "visualInspected": true
+          "visualInspected": false
         },
         {
           "width": 1440,
@@ -1685,16 +1677,14 @@
           "documentWidth": 1425,
           "overflow": [],
           "captureHeight": 1024,
-          "visualInspected": true
+          "visualInspected": false
         }
-      ],
-      "platformAccepted": false,
-      "inspectionEvidence": "platform-uyum-07-kontrol.md: synthetic composition images inspected during this repair; not all settings/states"
+      ]
     },
     {
       "name": "payment",
       "rendered": true,
-      "visualInspected": true,
+      "visualInspected": false,
       "views": [
         {
           "width": 375,
@@ -1721,7 +1711,7 @@
               "right": -69.015625
             },
             {
-              "tag": "DIV",
+              "tag": "BUTTON",
               "class": "mobile-menu-close",
               "left": -69,
               "right": -29
@@ -1854,7 +1844,7 @@
             }
           ],
           "captureHeight": 1764,
-          "visualInspected": true
+          "visualInspected": false
         },
         {
           "width": 768,
@@ -1881,7 +1871,7 @@
               "right": -443
             },
             {
-              "tag": "DIV",
+              "tag": "BUTTON",
               "class": "mobile-menu-close",
               "left": -69,
               "right": -29
@@ -2014,7 +2004,7 @@
             }
           ],
           "captureHeight": 1077,
-          "visualInspected": true
+          "visualInspected": false
         },
         {
           "width": 1440,
@@ -2023,16 +2013,14 @@
           "documentWidth": 1440,
           "overflow": [],
           "captureHeight": 900,
-          "visualInspected": true
+          "visualInspected": false
         }
-      ],
-      "platformAccepted": false,
-      "inspectionEvidence": "platform-uyum-07-kontrol.md: synthetic composition images inspected during this repair; not all settings/states"
+      ]
     },
     {
       "name": "login",
       "rendered": true,
-      "visualInspected": true,
+      "visualInspected": false,
       "views": [
         {
           "width": 375,
@@ -2059,7 +2047,7 @@
               "right": -69.015625
             },
             {
-              "tag": "DIV",
+              "tag": "BUTTON",
               "class": "mobile-menu-close",
               "left": -69,
               "right": -29
@@ -2192,7 +2180,7 @@
             }
           ],
           "captureHeight": 3151,
-          "visualInspected": true
+          "visualInspected": false
         },
         {
           "width": 768,
@@ -2219,7 +2207,7 @@
               "right": -443
             },
             {
-              "tag": "DIV",
+              "tag": "BUTTON",
               "class": "mobile-menu-close",
               "left": -69,
               "right": -29
@@ -2352,7 +2340,7 @@
             }
           ],
           "captureHeight": 2372,
-          "visualInspected": true
+          "visualInspected": false
         },
         {
           "width": 1440,
@@ -2361,16 +2349,14 @@
           "documentWidth": 1425,
           "overflow": [],
           "captureHeight": 2205,
-          "visualInspected": true
+          "visualInspected": false
         }
-      ],
-      "platformAccepted": false,
-      "inspectionEvidence": "platform-uyum-07-kontrol.md: synthetic composition images inspected during this repair; not all settings/states"
+      ]
     },
     {
       "name": "account",
       "rendered": true,
-      "visualInspected": true,
+      "visualInspected": false,
       "views": [
         {
           "width": 375,
@@ -2397,7 +2383,7 @@
               "right": -69.015625
             },
             {
-              "tag": "DIV",
+              "tag": "BUTTON",
               "class": "mobile-menu-close",
               "left": -69,
               "right": -29
@@ -2530,7 +2516,7 @@
             }
           ],
           "captureHeight": 2149,
-          "visualInspected": true
+          "visualInspected": false
         },
         {
           "width": 768,
@@ -2557,7 +2543,7 @@
               "right": -443
             },
             {
-              "tag": "DIV",
+              "tag": "BUTTON",
               "class": "mobile-menu-close",
               "left": -69,
               "right": -29
@@ -2690,7 +2676,7 @@
             }
           ],
           "captureHeight": 1280,
-          "visualInspected": true
+          "visualInspected": false
         },
         {
           "width": 1440,
@@ -2699,16 +2685,14 @@
           "documentWidth": 1425,
           "overflow": [],
           "captureHeight": 1117,
-          "visualInspected": true
+          "visualInspected": false
         }
-      ],
-      "platformAccepted": false,
-      "inspectionEvidence": "platform-uyum-07-kontrol.md: synthetic composition images inspected during this repair; not all settings/states"
+      ]
     },
     {
       "name": "content",
       "rendered": true,
-      "visualInspected": true,
+      "visualInspected": false,
       "views": [
         {
           "width": 375,
@@ -2735,7 +2719,7 @@
               "right": -69.015625
             },
             {
-              "tag": "DIV",
+              "tag": "BUTTON",
               "class": "mobile-menu-close",
               "left": -69,
               "right": -29
@@ -2868,7 +2852,7 @@
             }
           ],
           "captureHeight": 1645,
-          "visualInspected": true
+          "visualInspected": false
         },
         {
           "width": 768,
@@ -2895,7 +2879,7 @@
               "right": -443
             },
             {
-              "tag": "DIV",
+              "tag": "BUTTON",
               "class": "mobile-menu-close",
               "left": -69,
               "right": -29
@@ -3028,7 +3012,7 @@
             }
           ],
           "captureHeight": 959,
-          "visualInspected": true
+          "visualInspected": false
         },
         {
           "width": 1440,
@@ -3037,11 +3021,10 @@
           "documentWidth": 1440,
           "overflow": [],
           "captureHeight": 900,
-          "visualInspected": true
+          "visualInspected": false
         }
-      ],
-      "platformAccepted": false,
-      "inspectionEvidence": "platform-uyum-07-kontrol.md: synthetic composition images inspected during this repair; not all settings/states"
+      ]
     }
-  ]
+  ],
+  "lastInspectionNote": "08: içerik birleşimi 375/768/1440 footer değişikliğinden sonra açıldı; son header X düğmesi kapalı panelde. Önceki tüm sayfa incelemeleri 07 raporunda; bu yeniden üretim otomatik kabul değildir."
 }

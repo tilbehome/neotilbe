@@ -1,0 +1,98 @@
+[
+  {
+    "page": "home",
+    "url": "https://tilbehome.com/",
+    "timestamp": "2026-09-19T12:41:56.487Z",
+    "context": "Fresh anonymous profile, no admin/preview. POST and client/admin endpoints blocked. Reference only, not repaired branch.",
+    "views": [
+      {
+        "width": 375,
+        "height": 3748,
+        "file": "artifacts/live-reference/home-375.png",
+        "url": "https://www.tilbehome.com/",
+        "visuallyInspected": true,
+        "limitation": "Tam sayfa küçültülmüş genel görünüm; ekran altı lazy kaynaklar yüklenmeyebilir. Etkileşim/önizleme kabulü değil."
+      },
+      {
+        "width": 1440,
+        "height": 5442,
+        "file": "artifacts/live-reference/home-1440.png",
+        "url": "https://www.tilbehome.com/",
+        "visuallyInspected": true,
+        "limitation": "Tam sayfa küçültülmüş genel görünüm; ekran altı lazy kaynaklar yüklenmeyebilir. Etkileşim/önizleme kabulü değil."
+      }
+    ]
+  },
+  {
+    "page": "category",
+    "url": "https://www.tilbehome.com/ev-yasam-c-1",
+    "timestamp": "2026-09-19T12:45:54.517Z",
+    "context": "Fresh anonymous profile, no admin/preview. POST and client/admin endpoints blocked. Reference only, not repaired branch.",
+    "views": [
+      {
+        "width": 375,
+        "height": 6761,
+        "file": "artifacts/live-reference/category-375.png",
+        "url": "https://www.tilbehome.com/ev-yasam-c-1",
+        "visuallyInspected": true,
+        "limitation": "Tam sayfa küçültülmüş genel görünüm; ekran altı lazy kaynaklar yüklenmeyebilir. Etkileşim/önizleme kabulü değil."
+      },
+      {
+        "width": 1440,
+        "height": 3860,
+        "file": "artifacts/live-reference/category-1440.png",
+        "url": "https://www.tilbehome.com/ev-yasam-c-1",
+        "visuallyInspected": true,
+        "limitation": "Tam sayfa küçültülmüş genel görünüm; ekran altı lazy kaynaklar yüklenmeyebilir. Etkileşim/önizleme kabulü değil."
+      }
+    ]
+  },
+  {
+    "page": "login",
+    "url": "https://www.tilbehome.com/uye-giris",
+    "timestamp": "2026-09-19T12:44:54.434Z",
+    "context": "Fresh anonymous profile, no admin/preview. POST and client/admin endpoints blocked. Reference only, not repaired branch.",
+    "views": [
+      {
+        "width": 375,
+        "height": 1000,
+        "file": "artifacts/live-reference/login-375.png",
+        "url": "https://www.tilbehome.com/uye-giris",
+        "visuallyInspected": true,
+        "limitation": "Tam sayfa küçültülmüş genel görünüm; ekran altı lazy kaynaklar yüklenmeyebilir. Etkileşim/önizleme kabulü değil."
+      },
+      {
+        "width": 1440,
+        "height": 1000,
+        "file": "artifacts/live-reference/login-1440.png",
+        "url": "https://www.tilbehome.com/uye-giris",
+        "visuallyInspected": true,
+        "limitation": "Tam sayfa küçültülmüş genel görünüm; ekran altı lazy kaynaklar yüklenmeyebilir. Etkileşim/önizleme kabulü değil."
+      }
+    ]
+  },
+  {
+    "page": "product",
+    "url": "https://www.tilbehome.com/8-bolmeli-tasinabilir-kilit-kapakli-saklama-kabi-kahvaltilik-organizer-piknik-seti-gida-saklama-kutusu",
+    "timestamp": "2026-09-19T12:46:26.587Z",
+    "context": "Fresh anonymous profile, no admin/preview. POST and client/admin endpoints blocked. Reference only, not repaired branch.",
+    "views": [
+      {
+        "width": 375,
+        "height": 12916,
+        "file": "artifacts/live-reference/product-375.png",
+        "url": "https://www.tilbehome.com/8-bolmeli-tasinabilir-kilit-kapakli-saklama-kabi-kahvaltilik-organizer-piknik-seti-gida-saklama-kutusu",
+        "visuallyInspected": true,
+        "limitation": "Tam sayfa küçültülmüş genel görünüm; ekran altı lazy kaynaklar yüklenmeyebilir. Etkileşim/önizleme kabulü değil."
+      },
+      {
+        "width": 1440,
+        "height": 6197,
+        "file": "artifacts/live-reference/product-1440.png",
+        "url": "https://www.tilbehome.com/8-bolmeli-tasinabilir-kilit-kapakli-saklama-kabi-kahvaltilik-organizer-piknik-seti-gida-saklama-kutusu",
+        "visuallyInspected": true,
+        "limitation": "Tam sayfa küçültülmüş genel görünüm; ekran altı lazy kaynaklar yüklenmeyebilir. Etkileşim/önizleme kabulü değil."
+      }
+    ]
+  }
+]
