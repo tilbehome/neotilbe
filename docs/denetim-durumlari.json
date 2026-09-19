@@ -1,0 +1,182 @@
+{
+  "canlitema/assets/cok-al-az-ode-indirim.js": {
+    "scope": "Yükleme araması, statik JS/Twig ayrımı, sabit indirim algoritması; aktif kullanım belirsiz",
+    "fixed": false,
+    "local": false,
+    "evidence": "kapsamli-denetim.md; platform-uyum-03-kontrol.md; önceki kontrol raporları"
+  },
+  "canlitema/assets/tahmini-kargom.js": {
+    "scope": "Diğer dosyayla aynı içerik; yükleme araması; Twig çalıştırıldığına kanıt yok",
+    "fixed": false,
+    "local": false,
+    "evidence": "kapsamli-denetim.md; platform-uyum-03-kontrol.md; önceki kontrol raporları"
+  },
+  "canlitema/assets/scripts.js": {
+    "scope": "Menü kilidi, ödeme dosya gönderimi, varyant select köprüsü",
+    "fixed": true,
+    "local": true,
+    "evidence": "kapsamli-denetim.md; platform-uyum-03-kontrol.md; önceki kontrol raporları"
+  },
+  "canlitema/moduller/sepet/ozet.twig": {
+    "scope": "Fiyat/kargo helper sözleşmesi, bağımsız hesapların kaldırılması",
+    "fixed": true,
+    "local": true,
+    "evidence": "kapsamli-denetim.md; platform-uyum-03-kontrol.md; önceki kontrol raporları"
+  },
+  "canlitema/moduller/urunler/profil.twig": {
+    "scope": "Fiyat/taksit HTML, varyant değerlerinin JS bağlamından çıkarılması",
+    "fixed": true,
+    "local": true,
+    "evidence": "kapsamli-denetim.md; platform-uyum-03-kontrol.md; önceki kontrol raporları"
+  },
+  "canlitema/moduller/urunler/hizli_sepet_kutusu.twig": {
+    "scope": "Varyant değerinin JS içine ham yazılması",
+    "fixed": true,
+    "local": true,
+    "evidence": "kapsamli-denetim.md; platform-uyum-03-kontrol.md; önceki kontrol raporları"
+  },
+  "canlitema/moduller/hesap/alt_sayfalar/favori_listem.twig": {
+    "scope": "Platform remove account seçicisi",
+    "fixed": true,
+    "local": true,
+    "evidence": "kapsamli-denetim.md; platform-uyum-03-kontrol.md; önceki kontrol raporları"
+  },
+  "canlitema/moduller/urunler/kart_favori_listesi.twig": {
+    "scope": "Kart kimliği ve eksik remove düğmesi; başlangıç favori alanı belirsiz",
+    "fixed": false,
+    "local": false,
+    "evidence": "kapsamli-denetim.md; platform-uyum-03-kontrol.md; önceki kontrol raporları"
+  },
+  "canlitema/moduller/uyelik/giris_yap.twig": {
+    "scope": "Platform giriş, parola izolasyonu, yerel klavye ve görünüm",
+    "fixed": true,
+    "local": true,
+    "evidence": "kapsamli-denetim.md; platform-uyum-03-kontrol.md; önceki kontrol raporları"
+  },
+  "canlitema/moduller/uyelik/sifre_yenileme.twig": {
+    "scope": "Platform alan adları ve erişilebilir alan adı",
+    "fixed": true,
+    "local": true,
+    "evidence": "kapsamli-denetim.md; platform-uyum-03-kontrol.md; önceki kontrol raporları"
+  },
+  "canlitema/moduller/uyelik/sifremi_unuttum.twig": {
+    "scope": "Platform submit bağlantısı ve erişilebilir alan adı",
+    "fixed": true,
+    "local": true,
+    "evidence": "kapsamli-denetim.md; platform-uyum-03-kontrol.md; önceki kontrol raporları"
+  },
+  "canlitema/moduller/odeme/bilgiler/kargo_sablonu.twig": {
+    "scope": "shipment_file form/ID platform completePaymentStep bağlantısı",
+    "fixed": false,
+    "local": false,
+    "evidence": "kapsamli-denetim.md; platform-uyum-03-kontrol.md; önceki kontrol raporları"
+  },
+  "canlitema/sablon.twig": {
+    "scope": "Script ekleme noktaları ve miras; canlı inject sırası belirsiz",
+    "fixed": false,
+    "local": false,
+    "evidence": "kapsamli-denetim.md; platform-uyum-03-kontrol.md; önceki kontrol raporları"
+  },
+  "canlitema/video-listeleme.twig": {
+    "scope": "Swiper Element yükleme ve başlangıç yaşam döngüsü; modal erişilebilirliği açık",
+    "fixed": true,
+    "local": true,
+    "evidence": "platform-uyum-03-kontrol.md S3"
+  },
+  "canlitema/flash-sayac.twig": {
+    "scope": "Sayaç örnek izolasyonu; kampanya tarih doğruluğu açık",
+    "fixed": true,
+    "local": true,
+    "evidence": "kapsamli-denetim.md; platform-uyum-03-kontrol.md; önceki kontrol raporları"
+  },
+  "canlitema/flash-urun.twig": {
+    "scope": "Sayaç örnek izolasyonu; kampanya tarih doğruluğu açık",
+    "fixed": true,
+    "local": true,
+    "evidence": "kapsamli-denetim.md; platform-uyum-03-kontrol.md; önceki kontrol raporları"
+  },
+  "canlitema/moduller/odeme/ozet_icerik.twig": {
+    "scope": "Kargo uygunluğu ve kalan tutarın platform yardımcısına bağlanması",
+    "fixed": true,
+    "local": true,
+    "evidence": "platform-uyum-03-kontrol.md S2"
+  },
+  "canlitema/sepette-kargo-mesaj-pc.twig": {
+    "scope": "Kargo uygunluğu ve kalan tutarın platform yardımcısına bağlanması",
+    "fixed": true,
+    "local": true,
+    "evidence": "platform-uyum-03-kontrol.md S2"
+  },
+  "canlitema/liste-kartim.twig": {
+    "scope": "Yalnız yerel görsel kaynak bağlantıları; dosyanın diğer işlevleri incelenmiş sayılmaz",
+    "fixed": true,
+    "local": true,
+    "evidence": "onizleme-hazirligi.md; tema-kaynak-baglari.json"
+  },
+  "canlitema/moduller/footer.twig": {
+    "scope": "Yalnız yerel görsel kaynak bağlantıları; dosyanın diğer işlevleri incelenmiş sayılmaz",
+    "fixed": true,
+    "local": true,
+    "evidence": "onizleme-hazirligi.md; tema-kaynak-baglari.json"
+  },
+  "canlitema/moduller/header.twig": {
+    "scope": "Yalnız yerel görsel kaynak bağlantıları; dosyanın diğer işlevleri incelenmiş sayılmaz",
+    "fixed": true,
+    "local": true,
+    "evidence": "onizleme-hazirligi.md; tema-kaynak-baglari.json"
+  },
+  "canlitema/moduller/odeme/adimlar.twig": {
+    "scope": "Yalnız yerel görsel kaynak bağlantıları; dosyanın diğer işlevleri incelenmiş sayılmaz",
+    "fixed": true,
+    "local": true,
+    "evidence": "onizleme-hazirligi.md; tema-kaynak-baglari.json"
+  },
+  "canlitema/moduller/odeme/bilgiler/adres.twig": {
+    "scope": "Yalnız yerel görsel kaynak bağlantıları; dosyanın diğer işlevleri incelenmiş sayılmaz",
+    "fixed": true,
+    "local": true,
+    "evidence": "onizleme-hazirligi.md; tema-kaynak-baglari.json"
+  },
+  "canlitema/moduller/odeme/bilgiler/kargo.twig": {
+    "scope": "Yalnız yerel görsel kaynak bağlantıları; dosyanın diğer işlevleri incelenmiş sayılmaz",
+    "fixed": true,
+    "local": true,
+    "evidence": "onizleme-hazirligi.md; tema-kaynak-baglari.json"
+  },
+  "canlitema/moduller/odeme/bilgiler/siparis.twig": {
+    "scope": "Yalnız yerel görsel kaynak bağlantıları; dosyanın diğer işlevleri incelenmiş sayılmaz",
+    "fixed": true,
+    "local": true,
+    "evidence": "onizleme-hazirligi.md; tema-kaynak-baglari.json"
+  },
+  "canlitema/moduller/urunler/profil_degerlendirmeler.twig": {
+    "scope": "Yalnız yerel görsel kaynak bağlantıları; dosyanın diğer işlevleri incelenmiş sayılmaz",
+    "fixed": true,
+    "local": true,
+    "evidence": "onizleme-hazirligi.md; tema-kaynak-baglari.json"
+  },
+  "canlitema/ozel-moduller/banner-anasayfa1.twig": {
+    "scope": "Yalnız yerel görsel kaynak bağlantıları; dosyanın diğer işlevleri incelenmiş sayılmaz",
+    "fixed": true,
+    "local": true,
+    "evidence": "onizleme-hazirligi.md; tema-kaynak-baglari.json"
+  },
+  "canlitema/ozel-moduller/dikey-banner-anasayfa.twig": {
+    "scope": "Yalnız yerel görsel kaynak bağlantıları; dosyanın diğer işlevleri incelenmiş sayılmaz",
+    "fixed": true,
+    "local": true,
+    "evidence": "onizleme-hazirligi.md; tema-kaynak-baglari.json"
+  },
+  "canlitema/sepet-guvenli-odeme-pc.twig": {
+    "scope": "Yalnız yerel görsel kaynak bağlantıları; dosyanın diğer işlevleri incelenmiş sayılmaz",
+    "fixed": true,
+    "local": true,
+    "evidence": "onizleme-hazirligi.md; tema-kaynak-baglari.json"
+  },
+  "canlitema/sepette-indirim.twig": {
+    "scope": "Yalnız yerel görsel kaynak bağlantıları; dosyanın diğer işlevleri incelenmiş sayılmaz",
+    "fixed": true,
+    "local": true,
+    "evidence": "onizleme-hazirligi.md; tema-kaynak-baglari.json"
+  }
+}

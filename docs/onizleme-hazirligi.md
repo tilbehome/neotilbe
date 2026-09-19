@@ -12,6 +12,8 @@ Bu çıktı **kaynak aday dizinidir; yüklenebilirliği doğrulanmış ZIP deği
 
 ## Platformda sonraki kabul
 
+Yerel ZIP incelemesi sonucu: özgün tema dışa aktarım arşivi bulunmadı; bulunan iki ZIP ikon ve API örnekleridir. Açılmış orijinal tema dizini tek başına arşiv kök yapısını kanıtlamaz. Ayrıntı: [platform-uyum-03-kontrol.md](platform-uyum-03-kontrol.md).
+
 1. Ayrı kimliğin Temalarım listesinde bulunmadığını ve yüklemenin etkinleştirmediğini doğrula. Aktif goldtheme editöründe kaydetme; Aktif Et kullanma.
 2. Belgelenmiş arşiv yapısıyla aday paketle. Opaque `ayarlar/modul_yerlesimi.config` içerikleri ve blok/mağaza ayarlarının paylaşımı belirsizdir; izolasyon doğrulanmadan ayar değiştirme.
 3. Ayrı temanın kendi Önizle düğmesini kullan; adresi tahmin etme. Panelde ayrı tema kimliğini, ağda bu adayın dosyalarını ve manifestteki değişiklikleri doğrula. Misafir görünümünün aktif goldtheme kaldığını kontrol et.
