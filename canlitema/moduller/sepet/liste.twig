@@ -10,7 +10,7 @@
 {% set uniqueProductIds = [] %}
 
 {% for sepet in sepetBilgileri('urunler') %}
-    {% set productId = sepet.ID %}
+    {% set productId = sepet.urun.ID %}
     {% if productId not in uniqueProductIds %}
         {% set uniqueProductIds = uniqueProductIds | merge([productId]) %}
     {% endif %}
@@ -18,12 +18,8 @@
 
 {% set uniqueProductCount = uniqueProductIds | length %}
 
-{% if uniqueProductCount >= 3 %}
-    {% set indirim_mesaji = "Tebrikler! Flash İndirim Uygulanmıştır" %}
-{% elseif uniqueProductCount == 2 %}
-    {% set indirim_mesaji = "Sepetine farklı ( 1 ) ürün daha ekle indirim kazan" %}
-{% elseif uniqueProductCount == 1 %}
-    {% set indirim_mesaji = "Sepetine farklı ( 2 ) ürün daha ekle indirim kazan" %}
+{% if uniqueProductCount > 0 %}
+    {% set indirim_mesaji = 'Sepetinizde ' ~ uniqueProductCount ~ ' farklı ürün var.' %}
 {% endif %}
 
 {# İndirim mesajı ve ilerleme çubuğu #}
@@ -89,13 +85,11 @@
                                                     </div>
                                                 {% endfor %}
                                             </div>
-                                <div class="discount-prompt social-proof" style="display:flex; align-items:center; gap:5px;">
-    
-    Bu ürünü <strong>{{ 10 + (sepet.urun.ID * 7 % 100) }}</strong> kişi <i class="fas fa-heart"></i> favorilere ekledi
-
-</div>
 
 
+                                        </div>
+                                    </div>
+                                </td>
                                 <td class="td-quantity">
                                     <div class="product-quantity ekleme">
 <button class="btn btn-danger btn-remove" type="button" onclick="removeCart({{ sepet.ID }}, 'refresh-page')" title="Ürünü Sepetten Çıkar"><i class="fa fa-trash-alt"></i></button>
@@ -109,7 +103,7 @@
                                         </a>
                                         <input class="form-control" 
                                             data-base-value="{{ sepet.adet }}"
-                                            name="quantity" data-value-type="{{ sepet.birim }}"
+                                            name="quantity" data-quantity-type="{{ sepet.birim }}"
                                             value="{{ sepet.adet }}"
                                             onkeypress="return productQuantityBox(
                                                 'change',
