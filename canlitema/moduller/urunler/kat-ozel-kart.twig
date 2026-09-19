@@ -104,7 +104,10 @@
                     <div class="button-group">
                         <div class="cart-group">
                             {% if urun.stok > 0 %}
-                                
+                                <a href="javascript:;" onclick="addCart({{ urun.ID }}, 'card')"
+                                    class="btn btn-cart">
+                                    <i class="{{ temaAyarlari('icon','sepetim') }} mr-2"></i> {{ cevir('sepete_ekle') }}
+                                </a>
                             {% else %}
                                 <button type="button" disabled class="btn btn-cart disabled">
                                     <span class="btn-text"><i class="mr-2 {{ temaAyarlari('icon','sepetim') }}" aria-hidden="true"></i> {{cevir('stokta_yok_buton')}}</span>

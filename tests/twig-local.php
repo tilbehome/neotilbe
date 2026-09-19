@@ -134,6 +134,27 @@ preg_match('/<style type="text\/css">[\s\S]*?<\/style>/', file_get_contents($roo
 $themeStyle = $twig->createTemplate($rootStyle[0])->render([]);
 file_put_contents($directory . '/cards.html', $themeStyle . '<div class="container"><p>Yerel sentetik ürünler; gerçek mağaza verisi değildir.</p><div class="row">' . $cards . '</div></div>');
 $report['renderFixtures']['cardStockBranches'] = 'passed';
+$savedOptions = $themeOptions;
+// These are independent supported settings, not a promise that every combination is visually accepted.
+foreach ([[1,0,0], [0,1,0], [0,0,1], [1,1,1], [0,0,0]] as $buttons) {
+    foreach (['sepete_ekle','sepete_ekle_right','sepete_ekle_down'] as $i => $key) {
+        $themeOptions['urun_karti'][$key]['deger'] = $buttons[$i];
+    }
+    foreach ([0,1] as $stock) foreach ([0,1] as $quantity) {
+        $themeOptions['urun_karti']['adet_secim']['deger'] = $quantity;
+        $product['stok'] = $stock;
+        foreach (['kart','kat-ozel-kart'] as $cardName) {
+            $html = $twig->render('moduller/urunler/'.$cardName.'.twig', ['urun'=>$product,'modul'=>['ozel_data_kodu'=>'settings'],'gorsel'=>$image,'urunEklentileri'=>$labels]);
+            $expected = $stock ? array_sum($buttons) : 0;
+            if (substr_count($html, 'onclick="addCart(') !== $expected ||
+                str_contains($html, 'data-product-card-quantity=') !== (bool)$quantity) {
+                throw new RuntimeException('Card setting/stock/quantity contract differs: '.$cardName);
+            }
+        }
+    }
+}
+$themeOptions = $savedOptions;
+$report['renderFixtures']['cardIndependentButtonAndQuantitySettings'] = 'passed (local render, no platform requests or visual acceptance)';
 $categories = [['ID' => 1, 'adi' => 'Kategori', 'link' => '#fixture', 'alt_kategori_var_mi' => true,
     'alt_kategoriler' => [['ID' => 2, 'adi' => 'Alt kategori', 'link' => '#child']], 'kapak' => '/fixture.png']];
 foreach ([0, 1] as $menuImage) {

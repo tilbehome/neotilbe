@@ -673,6 +673,7 @@
         "galleryFavoriteExplicitProductContext": "passed",
         "galleryLabelProductDataAndPlatformDiscountFlag": "passed",
         "cardStockBranches": "passed",
+        "cardIndependentButtonAndQuantitySettings": "passed (local render, no platform requests or visual acceptance)",
         "megaMenuImageOnOffBalance": "passed"
     }
 }
