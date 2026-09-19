@@ -57,7 +57,7 @@
                     <input type="text" class="form-control" name="email" placeholder="E-posta adresinizi girin">
                     <div class="password-container">
                         <input type="password" class="form-control password" name="password" placeholder="Şifrenizi girin">
-                        <i class="fa fa-eye toggle-password" onclick="togglePasswordVisibility('password')"></i>
+                        <i class="fa fa-eye toggle-password" onclick="togglePasswordVisibility(this)"></i>
                     </div>
                     <a href="{{ statikLinkler('sifremi_unuttum') }}" class="forgot-password">Şifremi Unuttum</a>
                     
@@ -103,11 +103,11 @@
                     <input type="text" class="form-control" name="phone" placeholder="Telefon numaranızı girin">
                     <div class="password-container">
                         <input type="password" class="form-control password" name="password" placeholder="Şifrenizi belirleyin">
-                        <i class="fa fa-eye toggle-password" onclick="togglePasswordVisibility('password')"></i>
+                        <i class="fa fa-eye toggle-password" onclick="togglePasswordVisibility(this)"></i>
                     </div>
                     <div class="password-container">
                         <input type="password" class="form-control password" name="password2" placeholder="Şifrenizi tekrar girin">
-                        <i class="fa fa-eye toggle-password" onclick="togglePasswordVisibility('password2')"></i>
+                        <i class="fa fa-eye toggle-password" onclick="togglePasswordVisibility(this)"></i>
                     </div>
                     
                     <div class="alert alert-warning font-size-12 rounded-10">
@@ -147,9 +147,10 @@
     </div>
 
     <script>
-        function togglePasswordVisibility(passwordField) {
-            var passwordInput = document.querySelector(`[name="${passwordField}"]`);
-            var icon = passwordInput.nextElementSibling;
+        function togglePasswordVisibility(icon) {
+            var container = icon.closest('.password-container');
+            var passwordInput = container && container.querySelector('input.password');
+            if (!passwordInput) return;
             if (passwordInput.type === "password") {
                 passwordInput.type = "text";
                 icon.classList.remove("fa-eye");
