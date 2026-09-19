@@ -1,31 +1,36 @@
 $(function(){
     /* Sidebar Buttons */
+    var menuSelector = '.sidebar-menu, .sidebar-menu-type-2';
+    var panelSelector = menuSelector + ', .sidebar-user';
+
+    function syncSidebarState() {
+        var isOpen = $(panelSelector).is('.active');
+        $('.op-black').toggleClass('show', isOpen).toggleClass('hide', !isOpen);
+        // Own only this lock; platform panels and modals keep their own locks.
+        $('body').toggleClass('tilbe-sidebar-open', isOpen);
+    }
+
     $(".btn-sidebar-user").click(function () {
-        $('.op-black').toggleClass("hide").toggleClass("show");
-        $('body').toggleClass("hidden-scroll");
         $('.sidebar-user').toggleClass("active");
+        syncSidebarState();
     });
     $(".btn-sidebar-menu").click(function () {
-        $('.op-black').toggleClass("hide").toggleClass("show");
-        $('body').toggleClass("hidden-scroll");
-        $('.sidebar-menu').toggleClass("active");
-        $('.sidebar-menu-type-2').toggleClass("active");
+        $(menuSelector).toggleClass('active', !$(menuSelector).is('.active'));
+        syncSidebarState();
     });
     $(".mobile-menu-close").click(function(){
-        $(".sidebar-menu-type-2").removeClass("active");
-        $(".op-black").removeClass("show");
+        $(menuSelector).removeClass('active');
+        syncSidebarState();
     });
     $(".op-black").click(function () {
-        $('.op-black').toggleClass("hide").toggleClass("show");
-        if ( $(".sidebar-user").is(".active")){
-            $('.sidebar-user').toggleClass("active");
-            $('body').toggleClass("hidden-scroll");
+        if ($(menuSelector).is('.active')) {
+            $(menuSelector).removeClass('active');
+        } else {
+            $('.sidebar-user').removeClass('active');
         }
-        if ( $(".sidebar-menu").is(".active")){
-            $('.sidebar-menu').toggleClass("active");
-            $('body').toggleClass("hidden-scroll");
-        }
+        syncSidebarState();
     });
+    syncSidebarState();
 
     /* Sidebar Categories */
     var show_sidebar_categories = false;
