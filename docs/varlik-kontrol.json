@@ -1,0 +1,1453 @@
+{
+  "method": "offline browser image decode; thumbnails require separate human inspection",
+  "records": [
+    {
+      "file": "canlitema/apgoogle.png",
+      "bytes": 10206,
+      "width": 300,
+      "height": 89,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/6e618057-66e9-4c7b-8fc4-317d34375a5b.webp",
+      "bytes": 16306,
+      "width": 1125,
+      "height": 1068,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/8605149.png",
+      "bytes": 1988,
+      "width": 40,
+      "height": 40,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/basketpage-ticket.svg",
+      "bytes": 1357,
+      "width": 24,
+      "height": 24,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/callcenter.svg",
+      "bytes": 609,
+      "width": 24,
+      "height": 24,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/fast-delivery-svgrepo-com-2-1.svg",
+      "bytes": 7847,
+      "width": 20,
+      "height": 20,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/gift.png",
+      "bytes": 614,
+      "width": 50,
+      "height": 50,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/guvnn.png",
+      "bytes": 2715,
+      "width": 40,
+      "height": 40,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/icons8-cargo-48.png",
+      "bytes": 547,
+      "width": 48,
+      "height": 48,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/icons8-gift.gif",
+      "bytes": 8290,
+      "width": 48,
+      "height": 48,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/icons/profil-collection.svg",
+      "bytes": 319,
+      "width": 32,
+      "height": 32,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/1_org_zoom-1-photoroom1.jpg",
+      "bytes": 4014,
+      "width": 60,
+      "height": 40,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/330b765e-7b09-4406-9bb6-3003ede52a40.jpeg",
+      "bytes": 6272,
+      "width": 325,
+      "height": 53,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/404/404.png",
+      "bytes": 11252,
+      "width": 512,
+      "height": 512,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/404/404_tip_2.png",
+      "bytes": 633777,
+      "width": 2000,
+      "height": 2000,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/99indirim99.svg",
+      "bytes": 1014,
+      "width": 32,
+      "height": 32,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/adsiz.png",
+      "bytes": 3163,
+      "width": 40,
+      "height": 43,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/american-express-l.png",
+      "bytes": 2146,
+      "width": 51,
+      "height": 34,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/applay.png",
+      "bytes": 17752,
+      "width": 564,
+      "height": 167,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/appstore.png",
+      "bytes": 76341,
+      "width": 1100,
+      "height": 339,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/asdfasdf.png",
+      "bytes": 11007,
+      "width": 200,
+      "height": 23,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/card-ok-svgrepo-com-1.svg",
+      "bytes": 1597,
+      "width": 30,
+      "height": 30,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/card-transfer-svgrepo-com-1.svg",
+      "bytes": 3530,
+      "width": 30,
+      "height": 30,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/cards.png",
+      "bytes": 12703,
+      "width": 175,
+      "height": 34,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/cmanset-discount.png",
+      "bytes": 1287,
+      "width": 65,
+      "height": 89,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/copy-share-icon.svg",
+      "bytes": 718,
+      "width": 38,
+      "height": 38,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/face-smile-svgrepo-com-1.svg",
+      "bytes": 982,
+      "width": 30,
+      "height": 30,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/faturr.svg",
+      "bytes": 4924,
+      "width": 25,
+      "height": 25,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/fb-share-icon.svg",
+      "bytes": 385,
+      "width": 38,
+      "height": 38,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/free-cargom-1.png",
+      "bytes": 15736,
+      "width": 282,
+      "height": 182,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/g1d2fg12.png",
+      "bytes": 1456,
+      "width": 32,
+      "height": 29,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/garanti-bbva.png",
+      "bytes": 19812,
+      "width": 300,
+      "height": 59,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/giftbox-gift-svgrepo-com-1.svg",
+      "bytes": 3100,
+      "width": 30,
+      "height": 30,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/gtruck.svg",
+      "bytes": 966,
+      "width": 36,
+      "height": 25,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/hediyedsdd.svg",
+      "bytes": 1357,
+      "width": 24,
+      "height": 24,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/hepsijet.svg",
+      "bytes": 6438,
+      "width": 83,
+      "height": 18,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/hizli-kargo-pc.webp",
+      "bytes": 2302,
+      "width": 348,
+      "height": 127,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/i-icon.svg",
+      "bytes": 2398,
+      "width": 15,
+      "height": 15,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/icons8-gift-50.png",
+      "bytes": 617,
+      "width": 30,
+      "height": 30,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/icons8-gift-64.png",
+      "bytes": 1719,
+      "width": 30,
+      "height": 30,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/icons8-in-transit-64.png",
+      "bytes": 607,
+      "width": 24,
+      "height": 24,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/icons8-order-completed-50.png",
+      "bytes": 360,
+      "width": 25,
+      "height": 25,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/icons8-secure-80.png",
+      "bytes": 559,
+      "width": 25,
+      "height": 25,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/icons8-website-locked-48.png",
+      "bytes": 836,
+      "width": 25,
+      "height": 25,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/ikonum.webp",
+      "bytes": 1664,
+      "width": 40,
+      "height": 40,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/indirim999.webp",
+      "bytes": 836,
+      "width": 32,
+      "height": 32,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/invoice-bill-ecommerce-svgrepo-com.svg",
+      "bytes": 3791,
+      "width": 800,
+      "height": 800,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/isaret.svg",
+      "bytes": 2398,
+      "width": 15,
+      "height": 15,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/iyzico-ile-ode.png",
+      "bytes": 6402,
+      "width": 378,
+      "height": 119,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/iyzico.png",
+      "bytes": 14196,
+      "width": 429,
+      "height": 32,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/iyzico_logo.svg.png",
+      "bytes": 1779,
+      "width": 51,
+      "height": 34,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/kargo-1.svg",
+      "bytes": 1857,
+      "width": 3030,
+      "height": 3030,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/kargo01.svg",
+      "bytes": 1853,
+      "width": 30,
+      "height": 30,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/masaustu-banner/3d-credit-card.webp",
+      "bytes": 4696,
+      "width": 97,
+      "height": 69,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/masaustu-banner/ai-generated-7888387_640.png",
+      "bytes": 18927,
+      "width": 640,
+      "height": 640,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/masaustu-banner/bardak00-cutout.png",
+      "bytes": 158466,
+      "width": 500,
+      "height": 500,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/masaustu-banner/bg-resmi10.png",
+      "bytes": 306406,
+      "width": 419,
+      "height": 596,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/masaustu-banner/hands.webp",
+      "bytes": 10512,
+      "width": 170,
+      "height": 69,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/masaustu-banner/logossss.png",
+      "bytes": 13033,
+      "width": 612,
+      "height": 99,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/masaustu-banner/mop-120.png",
+      "bytes": 62902,
+      "width": 350,
+      "height": 350,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/masaustu-banner/petshop-urun.png",
+      "bytes": 133943,
+      "width": 345,
+      "height": 350,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/masaustu-banner/qe27ipmok3k40ks8cowoo0kscwcwk8.png",
+      "bytes": 114278,
+      "width": 350,
+      "height": 350,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/masaustu-banner/rende-png10.png",
+      "bytes": 107386,
+      "width": 350,
+      "height": 350,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/masaustu-banner/sevimli-kedi3.webp",
+      "bytes": 15724,
+      "width": 916,
+      "height": 254,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/masaustu-banner/transparan-arka-plan.webp",
+      "bytes": 53502,
+      "width": 950,
+      "height": 460,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/masaustu-banner/verified-icon.png",
+      "bytes": 7284,
+      "width": 171,
+      "height": 60,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/masaustu-banner/verifield.png",
+      "bytes": 11372,
+      "width": 228,
+      "height": 69,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/masaustu-banner/yaglik-10.png",
+      "bytes": 95875,
+      "width": 350,
+      "height": 350,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/method-american.png",
+      "bytes": 3661,
+      "width": 51,
+      "height": 34,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/method-cuzdan.svg",
+      "bytes": 1596,
+      "width": 25,
+      "height": 25,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/method-kapidaodeme.svg",
+      "bytes": 1326,
+      "width": 25,
+      "height": 25,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/method-master.png",
+      "bytes": 2545,
+      "width": 72,
+      "height": 34,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/method-troy.png",
+      "bytes": 3074,
+      "width": 72,
+      "height": 34,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/method-visa.png",
+      "bytes": 2599,
+      "width": 72,
+      "height": 34,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/mng-kargo-logo-transparan.webp",
+      "bytes": 820,
+      "width": 75,
+      "height": 29,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/mng-kargom.png",
+      "bytes": 2587,
+      "width": 83,
+      "height": 23,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/mnlogom.webp",
+      "bytes": 1352,
+      "width": 83,
+      "height": 18,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/mobil-kullanici.svg",
+      "bytes": 1568,
+      "width": 24,
+      "height": 24,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/mobilara.svg",
+      "bytes": 368,
+      "width": 20,
+      "height": 20,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/new-share.svg",
+      "bytes": 791,
+      "width": 24,
+      "height": 24,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/onay-gor.png",
+      "bytes": 9139,
+      "width": 150,
+      "height": 131,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/payment-disccode.svg",
+      "bytes": 474,
+      "width": 28,
+      "height": 28,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/paymentpage-location.svg",
+      "bytes": 641,
+      "width": 24,
+      "height": 24,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/paymentstep-odeme.svg",
+      "bytes": 1395,
+      "width": 30,
+      "height": 33,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/paymentstep-siparisonayi.svg",
+      "bytes": 1328,
+      "width": 34,
+      "height": 30,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/paymentstep-teslimat.svg",
+      "bytes": 2641,
+      "width": 36,
+      "height": 34,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/paysec-options.svg",
+      "bytes": 2145,
+      "width": 25,
+      "height": 25,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/paysec-return.svg",
+      "bytes": 1794,
+      "width": 25,
+      "height": 26,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/paysec-teslimat.svg",
+      "bytes": 1322,
+      "width": 25,
+      "height": 26,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/play.png",
+      "bytes": 15344,
+      "width": 512,
+      "height": 512,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/playstore.png",
+      "bytes": 83408,
+      "width": 1100,
+      "height": 339,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/preview/1.png",
+      "bytes": 4015,
+      "width": 1,
+      "height": 1,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/preview/2.png",
+      "bytes": 4015,
+      "width": 1,
+      "height": 1,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/preview/3.png",
+      "bytes": 4015,
+      "width": 1,
+      "height": 1,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/preview/4.png",
+      "bytes": 4015,
+      "width": 1,
+      "height": 1,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/profil-alev.svg",
+      "bytes": 2703,
+      "width": 26,
+      "height": 27,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/profil-cargo.svg",
+      "bytes": 3621,
+      "width": 23,
+      "height": 21,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/profil-cargopay.svg",
+      "bytes": 1580,
+      "width": 23,
+      "height": 23,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/profil-pbcquest.svg",
+      "bytes": 1217,
+      "width": 19,
+      "height": 19,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/profil-return.svg",
+      "bytes": 2572,
+      "width": 23,
+      "height": 25,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/profil-specaildisc.svg",
+      "bytes": 1014,
+      "width": 32,
+      "height": 32,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/profil-tax.svg",
+      "bytes": 2731,
+      "width": 29,
+      "height": 27,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/profilcomment-camera.svg",
+      "bytes": 1601,
+      "width": 17,
+      "height": 14,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/secure_logo-1.webp",
+      "bytes": 2852,
+      "width": 225,
+      "height": 69,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/select-arrow.svg",
+      "bytes": 332,
+      "width": 10,
+      "height": 5,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/sfvsfg-cutout.png",
+      "bytes": 3283,
+      "width": 40,
+      "height": 40,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/spinner.gif",
+      "bytes": 79150,
+      "width": 200,
+      "height": 200,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/star-svgrepo-com-1.svg",
+      "bytes": 1116,
+      "width": 64,
+      "height": 64,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/taksit-istem.png",
+      "bytes": 6008,
+      "width": 40,
+      "height": 40,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/taksitler-yap343.png",
+      "bytes": 2723,
+      "width": 40,
+      "height": 40,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/ti-puan.png",
+      "bytes": 2440,
+      "width": 40,
+      "height": 39,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/tilbehome-etbis.jpeg",
+      "bytes": 34528,
+      "width": 256,
+      "height": 300,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/tilbehomeetbis.webp",
+      "bytes": 15512,
+      "width": 130,
+      "height": 150,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/transparent_slow_gift.gif",
+      "bytes": 8117,
+      "width": 48,
+      "height": 48,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/tw-share-icon.svg",
+      "bytes": 2490,
+      "width": 38,
+      "height": 38,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/x.svg",
+      "bytes": 183,
+      "width": 24,
+      "height": 24,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/yildiz-1.svg",
+      "bytes": 1360,
+      "width": 30,
+      "height": 30,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/images/ziller.png",
+      "bytes": 3618,
+      "width": 40,
+      "height": 40,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/kargobeava.svg",
+      "bytes": 433,
+      "width": 27,
+      "height": 27,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/menu-left.svg",
+      "bytes": 170,
+      "width": 20,
+      "height": 12,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/new-share.svg",
+      "bytes": 791,
+      "width": 24,
+      "height": 24,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/notification-svgrepo-com.svg",
+      "bytes": 3497,
+      "width": 800,
+      "height": 800,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/yeni-heart.svg",
+      "bytes": 1575,
+      "width": 24,
+      "height": 24,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/assets/yenicart.svg",
+      "bytes": 3293,
+      "width": 21,
+      "height": 20,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/banks.webp",
+      "bytes": 9950,
+      "width": 880,
+      "height": 42,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/cmanset-discount.svg",
+      "bytes": 1039,
+      "width": 65,
+      "height": 89,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/dekoratif-urunler.webp",
+      "bytes": 32064,
+      "width": 1360,
+      "height": 778,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/firsatlar.svg",
+      "bytes": 3971,
+      "width": 48,
+      "height": 47,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/flash-discount.svg",
+      "bytes": 1039,
+      "width": 65,
+      "height": 89,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/kamp-urunleri.webp",
+      "bytes": 54116,
+      "width": 1360,
+      "height": 778,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/ozel-moduller/8899.jpg",
+      "bytes": 393084,
+      "width": 800,
+      "height": 1175,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/ozel-moduller/dikey-cilt-1.webp",
+      "bytes": 39348,
+      "width": 650,
+      "height": 802,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/ozel-moduller/dikey-ev-1.webp",
+      "bytes": 43112,
+      "width": 650,
+      "height": 802,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/ozel-moduller/double-walled-glasses.webp",
+      "bytes": 596022,
+      "width": 800,
+      "height": 1174,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/ozel-moduller/istockphoto-1131375112-612x612-photoroom.png",
+      "bytes": 70991,
+      "width": 560,
+      "height": 339,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/ozel-moduller/mataranew9.jpg",
+      "bytes": 376154,
+      "width": 800,
+      "height": 1174,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/ozel-moduller/meyve-sikacak9.jpeg",
+      "bytes": 508697,
+      "width": 800,
+      "height": 1174,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/ozel-moduller/rende-banner-99.jpg",
+      "bytes": 443895,
+      "width": 800,
+      "height": 1174,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/payment-disccode.svg",
+      "bytes": 474,
+      "width": 28,
+      "height": 28,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/petshop-urunler.webp",
+      "bytes": 32918,
+      "width": 1360,
+      "height": 778,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/profil-alev.svg",
+      "bytes": 2703,
+      "width": 26,
+      "height": 27,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/profil-specaildisc.svg",
+      "bytes": 1014,
+      "width": 32,
+      "height": 32,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/resimler1/01.webp",
+      "bytes": 19236,
+      "width": 609,
+      "height": 300,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/resimler1/02.webp",
+      "bytes": 20854,
+      "width": 609,
+      "height": 300,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/resimler1/03.webp",
+      "bytes": 14734,
+      "width": 609,
+      "height": 300,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/resimler1/04.webp",
+      "bytes": 12902,
+      "width": 609,
+      "height": 300,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/resimler1/05.webp",
+      "bytes": 20582,
+      "width": 609,
+      "height": 300,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/resimler1/06.webp",
+      "bytes": 16962,
+      "width": 609,
+      "height": 300,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/resimler1/07.webp",
+      "bytes": 15478,
+      "width": 609,
+      "height": 300,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/resimler1/08.webp",
+      "bytes": 15556,
+      "width": 609,
+      "height": 300,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/resimler1/09.webp",
+      "bytes": 18210,
+      "width": 609,
+      "height": 300,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/resimler1/1double-walled-glasses.webp",
+      "bytes": 23030,
+      "width": 512,
+      "height": 657,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/resimler1/banks-logos-d.svg",
+      "bytes": 87819,
+      "width": 541,
+      "height": 109,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/resimler1/banks-logos.png",
+      "bytes": 37121,
+      "width": 292,
+      "height": 109,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/resimler1/bardak00-cutout.png",
+      "bytes": 51641,
+      "width": 500,
+      "height": 500,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/resimler1/bg-resmi10.png",
+      "bytes": 306406,
+      "width": 419,
+      "height": 596,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/resimler1/dikey-cilt-1.webp",
+      "bytes": 39348,
+      "width": 650,
+      "height": 802,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/resimler1/dikey-ev-1.webp",
+      "bytes": 43112,
+      "width": 650,
+      "height": 802,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/resimler1/dikey-pet-1.webp",
+      "bytes": 45024,
+      "width": 650,
+      "height": 802,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/resimler1/double-walled-glasses.webp",
+      "bytes": 316306,
+      "width": 512,
+      "height": 751,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/resimler1/firsat-517x567.webp",
+      "bytes": 28036,
+      "width": 517,
+      "height": 657,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/resimler1/firsat-517x5670.webp",
+      "bytes": 26098,
+      "width": 512,
+      "height": 657,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/resimler1/firsat-562x878.webp",
+      "bytes": 33118,
+      "width": 517,
+      "height": 657,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/resimler1/firsat-banner-min.png",
+      "bytes": 134417,
+      "width": 524,
+      "height": 438,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/resimler1/firsat-banner-min.webp",
+      "bytes": 25198,
+      "width": 524,
+      "height": 438,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/resimler1/guvenli-alisveris-anasayfa1.webp",
+      "bytes": 2940,
+      "width": 100,
+      "height": 97,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/resimler1/iade-garantisi-anasayfa1.webp",
+      "bytes": 3094,
+      "width": 100,
+      "height": 100,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/resimler1/istockphot.png",
+      "bytes": 70991,
+      "width": 560,
+      "height": 339,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/resimler1/kesintisiz-destek-anasayfa1.webp",
+      "bytes": 4414,
+      "width": 100,
+      "height": 97,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/resimler1/mataranew9.webp",
+      "bytes": 19202,
+      "width": 512,
+      "height": 657,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/resimler1/meyve-sikacak9.webp",
+      "bytes": 29560,
+      "width": 512,
+      "height": 751,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/resimler1/mobil-header-banner.webp",
+      "bytes": 13604,
+      "width": 960,
+      "height": 90,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/resimler1/odeme-kolayligi-anasayfa1.webp",
+      "bytes": 9218,
+      "width": 512,
+      "height": 512,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/resimler1/pratik-ev-gereclerim.webp",
+      "bytes": 25026,
+      "width": 512,
+      "height": 657,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/resimler1/rende-banner-99.webp",
+      "bytes": 24616,
+      "width": 512,
+      "height": 751,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/resimler1/rendebanner-1.webp",
+      "bytes": 25808,
+      "width": 512,
+      "height": 657,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/resimler1/renderende1.webp",
+      "bytes": 185800,
+      "width": 512,
+      "height": 625,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/resimler1/ucretsiz-kargo-anasayfa1.webp",
+      "bytes": 3708,
+      "width": 100,
+      "height": 82,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/resimler1/viralurunler1.webp",
+      "bytes": 25644,
+      "width": 512,
+      "height": 657,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/resimler1/yapimarketim.webp",
+      "bytes": 33036,
+      "width": 517,
+      "height": 657,
+      "decodeError": null,
+      "storefrontVerified": false
+    },
+    {
+      "file": "canlitema/yorum-foto-var.svg",
+      "bytes": 1601,
+      "width": 17,
+      "height": 14,
+      "decodeError": null,
+      "storefrontVerified": false
+    }
+  ]
+}

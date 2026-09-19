@@ -4,15 +4,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 10206,
     "sha256": "35c27863ce070db65484dd280ebab61c17cee1fde869f4e75911a7e880c037e2",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -23,15 +28,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 16306,
     "sha256": "8374710b28accb5d3695f31fbd5f8940cb25907a087260ec54d0611b009730c1",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -42,15 +52,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 1988,
     "sha256": "18ccca3cdb17224cdce9900022a77fea73c6f918006b93f8d76c5dd390975f2c",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -61,15 +76,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 1357,
     "sha256": "f9a3d1f43577cf271715375411a9ee1868b8d497aed28cb08e25d128a9817a1c",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -80,15 +100,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 609,
     "sha256": "ae7151009e35f16a4cb80959c5bd87193aae3ef448e133039bda15a945048c89",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -123,15 +148,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 7847,
     "sha256": "31fa6898b5cf301c8e23e231b867e17b52071e45fdebe6249dbba5db323459ef",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -142,15 +172,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 614,
     "sha256": "e9f5414d26ad1b04ca21a05edda02d811165baadc6ebd94ddaf08dcfd5de1006",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -161,15 +196,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 2715,
     "sha256": "b370410cefcd9868501c1eccf9f963eb1cac2302c19117310413881741be68c4",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -180,15 +220,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 547,
     "sha256": "a8d33ec2e8d75e6e7d3301e92af0985dbe7e80d60c0baaddb20216cb920e91f2",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -199,15 +244,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 8290,
     "sha256": "3c4046b2d008824a03ec70d6445ae7cbc1eec30026cbdab38b8913e47bcf09f4",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -218,15 +268,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 319,
     "sha256": "947a2604be80ab321bd8a7df31de4fd37f1cc94242218bbcfd9ae3771f9ff22e",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -237,15 +292,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 4014,
     "sha256": "1b7cd81d0861cfd7b3ee9d7c24161033b510da4dc2a0564a3ef07c124fc17dc0",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -256,15 +316,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 6272,
     "sha256": "f93dd98125749f338a01077eea1e2360b3a072c52688f2ff250127d11387a006",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -275,15 +340,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 11252,
     "sha256": "3ee7c06ef05461dbfa8a3beb20561b0981ec79a81945121debcb6352a610d1e9",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -294,15 +364,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 633777,
     "sha256": "3d9a04555dce0d774e38b81fcc5575b548e8232b6082a973d0f9252ba960f0af",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -313,15 +388,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 1014,
     "sha256": "d67ecb20e8326bcd85af8f39c7b0a872a22920832a30073892c58aa4f2c1bd66",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -332,15 +412,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 3163,
     "sha256": "d035f3006917116cf9821b737d72bf9029c01aa1a84559f052bba91e025bbc23",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -351,15 +436,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 2146,
     "sha256": "57c363c68f1dbc454129774c9aaaebed0398a10cc103130837348816ca8d761a",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -370,15 +460,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 17752,
     "sha256": "c3108a27a6c9812d4ed57ade38bb0caba1441f17aff0df2971fee1c6b402150f",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -389,15 +484,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 76341,
     "sha256": "71ff0a452f9ebc6e6ac3d223b2137138b7d9ac5eed0db0a8242caf2ea62df521",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -408,15 +508,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 11007,
     "sha256": "be25896ed0189e8cf6e7f7ee6bfcb6e1444b1805a7aca281c83c92d420360bf4",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -427,15 +532,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 1597,
     "sha256": "daef92f68f991e014e63491e885c63ec2100da8e4dc8dc5507cf98d94788bc6d",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -446,15 +556,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 3530,
     "sha256": "92988151733902b2070dee0c0bc989309abb947164a0221afdb2c29dff1a69bb",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -465,15 +580,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 12703,
     "sha256": "4d656f530ce9a2adca37cef030130d2da1f2ac0303e56ddf215221cf59b4e47c",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -484,15 +604,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 1287,
     "sha256": "a66020c3559a165a73f8716f2bad41f7955c9ac6a7ab4418ddd337ec41e49e57",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -503,15 +628,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 718,
     "sha256": "4d37a59bac653d89cafc7dec4a24054e6e283a4e3b3f846f986b137fc40b5edd",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -522,15 +652,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 982,
     "sha256": "8948ebdff157cb9c5972ad21017652bb0ca563ba43d3bd23df94342629322de9",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -541,15 +676,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 4924,
     "sha256": "77fcc75c317a79a06f18382ee2a749725071fb693bcbc28e58205c9390522e1e",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -560,15 +700,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 385,
     "sha256": "77679ed6f98d32de9047c3a0fe5b92dd75b52919a1a41906a47caa248d1704dc",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -579,15 +724,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 15736,
     "sha256": "2c33da1129d6bb7bcd9978633915244ddbd9dd96d5cd24b0395ca6fb64ee6ca1",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -598,15 +748,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 1456,
     "sha256": "63b873709b0a7e84a097809a0c7f1c66eea8eab59329a6a92a52b6d19d146608",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -617,15 +772,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 19812,
     "sha256": "62f4f691ddb70f4e39b9ab897b4fdd15240a6a8cd7728767cfad5e746b256c56",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -636,15 +796,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 3100,
     "sha256": "f3ecaff1131bb6830ac3089fcfd707044a35488ebe4d1ac681ee22cdab6bb334",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -655,15 +820,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 966,
     "sha256": "cfb3c0a083a5514a4867fe969f83c2ed71578eb51a990fdb3fe2cefb04a459f8",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -674,15 +844,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 1357,
     "sha256": "f9a3d1f43577cf271715375411a9ee1868b8d497aed28cb08e25d128a9817a1c",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -693,15 +868,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 6438,
     "sha256": "ab394975d0a8272ea7aa53c176198b75357e97f02d8aed166c3b443c0c7cbfcc",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -712,15 +892,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 2302,
     "sha256": "c55c50ef9fcaf088e91d312fc1494416b811b616569029bc0ed6177f0671cea0",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -731,15 +916,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 2398,
     "sha256": "bbc72b09276f89fef21762a5ffc97589b93b1728aca214f98b31e63d5ed8ecfa",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -750,15 +940,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 617,
     "sha256": "91fb6915a6dfa8e07f276ef79483b01ca076f0ee6830b5c8a759628230cbeb6b",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -769,15 +964,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 1719,
     "sha256": "4b8f1d82555ec37c9cdf7f9f06966429a434aea92c018d562ec160f10744b74c",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -788,15 +988,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 607,
     "sha256": "282d8d7b63b312b12d3d6bdbd1ede3a104953c9ea3212843d59d227b8601aee2",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -807,15 +1012,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 360,
     "sha256": "216f53fc36c42d12bff2ade992cb43616430ea67f4d6c2a6f1bf678aabd2b8b8",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -826,15 +1036,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 559,
     "sha256": "eb3916a43dc71d54dd5b61d3d3c2cfd655c6f608ca1ebf08b6bbfa20c877cda7",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -845,15 +1060,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 836,
     "sha256": "7c07e07b8388c8db5b131c5e9d1f7ac6e3d2c6cec8a155e144d6f900468651b8",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -864,15 +1084,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 1664,
     "sha256": "0a09ed6cf520806b4500a95c150cc7b569b699525451940f9085a674aeca30dc",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -883,15 +1108,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 836,
     "sha256": "91989d38fcec42d8f7533b1648b4dd12862330b05b0ff913dbae439984dad636",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -902,15 +1132,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 3791,
     "sha256": "a8648f3648ff930ace5fc01911cba84891c368a65ba10312d9d7d80d3e941f57",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -921,15 +1156,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 2398,
     "sha256": "bbc72b09276f89fef21762a5ffc97589b93b1728aca214f98b31e63d5ed8ecfa",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -940,15 +1180,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 6402,
     "sha256": "a2c415d039f76f64a6fd0f22b40ad4c2fbb4adfc2a9f53b64079fe11f3a2ebef",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -959,15 +1204,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 14196,
     "sha256": "d0ca4e684b6a94cdc68c6b622aa32ddefccf9f022a2b88cb0a38ce21e2d78e35",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -978,15 +1228,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 1779,
     "sha256": "e58f2598e334a1bd7c29519efe78975ed58e09214498e62ba77aeaa2bce3d833",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -997,15 +1252,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 1857,
     "sha256": "7d74ab9a59bfb990744792ad6bc1952981b25049db3c132193264a81bd58d646",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -1016,15 +1276,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 1853,
     "sha256": "ecf195a3fb939cb575ca5a22bf9c7119ca12fc5e6b3e297fc0ac9667f3cb02cd",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -1035,15 +1300,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 4696,
     "sha256": "48bd68616d76a0c8665356c0e4a8ca96df69fa0b9122acc9b69f7c4a4023cbc8",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -1054,15 +1324,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 18927,
     "sha256": "2f878912b0cd48754316109e1a4a32867ec36aaa44818b7fa862e0507664f596",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -1073,15 +1348,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 158466,
     "sha256": "f21c18b3a768b84bcbd7a88e37d5a1733d09d365510ab190939435b468f808f0",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -1092,15 +1372,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 306406,
     "sha256": "605d4ed9a4c563f0403e2a4020be623c18042b89aaac882ee5ea7a96b2c0c41e",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -1111,15 +1396,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 10512,
     "sha256": "8655f6e0735aeaf1facadde51b30f5323d61974846e8dd62f0376fb769d124f6",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -1130,15 +1420,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 13033,
     "sha256": "912ba60f3946763be5059b61c1e73cb680bd0877be029d1e69d7e1cb6fb7abd8",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -1149,15 +1444,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 62902,
     "sha256": "b327f42d8e9cbee703bc9174174978b9323614f739a85a22bf35ca531a52205e",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -1168,15 +1468,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 133943,
     "sha256": "e32acc87a1b553a76edeb6e0294caaa8b5f6488d677edfa2f7f1eaa87710d0ce",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -1187,15 +1492,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 114278,
     "sha256": "8d8528b094e541dade2ef68534aab581e33d3c6517232f4a299005fef897855a",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -1206,15 +1516,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 107386,
     "sha256": "768bfa97b025f0418b1b3f1fbf0224aae32dbcb6faa91d8efbe87f2d30f39b7f",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -1225,15 +1540,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 15724,
     "sha256": "f19c99ab54f395607cccc299994bcfbd32ea8be339c87dbf9cae63ce48b8bd04",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -1244,15 +1564,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 53502,
     "sha256": "beac719a20b644abcb5937c457990f1c7c2bccc07e03dda8e3dabf768ddcfd3b",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -1263,15 +1588,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 7284,
     "sha256": "dc5309a49043cae2c14e7c2c077e914433a201d2dc5ae08e452ab7b7605bbc8e",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -1282,15 +1612,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 11372,
     "sha256": "ea9b637623a08c4e94f3d582bab03ac9a18770776417952afbe57e121e5a764a",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -1301,15 +1636,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 95875,
     "sha256": "a8b12e6681dd16f553088cd28195ddf22440013f287719f12d1819e709f14f5a",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -1320,15 +1660,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 3661,
     "sha256": "60e11a3e0913f874cef9b5fda3be9ec0bbafe0243a9a575c93bdfb01d9649d7c",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -1339,15 +1684,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 1596,
     "sha256": "15796f3a3ae494939115046dc9eb09352d00999366f279a13c4e0b1358a6b646",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -1358,15 +1708,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 1326,
     "sha256": "f58b2c8b2d7d0f9a4ebeb26dae88c27c1c07ec71ee7fba4b6f4402b09f9976ef",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -1377,15 +1732,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 2545,
     "sha256": "527616a107ffdd9653ff7c584296df18b20af8c74c99612e2e92fbfb40030a9f",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -1396,15 +1756,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 3074,
     "sha256": "59d26cc66bdea77200e6d59a04df03afdc6388182fdeb9aa269370646a65b1bb",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -1415,15 +1780,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 2599,
     "sha256": "aa9d198927801881943655afa1c5029964ddffd3fd6f0894f3420a863d2c7ee9",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -1434,15 +1804,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 820,
     "sha256": "0c08613cbd41639d3d675a24f885e8ce91eeaeaf63529f83501d25a1c80c7ed0",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -1453,15 +1828,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 2587,
     "sha256": "622b0f03961f905564b85b4c8cb978fdcc7c2b57d89d5a8a873b6cb50368d0e2",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -1472,15 +1852,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 1352,
     "sha256": "2e9b78c629f77418db7e37d18073de041d32ea819d8566b2f67e4d4501e6fb25",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -1491,15 +1876,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 1568,
     "sha256": "822656b6a12cee849d8da2abeeefdcab6eb0825d17ef3a1e51e74c3e5cc72306",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -1510,15 +1900,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 368,
     "sha256": "1e6ac60d953901324a5372ad944a27902d07e6e1faa1c4d9f2966dc87c47ced1",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -1529,15 +1924,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 791,
     "sha256": "127da7e51c0829efa71a0ef43df715e235b9a65a6e3d18c4c9f48f97044fef5a",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -1548,15 +1948,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 9139,
     "sha256": "0c1cd7f271e24ece79ac2d4df2e13c6b4696aba7ece9959efe9a20bafb5a4c35",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -1567,15 +1972,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 474,
     "sha256": "869db10901540e9c1c0b548061f9383b7a6345003b61ba7ac1447f695d9c739e",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -1586,15 +1996,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 641,
     "sha256": "43e597600970b7503a81511d1a5e81e3852631be6a26e1ab2d8d40484f87764a",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -1605,15 +2020,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 1395,
     "sha256": "7cd6146ac167b834db020c652a6faf28dea9b4ee1de46b0d000597b4aebc4e85",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -1624,15 +2044,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 1328,
     "sha256": "b0d90c9a391b0d27f958dd572910c976918bbfc3906f99230248b1382ab43025",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -1643,15 +2068,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 2641,
     "sha256": "042b71fae0d8780301266d9f187c536e1e1a6ed246da80d27fc070a1e0c142e0",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -1662,15 +2092,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 2145,
     "sha256": "0ec9630299eeb51d0e4a9ce1b7c00eba62474e34a431bb33dcf490a107eb5d30",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -1681,15 +2116,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 1794,
     "sha256": "9d1d11d026aa20d987f6974c7868047280b254298701133bb5656a7bd10e8d56",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -1700,15 +2140,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 1322,
     "sha256": "7488ba2951a9b769439964db9dc5ffc161a5932074740c257cf2b7f8bdf9be93",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -1719,15 +2164,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 15344,
     "sha256": "61b05c776d4e25a78ed6dca870a05d2c13a7e9c56ca937f14ca2857073a13564",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -1738,15 +2188,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 83408,
     "sha256": "3d434d285f9abd353055a12b45042860f5d7ee409fdc2482e68d490f243824ef",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -1757,15 +2212,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 4015,
     "sha256": "311ed739ffa30f994e1a1b5460334f9a735efbd6a0fb4f8c3c72a4e49584774e",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -1776,15 +2236,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 4015,
     "sha256": "311ed739ffa30f994e1a1b5460334f9a735efbd6a0fb4f8c3c72a4e49584774e",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -1795,15 +2260,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 4015,
     "sha256": "311ed739ffa30f994e1a1b5460334f9a735efbd6a0fb4f8c3c72a4e49584774e",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -1814,15 +2284,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 4015,
     "sha256": "311ed739ffa30f994e1a1b5460334f9a735efbd6a0fb4f8c3c72a4e49584774e",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -1833,15 +2308,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 2703,
     "sha256": "61bed5aafa3f92cc61cf21a529b3f50b457f5ef06b23e1dd432f7dd0685e6c44",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -1852,15 +2332,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 3621,
     "sha256": "bf86cd5b082387901d4137a19612891de896ce3c4f462dc818e2c3d71c4c71af",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -1871,15 +2356,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 1580,
     "sha256": "4fd3ebc951935417a9b437926047f4f588c23924f80b2fd6e09a00fab8561a70",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -1890,15 +2380,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 1217,
     "sha256": "6c1e8974a5e453138c6b1555276b0a3b6941bd19468eb74e36857c621ae1fa00",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -1909,15 +2404,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 2572,
     "sha256": "9a0472a7f2b45fa0e89e4abb2d847a8dd90e7c3ed438063cd2516181e5e22821",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -1928,15 +2428,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 1014,
     "sha256": "d67ecb20e8326bcd85af8f39c7b0a872a22920832a30073892c58aa4f2c1bd66",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -1947,15 +2452,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 2731,
     "sha256": "1c9fa4b73db107e4b0dea168af2cd797e12b6b382b76a328fbe04bc58a3f566d",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -1966,15 +2476,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 1601,
     "sha256": "40937931c5dfb47be2fb585d4a9bca1f42edd99b59a89929ef8d4fd9d69a8032",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -1985,15 +2500,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 2852,
     "sha256": "a98429991404bd34aa59daa620a183dec4c039b017db7e896131e76a76331860",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -2004,15 +2524,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 332,
     "sha256": "58d7d03361fb1e218d75885bc1b675c3647e1fecce20999c3bf8ae3c1303b88f",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -2023,15 +2548,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 3283,
     "sha256": "e104a0ad03f2f27944fa0cf2760057ec94142e2ce78ea6023c2b3fda4b526c8d",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -2042,15 +2572,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 79150,
     "sha256": "d9208d39f827e2e9ed635108ce0817efbce4aba873c394174e369426d89a57d8",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -2061,15 +2596,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 1116,
     "sha256": "856e218e8abef9f88c897a3adfdbb4c2683d083bc7ecd4a90d8f7b342548466d",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -2080,15 +2620,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 6008,
     "sha256": "5da3300c61fc21e308c9629791f2c2f5ca2a24a16b97b039c0753541d22af17f",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -2099,15 +2644,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 2723,
     "sha256": "a4175d949e9a05bd5b980e0126c4f6573cfd415a85f5b8e1675ef7c9d5434559",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -2118,15 +2668,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 2440,
     "sha256": "fcbd9e686550628c2f99b2dfc43d463b30a8bc7e58832939e3ec1403b0a941cf",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -2137,15 +2692,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 34528,
     "sha256": "f71c4a455e1b6d9fc699a3ae489f365ae34bdac4eb5fefacb06e1e906f790498",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -2156,15 +2716,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 15512,
     "sha256": "9a47041a0c127ee2b9d5d447ddaf63e4da4f9a743f83fddbb5570df1dcb1f943",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -2175,15 +2740,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 8117,
     "sha256": "0a0e7f75f1327958153a3344bbf24331945e3e2f68e555c2909c1376334b9c1b",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -2194,15 +2764,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 2490,
     "sha256": "274b49201c9109768710fcb35047a8d02ce3acadbf03cc0acdf58afd468db5a3",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -2213,15 +2788,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 183,
     "sha256": "8e45a67f1b4e19623c2fcf190d2e17d7ffc84ae8ba6c198a5048aa8c72bb3d71",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -2232,15 +2812,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 1360,
     "sha256": "aeb350a9d6beb626311f81a5c38de2c6dc9c6265f0f35d7ac929e32d518f24ba",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -2251,15 +2836,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 3618,
     "sha256": "9cbb9f70836ff1c44b7eb644cd3aefc4eae5592b9fa68fd2a787e584337334c1",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -2270,15 +2860,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 433,
     "sha256": "eb8b4a853ee2e8adafd0d4b442ebc8c4a1b4b2170d9c4e38583c020e21dad301",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -2313,15 +2908,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 170,
     "sha256": "77f7b3cb8209352a51b104ae43427745c907e5e9b89997ac2249c63ca7b07849",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -2332,15 +2932,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 791,
     "sha256": "127da7e51c0829efa71a0ef43df715e235b9a65a6e3d18c4c9f48f97044fef5a",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -2351,15 +2956,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 3497,
     "sha256": "604d5f5907e00ee732329a7f1a8b6d5ac1821a417068a43f35a04ba178d7915b",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -2513,15 +3123,15 @@
     "stages": {
       "listelendi": true,
       "incelendi": true,
-      "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "duzeltildi": true,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
     "review": {
       "scope": "06 turu kaynak/ayar yapısı ve kullanım bağlantıları; CSS/ayarların tüm cihaz ve canlı kombinasyonları kabul edilmedi",
-      "fixed": false,
-      "local": false,
-      "evidence": "platform-uyum-06-kontrol.md"
+      "fixed": true,
+      "local": true,
+      "evidence": "platform-uyum-02-kontrol.md; platform-uyum-05-kontrol.md"
     },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "kontrol edildi: yerel ayrıştırma başarılı",
@@ -2557,15 +3167,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 229588,
     "sha256": "6b096b47206d8f78a2c49af2f2ae46b35d93b0e3cf105a9febef59144aa2eae2",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
       "yereldeDogrulandi": false,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Dosya varlığı/boyutu ve OpenType OTTO başlığı; glyph/font yükleme ve canlı kullanım henüz doğrulanmadı",
+      "fixed": false,
+      "local": false,
+      "evidence": "platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -2576,15 +3191,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 1575,
     "sha256": "2d190ef979d169ef76624019c16c49a96d143c5bab4c7c6613f9e5a9ab6f841f",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -2595,15 +3215,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 3293,
     "sha256": "2e2634db6d277b5a7932de2f7ea7592386a24440e0a446a15ab47e8559bfe3e7",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -2618,15 +3243,15 @@
     "stages": {
       "listelendi": true,
       "incelendi": true,
-      "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "duzeltildi": true,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
     "review": {
       "scope": "Kaynak okundu: platform helper/olay seçicileri, boş dal ve HTML yapısı; gerçek veri/görsel kabulü açık",
-      "fixed": false,
-      "local": false,
-      "evidence": "platform-uyum-05-kontrol.md"
+      "fixed": true,
+      "local": true,
+      "evidence": "platform-uyum-02-kontrol.md; platform-uyum-05-kontrol.md"
     },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "kontrol edildi: yerel ayrıştırma başarılı",
@@ -2729,15 +3354,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 9950,
     "sha256": "b55fd156b36e173a83175560bc45188120c06254643fe46e2dcf560a2e6279d5",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -2748,15 +3378,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 1039,
     "sha256": "7abd070a85376940d2eb17c562e19ed340c0b92213eeedb7723ce8a4b629abd7",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -2767,15 +3402,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 32064,
     "sha256": "df33f755ebb242cb0118d15b551c83359ba2488be36d76c667daba2e14ac896a",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -2786,15 +3426,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 3971,
     "sha256": "bedee2303e767852d84c3128564df3465108ffcf74c93679879fa7f18835ce60",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -2805,15 +3450,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 1039,
     "sha256": "7abd070a85376940d2eb17c562e19ed340c0b92213eeedb7723ce8a4b629abd7",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -2886,15 +3536,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 54116,
     "sha256": "d364373e38de49463468d9fefd9f748896badb79f9813e2e84c6d3f6a6e28855",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -6983,15 +7638,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 393084,
     "sha256": "9c07f2b1a19a3a842cb95738185359e6367419d15693579574c30b8ad35b8103",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -7074,15 +7734,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 39348,
     "sha256": "b96e43d4f632609c0355a2818dc66b0a6fe6a8cad2d369bd0cc1255d2a37376e",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -7093,15 +7758,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 43112,
     "sha256": "5199a30d0be4f255001bfdf8d2d00eed1b23f7059ca7b2151f5fa7a76ac9fb9a",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -7112,15 +7782,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 596022,
     "sha256": "f6271086cb97e2d7a69962e3e318c51959209c8f6544406d283f3e689e2a65f7",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -7211,15 +7886,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 70991,
     "sha256": "0189bc970a52efb58b58d33d1d10c426beb52a67ea3e9621ec5bb7e2e8f83f30",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -7278,15 +7958,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 376154,
     "sha256": "3a28fd9c51f600dc0c43e01bbea59d593d82582f33ecbbcd01157a94406d198e",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -7297,15 +7982,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 508697,
     "sha256": "20834e3e36905ee89686cc903be5a8365384b95a9954f3d46e4fab8581d829ab",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -7316,15 +8006,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 443895,
     "sha256": "3d42eab1055e67d788d565691dd6528c2089e07e6ac8a5813b5cf9ea70a3b66c",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -7383,15 +8078,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 474,
     "sha256": "869db10901540e9c1c0b548061f9383b7a6345003b61ba7ac1447f695d9c739e",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -7402,15 +8102,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 32918,
     "sha256": "aba73fffd586211baa7f0f5292664a02385e6d866af1e2d11d5692a7fc463d3f",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -7421,15 +8126,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 2703,
     "sha256": "61bed5aafa3f92cc61cf21a529b3f50b457f5ef06b23e1dd432f7dd0685e6c44",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -7440,15 +8150,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 1014,
     "sha256": "d67ecb20e8326bcd85af8f39c7b0a872a22920832a30073892c58aa4f2c1bd66",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -7459,15 +8174,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 19236,
     "sha256": "c7398f44e97844e59c65ad7a8d7d5cb3f30aa25ca8a025aba6cdcf7eb2432258",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -7478,15 +8198,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 20854,
     "sha256": "95bb874b28d3b4cf387f44bf51589a63419ab52bed9b3094c24719512f7380ce",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -7497,15 +8222,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 14734,
     "sha256": "2982503eb2e636e2bcff56b33ffa55f17dc82ae55f98c4cdd570397067a62867",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -7516,15 +8246,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 12902,
     "sha256": "732d087727d58039b2c327dd231a6bcc92755d4d4eb24f2e1b0bf4d78b46c61c",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -7535,15 +8270,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 20582,
     "sha256": "4c302c225f97c15c319b044ee2257a4c1b54a6572871f505acd40a5033d93639",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -7554,15 +8294,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 16962,
     "sha256": "ff5b6a7858ad677597d53baf6de8867b5fd894558bc7b9ed1c3368d3faacd0c7",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -7573,15 +8318,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 15478,
     "sha256": "1870548e38f7c55f58557f1dc5d74fe3bb76e21ab00bc0b91f2f7b18675e7dec",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -7592,15 +8342,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 15556,
     "sha256": "226136a2238d9bae4f6cf01f592e26e96f8bf3f8b0091490062dd176e2d4b1b4",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -7611,15 +8366,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 18210,
     "sha256": "ce7e1fa06bbbb802e8f14f531194c2cba6774c3bbf84e80fb323d62f200e4725",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -7630,15 +8390,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 23030,
     "sha256": "e82a20ade7623ef3db5c6c68e041b459c76d86fe41705da36a1980c7a57a85b6",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -7649,15 +8414,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 87819,
     "sha256": "0e1345960459b896727b0a863200d425bd090caef64a0585392d9952ea70ea3d",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -7668,15 +8438,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 37121,
     "sha256": "46fd7eab085912b71dce7288b6d424180f66f9bcc0332a09f4ad44fb31fd3fb4",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -7687,15 +8462,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 51641,
     "sha256": "c5a387deee1225874687243ec1cdf18a2b2f6038751dafb3817712ed83b32d3c",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -7706,15 +8486,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 306406,
     "sha256": "605d4ed9a4c563f0403e2a4020be623c18042b89aaac882ee5ea7a96b2c0c41e",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -7725,15 +8510,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 39348,
     "sha256": "b96e43d4f632609c0355a2818dc66b0a6fe6a8cad2d369bd0cc1255d2a37376e",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -7744,15 +8534,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 43112,
     "sha256": "5199a30d0be4f255001bfdf8d2d00eed1b23f7059ca7b2151f5fa7a76ac9fb9a",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -7763,15 +8558,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 45024,
     "sha256": "f66544e042de2a63146f38ce995cbacf595db2b4f5f45bc8a9e4964c1349262e",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -7782,15 +8582,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 316306,
     "sha256": "9091389aaddb6cf3361b3c48b2a94803ebef498b2197df545b21313c80bb3f97",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -7801,15 +8606,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 28036,
     "sha256": "90de71afda94b702229624a6c1b1c43299d43c6a8647747878b9b00d17034211",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -7820,15 +8630,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 26098,
     "sha256": "206609ccc49aae43c2125228dcdd42cb64568cec30bea437c2bdc3d60ac62714",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -7839,15 +8654,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 33118,
     "sha256": "98737481bea914c0e6501ecc11b0e4ffd555cf5beda272ab074cea21ac6e60ad",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -7858,15 +8678,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 134417,
     "sha256": "644e834ff3ae58e6772bc7a0ce124902d0779c1212f94e74134cdde24005d6c5",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -7877,15 +8702,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 25198,
     "sha256": "dae33eb6ab27e08e1795ed4c3ade4169f640ff13ab00294e9e3282abcd3963e2",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -7896,15 +8726,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 2940,
     "sha256": "d43d7538664babfc6f4cfdf8342774d736c9944907036757176ea056b8ddff14",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -7915,15 +8750,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 3094,
     "sha256": "898b4899feb3ab5f9dbd6057a7818ab24294f823ab9f95414967329cb814b983",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -7934,15 +8774,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 70991,
     "sha256": "0189bc970a52efb58b58d33d1d10c426beb52a67ea3e9621ec5bb7e2e8f83f30",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -7953,15 +8798,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 4414,
     "sha256": "2eadbde3c7a119e080acc50524d4a86989b75b19d7bbcafe3c90b959de8245f4",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -7972,15 +8822,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 19202,
     "sha256": "3b52bb9a6c29f43b4994beb26268f09f114e44217e3bca96d883ac367909df11",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -7991,15 +8846,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 29560,
     "sha256": "a2991eeb19b824d807490a9199a537d3c32f05c8a3202a0f60c490a4a81d3c8d",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -8010,15 +8870,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 13604,
     "sha256": "60fe7c6f141ddec8b47071a50d7acdcea27d29ace265bc0173e5f760a9a69587",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -8029,15 +8894,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 9218,
     "sha256": "3277a969e2b7d89d1c8437e34b5638baa9e80e422d3863a7b2c8b82a6d7cc791",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -8048,15 +8918,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 25026,
     "sha256": "0a8aeb1e1e393a091e335645a4cde91404c8df62940c4370fda6d32e8d1151ff",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -8067,15 +8942,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 24616,
     "sha256": "352c083723583c577ee804b526406ef15568c8ed8c8752f3a93043bc99b0d5df",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -8086,15 +8966,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 25808,
     "sha256": "260f7a76457e7573a147f06e9b4e20fa00536b4404e63e2333af4a1ef06a95b5",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -8105,15 +8990,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 185800,
     "sha256": "45492d6b8b990243cb6273b782813315a641fb07f8f58fcfafc6112e28f1928d",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -8124,15 +9014,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 3708,
     "sha256": "cd60500973fe6cda72788ec3befc1e9b79f66d202831695a4931958d165eb284",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -8143,15 +9038,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 25644,
     "sha256": "4d72f87818bf5dce19ae3cc143c7561ff687c67077a0e89ee7e6a37940401e33",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -8162,15 +9062,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 33036,
     "sha256": "9ccaa29c50ee3920a46d1e9fdd2139605190248013470a7ad4af8cb1df5fb236",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Dosya varlığı/boyutu kaydedildi; kullanım, görsel kalite, boyut/CLS ve alternatif metin bağlamı doğrulanmalı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],
@@ -8891,15 +9796,20 @@
     "category": "Görsel, ikon, font ve diğer kaynaklar",
     "bytes": 1601,
     "sha256": "40937931c5dfb47be2fb585d4a9bca1f42edd99b59a89929ef8d4fd9d69a8032",
-    "status": "listelendi",
+    "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
-      "incelendi": false,
+      "incelendi": true,
       "duzeltildi": false,
-      "yereldeDogrulandi": false,
+      "yereldeDogrulandi": true,
       "platformdaDogrulamaBekliyor": true
     },
-    "review": null,
+    "review": {
+      "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+      "fixed": false,
+      "local": true,
+      "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+    },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "uygulanamaz: bu dosya JS/JSON değil",
     "refs": [],

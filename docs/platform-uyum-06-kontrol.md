@@ -52,3 +52,11 @@ CSS kaynak taraması: ana dosya yaklaşık 15.500 satır ve 201 mevcut !importan
 - Canlı yükleme sırası/sürüm, SEO head/HTTP, medya/Swiper/Fancybox/Bootstrap birlikte davranışı, gerçek LCP/CLS ve bütün sayfaların cihaz kontrolü.
 
 Bu gruptan sonra da **tema tamamlandı denmez**. Kaynak incelemesi, yerel render/tarayıcı ve Qukasoft kabulü farklı aşamalardır. Önizleme adayı yalnız ayrı kimlikli yerel arşivdir; etkin tema veya bağımsız test mağazası değildir.
+
+## Görsel varlıkların ayrı kontrolü
+
+`node tools/varlik-kontrol.cjs` dış ağ kapalıyken 181 PNG/WebP/SVG/GIF/JPEG dosyasını tarayıcıda decode etti; bozuk/okunamayan görsel bulunmadı. Doğal boyutlar ve baytlar `varlik-kontrol.json` içinde. `artifacts/asset-contact/sheet-1.png`–`sheet-8.png` sekiz tablo gerçekten açılıp incelendi. Bu, küçük görsel önizlemesi; GIF'in tüm kareleri, gerçek yerleşim/kontrast/CLS veya pazarlama metinlerinin doğruluğu kabulü değildir. Beyaz ikonlar açık tabloda silik görünür; mağazadaki zemin görülmeden bozuk sayılmadı. preview1–4 dosyalarının yer tutucu görseller olduğu görüldü; aktif kullanımı bilinmeden silinmedi.
+
+Büyük kaynak örnekleri: `assets/images/404/404_tip_2.png` 633.777 bayt, `ozel-moduller/double-walled-glasses.webp` 596.022 bayt, `ozel-moduller/meyve-sikacak9.jpeg` 508.697 bayt. Bu dosyaların hangi gerçek boyutta/aşamada istendiği ve LCP etkisi Network ile ölçülmeden toplu sıkıştırma, format değiştirme veya lazy yükleme uygulanmadı. Aynı isimli farklı boyutlu kopyalar kullanım kanıtı olmadan kaldırılmadı. Tek OTF dosyasının OTTO başlığı doğrulandı; font sürümü, glyph kapsamı ve gerçek yüklemesi kabul edilmedi.
+
+Güncel aday: `goldfix01_98e2e4dc8734`; kaynak `98e2e4dc873499d8b28753cf091b857dab6c4961`. 361 tema dosyasının ZIP yolları ve içerik hash'leri manifestle eşleşti. Sonradan eklenen varlık inceleme aracı/raporu tema kaynağını değiştirmez; yeniden paket gerekmez. [Aday kaydı](onizleme-adayi.md) ve [manifest](onizleme-adayi-manifest.json). Yükleme/izolasyon doğrulanmadı.

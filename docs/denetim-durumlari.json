@@ -493,9 +493,9 @@
   },
   "canlitema/assets/yt-video-kontrol-02.js": {
     "scope": "Kaynak okundu: platform helper/olay seçicileri, boş dal ve HTML yapısı; gerçek veri/görsel kabulü açık",
-    "fixed": false,
-    "local": false,
-    "evidence": "platform-uyum-05-kontrol.md"
+    "fixed": true,
+    "local": true,
+    "evidence": "platform-uyum-02-kontrol.md; platform-uyum-05-kontrol.md"
   },
   "canlitema/moduller/hesap/alt_sayfalar/2fa.twig": {
     "scope": "Kaynak okundu: platform helper/olay seçicileri, boş dal ve HTML yapısı; gerçek veri/görsel kabulü açık",
@@ -1009,9 +1009,9 @@
   },
   "canlitema/assets/urun-fav-sayma-eklenti.js": {
     "scope": "06 turu kaynak/ayar yapısı ve kullanım bağlantıları; CSS/ayarların tüm cihaz ve canlı kombinasyonları kabul edilmedi",
-    "fixed": false,
-    "local": false,
-    "evidence": "platform-uyum-06-kontrol.md"
+    "fixed": true,
+    "local": true,
+    "evidence": "platform-uyum-02-kontrol.md; platform-uyum-05-kontrol.md"
   },
   "canlitema/ayarlar/tanim.json": {
     "scope": "06 turu kaynak/ayar yapısı ve kullanım bağlantıları; CSS/ayarların tüm cihaz ve canlı kombinasyonları kabul edilmedi",
@@ -1066,5 +1066,1097 @@
     "fixed": true,
     "local": true,
     "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md"
+  },
+  "canlitema/apgoogle.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/6e618057-66e9-4c7b-8fc4-317d34375a5b.webp": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/8605149.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/basketpage-ticket.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/callcenter.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/fast-delivery-svgrepo-com-2-1.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/gift.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/guvnn.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/icons8-cargo-48.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/icons8-gift.gif": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/icons/profil-collection.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/1_org_zoom-1-photoroom1.jpg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/330b765e-7b09-4406-9bb6-3003ede52a40.jpeg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/404/404.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/404/404_tip_2.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/99indirim99.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/adsiz.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/american-express-l.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/applay.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/appstore.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/asdfasdf.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/card-ok-svgrepo-com-1.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/card-transfer-svgrepo-com-1.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/cards.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/cmanset-discount.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/copy-share-icon.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/face-smile-svgrepo-com-1.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/faturr.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/fb-share-icon.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/free-cargom-1.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/g1d2fg12.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/garanti-bbva.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/giftbox-gift-svgrepo-com-1.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/gtruck.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/hediyedsdd.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/hepsijet.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/hizli-kargo-pc.webp": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/i-icon.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/icons8-gift-50.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/icons8-gift-64.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/icons8-in-transit-64.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/icons8-order-completed-50.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/icons8-secure-80.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/icons8-website-locked-48.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/ikonum.webp": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/indirim999.webp": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/invoice-bill-ecommerce-svgrepo-com.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/isaret.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/iyzico-ile-ode.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/iyzico.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/iyzico_logo.svg.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/kargo-1.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/kargo01.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/masaustu-banner/3d-credit-card.webp": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/masaustu-banner/ai-generated-7888387_640.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/masaustu-banner/bardak00-cutout.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/masaustu-banner/bg-resmi10.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/masaustu-banner/hands.webp": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/masaustu-banner/logossss.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/masaustu-banner/mop-120.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/masaustu-banner/petshop-urun.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/masaustu-banner/qe27ipmok3k40ks8cowoo0kscwcwk8.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/masaustu-banner/rende-png10.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/masaustu-banner/sevimli-kedi3.webp": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/masaustu-banner/transparan-arka-plan.webp": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/masaustu-banner/verified-icon.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/masaustu-banner/verifield.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/masaustu-banner/yaglik-10.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/method-american.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/method-cuzdan.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/method-kapidaodeme.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/method-master.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/method-troy.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/method-visa.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/mng-kargo-logo-transparan.webp": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/mng-kargom.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/mnlogom.webp": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/mobil-kullanici.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/mobilara.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/new-share.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/onay-gor.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/payment-disccode.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/paymentpage-location.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/paymentstep-odeme.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/paymentstep-siparisonayi.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/paymentstep-teslimat.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/paysec-options.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/paysec-return.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/paysec-teslimat.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/play.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/playstore.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/preview/1.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/preview/2.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/preview/3.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/preview/4.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/profil-alev.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/profil-cargo.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/profil-cargopay.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/profil-pbcquest.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/profil-return.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/profil-specaildisc.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/profil-tax.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/profilcomment-camera.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/secure_logo-1.webp": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/select-arrow.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/sfvsfg-cutout.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/spinner.gif": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/star-svgrepo-com-1.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/taksit-istem.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/taksitler-yap343.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/ti-puan.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/tilbehome-etbis.jpeg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/tilbehomeetbis.webp": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/transparent_slow_gift.gif": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/tw-share-icon.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/x.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/yildiz-1.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/images/ziller.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/kargobeava.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/menu-left.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/new-share.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/notification-svgrepo-com.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/yeni-heart.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/yenicart.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/banks.webp": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/cmanset-discount.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/dekoratif-urunler.webp": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/firsatlar.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/flash-discount.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/kamp-urunleri.webp": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/ozel-moduller/8899.jpg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/ozel-moduller/dikey-cilt-1.webp": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/ozel-moduller/dikey-ev-1.webp": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/ozel-moduller/double-walled-glasses.webp": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/ozel-moduller/istockphoto-1131375112-612x612-photoroom.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/ozel-moduller/mataranew9.jpg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/ozel-moduller/meyve-sikacak9.jpeg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/ozel-moduller/rende-banner-99.jpg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/payment-disccode.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/petshop-urunler.webp": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/profil-alev.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/profil-specaildisc.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/resimler1/01.webp": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/resimler1/02.webp": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/resimler1/03.webp": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/resimler1/04.webp": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/resimler1/05.webp": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/resimler1/06.webp": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/resimler1/07.webp": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/resimler1/08.webp": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/resimler1/09.webp": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/resimler1/1double-walled-glasses.webp": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/resimler1/banks-logos-d.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/resimler1/banks-logos.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/resimler1/bardak00-cutout.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/resimler1/bg-resmi10.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/resimler1/dikey-cilt-1.webp": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/resimler1/dikey-ev-1.webp": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/resimler1/dikey-pet-1.webp": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/resimler1/double-walled-glasses.webp": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/resimler1/firsat-517x567.webp": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/resimler1/firsat-517x5670.webp": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/resimler1/firsat-562x878.webp": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/resimler1/firsat-banner-min.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/resimler1/firsat-banner-min.webp": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/resimler1/guvenli-alisveris-anasayfa1.webp": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/resimler1/iade-garantisi-anasayfa1.webp": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/resimler1/istockphot.png": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/resimler1/kesintisiz-destek-anasayfa1.webp": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/resimler1/mataranew9.webp": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/resimler1/meyve-sikacak9.webp": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/resimler1/mobil-header-banner.webp": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/resimler1/odeme-kolayligi-anasayfa1.webp": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/resimler1/pratik-ev-gereclerim.webp": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/resimler1/rende-banner-99.webp": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/resimler1/rendebanner-1.webp": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/resimler1/renderende1.webp": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/resimler1/ucretsiz-kargo-anasayfa1.webp": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/resimler1/viralurunler1.webp": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/resimler1/yapimarketim.webp": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/yorum-foto-var.svg": {
+    "scope": "Tarayıcı decode/doğal boyut; 8 küçük görsel tablosunda önizleme gerçekten açıldı. Gerçek sayfa boyutu, CLS, metin iddiası ve kullanım/alt metin kabulü değil.",
+    "fixed": false,
+    "local": true,
+    "evidence": "varlik-kontrol.json; platform-uyum-06-kontrol.md"
+  },
+  "canlitema/assets/yazifont/sourcesanspro-regular.otf": {
+    "scope": "Dosya varlığı/boyutu ve OpenType OTTO başlığı; glyph/font yükleme ve canlı kullanım henüz doğrulanmadı",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-06-kontrol.md"
   }
 }
