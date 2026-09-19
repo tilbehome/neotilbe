@@ -40,61 +40,16 @@
 </div>
 <p class="tilbe-sub">Ürünlerinizi çeşitli kriterlere göre filtreleyin.</p>
 <hr>
-                    <ul class="list" id="list1">
-                        
-<li class=""><div class="lag-checkbox siralama99">
-<input id="cat-filter-order-akilli-siralama" name="smart-cat-siralama" value="akilli-siralama" data-smart-cat-search="1" type="radio">
-<label for="cat-filter-order-akilli-siralama">ÖNERİLENLER</label>
-<span></span></div></li>    
-
-<li class=""><div class="lag-checkbox">
-<input id="cat-filter-order-en-yeniler" name="smart-cat-siralama" value="en-yeniler" data-smart-cat-search="1" type="radio" >
-<label for="cat-filter-order-en-yeniler">YENİ ÜRÜNLER</label>
-<span></span></div></li>
-
-<li class=""><div class="lag-checkbox">
-<input id="cat-filter-order-cok-satanlar" name="smart-cat-siralama" value="cok-satanlar" data-smart-cat-search="1" type="radio" >
-<label for="cat-filter-order-cok-satanlar">ÇOK SATILANLAR</label>
-<span></span></div></li>
-
-<li class=""><div class="lag-checkbox">
-<input id="cat-filter-order-en-cok-oylanan" name="smart-cat-siralama" value="en-cok-oylanan" data-smart-cat-search="1" type="radio" >
-<label for="cat-filter-order-en-cok-oylanan">ÇOK BEĞENİLEN</label>
-<span></span></div></li>
-
-<li class=""><div class="lag-checkbox">
-<input id="cat-filter-order-en-dusuk-fiyat" name="smart-cat-siralama" value="en-dusuk-fiyat" data-smart-cat-search="1" type="radio" >
-<label for="cat-filter-order-en-dusuk-fiyat">DÜŞÜK FİYAT</label>
-<span></span></div></li>
-
-<li class=""><div class="lag-checkbox">
-<input id="cat-filter-order-en-yuksek-fiyat" name="smart-cat-siralama" value="en-yuksek-fiyat" data-smart-cat-search="1" type="radio" >
-<label for="cat-filter-order-en-yuksek-fiyat">YÜKSEK FİYAT</label>
-<span></span></div></li>
-
-<li class="">
-<div class="lag-checkbox">
-<input id="cat-filter-order-a-z" name="smart-cat-siralama" value="a-z" data-smart-cat-search="1" type="radio" >
-<label for="cat-filter-order-a-z">ÜRÜN ADI (A-Z)</label>
-<span></span></div></li>
-
-<li class="">
-<div class="lag-checkbox">
-<input id="cat-filter-order-z-a" name="smart-cat-siralama" value="z-a" data-smart-cat-search="1" type="radio" >
-<label for="cat-filter-order-z-a">ÜRÜN ADI (Z-A)</label>
-<span></span></div></li>
-
-{% for siralama in sayfaBilgileri('siralama_tipleri') %}
-                                <li class="category-filter-order-mobile">
-                                    <div class="lag-checkbox">
-                                        <input id="cat-filter-order-{{ siralama.ID }}" name="smart-cat-siralama" value="{{ siralama.ID }}" data-search-value="{{ siralama.ID }}" data-smart-cat-search="1" type="radio" {{ siralama.secili ? 'checked' : '' }}>
-                                        <label for="cat-filter-order-{{ siralama.ID }}">{{ siralama.baslik }}</label>
-                                    </div>
-                                </li>
-                            {% endfor %}
-                        </li>
-                        
-                       
+                    <ul class="list">
+                        {% for siralama in sayfaBilgileri('siralama_tipleri') %}
+                            <li>
+                                <div class="lag-checkbox {{ siralama.ID == 'akilli-siralama' ? 'siralama99' : '' }}">
+                                    <input id="cat-filter-order-{{ siralama.ID }}" name="smart-cat-siralama" value="{{ siralama.ID }}" data-search-value="{{ siralama.ID }}" data-smart-cat-search="1" type="radio" {{ siralama.secili ? 'checked' : '' }}>
+                                    <label for="cat-filter-order-{{ siralama.ID }}">{{ siralama.baslik }}</label>
+                                    <span></span>
+                                </div>
+                            </li>
+                        {% endfor %}
                     </ul>
                 </div>
             </div>
@@ -126,16 +81,16 @@
 
 {% block modulFooterKodlari %}
    <script type="text/javascript">
-    const CATEGORY_PAGE_DATA = {
-        k: '{{ sayfaBilgileri('aranan')|replace({'"': ''}) }}',
-        url: '{{ sayfaBilgileri('ana_link')|replace({'"': ''}) }}',
-        filtreleme: '{{ sayfaBilgileri('filtreleme_anahtari') }}',
+    var CATEGORY_PAGE_DATA = {
+        k: '{{ sayfaBilgileri('aranan')|e('js') }}',
+        url: '{{ sayfaBilgileri('ana_link')|e('js') }}',
+        filtreleme: '{{ sayfaBilgileri('filtreleme_anahtari')|e('js') }}',
     };
 
     $(function(){
         smartCategoryFilters(CATEGORY_PAGE_DATA);
         setResponsiveCategoryView(); // Sayfa yüklendiğinde çağır
-        $(window).resize(setResponsiveCategoryView); // Pencere boyutu değiştiğinde çağır
+        $(window).off('resize.tilbeCategory').on('resize.tilbeCategory', setResponsiveCategoryView); // Pencere boyutu değiştiğinde çağır
     });
 
     function setResponsiveCategoryView() {
@@ -153,10 +108,12 @@
             cls = 'col-sm-6'; // 2 sütun (576px ve üzeri)
         }
 
-        $(".p-g-mod-t-20 .col-list-p-v-1").removeClass()
+        $(".p-g-mod-t-20 .col-list-p-v-1").removeClass(function (_, classes) {
+            return classes.split(/\s+/).filter(name => /^col-(?:(?:sm|md|lg|xl)-)?\d+$/.test(name) || name === "col-xl-custom-5").join(" ");
+        })
             .addClass(`col-6 col-sm-6 col-md-6 col-lg-3 ${cls} col-list-p-v-1`);
 
-        localStorage.setItem('category-view-type', 'auto');
+        // Automatic layout does not overwrite stored platform view preferences.
     }
 
     $(".product-view-select").hide(); // Görünüm butonlarını gizle

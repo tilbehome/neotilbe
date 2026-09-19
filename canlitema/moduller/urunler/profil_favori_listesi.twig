@@ -1,9 +1,9 @@
 <div class="product-favourite" data-favourite-product-id="{{ sayfaBilgileri('ID') }}">
-    <a href="javascript:;" class="{{ sayfaBilgileri('favori_mi') ? 'd-none' : 'd-block' }} add-favorite" 
+    <a href="javascript:;" aria-label="Favorilere ekle" class="{{ sayfaBilgileri('favori_mi') ? 'd-none' : 'd-block' }} add-favorite"
         onclick="userProductFavourite('add', {{ sayfaBilgileri('ID') }})">
         <i class="far fa-heart"></i>
     </a>
-    <a href="javascript:;" class="{{ sayfaBilgileri('favori_mi') ? 'd-block' : 'd-none' }} remove-favorite" 
+    <a href="javascript:;" aria-label="Favorilerden çıkar" class="{{ sayfaBilgileri('favori_mi') ? 'd-block' : 'd-none' }} remove-favorite"
         onclick="userProductFavourite('remove', {{ sayfaBilgileri('ID') }})">
         <i class="fa fa-heart"></i>
     </a>

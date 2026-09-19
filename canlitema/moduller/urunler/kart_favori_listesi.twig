@@ -1,6 +1,16 @@
-<div class="product-favourite-kart" data-favourite-product-id="{{ sayfaBilgileri('ID') }}">
-    <a href="javascript:;" class=" d-block add-favorite" 
+{% set kartFavoride = false %}
+{% if kullaniciGirisYaptiMi() %}
+    {% for favori in kullaniciFavoriListesi() %}
+        {% if favori.ID == urun.ID %}{% set kartFavoride = true %}{% endif %}
+    {% endfor %}
+{% endif %}
+<div class="product-favourite-kart" data-favourite-product-id="{{ urun.ID }}">
+    <a href="javascript:;" class="{{ kartFavoride ? 'd-none' : 'd-block' }} add-favorite" aria-label="Favorilere ekle"
         onclick="userProductFavourite('add', {{ urun.ID }})">
         <i class="far fa-heart"></i>
+    </a>
+    <a href="javascript:;" class="{{ kartFavoride ? 'd-block' : 'd-none' }} remove-favorite" aria-label="Favorilerden kaldır"
+        onclick="userProductFavourite('remove', {{ urun.ID }})">
+        <i class="fa fa-heart" aria-hidden="true"></i>
     </a>
 </div>
