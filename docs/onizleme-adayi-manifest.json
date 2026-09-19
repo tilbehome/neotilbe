@@ -1,6 +1,6 @@
 {
-  "commit": "b31769aa6143ebda2c444947229f2b07fb23bb54",
-  "id": "goldfix01_b31769aa6143",
+  "commit": "27911bff82adfec17b28feb5859e84c5b8b77525",
+  "id": "goldfix01_27911bff82ad",
   "importFormatVerified": false,
   "archiveStructureMatched": true,
   "referenceArchive": "goldtheme_backup_20260919_123922.zip",
@@ -630,8 +630,8 @@
     },
     {
       "path": "assets/product-video-popup.js",
-      "sourceSHA256": "38ff7f0cbb3b496bde98e6dbb3cfe909fdc32b1cf0a924260747b334c751a2c0",
-      "stagedSHA256": "38ff7f0cbb3b496bde98e6dbb3cfe909fdc32b1cf0a924260747b334c751a2c0"
+      "sourceSHA256": "7c049245198ccdd8805dfa2fbbe7273a345dec27a1eff1f0b4e74ef581421b58",
+      "stagedSHA256": "7c049245198ccdd8805dfa2fbbe7273a345dec27a1eff1f0b4e74ef581421b58"
     },
     {
       "path": "assets/scripts.js",
@@ -665,8 +665,8 @@
     },
     {
       "path": "assets/video-gallery.js",
-      "sourceSHA256": "816442763e1c9573bc85ebd89e40b4d3fc9e3b5233a7589607903748b49d68b2",
-      "stagedSHA256": "816442763e1c9573bc85ebd89e40b4d3fc9e3b5233a7589607903748b49d68b2"
+      "sourceSHA256": "7b9b72b823e95b94af2a7a425455d84616491f9ae3cd6c5691371b717e5ebbce",
+      "stagedSHA256": "7b9b72b823e95b94af2a7a425455d84616491f9ae3cd6c5691371b717e5ebbce"
     },
     {
       "path": "assets/yazifont/sourcesanspro-regular.otf",
@@ -701,7 +701,7 @@
     {
       "path": "ayarlar/tanim.json",
       "sourceSHA256": "d0f73cbd360ee35ec31f4d7d5666fb170187f465ef08733348014789b3c49ce1",
-      "stagedSHA256": "9743b8a5bdc9d01732460e203801e0eff83505fee2bd9b9ac5dd8accc63a611d"
+      "stagedSHA256": "69b6d84ca50c7b96137eeb186a0ba5d4eb303bf378ee8c01fb64df02b773a193"
     },
     {
       "path": "ayarlar/tema.json",
@@ -1095,8 +1095,8 @@
     },
     {
       "path": "moduller/odeme/bilgiler/odeme.twig",
-      "sourceSHA256": "72283347777bc8d5424945b112827a7234dd4454166bcd75758324a8abc1ef45",
-      "stagedSHA256": "72283347777bc8d5424945b112827a7234dd4454166bcd75758324a8abc1ef45"
+      "sourceSHA256": "3e398f8a13bfd28070d9874b13497f5f99f0c24261183893517e17e5812565b0",
+      "stagedSHA256": "3e398f8a13bfd28070d9874b13497f5f99f0c24261183893517e17e5812565b0"
     },
     {
       "path": "moduller/odeme/bilgiler/siparis.twig",
@@ -1819,7 +1819,22 @@
       "stagedSHA256": "40937931c5dfb47be2fb585d4a9bca1f42edd99b59a89929ef8d4fd9d69a8032"
     }
   ],
-  "package": "goldfix01_b31769aa6143.zip",
-  "packageSHA256": "ed19730b07136c7ad6655f725641acd69099e9114a482f58450b71c9b7cc95ef",
-  "packageFilesVerified": true
+  "package": "goldfix01_27911bff82ad.zip",
+  "packageSHA256": "a76f26fb5236d1bb5e39ffb5cbab8721171358436434c0dc80486e4efc8a1f9b",
+  "packageFilesVerified": true,
+  "extractionValidation": {
+    "commit": "27911bff82adfec17b28feb5859e84c5b8b77525",
+    "id": "goldfix01_27911bff82ad",
+    "extractedToFreshDirectory": true,
+    "files": 362,
+    "gitContentMatched": true,
+    "onlyIdentityMetadataDiffers": true,
+    "caseSensitiveStaticTwigReferences": 50,
+    "literalLegacyThemePaths": [],
+    "excludedFileTypesFound": 0,
+    "commonCredentialPatternsFound": 0,
+    "opaqueSettingsPrivacyVerified": false,
+    "platformImportVerified": false,
+    "note": "Dynamic paths, external resources, runtime loading and opaque settings isolation need platform verification."
+  }
 }

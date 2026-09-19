@@ -3,7 +3,7 @@
 | VM1 / PV2: Video ve platform hata penceresi birlikte açık | Escape alttaki videoyu da kapatıyor; iki odak yöneticisi çakışabilir | Her iki mevcut video denetleyicisi Bootstrap yanında SweetAlert açık durumunu da dikkate alıyor | Önce iki Escape senaryosu başarısız; sonra geçti. Ürün popup'ı gerçek referans SweetAlert ile odak ve z-index kontrolünden geçti | Gerçek platform yükleme sırası ve iframe içi tuşlar |
 | FORM1: Hata sırasında kullanıcı girdisi | Gereksiz veri kaybı riski | Sağlam kod değiştirilmedi | Referans ajaxFormGate + sentetik hata: İ/ı, apostrof, çift tırnak, &, emoji içeren alan aynen kaldı | Oturum bitmesi, autofill ve gerçek alan hata şeması |
 | S4: Ödeme görseli aktif goldtheme yolunda | Ayrı aday aktif temanın dosyasına bağlı kalıyor | odeme/bilgiler/odeme.twig:20 temaDosyalari yardımcısına taşındı | Aynı yerel görsel özgün Gold ZIP girdisiyle hash olarak eşit; Twig ve kaynak bağı kontrolü geçti | Gerçek kaynak yanıtı ve sağlayıcı bağlamı |
-| Paket/kaynak eşliği | Eski veya yanlış kaynakla önizleme riski | Boş geçici dizine açıp Git commit'iyle karşılaştıran kontrol eklendi | Sonuç güncel onizleme-adayi.md/manifest içinde kaydedilir | İçe aktarma, çalışma zamanı yolları ve opaque ayar izolasyonu |
+| Paket/kaynak eşliği | Eski veya yanlış kaynakla önizleme riski | Boş geçici dizine açıp Git commit'iyle karşılaştıran kontrol eklendi | 362 dosya Git commit'iyle eşleşti; 50 harf duyarlı statik kaynak; sonuç onizleme-adayi.md/manifest içinde | İçe aktarma, çalışma zamanı yolları ve opaque ayar izolasyonu |
 
 # Tam tema denetimi ve onarım kaydı
 

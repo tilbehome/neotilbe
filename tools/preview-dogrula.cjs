@@ -32,12 +32,28 @@ try {
 const entries = fs.readdirSync(temp, {recursive:true}).filter(p => fs.statSync(path.join(temp,p)).isFile()).map(p=>p.replaceAll('\\','/'));
 assert.deepEqual([...entries].sort(),manifest.files.map(f=>f.path).sort(),'Extracted paths must match, including case');
 const git = process.env.GIT_PATH || 'C:/Program Files/Git/cmd/git.exe';
+const objects=execFileSync(git,['cat-file','--batch'],{cwd:root,maxBuffer:100*1024*1024,
+    input:manifest.files.map(f=>manifest.commit+':canlitema/'+f.path).join('\n')+'\n'});
+const sources=new Map();
+let offset=0;
+for(const entry of manifest.files) {
+    const end=objects.indexOf(10,offset);
+    assert(end>=offset,'Missing Git object header');
+    const header=objects.subarray(offset,end).toString('utf8').match(/^[a-f0-9]+ blob ([0-9]+)$/);
+    assert(header,'Source blob missing: '+entry.path);
+    const size=Number(header[1]);
+    const start=end+1;
+    assert.equal(objects[start+size],10,'Incomplete Git object');
+    sources.set(entry.path,objects.subarray(start,start+size));
+    offset=start+size+1;
+}
+assert.equal(offset,objects.length,'Unexpected Git batch output');
 const secrets = /AKIA[0-9A-Z]{16}|gh[pousr]_[A-Za-z0-9]{20,}|-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----/;
 for(const entry of manifest.files) {
     assert(!/^(?:tests|docs|orjinaltema|Platform[^/]*|referans-arsivler)\//i.test(entry.path));
     assert(!/(^|\/)(?:\.env(?:\..*)?|credentials\.json|secrets\.json)$|\.(?:zip|pem|key|p12|pfx)$/i.test(entry.path));
     const data = fs.readFileSync(path.join(temp, entry.path));
-    const source = execFileSync(git,['show',manifest.commit+':canlitema/'+entry.path],{cwd:root,maxBuffer:10*1024*1024});
+    const source = sources.get(entry.path);
     assert.equal(hash(data),entry.stagedSHA256,entry.path);
     assert.equal(hash(source),entry.sourceSHA256,entry.path);
     if(entry.path === 'ayarlar/tanim.json') {
