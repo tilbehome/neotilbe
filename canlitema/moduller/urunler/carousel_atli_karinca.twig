@@ -1,6 +1,6 @@
 <div id="product-profile-carousel-{{ sayfaBilgileri('ID') }}" class="carousel slide" data-ride="carousel">
     <div class="carousel-outer">
-        {{ urunEklentileri.etiketler(sayfaBilgileri('')) }}
+        {{ urunEklentileri.etiketler(sayfaBilgileri()) }}
         <div class="carousel-inner">
             {% for index, resim in sayfaBilgileri('resimler') %}
                 <div class="carousel-item {{ index == 0 ? 'active' : '' }}">
@@ -11,10 +11,10 @@
             {% endfor %}
         </div>
         {% if sayfaBilgileri('resimler')|length > 1 %}
-            <a class="carousel-control-prev" href="#product-profile-carousel-{{ sayfaBilgileri('ID') }}" role="button" data-slide="prev">
+            <a class="carousel-control-prev" href="#product-profile-carousel-{{ sayfaBilgileri('ID') }}" role="button" aria-label="Önceki görsel" data-slide="prev">
                 <i class="fa fa-chevron-left"></i>
             </a>
-            <a class="carousel-control-next" href="#product-profile-carousel-{{ sayfaBilgileri('ID') }}" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#product-profile-carousel-{{ sayfaBilgileri('ID') }}" role="button" aria-label="Sonraki görsel" data-slide="next">
                 <i class="fa fa-chevron-right"></i>
             </a>
         {% endif %}

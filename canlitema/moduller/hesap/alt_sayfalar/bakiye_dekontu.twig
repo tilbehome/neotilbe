@@ -19,7 +19,7 @@
 {% endblock %} 
 
 {% block modalFooter %}
-    <button type="button" class="btn btn-secondary btn-sm" onclick="printById('print-{{ sayfaBilgileri('modal_kodu') }}', '{{ cevir('islem_dekontu') }}')">
+    <button type="button" class="btn btn-secondary btn-sm" data-print-id="print-{{ sayfaBilgileri('modal_kodu')|e }}" data-print-title="{{ cevir('islem_dekontu')|e }}" onclick="printById(this.getAttribute('data-print-id'), this.getAttribute('data-print-title'))">
         <i class="fa fa-print mr-1"></i>
         {{ cevir('yazdir') }}
     </button>

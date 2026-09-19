@@ -1,9 +1,9 @@
 <div class="shipment-methods">
     {% for firma in sayfaBilgileri('kargo_firmalari') %}
-        <div class="method  {{ firma.aktif ? 'active' : '' }}" onclick="$('#orderInputShipmentMethod{{ firma.ID }}').prop('checked', true).change()">
+        <div class="method  {{ firma.aktif ? 'active' : '' }}" onclick="if (!event.target.closest('input, label')) $('#orderInputShipmentMethod{{ firma.ID }}').prop('checked', true).change()">
             <div class="checkbox">
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="shipment_method" 
+                    <input class="form-check-input" type="radio" name="shipment_method" aria-label="{{ firma.adi|e }}"
                     id="orderInputShipmentMethod{{ firma.ID }}" value="{{ firma.ID }}" {{ firma.aktif ? 'checked' : '' }} />
                 </div>
             </div>

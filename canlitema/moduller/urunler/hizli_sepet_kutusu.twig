@@ -9,15 +9,15 @@
 {% block modalIcerik %}
     <script type="text/javascript">
         var PRODUCT_FAST_CART_{{ sayfaBilgileri('ID') }} = {
-            price: '{{ sayfaBilgileri('fiyat') }}',
+            price: '{{ sayfaBilgileri('fiyat')|e('js') }}',
             {% if sayfaBilgileri('indirim')  %}
-                listPrice: '{{ sayfaBilgileri('piyasa_fiyati') }}',
+                listPrice: '{{ sayfaBilgileri('piyasa_fiyati')|e('js') }}',
             {% endif %}
             {% if ayarlar('havale_indirim_miktari') > 0 %}
-                eftPrice: '{{ urunHavaleFiyati(sayfaBilgileri(''))}}',
+                eftPrice: '{{ urunHavaleFiyati(sayfaBilgileri(''))|e('js') }}',
             {% endif %}
             {% if sayfaBilgileri('indirimli_fiyatlar').sabit_indirim.aktif  %}
-                discountedPrice: '{{ sayfaBilgileri('indirimli_fiyatlar').sabit_indirim.kdv_dahil }}',
+                discountedPrice: '{{ sayfaBilgileri('indirimli_fiyatlar').sabit_indirim.kdv_dahil|e('js') }}',
             {% endif %}
             {% if sayfaBilgileri('varyantlar') %}
                 variants: {{ sayfaBilgileri('varyantlar').json | raw }}

@@ -6,14 +6,14 @@
 
 {% block modulIcerik %}
     <div class="category-price-inputs" data-smart-cat-filter="price-inputs">
-        <input class="form-control number-input" name="smart-cat-min-price"
+        <input class="form-control number-input" name="smart-cat-min-price" aria-label="En düşük fiyat"
                data-smart-cat-search="1" placeholder="{{ cevir('en_az') }}"
                value="{{ sayfaBilgileri('filtreler').fiyat.min > 0 ? sayfaBilgileri('filtreler').fiyat.min : '' }}" />
         <span class="seperator">-</span>
-        <input class="form-control number-input" name="smart-cat-max-price"
+        <input class="form-control number-input" name="smart-cat-max-price" aria-label="En yüksek fiyat"
                data-smart-cat-search="1" placeholder="{{ cevir('en_cok') }}"
                value="{{ sayfaBilgileri('filtreler').fiyat.max > 0 ? sayfaBilgileri('filtreler').fiyat.max : '' }}"/>
-        <button class="btn" type="button" data-smart-cat-price-button><i class="fas fa-arrow-right"></i></button>
+        <button class="btn" type="button" aria-label="Fiyat aralığını uygula" data-smart-cat-price-button><i class="fas fa-arrow-right"></i></button>
     </div>
 
     <div class="category-filter-list" data-smart-cat-filter="price-ranges">

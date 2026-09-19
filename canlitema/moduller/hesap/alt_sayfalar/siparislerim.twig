@@ -20,7 +20,7 @@
                         <td>
                             {{ siparis.siparis_durumu }}
                             {% if siparis.iptal_edilebilir and ayarlar('kullanici_siparis_iptal') %}
-                                 <button class="btn btn-danger btn-sm ml-3" onclick="userCancelOrder('{{ siparis.siparis_no }}')">{{ cevir('iptal_et') }}</button>
+                                 <button class="btn btn-danger btn-sm ml-3" type="button" data-order-no="{{ siparis.siparis_no|e }}" onclick="userCancelOrder(this.getAttribute('data-order-no'))">{{ cevir('iptal_et') }}</button>
                             {% endif %}
                         </td>
                     </tr>

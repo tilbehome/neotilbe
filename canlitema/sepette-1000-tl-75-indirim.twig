@@ -1,23 +1,14 @@
-{# Sepet tutarını hesapla ve kampanya mesajını oluştur #}
-{% set toplam_tutar = 0 %}
-{% for sepet in sepetBilgileri('urunler') %}
-    {% set toplam_tutar = toplam_tutar + (sepet.fiyat * sepet.adet) %}
-{% endfor %}
-
-{# Kampanya mesajını belirle #}
+{# Discount eligibility and amounts are computed by the platform. #}
 <div class="kampanya-container">
-    <div class="kampanya-baslik">Sepetinize Özel İndirim Var !</div>
-    {% if toplam_tutar < 1000 %}
-        {# Kalan tutarı doğru hesapla ve yuvarla #}
-        {% set kalan_tutar = (1000 - toplam_tutar) | round(2, 'floor') %}
-        <div class="kampanya-mesaji">
-           <i class="fa fa-gift"></i>
-            <span class="kampanya-mesaji-rengi8">Sepetinize <span class="kampanya-mesaji-rengi9">{{ kalan_tutar | number_format(2, ',', '.') }} TL</span> 'lik daha ürün ekleyin, <br>Alışverişinize özel <span class="kampanya-mesaji-rengi9">75 TL</span> indirim kazanın!</span>
-        </div>
-    {% else %}
-        <div class="kampanya-mesaji">
-            <i class="fa fa-check-circle"></i>  
-            <span>Tebrikler! Sepette <strong>75 TL</strong> indirim kampanyası uygulanmıştır.</span>
-        </div>
-    {% endif %}
+    <div class="kampanya-baslik">Sepet İndirimleri</div>
+    <div class="kampanya-mesaji">
+        <i class="fa fa-gift" aria-hidden="true"></i>
+        <span class="kampanya-mesaji-rengi8">
+            {% if sepetBilgileri('ozet').indirim_var_mi %}
+                Sepetinize uygulanan indirimi sipariş özetinde görebilirsiniz.
+            {% else %}
+                İndirim tutarı, geçerli kampanya koşullarına göre sipariş özetinde gösterilir.
+            {% endif %}
+        </span>
+    </div>
 </div>

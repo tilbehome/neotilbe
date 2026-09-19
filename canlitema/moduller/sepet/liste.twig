@@ -52,7 +52,7 @@
 
         
         <div class="static-badge-x123">
-            <i class="fas fa-lock"></i> Sepetinde Rezerve Edildi
+            <i class="fas fa-shopping-basket" aria-hidden="true"></i> Sepetinizde
         </div>
 
         {% if sepet.promosyon.kontrol %}
@@ -67,7 +67,7 @@
                                     
                                         <div class="image">
                                             <a href="{{ sepet.urun.link }}">
-                                                {{ gorsel.lazy(sepet.urun.resim) }}
+                                                {{ gorsel.lazy(sepet.urun.resim, '', sepet.urun.adi) }}
                                             </a>
                                         </div>
                                         
@@ -93,7 +93,7 @@
                                 <td class="td-quantity">
                                     <div class="product-quantity ekleme">
 <button class="btn btn-danger btn-remove" type="button" onclick="removeCart({{ sepet.ID }}, 'refresh-page')" title="Ürünü Sepetten Çıkar"><i class="fa fa-trash-alt"></i></button>
-                                        <a href="javascript:;" class="btn btn-minus-99"
+                                        <a href="javascript:;" class="btn btn-minus-99" aria-label="Miktarı azalt"
                                             onclick="productQuantityBox(
                                                 'decrement',
                                                 'tr[data-cart-product-id=\'{{ sepet.ID }}\'] .product-quantity'
@@ -103,7 +103,7 @@
                                         </a>
                                         <input class="form-control" 
                                             data-base-value="{{ sepet.adet }}"
-                                            name="quantity" data-quantity-type="{{ sepet.birim }}"
+                                            name="quantity" aria-label="Ürün miktarı" data-quantity-type="{{ sepet.birim }}"
                                             value="{{ sepet.adet }}"
                                             onkeypress="return productQuantityBox(
                                                 'change',
@@ -111,7 +111,7 @@
                                                 event
                                             );"
                                             onchange="updateCartQuantity({{ sepet.ID }}, 'table', 'tr[data-cart-product-id=\'{{ sepet.ID }}\'] input', 'refresh-page');" />
-                                        <a href="javascript:;" class="btn btn-plus99"
+                                        <a href="javascript:;" class="btn btn-plus99" aria-label="Miktarı artır"
                                             onclick="productQuantityBox(
                                                 'increment',
                                                 'tr[data-cart-product-id=\'{{ sepet.ID }}\'] .product-quantity'

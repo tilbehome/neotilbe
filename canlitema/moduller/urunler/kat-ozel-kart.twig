@@ -22,16 +22,16 @@
                                 {% for index, resim in urun.resimler %}
                                     <div class="carousel-item {{ index == 0 ? 'active' : '' }}">
                                         <a href="{{ urun.link }}">
-                                            {{ gorsel.lazy(resim.normal) }}
+                                            {{ gorsel.lazy(resim.normal, '', urun.adi_alt) }}
                                         </a>
                                     </div>
                                 {% endfor %}
                             </div>
                             {% if urun.resimler |length > 1 %}
-                                <a class="carousel-control-prev" href="#product-card-carousel-{{ modul.ozel_data_kodu }}-{{ urun.ID }}" role="button" data-slide="prev">
+                                <a class="carousel-control-prev" href="#product-card-carousel-{{ modul.ozel_data_kodu }}-{{ urun.ID }}" role="button" aria-label="Önceki görsel" data-slide="prev">
                                     <i class="fa fa-chevron-left"></i>
                                 </a>
-                                <a class="carousel-control-next" href="#product-card-carousel-{{ modul.ozel_data_kodu }}-{{ urun.ID }}" role="button" data-slide="next">
+                                <a class="carousel-control-next" href="#product-card-carousel-{{ modul.ozel_data_kodu }}-{{ urun.ID }}" role="button" aria-label="Sonraki görsel" data-slide="next">
                                     <i class="fa fa-chevron-right"></i>
                                 </a>
                             {% endif %}
@@ -75,24 +75,24 @@
                     <div class="button-group">
                         <div class="cart-group">
                             {% if urun.stok > 0 %}
-                                <a onclick="showNativeModal('productVariantBox', {'id':  {{ urun.ID }} });" class="btn btn-preview">
+                                <a href="javascript:;" aria-label="Ürün seçeneklerini görüntüle" onclick="showNativeModal('productVariantBox', {'id':  {{ urun.ID }} });" class="btn btn-preview">
                                     <span class="btn-text">
                                         <i class="{{ temaAyarlari('icon','urun_gor') }}"></i>
                                     </span>
                                 </a>
                                 
-                                <a href="{{ urun.link }}" class="btn btn-show">
+                                <a href="{{ urun.link }}" class="btn btn-show" aria-label="Ürünü incele">
                                     <i class="{{ temaAyarlari('icon','urun_incele') }}"></i>
                                 </a>
                                 
                                 <a href="javascript:;" onclick="addCart({{ urun.ID }}, 'card')"
-                                    class="btn btn-cart-right">
+                                    class="btn btn-cart-right" aria-label="Sepete ekle">
                                     <i class="{{ temaAyarlari('icon','sepetim') }}"></i>
                                 </a>
                             {% else %}
-                                <a href="javascript:;" onclick="addCart({{ urun.ID }}, 'card')" class="btn btn-cart btn-color-1 disabled">
+                                <button type="button" disabled class="btn btn-cart btn-color-1 disabled">
                                     <span class="btn-text"><i class="{{ temaAyarlari('icon','sepetim') }}" aria-hidden="true"></i>{{cevir('stokta_yok_buton')}}</span>
-                                </a>
+                                </button>
                             {% endif %}
                         </div>
                     </div>
@@ -106,9 +106,9 @@
                             {% if urun.stok > 0 %}
                                 
                             {% else %}
-                                <a href="javascript:;" onclick="addCart({{ urun.ID }}, 'card')" class="btn btn-cart disabled">
+                                <button type="button" disabled class="btn btn-cart disabled">
                                     <span class="btn-text"><i class="mr-2 {{ temaAyarlari('icon','sepetim') }}" aria-hidden="true"></i> {{cevir('stokta_yok_buton')}}</span>
-                                </a>
+                                </button>
                             {% endif %}
                         </div>
                     </div>
@@ -181,20 +181,20 @@
         
         {% if temaAyarlari('urun_karti','adet_secim') %}
            <div class="quantity" data-product-card-quantity="{{ urun.ID }}">
-                <a href="javascript:;" class="btn btn-minus"
+                <a href="javascript:;" class="btn btn-minus" aria-label="Miktarı azalt"
                     onclick="productQuantityBox(
                     'decrement',
                     'div[data-product-card-quantity=\'{{ urun.ID }}\']'
                     )">
                     <i class="fas fa-minus"></i>
                 </a>
-                <input class="form-control" name="quantity" 
+                <input class="form-control" name="quantity" aria-label="Ürün miktarı"
                     data-quantity-type="{{ urun.birim }}" value="1"
                     onkeypress="return productQuantityBox(
                     'change',
                     'div[data-product-card-quantity=\'{{ urun.ID }}\']',
                     event)"/>
-                <a href="javascript:;" class="btn btn-plus"
+                <a href="javascript:;" class="btn btn-plus" aria-label="Miktarı artır"
                     onclick="productQuantityBox(
                     'increment',
                     'div[data-product-card-quantity=\'{{ urun.ID }}\']'
@@ -220,9 +220,9 @@
                        {{ cevir('sepete_ekle') }}
                     </a>
                 {% else %}
-                    <a href="javascript:;" onclick="addCart({{ urun.ID }}, 'card')" class="btn btn-cart disabled">
+                    <button type="button" disabled class="btn btn-cart disabled">
                         {{ cevir('stokta_yok_buton') }}
-                    </a>
+                    </button>
                 {% endif %}
             </div>
         {% endif %}

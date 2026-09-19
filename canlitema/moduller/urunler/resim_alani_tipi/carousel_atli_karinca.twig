@@ -1,6 +1,6 @@
 <div id="product-profile-carousel-{{ sayfaBilgileri('ID') }}" class="carousel slide" data-ride="carousel">
     <div class="carousel-outer">
-        {{ urunEklentileri.etiketler(sayfaBilgileri('ID')) }}
+        {{ urunEklentileri.etiketler(sayfaBilgileri()) }}
         <div class="carousel-inner">
      
             {% for index, resim in sayfaBilgileri('videolu_resimler') %}

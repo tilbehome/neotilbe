@@ -1,7 +1,7 @@
 <div class="product-profile-1" data-product-id="{{ sayfaBilgileri('ID') }}">
     <div id="product-profile-carousel" class="slide product-carousel-desktop normal" >
         <div class="carousel-outer">
-            {{ urunEklentileri.etiketler(sayfaBilgileri('ID')) }}
+            {{ urunEklentileri.etiketler(sayfaBilgileri()) }}
             <div class="carousel-inner">
                <div class="row">
                 {% for index, resim in sayfaBilgileri('videolu_resimler') %}
@@ -51,7 +51,7 @@
         
             <div class="col-md-12 pl-0 pr-0">
                 <div class="carousel-outer">
-                    {{ urunEklentileri.etiketler(sayfaBilgileri('ID')) }}
+                    {{ urunEklentileri.etiketler(sayfaBilgileri()) }}
                     <div class="carousel-inner">
                         {% for index, resim in sayfaBilgileri('videolu_resimler') %}
                             <div class="carousel-item {{ index == 0 ? 'active' : '' }}">
