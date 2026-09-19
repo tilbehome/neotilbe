@@ -1,6 +1,6 @@
 {
-  "commit": "98e2e4dc873499d8b28753cf091b857dab6c4961",
-  "id": "goldfix01_98e2e4dc8734",
+  "commit": "b31769aa6143ebda2c444947229f2b07fb23bb54",
+  "id": "goldfix01_b31769aa6143",
   "importFormatVerified": false,
   "archiveStructureMatched": true,
   "referenceArchive": "goldtheme_backup_20260919_123922.zip",
@@ -629,9 +629,14 @@
       "stagedSHA256": "604d5f5907e00ee732329a7f1a8b6d5ac1821a417068a43f35a04ba178d7915b"
     },
     {
+      "path": "assets/product-video-popup.js",
+      "sourceSHA256": "38ff7f0cbb3b496bde98e6dbb3cfe909fdc32b1cf0a924260747b334c751a2c0",
+      "stagedSHA256": "38ff7f0cbb3b496bde98e6dbb3cfe909fdc32b1cf0a924260747b334c751a2c0"
+    },
+    {
       "path": "assets/scripts.js",
-      "sourceSHA256": "8b813b455d1dc8275897eef0afb01c68439a7a115fb9ce93de3983601997ee48",
-      "stagedSHA256": "8b813b455d1dc8275897eef0afb01c68439a7a115fb9ce93de3983601997ee48"
+      "sourceSHA256": "06054d1614e504a2b55b5b24b19f26d495182f606176b4d8b924336a49192612",
+      "stagedSHA256": "06054d1614e504a2b55b5b24b19f26d495182f606176b4d8b924336a49192612"
     },
     {
       "path": "assets/smartbanner.css",
@@ -640,13 +645,13 @@
     },
     {
       "path": "assets/smartbanner.js",
-      "sourceSHA256": "18766e8d6f730cb4a3a7b189e4627b867bfa648cf358cb0247cfb0d324cf8403",
-      "stagedSHA256": "18766e8d6f730cb4a3a7b189e4627b867bfa648cf358cb0247cfb0d324cf8403"
+      "sourceSHA256": "899fad13b701d31bfcb71ceafba923ea345344f50022b39e1db458cafb83df2a",
+      "stagedSHA256": "899fad13b701d31bfcb71ceafba923ea345344f50022b39e1db458cafb83df2a"
     },
     {
       "path": "assets/style.css",
-      "sourceSHA256": "9a9ad7ffa0013fd62c61080b39d0e3addc04a938ac6497d1d68b6efc7c404de0",
-      "stagedSHA256": "9a9ad7ffa0013fd62c61080b39d0e3addc04a938ac6497d1d68b6efc7c404de0"
+      "sourceSHA256": "f3c0074aa66bded7f7454d17a1da21d9a6f658ef8d9af2f0569b4970ae81d5b3",
+      "stagedSHA256": "f3c0074aa66bded7f7454d17a1da21d9a6f658ef8d9af2f0569b4970ae81d5b3"
     },
     {
       "path": "assets/tahmini-kargom.js",
@@ -696,7 +701,7 @@
     {
       "path": "ayarlar/tanim.json",
       "sourceSHA256": "d0f73cbd360ee35ec31f4d7d5666fb170187f465ef08733348014789b3c49ce1",
-      "stagedSHA256": "2a652fc8b536b55f9c573015516e9694d6c3320f2299b3b0ff5458c1b84b2727"
+      "stagedSHA256": "9743b8a5bdc9d01732460e203801e0eff83505fee2bd9b9ac5dd8accc63a611d"
     },
     {
       "path": "ayarlar/tema.json",
@@ -815,13 +820,13 @@
     },
     {
       "path": "moduller/footer.twig",
-      "sourceSHA256": "a46b332e4408549800743f33af74adedc1ddb658729fdafd8be13bb824ab5910",
-      "stagedSHA256": "a46b332e4408549800743f33af74adedc1ddb658729fdafd8be13bb824ab5910"
+      "sourceSHA256": "9eed4c65bbb499404b4c8d83a448dd5a7a2f1f51b17ba8d338f246e7727cf860",
+      "stagedSHA256": "9eed4c65bbb499404b4c8d83a448dd5a7a2f1f51b17ba8d338f246e7727cf860"
     },
     {
       "path": "moduller/header.twig",
-      "sourceSHA256": "07b73dcc4e7524babb722484cb55690564e9acefc5f8390fb7cde727b24e6cbd",
-      "stagedSHA256": "07b73dcc4e7524babb722484cb55690564e9acefc5f8390fb7cde727b24e6cbd"
+      "sourceSHA256": "5127b45c99de89a14e2ca4cac111bd317832a128074c5b7ac9523c29c477e156",
+      "stagedSHA256": "5127b45c99de89a14e2ca4cac111bd317832a128074c5b7ac9523c29c477e156"
     },
     {
       "path": "moduller/hediye_ceki/icerik.twig",
@@ -1290,8 +1295,8 @@
     },
     {
       "path": "moduller/urunler/kat-ozel-kart.twig",
-      "sourceSHA256": "7afa7fff4ca73e0969a51904b1b82477c7ae182e65520bf6d154883f1a2302c7",
-      "stagedSHA256": "7afa7fff4ca73e0969a51904b1b82477c7ae182e65520bf6d154883f1a2302c7"
+      "sourceSHA256": "4d2d35971daa3d0138554fcf510ce99e095723b09fe0176571ad8158b0c0adc2",
+      "stagedSHA256": "4d2d35971daa3d0138554fcf510ce99e095723b09fe0176571ad8158b0c0adc2"
     },
     {
       "path": "moduller/urunler/liste_kart.twig",
@@ -1305,8 +1310,8 @@
     },
     {
       "path": "moduller/urunler/profil.twig",
-      "sourceSHA256": "7490ee700d75bba35dbcd5f23321d0231d117fb562305621fe9363e5ed572517",
-      "stagedSHA256": "7490ee700d75bba35dbcd5f23321d0231d117fb562305621fe9363e5ed572517"
+      "sourceSHA256": "2a0c806bca850c679854be48c63fbf9498329cdd6cd5d38d532b3196d5dce09d",
+      "stagedSHA256": "2a0c806bca850c679854be48c63fbf9498329cdd6cd5d38d532b3196d5dce09d"
     },
     {
       "path": "moduller/urunler/profil_degerlendirmeler.twig",
@@ -1325,8 +1330,8 @@
     },
     {
       "path": "moduller/urunler/resim_alani_tipi/carousel_sol.twig",
-      "sourceSHA256": "9534c8d5d2ccd300218381994355e65ef1f4edc5fa51843d088317e0022327ad",
-      "stagedSHA256": "9534c8d5d2ccd300218381994355e65ef1f4edc5fa51843d088317e0022327ad"
+      "sourceSHA256": "1ba0547dda23eda16a4220c03746452a862aef7b5200dfea6d61ad2839903bee",
+      "stagedSHA256": "1ba0547dda23eda16a4220c03746452a862aef7b5200dfea6d61ad2839903bee"
     },
     {
       "path": "moduller/urunler/resim_alani_tipi/normal_altta.twig",
@@ -1335,8 +1340,8 @@
     },
     {
       "path": "moduller/uyelik/giris_yap.twig",
-      "sourceSHA256": "28f1b38c872d57cf49b16d3c3f60611110c995c9b1e95503d0d755373ed8ad6a",
-      "stagedSHA256": "28f1b38c872d57cf49b16d3c3f60611110c995c9b1e95503d0d755373ed8ad6a"
+      "sourceSHA256": "b6df8af8e01a37eb281447686219e35d8a035e763e0d759b5985dc69600bca2f",
+      "stagedSHA256": "b6df8af8e01a37eb281447686219e35d8a035e763e0d759b5985dc69600bca2f"
     },
     {
       "path": "moduller/uyelik/giris_yap_aciklama.twig",
@@ -1814,7 +1819,7 @@
       "stagedSHA256": "40937931c5dfb47be2fb585d4a9bca1f42edd99b59a89929ef8d4fd9d69a8032"
     }
   ],
-  "package": "goldfix01_98e2e4dc8734.zip",
-  "packageSHA256": "aacd5ee62ef56a55b42556100ee8b30b3eeac26142eec4a976c22783ffd5d821",
+  "package": "goldfix01_b31769aa6143.zip",
+  "packageSHA256": "ed19730b07136c7ad6655f725641acd69099e9114a482f58450b71c9b7cc95ef",
   "packageFilesVerified": true
 }
