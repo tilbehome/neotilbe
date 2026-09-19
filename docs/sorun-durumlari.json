@@ -226,9 +226,10 @@
   {
     "id": "VM1",
     "location": "video-listeleme.twig; assets/video-gallery.js; style.css",
-    "remedy": "Çoklu örnek, klavye/odak, iframe temizleme ve modal CSS",
-    "status": "onarım uygulandı; yerelde doğrulandı (rapordaki kapsam); platform kabulü bekliyor",
-    "evidence": "platform-uyum-05-kontrol.md"
+    "remedy": "Çoklu örnek, klavye/odak, iframe temizleme ve modal CSS; birlikte açık SweetAlert için odak/Escape önceliği korundu",
+    "status": "düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor",
+    "evidence": "platform-uyum-05-kontrol.md; kapsamli-denetim.md sınır durumları bölümü; product-video-popup.cjs/platform-uyum-05-cases.cjs",
+    "source": "tema kodu"
   },
   {
     "id": "A5",
@@ -366,9 +367,10 @@
   {
     "id": "PV2",
     "location": "profil.twig; carousel_sol.twig; assets/product-video-popup.js",
-    "remedy": "Alternatif video X hatası, odak/scroll/temizleme ve ekran dışı kapanış kontrolü onarıldı",
-    "status": "onarım uygulandı; yerelde doğrulandı; platform kabulü bekliyor",
-    "evidence": "platform-uyum-07-kontrol.md"
+    "remedy": "Alternatif video X hatası, odak/scroll/temizleme ve ekran dışı kapanış kontrolü onarıldı; birlikte açık SweetAlert için odak/Escape önceliği korundu",
+    "status": "düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor",
+    "evidence": "platform-uyum-07-kontrol.md; kapsamli-denetim.md sınır durumları bölümü; product-video-popup.cjs/platform-uyum-05-cases.cjs",
+    "source": "tema kodu"
   },
   {
     "id": "CSS4",

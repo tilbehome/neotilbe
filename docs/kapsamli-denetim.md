@@ -1,3 +1,9 @@
+| Sorun | Müşteriye etkisi | Yapılan onarım | Doğrulama | Kalan iş |
+|---|---|---|---|---|
+| VM1 / PV2: Video ve platform hata penceresi birlikte açık | Escape alttaki videoyu da kapatıyor; iki odak yöneticisi çakışabilir | Her iki mevcut video denetleyicisi Bootstrap yanında SweetAlert açık durumunu da dikkate alıyor | Önce iki Escape senaryosu başarısız; sonra geçti. Ürün popup'ı gerçek referans SweetAlert ile odak ve z-index kontrolünden geçti | Gerçek platform yükleme sırası ve iframe içi tuşlar |
+| FORM1: Hata sırasında kullanıcı girdisi | Gereksiz veri kaybı riski | Sağlam kod değiştirilmedi | Referans ajaxFormGate + sentetik hata: İ/ı, apostrof, çift tırnak, &, emoji içeren alan aynen kaldı | Oturum bitmesi, autofill ve gerçek alan hata şeması |
+| Paket/kaynak eşliği | Eski veya yanlış kaynakla önizleme riski | Boş geçici dizine açıp Git commit'iyle karşılaştıran kontrol eklendi | Sonuç güncel onizleme-adayi.md/manifest içinde kaydedilir | İçe aktarma, çalışma zamanı yolları ve opaque ayar izolasyonu |
+
 # Tam tema denetimi ve onarım kaydı
 
 ## Hedef ve çalışma kuralları
@@ -10,7 +16,25 @@ Mevcut tasarım kimliğiyle bütün temanın onarımı; yeni özellik ve yeni ta
 
 Envanter aşamaları ayrı tutulur: **listelendi**, **incelendi (belirtilen kapsam)**, **düzeltildi**, **yerelde doğrulandı**, **platformda doğrulama bekliyor**. İncelenmeyen dosya yalnız listelendi durumundadır. Eski sorun kayıtlarının kontrol edildi/düzeltildi ve doğrulandı ifadelerinde K = kaynak, Y = yerel ayrıştırma/sentetik veri, T = çevrimdışı gerçek tarayıcı, Q = gerçek Qukasoft. K/Y/T başarısı Q kabulü değildir. Dosya geneli tamamlandı sonucu çıkarılmaz.
 
-`tema-envanteri.md` ve `tema-envanteri.json` tüm 361 tema dosyasını tek tek listeler: boyut, hash, sabit şablon bağları, satırlı inceleme sinyalleri ve ayrıştırma sonucu. Her sayfa, modül, yardımcı, varlık ve ayar kapsam içindedir. Envanterdeki sinyaller otomatik hata hükmü değildir. Dosyanın tüm durumları tamamlanmadan dosya geneline yeşil durum verilmez.
+`tema-envanteri.md` ve `tema-envanteri.json` tüm 362 tema dosyasını tek tek listeler: boyut, hash, sabit şablon bağları, satırlı inceleme sinyalleri ve ayrıştırma sonucu. Her sayfa, modül, yardımcı, varlık ve ayar kapsam içindedir. Envanterdeki sinyaller otomatik hata hükmü değildir. Dosyanın tüm durumları tamamlanmadan dosya geneline yeşil durum verilmez.
+
+## Sınır durumları ve birlikte çalışma — 19.09.2026 ek kapsamı
+
+Kullanıcının ek talimatındaki dokuz grup mevcut kabul listesine alındı; ayrı rapor sistemi oluşturulmadı. İşlev temada varsa uygulanır, olmayan özellik eklenmez. Aşağıdaki yerel kanıt bütün grubun kabulü değildir. Ayrıntılı uygulanacak senaryolar mevcut `qukasoft-onizleme-kontrol-listesi.md` içindedir.
+
+| Grup | Mevcut yerel kanıt / bu tur gözlem | Açık kontrol |
+|---|---|---|
+| Gezinme/durum | Önceki yardım hash hedefi ve kategori arama parametresi kontrolleri korunuyor | Geri/ileri, yenileme, doğrudan URL, BFCache, filtre/sıralama/sayfalama ve geç gelen platform verisi |
+| Gecikme/başarısızlık | Ağ/sunucu hatası ve video play reddi yerel kontrollü yanıtlarla kontrol edildi | Loader/düğme geri açılması, çift gönderim, sıra dışı yanıt ve yanıt yarışları; platform istek yönetimi kopyalanmayacak |
+| Veri sınırları | Uzun kart metni, CHF/apostrof, ondalıklı miktar helper'ı, stok ve kart seçenekleri önceki kontrollerde; bu tur özel karakterli form girdisi korundu | Sıfır/eksik fiyat ayrımı, min/max, tek/çok/eksik görsel, diğer para birimi ve varyant birleşimleri |
+| Oturum/form | Misafir favori, giriş returnUrl/2FA bağlantısı, ayrı parola alanı ve hata odağı yerel kanıtları korunuyor | Gerçek oturum sonlanması, autofill, gizli alan doğrulama ve hata-scroll ilişkisi |
+| Görünüm | Önceki mobil/tablet/masaüstü ve yatay popup sınırları; bu tur yeni görsel kabul yapılmadı | %200 zoom, ekran klavyesi, dokunmatik hover, uzun modal ve sabit çubuklar. Emülasyon gerçek cihaz değildir |
+| Medya/kaynak hatası | Video reddinden sonra düğme yeniden kullanılabilir; kapatmada iframe temizlenir. 49 statik Twig kaynak referansı büyük/küçük harf duyarlı dosya listesiyle eşleşti | Gerçek bozuk resim/font/harici kaynak ve dinamik Türkçe/göreli URL; bu kontrol çalışma zamanı yüklemesi değildir |
+| Yaşam döngüsü/çakışma | Tekrar başlatma, iki galeri, kaldırmada kilit temizliği ve aynı ürün favorileri önceki kontrollerde; VM1/PV2 ortak SweetAlert kusuru giderildi | AJAX ile yeniden eklemede script çalıştırma sözleşmesi; canlı platform modalları ve alternatif ayarlar |
+| Paket/kaynak | Yeni araç boş geçici klasöre çıkarır; bütün dosyaları Git commit'i ve manifest ile karşılaştırır; statik kaynak yollarını harf duyarlı doğrular | Opaque ayarların gizli içeriği/izolasyonu ve platform içe aktarma; bunlar başarılı sayılmayacak |
+| Kanıt/devam | Her bulguda yapılan/gözlenen ve katman ayrımı; aynı kök neden VM1/PV2 mevcut kayıtlarına eklendi | Temanın bütün kabulü açık; erişim gerektirmeyen işler devam listesinde |
+
+VM1/PV2 ortak kök neden **tema kodu**: `assets/video-gallery.js` içindeki close/onKeydown/onFocus ve `assets/product-video-popup.js` içindeki close/focusin/keydown yalnız `.modal.show` kontrol ediyordu. Referans `Platform Dosyaları/template-assets/plugins/bootstrap.js` SweetAlert'i `.swal-overlay--show-modal` ile açıyor. Açık hata penceresi varken Escape tetiklendiğinde iki video da kapanıyordu. Mevcut koşula SweetAlert seçicisi eklendi; platform fonksiyonu/isteği değiştirilmedi. `tests/product-video-popup.cjs` gerçek referans SweetAlert'in confirm odağını, videonun üzerindeki z-index'ini ve alttaki videonun açık kalmasını kontrol eder; `tests/platform-uyum-05-cases.cjs` galeride kontrollü modal DOM'u kullanır. Ardından normal X/arka plan/Escape, tekrar açma, iframe temizliği ve dış kilidin korunması yeniden geçti. İframe içindeki tuş olayları ve gerçek Qukasoft kabulü açık.
 
 ## Akış envanteri ve kabul matrisi
 
@@ -90,7 +114,7 @@ Güncel durumun tek kaynağı `sorun-durumlari.json`; aşağıdaki tablo bu kay�
 | A4 | footer.twig; flash-urunler-hots.twig | Alan/bağlantı/alternatif adlar ve telefon anchor kapanışı | onarım uygulandı; yerelde doğrulandı (rapordaki kapsam); platform kabulü bekliyor | platform-uyum-04-kontrol.md |
 | D5 | flash-urunler-hots.twig; footer.twig | Sahte satış/izleyen sayaçları yerine stok alanı | onarım uygulandı; yerelde doğrulandı (rapordaki kapsam); platform kabulü bekliyor | platform-uyum-04-kontrol.md |
 | M2 | footer.twig; style.css | Kategori dialog odağı ve ayrı kaydırma kilidi | onarım uygulandı; yerelde doğrulandı (rapordaki kapsam); platform kabulü bekliyor | platform-uyum-04-kontrol.md |
-| VM1 | video-listeleme.twig; assets/video-gallery.js; style.css | Çoklu örnek, klavye/odak, iframe temizleme ve modal CSS | onarım uygulandı; yerelde doğrulandı (rapordaki kapsam); platform kabulü bekliyor | platform-uyum-05-kontrol.md |
+| VM1 | video-listeleme.twig; assets/video-gallery.js; style.css | Çoklu örnek, klavye/odak, iframe temizleme ve modal CSS; birlikte açık SweetAlert için odak/Escape önceliği korundu | düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor | platform-uyum-05-kontrol.md; kapsamli-denetim.md sınır durumları bölümü; product-video-popup.cjs/platform-uyum-05-cases.cjs |
 | A5 | 11 üyelik/hesap/iletişim/havale form şablonu | Etiket-kontrol bağlantıları ve iletişim başlık kapanışı | onarım uygulandı; yerelde doğrulandı (rapordaki kapsam); platform kabulü bekliyor | platform-uyum-05-kontrol.md |
 | CAT1 | kategoriler/sayfalama.twig | Platform sıralama listesi; JS kaçışı; sınırlı grid class değişimi | onarım uygulandı; yerelde doğrulandı (rapordaki kapsam); platform kabulü bekliyor | platform-uyum-05-kontrol.md |
 | SEO1 | statik_sayfalar/404.twig; alt_sayfalar/havale_bildirim.twig | Yanlış ana sayfa URL iddiası ve gerçekleşmemiş ödeme action metadatası kaldırıldı | onarım uygulandı; yerelde doğrulandı (rapordaki kapsam); platform kabulü bekliyor | platform-uyum-05-kontrol.md |
@@ -110,7 +134,7 @@ Güncel durumun tek kaynağı `sorun-durumlari.json`; aşağıdaki tablo bu kay�
 | HTML2 | odeme/siparis_onayi.twig; kategoriler/filtreleme/fiyatlar.twig | Başlık kapanışı ve fiyat kontrol adları | onarım uygulandı; rapordaki yerel kapsam doğrulandı; platform kabulü açık | platform-uyum-06-kontrol.md |
 | JS2 | urunler/hizli_sepet_kutusu.twig; siparislerim.twig; bakiye_dekontu.twig | Biçimli fiyat JS kaçışı; sipariş/yazdırma metnini data niteliğiyle taşıma | onarım uygulandı; rapordaki yerel kapsam doğrulandı; platform kabulü açık | platform-uyum-06-kontrol.md |
 | CSS3 | canlitema/assets/style.css; başlangıç satırları css-temizlik-kaniti.json | Aynı medya kapsamındaki tekrarlar, ezilen ve geçersiz bildirimler kaldırıldı; Gold cascade korundu | onarım uygulandı; 11 genişlikte yerel cascade doğrulandı; tam sayfa/platform görsel kabulü açık | css-denetimi.md; css-cascade-results.json |
-| PV2 | profil.twig; carousel_sol.twig; assets/product-video-popup.js | Alternatif video X hatası, odak/scroll/temizleme ve ekran dışı kapanış kontrolü onarıldı | onarım uygulandı; yerelde doğrulandı; platform kabulü bekliyor | platform-uyum-07-kontrol.md |
+| PV2 | profil.twig; carousel_sol.twig; assets/product-video-popup.js | Alternatif video X hatası, odak/scroll/temizleme ve ekran dışı kapanış kontrolü onarıldı; birlikte açık SweetAlert için odak/Escape önceliği korundu | düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor | platform-uyum-07-kontrol.md; kapsamli-denetim.md sınır durumları bölümü; product-video-popup.cjs/platform-uyum-05-cases.cjs |
 | CSS4 | assets/style.css: footer mobil siyah important kuralı | Koyu fondaki çalışma saatine mevcut açık footer rengi döndü | onarım uygulandı; yerelde doğrulandı; platform kabulü bekliyor | platform-uyum-07-kontrol.md |
 | LOGIN2 | uyelik/giris_yap.twig sosyal giriş kapsayıcıları | Sağlayıcılar kapalıyken boş sosyal giriş alanı gösterilmiyor | onarım uygulandı; yerelde doğrulandı; platform kabulü bekliyor | platform-uyum-07-kontrol.md |
 | LAYOUT1 | Platform Dosyaları/template-assets/style.min.css; footer.twig; sepet/ozet.twig; sepet/butonlar.twig | Mobil sabit CTA ve alt navigasyon örtüşmesi; etkin blok yerleşimi/gerçek DOM gerekli | yerel birleşimde görüldü; platformda doğrulama bekliyor | platform-uyum-07-kontrol.md |

@@ -360,10 +360,10 @@
     "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md"
   },
   "canlitema/assets/video-gallery.js": {
-    "scope": "05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil",
+    "scope": "05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil; platform SweetAlert ile ortak odak/Escape; bütün dosya kabulü değil",
     "fixed": true,
     "local": true,
-    "evidence": "platform-uyum-05-kontrol.md"
+    "evidence": "platform-uyum-05-kontrol.md; kapsamli-denetim.md sınır durumları"
   },
   "canlitema/moduller/bloglar/icerik.twig": {
     "scope": "Kaynak okundu: platform helper/olay seçicileri, boş dal ve HTML yapısı; gerçek veri/görsel kabulü açık",
@@ -2160,9 +2160,9 @@
     "evidence": "platform-uyum-06-kontrol.md"
   },
   "canlitema/assets/product-video-popup.js": {
-    "scope": "; alternatif video/sosyal giriş ilgili onarım ve yerel kapsam (bütün dosya kabulü değil)",
+    "scope": "; alternatif video/sosyal giriş ilgili onarım ve yerel kapsam (bütün dosya kabulü değil); platform SweetAlert ile ortak odak/Escape; bütün dosya kabulü değil",
     "fixed": true,
     "local": true,
-    "evidence": "platform-uyum-07-kontrol.md"
+    "evidence": "platform-uyum-07-kontrol.md; kapsamli-denetim.md sınır durumları"
   }
 }

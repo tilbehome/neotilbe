@@ -24,14 +24,14 @@
             document.removeEventListener('keydown', keydown);
             document.removeEventListener('focusin', focusin);
             observer.disconnect();
-            if (restoreFocus && button.isConnected && !document.querySelector('.modal.show')) button.focus();
+            if (restoreFocus && button.isConnected && !document.querySelector('.modal.show, .swal-overlay--show-modal')) button.focus();
         }
         function focusin(event) {
-            if (document.querySelector('.modal.show')) return;
+            if (document.querySelector('.modal.show, .swal-overlay--show-modal')) return;
             if (!popup.contains(event.target)) closeButton.focus();
         }
         function keydown(event) {
-            if (document.querySelector('.modal.show')) return;
+            if (document.querySelector('.modal.show, .swal-overlay--show-modal')) return;
             if (event.key === 'Escape') { event.preventDefault(); close(true); }
             if (event.key === 'Tab' && event.shiftKey && document.activeElement === closeButton) {
                 event.preventDefault();

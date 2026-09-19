@@ -71,6 +71,13 @@ const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
     }
     assert.equal(await expression('document.activeElement.id'),'close-popup-987');
     assert.equal(await expression('document.querySelectorAll("#video-container-987 iframe").length'),1);
+    await expression(read('Platform Dosyaları/template-assets/plugins/bootstrap.js'));
+    await expression('swal({text:"Local platform error",buttons:true});document.querySelector(".swal-button--confirm").focus()');
+    assert.equal(await expression('document.activeElement.classList.contains("swal-button--confirm")'),true,'Platform alert must keep focus above video');
+    assert.equal(await expression('Number(getComputedStyle(document.querySelector(".swal-overlay")).zIndex)>Number(getComputedStyle(document.getElementById("video-popup-987")).zIndex)'),true,'Platform error must appear above video');
+    await expression('document.dispatchEvent(new KeyboardEvent("keydown",{key:"Escape",bubbles:true}))');
+    assert.equal(await expression('document.getElementById("video-popup-987").hidden'),false,'Alert Escape must not close underlying video');
+    await expression('swal.close();document.getElementById("close-popup-987").focus()');
     await expression('document.getElementById("close-popup-987").click()');
     assert.equal(await expression('document.querySelectorAll("#video-container-987 iframe").length'),0);
     assert.equal(await expression('document.activeElement.id'),'video-button-987');

@@ -98,6 +98,16 @@ exports.run = async function (p, check) {
     check(dialogs[1].hidden && document.activeElement === triggers[1] && !document.body.classList.contains('tilbe-video-open') && document.body.classList.contains('modal-open'), 'Video Escape restores focus and preserves external scroll lock');
     triggers[0].click(); dialogs[0].click();
     check(dialogs[0].hidden && !dialogs[0].querySelector('iframe').hasAttribute('src'), 'Video backdrop unloads player');
+    triggers[0].click();
+    const platformAlert = document.createElement('div');
+    platformAlert.className = 'swal-overlay--show-modal';
+    platformAlert.innerHTML = '<button>Platform error</button>';
+    document.body.appendChild(platformAlert);
+    platformAlert.firstChild.focus();
+    check(document.activeElement === platformAlert.firstChild, 'Gallery yields focus to platform SweetAlert');
+    document.dispatchEvent(new KeyboardEvent('keydown', {key:'Escape', bubbles:true}));
+    check(!dialogs[0].hidden, 'Platform error Escape does not close underlying gallery');
+    platformAlert.remove(); dialogs[0].click();
     triggers[1].click(); galleries[1].remove();
     await new Promise(resolve => setTimeout(resolve, 0));
     check(!document.body.classList.contains('tilbe-video-open'), 'Removing open gallery releases its own scroll lock');

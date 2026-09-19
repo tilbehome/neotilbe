@@ -2978,8 +2978,8 @@
   {
     "file": "canlitema/assets/product-video-popup.js",
     "category": "JavaScript",
-    "bytes": 3421,
-    "sha256": "38ff7f0cbb3b496bde98e6dbb3cfe909fdc32b1cf0a924260747b334c751a2c0",
+    "bytes": 3502,
+    "sha256": "7c049245198ccdd8805dfa2fbbe7273a345dec27a1eff1f0b4e74ef581421b58",
     "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
@@ -2989,10 +2989,10 @@
       "platformdaDogrulamaBekliyor": true
     },
     "review": {
-      "scope": "; alternatif video/sosyal giriş ilgili onarım ve yerel kapsam (bütün dosya kabulü değil)",
+      "scope": "; alternatif video/sosyal giriş ilgili onarım ve yerel kapsam (bütün dosya kabulü değil); platform SweetAlert ile ortak odak/Escape; bütün dosya kabulü değil",
       "fixed": true,
       "local": true,
-      "evidence": "platform-uyum-07-kontrol.md"
+      "evidence": "platform-uyum-07-kontrol.md; kapsamli-denetim.md sınır durumları"
     },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "kontrol edildi: yerel ayrıştırma başarılı",
@@ -3153,8 +3153,8 @@
   {
     "file": "canlitema/assets/video-gallery.js",
     "category": "JavaScript",
-    "bytes": 3877,
-    "sha256": "816442763e1c9573bc85ebd89e40b4d3fc9e3b5233a7589607903748b49d68b2",
+    "bytes": 3958,
+    "sha256": "7b9b72b823e95b94af2a7a425455d84616491f9ae3cd6c5691371b717e5ebbce",
     "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
@@ -3164,10 +3164,10 @@
       "platformdaDogrulamaBekliyor": true
     },
     "review": {
-      "scope": "05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil",
+      "scope": "05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil; platform SweetAlert ile ortak odak/Escape; bütün dosya kabulü değil",
       "fixed": true,
       "local": true,
-      "evidence": "platform-uyum-05-kontrol.md"
+      "evidence": "platform-uyum-05-kontrol.md; kapsamli-denetim.md sınır durumları"
     },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "kontrol edildi: yerel ayrıştırma başarılı",

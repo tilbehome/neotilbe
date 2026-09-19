@@ -20,7 +20,7 @@
                 document.removeEventListener('focusin', onFocus);
                 frame.removeAttribute('src');
                 updateLock();
-                if (restoreFocus && opener && opener.isConnected && !document.querySelector('.modal.show')) opener.focus();
+                if (restoreFocus && opener && opener.isConnected && !document.querySelector('.modal.show, .swal-overlay--show-modal')) opener.focus();
             }
             gallery.addEventListener('tilbe-video-close', function () { close(false); });
             function activate(target) {
@@ -50,7 +50,7 @@
                 }
             });
             function onKeydown(event) {
-                if (dialog.hidden || document.querySelector('.modal.show')) return;
+                if (dialog.hidden || document.querySelector('.modal.show, .swal-overlay--show-modal')) return;
                 if (event.key === 'Escape') { event.preventDefault(); close(true); }
                 if (event.key === 'Tab') {
                     if (event.shiftKey && document.activeElement === closeButton) {
@@ -61,7 +61,7 @@
                 }
             }
             function onFocus(event) {
-                if (!dialog.hidden && !dialog.contains(event.target) && !document.querySelector('.modal.show')) closeButton.focus();
+                if (!dialog.hidden && !dialog.contains(event.target) && !document.querySelector('.modal.show, .swal-overlay--show-modal')) closeButton.focus();
             }
         });
     }

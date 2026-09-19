@@ -30,3 +30,19 @@ Her satır için tarih, tema kimliği, URL, viewport, beklenen/gerçek sonuç ve
 | İçerik / yardım / SEO | Tam sayfa, uzun içerik, accordion hash/klavye; gerçek head ve yapılandırılmış veri | Title/canonical/robots/başlıklar/alt metin ve ürün verisi gerçek çıktıdan okunur. Platform etiketi tekrar üretilmez; yerel stub SEO kabulü değil |
 
 Önizleme üretim mağazasının verisi ve API'leriyle çalışabilir; bağımsız test mağazası sayılmaz. Bu listedeki hiçbir bekleyen satır otomatik başarılı değildir. Kullanıcıdan istenen en küçük ilk bilgi ayrı kimlikli yüklemenin ayar izolasyonu teyididir; bu sırada bağımsız yerel işler sürer.
+
+## Aynı kabul listesine eklenen sınır senaryoları
+
+Aşağıdaki satırlar ilgili mevcut sayfa/işlem satırının parçasıdır; yeni özellik veya ayrı test kampanyası değildir. Her uygulamada tetikleyici, gözlenen sonuç, kaynak katmanı (tema/platform/mağaza ayarı/içerik), commit ve ortam yazılmalı. Yeni hata yoksa kod değiştirilmez.
+
+| İlgili akış | Uygulanacak sınır/birlikte çalışma adımı | Kabul ve sınır |
+|---|---|---|
+| Kategori/arama/ürün/yardım | Doğrudan URL, yenileme, geri/ileri; filtre+sıralama+sayfa+arama parametreleri; yardım fragment'i; BFCache dönüşü | Seçim ve URL tutarlı; eski DOM/fiyat/stok/görsel/miktar yeni yanıt gibi sunulmaz |
+| İstek yapan mevcut kontroller | Yerelde kontrollü gecikme/hata/beklenmeyen yanıt; hızlı filtre/varyant değişimi ve ters yanıt sırası; çift tıklama | Loader biter, geçici kilit açılır; başarısızlık başarı gibi görünmez. Platform yarış/tekilleştirme davranışı incelenmeden ikinci istek mekanizması veya otomatik tekrar yazılmaz |
+| Ürün/kart/sepet | Uzun ad/açıklama; boş isteğe bağlı alan; sıfır ile eksik fiyat; yüksek/virgüllü/farklı para birimi; desteklenen ondalık/min/max; varyant stoku; tek/çok/eksik görsel | Platform değerleri aynen doğru taşınır. İş kuralı tahmin edilmez; sıfır fiyat varsayılan değerle örtülmez |
+| Metin/bağlantı/form | İ/ı, apostrof, çift tırnak, &, emoji ve satır sonu | Metin veya parametre bozulmaz; gereksiz HTML/JS oluşmaz; URL ve görüntüleme bağlamları ayrı incelenir |
+| Misafir/test oturumu/form | Oturum işlem sırasında biter; returnUrl; hata sonrası alanlar; Enter; ayrı parola gözleri; autofill; gizli alan; hata+odak+scroll | Girdi korunur, yanlış alan engellemez, hata görülebilir. Gerçek kullanıcı hesabı değişmez; kontrollü oturum için uygun test koşulu gerekir |
+| Duyarlı görünüm | Dikey/yatay/dar/uzun; 200% zoom; 991/992 gibi sınırların iki yanı; dokunmatik hover; ekran klavyesi; uzun modal; sabit çubuk | Kontroller ve hata mesajı erişilebilir. Gerçek cihaz/ekran klavyesi yoksa emülasyon sonucu o adla kaydedilir, gerçek cihaz kabulü verilmez |
+| Medya ve isteğe bağlı kaynak | Resim/font/ikon/harici kaynak başarısız; video play reddi; kapatma sonrası oynatma | Yerleşim/ana satış kontrolü bozulmaz; mevcut tekrar kontrolü kullanılabilir, kapatılan video durur. Yeni yedek sistem eklemeden platform davranışı araştırılır |
+| Yaşam döngüsü | Aynı bileşen tekrar/AJAX eklenir; aynı ürün çok kartta; açık bileşen kaldırılır; menü+galeri+Bootstrap/SweetAlert birlikte | Dinleyici/zamanlayıcı/kilit sızıntısı ve global override yok; platform hata penceresinin Escape'i alttaki videoyu kapatmaz. CSS alternatif ayarları ayrıca kontrol edilir |
+| ZIP | Boş geçici dizine çıkar; yolları harf duyarlı ve Türkçe/göreli kaynakları kontrol et; kaynak commit ile karşılaştır | Gerekli dosyalar mevcut; test/rapor/referans/anahtar dosyası yok. Dinamik/harici eski tema bağı ve opaque ayar bilinmeyenleri açık kalır. Bu sonuç platforma yüklenmiş olmak değildir |

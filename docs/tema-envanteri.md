@@ -130,14 +130,14 @@ Listelendi yalnız otomatik envanterdir; incelendi yalnız review.scope içindek
 | `canlitema/assets/menu-left.svg` | 170 | incelendi (belirtilen kapsam); yerelde doğrulandı; platformda doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
 | `canlitema/assets/new-share.svg` | 791 | incelendi (belirtilen kapsam); yerelde doğrulandı; platformda doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
 | `canlitema/assets/notification-svgrepo-com.svg` | 3497 | incelendi (belirtilen kapsam); yerelde doğrulandı; platformda doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
-| `canlitema/assets/product-video-popup.js` | 3421 | incelendi (belirtilen kapsam); düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor | kontrol edildi: yerel ayrıştırma başarılı |
+| `canlitema/assets/product-video-popup.js` | 3502 | incelendi (belirtilen kapsam); düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor | kontrol edildi: yerel ayrıştırma başarılı |
 | `canlitema/assets/scripts.js` | 10405 | incelendi (belirtilen kapsam); düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor | kontrol edildi: yerel ayrıştırma başarılı |
 | `canlitema/assets/smartbanner.css` | 6466 | incelendi (belirtilen kapsam); platformda doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
 | `canlitema/assets/smartbanner.js` | 16949 | incelendi (belirtilen kapsam); düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor | kontrol edildi: yerel ayrıştırma başarılı |
 | `canlitema/assets/style.css` | 312276 | incelendi (belirtilen kapsam); düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
 | `canlitema/assets/tahmini-kargom.js` | 2368 | incelendi (belirtilen kapsam); platformda doğrulama bekliyor | doğrulama bekliyor: missing ) after argument list |
 | `canlitema/assets/urun-fav-sayma-eklenti.js` | 228 | incelendi (belirtilen kapsam); düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor | kontrol edildi: yerel ayrıştırma başarılı |
-| `canlitema/assets/video-gallery.js` | 3877 | incelendi (belirtilen kapsam); düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor | kontrol edildi: yerel ayrıştırma başarılı |
+| `canlitema/assets/video-gallery.js` | 3958 | incelendi (belirtilen kapsam); düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor | kontrol edildi: yerel ayrıştırma başarılı |
 | `canlitema/assets/yazifont/sourcesanspro-regular.otf` | 229588 | incelendi (belirtilen kapsam); platformda doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
 | `canlitema/assets/yeni-heart.svg` | 1575 | incelendi (belirtilen kapsam); yerelde doğrulandı; platformda doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
 | `canlitema/assets/yenicart.svg` | 3293 | incelendi (belirtilen kapsam); yerelde doğrulandı; platformda doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
