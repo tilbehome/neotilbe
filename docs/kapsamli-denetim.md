@@ -58,23 +58,23 @@ Satırlar ilk tespit konumlarını kullanır; dosya düzenlendikçe satır kayab
 | G01-1 P1 | giris_yap.twig:165 eski özel userLogin platformu eziyordu | Override kaldırıldı; AJAX çağrısı, returnUrl ve sentetik 2FA callback T | düzeltildi ve doğrulandı (K/T); Q bekliyor |
 | G01-2 P2 | giris_yap.twig:150 global name seçicisi yanlış parolayı açıyordu | En yakın kapsayıcı; üç alan T | düzeltildi ve doğrulandı (K/T) |
 | G01-3 P1 | scripts.js:8 eski kapatma scroll kilidini bırakıyordu | Ayrı kilit sahipliği; X/overlay/hesap/modal T | düzeltildi ve doğrulandı (K/T); Q bekliyor |
-| K3 P2 | profil.twig:165 sabit 12 taksit, gerçek vade farklı olabilir | Belgede vade/aylik s.36; platform vade alanını göster | doğrulama bekliyor |
-| K4 P2 | odeme/bilgiler/kargo_icerik.twig:35 ücretli dal boş | Orijinaldeki firma.ucret alanını tasarıma bağla | doğrulama bekliyor |
-| H1 P1 | profil.twig:159–186 taksit wrapper kapanışı koşul dışında; taksit yokken fazla div kapanır | Kapanışı aynı if dalına taşı; iki koşul DOM kontrolü | doğrulama bekliyor |
-| H2 P2 | header.twig:226 arama button kapanışı eksik | İki ayrı button; isim ve form semantiği korunacak | doğrulama bekliyor |
-| S1 P1 | odeme/bilgiler/adres.twig:11 TC alanı kaldırılmış | Belge s.8 tc_alani_zorunlu_mu; ayara bağlı alan, Q hata hedefi | doğrulama bekliyor |
-| K5 P2 | style.css:12784 aynı element sınıfları descendant yazılmış | Bileşik selector; alan etkilerini T ölç | doğrulama bekliyor |
-| D1 P2 | sepet/liste.twig:94 ürün ID’sinden sahte favori sayısı | Gerçek veri yoksa sayısal beyanı kaldır | doğrulama bekliyor |
-| D2 P2 | assets/urun-fav-sayma-eklenti.js:1 rastgele favori/sepet/görüntüleme/satış | Rastgele üretimi kaldır; gerçek kaynak olmadan göstermeme | doğrulama bekliyor |
-| D3 P2 | statik_sayfalar/alt_sayfalar/siparis_takip.twig:21 henüz sorgu yokken OrderProcessing ilanı | Veri olmayan Order şemasını kaldır; formu koru | doğrulama bekliyor |
-| S2 P1 | sepet/ozet.twig:15–19,63 biçimli fiyatla matematik, sabit kargo | Ham/biçimli tür ve kargo helper sözleşmesi Q doğrulaması | doğrulama bekliyor |
-| K7 P2 | sepet/liste.twig:12–22 satır ID ve koşulsuz kampanya vaadi | Gerçek ürün ID ve kampanya sonucunu ayır; mağaza kuralı gerekli | doğrulama bekliyor |
-| K6 P2 | assets/cok-al-az-ode-indirim.js:22, tahmini-kargom.js:22, yt-video-kontrol-02.js:1 | Statik JS’de Twig/script etiketi; veri bağlantısı/etkinlik doğrulanmalı | doğrulama bekliyor |
+| K3 P2 | profil.twig:165 sabit 12 taksit, gerçek vade farklı olabilir | Belgede vade/aylik s.36; platform vade alanını göster | düzeltildi ve doğrulandı (K/T sentetik vade); Q bekliyor |
+| K4 P2 | odeme/bilgiler/kargo_icerik.twig:35 ücretli dal boş | Orijinaldeki firma.ucret alanını tasarıma bağla | düzeltildi ve doğrulandı (K: orijinal firma.ucret); Q bekliyor |
+| H1 P1 | profil.twig:159–186 taksit wrapper kapanışı koşul dışında; taksit yokken fazla div kapanır | Kapanışı aynı if dalına taşı; iki koşul DOM kontrolü | düzeltildi ve doğrulandı (K/T: dört koşul) |
+| H2 P2 | header.twig:226 arama button kapanışı eksik | İki ayrı button; isim ve form semantiği korunacak | düzeltildi ve doğrulandı (K/T: iki ayrı GET düğmesi); Q arama bekliyor |
+| S1 P1 | odeme/bilgiler/adres.twig:11 TC alanı kaldırılmış | Belge s.8 tc_alani_zorunlu_mu; ayara bağlı alan, Q hata hedefi | düzeltildi ve doğrulandı (K/T: zorunlu ayar dalı); Q kabulü bekliyor |
+| K5 P2 | style.css:12784 aynı element sınıfları descendant yazılmış | Bileşik selector; alan etkilerini T ölç | düzeltildi ve doğrulandı (T: 375/768/1440 giriş fixture) |
+| D1 P2 | sepet/liste.twig:94 ürün ID’sinden sahte favori sayısı | Gerçek veri yoksa sayısal beyanı kaldır | düzeltildi ve doğrulandı (K: sahte sayı kaldırıldı) |
+| D2 P2 | assets/urun-fav-sayma-eklenti.js:1 rastgele favori/sepet/görüntüleme/satış | Rastgele üretimi kaldır; gerçek kaynak olmadan göstermeme | düzeltildi ve doğrulandı (K/Y: üretim kaldırıldı, dosya yolu korundu) |
+| D3 P2 | statik_sayfalar/alt_sayfalar/siparis_takip.twig:21 henüz sorgu yokken OrderProcessing ilanı | Veri olmayan Order şemasını kaldır; formu koru | düzeltildi ve doğrulandı (K: verisiz Order bildirimi kaldırıldı) |
+| S2 P1 | sepet/ozet.twig:15–19,63 biçimli fiyatla matematik, sabit kargo | Ham/biçimli tür ve kargo helper sözleşmesi Q doğrulaması | doğrulama bekliyor: indirim tutarı K düzeltildi; kargo eşiği/ham tutar açık |
+| K7 P2 | sepet/liste.twig:12–22 satır ID ve koşulsuz kampanya vaadi | Gerçek ürün ID ve kampanya sonucunu ayır; mağaza kuralı gerekli | düzeltildi ve doğrulandı (K: ürün ID, tarafsız adet mesajı); kampanya Q bekliyor |
+| K6 P2 | assets/cok-al-az-ode-indirim.js:22, tahmini-kargom.js:22, yt-video-kontrol-02.js:1 | Statik JS’de Twig/script etiketi; veri bağlantısı/etkinlik doğrulanmalı | doğrulama bekliyor: video dosyası Y/T düzeltildi; iki fiyat JS dosyası açık |
 | S3 P2 | video-listeleme.twig:71–75 defer sonrası hemen global Swiper | Bileşen modelini doğrula; aktif modül belirsiz | doğrulama bekliyor |
 | S4 P2 | header.twig ve birçok dosyada /theme/___shuttle URL | Mevcut varlığı helper’a bağla; olmayan dosyayı icat etme | doğrulama bekliyor |
 | S5 P2 | scripts.js completeBeforePaymentStep; çekirdek completePaymentStep | Kargo dosyasının iki ayrı POST yolu; canlı sürüm doğrulanmalı | doğrulama bekliyor |
-| A1 P2 | giris_yap.twig göz simgeleri i/onclick | Klavye ve erişilebilir ad; görünümü koruyan kontrol | doğrulama bekliyor |
-| A2 P2 | ödeme ve sipariş takip form etiketleri | ID/label bağları, hata odağı, uzun değerler | doğrulama bekliyor |
+| A1 P2 | giris_yap.twig göz simgeleri i/onclick | Klavye ve erişilebilir ad; görünümü koruyan kontrol | düzeltildi ve doğrulandı (T: native Enter/Space, aria-pressed) |
+| A2 P2 | ödeme ve sipariş takip form etiketleri | ID/label bağları, hata odağı, uzun değerler | doğrulama bekliyor: ödeme/takip label bağları K onarıldı; diğer formlar/odak devam |
 | J1 P2 | profil.twig:527 ve diğer sayaç global isimleri | Ayrı scope, eksik DOM guard; kampanya tarihleri işletme ayarı | doğrulama bekliyor |
 | SEC1 P1 | Twig inline JS ve raw çıktı sinyalleri | Veri kaynağı/kaçış bağlamı ve platform autoescape incelenecek | doğrulama bekliyor |
 
@@ -86,3 +86,16 @@ Satırlar ilk tespit konumlarını kullanır; dosya düzenlendikçe satır kayab
 - Değerlendirme fotoğrafı, sosyal kanıt sayıları, kargoya teslim saatleri için gerçek veri kaynağı. Sayı/tarih üretmek çözüm değildir.
 
 Kritik akışlar Q kabulü olmadan **tema tamamlandı** denmeyecek. Harici erişim gerektirmeyen kesin kaynak kusurları sırayla onarılmaya devam edilir.
+
+## Yeni turda saptanan ek konular
+
+| ID | Konum / neden / etki | Çözüm / doğrulama | Durum |
+|---|---|---|---|
+| B1 | sepet/liste.twig ürün hücresi: p-info/product/td kapanışları eksik | İki div ve td kapatıldı; kaynakta satır konteyner dengesi Y | düzeltildi ve doğrulandı (K/Y); gerçek sepet görünümü Q bekliyor |
+| B2 | sepet/liste.twig quantity input data-value-type; referans productQuantityBox data-quantity-type okuyor | Referansın okuduğu niteliğe bağlandı; gerçek referans yardımcıyla 1.5→1.6→1.5 T | düzeltildi ve doğrulandı (K/T); diğer birim/min/max kuralları Q bekliyor |
+| C1 | kart_degerlendirmeler.twig:8,30 Bootstrap 5 me/ms yardımcıları, referans Bootstrap 4 | mr-2/ml-2 ile mevcut pakete bağlandı K | düzeltildi ve doğrulandı (K); canlı kütüphane sürümü Q bekliyor |
+| F1 | kart_favori_listesi.twig:1 kart urun.ID yerine sayfaBilgileri ID kapsayıcısı; orijinalde de var | add/remove başlangıç durumu ve kart veri sözleşmesi birlikte doğrulanmalı; yalnız seçiciyi değiştirince düğmenin tamamen kaybolması riski | doğrulama bekliyor |
+| SEC2 | profil.twig benzer ürün onclick içinde kategori adı; apostrof/özel karakter | Kategori adı JS kodundan çıkarıldı; platform arama route + URL kodlu data niteliği; özel karakter kabulü Q bekliyor | düzeltildi ve doğrulandı (K); Q bekliyor |
+| D4 | sepet/liste.twig rezervasyon rozeti, profil.twig sabit 500 TL ve kargo sayacı | Stok rezervasyonu/kargo saatleri/ücret sözleşmesi işletme ayarıyla doğrulanmalı | doğrulama bekliyor |
+
+G02–G05 yerel kabul ayrıntıları: [platform-uyum-02-kontrol.md](platform-uyum-02-kontrol.md). Bu tur tamamlanan onarımlar, envanterin tamamının kabul edildiği anlamına gelmez.

@@ -59,15 +59,20 @@ const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
     const start = platform.indexOf('function userLogin(');
     assert(start >= 0);
     const login = platform.slice(start, platform.indexOf('function ', start + 9));
+    const quantityStart = platform.indexOf('function productQuantityBox(');
+    const quantity = platform.slice(quantityStart, platform.indexOf('function ', quantityStart + 9));
     const fixture = template.replace(/<script\b[^>]*>[\s\S]*?<\/script>/g, '')
         .replace(/\{%[\s\S]*?%\}/g, '').replace(/\{\{\s*returnUrl\(\)\s*\}\}/g, '/odeme')
         .replace(/\{\{[\s\S]*?\}\}/g, '');
     const payload = {
         fixture,
+        extra: require('./platform-uyum-02-cases.cjs').payload(read),
         templateScripts: [...template.matchAll(/<script\b[^>]*>([\s\S]*?)<\/script>/g)].map(m => m[1]),
         jquery: read('Platform Dosyaları/template-assets/plugins/bootstrap.js').split('\n')[1],
         login,
+        quantity,
         theme: read('canlitema/assets/scripts.js'),
+        video: read('canlitema/assets/yt-video-kontrol-02.js'),
         css: read('Platform Dosyaları/template-assets/plugins/bootstrap.soft.min.css') +
             read('Platform Dosyaları/template-assets/style.min.css') + read('canlitema/assets/style.css')
     };
@@ -110,7 +115,7 @@ const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
             for (let i = 0; i < icons.length; i++) {
                 icons[i].click();
                 check(fields.every((field, j) => field.type === (i === j ? 'text' : 'password')) &&
-                    icons[i].classList.contains('fa-eye-slash'), 'Password isolation ' + i);
+                    icons[i].classList.contains('fa-eye-slash') && icons[i].getAttribute('aria-pressed') === 'true', 'Password isolation ' + i);
                 icons[i].click();
                 check(fields.every(field => field.type === 'password') &&
                     icons[i].classList.contains('fa-eye'), 'Password hide ' + i);
@@ -158,12 +163,79 @@ const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
                 document.body.classList.remove(externalClass);
             }
             check(getComputedStyle(document.body).overflow !== 'hidden', 'Scrolling restored without external lock');
+            for (const [i, fixture] of p.extra.fixtures.entries()) {
+                document.body.innerHTML = '<ul id="price-fixture">' + fixture.markup + '</ul>';
+                check(document.querySelectorAll('#price-fixture > li').length === 1 &&
+                    document.querySelectorAll('.product-rate-wrapper').length === Number(fixture.hasInstallment),
+                    'Conditional price markup ' + i);
+                if (fixture.hasInstallment) check(document.querySelector('.taksit-amount').textContent === '6 X 123,45 TL',
+                    'Installment uses fixture platform term');
+            }
+            for (const fixture of p.extra.tcFixtures) {
+                document.body.innerHTML = '<form>' + fixture.markup + '</form>';
+                const field = document.querySelector('[name="tc"]');
+                check(Boolean(field) === fixture.required && (!field ||
+                    (field.required && field.labels.length === 1 && field.closest('[data-payment-input="tc"]'))),
+                    'Conditional TC field ' + fixture.required);
+            }
+            document.body.innerHTML = p.extra.search;
+            check(document.querySelectorAll('form > .input-box > button').length === 2 &&
+                document.querySelector('input[name="k"]') && document.querySelector('form').method === 'get',
+                'Mobile search retains GET field and separate submit controls');
+            document.body.innerHTML = '';
+            (0, eval)(p.video);
+            window.openVideoPopup();
+            window.closeVideoPopup({ target: { id: 'close-popup-987' } });
+            check(true, 'Optional video asset tolerates missing elements');
+            const existingOpen = window.openVideoPopup;
+            const existingClose = window.closeVideoPopup;
+            (0, eval)(p.video);
+            check(window.openVideoPopup === existingOpen && window.closeVideoPopup === existingClose,
+                'Optional video asset preserves existing handlers');
+            (0, eval)(p.quantity);
+            document.body.innerHTML = '<div class="product-quantity"><input name="quantity" data-quantity-type="16" value="1.5"></div>';
+            window.productQuantityBox('increment', '.product-quantity');
+            check(document.querySelector('input').value === '1.6', 'Reference quantity helper accepts decimal unit');
+            window.productQuantityBox('decrement', '.product-quantity');
+            check(document.querySelector('input').value === '1.5', 'Reference quantity helper decrements decimal unit');
             return results;
         }).toString() + ')(' + JSON.stringify(payload) + ')'
     });
     assert(!result.exceptionDetails, JSON.stringify(result.exceptionDetails));
     console.log(result.result.value.map(label => 'PASS ' + label).join('\n'));
-    console.log('Passed:', result.result.value.length, '(offline browser; platform/server behavior not certified)');
+    const setup = await send('Runtime.evaluate', { expression:
+        'document.body.innerHTML = ' + JSON.stringify(fixture) + ';' +
+        'document.head.insertAdjacentHTML("beforeend", \'<meta name="viewport" content="width=device-width, initial-scale=1">\');' +
+        'document.querySelector(".toggle-password").focus();' });
+    assert(!setup.exceptionDetails);
+    await send('Input.dispatchKeyEvent', { type: 'keyDown', key: 'Enter', code: 'Enter', windowsVirtualKeyCode: 13, text: '\r' });
+    await send('Input.dispatchKeyEvent', { type: 'keyUp', key: 'Enter', code: 'Enter', windowsVirtualKeyCode: 13 });
+    let keyboard = await send('Runtime.evaluate', { returnByValue: true, expression:
+        'document.querySelector("input.password").type === "text" && document.activeElement.getAttribute("aria-pressed") === "true"' });
+    if (!keyboard.result.value) console.log(await send('Runtime.evaluate', { returnByValue: true, expression:
+        '({active:document.activeElement.outerHTML, type:document.querySelector("input.password").type})' }));
+    assert.equal(keyboard.result.value, true, 'Native Enter password toggle');
+    await send('Input.dispatchKeyEvent', { type: 'keyDown', key: ' ', code: 'Space', windowsVirtualKeyCode: 32 });
+    await send('Input.dispatchKeyEvent', { type: 'keyUp', key: ' ', code: 'Space', windowsVirtualKeyCode: 32 });
+    keyboard = await send('Runtime.evaluate', { returnByValue: true, expression:
+        'document.querySelector("input.password").type === "password"' });
+    assert.equal(keyboard.result.value, true, 'Native Space password toggle');
+    console.log('PASS Native keyboard Enter/Space');
+    for (const width of [375, 768, 1440]) {
+        await send('Emulation.setDeviceMetricsOverride', { width, height: 900, deviceScaleFactor: 1, mobile: false });
+        const layout = await send('Runtime.evaluate', { returnByValue: true, expression: `(() => {
+            const input = document.querySelector('.login-form input.password');
+            const button = document.querySelector('.login-form .toggle-password');
+            const a = input.getBoundingClientRect(), b = button.getBoundingClientRect();
+            return { inputHeight: getComputedStyle(input).height, named: Boolean(button.getAttribute('aria-label')),
+                inside: b.left >= a.left && b.right <= a.right, overflow: document.documentElement.scrollWidth > innerWidth };
+        })()` });
+        assert.equal(layout.result.value.inputHeight, '60px', 'Correct compound login selector at ' + width);
+        assert(layout.result.value.named && layout.result.value.inside && !layout.result.value.overflow,
+            'Login control layout at ' + width + ': ' + JSON.stringify(layout.result.value));
+        console.log('PASS Login fixture layout', width);
+    }
+    console.log('Passed:', result.result.value.length + 5, '(offline browser; platform/server behavior not certified)');
 })().catch(error => {
     console.error(error);
     process.exitCode = 1;
