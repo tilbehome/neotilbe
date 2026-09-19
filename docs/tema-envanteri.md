@@ -133,7 +133,7 @@ Listelendi yalnız otomatik envanterdir; incelendi yalnız review.scope içindek
 | `canlitema/assets/product-video-popup.js` | 3421 | incelendi (belirtilen kapsam); düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor | kontrol edildi: yerel ayrıştırma başarılı |
 | `canlitema/assets/scripts.js` | 10405 | incelendi (belirtilen kapsam); düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor | kontrol edildi: yerel ayrıştırma başarılı |
 | `canlitema/assets/smartbanner.css` | 6466 | incelendi (belirtilen kapsam); platformda doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
-| `canlitema/assets/smartbanner.js` | 16717 | incelendi (belirtilen kapsam); düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor | kontrol edildi: yerel ayrıştırma başarılı |
+| `canlitema/assets/smartbanner.js` | 16949 | incelendi (belirtilen kapsam); düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor | kontrol edildi: yerel ayrıştırma başarılı |
 | `canlitema/assets/style.css` | 312276 | incelendi (belirtilen kapsam); düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor | 0 sabit şablon bağı; 0 inceleme sinyali |
 | `canlitema/assets/tahmini-kargom.js` | 2368 | incelendi (belirtilen kapsam); platformda doğrulama bekliyor | doğrulama bekliyor: missing ) after argument list |
 | `canlitema/assets/urun-fav-sayma-eklenti.js` | 228 | incelendi (belirtilen kapsam); düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor | kontrol edildi: yerel ayrıştırma başarılı |

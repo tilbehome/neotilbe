@@ -454,5 +454,13 @@
     "source": "tema kodu",
     "status": "düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor",
     "evidence": "platform-uyum-09-kontrol.md"
+  },
+  {
+    "id": "SB2",
+    "location": "assets/smartbanner.js:17; show/hide",
+    "remedy": "Gerçek pushSelector hedefinin margin/padding ve geçiş sınıfı korunur",
+    "source": "tema kodu",
+    "status": "düzeltildi; yerelde doğrulandı; platformda doğrulama bekliyor",
+    "evidence": "platform-uyum-10-kontrol.md"
   }
 ]

@@ -1038,10 +1038,10 @@
     "evidence": "platform-uyum-06-kontrol.md"
   },
   "canlitema/assets/smartbanner.js": {
-    "scope": "06 raporundaki somut onarım; dosya geneli kabul değil",
+    "scope": "06 raporundaki somut onarım; dosya geneli kabul değil; SB2 hedef boşluğu; bütün dosya kabulü değil",
     "fixed": true,
     "local": true,
-    "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md"
+    "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md; platform-uyum-10-kontrol.md"
   },
   "canlitema/moduller/odeme/bilgiler/kargo_icerik.twig": {
     "scope": "06 raporundaki somut onarım; dosya geneli kabul değil",

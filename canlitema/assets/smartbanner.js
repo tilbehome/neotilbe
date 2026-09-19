@@ -14,9 +14,10 @@
   var isEdge = /Edge/i.test(UA);
 
   var SmartBanner = function(options) {
-    // Get the original margin-top of the HTML element so we can take that into account.
-    this.origHtmlMargin = parseFloat($('html').css('margin-top'));
     this.options = $.extend({}, $.smartbanner.defaults, options);
+    // Preserve the spacing of the configured target and the property this mode changes.
+    this.origPushMargin = parseFloat($(this.options.pushSelector).css('margin-top')) || 0;
+    this.origPushPadding = parseFloat($(this.options.pushSelector).css('padding-top')) || 0;
 
     // Check if it's already a standalone web app or running within a webui view of an app (not mobile safari).
     var standalone = navigator.standalone;
@@ -227,6 +228,7 @@
 
     show: function(callback) {
       var banner = $('#smartbanner');
+      var pushTarget = $(this.options.pushSelector);
       banner.stop();
 
       if (this.options.layer) {
@@ -236,14 +238,14 @@
           .show();
         $(this.options.pushSelector)
           .animate({
-            paddingTop: this.origHtmlMargin + (this.bannerHeight * this.scale)
+            paddingTop: this.origPushPadding + (this.bannerHeight * this.scale)
           }, this.options.speedIn, 'swing', callback);
       }
       else {
         if ($.support.transition) {
           banner.animate({ top: 0 }, this.options.speedIn).addClass('shown');
           var transitionCallback = function() {
-            $('html').removeClass('sb-animation');
+            pushTarget.removeClass('sb-animation');
             if (callback) {
               callback();
             }
@@ -252,7 +254,7 @@
             .addClass('sb-animation')
             .one($.support.transition.end, transitionCallback)
             .emulateTransitionEnd(this.options.speedIn)
-            .css('margin-top', this.origHtmlMargin + (this.bannerHeight * this.scale));
+            .css('margin-top', this.origPushMargin + (this.bannerHeight * this.scale));
         }
         else {
           banner
@@ -264,6 +266,7 @@
 
     hide: function(callback) {
       var banner = $('#smartbanner');
+      var pushTarget = $(this.options.pushSelector);
       banner.stop();
 
       if (this.options.layer) {
@@ -275,7 +278,7 @@
 
         $(this.options.pushSelector)
           .animate({
-            paddingTop: this.origHtmlMargin
+            paddingTop: this.origPushPadding
           }, this.options.speedIn, 'swing', callback);
       }
       else {
@@ -291,7 +294,7 @@
               .removeClass('shown');
           }
           var transitionCallback = function() {
-            $('html').removeClass('sb-animation');
+            pushTarget.removeClass('sb-animation');
             if (callback) {
               callback();
             }
@@ -300,7 +303,7 @@
             .addClass('sb-animation')
             .one($.support.transition.end, transitionCallback)
             .emulateTransitionEnd(this.options.speedOut)
-            .css('margin-top', this.origHtmlMargin);
+            .css('margin-top', this.origPushMargin);
         }
         else {
           banner.slideUp(this.options.speedOut).removeClass('shown');

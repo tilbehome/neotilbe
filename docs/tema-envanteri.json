@@ -3050,8 +3050,8 @@
   {
     "file": "canlitema/assets/smartbanner.js",
     "category": "JavaScript",
-    "bytes": 16717,
-    "sha256": "18766e8d6f730cb4a3a7b189e4627b867bfa648cf358cb0247cfb0d324cf8403",
+    "bytes": 16949,
+    "sha256": "899fad13b701d31bfcb71ceafba923ea345344f50022b39e1db458cafb83df2a",
     "status": "incelendi (belirtilen kapsam)",
     "stages": {
       "listelendi": true,
@@ -3061,10 +3061,10 @@
       "platformdaDogrulamaBekliyor": true
     },
     "review": {
-      "scope": "06 raporundaki somut onarım; dosya geneli kabul değil",
+      "scope": "06 raporundaki somut onarım; dosya geneli kabul değil; SB2 hedef boşluğu; bütün dosya kabulü değil",
       "fixed": true,
       "local": true,
-      "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md"
+      "evidence": "platform-uyum-06-kontrol.md; platform-uyum-05-kontrol.md; platform-uyum-10-kontrol.md"
     },
     "reason": "Kaynak envanteri tarandı; dosyanın tüm render/işlev/görsel durumları henüz doğrulanmadı.",
     "syntax": "kontrol edildi: yerel ayrıştırma başarılı",
@@ -3073,7 +3073,7 @@
       {
         "kind": "metadata",
         "lines": [
-          376
+          379
         ]
       }
     ]
