@@ -78,8 +78,8 @@
     <script type="text/javascript">
         var swal_alert_timer = {{ temaAyarlari('genel', 'alert_timer') }};
     </script>
-    <script type="text/javascript" src="{{ temaDosyalari('/assets/smartbanner.js') }}" defer/></script>
-    <script type="text/javascript" src="{{ temaDosyalari('/assets/scripts.js') }}" /></script>
+    <script type="text/javascript" src="{{ temaDosyalari('/assets/smartbanner.js') }}" defer></script>
+    <script type="text/javascript" src="{{ temaDosyalari('/assets/scripts.js') }}"></script>
      <script type="text/javascript">
         function isWebView() {
             const userAgent = navigator.userAgent || navigator.vendor || window.opera;
@@ -88,7 +88,7 @@
         }
 
         $(function() {
-            if (!isWebView()) {
+            if (!isWebView() && typeof $.smartbanner === 'function') {
                 $.smartbanner({ daysHidden: 90, daysReminder: 15, title:'Tilbe Home' });
             };
           });

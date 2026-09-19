@@ -5,6 +5,11 @@
     factory(root.jQuery);
   }
 })(this, function($) {
+  function escapeHtml(value) {
+    return String(value == null ? '' : value).replace(/[&<>"']/g, function (character) {
+      return {'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[character];
+    });
+  }
   var UA = navigator.userAgent;
   var isEdge = /Edge/i.test(UA);
 
@@ -155,15 +160,15 @@
       var banner = (
         '<div id="smartbanner" class="' + this.type + '">' +
           '<div class="sb-container">' +
-            '<a href="#" class="sb-close">&times;</a>' +
-            '<span class="sb-icon"><img src="https://cdn.qukasoft.com/f/525751/cDhXVUoyVTArYkI4Tmk4Z1RvTTZKYms9/l/logo-85399814-sw1102sh205.webp"></span>' +
+            '<a href="#" class="sb-close" aria-label="Uygulama önerisini kapat">&times;</a>' +
+            '<span class="sb-icon"><img src="https://cdn.qukasoft.com/f/525751/cDhXVUoyVTArYkI4Tmk4Z1RvTTZKYms9/l/logo-85399814-sw1102sh205.webp" alt="Tilbe Home"></span>' +
             '<div class="sb-info">' +
-              '<strong>' + this.title + '</strong>' +
-              '<span>' + this.author + '</span>' +
-              '<span>' + inStore + '</span>' +
+              '<strong>' + escapeHtml(this.title) + '</strong>' +
+              '<span>' + escapeHtml(this.author) + '</span>' +
+              '<span>' + escapeHtml(inStore) + '</span>' +
             '</div>' +
-            '<a href="' + link + '" class="sb-button">' +
-              '<span>' + this.options.button + '</span>' +
+            '<a href="' + escapeHtml(link) + '" class="sb-button">' +
+              '<span>' + escapeHtml(this.options.button) + '</span>' +
             '</a>' +
           '</div>' +
         '</div>'
@@ -229,7 +234,7 @@
           .animate({ top: 0, display: 'block' }, this.options.speedIn)
           .addClass('shown')
           .show();
-        $(this.pushSelector)
+        $(this.options.pushSelector)
           .animate({
             paddingTop: this.origHtmlMargin + (this.bannerHeight * this.scale)
           }, this.options.speedIn, 'swing', callback);
@@ -243,7 +248,7 @@
               callback();
             }
           };
-          $(this.pushSelector)
+          $(this.options.pushSelector)
             .addClass('sb-animation')
             .one($.support.transition.end, transitionCallback)
             .emulateTransitionEnd(this.options.speedIn)
@@ -268,7 +273,7 @@
         }, this.options.speedIn)
         .removeClass('shown');
 
-        $(this.pushSelector)
+        $(this.options.pushSelector)
           .animate({
             paddingTop: this.origHtmlMargin
           }, this.options.speedIn, 'swing', callback);
@@ -291,7 +296,7 @@
               callback();
             }
           };
-          $(this.pushSelector)
+          $(this.options.pushSelector)
             .addClass('sb-animation')
             .one($.support.transition.end, transitionCallback)
             .emulateTransitionEnd(this.options.speedOut)
@@ -421,7 +426,7 @@
   }
 
   // http://blog.alexmaccaw.com/css-transitions
-  $.fn.emulateTransitionEnd = function(duration) {
+  if (!$.fn.emulateTransitionEnd) $.fn.emulateTransitionEnd = function(duration) {
     var called = false, $el = this;
     $(this).one($.support.transition.end, function() {
       called = true;

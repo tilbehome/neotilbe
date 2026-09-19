@@ -54,10 +54,10 @@
                                                         <div class="col-md-4">
                                                             {% if kategori.kapak == true %}
                                                                 <a class="cateogory-image" href="{{ kategori.link }}">
-                                                                    <img src="{{ kategori.kapak }}" class="mr-2" alt="" />
+                                                                    <img src="{{ kategori.kapak }}" class="mr-2" alt="{{ kategori.adi|e }}" />
                                                                 </a>
                                                             {% endif %}
-                                                       
+                                                        </div>
                                                         {% endif %}    
                                                         
                                                     </div>

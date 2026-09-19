@@ -21,7 +21,7 @@
             <div class="accordion" id="help-accordion-{{ modul.ozel_data_kodu }}-{{ sayfaBilgileri('ID') }}">
                 {% for madde in sayfaBilgileri('maddeler') %}
                     <div class="card">
-                        <div class="card-header" id="help-heading-{{ modul.ozel_data_kodu }}-{{ madde.ID }}">
+                        <div class="card-header" data-help-entry-id="{{ madde.ID }}" id="help-heading-{{ modul.ozel_data_kodu }}-{{ madde.ID }}">
                             <a href="javascript:;" class="{{ madde.aktif ? '' : 'collapsed' }}" data-toggle="collapse" 
                             data-target="#help-entry-{{ modul.ozel_data_kodu }}-{{ madde.ID }}" aria-expanded="{{ madde.aktif ? 'true' : 'false' }}"
                             aria-controls="help-entry-{{ modul.ozel_data_kodu }}-{{ madde.ID }}">

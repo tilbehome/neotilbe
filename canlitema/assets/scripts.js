@@ -184,3 +184,15 @@ function tilbePlayProductVideo(button) {
         else started();
     } catch (error) { failed(); }
 }
+
+// Existing help links use legacy fragments; panel IDs are now instance-specific.
+(function () {
+    function scrollHelpEntry() {
+        var match = /^#accordion-head-(\d+)$/.exec(window.location.hash);
+        if (!match || document.getElementById(window.location.hash.slice(1))) return;
+        var heading = document.querySelector('[data-help-entry-id="' + match[1] + '"]');
+        if (heading) heading.scrollIntoView();
+    }
+    $(scrollHelpEntry);
+    $(window).off('hashchange.tilbeHelp').on('hashchange.tilbeHelp', scrollHelpEntry);
+})();

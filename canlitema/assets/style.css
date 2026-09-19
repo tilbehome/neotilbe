@@ -6002,7 +6002,7 @@ header.desktop .mega-menu .nav-link::after {
     display: none
 }
 
-header.desktop .mega-menu .nav-item:focus .nav-link,header.desktop .mega-menu .nav-item:hover .nav-link {
+header.desktop .mega-menu .nav-item:focus-within .nav-link,header.desktop .mega-menu .nav-item:hover .nav-link {
     color: var(--menu-color-hover);
     border-bottom: 1px solid #000;
     transition: all var(--transition-time)
@@ -6031,7 +6031,7 @@ header.desktop .mega-menu .dropdown-menu {
     border-top: 0
 }
 
-header.desktop .mega-menu .dropdown .dropdown-menu:hover,header.desktop .mega-menu .dropdown:hover .dropdown-menu {
+header.desktop .mega-menu .dropdown .dropdown-menu:hover,header.desktop .mega-menu .dropdown:hover .dropdown-menu,header.desktop .mega-menu .dropdown:focus-within .dropdown-menu {
     display: block!important
 }
 
@@ -8735,9 +8735,9 @@ header.desktop .header-bar .bar-cart .icon .count {
 .card-product .it-over {
     width: 100%;
     background: rgb(255 255 255/80%);
-    color: #fff;
+    color: #333;
     height: 50px;
-    cursor: pointer
+    cursor: default
 }
 
 .card-product .carousel-control-next i,.card-product .carousel-control-prev i {
@@ -15490,3 +15490,8 @@ body.tilbe-video-open { overflow: hidden; }
 }
 [data-tilbe-video-gallery] [data-video-src]:focus-visible,
 [data-tilbe-video-gallery] [data-video-close]:focus-visible { outline: 2px solid #ff7800; outline-offset: 2px; }
+
+/* Visible keyboard focus within the existing theme navigation. */
+header.desktop .mega-menu a:focus-visible,
+.thkm456-menu a:focus-visible,
+.thkm456-menu button:focus-visible { outline: 2px solid #333; outline-offset: 2px; }
