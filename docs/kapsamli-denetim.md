@@ -89,6 +89,8 @@ Kritik akışlar Q kabulü olmadan **tema tamamlandı** denmeyecek. Harici eriş
 
 ## Yeni turda saptanan ek konular
 
+19.09.2026 önizleme turu: [ayrı tema hazırlığı ve S4/J2 onarımları](onizleme-hazirligi.md). S4 için 37 yerel görsel bağlantısı onarıldı; dinamik/CSS/ayar bağlantıları ve Q kabulü bekliyor. J2 sayaç örneklerinin izolasyonu yerel olarak doğrulandı; kampanya tarihi doğrulanmadı. Admin önizlemesi aktif goldtheme'e ait, bu dalı içermiyor ve bağımsız test mağazası değildir.
+
 | ID | Konum / neden / etki | Çözüm / doğrulama | Durum |
 |---|---|---|---|
 | B1 | sepet/liste.twig ürün hücresi: p-info/product/td kapanışları eksik | İki div ve td kapatıldı; kaynakta satır konteyner dengesi Y | düzeltildi ve doğrulandı (K/Y); gerçek sepet görünümü Q bekliyor |

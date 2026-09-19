@@ -27,6 +27,7 @@ __MACOSX/
 /private-exports/
 /customer-exports/
 /order-exports/
+/artifacts/
 
 # Contains literal API credentials in bundled PHP examples; keep original locally.
 /Platform Dökümanları/web_servis_ornek.zip
