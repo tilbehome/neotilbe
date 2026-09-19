@@ -161,17 +161,6 @@
             }
         }
     </script>
-<script>
-    function userLogin(form) {
-        var rememberMe = document.getElementById("remember-me").checked;
-        var rememberMeInput = document.createElement("input");
-        rememberMeInput.type = "hidden";
-        rememberMeInput.name = "remember-me";
-        rememberMeInput.value = rememberMe ? "1" : "0";
-        form.appendChild(rememberMeInput);
-        return true; // form gönderilmeli
-    }
-</script>
 
  
 {% endblock %}
