@@ -15,9 +15,9 @@
         <div class="discount">
             <span>{{ hediye_ceki.indirim }}</span>
         </div>
-        <div class="code" onclick="copyElement('voucher-code', true)">
+        <div class="code">
             <span class="value" id="voucher-code-{{ hediye_ceki.ID }}">{{ hediye_ceki.kod }}</span>
-            <button type="button" class="btn btn-copy"
+            <button type="button" class="btn btn-copy" aria-label="Hediye çeki kodunu kopyala"
                     onclick="copyElement('voucher-code-{{ hediye_ceki.ID }}', true)"><i class="far fa-copy"></i>
             </button>
         </div>

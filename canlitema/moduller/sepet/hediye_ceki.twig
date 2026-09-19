@@ -22,7 +22,7 @@
        <p>İndirim kodunuzu girerek uygula tıklayın.</p>
         <form action="" method="POST" class="voucher-code-form" onsubmit="return useVoucherCode(this, 'refresh-page')">
             <div class="input-group">
-                <input class="form-control" name="code" value="" />
+                <input class="form-control" name="code" aria-label="İndirim kodu" value="" />
                 <div class="input-group-append">
                     <button type="submit" class="btn btn-secondary btn-sm">
                         {{ cevir('kullan') }}

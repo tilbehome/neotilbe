@@ -2,8 +2,8 @@
 
     <div class="row">
         <div class="col-md-12">
-            <label>{{ cevir('unvan') }} <span class="text-danger">*</span></label>
-	        <input type="text" class="form-control m-input " name="dealer_name" value="{{ kullaniciBilgileri('bayi_unvan') }}">
+            <label for="tilbe-bayilik_bilgilerim-dealer_name">{{ cevir('unvan') }} <span class="text-danger">*</span></label>
+	        <input id="tilbe-bayilik_bilgilerim-dealer_name" type="text" class="form-control m-input " name="dealer_name" value="{{ kullaniciBilgileri('bayi_unvan') }}">
         </div>
     </div>
 
@@ -11,12 +11,12 @@
 
     <div class="row">
         <div class="col-md-6">
-            <label>{{ cevir('adiniz') }} <span class="text-danger">*</span></label>
-	        <input type="text" class="form-control m-input " name="name" value="{{ kullaniciBilgileri('ad') }}">
+            <label for="tilbe-bayilik_bilgilerim-name">{{ cevir('adiniz') }} <span class="text-danger">*</span></label>
+	        <input id="tilbe-bayilik_bilgilerim-name" type="text" class="form-control m-input " name="name" value="{{ kullaniciBilgileri('ad') }}">
         </div>
         <div class="col-md-6">
-            <label>{{ cevir('soyadiniz') }} <span class="text-danger">*</span></label>
-	        <input type="text" class="form-control m-input " name="lastname" value="{{ kullaniciBilgileri('soyad') }}">
+            <label for="tilbe-bayilik_bilgilerim-lastname">{{ cevir('soyadiniz') }} <span class="text-danger">*</span></label>
+	        <input id="tilbe-bayilik_bilgilerim-lastname" type="text" class="form-control m-input " name="lastname" value="{{ kullaniciBilgileri('soyad') }}">
         </div> 
     </div>  
 
@@ -26,13 +26,13 @@
 
     <div class="row">
         <div class="col-md-6">
-            <label>{{ cevir('tc_kimlik_no') }}</label>
-	        <input type="text" class="form-control m-input " name="national_id" value="{{ kullaniciBilgileri('tc_no') }}">
+            <label for="tilbe-bayilik_bilgilerim-national_id">{{ cevir('tc_kimlik_no') }}</label>
+	        <input id="tilbe-bayilik_bilgilerim-national_id" type="text" class="form-control m-input " name="national_id" value="{{ kullaniciBilgileri('tc_no') }}">
         </div>
         <div class="col-md-6">
             <div class="">
-                <label>{{ cevir('cep_telefonu') }}</label>
-	            <input type="text" class="form-control form-phone-control m-input " name="mobile_phone" value="{{ kullaniciBilgileri('cep_telefonu') }}">
+                <label for="tilbe-bayilik_bilgilerim-mobile_phone">{{ cevir('cep_telefonu') }}</label>
+	            <input id="tilbe-bayilik_bilgilerim-mobile_phone" type="text" class="form-control form-phone-control m-input " name="mobile_phone" value="{{ kullaniciBilgileri('cep_telefonu') }}">
             </div>
         </div>
     </div>
@@ -94,8 +94,8 @@
     <div class="row">
         <div class="col-md-4">
             <div class="">
-                <label>{{ cevir('ulke') }}</label>
-                <select name="country" class="form-control" 
+                <label for="tilbe-bayilik_bilgilerim-country">{{ cevir('ulke') }}</label>
+                <select id="tilbe-bayilik_bilgilerim-country" name="country" class="form-control"
                     onChange="selectChangeCountry('.dealer-info-form', 'country', 'city', 'district')">
                     {% for ulke in ulkeler(kullaniciBilgileri('ulke')) %}
                         <option {% if ulke.selected %} selected {% endif %} value="{{ ulke.ID }}">{{ ulke.adi }}</option>
@@ -105,8 +105,8 @@
         </div>
         <div class="col-md-4">
             <div class="">
-                <label>{{ cevir('il') }}</label>
-                <select name="city" class="form-control"
+                <label for="tilbe-bayilik_bilgilerim-city">{{ cevir('il') }}</label>
+                <select id="tilbe-bayilik_bilgilerim-city" name="city" class="form-control"
                     onChange="selectChangeCity('.dealer-info-form', 'city', 'district')">
                     {% for il in iller(kullaniciBilgileri('ulke'), kullaniciBilgileri('il')) %}
                         <option {% if il.selected %} selected {% endif %} value="{{ il.ID }}">{{ il.adi }}</option>
@@ -116,8 +116,8 @@
         </div>
         <div class="col-md-4">
             <div class="">
-                <label>{{ cevir('ilce') }}</label>
-                <select name="district" class="form-control">
+                <label for="tilbe-bayilik_bilgilerim-district">{{ cevir('ilce') }}</label>
+                <select id="tilbe-bayilik_bilgilerim-district" name="district" class="form-control">
                     {% for ilce in ilceler(kullaniciBilgileri('il'), kullaniciBilgileri('ilce')) %}
                         <option {% if ilce.selected %} selected {% endif %} value="{{ ilce.ID }}">{{ ilce.adi }}</option>
                     {% endfor %}
@@ -128,8 +128,8 @@
 
     <div class="mt-3"></div>
 
-	<label>{{ cevir('adres') }}</label>
-	<textarea name="address" rows="" cols="" class="form-control">{{ kullaniciBilgileri('adres') }}</textarea>
+	<label for="tilbe-bayilik_bilgilerim-address">{{ cevir('adres') }}</label>
+	<textarea id="tilbe-bayilik_bilgilerim-address" name="address" rows="" cols="" class="form-control">{{ kullaniciBilgileri('adres') }}</textarea>
 
     <div class="mt-3"></div>
 
@@ -150,7 +150,7 @@
         <div class="row">
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label form="inputDealerCountry">{{ cevir('ulke') }} </label> 
+                            <label for="inputDealerCountry">{{ cevir('ulke') }} </label>
                             <select name="dealer_country" id="inputDealerCountry" class="form-control" 
                                 onChange="selectChangeCountry('.dealer-info-form', 'dealer_country', 'dealer_city', 'dealer_district')">
                                 {% for ulke in ulkeler(kullaniciBilgileri('bayi_ulke')) %}
@@ -163,7 +163,7 @@
 
                 <div class="col-md-4">
                     <div class="form-group">
-                        <label form="inputDealerCity">{{ cevir('il') }}</label>
+                        <label for="inputDealerCity">{{ cevir('il') }}</label>
                         <select name="dealer_city"  id="inputDealerCity" class="form-control"
                             onChange="selectChangeCity('.dealer-info-form', 'dealer_city', 'dealer_district')">
                             {% for il in iller(kullaniciBilgileri('bayi_ulke'), kullaniciBilgileri('bayi_il')) %}
@@ -175,7 +175,7 @@
                 
                 <div class="col-md-4">
                     <div class="form-group">
-                        <label form="inputDealerDistrict">{{ cevir('ilce') }}</label>
+                        <label for="inputDealerDistrict">{{ cevir('ilce') }}</label>
                         <select name="dealer_district" id="inputDealerDistrict" class="form-control">
                             {% for ilce in ilceler(kullaniciBilgileri('bayi_il'), kullaniciBilgileri('bayi_ilce')) %}
                                 <option {% if ilce.selected %} selected {% endif %} value="{{ ilce.ID }}">{{ ilce.adi }}</option>

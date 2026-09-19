@@ -19,58 +19,46 @@
 
 
 <!-- 💳 Havale / EFT Bildirim Formu -->
-<div class="eft-form-wrapper" itemscope itemtype="https://schema.org/PaymentAction">
-  <meta itemprop="url" content="https://www.tilbehome.com/havale-bildirim">
-  <meta itemprop="agent" content="Tilbe Home">
-  <meta itemprop="paymentMethod" content="https://schema.org/BankTransfer">
-  <meta itemprop="actionStatus" content="https://schema.org/ActiveActionStatus">
+<div class="eft-form-wrapper">
 
-  <h1 itemprop="name">Havale / EFT Bildirimi</h1>
-  <p itemprop="description">
+  <h1>Havale / EFT Bildirimi</h1>
+  <p>
     Siparişinizin ödemesini banka havalesi veya EFT yoluyla yaptıysanız, aşağıdaki formu doldurarak bize bildirebilirsiniz.
   </p>
 
   <form class="eft-form" action="" method="post"
-        onsubmit="return bankEftForm(this)"
-        itemprop="potentialAction" itemscope itemtype="https://schema.org/PayAction">
+        onsubmit="return bankEftForm(this)">
 
-      <meta itemprop="target" content="https://www.tilbehome.com/havale-bildirim">
-      <meta itemprop="paymentMethod" content="BankTransfer">
-      <meta itemprop="instrument" content="BankAccount">
 
-      <label>{{ cevir('siparis_numarasi') }} <span class="text-danger">*</span></label>
-      <input type="text" class="form-control m-input" name="order_no" value="" itemprop="orderNumber">
+      <label for="tilbe-havale_bildirim-order_no">{{ cevir('siparis_numarasi') }} <span class="text-danger">*</span></label>
+      <input id="tilbe-havale_bildirim-order_no" type="text" class="form-control m-input" name="order_no" value="">
       <div class="mt-2"></div>
 
       <div class="">
-        <label>{{ cevir('odeme_yapilan_banka') }} <span class="text-danger">*</span></label>
-        <select name="bank_id" class="form-control selectpicker" 
-                data-live-search="true" data-size="10" data-divider="true" data-actions-box="true"
-                itemprop="recipient" itemscope itemtype="https://schema.org/BankAccount">
+        <label for="tilbe-havale_bildirim-bank_id">{{ cevir('odeme_yapilan_banka') }} <span class="text-danger">*</span></label>
+        <select id="tilbe-havale_bildirim-bank_id" name="bank_id" class="form-control selectpicker"
+                data-live-search="true" data-size="10" data-divider="true" data-actions-box="true">
             {% for hesap in havaleBilgileri() %}
-              <option value="{{ hesap.ID }}" itemprop="name">{{ hesap.banka_adi }}</option>
+              <option value="{{ hesap.ID }}">{{ hesap.banka_adi }}</option>
             {% endfor %}
         </select>
       </div>
 
       <div class="mt-2"></div>
       <div class="">
-        <label>{{ cevir('tarih') }} <span class="text-danger">*</span></label>
-        <input type="text" name="date" class="form-control datepicker"
-               value="{{ 'now'|date('Y-m-d') }}" readonly="readonly" itemprop="startTime">
+        <label for="tilbe-havale_bildirim-date">{{ cevir('tarih') }} <span class="text-danger">*</span></label>
+        <input id="tilbe-havale_bildirim-date" type="text" name="date" class="form-control datepicker"
+               value="{{ 'now'|date('Y-m-d') }}" readonly="readonly">
       </div>
 
       <div class="mt-4"></div>
-      <button type="submit" class="btn btn-success" itemprop="result"> {{ cevir('gonder') }} </button>
+      <button type="submit" class="btn btn-success"> {{ cevir('gonder') }} </button>
   </form>
 </div>
 
 
 <!-- 🏦 Banka Bilgileri Tablosu -->
-<div class="table-responsive mt-3" itemscope itemtype="https://schema.org/BankAccount">
-  <meta itemprop="url" content="https://www.tilbehome.com/havale-bildirim">
-  <meta itemprop="accountType" content="Current">
-  <meta itemprop="bankAccountType" content="CheckingAccount">
+<div class="table-responsive mt-3">
 
   <table class="table table-bordered table-striped table-sm">
       <thead>
@@ -83,23 +71,13 @@
       </thead>
       <tbody>
           {% for hesap in havaleBilgileri() %}
-              <tr itemscope itemtype="https://schema.org/BankAccount">
-                  <td itemprop="bankName">{{ hesap.banka_adi }}</td>
-                  <td itemprop="branchCode">{{ hesap.banka_sube_adi }} {{ hesap.banka_sube_kodu }}</td>
-                  <td itemprop="identifier">{{ hesap.banka_iban_no }}</td>
-                  <td itemprop="accountHolderName">{{ hesap.hesap_sahibi }}</td>
+              <tr>
+                  <td>{{ hesap.banka_adi }}</td>
+                  <td>{{ hesap.banka_sube_adi }} {{ hesap.banka_sube_kodu }}</td>
+                  <td>{{ hesap.banka_iban_no }}</td>
+                  <td>{{ hesap.hesap_sahibi }}</td>
               </tr>
           {% endfor %}
       </tbody>
   </table>
-</div>
-
-<!-- 🏢 Marka Bilgisi -->
-<div itemscope itemtype="https://schema.org/Organization" itemprop="agent">
-  <meta itemprop="name" content="Tilbe Home">
-  <meta itemprop="url" content="https://www.tilbehome.com">
-  <meta itemprop="logo" content="https://www.tilbehome.com/theme/logo.png">
-  <meta itemprop="sameAs" content="https://www.instagram.com/tilbehome">
-  <meta itemprop="sameAs" content="https://www.facebook.com/tilbehome">
-  <meta itemprop="sameAs" content="https://www.youtube.com/@tilbehome">
 </div>

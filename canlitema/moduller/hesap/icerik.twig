@@ -36,7 +36,7 @@
         $(function(){
             showAlert({
                 title: LANG_HELPER.error,
-                text: '{{ sayfaBilgileri('hata_mesaji') }}',
+                text: '{{ sayfaBilgileri('hata_mesaji')|e('js') }}',
                 status: 'error',
                 buttonTitle: LANG_HELPER.ok
             });

@@ -1,9 +1,9 @@
  <form class="order-detail-form" action="" method="post" onsubmit="return orderDetailForm(this, '.order-detail-response')">     
-    <label>{{ cevir('eposta_adresi') }} <span class="text-danger">*</span></label>
-    <input type="text" class="form-control m-input " name="email" value="{{ kullaniciBilgileri('eposta') }}">
+    <label for="tilbe-account-track-email">{{ cevir('eposta_adresi') }} <span class="text-danger">*</span></label>
+    <input type="text" class="form-control m-input " id="tilbe-account-track-email" name="email" value="{{ kullaniciBilgileri('eposta') }}">
     <div class="mt-3"></div>
-    <label>{{ cevir('siparis_numarasi') }} <span class="text-danger">*</span></label>
-	<input type="text" class="form-control m-input " name="order_no" value="">
+    <label for="tilbe-account-track-order">{{ cevir('siparis_numarasi') }} <span class="text-danger">*</span></label>
+	<input type="text" class="form-control m-input " id="tilbe-account-track-order" name="order_no" value="">
     <div class="mt-3"></div>  
 
     <button type="submit" class="btn btn-success">{{ cevir('sorgula') }}</button>

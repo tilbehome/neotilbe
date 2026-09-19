@@ -3,28 +3,28 @@
 {{ ayarlar('google_maps') | raw }}
 
 <form class="contact-form" action="" method="post" onsubmit="return contactForm(this)">
-    <h6>{{ cevir('iletisim_formu') }}</h2>
+    <h6>{{ cevir('iletisim_formu') }}</h6>
     <hr />
 	<div class="row">
         <div class="col-md-12 mt-1">
-            <label>{{ cevir('ad_soyad') }} <span class="text-danger">*</span></label>
-            <input type="text" class="form-control m-input " name="name" value="">
+            <label for="tilbe-iletisim-name">{{ cevir('ad_soyad') }} <span class="text-danger">*</span></label>
+            <input id="tilbe-iletisim-name" type="text" class="form-control m-input " name="name" value="">
         </div>
         <div class="col-md-12 mt-1">
-            <label>{{ cevir('telefon_numaraniz') }} <span class="text-danger">*</span></label>
-            <input type="text" class="form-control m-input " name="phone" value="">
+            <label for="tilbe-iletisim-phone">{{ cevir('telefon_numaraniz') }} <span class="text-danger">*</span></label>
+            <input id="tilbe-iletisim-phone" type="text" class="form-control m-input " name="phone" value="">
         </div>
         <div class="col-md-12 mt-1">
-            <label>{{ cevir('eposta_adresiniz') }} <span class="text-danger">*</span></label>
-            <input type="text" class="form-control m-input " name="email" value="">
+            <label for="tilbe-iletisim-email">{{ cevir('eposta_adresiniz') }} <span class="text-danger">*</span></label>
+            <input id="tilbe-iletisim-email" type="text" class="form-control m-input " name="email" value="">
         </div>
         <div class="col-md-12 mt-1">
-            <label>{{ cevir('konu') }} <span class="text-danger">*</span></label>
-            <input type="text" class="form-control m-input " name="subject" value="">
+            <label for="tilbe-iletisim-subject">{{ cevir('konu') }} <span class="text-danger">*</span></label>
+            <input id="tilbe-iletisim-subject" type="text" class="form-control m-input " name="subject" value="">
         </div>
         <div class="col-md-12 mt-1">
-            <label>{{ cevir('mesajiniz') }} <span class="text-danger">*</span></label>
-            <textarea name="message" rows="" cols="" class="form-control "  style=""></textarea>
+            <label for="tilbe-iletisim-message">{{ cevir('mesajiniz') }} <span class="text-danger">*</span></label>
+            <textarea id="tilbe-iletisim-message" name="message" rows="" cols="" class="form-control "  style=""></textarea>
 	    </div>					
     </div>
 	<div class="form-group mt-3">

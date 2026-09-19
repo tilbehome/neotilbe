@@ -4,7 +4,7 @@
             <div class="product" data-ajax-cart-product-id="{{ sepet.ID }}">
                 <div class="image">
                     <a href="{{ sepet.urun.link }}">
-                        {{ gorsel.lazy(sepet.urun.resim) }}
+                        {{ gorsel.lazy(sepet.urun.resim, '', sepet.urun.adi) }}
                     </a>
                 </div>
                 <div class="info">
@@ -34,7 +34,7 @@
                                          
                 </div>
                 
-                <button class="btn btn-danger btn-remove" type="button" 
+                <button class="btn btn-danger btn-remove" type="button" aria-label="{{ sepet.urun.adi|e }} ürününü sepetten kaldır"
                 onclick="removeCart({{ sepet.ID }}, 'fetch-cart-ajax')">
                    x
                 </button>

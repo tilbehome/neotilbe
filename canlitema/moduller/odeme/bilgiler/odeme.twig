@@ -36,7 +36,7 @@
                             <a class="nav-link {{ metod.aktif ? 'active show' : '' }}" id="payment-methods-control-{{ index }}" 
                                 data-toggle="tab" href="#payment-methods-content-{{ index }}" 
                                 onclick="changePaymentMethod({{ metod.ID }})"
-                                role="tab" aria-controls="payment-methods-control-{{ index }}" aria-selected="true">
+                                role="tab" aria-controls="payment-methods-content-{{ index }}" aria-selected="{{ metod.aktif ? 'true' : 'false' }}">
                                 {{ metod.baslik }}
                             </a>
                         </li>
@@ -73,7 +73,7 @@
         $(function(){
             showAlert({
                 title: LANG_HELPER.error,
-                text: '{{ sayfaBilgileri('hata_mesaji') }}',
+                text: '{{ sayfaBilgileri('hata_mesaji')|e('js') }}',
                 status: 'error',
                 buttonTitle: LANG_HELPER.ok
             });

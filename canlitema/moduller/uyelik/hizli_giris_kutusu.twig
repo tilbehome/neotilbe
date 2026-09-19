@@ -15,11 +15,11 @@
 {% block modalIcerik %}
 
     <form class="login-form login-form-modal" action="" method="post" onSubmit="return userLogin(this)">
-        <label>{{ cevir('eposta_adresiniz') }}</label>
-        <input type="text" class="form-control m-input " name="email" value="">
+        <label for="tilbe-hizli_giris_kutusu-email-{{ sayfaBilgileri('modal_kodu') | e }}">{{ cevir('eposta_adresiniz') }}</label>
+        <input id="tilbe-hizli_giris_kutusu-email-{{ sayfaBilgileri('modal_kodu') | e }}" type="text" class="form-control m-input " name="email" value="">
         <div class="mt-3"></div>
-        <label>{{ cevir('sifre') }}</label>
-        <input type="password" class="form-control m-input " name="password" value="">
+        <label for="tilbe-hizli_giris_kutusu-password-{{ sayfaBilgileri('modal_kodu') | e }}">{{ cevir('sifre') }}</label>
+        <input id="tilbe-hizli_giris_kutusu-password-{{ sayfaBilgileri('modal_kodu') | e }}" type="password" class="form-control m-input " name="password" value="">
         <div class="mt-3"></div>
         <div class="buttons">
             <button class="btn btn-success btn-sm mr-1 mb-2" type="submit">{{ cevir('giris_yap_buton') }}</button>
