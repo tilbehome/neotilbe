@@ -12,10 +12,10 @@
     "evidence": "kapsamli-denetim.md; platform-uyum-03-kontrol.md; önceki kontrol raporları"
   },
   "canlitema/assets/scripts.js": {
-    "scope": "Menü kilidi, ödeme dosya gönderimi, varyant select köprüsü",
+    "scope": "Menü kilidi, ödeme dosya gönderimi, varyant select köprüsü; 05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil",
     "fixed": true,
     "local": true,
-    "evidence": "kapsamli-denetim.md; platform-uyum-03-kontrol.md; önceki kontrol raporları"
+    "evidence": "platform-uyum-05-kontrol.md"
   },
   "canlitema/moduller/sepet/ozet.twig": {
     "scope": "Fiyat/kargo helper sözleşmesi, bağımsız hesapların kaldırılması",
@@ -24,10 +24,10 @@
     "evidence": "kapsamli-denetim.md; platform-uyum-03-kontrol.md; önceki kontrol raporları"
   },
   "canlitema/moduller/urunler/profil.twig": {
-    "scope": "Fiyat/taksit HTML, varyant değerlerinin JS bağlamından çıkarılması",
+    "scope": "Fiyat/taksit HTML, varyant değerlerinin JS bağlamından çıkarılması; 05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil",
     "fixed": true,
     "local": true,
-    "evidence": "kapsamli-denetim.md; platform-uyum-03-kontrol.md; önceki kontrol raporları"
+    "evidence": "platform-uyum-05-kontrol.md"
   },
   "canlitema/moduller/urunler/hizli_sepet_kutusu.twig": {
     "scope": "Varyant değerinin JS içine ham yazılması",
@@ -42,10 +42,10 @@
     "evidence": "kapsamli-denetim.md; platform-uyum-03-kontrol.md; önceki kontrol raporları"
   },
   "canlitema/moduller/urunler/kart_favori_listesi.twig": {
-    "scope": "Kart kimliği ve eksik remove düğmesi; başlangıç favori alanı belirsiz",
-    "fixed": false,
-    "local": false,
-    "evidence": "kapsamli-denetim.md; platform-uyum-03-kontrol.md; önceki kontrol raporları"
+    "scope": "Kart kimliği ve eksik remove düğmesi; başlangıç favori alanı belirsiz; 05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil",
+    "fixed": true,
+    "local": true,
+    "evidence": "platform-uyum-05-kontrol.md"
   },
   "canlitema/moduller/uyelik/giris_yap.twig": {
     "scope": "Platform giriş, parola izolasyonu, yerel klavye ve görünüm",
@@ -78,10 +78,10 @@
     "evidence": "kapsamli-denetim.md; platform-uyum-03-kontrol.md; önceki kontrol raporları"
   },
   "canlitema/video-listeleme.twig": {
-    "scope": "Swiper Element yükleme ve başlangıç yaşam döngüsü; modal erişilebilirliği açık",
+    "scope": "Swiper Element yükleme ve başlangıç yaşam döngüsü; modal erişilebilirliği açık; 05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil",
     "fixed": true,
     "local": true,
-    "evidence": "platform-uyum-03-kontrol.md S3"
+    "evidence": "platform-uyum-05-kontrol.md"
   },
   "canlitema/flash-sayac.twig": {
     "scope": "Sayaç örnek izolasyonu; kampanya tarih doğruluğu açık",
@@ -186,9 +186,387 @@
     "evidence": "platform-uyum-04-kontrol.md"
   },
   "canlitema/assets/style.css": {
-    "scope": "Giriş yerleşimi, menü kilitleri ve kategori dialog kilidi; bütün CSS kabulü açık",
+    "scope": "Giriş yerleşimi, menü kilitleri ve kategori dialog kilidi; bütün CSS kabulü açık; 05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil",
     "fixed": true,
     "local": true,
-    "evidence": "platform-uyum-04-kontrol.md; önceki kontrol raporları"
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/hediye_ceki/kart.twig": {
+    "scope": "05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil",
+    "fixed": true,
+    "local": true,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/hesap/alt_sayfalar/adres_bilgilerim.twig": {
+    "scope": "05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil",
+    "fixed": true,
+    "local": true,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/hesap/alt_sayfalar/bayilik_bilgilerim.twig": {
+    "scope": "05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil",
+    "fixed": true,
+    "local": true,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/hesap/alt_sayfalar/destek_bildirimi_detay.twig": {
+    "scope": "05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil",
+    "fixed": true,
+    "local": true,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/hesap/alt_sayfalar/eposta_sifre.twig": {
+    "scope": "05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil",
+    "fixed": true,
+    "local": true,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/hesap/alt_sayfalar/fiyat_alarm_listem.twig": {
+    "scope": "05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil",
+    "fixed": true,
+    "local": false,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/hesap/alt_sayfalar/hediye_ceklerim.twig": {
+    "scope": "05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil",
+    "fixed": true,
+    "local": true,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/hesap/alt_sayfalar/siparis_detay.twig": {
+    "scope": "05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil",
+    "fixed": true,
+    "local": false,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/hesap/alt_sayfalar/siparis_takip.twig": {
+    "scope": "05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil",
+    "fixed": true,
+    "local": true,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/hesap/alt_sayfalar/stok_alarm_listem.twig": {
+    "scope": "05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil",
+    "fixed": true,
+    "local": false,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/hesap/alt_sayfalar/uyelik_bilgilerim.twig": {
+    "scope": "05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil",
+    "fixed": true,
+    "local": true,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/hesap/alt_sayfalar/yeni_destek_bildirimi.twig": {
+    "scope": "05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil",
+    "fixed": true,
+    "local": true,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/hesap/icerik.twig": {
+    "scope": "05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil",
+    "fixed": true,
+    "local": true,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/kategoriler/sayfalama.twig": {
+    "scope": "05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil",
+    "fixed": true,
+    "local": true,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/odeme/bilgiler/odeme.twig": {
+    "scope": "05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil",
+    "fixed": true,
+    "local": true,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/sepet/ajax_liste.twig": {
+    "scope": "05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil",
+    "fixed": true,
+    "local": false,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/sepet/hediye_ceki.twig": {
+    "scope": "05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil",
+    "fixed": true,
+    "local": true,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/statik_sayfalar/404.twig": {
+    "scope": "05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil",
+    "fixed": true,
+    "local": true,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/statik_sayfalar/alt_sayfalar/havale_bildirim.twig": {
+    "scope": "05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil",
+    "fixed": true,
+    "local": true,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/statik_sayfalar/alt_sayfalar/iletisim.twig": {
+    "scope": "05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil",
+    "fixed": true,
+    "local": true,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/urunler/hizli_sepet_favori.twig": {
+    "scope": "05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil",
+    "fixed": true,
+    "local": false,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/urunler/profil_favori_listesi.twig": {
+    "scope": "05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil",
+    "fixed": true,
+    "local": false,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/urunler/resim_alani_tipi/carousel_atli_karinca.twig": {
+    "scope": "05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil",
+    "fixed": true,
+    "local": true,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/urunler/resim_alani_tipi/carousel_sol.twig": {
+    "scope": "05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil",
+    "fixed": true,
+    "local": true,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/uyelik/hizli_giris_kutusu.twig": {
+    "scope": "05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil",
+    "fixed": true,
+    "local": true,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/uyelik/uyelik_formu.twig": {
+    "scope": "05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil",
+    "fixed": true,
+    "local": true,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/yardim/arama_formu.twig": {
+    "scope": "05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil",
+    "fixed": true,
+    "local": true,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/yardim/madde_listesi.twig": {
+    "scope": "05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil",
+    "fixed": true,
+    "local": true,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/assets/video-gallery.js": {
+    "scope": "05 turu: yalnız rapordaki somut onarım ve bağlantılı kaynak incelemesi; dosya geneli kabul değil",
+    "fixed": true,
+    "local": true,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/bloglar/icerik.twig": {
+    "scope": "Kaynak okundu: platform helper/olay seçicileri, boş dal ve HTML yapısı; gerçek veri/görsel kabulü açık",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/bloglar/kart.twig": {
+    "scope": "Kaynak okundu: platform helper/olay seçicileri, boş dal ve HTML yapısı; gerçek veri/görsel kabulü açık",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/bloglar/en_cok_okunanlar.twig": {
+    "scope": "Kaynak okundu: platform helper/olay seçicileri, boş dal ve HTML yapısı; gerçek veri/görsel kabulü açık",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/markalar/kart.twig": {
+    "scope": "Kaynak okundu: platform helper/olay seçicileri, boş dal ve HTML yapısı; gerçek veri/görsel kabulü açık",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/markalar/sayfalama.twig": {
+    "scope": "Kaynak okundu: platform helper/olay seçicileri, boş dal ve HTML yapısı; gerçek veri/görsel kabulü açık",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/kategoriler/filtreleme/nitelikler_icerik.twig": {
+    "scope": "Kaynak okundu: platform helper/olay seçicileri, boş dal ve HTML yapısı; gerçek veri/görsel kabulü açık",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/kategoriler/filtreleme/fiyatlar_icerik.twig": {
+    "scope": "Kaynak okundu: platform helper/olay seçicileri, boş dal ve HTML yapısı; gerçek veri/görsel kabulü açık",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/kategoriler/filtreleme/butonlar.twig": {
+    "scope": "Kaynak okundu: platform helper/olay seçicileri, boş dal ve HTML yapısı; gerçek veri/görsel kabulü açık",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/kategoriler/responsive_butonlar.twig": {
+    "scope": "Kaynak okundu: platform helper/olay seçicileri, boş dal ve HTML yapısı; gerçek veri/görsel kabulü açık",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/diger/mega_menu_side.twig": {
+    "scope": "Kaynak okundu: platform helper/olay seçicileri, boş dal ve HTML yapısı; gerçek veri/görsel kabulü açık",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/diger/single_menu.twig": {
+    "scope": "Kaynak okundu: platform helper/olay seçicileri, boş dal ve HTML yapısı; gerçek veri/görsel kabulü açık",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/odeme/form.twig": {
+    "scope": "Kaynak okundu: platform helper/olay seçicileri, boş dal ve HTML yapısı; gerçek veri/görsel kabulü açık",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/odeme/butonlar.twig": {
+    "scope": "Kaynak okundu: platform helper/olay seçicileri, boş dal ve HTML yapısı; gerçek veri/görsel kabulü açık",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/odeme/sozlesme_kutusu.twig": {
+    "scope": "Kaynak okundu: platform helper/olay seçicileri, boş dal ve HTML yapısı; gerçek veri/görsel kabulü açık",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/odeme/ozet.twig": {
+    "scope": "Kaynak okundu: platform helper/olay seçicileri, boş dal ve HTML yapısı; gerçek veri/görsel kabulü açık",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/sepet/ajax_ozet.twig": {
+    "scope": "Kaynak okundu: platform helper/olay seçicileri, boş dal ve HTML yapısı; gerçek veri/görsel kabulü açık",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/urunler/etkilesim.twig": {
+    "scope": "Kaynak okundu: platform helper/olay seçicileri, boş dal ve HTML yapısı; gerçek veri/görsel kabulü açık",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/urunler/normal_resim.twig": {
+    "scope": "Kaynak okundu: platform helper/olay seçicileri, boş dal ve HTML yapısı; gerçek veri/görsel kabulü açık",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/urunler/resim_alani_tipi/normal_altta.twig": {
+    "scope": "Kaynak okundu: platform helper/olay seçicileri, boş dal ve HTML yapısı; gerçek veri/görsel kabulü açık",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/hediye_ceki/icerik.twig": {
+    "scope": "Kaynak okundu: platform helper/olay seçicileri, boş dal ve HTML yapısı; gerçek veri/görsel kabulü açık",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/assets/kargoya-verilme-suresi.js": {
+    "scope": "Kaynak okundu: platform helper/olay seçicileri, boş dal ve HTML yapısı; gerçek veri/görsel kabulü açık",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/assets/yt-video-kontrol-02.js": {
+    "scope": "Kaynak okundu: platform helper/olay seçicileri, boş dal ve HTML yapısı; gerçek veri/görsel kabulü açık",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/hesap/alt_sayfalar/2fa.twig": {
+    "scope": "Kaynak okundu: platform helper/olay seçicileri, boş dal ve HTML yapısı; gerçek veri/görsel kabulü açık",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/hesap/alt_sayfalar/api.twig": {
+    "scope": "Kaynak okundu: platform helper/olay seçicileri, boş dal ve HTML yapısı; gerçek veri/görsel kabulü açık",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/hesap/alt_sayfalar/bakiye_yukle.twig": {
+    "scope": "Kaynak okundu: platform helper/olay seçicileri, boş dal ve HTML yapısı; gerçek veri/görsel kabulü açık",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/hesap/alt_sayfalar/bakiye_onay.twig": {
+    "scope": "Kaynak okundu: platform helper/olay seçicileri, boş dal ve HTML yapısı; gerçek veri/görsel kabulü açık",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/hesap/alt_sayfalar/bakiye_dekontu.twig": {
+    "scope": "Kaynak okundu: platform helper/olay seçicileri, boş dal ve HTML yapısı; gerçek veri/görsel kabulü açık",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/hesap/alt_sayfalar/hesabim_b2b.twig": {
+    "scope": "Kaynak okundu: platform helper/olay seçicileri, boş dal ve HTML yapısı; gerçek veri/görsel kabulü açık",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/hesap/alt_sayfalar/bayi_hareketlerim.twig": {
+    "scope": "Kaynak okundu: platform helper/olay seçicileri, boş dal ve HTML yapısı; gerçek veri/görsel kabulü açık",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/hesap/alt_sayfalar/ebulten_bilgileri.twig": {
+    "scope": "Kaynak okundu: platform helper/olay seçicileri, boş dal ve HTML yapısı; gerçek veri/görsel kabulü açık",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/hesap/alt_sayfalar/hesabim.twig": {
+    "scope": "Kaynak okundu: platform helper/olay seçicileri, boş dal ve HTML yapısı; gerçek veri/görsel kabulü açık",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/hesap/alt_sayfalar/musteri_hizmetleri.twig": {
+    "scope": "Kaynak okundu: platform helper/olay seçicileri, boş dal ve HTML yapısı; gerçek veri/görsel kabulü açık",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/hesap/alt_sayfalar/siparislerim.twig": {
+    "scope": "Kaynak okundu: platform helper/olay seçicileri, boş dal ve HTML yapısı; gerçek veri/görsel kabulü açık",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  "canlitema/moduller/hesap/menu.twig": {
+    "scope": "Kaynak okundu: platform helper/olay seçicileri, boş dal ve HTML yapısı; gerçek veri/görsel kabulü açık",
+    "fixed": false,
+    "local": false,
+    "evidence": "platform-uyum-05-kontrol.md"
   }
 }

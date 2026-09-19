@@ -1,3 +1,5 @@
+> Tarihsel inceleme/kontrol kaydıdır. Tek güncel sorun durumu: [kapsamli-denetim.md](kapsamli-denetim.md).
+
 # Yeni arşiv referansları, footer ve flash kart onarımı
 
 19.09.2026 — Dal fix/platform-uyum-01. Kullanıcı canlitema'nın canlı Gold tema kaynakları olduğunu doğruladı; mevcut dal düzeltmeleri korunuyor. Arşivler proje kökünde bulundu, taşınmadı/açılıp kaynakların üzerine yazılmadı. Salt okunur inceleme `tools/arsiv-incele.ps1`, değer içermeyen dosya/hash/işaret envanteri `arsiv-envanteri.json` içindedir.

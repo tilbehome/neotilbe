@@ -1,0 +1,289 @@
+[
+  {
+    "id": "G01-1",
+    "location": "giris_yap.twig:165 eski özel userLogin platformu eziyordu",
+    "remedy": "Override kaldırıldı; AJAX çağrısı, returnUrl ve sentetik 2FA callback T",
+    "status": "düzeltildi ve doğrulandı (K/T); Q bekliyor",
+    "evidence": "ilk-inceleme.md (ilk tespit); önceki kontrol raporları"
+  },
+  {
+    "id": "G01-2",
+    "location": "giris_yap.twig:150 global name seçicisi yanlış parolayı açıyordu",
+    "remedy": "En yakın kapsayıcı; üç alan T",
+    "status": "düzeltildi ve doğrulandı (K/T)",
+    "evidence": "ilk-inceleme.md (ilk tespit); önceki kontrol raporları"
+  },
+  {
+    "id": "G01-3",
+    "location": "scripts.js:8 eski kapatma scroll kilidini bırakıyordu",
+    "remedy": "Ayrı kilit sahipliği; X/overlay/hesap/modal T",
+    "status": "düzeltildi ve doğrulandı (K/T); Q bekliyor",
+    "evidence": "ilk-inceleme.md (ilk tespit); önceki kontrol raporları"
+  },
+  {
+    "id": "K3",
+    "location": "profil.twig:165 sabit 12 taksit, gerçek vade farklı olabilir",
+    "remedy": "Belgede vade/aylik s.36; platform vade alanını göster",
+    "status": "düzeltildi ve doğrulandı (K/T sentetik vade); Q bekliyor",
+    "evidence": "ilk-inceleme.md (ilk tespit); önceki kontrol raporları"
+  },
+  {
+    "id": "K4",
+    "location": "odeme/bilgiler/kargo_icerik.twig:35 ücretli dal boş",
+    "remedy": "Orijinaldeki firma.ucret alanını tasarıma bağla",
+    "status": "düzeltildi ve doğrulandı (K: orijinal firma.ucret); Q bekliyor",
+    "evidence": "ilk-inceleme.md (ilk tespit); önceki kontrol raporları"
+  },
+  {
+    "id": "H1",
+    "location": "profil.twig:159–186 taksit wrapper kapanışı koşul dışında; taksit yokken fazla div kapanır",
+    "remedy": "Kapanışı aynı if dalına taşı; iki koşul DOM kontrolü",
+    "status": "düzeltildi ve doğrulandı (K/T: dört koşul)",
+    "evidence": "ilk-inceleme.md (ilk tespit); önceki kontrol raporları"
+  },
+  {
+    "id": "H2",
+    "location": "header.twig:226 arama button kapanışı eksik",
+    "remedy": "İki ayrı button; isim ve form semantiği korunacak",
+    "status": "düzeltildi ve doğrulandı (K/T: iki ayrı GET düğmesi); Q arama bekliyor",
+    "evidence": "ilk-inceleme.md (ilk tespit); önceki kontrol raporları"
+  },
+  {
+    "id": "S1",
+    "location": "odeme/bilgiler/adres.twig:11 TC alanı kaldırılmış",
+    "remedy": "Belge s.8 tc_alani_zorunlu_mu; ayara bağlı alan, Q hata hedefi",
+    "status": "düzeltildi ve doğrulandı (K/T: zorunlu ayar dalı); Q kabulü bekliyor",
+    "evidence": "ilk-inceleme.md (ilk tespit); önceki kontrol raporları"
+  },
+  {
+    "id": "K5",
+    "location": "style.css:12784 aynı element sınıfları descendant yazılmış",
+    "remedy": "Bileşik selector; alan etkilerini T ölç",
+    "status": "düzeltildi ve doğrulandı (T: 375/768/1440 giriş fixture)",
+    "evidence": "ilk-inceleme.md (ilk tespit); önceki kontrol raporları"
+  },
+  {
+    "id": "D1",
+    "location": "sepet/liste.twig:94 ürün ID’sinden sahte favori sayısı",
+    "remedy": "Gerçek veri yoksa sayısal beyanı kaldır",
+    "status": "düzeltildi ve doğrulandı (K: sahte sayı kaldırıldı)",
+    "evidence": "ilk-inceleme.md (ilk tespit); önceki kontrol raporları"
+  },
+  {
+    "id": "D2",
+    "location": "assets/urun-fav-sayma-eklenti.js:1 rastgele favori/sepet/görüntüleme/satış",
+    "remedy": "Rastgele üretimi kaldır; gerçek kaynak olmadan göstermeme",
+    "status": "düzeltildi ve doğrulandı (K/Y: üretim kaldırıldı, dosya yolu korundu)",
+    "evidence": "ilk-inceleme.md (ilk tespit); önceki kontrol raporları"
+  },
+  {
+    "id": "D3",
+    "location": "statik_sayfalar/alt_sayfalar/siparis_takip.twig:21 henüz sorgu yokken OrderProcessing ilanı",
+    "remedy": "Veri olmayan Order şemasını kaldır; formu koru",
+    "status": "düzeltildi ve doğrulandı (K: verisiz Order bildirimi kaldırıldı)",
+    "evidence": "ilk-inceleme.md (ilk tespit); önceki kontrol raporları"
+  },
+  {
+    "id": "S2",
+    "location": "sepet/ozet.twig:15–19,63 biçimli fiyatla matematik, sabit kargo",
+    "remedy": "Üç bileşende platform kargo helper alanları kullanılıyor; bağımsız toplam/yüzde kaldırıldı.",
+    "status": "onarım uygulandı; yerelde doğrulandı; platform kabulü bekliyor",
+    "evidence": "platform-uyum-03-kontrol.md"
+  },
+  {
+    "id": "K7",
+    "location": "sepet/liste.twig:12–22 satır ID ve koşulsuz kampanya vaadi",
+    "remedy": "Gerçek ürün ID ve kampanya sonucunu ayır; mağaza kuralı gerekli",
+    "status": "düzeltildi ve doğrulandı (K: ürün ID, tarafsız adet mesajı); kampanya Q bekliyor",
+    "evidence": "ilk-inceleme.md (ilk tespit); önceki kontrol raporları"
+  },
+  {
+    "id": "K6",
+    "location": "assets/cok-al-az-ode-indirim.js:22, tahmini-kargom.js:22, yt-video-kontrol-02.js:1",
+    "remedy": "Statik JS’de Twig/script etiketi; veri bağlantısı/etkinlik doğrulanmalı",
+    "status": "doğrulama bekliyor: video dosyası Y/T düzeltildi; iki fiyat JS dosyası açık",
+    "evidence": "ilk-inceleme.md (ilk tespit); önceki kontrol raporları"
+  },
+  {
+    "id": "S3",
+    "location": "video-listeleme.twig:71–75 defer sonrası hemen global Swiper",
+    "remedy": "Mevcut Swiper Element kaydı bekleniyor; global kurucu kaldırıldı.",
+    "status": "onarım uygulandı; yerelde doğrulandı; gerçek Swiper/Q kabulü bekliyor",
+    "evidence": "platform-uyum-03-kontrol.md; platform-uyum-05-kontrol.md"
+  },
+  {
+    "id": "S4",
+    "location": "header.twig ve birçok dosyada /theme/___shuttle URL",
+    "remedy": "Mevcut varlığı helper’a bağla; olmayan dosyayı icat etme",
+    "status": "37 bağlantıda onarım/yerel doğrulama; diğer dinamik/CSS yolları açık",
+    "evidence": "tema-kaynak-baglari.json; onizleme-hazirligi.md"
+  },
+  {
+    "id": "S5",
+    "location": "scripts.js completeBeforePaymentStep; çekirdek completePaymentStep",
+    "remedy": "Çift dosya gönderimi kaldırıldı; referans completePaymentStep tek FormData isteği.",
+    "status": "onarım uygulandı; yerelde doğrulandı; platform kabulü bekliyor",
+    "evidence": "platform-uyum-03-kontrol.md"
+  },
+  {
+    "id": "A1",
+    "location": "giris_yap.twig göz simgeleri i/onclick",
+    "remedy": "Klavye ve erişilebilir ad; görünümü koruyan kontrol",
+    "status": "düzeltildi ve doğrulandı (T: native Enter/Space, aria-pressed)",
+    "evidence": "ilk-inceleme.md (ilk tespit); önceki kontrol raporları"
+  },
+  {
+    "id": "A2",
+    "location": "ödeme ve sipariş takip form etiketleri",
+    "remedy": "ID/label bağları, hata odağı, uzun değerler",
+    "status": "doğrulama bekliyor: ödeme/takip label bağları K onarıldı; diğer formlar/odak devam",
+    "evidence": "ilk-inceleme.md (ilk tespit); önceki kontrol raporları"
+  },
+  {
+    "id": "J1",
+    "location": "profil.twig:527 ve diğer sayaç global isimleri",
+    "remedy": "Ürün sayacı her campaignTimerDiv içinde; global adlar kaldırıldı; kargo takvimi uydurulmadı.",
+    "status": "sayaç kapsam/DOM onarıldı; yerel eksik DOM kontrolü geçti; takvim/veri kabulü açık",
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  {
+    "id": "B1",
+    "location": "sepet/liste.twig ürün hücresi: p-info/product/td kapanışları eksik",
+    "remedy": "İki div ve td kapatıldı; kaynakta satır konteyner dengesi Y",
+    "status": "düzeltildi ve doğrulandı (K/Y); gerçek sepet görünümü Q bekliyor",
+    "evidence": "ilk-inceleme.md (ilk tespit); önceki kontrol raporları"
+  },
+  {
+    "id": "B2",
+    "location": "sepet/liste.twig quantity input data-value-type; referans productQuantityBox data-quantity-type okuyor",
+    "remedy": "Referansın okuduğu niteliğe bağlandı; gerçek referans yardımcıyla 1.5→1.6→1.5 T",
+    "status": "düzeltildi ve doğrulandı (K/T); diğer birim/min/max kuralları Q bekliyor",
+    "evidence": "ilk-inceleme.md (ilk tespit); önceki kontrol raporları"
+  },
+  {
+    "id": "C1",
+    "location": "kart_degerlendirmeler.twig:8,30 Bootstrap 5 me/ms yardımcıları, referans Bootstrap 4",
+    "remedy": "mr-2/ml-2 ile mevcut pakete bağlandı K",
+    "status": "düzeltildi ve doğrulandı (K); canlı kütüphane sürümü Q bekliyor",
+    "evidence": "ilk-inceleme.md (ilk tespit); önceki kontrol raporları"
+  },
+  {
+    "id": "F1",
+    "location": "kart_favori_listesi.twig:1 kart urun.ID yerine sayfaBilgileri ID kapsayıcısı; orijinalde de var",
+    "remedy": "urun.ID, kanonik favori listesinden ilk durum ve ekle/kaldır kontrolleri.",
+    "status": "onarım uygulandı; yerel callback doğrulandı; helper/performans Q kabulü bekliyor",
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  {
+    "id": "D4",
+    "location": "sepet/liste.twig rezervasyon rozeti, profil.twig sabit 500 TL ve kargo sayacı",
+    "remedy": "Ürün sabit 500 TL kaldırıldı; platform kargo helperı ve üç yerel Twig dalı geçti. Rezervasyon/saat/teslimat mağaza doğrulaması açık.",
+    "status": "kargo tutarı onarıldı ve yerelde doğrulandı; diğer beyanlar/platform kabulü bekliyor",
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  {
+    "id": "V1",
+    "location": "urunler/profil.twig ve hizli_sepet_kutusu.twig",
+    "remedy": "Varyant değeri JS dizgesinden data niteliğine taşındı",
+    "status": "onarım uygulandı; yerelde doğrulandı (rapordaki kapsam); platform kabulü bekliyor",
+    "evidence": "platform-uyum-03-kontrol.md"
+  },
+  {
+    "id": "F2",
+    "location": "hesap/alt_sayfalar/favori_listem.twig",
+    "remedy": "data-user-product-id geri bağlandı",
+    "status": "onarım uygulandı; yerelde doğrulandı (rapordaki kapsam); platform kabulü bekliyor",
+    "evidence": "platform-uyum-03-kontrol.md"
+  },
+  {
+    "id": "A3",
+    "location": "uyelik/sifre_yenileme.twig; sifremi_unuttum.twig",
+    "remedy": "Alan erişilebilir adları",
+    "status": "onarım uygulandı; yerelde doğrulandı (rapordaki kapsam); platform kabulü bekliyor",
+    "evidence": "platform-uyum-03-kontrol.md"
+  },
+  {
+    "id": "A4",
+    "location": "footer.twig; flash-urunler-hots.twig",
+    "remedy": "Alan/bağlantı/alternatif adlar ve telefon anchor kapanışı",
+    "status": "onarım uygulandı; yerelde doğrulandı (rapordaki kapsam); platform kabulü bekliyor",
+    "evidence": "platform-uyum-04-kontrol.md"
+  },
+  {
+    "id": "D5",
+    "location": "flash-urunler-hots.twig; footer.twig",
+    "remedy": "Sahte satış/izleyen sayaçları yerine stok alanı",
+    "status": "onarım uygulandı; yerelde doğrulandı (rapordaki kapsam); platform kabulü bekliyor",
+    "evidence": "platform-uyum-04-kontrol.md"
+  },
+  {
+    "id": "M2",
+    "location": "footer.twig; style.css",
+    "remedy": "Kategori dialog odağı ve ayrı kaydırma kilidi",
+    "status": "onarım uygulandı; yerelde doğrulandı (rapordaki kapsam); platform kabulü bekliyor",
+    "evidence": "platform-uyum-04-kontrol.md"
+  },
+  {
+    "id": "VM1",
+    "location": "video-listeleme.twig; assets/video-gallery.js; style.css",
+    "remedy": "Çoklu örnek, klavye/odak, iframe temizleme ve modal CSS",
+    "status": "onarım uygulandı; yerelde doğrulandı (rapordaki kapsam); platform kabulü bekliyor",
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  {
+    "id": "A5",
+    "location": "11 üyelik/hesap/iletişim/havale form şablonu",
+    "remedy": "Etiket-kontrol bağlantıları ve iletişim başlık kapanışı",
+    "status": "onarım uygulandı; yerelde doğrulandı (rapordaki kapsam); platform kabulü bekliyor",
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  {
+    "id": "CAT1",
+    "location": "kategoriler/sayfalama.twig",
+    "remedy": "Platform sıralama listesi; JS kaçışı; sınırlı grid class değişimi",
+    "status": "onarım uygulandı; yerelde doğrulandı (rapordaki kapsam); platform kabulü bekliyor",
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  {
+    "id": "SEO1",
+    "location": "statik_sayfalar/404.twig; alt_sayfalar/havale_bildirim.twig",
+    "remedy": "Yanlış ana sayfa URL iddiası ve gerçekleşmemiş ödeme action metadatası kaldırıldı",
+    "status": "onarım uygulandı; yerelde doğrulandı (rapordaki kapsam); platform kabulü bekliyor",
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  {
+    "id": "HELP1",
+    "location": "yardim/madde_listesi.twig; arama_formu.twig",
+    "remedy": "Modül ve rol bazlı tekil accordion ID/hedefleri",
+    "status": "onarım uygulandı; rapordaki yerel kontroller geçti; platform kabulü bekliyor",
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  {
+    "id": "ACC1",
+    "location": "hesap/alt_sayfalar/hediye_ceklerim.twig; hediye_ceki/kart.twig",
+    "remedy": "Kopyala parent olayının boşa ve çift çağrısı kaldırıldı",
+    "status": "onarım uygulandı; rapordaki yerel kontroller geçti; platform kabulü bekliyor",
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  {
+    "id": "PAY1",
+    "location": "hesap/icerik.twig; odeme/bilgiler/odeme.twig",
+    "remedy": "Hata mesajı JS kaçışı ve ödeme tab ARIA ilişkisi",
+    "status": "onarım uygulandı; rapordaki yerel kontroller geçti; platform kabulü bekliyor",
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  {
+    "id": "A6",
+    "location": "sepet/ajax_liste.twig; fiyat/stok alarm listeleri; profil/hızlı favori",
+    "remedy": "Ürün adıyla erişilebilir kontrol isimleri",
+    "status": "onarım uygulandı; kaynak kontrolü; tarayıcı/ekran okuyucu kabulü açık",
+    "evidence": "platform-uyum-05-kontrol.md"
+  },
+  {
+    "id": "PV1",
+    "location": "urunler/resim_alani_tipi/carousel_sol.twig; assets/scripts.js",
+    "remedy": "Video öğe izolasyonu, play hata/tekrar yönetimi ve tek ok çifti",
+    "status": "onarım uygulandı; rapordaki yerel kontroller geçti; platform kabulü bekliyor",
+    "evidence": "platform-uyum-05-kontrol.md"
+  }
+]

@@ -1,3 +1,5 @@
+> Tarihsel inceleme/kontrol kaydıdır. Tek güncel sorun durumu: [kapsamli-denetim.md](kapsamli-denetim.md).
+
 # Tilbe Home — İlk İnceleme ve Düzeltme Planı
 
 > Bu belge ilk incelemenin tarihsel kaydıdır. Güncel, bütün temayı kapsayan onarım planı ve sorun durumları [kapsamli-denetim.md](kapsamli-denetim.md), 360 dosyanın durum envanteri [tema-envanteri.md](tema-envanteri.md) içindedir. İlk üç düzeltme toplam kapsamı sınırlamaz.

@@ -1,0 +1,5067 @@
+[
+  {
+    "file": "canlitema/assets/basketpage-ticket.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/callcenter.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/cok-al-az-ode-indirim.js",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [
+      "sayfaBilgileri"
+    ],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/fast-delivery-svgrepo-com-2-1.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/icons/profil-collection.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/images/99indirim99.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/images/card-ok-svgrepo-com-1.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/images/card-transfer-svgrepo-com-1.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/images/copy-share-icon.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/images/face-smile-svgrepo-com-1.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/images/faturr.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/images/fb-share-icon.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/images/giftbox-gift-svgrepo-com-1.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/images/gtruck.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/images/hediyedsdd.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/images/hepsijet.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/images/i-icon.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/images/invoice-bill-ecommerce-svgrepo-com.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/images/isaret.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/images/kargo-1.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/images/kargo01.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/images/method-cuzdan.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/images/method-kapidaodeme.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/images/mobil-kullanici.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/images/mobilara.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/images/new-share.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/images/payment-disccode.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/images/paymentpage-location.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/images/paymentstep-odeme.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/images/paymentstep-siparisonayi.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/images/paymentstep-teslimat.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/images/paysec-options.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/images/paysec-return.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/images/paysec-teslimat.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/images/profil-alev.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/images/profil-cargo.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/images/profil-cargopay.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/images/profil-pbcquest.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/images/profil-return.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/images/profil-specaildisc.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/images/profil-tax.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/images/profilcomment-camera.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/images/select-arrow.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/images/star-svgrepo-com-1.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/images/tw-share-icon.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/images/x.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/images/yildiz-1.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/kargobeava.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/kargoya-verilme-suresi.js",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/menu-left.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/new-share.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/notification-svgrepo-com.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/scripts.js",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": false,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/smartbanner.css",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/smartbanner.js",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/style.css",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": false,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/tahmini-kargom.js",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [
+      "sayfaBilgileri"
+    ],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/urun-fav-sayma-eklenti.js",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/video-gallery.js",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/yeni-heart.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/yenicart.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/assets/yt-video-kontrol-02.js",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/ayarlar/modul_yerlesimi.config",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": false,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/ayarlar/resim_boyutlari.json",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": false,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/ayarlar/tanim.json",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": false,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/ayarlar/tema.json",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": false,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/cmanset-discount.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/firsatlar.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/flash-discount.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/flash-sayac.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/flash-urun.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [
+      "temaDosyalari"
+    ],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/liste-kartim.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [
+      "etiketler",
+      "markaListeBilgileri",
+      "temaAyarlari",
+      "temaDosyalari"
+    ],
+    "inlineEvents": [],
+    "inheritance": [
+      "'moduller/urunler/kart_favori_listesi.twig'",
+      "'moduller/urunler/kart_degerlendirmeler.twig'"
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/liste-urunlerim.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [
+      "cevir",
+      "lazy"
+    ],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/bloglar/anasayfa_kart.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [
+      "buyukCevir",
+      "lazy"
+    ],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/bloglar/en_cok_okunanlar.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [
+      "varsayilanBlokModul"
+    ],
+    "inlineEvents": [],
+    "inheritance": [
+      "varsayilanBlokModul()"
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/bloglar/icerik.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [
+      "cevir",
+      "sayfaBilgileri",
+      "varsayilanBlokModul"
+    ],
+    "inlineEvents": [],
+    "inheritance": [
+      "varsayilanBlokModul()"
+    ],
+    "rawLines": [
+      21
+    ]
+  },
+  {
+    "file": "canlitema/moduller/bloglar/kart.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [
+      "cevir",
+      "lazy"
+    ],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/bloglar/kategoriler.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [
+      "varsayilanBlokModul"
+    ],
+    "inlineEvents": [],
+    "inheritance": [
+      "varsayilanBlokModul()"
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/bloglar/sayfalama.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [
+      "cevir",
+      "sayfaBilgileri",
+      "varsayilanBlokModul"
+    ],
+    "inlineEvents": [],
+    "inheritance": [
+      "varsayilanBlokModul()",
+      "modul.kart",
+      "modul.sayfalar"
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/diger/banner_kart.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [
+      "lazy"
+    ],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/diger/instagram_feed_kart.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [
+      "lazy"
+    ],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/diger/kategori_icon.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [
+      "temaAyarlari"
+    ],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/diger/mega_menu.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": false,
+    "twigHelpers": [
+      "buyukCevir",
+      "listeyiBol",
+      "temaAyarlari",
+      "tumKategoriler"
+    ],
+    "inlineEvents": [],
+    "inheritance": [
+      "'moduller/diger/kategori_icon.twig'"
+    ],
+    "rawLines": [
+      41
+    ]
+  },
+  {
+    "file": "canlitema/moduller/diger/mega_menu_side.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": false,
+    "twigHelpers": [
+      "buyukCevir",
+      "cevir",
+      "listeyiBol",
+      "temaAyarlari",
+      "tumKategoriler"
+    ],
+    "inlineEvents": [],
+    "inheritance": [
+      "'moduller/diger/kategori_icon.twig'"
+    ],
+    "rawLines": [
+      36
+    ]
+  },
+  {
+    "file": "canlitema/moduller/diger/single_menu.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": false,
+    "twigHelpers": [
+      "temaAyarlari",
+      "tumKategoriler"
+    ],
+    "inlineEvents": [],
+    "inheritance": [
+      "'moduller/diger/kategori_icon.twig'"
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/footer.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": false,
+    "twigHelpers": [
+      "ayarlar",
+      "cevir",
+      "iyzicoAktifMi",
+      "krediKartiAktifMi",
+      "lazy",
+      "ortakDosyalar",
+      "pazaryeriLinkleri",
+      "sepetOzeti",
+      "statikLinkler",
+      "temaAyarlari",
+      "temaDosyalari",
+      "varsayilanBlokModul"
+    ],
+    "inlineEvents": [
+      {
+        "line": 213,
+        "calls": [
+          {
+            "name": "mobileFooterToggle",
+            "declaredInPlatformReference": false
+          }
+        ]
+      },
+      {
+        "line": 233,
+        "calls": [
+          {
+            "name": "mobileFooterToggle",
+            "declaredInPlatformReference": false
+          }
+        ]
+      },
+      {
+        "line": 253,
+        "calls": [
+          {
+            "name": "mobileFooterToggle",
+            "declaredInPlatformReference": false
+          }
+        ]
+      },
+      {
+        "line": 325,
+        "calls": [
+          {
+            "name": "emailNewsletter",
+            "declaredInPlatformReference": true
+          }
+        ]
+      },
+      {
+        "line": 350,
+        "calls": [
+          {
+            "name": "smsNewsletter",
+            "declaredInPlatformReference": true
+          }
+        ]
+      }
+    ],
+    "inheritance": [
+      "varsayilanBlokModul()"
+    ],
+    "rawLines": [
+      424
+    ]
+  },
+  {
+    "file": "canlitema/moduller/header.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": false,
+    "twigHelpers": [
+      "ayarlar",
+      "basHarfBuyukCevir",
+      "buyukCevir",
+      "cevir",
+      "dinamikSayfaLinkleri",
+      "kategoriMenuHTMLGorunum",
+      "kullaniciGirisYaptiMi",
+      "kullaniciSayfalari",
+      "logoAdresi",
+      "sepetOzeti",
+      "statikLinkler",
+      "statikSayfaLinkleri",
+      "temaAyarlari",
+      "temaDosyalari",
+      "varsayilanBlokModul"
+    ],
+    "inlineEvents": [],
+    "inheritance": [
+      "varsayilanBlokModul()",
+      "'moduller/diger/mega_menu.twig'",
+      "'moduller/diger/single_menu.twig'",
+      "'moduller/diger/mega_menu_side.twig'"
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/hediye_ceki/icerik.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [
+      "cevir",
+      "sayfaBilgileri",
+      "varsayilanBlokModul"
+    ],
+    "inlineEvents": [],
+    "inheritance": [
+      "varsayilanBlokModul()"
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/hediye_ceki/kart.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [
+      "cevir"
+    ],
+    "inlineEvents": [
+      {
+        "line": 21,
+        "calls": [
+          {
+            "name": "copyElement",
+            "declaredInPlatformReference": true
+          }
+        ]
+      }
+    ],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/hesap/alt_sayfalar/2fa.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [
+      "cevir",
+      "kullaniciBilgileri"
+    ],
+    "inlineEvents": [
+      {
+        "line": 8,
+        "calls": [
+          {
+            "name": "enableUser2Factor",
+            "declaredInPlatformReference": false
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "calls": [
+          {
+            "name": "disableUser2Factor",
+            "declaredInPlatformReference": false
+          }
+        ]
+      }
+    ],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/hesap/alt_sayfalar/adres_bilgilerim.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [
+      "cevir",
+      "ilceler",
+      "iller",
+      "kullaniciBilgileri",
+      "ulkeler"
+    ],
+    "inlineEvents": [
+      {
+        "line": 6,
+        "calls": [
+          {
+            "name": "ajaxFormGate",
+            "declaredInPlatformReference": true
+          }
+        ]
+      },
+      {
+        "line": 32,
+        "calls": [
+          {
+            "name": "selectChangeCountry",
+            "declaredInPlatformReference": true
+          }
+        ]
+      },
+      {
+        "line": 43,
+        "calls": [
+          {
+            "name": "selectChangeCity",
+            "declaredInPlatformReference": true
+          }
+        ]
+      },
+      {
+        "line": 72,
+        "calls": [
+          {
+            "name": "toggleClass",
+            "declaredInPlatformReference": false
+          }
+        ]
+      },
+      {
+        "line": 87,
+        "calls": [
+          {
+            "name": "removeClass",
+            "declaredInPlatformReference": false
+          },
+          {
+            "name": "addClass",
+            "declaredInPlatformReference": false
+          }
+        ]
+      },
+      {
+        "line": 98,
+        "calls": [
+          {
+            "name": "removeClass",
+            "declaredInPlatformReference": false
+          },
+          {
+            "name": "addClass",
+            "declaredInPlatformReference": false
+          }
+        ]
+      },
+      {
+        "line": 151,
+        "calls": [
+          {
+            "name": "selectChangeCountry",
+            "declaredInPlatformReference": true
+          }
+        ]
+      },
+      {
+        "line": 164,
+        "calls": [
+          {
+            "name": "selectChangeCity",
+            "declaredInPlatformReference": true
+          }
+        ]
+      }
+    ],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/hesap/alt_sayfalar/api.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [
+      "sayfaBilgileri"
+    ],
+    "inlineEvents": [],
+    "inheritance": [
+      "sayfaBilgileri('tema_dosyasi_2')"
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/hesap/alt_sayfalar/bakiye_dekontu.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [
+      "cevir",
+      "sayfaBilgileri",
+      "varsayilanModal"
+    ],
+    "inlineEvents": [
+      {
+        "line": 22,
+        "calls": [
+          {
+            "name": "printById",
+            "declaredInPlatformReference": false
+          },
+          {
+            "name": "sayfaBilgileri",
+            "declaredInPlatformReference": false
+          },
+          {
+            "name": "cevir",
+            "declaredInPlatformReference": false
+          }
+        ]
+      }
+    ],
+    "inheritance": [
+      "varsayilanModal()"
+    ],
+    "rawLines": [
+      17
+    ]
+  },
+  {
+    "file": "canlitema/moduller/hesap/alt_sayfalar/bakiye_onay.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [
+      "cevir",
+      "sayfaBilgileri"
+    ],
+    "inlineEvents": [
+      {
+        "line": 13,
+        "calls": [
+          {
+            "name": "showNativeModal",
+            "declaredInPlatformReference": true
+          },
+          {
+            "name": "sayfaBilgileri",
+            "declaredInPlatformReference": false
+          }
+        ]
+      }
+    ],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/hesap/alt_sayfalar/bakiye_yukle.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [
+      "addClass",
+      "ayarlar",
+      "bayiBakiyeYuklemeTipleri",
+      "bayiBakiyeYuklemeYetkisi",
+      "bayiBakiyeYuklemeYontemi",
+      "cevir",
+      "removeClass"
+    ],
+    "inlineEvents": [
+      {
+        "line": 7,
+        "calls": [
+          {
+            "name": "dealerPaymentForm",
+            "declaredInPlatformReference": false
+          }
+        ]
+      },
+      {
+        "line": 12,
+        "calls": [
+          {
+            "name": "prop",
+            "declaredInPlatformReference": false
+          },
+          {
+            "name": "change",
+            "declaredInPlatformReference": false
+          },
+          {
+            "name": "removeClass",
+            "declaredInPlatformReference": false
+          },
+          {
+            "name": "addClass",
+            "declaredInPlatformReference": false
+          }
+        ]
+      }
+    ],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/hesap/alt_sayfalar/bayilik_bilgilerim.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [
+      "cevir",
+      "ilceler",
+      "iller",
+      "kullaniciBilgileri",
+      "ulkeler"
+    ],
+    "inlineEvents": [
+      {
+        "line": 1,
+        "calls": [
+          {
+            "name": "ajaxFormGate",
+            "declaredInPlatformReference": true
+          }
+        ]
+      },
+      {
+        "line": 50,
+        "calls": [
+          {
+            "name": "removeClass",
+            "declaredInPlatformReference": false
+          },
+          {
+            "name": "addClass",
+            "declaredInPlatformReference": false
+          }
+        ]
+      },
+      {
+        "line": 61,
+        "calls": [
+          {
+            "name": "removeClass",
+            "declaredInPlatformReference": false
+          },
+          {
+            "name": "addClass",
+            "declaredInPlatformReference": false
+          }
+        ]
+      },
+      {
+        "line": 99,
+        "calls": [
+          {
+            "name": "selectChangeCountry",
+            "declaredInPlatformReference": true
+          }
+        ]
+      },
+      {
+        "line": 110,
+        "calls": [
+          {
+            "name": "selectChangeCity",
+            "declaredInPlatformReference": true
+          }
+        ]
+      },
+      {
+        "line": 139,
+        "calls": [
+          {
+            "name": "toggleClass",
+            "declaredInPlatformReference": false
+          }
+        ]
+      },
+      {
+        "line": 155,
+        "calls": [
+          {
+            "name": "selectChangeCountry",
+            "declaredInPlatformReference": true
+          }
+        ]
+      },
+      {
+        "line": 168,
+        "calls": [
+          {
+            "name": "selectChangeCity",
+            "declaredInPlatformReference": true
+          }
+        ]
+      }
+    ],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/hesap/alt_sayfalar/bayi_hareketlerim.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [
+      "bayiHareketleri",
+      "bayiHareketleriSayisi",
+      "cevir"
+    ],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/hesap/alt_sayfalar/cuzdanim.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [
+      "sayfaBilgileri"
+    ],
+    "inlineEvents": [],
+    "inheritance": [
+      "sayfaBilgileri('tema_dosyasi_2')"
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/hesap/alt_sayfalar/destek_bildirimi_detay.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [
+      "cevir",
+      "sayfaBilgileri",
+      "statikLinkler"
+    ],
+    "inlineEvents": [
+      {
+        "line": 30,
+        "calls": [
+          {
+            "name": "userReplyTicket",
+            "declaredInPlatformReference": false
+          },
+          {
+            "name": "sayfaBilgileri",
+            "declaredInPlatformReference": false
+          }
+        ]
+      }
+    ],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/hesap/alt_sayfalar/ebulten_bilgileri.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [
+      "cevir",
+      "kullaniciBilgileri"
+    ],
+    "inlineEvents": [
+      {
+        "line": 1,
+        "calls": [
+          {
+            "name": "ajaxFormGate",
+            "declaredInPlatformReference": true
+          }
+        ]
+      }
+    ],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/hesap/alt_sayfalar/eposta_sifre.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [
+      "cevir",
+      "kullaniciBilgileri"
+    ],
+    "inlineEvents": [
+      {
+        "line": 6,
+        "calls": [
+          {
+            "name": "ajaxFormGate",
+            "declaredInPlatformReference": true
+          }
+        ]
+      }
+    ],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/hesap/alt_sayfalar/favori_listem.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [
+      "cevir",
+      "kullaniciFavoriListesi",
+      "kullaniciFavoriListesiSayisi",
+      "lazy"
+    ],
+    "inlineEvents": [
+      {
+        "line": 31,
+        "calls": [
+          {
+            "name": "addCart",
+            "declaredInPlatformReference": true
+          }
+        ]
+      },
+      {
+        "line": 36,
+        "calls": [
+          {
+            "name": "userProductFavourite",
+            "declaredInPlatformReference": true
+          }
+        ]
+      }
+    ],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/hesap/alt_sayfalar/fiyat_alarm_listem.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [
+      "cevir",
+      "kullaniciFiyatAlarmSayisi",
+      "kullaniciFiyatAlarmlari",
+      "lazy",
+      "urunFiyati"
+    ],
+    "inlineEvents": [
+      {
+        "line": 4,
+        "calls": [
+          {
+            "name": "userAddCartProductPriceAlerts",
+            "declaredInPlatformReference": false
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "calls": [
+          {
+            "name": "userDeleteProductPriceAlerts",
+            "declaredInPlatformReference": false
+          }
+        ]
+      },
+      {
+        "line": 20,
+        "calls": [
+          {
+            "name": "tableSelectAll",
+            "declaredInPlatformReference": true
+          }
+        ]
+      },
+      {
+        "line": 58,
+        "calls": [
+          {
+            "name": "userDeleteProductPriceAlert",
+            "declaredInPlatformReference": true
+          }
+        ]
+      }
+    ],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/hesap/alt_sayfalar/hediye_ceklerim.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [
+      "cevir",
+      "kullaniciHediyeCekleri",
+      "kullaniciHediyeCekleriSayisi"
+    ],
+    "inlineEvents": [
+      {
+        "line": 24,
+        "calls": [
+          {
+            "name": "copyElement",
+            "declaredInPlatformReference": true
+          }
+        ]
+      }
+    ],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/hesap/alt_sayfalar/hesabim.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [
+      "cevir",
+      "kullaniciBilgileri",
+      "kullaniciSayfalari"
+    ],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/hesap/alt_sayfalar/hesabim_b2b.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [
+      "ayarlar",
+      "cevir",
+      "kullaniciBilgileri",
+      "kullaniciSayfalari",
+      "statikLinkler"
+    ],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/hesap/alt_sayfalar/musteri_hizmetleri.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [
+      "cevir",
+      "kullaniciDestekBildirimleri",
+      "kullaniciDestekBildirimleriSayisi",
+      "statikLinkler"
+    ],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/hesap/alt_sayfalar/siparislerim.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [
+      "ayarlar",
+      "cevir",
+      "kullaniciSiparisSayisi",
+      "kullaniciSiparisleri"
+    ],
+    "inlineEvents": [
+      {
+        "line": 23,
+        "calls": [
+          {
+            "name": "userCancelOrder",
+            "declaredInPlatformReference": false
+          }
+        ]
+      }
+    ],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/hesap/alt_sayfalar/siparis_detay.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [
+      "ayarlar",
+      "cevir",
+      "sayfaBilgileri"
+    ],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/hesap/alt_sayfalar/siparis_takip.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [
+      "cevir",
+      "kullaniciBilgileri"
+    ],
+    "inlineEvents": [
+      {
+        "line": 1,
+        "calls": [
+          {
+            "name": "orderDetailForm",
+            "declaredInPlatformReference": true
+          }
+        ]
+      }
+    ],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/hesap/alt_sayfalar/stok_alarm_listem.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [
+      "cevir",
+      "kullaniciStokAlarmSayisi",
+      "kullaniciStokAlarmlari",
+      "lazy",
+      "urunFiyati"
+    ],
+    "inlineEvents": [
+      {
+        "line": 4,
+        "calls": [
+          {
+            "name": "userDeleteProductQuantityAlerts",
+            "declaredInPlatformReference": false
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "calls": [
+          {
+            "name": "tableSelectAll",
+            "declaredInPlatformReference": true
+          }
+        ]
+      },
+      {
+        "line": 48,
+        "calls": [
+          {
+            "name": "userDeleteProductQuantityAlert",
+            "declaredInPlatformReference": false
+          }
+        ]
+      }
+    ],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/hesap/alt_sayfalar/uyelik_bilgilerim.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [
+      "cevir",
+      "cinsiyetler",
+      "kullaniciBilgileri"
+    ],
+    "inlineEvents": [
+      {
+        "line": 6,
+        "calls": [
+          {
+            "name": "ajaxFormGate",
+            "declaredInPlatformReference": true
+          }
+        ]
+      }
+    ],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/hesap/alt_sayfalar/yeni_destek_bildirimi.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [
+      "cevir",
+      "statikLinkler"
+    ],
+    "inlineEvents": [
+      {
+        "line": 3,
+        "calls": [
+          {
+            "name": "userNewTicket",
+            "declaredInPlatformReference": false
+          }
+        ]
+      }
+    ],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/hesap/icerik.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [
+      "dataTableKodlari",
+      "e",
+      "sayfaBilgileri",
+      "varsayilanBlokModul"
+    ],
+    "inlineEvents": [],
+    "inheritance": [
+      "varsayilanBlokModul()",
+      "'moduller/hesap/alt_sayfalar/' ~ sayfaBilgileri('tema_dosyasi') ~ '.twig'"
+    ],
+    "rawLines": [
+      17
+    ]
+  },
+  {
+    "file": "canlitema/moduller/hesap/menu.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [
+      "kullaniciBilgileri",
+      "kullaniciSayfalari",
+      "varsayilanBlokModul"
+    ],
+    "inlineEvents": [],
+    "inheritance": [
+      "varsayilanBlokModul()"
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/kategoriler/breadcrumb.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [
+      "cevir",
+      "sayfaBilgileri",
+      "statikLinkler",
+      "varsayilanBlokModul"
+    ],
+    "inlineEvents": [],
+    "inheritance": [
+      "varsayilanBlokModul()"
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/kategoriler/filtreleme/butonlar.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [
+      "cevir",
+      "sayfaBilgileri",
+      "varsayilanBlokModul"
+    ],
+    "inlineEvents": [
+      {
+        "line": 14,
+        "calls": [
+          {
+            "name": "hideSmartCategoryPopup",
+            "declaredInPlatformReference": true
+          }
+        ]
+      }
+    ],
+    "inheritance": [
+      "varsayilanBlokModul()"
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/kategoriler/filtreleme/fiyatlar.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [
+      "cevir",
+      "sayfaBilgileri",
+      "varsayilanBlokModul"
+    ],
+    "inlineEvents": [],
+    "inheritance": [
+      "varsayilanBlokModul()"
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/kategoriler/filtreleme/fiyatlar_icerik.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [
+      "sayfaBilgileri"
+    ],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/kategoriler/filtreleme/kategoriler.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [
+      "sayfaBilgileri",
+      "varsayilanBlokModul"
+    ],
+    "inlineEvents": [],
+    "inheritance": [
+      "varsayilanBlokModul()"
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/kategoriler/filtreleme/kategoriler_icerik.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [
+      "sayfaBilgileri"
+    ],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/kategoriler/filtreleme/listeler.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [
+      "sayfaBilgileri",
+      "varsayilanBlokModul"
+    ],
+    "inlineEvents": [],
+    "inheritance": [
+      "varsayilanBlokModul()"
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/kategoriler/filtreleme/markalar.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [
+      "sayfaBilgileri",
+      "varsayilanBlokModul"
+    ],
+    "inlineEvents": [],
+    "inheritance": [
+      "varsayilanBlokModul()"
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/kategoriler/filtreleme/markalar_icerik.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [
+      "sayfaBilgileri"
+    ],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/kategoriler/filtreleme/nitelikler.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [
+      "sayfaBilgileri",
+      "varsayilanBlokModul"
+    ],
+    "inlineEvents": [],
+    "inheritance": [
+      "varsayilanBlokModul()"
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/kategoriler/filtreleme/nitelikler_icerik.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [
+      "sayfaBilgileri"
+    ],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/kategoriler/filtreleme/yukleniyor.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [
+      "cevir",
+      "varsayilanBlokModul"
+    ],
+    "inlineEvents": [],
+    "inheritance": [
+      "varsayilanBlokModul()"
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/kategoriler/kart.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [
+      "lazy"
+    ],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/kategoriler/kategori_aciklama.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": false,
+    "twigHelpers": [
+      "sayfaBilgileri",
+      "varsayilanBlokModul"
+    ],
+    "inlineEvents": [],
+    "inheritance": [
+      "varsayilanBlokModul()"
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/kategoriler/liste.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [
+      "tumKategoriler",
+      "varsayilanBlokModul"
+    ],
+    "inlineEvents": [],
+    "inheritance": [
+      "varsayilanBlokModul()"
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/kategoriler/ozel_blog.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [
+      "sayfaBilgileri",
+      "varsayilanBlokModul",
+      "varsayilanBosDosya"
+    ],
+    "inlineEvents": [],
+    "inheritance": [
+      "sayfaBilgileri('blog_var_mi')\n    ? varsayilanBlokModul()\n    : varsayilanBosDosya()"
+    ],
+    "rawLines": [
+      9
+    ]
+  },
+  {
+    "file": "canlitema/moduller/kategoriler/responsive_butonlar.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": false,
+    "twigHelpers": [
+      "cevir"
+    ],
+    "inlineEvents": [
+      {
+        "line": 4,
+        "calls": [
+          {
+            "name": "showSmartCategoryPopup",
+            "declaredInPlatformReference": true
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "calls": [
+          {
+            "name": "showSmartCategoryPopup",
+            "declaredInPlatformReference": true
+          }
+        ]
+      }
+    ],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/kategoriler/sayfalama.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": false,
+    "twigHelpers": [
+      "cevir",
+      "e",
+      "sayfaBilgileri",
+      "varsayilanBlokModul"
+    ],
+    "inlineEvents": [],
+    "inheritance": [
+      "varsayilanBlokModul()",
+      "modul.kategori_kart",
+      "'moduller/kategoriler/responsive_butonlar.twig'",
+      "modul.kart",
+      "modul.sayfalar"
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/markalar/kart.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [
+      "lazy"
+    ],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/markalar/sayfalama.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [
+      "cevir",
+      "sayfaBilgileri",
+      "varsayilanBlokModul"
+    ],
+    "inlineEvents": [],
+    "inheritance": [
+      "varsayilanBlokModul()",
+      "modul.kart",
+      "modul.sayfalar"
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/odeme/adimlar.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": false,
+    "twigHelpers": [
+      "cevir",
+      "sayfaBilgileri",
+      "statikLinkler",
+      "temaDosyalari",
+      "varsayilanBlokModul"
+    ],
+    "inlineEvents": [],
+    "inheritance": [
+      "varsayilanBlokModul()"
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/odeme/bilgiler/adres.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": false,
+    "twigHelpers": [
+      "ayarlar",
+      "cevir",
+      "ilceler",
+      "iller",
+      "mahalleler",
+      "siparisBilgileri",
+      "temaDosyalari",
+      "ulkeler",
+      "varsayilanBlokModul"
+    ],
+    "inlineEvents": [
+      {
+        "line": 62,
+        "calls": [
+          {
+            "name": "selectChangeCountryV3",
+            "declaredInPlatformReference": true
+          }
+        ]
+      },
+      {
+        "line": 78,
+        "calls": [
+          {
+            "name": "selectChangeCityV3",
+            "declaredInPlatformReference": true
+          }
+        ]
+      },
+      {
+        "line": 91,
+        "calls": [
+          {
+            "name": "selectChangeDistrictV3",
+            "declaredInPlatformReference": true
+          }
+        ]
+      },
+      {
+        "line": 128,
+        "calls": [
+          {
+            "name": "toggleClass",
+            "declaredInPlatformReference": false
+          }
+        ]
+      },
+      {
+        "line": 143,
+        "calls": [
+          {
+            "name": "removeClass",
+            "declaredInPlatformReference": false
+          },
+          {
+            "name": "addClass",
+            "declaredInPlatformReference": false
+          }
+        ]
+      },
+      {
+        "line": 154,
+        "calls": [
+          {
+            "name": "removeClass",
+            "declaredInPlatformReference": false
+          },
+          {
+            "name": "addClass",
+            "declaredInPlatformReference": false
+          }
+        ]
+      },
+      {
+        "line": 213,
+        "calls": [
+          {
+            "name": "selectChangeCountry",
+            "declaredInPlatformReference": true
+          }
+        ]
+      },
+      {
+        "line": 229,
+        "calls": [
+          {
+            "name": "selectChangeCity",
+            "declaredInPlatformReference": true
+          }
+        ]
+      }
+    ],
+    "inheritance": [
+      "varsayilanBlokModul()"
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/odeme/bilgiler/kargo.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": false,
+    "twigHelpers": [
+      "temaDosyalari",
+      "varsayilanBlokModul"
+    ],
+    "inlineEvents": [],
+    "inheritance": [
+      "varsayilanBlokModul()"
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/odeme/bilgiler/kargo_icerik.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [
+      "cevir",
+      "kullaniciBilgileri",
+      "kullaniciGirisYaptiMi",
+      "lazy",
+      "sayfaBilgileri"
+    ],
+    "inlineEvents": [
+      {
+        "line": 3,
+        "calls": [
+          {
+            "name": "prop",
+            "declaredInPlatformReference": false
+          },
+          {
+            "name": "change",
+            "declaredInPlatformReference": false
+          }
+        ]
+      }
+    ],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/odeme/bilgiler/kargo_sablonu.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [
+      "cevir",
+      "varsayilanBlokModul"
+    ],
+    "inlineEvents": [],
+    "inheritance": [
+      "varsayilanBlokModul()"
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/odeme/bilgiler/odeme.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": false,
+    "twigHelpers": [
+      "cevir",
+      "e",
+      "sayfaBilgileri",
+      "varsayilanBlokModul"
+    ],
+    "inlineEvents": [
+      {
+        "line": 38,
+        "calls": [
+          {
+            "name": "changePaymentMethod",
+            "declaredInPlatformReference": true
+          }
+        ]
+      }
+    ],
+    "inheritance": [
+      "varsayilanBlokModul()"
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/odeme/bilgiler/siparis.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": false,
+    "twigHelpers": [
+      "ayarlar",
+      "cevir",
+      "hediyePaketiUcreti",
+      "siparisBilgileri",
+      "temaDosyalari",
+      "varsayilanBlokModul"
+    ],
+    "inlineEvents": [],
+    "inheritance": [
+      "varsayilanBlokModul()"
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/odeme/butonlar.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": false,
+    "twigHelpers": [
+      "cevir",
+      "sayfaBilgileri",
+      "varsayilanBlokModul",
+      "varsayilanBosDosya"
+    ],
+    "inlineEvents": [
+      {
+        "line": 9,
+        "calls": [
+          {
+            "name": "completePaymentStep",
+            "declaredInPlatformReference": true
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "calls": [
+          {
+            "name": "completePaymentStep",
+            "declaredInPlatformReference": true
+          }
+        ]
+      }
+    ],
+    "inheritance": [
+      "sayfaBilgileri('odeme_adimi') < 3\r\n    ? varsayilanBlokModul()\r\n    : varsayilanBosDosya()"
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/odeme/form.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [
+      "ayarlar",
+      "kullaniciBilgileri",
+      "kullaniciGirisYaptiMi",
+      "sayfaBilgileri",
+      "siparisTeslimatZamanlari",
+      "temaAyarlari"
+    ],
+    "inlineEvents": [],
+    "inheritance": [
+      "'moduller/odeme/bilgiler/adres.twig'",
+      "'moduller/odeme/bilgiler/kargo.twig'",
+      "siparisTeslimatZamanlari()",
+      "'moduller/odeme/bilgiler/kargo_sablonu.twig'",
+      "'moduller/odeme/bilgiler/siparis.twig'",
+      "'moduller/odeme/bilgiler/odeme.twig'"
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/odeme/ozet.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": false,
+    "twigHelpers": [
+      "ayarlar",
+      "cevir",
+      "sayfaBilgileri",
+      "sepetBilgileri",
+      "varsayilanBlokModul",
+      "varsayilanBosDosya"
+    ],
+    "inlineEvents": [
+      {
+        "line": 8,
+        "calls": [
+          {
+            "name": "toggleClass",
+            "declaredInPlatformReference": false
+          }
+        ]
+      }
+    ],
+    "inheritance": [
+      "sayfaBilgileri('odeme_adimi') < 3\r\n    ? varsayilanBlokModul()\r\n    : varsayilanBosDosya()"
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/odeme/ozet_icerik.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": false,
+    "twigHelpers": [
+      "cevir",
+      "siparisOzetListe",
+      "siparisOzeti",
+      "temaDosyalari",
+      "ucretsizKargoLimitleri"
+    ],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/odeme/siparis_onayi.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": false,
+    "twigHelpers": [
+      "cevir",
+      "sayfaBilgileri",
+      "varsayilanBlokModul",
+      "varsayilanBosDosya"
+    ],
+    "inlineEvents": [],
+    "inheritance": [
+      "sayfaBilgileri('odeme_adimi') == 3\r\n    ? varsayilanBlokModul()\r\n    : varsayilanBosDosya()"
+    ],
+    "rawLines": [
+      12
+    ]
+  },
+  {
+    "file": "canlitema/moduller/odeme/sozlesmeler/mesafeli_satis_sozlesmesi.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [
+      "cevir",
+      "sayfaBilgileri",
+      "siparisSozlesme",
+      "varsayilanModal"
+    ],
+    "inlineEvents": [],
+    "inheritance": [
+      "varsayilanModal()"
+    ],
+    "rawLines": [
+      17
+    ]
+  },
+  {
+    "file": "canlitema/moduller/odeme/sozlesmeler/on_bilgilendirme_formu.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [
+      "cevir",
+      "sayfaBilgileri",
+      "siparisSozlesme",
+      "varsayilanModal"
+    ],
+    "inlineEvents": [],
+    "inheritance": [
+      "varsayilanModal()"
+    ],
+    "rawLines": [
+      17
+    ]
+  },
+  {
+    "file": "canlitema/moduller/odeme/sozlesme_kutusu.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": false,
+    "twigHelpers": [
+      "cevir",
+      "sayfaBilgileri",
+      "showNativeModal",
+      "temaAyarlari",
+      "varsayilanBlokModul",
+      "varsayilanBosDosya"
+    ],
+    "inlineEvents": [
+      {
+        "line": 13,
+        "calls": [
+          {
+            "name": "showNativeModal",
+            "declaredInPlatformReference": true
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "calls": [
+          {
+            "name": "showNativeModal",
+            "declaredInPlatformReference": true
+          }
+        ]
+      },
+      {
+        "line": 27,
+        "calls": [
+          {
+            "name": "showNativeModal",
+            "declaredInPlatformReference": true
+          }
+        ]
+      },
+      {
+        "line": 42,
+        "calls": [
+          {
+            "name": "showNativeModal",
+            "declaredInPlatformReference": true
+          }
+        ]
+      }
+    ],
+    "inheritance": [
+      "sayfaBilgileri('odeme_adimi') == 2\r\n    ? varsayilanBlokModul()\r\n    : varsayilanBosDosya()"
+    ],
+    "rawLines": [
+      15,
+      28,
+      43
+    ]
+  },
+  {
+    "file": "canlitema/moduller/sayfam-urun/sayfam-urun.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/sepet/ajax_liste.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": false,
+    "twigHelpers": [
+      "ayarlar",
+      "cevir",
+      "lazy",
+      "sepetBilgileri"
+    ],
+    "inlineEvents": [
+      {
+        "line": 38,
+        "calls": [
+          {
+            "name": "removeCart",
+            "declaredInPlatformReference": true
+          }
+        ]
+      }
+    ],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/sepet/ajax_ozet.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [
+      "ayarlar",
+      "cevir",
+      "sepetBilgileri",
+      "statikLinkler"
+    ],
+    "inlineEvents": [
+      {
+        "line": 38,
+        "calls": [
+          {
+            "name": "removeVoucherCode",
+            "declaredInPlatformReference": true
+          }
+        ]
+      }
+    ],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/sepet/butonlar.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": false,
+    "twigHelpers": [
+      "cevir",
+      "sepetBilgileri",
+      "statikLinkler",
+      "varsayilanBlokModul",
+      "varsayilanBosDosya"
+    ],
+    "inlineEvents": [],
+    "inheritance": [
+      "sepetBilgileri('durum')\r\n    ? varsayilanBlokModul()\r\n    : varsayilanBosDosya()"
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/sepet/hediye_ceki.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": false,
+    "twigHelpers": [
+      "ayarlar",
+      "cevir",
+      "sepetBilgileri",
+      "varsayilanBlokModul",
+      "varsayilanBosDosya"
+    ],
+    "inlineEvents": [
+      {
+        "line": 23,
+        "calls": [
+          {
+            "name": "useVoucherCode",
+            "declaredInPlatformReference": true
+          }
+        ]
+      }
+    ],
+    "inheritance": [
+      "ayarlar('hediye_ceki_kullanimi') and not sepetBilgileri('ozet').indirim_var_mi and sepetBilgileri('durum')\r\n    ? varsayilanBlokModul()\r\n    : varsayilanBosDosya()"
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/sepet/liste.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": false,
+    "twigHelpers": [
+      "ayarlar",
+      "cevir",
+      "lazy",
+      "merge",
+      "sepetBilgileri",
+      "varsayilanBlokModul",
+      "varsayilanBosDosya"
+    ],
+    "inlineEvents": [
+      {
+        "line": 95,
+        "calls": [
+          {
+            "name": "removeCart",
+            "declaredInPlatformReference": true
+          }
+        ]
+      },
+      {
+        "line": 97,
+        "calls": [
+          {
+            "name": "productQuantityBox",
+            "declaredInPlatformReference": true
+          }
+        ]
+      },
+      {
+        "line": 108,
+        "calls": [
+          {
+            "name": "productQuantityBox",
+            "declaredInPlatformReference": true
+          }
+        ]
+      },
+      {
+        "line": 113,
+        "calls": [
+          {
+            "name": "updateCartQuantity",
+            "declaredInPlatformReference": true
+          }
+        ]
+      },
+      {
+        "line": 115,
+        "calls": [
+          {
+            "name": "productQuantityBox",
+            "declaredInPlatformReference": true
+          }
+        ]
+      },
+      {
+        "line": 160,
+        "calls": [
+          {
+            "name": "back",
+            "declaredInPlatformReference": false
+          }
+        ]
+      }
+    ],
+    "inheritance": [
+      "sepetBilgileri('durum')\r\n    ? varsayilanBlokModul()\r\n    : varsayilanBosDosya()"
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/sepet/ozet.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": false,
+    "twigHelpers": [
+      "ayarlar",
+      "cevir",
+      "sepetBilgileri",
+      "statikLinkler",
+      "temaDosyalari",
+      "ucretsizKargoLimitleri",
+      "varsayilanBlokModul",
+      "varsayilanBosDosya"
+    ],
+    "inlineEvents": [
+      {
+        "line": 74,
+        "calls": [
+          {
+            "name": "removeVoucherCode",
+            "declaredInPlatformReference": true
+          }
+        ]
+      }
+    ],
+    "inheritance": [
+      "sepetBilgileri('durum') \r\n    ? varsayilanBlokModul() \r\n    : varsayilanBosDosya()"
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/sepet/sepet_bos.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": false,
+    "twigHelpers": [
+      "cevir",
+      "sepetBilgileri",
+      "statikLinkler",
+      "varsayilanBlokModul",
+      "varsayilanBosDosya"
+    ],
+    "inlineEvents": [],
+    "inheritance": [
+      "sepetBilgileri('durum')\r\n    ? varsayilanBosDosya()\r\n    : varsayilanBlokModul()"
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/statik_sayfalar/404.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": false,
+    "twigHelpers": [
+      "buyukCevir",
+      "cevir",
+      "logoAdresi",
+      "statikLinkler",
+      "temaAyarlari",
+      "temaDosyalari",
+      "varsayilanBlokModul"
+    ],
+    "inlineEvents": [],
+    "inheritance": [
+      "varsayilanBlokModul()"
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/statik_sayfalar/alt_sayfalar/havale_bildirim.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": false,
+    "twigHelpers": [
+      "cevir",
+      "date",
+      "havaleBilgileri"
+    ],
+    "inlineEvents": [
+      {
+        "line": 30,
+        "calls": [
+          {
+            "name": "bankEftForm",
+            "declaredInPlatformReference": true
+          }
+        ]
+      }
+    ],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/statik_sayfalar/alt_sayfalar/iletisim.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": false,
+    "twigHelpers": [
+      "ayarlar",
+      "cevir",
+      "sayfaBilgileri"
+    ],
+    "inlineEvents": [
+      {
+        "line": 5,
+        "calls": [
+          {
+            "name": "contactForm",
+            "declaredInPlatformReference": true
+          }
+        ]
+      }
+    ],
+    "inheritance": [],
+    "rawLines": [
+      1,
+      3
+    ]
+  },
+  {
+    "file": "canlitema/moduller/statik_sayfalar/alt_sayfalar/sayfa.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [
+      "sayfaBilgileri"
+    ],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": [
+      1
+    ]
+  },
+  {
+    "file": "canlitema/moduller/statik_sayfalar/alt_sayfalar/siparis_takip.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": false,
+    "twigHelpers": [],
+    "inlineEvents": [
+      {
+        "line": 33,
+        "calls": [
+          {
+            "name": "orderDetailForm",
+            "declaredInPlatformReference": true
+          }
+        ]
+      }
+    ],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/statik_sayfalar/alt_sayfalar/sss.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": false,
+    "twigHelpers": [
+      "sikcaSorulanSorular"
+    ],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": [
+      12
+    ]
+  },
+  {
+    "file": "canlitema/moduller/statik_sayfalar/icerik.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [
+      "sayfaBilgileri",
+      "varsayilanBlokModul"
+    ],
+    "inlineEvents": [],
+    "inheritance": [
+      "varsayilanBlokModul()",
+      "'moduller/statik_sayfalar/alt_sayfalar/' ~ sayfaBilgileri('tema_dosyasi') ~ '.twig'"
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/statik_sayfalar/menu.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [
+      "dinamikSayfaLinkleri",
+      "statikSayfaLinkleri",
+      "varsayilanBlokModul"
+    ],
+    "inlineEvents": [],
+    "inheritance": [
+      "varsayilanBlokModul()"
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/urunler/anasayfa_kart.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": false,
+    "twigHelpers": [
+      "buyukCevir",
+      "lazy",
+      "temaAyarlari"
+    ],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/urunler/atli_karinca_resim.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [
+      "etiketler",
+      "sayfaBilgileri"
+    ],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/urunler/carousel_atli_karinca.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [
+      "etiketler",
+      "sayfaBilgileri"
+    ],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/urunler/detay_aciklama.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [
+      "sayfaBilgileri",
+      "temaAyarlari",
+      "varsayilanBlokModul"
+    ],
+    "inlineEvents": [],
+    "inheritance": [
+      "varsayilanBlokModul()"
+    ],
+    "rawLines": [
+      5
+    ]
+  },
+  {
+    "file": "canlitema/moduller/urunler/detay_taksitler.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [
+      "varsayilanBlokModul"
+    ],
+    "inlineEvents": [],
+    "inheritance": [
+      "varsayilanBlokModul()",
+      "modul.taksit_secenekleri"
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/urunler/detay_teslimat.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [
+      "sayfaBilgileri",
+      "varsayilanBlokModul"
+    ],
+    "inlineEvents": [],
+    "inheritance": [
+      "varsayilanBlokModul()"
+    ],
+    "rawLines": [
+      5
+    ]
+  },
+  {
+    "file": "canlitema/moduller/urunler/detay_yorumlar.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [
+      "varsayilanYorumDosyasi"
+    ],
+    "inlineEvents": [],
+    "inheritance": [
+      "modul.varsayilan_yorum_modulu ? modul.varsayilan_yorum_modulu : varsayilanYorumDosyasi()"
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/urunler/etkilesim.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [
+      "basHarfBuyukCevir",
+      "cevir",
+      "karsilastirmaListesiSayisi",
+      "kullaniciStokAlarmKontrol",
+      "sayfaBilgileri",
+      "varsayilanBlokModul",
+      "varyantIlkStokKontrol"
+    ],
+    "inlineEvents": [
+      {
+        "line": 11,
+        "calls": [
+          {
+            "name": "userProductFavourite",
+            "declaredInPlatformReference": true
+          },
+          {
+            "name": "sayfaBilgileri",
+            "declaredInPlatformReference": false
+          }
+        ]
+      },
+      {
+        "line": 17,
+        "calls": [
+          {
+            "name": "userProductFavourite",
+            "declaredInPlatformReference": true
+          },
+          {
+            "name": "sayfaBilgileri",
+            "declaredInPlatformReference": false
+          }
+        ]
+      },
+      {
+        "line": 28,
+        "calls": [
+          {
+            "name": "visitorProductRecommend",
+            "declaredInPlatformReference": true
+          },
+          {
+            "name": "sayfaBilgileri",
+            "declaredInPlatformReference": false
+          }
+        ]
+      },
+      {
+        "line": 39,
+        "calls": [
+          {
+            "name": "userProductComment",
+            "declaredInPlatformReference": true
+          },
+          {
+            "name": "sayfaBilgileri",
+            "declaredInPlatformReference": false
+          }
+        ]
+      },
+      {
+        "line": 50,
+        "calls": [
+          {
+            "name": "preCompareList",
+            "declaredInPlatformReference": true
+          },
+          {
+            "name": "sayfaBilgileri",
+            "declaredInPlatformReference": false
+          }
+        ]
+      },
+      {
+        "line": 62,
+        "calls": [
+          {
+            "name": "userProductPriceAlert",
+            "declaredInPlatformReference": true
+          },
+          {
+            "name": "sayfaBilgileri",
+            "declaredInPlatformReference": false
+          }
+        ]
+      },
+      {
+        "line": 76,
+        "calls": [
+          {
+            "name": "userProductQuantityAlert",
+            "declaredInPlatformReference": true
+          },
+          {
+            "name": "sayfaBilgileri",
+            "declaredInPlatformReference": false
+          }
+        ]
+      },
+      {
+        "line": 84,
+        "calls": [
+          {
+            "name": "userProductQuantityAlert",
+            "declaredInPlatformReference": true
+          },
+          {
+            "name": "sayfaBilgileri",
+            "declaredInPlatformReference": false
+          }
+        ]
+      },
+      {
+        "line": 95,
+        "calls": [
+          {
+            "name": "phoneOrderRequest",
+            "declaredInPlatformReference": true
+          },
+          {
+            "name": "sayfaBilgileri",
+            "declaredInPlatformReference": false
+          }
+        ]
+      },
+      {
+        "line": 106,
+        "calls": [
+          {
+            "name": "productSuggestion",
+            "declaredInPlatformReference": true
+          },
+          {
+            "name": "sayfaBilgileri",
+            "declaredInPlatformReference": false
+          }
+        ]
+      }
+    ],
+    "inheritance": [
+      "varsayilanBlokModul()"
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/urunler/hizli_sepet_favori.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": false,
+    "twigHelpers": [
+      "sayfaBilgileri"
+    ],
+    "inlineEvents": [
+      {
+        "line": 3,
+        "calls": [
+          {
+            "name": "userProductFavourite",
+            "declaredInPlatformReference": true
+          },
+          {
+            "name": "sayfaBilgileri",
+            "declaredInPlatformReference": false
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "calls": [
+          {
+            "name": "userProductFavourite",
+            "declaredInPlatformReference": true
+          },
+          {
+            "name": "sayfaBilgileri",
+            "declaredInPlatformReference": false
+          }
+        ]
+      }
+    ],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/urunler/hizli_sepet_kutusu.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": false,
+    "twigHelpers": [
+      "ayarlar",
+      "buyukCevir",
+      "cevir",
+      "sayfaBilgileri",
+      "temaAyarlari",
+      "urunHavaleFiyati",
+      "varsayilanModal"
+    ],
+    "inlineEvents": [
+      {
+        "line": 124,
+        "calls": [
+          {
+            "name": "changeProductPageVariant",
+            "declaredInPlatformReference": true
+          },
+          {
+            "name": "sayfaBilgileri",
+            "declaredInPlatformReference": false
+          },
+          {
+            "name": "getAttribute",
+            "declaredInPlatformReference": false
+          }
+        ]
+      },
+      {
+        "line": 147,
+        "calls": [
+          {
+            "name": "productQuantityBox",
+            "declaredInPlatformReference": true
+          },
+          {
+            "name": "sayfaBilgileri",
+            "declaredInPlatformReference": false
+          }
+        ]
+      },
+      {
+        "line": 154,
+        "calls": [
+          {
+            "name": "productQuantityBox",
+            "declaredInPlatformReference": true
+          },
+          {
+            "name": "sayfaBilgileri",
+            "declaredInPlatformReference": false
+          }
+        ]
+      },
+      {
+        "line": 160,
+        "calls": [
+          {
+            "name": "productQuantityBox",
+            "declaredInPlatformReference": true
+          },
+          {
+            "name": "sayfaBilgileri",
+            "declaredInPlatformReference": false
+          }
+        ]
+      },
+      {
+        "line": 171,
+        "calls": [
+          {
+            "name": "addCart",
+            "declaredInPlatformReference": true
+          },
+          {
+            "name": "sayfaBilgileri",
+            "declaredInPlatformReference": false
+          },
+          {
+            "name": "val",
+            "declaredInPlatformReference": false
+          }
+        ]
+      }
+    ],
+    "inheritance": [
+      "varsayilanModal()",
+      "'moduller/urunler/hizli_sepet_favori.twig'",
+      "'moduller/urunler/profil_degerlendirmeler.twig'",
+      "'@default/addons/product_special_fields.twig'"
+    ],
+    "rawLines": [
+      23,
+      177
+    ]
+  },
+  {
+    "file": "canlitema/moduller/urunler/kart.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": false,
+    "twigHelpers": [
+      "basHarfBuyukCevir",
+      "cevir",
+      "etiketler",
+      "lazy",
+      "markaListeBilgileri",
+      "temaAyarlari"
+    ],
+    "inlineEvents": [
+      {
+        "line": 70,
+        "calls": [
+          {
+            "name": "showNativeModal",
+            "declaredInPlatformReference": true
+          }
+        ]
+      },
+      {
+        "line": 80,
+        "calls": [
+          {
+            "name": "addCart",
+            "declaredInPlatformReference": true
+          }
+        ]
+      },
+      {
+        "line": 85,
+        "calls": [
+          {
+            "name": "addCart",
+            "declaredInPlatformReference": true
+          }
+        ]
+      },
+      {
+        "line": 99,
+        "calls": [
+          {
+            "name": "addCart",
+            "declaredInPlatformReference": true
+          }
+        ]
+      },
+      {
+        "line": 104,
+        "calls": [
+          {
+            "name": "addCart",
+            "declaredInPlatformReference": true
+          }
+        ]
+      },
+      {
+        "line": 179,
+        "calls": [
+          {
+            "name": "productQuantityBox",
+            "declaredInPlatformReference": true
+          }
+        ]
+      },
+      {
+        "line": 187,
+        "calls": [
+          {
+            "name": "productQuantityBox",
+            "declaredInPlatformReference": true
+          }
+        ]
+      },
+      {
+        "line": 192,
+        "calls": [
+          {
+            "name": "productQuantityBox",
+            "declaredInPlatformReference": true
+          }
+        ]
+      },
+      {
+        "line": 210,
+        "calls": [
+          {
+            "name": "addCart",
+            "declaredInPlatformReference": true
+          }
+        ]
+      },
+      {
+        "line": 216,
+        "calls": [
+          {
+            "name": "addCart",
+            "declaredInPlatformReference": true
+          }
+        ]
+      }
+    ],
+    "inheritance": [
+      "'moduller/urunler/kart_favori_listesi.twig'",
+      "'moduller/urunler/kart_degerlendirmeler.twig'"
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/urunler/kart_degerlendirmeler.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": false,
+    "twigHelpers": [
+      "default",
+      "number_format"
+    ],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/urunler/kart_favori_listesi.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": false,
+    "twigHelpers": [
+      "kullaniciFavoriListesi",
+      "kullaniciGirisYaptiMi"
+    ],
+    "inlineEvents": [
+      {
+        "line": 9,
+        "calls": [
+          {
+            "name": "userProductFavourite",
+            "declaredInPlatformReference": true
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "calls": [
+          {
+            "name": "userProductFavourite",
+            "declaredInPlatformReference": true
+          }
+        ]
+      }
+    ],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/urunler/kart_yorum.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [
+      "lazy"
+    ],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/urunler/kat-ozel-kart.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [
+      "basHarfBuyukCevir",
+      "cevir",
+      "etiketler",
+      "lazy",
+      "markaListeBilgileri",
+      "temaAyarlari"
+    ],
+    "inlineEvents": [
+      {
+        "line": 78,
+        "calls": [
+          {
+            "name": "showNativeModal",
+            "declaredInPlatformReference": true
+          }
+        ]
+      },
+      {
+        "line": 88,
+        "calls": [
+          {
+            "name": "addCart",
+            "declaredInPlatformReference": true
+          }
+        ]
+      },
+      {
+        "line": 93,
+        "calls": [
+          {
+            "name": "addCart",
+            "declaredInPlatformReference": true
+          }
+        ]
+      },
+      {
+        "line": 109,
+        "calls": [
+          {
+            "name": "addCart",
+            "declaredInPlatformReference": true
+          }
+        ]
+      },
+      {
+        "line": 185,
+        "calls": [
+          {
+            "name": "productQuantityBox",
+            "declaredInPlatformReference": true
+          }
+        ]
+      },
+      {
+        "line": 193,
+        "calls": [
+          {
+            "name": "productQuantityBox",
+            "declaredInPlatformReference": true
+          }
+        ]
+      },
+      {
+        "line": 198,
+        "calls": [
+          {
+            "name": "productQuantityBox",
+            "declaredInPlatformReference": true
+          }
+        ]
+      },
+      {
+        "line": 217,
+        "calls": [
+          {
+            "name": "addCart",
+            "declaredInPlatformReference": true
+          }
+        ]
+      },
+      {
+        "line": 223,
+        "calls": [
+          {
+            "name": "addCart",
+            "declaredInPlatformReference": true
+          }
+        ]
+      }
+    ],
+    "inheritance": [
+      "'moduller/urunler/kart_favori_listesi.twig'",
+      "'moduller/urunler/kart_degerlendirmeler.twig'"
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/urunler/liste_kart.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": false,
+    "twigHelpers": [
+      "cevir",
+      "lazy"
+    ],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/urunler/normal_resim.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [
+      "sayfaBilgileri"
+    ],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/urunler/profil.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": false,
+    "twigHelpers": [
+      "ayarlar",
+      "cevir",
+      "sayfaBilgileri",
+      "statikLinkler",
+      "temaAyarlari",
+      "ucretsizKargoLimitleri",
+      "urunHavaleFiyati",
+      "urunTaksitBilgisi",
+      "varsayilanBlokModul",
+      "whatsappNumara"
+    ],
+    "inlineEvents": [
+      {
+        "line": 68,
+        "calls": [
+          {
+            "name": "productSuggestion",
+            "declaredInPlatformReference": true
+          }
+        ]
+      },
+      {
+        "line": 223,
+        "calls": [
+          {
+            "name": "changeProductPageVariant",
+            "declaredInPlatformReference": true
+          },
+          {
+            "name": "sayfaBilgileri",
+            "declaredInPlatformReference": false
+          },
+          {
+            "name": "getAttribute",
+            "declaredInPlatformReference": false
+          }
+        ]
+      },
+      {
+        "line": 240,
+        "calls": [
+          {
+            "name": "tilbeSelectProductVariant",
+            "declaredInPlatformReference": false
+          }
+        ]
+      },
+      {
+        "line": 252,
+        "calls": [
+          {
+            "name": "changeProductPageVariant",
+            "declaredInPlatformReference": true
+          },
+          {
+            "name": "sayfaBilgileri",
+            "declaredInPlatformReference": false
+          },
+          {
+            "name": "getAttribute",
+            "declaredInPlatformReference": false
+          }
+        ]
+      },
+      {
+        "line": 293,
+        "calls": [
+          {
+            "name": "productQuantityBox",
+            "declaredInPlatformReference": true
+          },
+          {
+            "name": "sayfaBilgileri",
+            "declaredInPlatformReference": false
+          }
+        ]
+      },
+      {
+        "line": 300,
+        "calls": [
+          {
+            "name": "productQuantityBox",
+            "declaredInPlatformReference": true
+          },
+          {
+            "name": "sayfaBilgileri",
+            "declaredInPlatformReference": false
+          }
+        ]
+      },
+      {
+        "line": 306,
+        "calls": [
+          {
+            "name": "productQuantityBox",
+            "declaredInPlatformReference": true
+          },
+          {
+            "name": "sayfaBilgileri",
+            "declaredInPlatformReference": false
+          }
+        ]
+      },
+      {
+        "line": 322,
+        "calls": [
+          {
+            "name": "addCart",
+            "declaredInPlatformReference": true
+          },
+          {
+            "name": "sayfaBilgileri",
+            "declaredInPlatformReference": false
+          },
+          {
+            "name": "val",
+            "declaredInPlatformReference": false
+          }
+        ]
+      },
+      {
+        "line": 340,
+        "calls": [
+          {
+            "name": "addCart",
+            "declaredInPlatformReference": true
+          },
+          {
+            "name": "sayfaBilgileri",
+            "declaredInPlatformReference": false
+          },
+          {
+            "name": "val",
+            "declaredInPlatformReference": false
+          }
+        ]
+      },
+      {
+        "line": 380,
+        "calls": [
+          {
+            "name": "userProductQuantityAlert",
+            "declaredInPlatformReference": true
+          },
+          {
+            "name": "sayfaBilgileri",
+            "declaredInPlatformReference": false
+          }
+        ]
+      },
+      {
+        "line": 387,
+        "calls": [
+          {
+            "name": "getAttribute",
+            "declaredInPlatformReference": false
+          }
+        ]
+      }
+    ],
+    "inheritance": [
+      "varsayilanBlokModul()",
+      "'moduller/urunler/resim_alani_tipi/carousel_atli_karinca.twig'",
+      "'moduller/urunler/resim_alani_tipi/normal_altta.twig'",
+      "'moduller/urunler/resim_alani_tipi/carousel_sol.twig'",
+      "'moduller/urunler/profil_degerlendirmeler.twig'",
+      "'@default/addons/product_special_fields.twig'",
+      "'moduller/urunler/profil_favori_listesi.twig'"
+    ],
+    "rawLines": [
+      328,
+      347
+    ]
+  },
+  {
+    "file": "canlitema/moduller/urunler/profil_degerlendirmeler.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": false,
+    "twigHelpers": [
+      "default",
+      "number_format",
+      "sayfaBilgileri",
+      "temaDosyalari"
+    ],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/urunler/profil_favori_listesi.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": false,
+    "twigHelpers": [
+      "sayfaBilgileri"
+    ],
+    "inlineEvents": [
+      {
+        "line": 3,
+        "calls": [
+          {
+            "name": "userProductFavourite",
+            "declaredInPlatformReference": true
+          },
+          {
+            "name": "sayfaBilgileri",
+            "declaredInPlatformReference": false
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "calls": [
+          {
+            "name": "userProductFavourite",
+            "declaredInPlatformReference": true
+          },
+          {
+            "name": "sayfaBilgileri",
+            "declaredInPlatformReference": false
+          }
+        ]
+      }
+    ],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/urunler/resim_alani_tipi/carousel_atli_karinca.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": false,
+    "twigHelpers": [
+      "etiketler",
+      "sayfaBilgileri",
+      "temaAyarlari"
+    ],
+    "inlineEvents": [],
+    "inheritance": [
+      "'moduller/urunler/kart_favori_listesi.twig' with {'urun': sayfaBilgileri()}"
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/urunler/resim_alani_tipi/carousel_sol.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": false,
+    "twigHelpers": [
+      "sayfaBilgileri"
+    ],
+    "inlineEvents": [
+      {
+        "line": 44,
+        "calls": [
+          {
+            "name": "tilbePlayProductVideo",
+            "declaredInPlatformReference": false
+          }
+        ]
+      },
+      {
+        "line": 78,
+        "calls": [
+          {
+            "name": "openVideoPopup",
+            "declaredInPlatformReference": false
+          }
+        ]
+      },
+      {
+        "line": 85,
+        "calls": [
+          {
+            "name": "closeVideoPopup",
+            "declaredInPlatformReference": false
+          }
+        ]
+      },
+      {
+        "line": 87,
+        "calls": [
+          {
+            "name": "closeVideoPopup",
+            "declaredInPlatformReference": false
+          }
+        ]
+      }
+    ],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/urunler/resim_alani_tipi/normal_altta.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": false,
+    "twigHelpers": [
+      "etiketler",
+      "sayfaBilgileri"
+    ],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/uyelik/giris_yap.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": false,
+    "twigHelpers": [
+      "ayarlar",
+      "facebookLogin",
+      "googleLogin",
+      "returnUrl",
+      "sayfaBilgileri",
+      "statikLinkler",
+      "varsayilanBlokModul"
+    ],
+    "inlineEvents": [
+      {
+        "line": 24,
+        "calls": [
+          {
+            "name": "userLogin",
+            "declaredInPlatformReference": true
+          }
+        ]
+      },
+      {
+        "line": 60,
+        "calls": [
+          {
+            "name": "togglePasswordVisibility",
+            "declaredInPlatformReference": false
+          }
+        ]
+      },
+      {
+        "line": 75,
+        "calls": [
+          {
+            "name": "userRegister",
+            "declaredInPlatformReference": true
+          }
+        ]
+      },
+      {
+        "line": 106,
+        "calls": [
+          {
+            "name": "togglePasswordVisibility",
+            "declaredInPlatformReference": false
+          }
+        ]
+      },
+      {
+        "line": 110,
+        "calls": [
+          {
+            "name": "togglePasswordVisibility",
+            "declaredInPlatformReference": false
+          }
+        ]
+      }
+    ],
+    "inheritance": [
+      "varsayilanBlokModul()"
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/uyelik/giris_yap_aciklama.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [
+      "cevir",
+      "statikLinkler",
+      "varsayilanBlokModul"
+    ],
+    "inlineEvents": [],
+    "inheritance": [
+      "varsayilanBlokModul()"
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/uyelik/hizli_giris_kutusu.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": false,
+    "twigHelpers": [
+      "cevir",
+      "facebookLogin",
+      "googleLogin",
+      "sayfaBilgileri",
+      "statikLinkler",
+      "varsayilanModal"
+    ],
+    "inlineEvents": [
+      {
+        "line": 17,
+        "calls": [
+          {
+            "name": "userLogin",
+            "declaredInPlatformReference": true
+          }
+        ]
+      }
+    ],
+    "inheritance": [
+      "varsayilanModal()"
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/uyelik/sifremi_unuttum.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": false,
+    "twigHelpers": [
+      "returnUrl",
+      "varsayilanBlokModul"
+    ],
+    "inlineEvents": [
+      {
+        "line": 10,
+        "calls": [
+          {
+            "name": "userForgotPassword",
+            "declaredInPlatformReference": true
+          }
+        ]
+      }
+    ],
+    "inheritance": [
+      "varsayilanBlokModul()"
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/uyelik/sifremi_unuttum_aciklama.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [
+      "cevir",
+      "statikLinkler",
+      "varsayilanBlokModul"
+    ],
+    "inlineEvents": [],
+    "inheritance": [
+      "varsayilanBlokModul()"
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/uyelik/sifre_yenileme.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": false,
+    "twigHelpers": [
+      "returnUrl",
+      "sayfaBilgileri",
+      "varsayilanBlokModul"
+    ],
+    "inlineEvents": [
+      {
+        "line": 10,
+        "calls": [
+          {
+            "name": "userRenewPassword",
+            "declaredInPlatformReference": true
+          }
+        ]
+      }
+    ],
+    "inheritance": [
+      "varsayilanBlokModul()"
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/uyelik/uyelik_formu.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": false,
+    "twigHelpers": [
+      "returnUrl"
+    ],
+    "inlineEvents": [
+      {
+        "line": 9,
+        "calls": [
+          {
+            "name": "userRegister",
+            "declaredInPlatformReference": true
+          }
+        ]
+      }
+    ],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/yardim/arama_formu.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": false,
+    "twigHelpers": [
+      "cevir",
+      "statikLinkler",
+      "varsayilanBlokModul"
+    ],
+    "inlineEvents": [],
+    "inheritance": [
+      "varsayilanBlokModul()"
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/yardim/baslik_listesi.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [
+      "varsayilanBlokModul"
+    ],
+    "inlineEvents": [],
+    "inheritance": [
+      "varsayilanBlokModul()"
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/yardim/baslik_vitrini.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [
+      "varsayilanBlokModul"
+    ],
+    "inlineEvents": [],
+    "inheritance": [
+      "varsayilanBlokModul()"
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/yardim/breadcrumb.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [
+      "cevir",
+      "sayfaBilgileri",
+      "statikLinkler",
+      "varsayilanBlokModul"
+    ],
+    "inlineEvents": [],
+    "inheritance": [
+      "varsayilanBlokModul()"
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/moduller/yardim/madde_listesi.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": false,
+    "twigHelpers": [
+      "cevir",
+      "sayfaBilgileri",
+      "statikLinkler",
+      "varsayilanBlokModul"
+    ],
+    "inlineEvents": [],
+    "inheritance": [
+      "varsayilanBlokModul()"
+    ],
+    "rawLines": [
+      34
+    ]
+  },
+  {
+    "file": "canlitema/ozel-moduller/banner-anasayfa1.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [
+      "temaDosyalari"
+    ],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/ozel-moduller/bardak-masaustu-liste.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/ozel-moduller/dikey-banner-anasayfa.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [
+      "temaDosyalari"
+    ],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/ozel-moduller/ev-gerecleri-masaustu-liste.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/ozel-moduller/flash-urunler-hots.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [
+      "basHarfBuyukCevir",
+      "cevir",
+      "etiketler",
+      "lazy",
+      "markaListeBilgileri",
+      "temaAyarlari"
+    ],
+    "inlineEvents": [
+      {
+        "line": 70,
+        "calls": [
+          {
+            "name": "showNativeModal",
+            "declaredInPlatformReference": true
+          }
+        ]
+      },
+      {
+        "line": 80,
+        "calls": [
+          {
+            "name": "addCart",
+            "declaredInPlatformReference": true
+          }
+        ]
+      },
+      {
+        "line": 85,
+        "calls": [
+          {
+            "name": "addCart",
+            "declaredInPlatformReference": true
+          }
+        ]
+      },
+      {
+        "line": 167,
+        "calls": [
+          {
+            "name": "productQuantityBox",
+            "declaredInPlatformReference": true
+          }
+        ]
+      },
+      {
+        "line": 175,
+        "calls": [
+          {
+            "name": "productQuantityBox",
+            "declaredInPlatformReference": true
+          }
+        ]
+      },
+      {
+        "line": 180,
+        "calls": [
+          {
+            "name": "productQuantityBox",
+            "declaredInPlatformReference": true
+          }
+        ]
+      }
+    ],
+    "inheritance": [
+      "'moduller/urunler/kart_favori_listesi.twig'",
+      "'moduller/urunler/kart_degerlendirmeler.twig'"
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/ozel-moduller/kampanya-urunlerim.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/ozel-moduller/matara-masaustu-liste.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/ozel-moduller/rende-masaustu-liste.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/ozel-moduller/viral-trend-masaustu-liste.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/payment-disccode.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/profil-alev.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/profil-specaildisc.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/resimler1/banks-logos-d.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/sablon.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": false,
+    "twigHelpers": [
+      "block",
+      "cevir",
+      "fontBilgileri",
+      "temaAyarlari",
+      "temaDosyalari",
+      "varsayilanSablon"
+    ],
+    "inlineEvents": [],
+    "inheritance": [
+      "varsayilanSablon()"
+    ],
+    "rawLines": [
+      6,
+      9
+    ]
+  },
+  {
+    "file": "canlitema/sayfalar/404.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [
+      "\"sablon.twig\""
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/sayfalar/anasayfa.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [
+      "\"sablon.twig\""
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/sayfalar/bloglar.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [
+      "domain",
+      "sayfaBilgileri"
+    ],
+    "inlineEvents": [],
+    "inheritance": [
+      "\"sablon.twig\""
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/sayfalar/blog_detay.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [
+      "domain",
+      "sayfaBilgileri"
+    ],
+    "inlineEvents": [],
+    "inheritance": [
+      "\"sablon.twig\""
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/sayfalar/hediye_ceki.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [
+      "\"sablon.twig\""
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/sayfalar/hesabim.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [
+      "\"sablon.twig\""
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/sayfalar/kategoriler.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [
+      "domain",
+      "sayfaBilgileri"
+    ],
+    "inlineEvents": [],
+    "inheritance": [
+      "\"sablon.twig\""
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/sayfalar/markalar.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [
+      "\"sablon.twig\""
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/sayfalar/odeme.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [
+      "\"sablon.twig\""
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/sayfalar/sepet.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [
+      "\"sablon.twig\""
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/sayfalar/sifremi_unuttum.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [
+      "\"sablon.twig\""
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/sayfalar/sifre_yenileme.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [
+      "\"sablon.twig\""
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/sayfalar/statik_sayfalar.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [
+      "\"sablon.twig\""
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/sayfalar/urun_detay.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [
+      "domain",
+      "sayfaBilgileri"
+    ],
+    "inlineEvents": [],
+    "inheritance": [
+      "\"sablon.twig\""
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/sayfalar/uye_girisi.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [
+      "\"sablon.twig\""
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/sayfalar/uye_ol.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [
+      "\"sablon.twig\""
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/sayfalar/yardim.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [
+      "\"sablon.twig\""
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/sayfalar/yardim_detay.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": true,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [
+      "\"sablon.twig\""
+    ],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/sepet-guvenli-odeme-pc.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [
+      "sepetBilgileri",
+      "temaDosyalari"
+    ],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/sepette-1000-tl-75-indirim.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [
+      "number_format",
+      "round",
+      "sepetBilgileri"
+    ],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/sepette-indirim.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [
+      "temaDosyalari"
+    ],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/sepette-kargo-mesaj-pc.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [
+      "temaDosyalari",
+      "ucretsizKargoLimitleri"
+    ],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/video-listeleme.twig",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [
+      "temaDosyalari"
+    ],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  },
+  {
+    "file": "canlitema/yorum-foto-var.svg",
+    "listed": true,
+    "manuallyReviewed": false,
+    "note": "Mekanik kaynak karşılaştırması; insan incelemesi denetim-durumlari.json içinde ayrı tutulur.",
+    "identicalToOriginal": null,
+    "twigHelpers": [],
+    "inlineEvents": [],
+    "inheritance": [],
+    "rawLines": []
+  }
+]

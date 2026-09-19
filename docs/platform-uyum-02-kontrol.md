@@ -1,3 +1,5 @@
+> Tarihsel inceleme/kontrol kaydıdır. Tek güncel sorun durumu: [kapsamli-denetim.md](kapsamli-denetim.md).
+
 # G02–G05 yerel onarımlar ve açık kabul işleri
 
 ## Onarılanlar

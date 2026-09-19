@@ -71,6 +71,8 @@ const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
         salesRun: require('./platform-uyum-03-cases.cjs').run.toString(),
         footerChecks: require('./platform-uyum-04-cases.cjs').payload(read),
         footerRun: require('./platform-uyum-04-cases.cjs').run.toString(),
+        quality: require('./platform-uyum-05-cases.cjs').payload(read),
+        qualityRun: require('./platform-uyum-05-cases.cjs').run.toString(),
         templateScripts: [...template.matchAll(/<script\b[^>]*>([\s\S]*?)<\/script>/g)].map(m => m[1]),
         jquery: read('Platform Dosyaları/template-assets/plugins/bootstrap.js').split('\n')[1],
         login,
@@ -204,6 +206,7 @@ const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
             check(document.querySelector('input').value === '1.5', 'Reference quantity helper decrements decimal unit');
             await (0, eval)('(' + p.salesRun + ')')(p.sales, check);
             (0, eval)('(' + p.footerRun + ')')(p.footerChecks, check);
+            await (0, eval)('(' + p.qualityRun + ')')(p.quality, check);
             return results;
         }).toString() + ')(' + JSON.stringify(payload) + ')'
     });
@@ -241,7 +244,21 @@ const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
             'Login control layout at ' + width + ': ' + JSON.stringify(layout.result.value));
         console.log('PASS Login fixture layout', width);
     }
-    console.log('Passed:', result.result.value.length + 5, '(offline browser; platform/server behavior not certified)');
+    const visualDir = path.join(root, 'artifacts', 'visual-05');
+    fs.mkdirSync(visualDir, { recursive: true });
+    for (const [width, height] of [[375, 900], [768, 900], [1440, 900], [844, 390]]) {
+        await send('Emulation.setDeviceMetricsOverride', { width, height, deviceScaleFactor: 1, mobile: width === 375 });
+        const visual = await send('Runtime.evaluate', { returnByValue: true, expression:
+            'document.body.innerHTML = ' + JSON.stringify(payload.quality.markup) + ';' +
+            payload.quality.script + ';document.querySelector("[data-video-src]").click();' +
+            'document.querySelector("[data-tilbe-video-dialog] iframe").srcdoc = "<body style=\\"background:#111;color:#fff;font-family:sans-serif;text-align:center\\">Yerel oynatıcı alanı — gerçek video yüklenmedi</body>";' +
+            '(() => {const r=document.querySelector(".tilbe-bv04kf-modal-content").getBoundingClientRect(); return r.left>=0 && r.right<=innerWidth && r.top>=32 && r.bottom<=innerHeight;})()' });
+        assert(!visual.exceptionDetails, JSON.stringify(visual.exceptionDetails));
+        assert.equal(visual.result.value, true, 'Video shell fits viewport ' + width);
+        const shot = await send('Page.captureScreenshot', { format: 'png' });
+        fs.writeFileSync(path.join(visualDir, 'video-' + width + '.png'), Buffer.from(shot.data, 'base64'));
+    }
+    console.log('Passed:', result.result.value.length + 5, '(offline browser; platform/server behavior not certified); video shell screenshots saved.');
 })().catch(error => {
     console.error(error);
     process.exitCode = 1;

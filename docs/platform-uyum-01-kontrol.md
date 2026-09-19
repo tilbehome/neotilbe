@@ -1,3 +1,5 @@
+> Tarihsel inceleme/kontrol kaydıdır. Tek güncel sorun durumu: [kapsamli-denetim.md](kapsamli-denetim.md).
+
 # Platform uyumu 01 — değişiklikler ve kontrol listesi
 
 Dal: `fix/platform-uyum-01`. Bu grup yalnız giriş globali, şifre görünürlüğü ve mobil menü kapanışı içindir. Platform/orijinal tema kaynakları değiştirilmedi, yeni çalışma zamanı kütüphanesi eklenmedi.

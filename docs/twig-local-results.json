@@ -1,0 +1,675 @@
+{
+    "engine": "3.29.0",
+    "platformVersionVerified": false,
+    "customFunctionsAndFiltersStubbed": true,
+    "results": [
+        {
+            "file": "canlitema/flash-sayac.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/flash-urun.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/liste-kartim.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/liste-urunlerim.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/bloglar/anasayfa_kart.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/bloglar/en_cok_okunanlar.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/bloglar/icerik.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/bloglar/kart.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/bloglar/kategoriler.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/bloglar/sayfalama.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/diger/banner_kart.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/diger/instagram_feed_kart.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/diger/kategori_icon.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/diger/mega_menu.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/diger/mega_menu_side.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/diger/single_menu.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/footer.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/header.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/hediye_ceki/icerik.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/hediye_ceki/kart.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/hesap/alt_sayfalar/2fa.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/hesap/alt_sayfalar/adres_bilgilerim.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/hesap/alt_sayfalar/api.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/hesap/alt_sayfalar/bakiye_dekontu.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/hesap/alt_sayfalar/bakiye_onay.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/hesap/alt_sayfalar/bakiye_yukle.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/hesap/alt_sayfalar/bayilik_bilgilerim.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/hesap/alt_sayfalar/bayi_hareketlerim.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/hesap/alt_sayfalar/cuzdanim.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/hesap/alt_sayfalar/destek_bildirimi_detay.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/hesap/alt_sayfalar/ebulten_bilgileri.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/hesap/alt_sayfalar/eposta_sifre.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/hesap/alt_sayfalar/favori_listem.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/hesap/alt_sayfalar/fiyat_alarm_listem.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/hesap/alt_sayfalar/hediye_ceklerim.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/hesap/alt_sayfalar/hesabim.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/hesap/alt_sayfalar/hesabim_b2b.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/hesap/alt_sayfalar/musteri_hizmetleri.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/hesap/alt_sayfalar/siparislerim.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/hesap/alt_sayfalar/siparis_detay.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/hesap/alt_sayfalar/siparis_takip.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/hesap/alt_sayfalar/stok_alarm_listem.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/hesap/alt_sayfalar/uyelik_bilgilerim.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/hesap/alt_sayfalar/yeni_destek_bildirimi.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/hesap/icerik.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/hesap/menu.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/kategoriler/breadcrumb.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/kategoriler/filtreleme/butonlar.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/kategoriler/filtreleme/fiyatlar.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/kategoriler/filtreleme/fiyatlar_icerik.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/kategoriler/filtreleme/kategoriler.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/kategoriler/filtreleme/kategoriler_icerik.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/kategoriler/filtreleme/listeler.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/kategoriler/filtreleme/markalar.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/kategoriler/filtreleme/markalar_icerik.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/kategoriler/filtreleme/nitelikler.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/kategoriler/filtreleme/nitelikler_icerik.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/kategoriler/filtreleme/yukleniyor.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/kategoriler/kart.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/kategoriler/kategori_aciklama.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/kategoriler/liste.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/kategoriler/ozel_blog.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/kategoriler/responsive_butonlar.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/kategoriler/sayfalama.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/markalar/kart.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/markalar/sayfalama.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/odeme/adimlar.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/odeme/bilgiler/adres.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/odeme/bilgiler/kargo.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/odeme/bilgiler/kargo_icerik.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/odeme/bilgiler/kargo_sablonu.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/odeme/bilgiler/odeme.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/odeme/bilgiler/siparis.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/odeme/butonlar.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/odeme/form.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/odeme/ozet.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/odeme/ozet_icerik.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/odeme/siparis_onayi.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/odeme/sozlesmeler/mesafeli_satis_sozlesmesi.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/odeme/sozlesmeler/on_bilgilendirme_formu.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/odeme/sozlesme_kutusu.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/sayfam-urun/sayfam-urun.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/sepet/ajax_liste.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/sepet/ajax_ozet.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/sepet/butonlar.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/sepet/hediye_ceki.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/sepet/liste.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/sepet/ozet.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/sepet/sepet_bos.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/statik_sayfalar/404.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/statik_sayfalar/alt_sayfalar/havale_bildirim.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/statik_sayfalar/alt_sayfalar/iletisim.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/statik_sayfalar/alt_sayfalar/sayfa.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/statik_sayfalar/alt_sayfalar/siparis_takip.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/statik_sayfalar/alt_sayfalar/sss.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/statik_sayfalar/icerik.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/statik_sayfalar/menu.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/urunler/anasayfa_kart.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/urunler/atli_karinca_resim.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/urunler/carousel_atli_karinca.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/urunler/detay_aciklama.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/urunler/detay_taksitler.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/urunler/detay_teslimat.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/urunler/detay_yorumlar.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/urunler/etkilesim.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/urunler/hizli_sepet_favori.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/urunler/hizli_sepet_kutusu.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/urunler/kart.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/urunler/kart_degerlendirmeler.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/urunler/kart_favori_listesi.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/urunler/kart_yorum.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/urunler/kat-ozel-kart.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/urunler/liste_kart.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/urunler/normal_resim.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/urunler/profil.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/urunler/profil_degerlendirmeler.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/urunler/profil_favori_listesi.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/urunler/resim_alani_tipi/carousel_atli_karinca.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/urunler/resim_alani_tipi/carousel_sol.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/urunler/resim_alani_tipi/normal_altta.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/uyelik/giris_yap.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/uyelik/giris_yap_aciklama.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/uyelik/hizli_giris_kutusu.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/uyelik/sifremi_unuttum.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/uyelik/sifremi_unuttum_aciklama.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/uyelik/sifre_yenileme.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/uyelik/uyelik_formu.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/yardim/arama_formu.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/yardim/baslik_listesi.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/yardim/baslik_vitrini.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/yardim/breadcrumb.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/moduller/yardim/madde_listesi.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/ozel-moduller/banner-anasayfa1.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/ozel-moduller/bardak-masaustu-liste.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/ozel-moduller/dikey-banner-anasayfa.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/ozel-moduller/ev-gerecleri-masaustu-liste.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/ozel-moduller/flash-urunler-hots.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/ozel-moduller/kampanya-urunlerim.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/ozel-moduller/matara-masaustu-liste.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/ozel-moduller/rende-masaustu-liste.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/ozel-moduller/viral-trend-masaustu-liste.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/sablon.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/sayfalar/404.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/sayfalar/anasayfa.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/sayfalar/bloglar.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/sayfalar/blog_detay.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/sayfalar/hediye_ceki.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/sayfalar/hesabim.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/sayfalar/kategoriler.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/sayfalar/markalar.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/sayfalar/odeme.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/sayfalar/sepet.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/sayfalar/sifremi_unuttum.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/sayfalar/sifre_yenileme.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/sayfalar/statik_sayfalar.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/sayfalar/urun_detay.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/sayfalar/uye_girisi.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/sayfalar/uye_ol.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/sayfalar/yardim.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/sayfalar/yardim_detay.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/sepet-guvenli-odeme-pc.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/sepette-1000-tl-75-indirim.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/sepette-indirim.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/sepette-kargo-mesaj-pc.twig",
+            "syntaxError": null
+        },
+        {
+            "file": "canlitema/video-listeleme.twig",
+            "syntaxError": null
+        }
+    ],
+    "renderFixtures": {
+        "favoriteGuestSavedOther": "passed",
+        "categorySearchEscapeAndOptions": "passed",
+        "helpRepeatedModulesAndEqualPageEntryIds": "passed",
+        "paymentEscapedErrorAndTabState": "passed",
+        "productShippingFreeRemainderHidden": "passed",
+        "galleryFavoriteExplicitProductContext": "passed"
+    }
+}

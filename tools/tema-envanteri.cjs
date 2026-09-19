@@ -12,6 +12,8 @@ const results = files.map(file => {
     const relative = path.relative(root, file).replaceAll('\\', '/');
     const buffer = fs.readFileSync(file);
     const extension = path.extname(file);
+    const category = relative.startsWith('canlitema/ayarlar/') ? 'Tema ayarları' : extension === '.twig' ? 'Twig şablonları' :
+        extension === '.js' ? 'JavaScript' : extension === '.css' ? 'CSS' : 'Görsel, ikon, font ve diğer kaynaklar';
     const text = /\.(twig|js|css|json|config|svg)$/.test(extension) ? buffer.toString('utf8') : '';
     const line = index => text.slice(0, index).split('\n').length;
     const refs = [...text.matchAll(/\{%\s*(?:include|extends|import|from)\s+['"]([^'"]+)['"]/g)]
@@ -41,7 +43,7 @@ const results = files.map(file => {
         const locations = [...text.matchAll(re)].map(m => line(m.index));
         if (locations.length) signals.push({ kind, lines: locations });
     }
-    return { file: relative, bytes: buffer.length, sha256: crypto.createHash('sha256').update(buffer).digest('hex'),
+    return { file: relative, category, bytes: buffer.length, sha256: crypto.createHash('sha256').update(buffer).digest('hex'),
         status: reviews[relative] ? 'incelendi (belirtilen kapsam)' : 'listelendi',
         stages: { listelendi: true, incelendi: Boolean(reviews[relative]),
             duzeltildi: reviews[relative]?.fixed || false,

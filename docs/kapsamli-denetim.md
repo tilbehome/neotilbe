@@ -10,7 +10,7 @@ Mevcut tasarım kimliğiyle bütün temanın onarımı; yeni özellik ve yeni ta
 
 Envanter aşamaları ayrı tutulur: **listelendi**, **incelendi (belirtilen kapsam)**, **düzeltildi**, **yerelde doğrulandı**, **platformda doğrulama bekliyor**. İncelenmeyen dosya yalnız listelendi durumundadır. Eski sorun kayıtlarının kontrol edildi/düzeltildi ve doğrulandı ifadelerinde K = kaynak, Y = yerel ayrıştırma/sentetik veri, T = çevrimdışı gerçek tarayıcı, Q = gerçek Qukasoft. K/Y/T başarısı Q kabulü değildir. Dosya geneli tamamlandı sonucu çıkarılmaz.
 
-`tema-envanteri.md` ve `tema-envanteri.json` tüm 360 tema dosyasını tek tek listeler: boyut, hash, sabit şablon bağları, satırlı inceleme sinyalleri ve ayrıştırma sonucu. Her sayfa, modül, yardımcı, varlık ve ayar kapsam içindedir. Envanterdeki sinyaller otomatik hata hükmü değildir. Dosyanın tüm durumları tamamlanmadan dosya geneline yeşil durum verilmez.
+`tema-envanteri.md` ve `tema-envanteri.json` tüm 361 tema dosyasını tek tek listeler: boyut, hash, sabit şablon bağları, satırlı inceleme sinyalleri ve ayrıştırma sonucu. Her sayfa, modül, yardımcı, varlık ve ayar kapsam içindedir. Envanterdeki sinyaller otomatik hata hükmü değildir. Dosyanın tüm durumları tamamlanmadan dosya geneline yeşil durum verilmez.
 
 ## Akış envanteri ve kabul matrisi
 
@@ -51,36 +51,55 @@ Her satır için masaüstü 1440, tablet 768 ve mobil 375 px; klavye/odak, conso
 
 ## Sorun kaydı
 
-Son tur: [platform-uyum-04-kontrol.md](platform-uyum-04-kontrol.md). D5 flash kart sahte sosyal kanıtı, M2 kategori dialog odağı/kilidi ve A4 footer alan adları onarıldı. Yeni özgün ZIP'lerin kök yapısı incelendi; gizlilik onayı verilmeyen kaynak arşivler gönderilmedi. Yerel tamamlanan/kalan ve Qukasoft'a bağlı işler ayrı listelenir.
+Son tur: [platform-uyum-05-kontrol.md](platform-uyum-05-kontrol.md). Video/favori/form/kategori/yardım/ödeme metni ve hediye çeki onarımları, gerçek yerel Twig ayrıştırması ve sınırları bu raporda kayıtlıdır. Önceki tur durumları aşağıdaki tek güncel kayıtta birleştirildi.
 
-Güncel satış akışı turu: [platform-uyum-03-kontrol.md](platform-uyum-03-kontrol.md). S2 üç kargo bileşeninde platform helper'ına bağlandı; S5 yinelenen dosya POST'u kaldırıldı; V1 varyant değer aktarımı, F2 hesap favori satırı ve A3 alan adları onarıldı. Kaynak/yerel kanıt mevcut, Q kabulü bekliyor. K6 iki eski dosyanın açık yükleme bağlantısı bulunamadı; bilinmeyen modül ayarı nedeniyle kullanılmıyor denmedi, hata açık tutuldu. Aşağıdaki eski tespit satırları tarihsel konumları korur; güncel durum bu bağlantıdaki kayıtlarla birlikte okunmalıdır.
+Güncel durumun tek kaynağı `sorun-durumlari.json`; aşağıdaki tablo bu kayıttan üretilir. Önceki raporlar tarihsel kanıttır, güncel açık/kapalı durum için bu tablo geçerlidir.
 
-Satırlar ilk tespit konumlarını kullanır; dosya düzenlendikçe satır kayabilir. Kaynak sembolü/alan adı kalıcı arama dayanağıdır.
-
-| ID / öncelik | Konum / neden / etki | Çözüm / doğrulama | Durum |
-|---|---|---|---|
-| G01-1 P1 | giris_yap.twig:165 eski özel userLogin platformu eziyordu | Override kaldırıldı; AJAX çağrısı, returnUrl ve sentetik 2FA callback T | düzeltildi ve doğrulandı (K/T); Q bekliyor |
-| G01-2 P2 | giris_yap.twig:150 global name seçicisi yanlış parolayı açıyordu | En yakın kapsayıcı; üç alan T | düzeltildi ve doğrulandı (K/T) |
-| G01-3 P1 | scripts.js:8 eski kapatma scroll kilidini bırakıyordu | Ayrı kilit sahipliği; X/overlay/hesap/modal T | düzeltildi ve doğrulandı (K/T); Q bekliyor |
-| K3 P2 | profil.twig:165 sabit 12 taksit, gerçek vade farklı olabilir | Belgede vade/aylik s.36; platform vade alanını göster | düzeltildi ve doğrulandı (K/T sentetik vade); Q bekliyor |
-| K4 P2 | odeme/bilgiler/kargo_icerik.twig:35 ücretli dal boş | Orijinaldeki firma.ucret alanını tasarıma bağla | düzeltildi ve doğrulandı (K: orijinal firma.ucret); Q bekliyor |
-| H1 P1 | profil.twig:159–186 taksit wrapper kapanışı koşul dışında; taksit yokken fazla div kapanır | Kapanışı aynı if dalına taşı; iki koşul DOM kontrolü | düzeltildi ve doğrulandı (K/T: dört koşul) |
-| H2 P2 | header.twig:226 arama button kapanışı eksik | İki ayrı button; isim ve form semantiği korunacak | düzeltildi ve doğrulandı (K/T: iki ayrı GET düğmesi); Q arama bekliyor |
-| S1 P1 | odeme/bilgiler/adres.twig:11 TC alanı kaldırılmış | Belge s.8 tc_alani_zorunlu_mu; ayara bağlı alan, Q hata hedefi | düzeltildi ve doğrulandı (K/T: zorunlu ayar dalı); Q kabulü bekliyor |
-| K5 P2 | style.css:12784 aynı element sınıfları descendant yazılmış | Bileşik selector; alan etkilerini T ölç | düzeltildi ve doğrulandı (T: 375/768/1440 giriş fixture) |
-| D1 P2 | sepet/liste.twig:94 ürün ID’sinden sahte favori sayısı | Gerçek veri yoksa sayısal beyanı kaldır | düzeltildi ve doğrulandı (K: sahte sayı kaldırıldı) |
-| D2 P2 | assets/urun-fav-sayma-eklenti.js:1 rastgele favori/sepet/görüntüleme/satış | Rastgele üretimi kaldır; gerçek kaynak olmadan göstermeme | düzeltildi ve doğrulandı (K/Y: üretim kaldırıldı, dosya yolu korundu) |
-| D3 P2 | statik_sayfalar/alt_sayfalar/siparis_takip.twig:21 henüz sorgu yokken OrderProcessing ilanı | Veri olmayan Order şemasını kaldır; formu koru | düzeltildi ve doğrulandı (K: verisiz Order bildirimi kaldırıldı) |
-| S2 P1 | sepet/ozet.twig:15–19,63 biçimli fiyatla matematik, sabit kargo | Ham/biçimli tür ve kargo helper sözleşmesi Q doğrulaması | doğrulama bekliyor: indirim tutarı K düzeltildi; kargo eşiği/ham tutar açık |
-| K7 P2 | sepet/liste.twig:12–22 satır ID ve koşulsuz kampanya vaadi | Gerçek ürün ID ve kampanya sonucunu ayır; mağaza kuralı gerekli | düzeltildi ve doğrulandı (K: ürün ID, tarafsız adet mesajı); kampanya Q bekliyor |
-| K6 P2 | assets/cok-al-az-ode-indirim.js:22, tahmini-kargom.js:22, yt-video-kontrol-02.js:1 | Statik JS’de Twig/script etiketi; veri bağlantısı/etkinlik doğrulanmalı | doğrulama bekliyor: video dosyası Y/T düzeltildi; iki fiyat JS dosyası açık |
-| S3 P2 | video-listeleme.twig:71–75 defer sonrası hemen global Swiper | Bileşen modelini doğrula; aktif modül belirsiz | doğrulama bekliyor |
-| S4 P2 | header.twig ve birçok dosyada /theme/___shuttle URL | Mevcut varlığı helper’a bağla; olmayan dosyayı icat etme | doğrulama bekliyor |
-| S5 P2 | scripts.js completeBeforePaymentStep; çekirdek completePaymentStep | Kargo dosyasının iki ayrı POST yolu; canlı sürüm doğrulanmalı | doğrulama bekliyor |
-| A1 P2 | giris_yap.twig göz simgeleri i/onclick | Klavye ve erişilebilir ad; görünümü koruyan kontrol | düzeltildi ve doğrulandı (T: native Enter/Space, aria-pressed) |
-| A2 P2 | ödeme ve sipariş takip form etiketleri | ID/label bağları, hata odağı, uzun değerler | doğrulama bekliyor: ödeme/takip label bağları K onarıldı; diğer formlar/odak devam |
-| J1 P2 | profil.twig:527 ve diğer sayaç global isimleri | Ayrı scope, eksik DOM guard; kampanya tarihleri işletme ayarı | doğrulama bekliyor |
-| SEC1 P1 | Twig inline JS ve raw çıktı sinyalleri | Veri kaynağı/kaçış bağlamı ve platform autoescape incelenecek | doğrulama bekliyor |
+<!-- CURRENT_ISSUES_START -->
+| Sorun | Konum | Onarım / gereken iş | Tek güncel durum | Kanıt |
+|---|---|---|---|---|
+| G01-1 | giris_yap.twig:165 eski özel userLogin platformu eziyordu | Override kaldırıldı; AJAX çağrısı, returnUrl ve sentetik 2FA callback T | düzeltildi ve doğrulandı (K/T); Q bekliyor | ilk-inceleme.md (ilk tespit); önceki kontrol raporları |
+| G01-2 | giris_yap.twig:150 global name seçicisi yanlış parolayı açıyordu | En yakın kapsayıcı; üç alan T | düzeltildi ve doğrulandı (K/T) | ilk-inceleme.md (ilk tespit); önceki kontrol raporları |
+| G01-3 | scripts.js:8 eski kapatma scroll kilidini bırakıyordu | Ayrı kilit sahipliği; X/overlay/hesap/modal T | düzeltildi ve doğrulandı (K/T); Q bekliyor | ilk-inceleme.md (ilk tespit); önceki kontrol raporları |
+| K3 | profil.twig:165 sabit 12 taksit, gerçek vade farklı olabilir | Belgede vade/aylik s.36; platform vade alanını göster | düzeltildi ve doğrulandı (K/T sentetik vade); Q bekliyor | ilk-inceleme.md (ilk tespit); önceki kontrol raporları |
+| K4 | odeme/bilgiler/kargo_icerik.twig:35 ücretli dal boş | Orijinaldeki firma.ucret alanını tasarıma bağla | düzeltildi ve doğrulandı (K: orijinal firma.ucret); Q bekliyor | ilk-inceleme.md (ilk tespit); önceki kontrol raporları |
+| H1 | profil.twig:159–186 taksit wrapper kapanışı koşul dışında; taksit yokken fazla div kapanır | Kapanışı aynı if dalına taşı; iki koşul DOM kontrolü | düzeltildi ve doğrulandı (K/T: dört koşul) | ilk-inceleme.md (ilk tespit); önceki kontrol raporları |
+| H2 | header.twig:226 arama button kapanışı eksik | İki ayrı button; isim ve form semantiği korunacak | düzeltildi ve doğrulandı (K/T: iki ayrı GET düğmesi); Q arama bekliyor | ilk-inceleme.md (ilk tespit); önceki kontrol raporları |
+| S1 | odeme/bilgiler/adres.twig:11 TC alanı kaldırılmış | Belge s.8 tc_alani_zorunlu_mu; ayara bağlı alan, Q hata hedefi | düzeltildi ve doğrulandı (K/T: zorunlu ayar dalı); Q kabulü bekliyor | ilk-inceleme.md (ilk tespit); önceki kontrol raporları |
+| K5 | style.css:12784 aynı element sınıfları descendant yazılmış | Bileşik selector; alan etkilerini T ölç | düzeltildi ve doğrulandı (T: 375/768/1440 giriş fixture) | ilk-inceleme.md (ilk tespit); önceki kontrol raporları |
+| D1 | sepet/liste.twig:94 ürün ID’sinden sahte favori sayısı | Gerçek veri yoksa sayısal beyanı kaldır | düzeltildi ve doğrulandı (K: sahte sayı kaldırıldı) | ilk-inceleme.md (ilk tespit); önceki kontrol raporları |
+| D2 | assets/urun-fav-sayma-eklenti.js:1 rastgele favori/sepet/görüntüleme/satış | Rastgele üretimi kaldır; gerçek kaynak olmadan göstermeme | düzeltildi ve doğrulandı (K/Y: üretim kaldırıldı, dosya yolu korundu) | ilk-inceleme.md (ilk tespit); önceki kontrol raporları |
+| D3 | statik_sayfalar/alt_sayfalar/siparis_takip.twig:21 henüz sorgu yokken OrderProcessing ilanı | Veri olmayan Order şemasını kaldır; formu koru | düzeltildi ve doğrulandı (K: verisiz Order bildirimi kaldırıldı) | ilk-inceleme.md (ilk tespit); önceki kontrol raporları |
+| S2 | sepet/ozet.twig:15–19,63 biçimli fiyatla matematik, sabit kargo | Üç bileşende platform kargo helper alanları kullanılıyor; bağımsız toplam/yüzde kaldırıldı. | onarım uygulandı; yerelde doğrulandı; platform kabulü bekliyor | platform-uyum-03-kontrol.md |
+| K7 | sepet/liste.twig:12–22 satır ID ve koşulsuz kampanya vaadi | Gerçek ürün ID ve kampanya sonucunu ayır; mağaza kuralı gerekli | düzeltildi ve doğrulandı (K: ürün ID, tarafsız adet mesajı); kampanya Q bekliyor | ilk-inceleme.md (ilk tespit); önceki kontrol raporları |
+| K6 | assets/cok-al-az-ode-indirim.js:22, tahmini-kargom.js:22, yt-video-kontrol-02.js:1 | Statik JS’de Twig/script etiketi; veri bağlantısı/etkinlik doğrulanmalı | doğrulama bekliyor: video dosyası Y/T düzeltildi; iki fiyat JS dosyası açık | ilk-inceleme.md (ilk tespit); önceki kontrol raporları |
+| S3 | video-listeleme.twig:71–75 defer sonrası hemen global Swiper | Mevcut Swiper Element kaydı bekleniyor; global kurucu kaldırıldı. | onarım uygulandı; yerelde doğrulandı; gerçek Swiper/Q kabulü bekliyor | platform-uyum-03-kontrol.md; platform-uyum-05-kontrol.md |
+| S4 | header.twig ve birçok dosyada /theme/___shuttle URL | Mevcut varlığı helper’a bağla; olmayan dosyayı icat etme | 37 bağlantıda onarım/yerel doğrulama; diğer dinamik/CSS yolları açık | tema-kaynak-baglari.json; onizleme-hazirligi.md |
+| S5 | scripts.js completeBeforePaymentStep; çekirdek completePaymentStep | Çift dosya gönderimi kaldırıldı; referans completePaymentStep tek FormData isteği. | onarım uygulandı; yerelde doğrulandı; platform kabulü bekliyor | platform-uyum-03-kontrol.md |
+| A1 | giris_yap.twig göz simgeleri i/onclick | Klavye ve erişilebilir ad; görünümü koruyan kontrol | düzeltildi ve doğrulandı (T: native Enter/Space, aria-pressed) | ilk-inceleme.md (ilk tespit); önceki kontrol raporları |
+| A2 | ödeme ve sipariş takip form etiketleri | ID/label bağları, hata odağı, uzun değerler | doğrulama bekliyor: ödeme/takip label bağları K onarıldı; diğer formlar/odak devam | ilk-inceleme.md (ilk tespit); önceki kontrol raporları |
+| J1 | profil.twig:527 ve diğer sayaç global isimleri | Ürün sayacı her campaignTimerDiv içinde; global adlar kaldırıldı; kargo takvimi uydurulmadı. | sayaç kapsam/DOM onarıldı; yerel eksik DOM kontrolü geçti; takvim/veri kabulü açık | platform-uyum-05-kontrol.md |
+| B1 | sepet/liste.twig ürün hücresi: p-info/product/td kapanışları eksik | İki div ve td kapatıldı; kaynakta satır konteyner dengesi Y | düzeltildi ve doğrulandı (K/Y); gerçek sepet görünümü Q bekliyor | ilk-inceleme.md (ilk tespit); önceki kontrol raporları |
+| B2 | sepet/liste.twig quantity input data-value-type; referans productQuantityBox data-quantity-type okuyor | Referansın okuduğu niteliğe bağlandı; gerçek referans yardımcıyla 1.5→1.6→1.5 T | düzeltildi ve doğrulandı (K/T); diğer birim/min/max kuralları Q bekliyor | ilk-inceleme.md (ilk tespit); önceki kontrol raporları |
+| C1 | kart_degerlendirmeler.twig:8,30 Bootstrap 5 me/ms yardımcıları, referans Bootstrap 4 | mr-2/ml-2 ile mevcut pakete bağlandı K | düzeltildi ve doğrulandı (K); canlı kütüphane sürümü Q bekliyor | ilk-inceleme.md (ilk tespit); önceki kontrol raporları |
+| F1 | kart_favori_listesi.twig:1 kart urun.ID yerine sayfaBilgileri ID kapsayıcısı; orijinalde de var | urun.ID, kanonik favori listesinden ilk durum ve ekle/kaldır kontrolleri. | onarım uygulandı; yerel callback doğrulandı; helper/performans Q kabulü bekliyor | platform-uyum-05-kontrol.md |
+| D4 | sepet/liste.twig rezervasyon rozeti, profil.twig sabit 500 TL ve kargo sayacı | Ürün sabit 500 TL kaldırıldı; platform kargo helperı ve üç yerel Twig dalı geçti. Rezervasyon/saat/teslimat mağaza doğrulaması açık. | kargo tutarı onarıldı ve yerelde doğrulandı; diğer beyanlar/platform kabulü bekliyor | platform-uyum-05-kontrol.md |
+| V1 | urunler/profil.twig ve hizli_sepet_kutusu.twig | Varyant değeri JS dizgesinden data niteliğine taşındı | onarım uygulandı; yerelde doğrulandı (rapordaki kapsam); platform kabulü bekliyor | platform-uyum-03-kontrol.md |
+| F2 | hesap/alt_sayfalar/favori_listem.twig | data-user-product-id geri bağlandı | onarım uygulandı; yerelde doğrulandı (rapordaki kapsam); platform kabulü bekliyor | platform-uyum-03-kontrol.md |
+| A3 | uyelik/sifre_yenileme.twig; sifremi_unuttum.twig | Alan erişilebilir adları | onarım uygulandı; yerelde doğrulandı (rapordaki kapsam); platform kabulü bekliyor | platform-uyum-03-kontrol.md |
+| A4 | footer.twig; flash-urunler-hots.twig | Alan/bağlantı/alternatif adlar ve telefon anchor kapanışı | onarım uygulandı; yerelde doğrulandı (rapordaki kapsam); platform kabulü bekliyor | platform-uyum-04-kontrol.md |
+| D5 | flash-urunler-hots.twig; footer.twig | Sahte satış/izleyen sayaçları yerine stok alanı | onarım uygulandı; yerelde doğrulandı (rapordaki kapsam); platform kabulü bekliyor | platform-uyum-04-kontrol.md |
+| M2 | footer.twig; style.css | Kategori dialog odağı ve ayrı kaydırma kilidi | onarım uygulandı; yerelde doğrulandı (rapordaki kapsam); platform kabulü bekliyor | platform-uyum-04-kontrol.md |
+| VM1 | video-listeleme.twig; assets/video-gallery.js; style.css | Çoklu örnek, klavye/odak, iframe temizleme ve modal CSS | onarım uygulandı; yerelde doğrulandı (rapordaki kapsam); platform kabulü bekliyor | platform-uyum-05-kontrol.md |
+| A5 | 11 üyelik/hesap/iletişim/havale form şablonu | Etiket-kontrol bağlantıları ve iletişim başlık kapanışı | onarım uygulandı; yerelde doğrulandı (rapordaki kapsam); platform kabulü bekliyor | platform-uyum-05-kontrol.md |
+| CAT1 | kategoriler/sayfalama.twig | Platform sıralama listesi; JS kaçışı; sınırlı grid class değişimi | onarım uygulandı; yerelde doğrulandı (rapordaki kapsam); platform kabulü bekliyor | platform-uyum-05-kontrol.md |
+| SEO1 | statik_sayfalar/404.twig; alt_sayfalar/havale_bildirim.twig | Yanlış ana sayfa URL iddiası ve gerçekleşmemiş ödeme action metadatası kaldırıldı | onarım uygulandı; yerelde doğrulandı (rapordaki kapsam); platform kabulü bekliyor | platform-uyum-05-kontrol.md |
+| HELP1 | yardim/madde_listesi.twig; arama_formu.twig | Modül ve rol bazlı tekil accordion ID/hedefleri | onarım uygulandı; rapordaki yerel kontroller geçti; platform kabulü bekliyor | platform-uyum-05-kontrol.md |
+| ACC1 | hesap/alt_sayfalar/hediye_ceklerim.twig; hediye_ceki/kart.twig | Kopyala parent olayının boşa ve çift çağrısı kaldırıldı | onarım uygulandı; rapordaki yerel kontroller geçti; platform kabulü bekliyor | platform-uyum-05-kontrol.md |
+| PAY1 | hesap/icerik.twig; odeme/bilgiler/odeme.twig | Hata mesajı JS kaçışı ve ödeme tab ARIA ilişkisi | onarım uygulandı; rapordaki yerel kontroller geçti; platform kabulü bekliyor | platform-uyum-05-kontrol.md |
+| A6 | sepet/ajax_liste.twig; fiyat/stok alarm listeleri; profil/hızlı favori | Ürün adıyla erişilebilir kontrol isimleri | onarım uygulandı; kaynak kontrolü; tarayıcı/ekran okuyucu kabulü açık | platform-uyum-05-kontrol.md |
+| PV1 | urunler/resim_alani_tipi/carousel_sol.twig; assets/scripts.js | Video öğe izolasyonu, play hata/tekrar yönetimi ve tek ok çifti | onarım uygulandı; rapordaki yerel kontroller geçti; platform kabulü bekliyor | platform-uyum-05-kontrol.md |
+<!-- CURRENT_ISSUES_END -->
 
 ## Platformla kesinleştirilmesi gerekenler
 
@@ -90,18 +109,3 @@ Satırlar ilk tespit konumlarını kullanır; dosya düzenlendikçe satır kayab
 - Değerlendirme fotoğrafı, sosyal kanıt sayıları, kargoya teslim saatleri için gerçek veri kaynağı. Sayı/tarih üretmek çözüm değildir.
 
 Kritik akışlar Q kabulü olmadan **tema tamamlandı** denmeyecek. Harici erişim gerektirmeyen kesin kaynak kusurları sırayla onarılmaya devam edilir.
-
-## Yeni turda saptanan ek konular
-
-19.09.2026 önizleme turu: [ayrı tema hazırlığı ve S4/J2 onarımları](onizleme-hazirligi.md). S4 için 37 yerel görsel bağlantısı onarıldı; dinamik/CSS/ayar bağlantıları ve Q kabulü bekliyor. J2 sayaç örneklerinin izolasyonu yerel olarak doğrulandı; kampanya tarihi doğrulanmadı. Admin önizlemesi aktif goldtheme'e ait, bu dalı içermiyor ve bağımsız test mağazası değildir.
-
-| ID | Konum / neden / etki | Çözüm / doğrulama | Durum |
-|---|---|---|---|
-| B1 | sepet/liste.twig ürün hücresi: p-info/product/td kapanışları eksik | İki div ve td kapatıldı; kaynakta satır konteyner dengesi Y | düzeltildi ve doğrulandı (K/Y); gerçek sepet görünümü Q bekliyor |
-| B2 | sepet/liste.twig quantity input data-value-type; referans productQuantityBox data-quantity-type okuyor | Referansın okuduğu niteliğe bağlandı; gerçek referans yardımcıyla 1.5→1.6→1.5 T | düzeltildi ve doğrulandı (K/T); diğer birim/min/max kuralları Q bekliyor |
-| C1 | kart_degerlendirmeler.twig:8,30 Bootstrap 5 me/ms yardımcıları, referans Bootstrap 4 | mr-2/ml-2 ile mevcut pakete bağlandı K | düzeltildi ve doğrulandı (K); canlı kütüphane sürümü Q bekliyor |
-| F1 | kart_favori_listesi.twig:1 kart urun.ID yerine sayfaBilgileri ID kapsayıcısı; orijinalde de var | add/remove başlangıç durumu ve kart veri sözleşmesi birlikte doğrulanmalı; yalnız seçiciyi değiştirince düğmenin tamamen kaybolması riski | doğrulama bekliyor |
-| SEC2 | profil.twig benzer ürün onclick içinde kategori adı; apostrof/özel karakter | Kategori adı JS kodundan çıkarıldı; platform arama route + URL kodlu data niteliği; özel karakter kabulü Q bekliyor | düzeltildi ve doğrulandı (K); Q bekliyor |
-| D4 | sepet/liste.twig rezervasyon rozeti, profil.twig sabit 500 TL ve kargo sayacı | Stok rezervasyonu/kargo saatleri/ücret sözleşmesi işletme ayarıyla doğrulanmalı | doğrulama bekliyor |
-
-G02–G05 yerel kabul ayrıntıları: [platform-uyum-02-kontrol.md](platform-uyum-02-kontrol.md). Bu tur tamamlanan onarımlar, envanterin tamamının kabul edildiği anlamına gelmez.

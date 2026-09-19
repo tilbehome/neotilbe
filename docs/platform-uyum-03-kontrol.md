@@ -1,3 +1,5 @@
+> Tarihsel inceleme/kontrol kaydıdır. Tek güncel sorun durumu: [kapsamli-denetim.md](kapsamli-denetim.md).
+
 # Satış akışı denetimi — 19.09.2026
 
 Dal: fix/platform-uyum-01. Yerel dosyalar incelendi; canlıya, yönetici oturumuna, müşteri verilerine veya yazan API uçlarına erişilmedi. Platform kaynakları/orijinal tema değiştirilmedi.
